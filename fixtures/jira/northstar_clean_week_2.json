@@ -21,7 +21,7 @@
     "starts_at": "2026-02-09T09:00:00Z",
     "ends_at_exclusive": "2026-02-16T00:00:00Z",
     "review_cutoff_at": "2026-02-16T09:00:00Z",
-    "source_cutoff_at": "2026-02-16T08:40:00Z"
+    "source_cutoff_at": "2026-02-16T09:00:00Z"
   },
   "comparison": {
     "prior_fixture_id": "northstar-clean-week-1",
@@ -33,7 +33,6 @@
       "description": "Synthetic explicit flag only; it does not imply that Jira sprint membership universally means planned work."
     },
     "stalled_threshold_complete_days": 7,
-    "due_soon_threshold_complete_days": 2,
     "status_mapping": {
       "To Do": "todo",
       "In Progress": "in_progress",

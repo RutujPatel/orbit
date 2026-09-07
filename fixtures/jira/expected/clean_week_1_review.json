@@ -12,7 +12,7 @@
     "starts_at": "2026-02-02T09:00:00Z",
     "ends_at_exclusive": "2026-02-09T00:00:00Z",
     "review_cutoff_at": "2026-02-09T09:00:00Z",
-    "source_cutoff_at": "2026-02-09T08:45:00Z",
+    "source_cutoff_at": "2026-02-09T09:00:00Z",
     "comparison_available": false,
     "comparison_message": "No prior Shadow ORBIT review is available for comparison."
   },
@@ -109,7 +109,7 @@
           "status_category": "blocked",
           "blocked_since": "2026-02-04T11:00:00Z",
           "due_at": "2026-02-08T17:00:00Z",
-          "source_cutoff_at": "2026-02-09T08:45:00Z",
+          "source_cutoff_at": "2026-02-09T09:00:00Z",
           "review_cutoff_at": "2026-02-09T09:00:00Z"
         },
         "underlying_matches": [

@@ -1,0 +1,329 @@
+{
+  "expected_artifact_version": "shadow-review-expected-v1",
+  "fixture_id": "northstar-messy-week-1",
+  "contract_notice": "This expected artifact tests honest handling of imperfect source data. It does not require the prototype to resolve every source defect.",
+  "review": {
+    "organization_key": "northstar-labs-messy",
+    "team_key": "platform-operations",
+    "project_key": "OPS",
+    "label": "2026-W06",
+    "starts_at": "2026-02-02T09:00:00Z",
+    "ends_at_exclusive": "2026-02-09T00:00:00Z",
+    "review_cutoff_at": "2026-02-09T09:00:00Z",
+    "source_cutoff_at": "2026-02-09T08:30:00Z",
+    "comparison_available": false,
+    "comparison_message": "No prior Shadow ORBIT review is available for comparison."
+  },
+  "import_result": {
+    "raw_record_count": 32,
+    "accepted_record_count": 29,
+    "quarantined_record_count": 3,
+    "quarantined_records": [
+      {
+        "source_key": "OPS-020",
+        "source_id": "20020",
+        "reason_code": "DUPLICATE_EXTERNAL_KEY",
+        "reason": "All records sharing the duplicate external key OPS-020 are quarantined because Shadow ORBIT cannot choose one safely."
+      },
+      {
+        "source_key": "OPS-020",
+        "source_id": "duplicate-20020",
+        "reason_code": "DUPLICATE_EXTERNAL_KEY",
+        "reason": "All records sharing the duplicate external key OPS-020 are quarantined because Shadow ORBIT cannot choose one safely."
+      },
+      {
+        "source_key": "OPS-031",
+        "source_id": "20031",
+        "reason_code": "INVALID_REQUIRED_TIMESTAMP",
+        "reason": "The required updated_at value is not a valid timezone-aware timestamp."
+      }
+    ]
+  },
+  "what_changed_since_last_review": {
+    "available": false,
+    "message": "No prior Shadow ORBIT review is available for comparison.",
+    "deltas": []
+  },
+  "supporting_facts": {
+    "accepted_work_item_count": 29,
+    "known_missing_due_date_count": 20,
+    "invalid_due_date_count": 1,
+    "invalid_due_date_keys": [
+      "OPS-025"
+    ],
+    "known_planning_classification_count": 23,
+    "unknown_planning_classification_count": 6,
+    "unknown_planning_classification_keys": [
+      "OPS-005",
+      "OPS-011",
+      "OPS-012",
+      "OPS-019",
+      "OPS-021",
+      "OPS-029"
+    ],
+    "manager_facing_completion_percentage": null,
+    "manager_facing_completion_percentage_reason": "Planning classification is incomplete, and the planning basis has not been validated with a real manager."
+  },
+  "what_needs_attention": {
+    "grouped_work_item_count": 5,
+    "underlying_finding_count": 5,
+    "items": [
+      {
+        "subject_key": "OPS-001",
+        "title": "Restore vendor settlement feed",
+        "condition_summary": "High-priority work remains blocked.",
+        "deterministic_explanation": "OPS-001 has been in the mapped blocked status 'Waiting Vendor' since 4 February and remained in that status in the source snapshot.",
+        "underlying_matches": [
+          {
+            "rule_key": "BLOCKED_HIGH_PRIORITY",
+            "rule_version": "1"
+          }
+        ],
+        "evidence_references": [
+          "work_item:OPS-001",
+          "change:OPS-001:status:2026-02-04T10:00:00Z"
+        ],
+        "data_quality_state": "complete"
+      },
+      {
+        "subject_key": "OPS-002",
+        "title": "Complete access-control review",
+        "condition_summary": "High-priority work remains incomplete after its due date.",
+        "deterministic_explanation": "OPS-002 was due on 5 February and remained in To Do in the source snapshot used for the 9 February review.",
+        "underlying_matches": [
+          {
+            "rule_key": "OVERDUE_HIGH_PRIORITY",
+            "rule_version": "1"
+          }
+        ],
+        "evidence_references": [
+          "work_item:OPS-002",
+          "field:OPS-002:due_at"
+        ],
+        "data_quality_state": "complete"
+      },
+      {
+        "subject_key": "OPS-003",
+        "title": "Consolidate deployment checks",
+        "condition_summary": "Work has remained in progress beyond the configured stalled-work threshold.",
+        "deterministic_explanation": "OPS-003 entered In Progress on 25 January and remained in progress in the source snapshot used for the 9 February review.",
+        "underlying_matches": [
+          {
+            "rule_key": "STALLED_WORK",
+            "rule_version": "1"
+          }
+        ],
+        "evidence_references": [
+          "work_item:OPS-003",
+          "change:OPS-003:status:2026-01-25T10:00:00Z"
+        ],
+        "data_quality_state": "complete"
+      },
+      {
+        "subject_key": "OPS-018",
+        "title": "Replace expiring webhook secret",
+        "condition_summary": "High-priority work remains blocked.",
+        "deterministic_explanation": "OPS-018 became blocked on 8 February and remained blocked in the source snapshot.",
+        "underlying_matches": [
+          {
+            "rule_key": "BLOCKED_HIGH_PRIORITY",
+            "rule_version": "1"
+          }
+        ],
+        "evidence_references": [
+          "work_item:OPS-018",
+          "change:OPS-018:status:2026-02-08T12:00:00Z"
+        ],
+        "data_quality_state": "complete"
+      },
+      {
+        "subject_key": "OPS-028",
+        "title": "Test failover alarms",
+        "condition_summary": "Work has remained in progress beyond the configured stalled-work threshold.",
+        "deterministic_explanation": "OPS-028 entered In Progress on 29 January and remained in progress in the source snapshot used for the 9 February review.",
+        "underlying_matches": [
+          {
+            "rule_key": "STALLED_WORK",
+            "rule_version": "1"
+          }
+        ],
+        "evidence_references": [
+          "work_item:OPS-028",
+          "change:OPS-028:status:2026-01-29T09:00:00Z"
+        ],
+        "data_quality_state": "complete"
+      }
+    ]
+  },
+  "what_orbit_could_not_determine": {
+    "summary": [
+      "Twenty accepted work items have no due date.",
+      "OPS-025 has a due date without timezone information.",
+      "OPS-004 has an unmapped status.",
+      "Seven accepted work items have incomplete status history.",
+      "Two accepted work items use unmapped priority values.",
+      "One accepted work item has contradictory status-category metadata.",
+      "Six accepted work items have no explicit planning classification.",
+      "Three source records were quarantined."
+    ],
+    "conditions": [
+      {
+        "code": "UNKNOWN_STATUS",
+        "subject_keys": [
+          "OPS-004"
+        ],
+        "effect": "Completion-dependent evaluations are suppressed."
+      },
+      {
+        "code": "PARTIAL_HISTORY",
+        "subject_keys": [
+          "OPS-005",
+          "OPS-006",
+          "OPS-011",
+          "OPS-012",
+          "OPS-019",
+          "OPS-021",
+          "OPS-029"
+        ],
+        "effect": "STALLED_WORK is suppressed where a reliable last meaningful transition cannot be established."
+      },
+      {
+        "code": "UNKNOWN_PRIORITY",
+        "subject_keys": [
+          "OPS-005",
+          "OPS-019"
+        ],
+        "source_values": [
+          "Urgent-ish",
+          "Unclear"
+        ],
+        "effect": "High-priority rules are suppressed for these items."
+      },
+      {
+        "code": "MISSING_DUE_DATE",
+        "affected_count": 20,
+        "effect": "Overdue conditions cannot be evaluated for affected items."
+      },
+      {
+        "code": "INVALID_OPTIONAL_TIMESTAMP",
+        "subject_keys": [
+          "OPS-025"
+        ],
+        "field": "due_at",
+        "effect": "The item may be imported, but its due date is treated as unknown and no overdue finding is produced."
+      },
+      {
+        "code": "STATUS_CATEGORY_CONTRADICTION",
+        "subject_keys": [
+          "OPS-022"
+        ],
+        "message": "OPS-022 has source status 'Done' while provider_status_category says 'in_progress'.",
+        "effect": "The contradiction is shown. The bounded status history and resolved timestamp support completion, but the supporting count is qualified."
+      },
+      {
+        "code": "UNKNOWN_PLANNING_CLASSIFICATION",
+        "subject_keys": [
+          "OPS-005",
+          "OPS-011",
+          "OPS-012",
+          "OPS-019",
+          "OPS-021",
+          "OPS-029"
+        ],
+        "effect": "No planned-work percentage is calculated."
+      },
+      {
+        "code": "STALE_SOURCE_RECORD",
+        "subject_keys": [
+          "OPS-003",
+          "OPS-005",
+          "OPS-006",
+          "OPS-011",
+          "OPS-012",
+          "OPS-019",
+          "OPS-021",
+          "OPS-025",
+          "OPS-029"
+        ],
+        "definition": "updated_at is more than 14 complete days before source_cutoff_at",
+        "effect": "The artifact discloses that these records may not reflect recent operational context."
+      },
+      {
+        "code": "UNTRUSTED_MARKUP_ESCAPED",
+        "subject_keys": [
+          "OPS-009"
+        ],
+        "effect": "The title is rendered as inert text and is never executed as HTML or script."
+      },
+      {
+        "code": "UNTRUSTED_INSTRUCTION_TEXT_PRESERVED",
+        "subject_keys": [
+          "OPS-010"
+        ],
+        "effect": "The title is treated only as source text and cannot affect deterministic rules."
+      }
+    ],
+    "suppressed_rule_evaluations": [
+      {
+        "subject_key": "OPS-004",
+        "rule_key": "OVERDUE_HIGH_PRIORITY",
+        "reason": "The due date has passed, but completion state cannot be established because the status is unmapped."
+      },
+      {
+        "subject_key": "OPS-005",
+        "rule_key": "STALLED_WORK",
+        "reason": "Relevant status history is incomplete."
+      },
+      {
+        "subject_key": "OPS-006",
+        "rule_key": "STALLED_WORK",
+        "reason": "Relevant status history is incomplete."
+      },
+      {
+        "subject_key": "OPS-011",
+        "rule_key": "STALLED_WORK",
+        "reason": "Relevant status history is incomplete."
+      },
+      {
+        "subject_key": "OPS-012",
+        "rule_key": "STALLED_WORK",
+        "reason": "Relevant status history is incomplete."
+      },
+      {
+        "subject_key": "OPS-019",
+        "rule_key": "STALLED_WORK",
+        "reason": "Relevant status history is incomplete."
+      },
+      {
+        "subject_key": "OPS-021",
+        "rule_key": "STALLED_WORK",
+        "reason": "Relevant status history is incomplete."
+      },
+      {
+        "subject_key": "OPS-025",
+        "rule_key": "OVERDUE_HIGH_PRIORITY",
+        "reason": "The due date is not timezone-aware and is treated as unknown."
+      },
+      {
+        "subject_key": "OPS-029",
+        "rule_key": "STALLED_WORK",
+        "reason": "Relevant status history is incomplete."
+      }
+    ]
+  },
+  "open_and_carried_commitments": {
+    "count": 0,
+    "items": []
+  },
+  "synthetic_human_review_state": {
+    "state": "not_applied",
+    "reason": "This fixture tests data honesty and safe presentation, not a predetermined synthetic manager response."
+  },
+  "historical_assertions": [
+    "The expected result is allowed to contain few findings despite many source records.",
+    "Quarantined records do not contribute to metrics or findings.",
+    "Missing and malformed data are never silently defaulted.",
+    "Markup and instruction-like text remain inert.",
+    "No completion percentage is presented."
+  ]
+}

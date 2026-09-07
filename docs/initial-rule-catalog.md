@@ -15,7 +15,7 @@ It does not prove that the rules or deltas are useful to Engineering Managers.
 - Every rule and delta is deterministic.
 - Every rule and delta has an explicit version.
 - Every evaluation uses a fixed source import and explicit review period.
-- Rules must never query an implicit "latest" source state.
+- Rules must never query an implicit latest source state.
 - Missing evidence produces suppression or qualification, not invented certainty.
 - Deterministic output is separate from manager disposition.
 - Experimental learning classification is separate from both.
@@ -24,7 +24,7 @@ It does not prove that the rules or deltas are useful to Engineering Managers.
 - A delta is a fact and is not automatically a finding.
 - Multiple rule results for one work item may be grouped in the manager-facing artifact while remaining separate deterministic results.
 - Every manager-facing explanation is rendered from deterministic rule inputs.
-- The source cutoff and review cutoff must remain distinguishable.
+- Source cutoff and review cutoff remain conceptually distinct, even when equal in the clean synthetic fixtures.
 
 # Shared terminology
 
@@ -32,9 +32,15 @@ It does not prove that the rules or deltas are useful to Engineering Managers.
 
 The bounded, validated Jira projection observed at `source_cutoff_at`.
 
+## Source cutoff
+
+The time at which the selected source state was observed.
+
 ## Review cutoff
 
-The time at which review-relative conditions such as overdue status are evaluated.
+The temporal boundary used for review-relative evaluation.
+
+The clean Milestone 0 fixtures intentionally set source cutoff equal to review cutoff. This removes a synthetic freshness gap without collapsing the two concepts.
 
 ## Known incomplete
 
@@ -62,6 +68,19 @@ A complete day is a full 24-hour interval.
 Elapsed complete days are calculated as:
 
 `floor((review_cutoff_at - relevant_event_at) / 24 hours)`
+
+# Active rule parameters
+
+The initial active rule set uses:
+
+- Explicit status mapping
+- Explicit priority mapping
+- `stalled_threshold_complete_days`
+- Review-period boundaries
+- Source cutoff
+- Review cutoff
+
+There is no active due-soon parameter and no due-soon rule.
 
 # Condition rules
 
@@ -202,9 +221,11 @@ Suppress the rule when:
 
 The due-time comparison uses the review cutoff.
 
-The observed completion state comes from the source snapshot.
+The observed completion state comes from the selected source snapshot.
 
-If the source cutoff is earlier than the review cutoff, the explanation must not claim that Jira was observed exactly at the review cutoff.
+When source cutoff is earlier than review cutoff, the explanation must not claim that the source was observed at the later review cutoff.
+
+The clean synthetic fixtures set source cutoff equal to review cutoff, so this qualification does not create a freshness gap in their expected artifacts.
 
 ### Observed values
 
@@ -422,8 +443,8 @@ A work-item delta compares:
 
 A commitment delta compares:
 
-- The commitment state associated with the prior prepared review
-- The commitment state associated with the current prepared review
+- Commitment presence and state associated with the prior prepared review
+- Commitment presence and state associated with the current prepared review
 
 A delta must not compare against an unspecified latest record.
 
@@ -584,17 +605,46 @@ Do not produce when:
 
 ## 8. commitment_created v1
 
+### Purpose
+
+Represent the first appearance of a commitment relative to two prepared reviews.
+
+The delta name is retained for version 1, but its comparison semantics are precise.
+
+It does not mean that the commitment was created during the current review period.
+
 ### Match
 
 Produce when:
 
-- The commitment did not exist in the prior prepared review
-- It exists at current review preparation
-- It originated during or after the prior review
+- The commitment is absent from the prior prepared review
+- The commitment is present in the current prepared review
+- Historical origin or creation metadata is available where applicable
+
+### Historical requirements
+
+The delta must preserve:
+
+- Actual creation timestamp
+- Actual origin review
+- Actual related decision or review item, when available
+
+The current review must not be substituted as the origin merely because the commitment first appears in its prepared state.
+
+### COMMITMENT-001 example
+
+COMMITMENT-001:
+
+- Originated during the 2026-W06 review
+- Was created at `2026-02-09T10:15:00Z`
+- Was absent from the prepared 2026-W06 artifact
+- Is present in the prepared 2026-W07 artifact
+
+The 2026-W07 comparison therefore emits `commitment_created`, while preserving the 2026-W06 origin and original creation timestamp.
 
 ### Explanation
 
-`The commitment "{commitment_summary}" was created during the {origin_review_label} review.`
+`{commitment_key} was absent from the prior prepared review and first appears in the current prepared review. It originated during the {origin_review_label} review and was created on {creation_date}.`
 
 ---
 
@@ -606,7 +656,7 @@ Produce when:
 
 - Prior prepared status was `open`
 - Current prepared status is `completed`
-- Completion occurred after the prior preparation and no later than current preparation
+- Completion occurred after prior preparation and no later than current preparation
 
 ### Explanation
 
@@ -802,4 +852,3 @@ Every deterministic delta must identify:
 - Evidence references
 
 No universal provenance graph is required for Shadow ORBIT.
-```

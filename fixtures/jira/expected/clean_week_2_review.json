@@ -12,7 +12,7 @@
     "starts_at": "2026-02-09T09:00:00Z",
     "ends_at_exclusive": "2026-02-16T00:00:00Z",
     "review_cutoff_at": "2026-02-16T09:00:00Z",
-    "source_cutoff_at": "2026-02-16T08:40:00Z",
+    "source_cutoff_at": "2026-02-16T09:00:00Z",
     "comparison_available": true,
     "prior_fixture_id": "northstar-clean-week-1",
     "prior_review_label": "2026-W06"
@@ -150,7 +150,7 @@
         "delta_version": "1",
         "subject_type": "commitment",
         "subject_key": "COMMITMENT-001",
-        "deterministic_explanation": "The commitment 'Obtain an approval date from the external security team' was created during the previous review.",
+        "deterministic_explanation": "COMMITMENT-001 was absent from the prior prepared review and first appears in the current prepared review. It originated during the 2026-W06 review and was created on 9 February.",
         "previous_values": null,
         "current_values": {
           "origin_review_label": "2026-W06",
@@ -160,7 +160,8 @@
         "evidence_references": [
           "commitment:COMMITMENT-001",
           "review:2026-W06"
-        ]
+        ],
+        "semantic_definition": "The commitment was absent from the prior prepared review and is present in the current prepared review, with its historical origin and creation metadata preserved."
       },
       {
         "delta_key": "commitment_newly_overdue",
@@ -275,7 +276,7 @@
           "status": "In Progress",
           "status_category": "in_progress",
           "due_at": "2026-02-15T17:00:00Z",
-          "source_cutoff_at": "2026-02-16T08:40:00Z",
+          "source_cutoff_at": "2026-02-16T09:00:00Z",
           "review_cutoff_at": "2026-02-16T09:00:00Z"
         },
         "underlying_matches": [

@@ -70,13 +70,22 @@ Review periods use half-open intervals:
 
 `starts_at <= event_time < ends_at_exclusive`
 
-The source cutoff states when the imported Jira state was observed.
+The source cutoff states when the imported Jira source state was observed.
 
-The review cutoff states the review's evaluation time.
+The review cutoff is the temporal boundary used for review-relative evaluation.
+
+These are conceptually distinct values even when a synthetic fixture intentionally makes them equal.
 
 The source cutoff must not be later than the review cutoff.
 
-The artifact must disclose both values when they differ.
+When the values differ, the review artifact must disclose both values and must not describe source state as if it had been observed later than the source cutoff.
+
+For the clean Milestone 0 fixtures:
+
+- Week 1 uses `source_cutoff_at == review_cutoff_at == 2026-02-09T09:00:00Z`.
+- Week 2 uses `source_cutoff_at == review_cutoff_at == 2026-02-16T09:00:00Z`.
+
+The equality removes an unnecessary synthetic freshness confounder. It does not remove the conceptual distinction from Shadow ORBIT's time model.
 
 ## Configuration
 
@@ -101,12 +110,6 @@ Version 1 uses a strict comparison:
 
 Exactly seven complete days does not match a threshold of seven.
 
-### Due-soon threshold
-
-The fixture records `due_soon_threshold_complete_days`, but no initial manager-facing condition rule uses it.
-
-It is present only for later commitment observation and must not silently generate a finding.
-
 ### Status mapping
 
 Status names map to:
@@ -130,6 +133,17 @@ Priority names map to:
 An unmapped priority becomes an `UNKNOWN_PRIORITY` condition.
 
 High-priority rules require a known `high` mapping.
+
+### Active configuration parameters
+
+The active Milestone 0 synthetic configuration contains only parameters used by current deterministic behavior:
+
+- planning_basis
+- stalled_threshold_complete_days
+- status_mapping
+- priority_mapping
+
+There is no active due-soon threshold and no due-soon rule.
 
 ## Source completeness
 
@@ -233,6 +247,13 @@ Null means Shadow ORBIT cannot determine planning classification.
 
 A null value must not be silently converted to false.
 
+An item created after the review period started cannot truthfully be represented as planned at period start under the clean fixture's manual planning basis.
+
+PLAT-111 is therefore:
+
+- `planned_at_period_start: false`
+- `status_at_period_start: null`
+
 No completion percentage is presented in Milestone 0.
 
 ## Completion during a review period
@@ -245,7 +266,7 @@ A completion after the period but before review preparation does not count as pe
 
 ## State at period end
 
-If the complete history supports reconstruction, Shadow ORBIT may determine state at the period boundary from transitions.
+If complete history supports reconstruction, Shadow ORBIT may determine state at the period boundary from transitions.
 
 The current source status must not rewrite historical period-end state.
 
@@ -261,9 +282,11 @@ A work item is eligible for `OVERDUE_HIGH_PRIORITY` only when:
 - the item is known not to be complete in the source snapshot
 - completion status is sufficiently reliable
 
-The rule uses the review cutoff for due-time comparison and the source snapshot for observed work-item state.
+The rule uses the review cutoff for due-time comparison and the selected source snapshot for observed work-item state.
 
-The artifact discloses source freshness.
+When source cutoff and review cutoff differ, source freshness must be disclosed.
+
+The clean synthetic fixtures make the values equal, so there is no synthetic freshness gap.
 
 ## Stalled evaluation
 
@@ -304,7 +327,7 @@ A week-two fixture may identify:
 - prior_fixture_id
 - prior_review_label
 
-Delta evaluation compares explicit prior and current records. It must never query an unspecified "latest" record.
+Delta evaluation compares explicit prior and current records. It must never query an unspecified latest record.
 
 ## Commitments at preparation
 
@@ -326,6 +349,25 @@ Optional research field:
 
 A later completion must not mutate the prepared state that showed the commitment as open.
 
+## `commitment_created` comparison semantics
+
+In version 1, `commitment_created` is a first-appearance comparison delta.
+
+It means:
+
+> The commitment was absent from the prior prepared review and is present in the current prepared review, with an origin or creation record available where applicable.
+
+It does not mean that the commitment was created during the current review period.
+
+For COMMITMENT-001:
+
+- It originated during the 2026-W06 review.
+- It was created at `2026-02-09T10:15:00Z`.
+- It was absent from the prepared 2026-W06 artifact because it was created during that review after preparation.
+- It first appears in the prepared 2026-W07 artifact.
+- The 2026-W07 comparison may therefore emit `commitment_created`.
+- Its Week 1 origin and original creation timestamp remain unchanged.
+
 ## Future Jira adapters
 
 A future restricted Jira export or API adapter must:
@@ -338,37 +380,3 @@ A future restricted Jira export or API adapter must:
 6. Produce the same bounded contract.
 7. Avoid exposing credentials in output or logs.
 8. Avoid making Jira's vendor schema the ORBIT domain model.
-```
-
-
----
-
-**Cursor**
-
-Holding these as Milestone 0 artifacts only. I will not create files or start implementation until you say to start and the remaining docs are in.
-
-**Received (8 files)**
-
-- `fixtures/jira/northstar_clean_week_1.json`
-- `fixtures/jira/northstar_clean_week_2.json`
-- `fixtures/jira/northstar_messy_week_1.json`
-- `fixtures/jira/expected/clean_week_1_review.json`
-- `fixtures/jira/expected/clean_week_2_review.json`
-- `fixtures/jira/expected/messy_week_1_review.json`
-- `docs/shadow-scope.md`
-- `docs/jira-input-contract.md`
-
-**Also received:** the validation summary (intervals, mappings, week-one counts/findings, week-two deltas/findings, historical checks).
-
-**Still expected from the tree**
-
-- `docs/initial-rule-catalog.md`
-- `docs/review-runbook.md`
-- `docs/observation-log.md`
-- `docs/debrief-script.md`
-- `docs/system-change-log.md`
-
-Send those when ready. I will wait for your start instruction.
-
----
-
