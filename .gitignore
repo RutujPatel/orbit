@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Build / dist
+dist/
+build/
+.next/
+out/
+
+# Env and secrets
+.env
+.env.*
+!.env.example
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Logs and coverage
+*.log
+coverage/
+.pytest_cache/
+.coverage

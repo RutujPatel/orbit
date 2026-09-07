@@ -1,0 +1,518 @@
+{
+  "expected_artifact_version": "shadow-review-expected-v1",
+  "fixture_id": "northstar-clean-week-2",
+  "contract_notice": "This expected artifact validates deterministic implementation behavior for a synthetic fixture. It does not validate customer usefulness or product demand.",
+  "review": {
+    "organization_key": "northstar-labs",
+    "organization_name": "Northstar Labs",
+    "team_key": "platform-delivery",
+    "team_name": "Platform Delivery",
+    "project_key": "PLAT",
+    "label": "2026-W07",
+    "starts_at": "2026-02-09T09:00:00Z",
+    "ends_at_exclusive": "2026-02-16T00:00:00Z",
+    "review_cutoff_at": "2026-02-16T09:00:00Z",
+    "source_cutoff_at": "2026-02-16T08:40:00Z",
+    "comparison_available": true,
+    "prior_fixture_id": "northstar-clean-week-1",
+    "prior_review_label": "2026-W06"
+  },
+  "configuration": {
+    "planning_basis": {
+      "key": "manual_fixture_flag",
+      "description": "Synthetic explicit flag only; Jira sprint membership is not assumed to mean planned work."
+    },
+    "stalled_threshold_complete_days": 7,
+    "high_priority_source_values": [
+      "Highest",
+      "High"
+    ]
+  },
+  "what_changed_since_last_review": {
+    "available": true,
+    "work_item_delta_count": 6,
+    "commitment_delta_count": 3,
+    "deltas": [
+      {
+        "delta_key": "became_completed",
+        "delta_version": "1",
+        "subject_type": "work_item",
+        "subject_key": "PLAT-102",
+        "deterministic_explanation": "PLAT-102 moved from In Progress to Done on 13 February and became completed during this review period.",
+        "previous_values": {
+          "status": "In Progress",
+          "status_category": "in_progress"
+        },
+        "current_values": {
+          "status": "Done",
+          "status_category": "done",
+          "resolved_at": "2026-02-13T15:30:00Z"
+        },
+        "evidence_references": [
+          "work_item:PLAT-102",
+          "change:PLAT-102:status:2026-02-13T15:30:00Z"
+        ]
+      },
+      {
+        "delta_key": "newly_unblocked",
+        "delta_version": "1",
+        "subject_type": "work_item",
+        "subject_key": "PLAT-104",
+        "deterministic_explanation": "PLAT-104 changed from Blocked to In Progress on 11 February and was no longer blocked in the current source snapshot.",
+        "previous_values": {
+          "status": "Blocked",
+          "status_category": "blocked"
+        },
+        "current_values": {
+          "status": "In Progress",
+          "status_category": "in_progress"
+        },
+        "evidence_references": [
+          "work_item:PLAT-104",
+          "change:PLAT-104:status:2026-02-11T10:00:00Z"
+        ]
+      },
+      {
+        "delta_key": "due_date_changed",
+        "delta_version": "1",
+        "subject_type": "work_item",
+        "subject_key": "PLAT-104",
+        "deterministic_explanation": "PLAT-104's due date changed from 8 February to 15 February.",
+        "previous_values": {
+          "due_at": "2026-02-08T17:00:00Z"
+        },
+        "current_values": {
+          "due_at": "2026-02-15T17:00:00Z"
+        },
+        "evidence_references": [
+          "work_item:PLAT-104",
+          "change:PLAT-104:due_at:2026-02-11T10:05:00Z"
+        ]
+      },
+      {
+        "delta_key": "newly_overdue",
+        "delta_version": "1",
+        "subject_type": "work_item",
+        "subject_key": "PLAT-112",
+        "deterministic_explanation": "PLAT-112 was not overdue at the previous review cutoff. Its due date passed on 9 February, and it remained incomplete in the current source snapshot.",
+        "previous_values": {
+          "due_at": "2026-02-09T17:00:00Z",
+          "was_overdue_at_prior_review_cutoff": false
+        },
+        "current_values": {
+          "due_at": "2026-02-09T17:00:00Z",
+          "is_overdue_at_current_review_cutoff": true,
+          "status": "In Progress"
+        },
+        "evidence_references": [
+          "work_item:PLAT-112",
+          "review:2026-W06:review_cutoff_at",
+          "review:2026-W07:review_cutoff_at"
+        ]
+      },
+      {
+        "delta_key": "newly_introduced",
+        "delta_version": "1",
+        "subject_type": "work_item",
+        "subject_key": "PLAT-113",
+        "deterministic_explanation": "PLAT-113 was created on 12 February during this review period.",
+        "previous_values": null,
+        "current_values": {
+          "created_at": "2026-02-12T09:00:00Z",
+          "status": "Blocked",
+          "priority": "Highest"
+        },
+        "evidence_references": [
+          "work_item:PLAT-113"
+        ]
+      },
+      {
+        "delta_key": "newly_blocked",
+        "delta_version": "1",
+        "subject_type": "work_item",
+        "subject_key": "PLAT-113",
+        "deterministic_explanation": "PLAT-113 became blocked on 14 February and remained blocked in the current source snapshot.",
+        "previous_values": {
+          "status": "To Do"
+        },
+        "current_values": {
+          "status": "Blocked",
+          "status_category": "blocked",
+          "blocked_since": "2026-02-14T13:00:00Z"
+        },
+        "evidence_references": [
+          "work_item:PLAT-113",
+          "change:PLAT-113:status:2026-02-14T13:00:00Z"
+        ]
+      },
+      {
+        "delta_key": "commitment_created",
+        "delta_version": "1",
+        "subject_type": "commitment",
+        "subject_key": "COMMITMENT-001",
+        "deterministic_explanation": "The commitment 'Obtain an approval date from the external security team' was created during the previous review.",
+        "previous_values": null,
+        "current_values": {
+          "origin_review_label": "2026-W06",
+          "created_at": "2026-02-09T10:15:00Z",
+          "status": "open"
+        },
+        "evidence_references": [
+          "commitment:COMMITMENT-001",
+          "review:2026-W06"
+        ]
+      },
+      {
+        "delta_key": "commitment_newly_overdue",
+        "delta_version": "1",
+        "subject_type": "commitment",
+        "subject_key": "COMMITMENT-001",
+        "deterministic_explanation": "The commitment was due on 12 February and remained open at the 16 February review cutoff.",
+        "previous_values": {
+          "was_overdue_at_prior_review_cutoff": false
+        },
+        "current_values": {
+          "due_at": "2026-02-12T17:00:00Z",
+          "status": "open",
+          "is_overdue_at_current_review_cutoff": true
+        },
+        "evidence_references": [
+          "commitment:COMMITMENT-001",
+          "review:2026-W07:review_cutoff_at"
+        ]
+      },
+      {
+        "delta_key": "commitment_still_open",
+        "delta_version": "1",
+        "subject_type": "commitment",
+        "subject_key": "COMMITMENT-001",
+        "deterministic_explanation": "The commitment remained open when the week-two review was prepared.",
+        "previous_values": {
+          "status": "open"
+        },
+        "current_values": {
+          "status": "open"
+        },
+        "evidence_references": [
+          "commitment:COMMITMENT-001"
+        ]
+      }
+    ],
+    "explicit_non_deltas": [
+      {
+        "subject_key": "PLAT-107",
+        "delta_key": "became_completed",
+        "reason": "PLAT-107 completed at 07:30 on 9 February, before the week-two review period started at 09:00. It was already Done in the prior prepared source snapshot."
+      },
+      {
+        "subject_key": "PLAT-104",
+        "delta_key": "newly_overdue",
+        "reason": "PLAT-104 was already overdue at the prior review cutoff. Its due date changed, but the overdue condition is not newly introduced."
+      }
+    ]
+  },
+  "supporting_facts": {
+    "accepted_work_item_count": 13,
+    "planned_at_period_start_count": 7,
+    "planned_at_period_start_keys": [
+      "PLAT-102",
+      "PLAT-104",
+      "PLAT-105",
+      "PLAT-109",
+      "PLAT-110",
+      "PLAT-111",
+      "PLAT-112"
+    ],
+    "introduced_during_period_count": 1,
+    "introduced_during_period_keys": [
+      "PLAT-113"
+    ],
+    "completed_during_period_count": 1,
+    "completed_during_period_keys": [
+      "PLAT-102"
+    ],
+    "known_incomplete_at_period_end_count": 6,
+    "known_incomplete_at_period_end_keys": [
+      "PLAT-104",
+      "PLAT-105",
+      "PLAT-108",
+      "PLAT-111",
+      "PLAT-112",
+      "PLAT-113"
+    ],
+    "indeterminate_at_period_end_count": 2,
+    "indeterminate_at_period_end_keys": [
+      "PLAT-109",
+      "PLAT-110"
+    ],
+    "blocked_at_source_cutoff_count": 1,
+    "blocked_at_source_cutoff_keys": [
+      "PLAT-113"
+    ],
+    "missing_due_date_count": 5,
+    "missing_due_date_keys": [
+      "PLAT-103",
+      "PLAT-105",
+      "PLAT-106",
+      "PLAT-110",
+      "PLAT-111"
+    ],
+    "manager_facing_completion_percentage": null,
+    "manager_facing_completion_percentage_reason": "The planning basis has not been validated with a real manager."
+  },
+  "what_needs_attention": {
+    "grouped_work_item_count": 4,
+    "underlying_work_item_finding_count": 4,
+    "items": [
+      {
+        "subject_key": "PLAT-104",
+        "title": "Complete authentication rollout",
+        "condition_summary": "High-priority work remains incomplete after its revised due date.",
+        "deterministic_explanation": "PLAT-104's due date was changed to 15 February. It remained in progress in the source state used for the 16 February review.",
+        "material_values": {
+          "priority": "Highest",
+          "priority_band": "high",
+          "status": "In Progress",
+          "status_category": "in_progress",
+          "due_at": "2026-02-15T17:00:00Z",
+          "source_cutoff_at": "2026-02-16T08:40:00Z",
+          "review_cutoff_at": "2026-02-16T09:00:00Z"
+        },
+        "underlying_matches": [
+          {
+            "rule_key": "OVERDUE_HIGH_PRIORITY",
+            "rule_version": "1",
+            "calculation": "priority_band == high AND due_at < review_cutoff_at AND work item is known not to be complete in the source snapshot"
+          }
+        ],
+        "evidence_references": [
+          {
+            "reference": "work_item:PLAT-104",
+            "role": "source_work_item"
+          },
+          {
+            "reference": "change:PLAT-104:due_at:2026-02-11T10:05:00Z",
+            "role": "due_date_change"
+          },
+          {
+            "reference": "review:2026-W07:review_cutoff_at",
+            "role": "evaluation_cutoff"
+          }
+        ],
+        "data_quality_state": "complete",
+        "prior_disposition": {
+          "prior_review_label": "2026-W06",
+          "related_prior_rules": [
+            "BLOCKED_HIGH_PRIORITY",
+            "OVERDUE_HIGH_PRIORITY"
+          ],
+          "product_disposition": "included",
+          "learning_classification": "already_known",
+          "reason": null
+        }
+      },
+      {
+        "subject_key": "PLAT-105",
+        "title": "Choose event-streaming architecture",
+        "condition_summary": "Work continues to remain in progress beyond the configured stalled-work threshold.",
+        "deterministic_explanation": "PLAT-105 remained in progress in the source state used for the review. Its last known relevant status change was on 27 January, more than seven complete days before the 16 February review cutoff.",
+        "material_values": {
+          "status": "In Progress",
+          "status_category": "in_progress",
+          "last_meaningful_status_change_at": "2026-01-27T14:00:00Z",
+          "review_cutoff_at": "2026-02-16T09:00:00Z",
+          "elapsed_complete_days": 19,
+          "stalled_threshold_complete_days": 7
+        },
+        "underlying_matches": [
+          {
+            "rule_key": "STALLED_WORK",
+            "rule_version": "1",
+            "calculation": "status_category == in_progress AND history_complete == true AND floor((review_cutoff_at - last_meaningful_status_change_at) / 24 hours) > 7"
+          }
+        ],
+        "evidence_references": [
+          {
+            "reference": "work_item:PLAT-105",
+            "role": "source_work_item"
+          },
+          {
+            "reference": "change:PLAT-105:status:2026-01-27T14:00:00Z",
+            "role": "last_meaningful_status_transition"
+          }
+        ],
+        "data_quality_state": "complete",
+        "prior_disposition": {
+          "prior_review_label": "2026-W06",
+          "related_prior_rules": [
+            "STALLED_WORK"
+          ],
+          "product_disposition": "not_for_this_week",
+          "learning_classification": "not_relevant",
+          "reason": "Waiting for a scheduled architecture decision.",
+          "manager_message": "Last review, you marked this as not for this week: 'Waiting for a scheduled architecture decision.' The condition still exists."
+        }
+      },
+      {
+        "subject_key": "PLAT-112",
+        "title": "Complete certificate-renewal automation",
+        "condition_summary": "High-priority work remains incomplete after its due date.",
+        "deterministic_explanation": "PLAT-112 was due on 9 February and remained in progress in the source state used for the 16 February review.",
+        "material_values": {
+          "priority": "Highest",
+          "priority_band": "high",
+          "status": "In Progress",
+          "status_category": "in_progress",
+          "due_at": "2026-02-09T17:00:00Z",
+          "review_cutoff_at": "2026-02-16T09:00:00Z"
+        },
+        "underlying_matches": [
+          {
+            "rule_key": "OVERDUE_HIGH_PRIORITY",
+            "rule_version": "1",
+            "calculation": "priority_band == high AND due_at < review_cutoff_at AND work item is known not to be complete in the source snapshot"
+          }
+        ],
+        "evidence_references": [
+          {
+            "reference": "work_item:PLAT-112",
+            "role": "source_work_item"
+          },
+          {
+            "reference": "field:PLAT-112:due_at",
+            "role": "due_date"
+          }
+        ],
+        "data_quality_state": "complete",
+        "prior_disposition": null
+      },
+      {
+        "subject_key": "PLAT-113",
+        "title": "Restore deployment-audit export",
+        "condition_summary": "New high-priority work remains blocked.",
+        "deterministic_explanation": "PLAT-113 was created on 12 February, became blocked on 14 February, and remained blocked in the source state used for the 16 February review.",
+        "material_values": {
+          "priority": "Highest",
+          "priority_band": "high",
+          "status": "Blocked",
+          "status_category": "blocked",
+          "created_at": "2026-02-12T09:00:00Z",
+          "blocked_since": "2026-02-14T13:00:00Z",
+          "due_at": "2026-02-18T17:00:00Z"
+        },
+        "underlying_matches": [
+          {
+            "rule_key": "BLOCKED_HIGH_PRIORITY",
+            "rule_version": "1",
+            "calculation": "priority_band == high AND status_category == blocked at the source cutoff"
+          }
+        ],
+        "evidence_references": [
+          {
+            "reference": "work_item:PLAT-113",
+            "role": "source_work_item"
+          },
+          {
+            "reference": "change:PLAT-113:status:2026-02-14T13:00:00Z",
+            "role": "blocked_status_transition"
+          }
+        ],
+        "data_quality_state": "complete",
+        "prior_disposition": null
+      }
+    ]
+  },
+  "what_orbit_could_not_determine": {
+    "condition_count": 3,
+    "conditions": [
+      {
+        "code": "UNKNOWN_STATUS",
+        "subject_key": "PLAT-109",
+        "manager_message": "PLAT-109 still has the unmapped status 'Awaiting External Validation', so ORBIT could not determine whether it was complete.",
+        "effect": "Completion-dependent findings remain suppressed."
+      },
+      {
+        "code": "PARTIAL_HISTORY",
+        "subject_key": "PLAT-110",
+        "manager_message": "PLAT-110 still has incomplete status history, so ORBIT could not reliably determine how long it had remained in progress.",
+        "effect": "The STALLED_WORK rule remains suppressed."
+      },
+      {
+        "code": "MISSING_DUE_DATES",
+        "subject_key": null,
+        "manager_message": "Five work items have no due date.",
+        "affected_keys": [
+          "PLAT-103",
+          "PLAT-105",
+          "PLAT-106",
+          "PLAT-110",
+          "PLAT-111"
+        ],
+        "effect": "ORBIT cannot evaluate overdue conditions for these items."
+      }
+    ],
+    "suppressed_rule_evaluations": [
+      {
+        "subject_key": "PLAT-109",
+        "rule_key": "OVERDUE_HIGH_PRIORITY",
+        "reason": "The item's completion state is unknown because its status is unmapped."
+      },
+      {
+        "subject_key": "PLAT-110",
+        "rule_key": "STALLED_WORK",
+        "reason": "Relevant status history is incomplete."
+      }
+    ]
+  },
+  "open_and_carried_commitments": {
+    "count": 1,
+    "items": [
+      {
+        "external_key": "COMMITMENT-001",
+        "origin_review_label": "2026-W06",
+        "summary": "Obtain an approval date from the external security team.",
+        "owner": "Maya",
+        "due_at": "2026-02-12T17:00:00Z",
+        "status_at_preparation": "open",
+        "due_state_at_preparation": "overdue",
+        "deterministic_explanation": "This commitment was created during the 2026-W06 review, was due on 12 February, and remained open when the 2026-W07 review was prepared.",
+        "underlying_matches": [
+          {
+            "rule_key": "OVERDUE_COMMITMENT",
+            "rule_version": "1",
+            "calculation": "status == open AND due_at < review_cutoff_at"
+          }
+        ],
+        "evidence_references": [
+          "commitment:COMMITMENT-001",
+          "review:2026-W06",
+          "decision:DECISION-001",
+          "review:2026-W07:review_cutoff_at"
+        ]
+      }
+    ]
+  },
+  "synthetic_human_review_state": {
+    "prepared_state_notice": "The prepared week-two artifact records COMMITMENT-001 as open and overdue. A later human action must not rewrite that prepared appearance.",
+    "finding_feedback": [],
+    "manual_review_items": [],
+    "decisions": [],
+    "post_preparation_events": [
+      {
+        "event_type": "commitment_completed",
+        "subject_key": "COMMITMENT-001",
+        "occurred_during_review_label": "2026-W07",
+        "completion_note": "External security team confirmed approval for 18 February.",
+        "historical_effect": "The commitment's current status may become completed, but its week-one origin and week-two prepared open-and-overdue appearance remain unchanged."
+      }
+    ]
+  },
+  "historical_assertions": [
+    "The week-one review remains unchanged.",
+    "PLAT-104's week-one blocked and overdue findings remain preserved.",
+    "PLAT-107 does not produce a became_completed delta in week two.",
+    "PLAT-105 fires again and displays its prior disposition.",
+    "COMMITMENT-001 is carried forward without copying or mutating its week-one origin.",
+    "Completing COMMITMENT-001 during week two does not rewrite its prepared appearance."
+  ]
+}

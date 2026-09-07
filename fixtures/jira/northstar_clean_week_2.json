@@ -1,0 +1,377 @@
+{
+  "contract_version": "shadow-jira-fixture-v1",
+  "fixture_id": "northstar-clean-week-2",
+  "organization": {
+    "external_key": "northstar-labs",
+    "name": "Northstar Labs"
+  },
+  "team": {
+    "external_key": "platform-delivery",
+    "name": "Platform Delivery"
+  },
+  "project": {
+    "provider": "jira",
+    "site_key": "northstar-jira",
+    "project_key": "PLAT",
+    "name": "Platform Delivery"
+  },
+  "timezone": "Europe/London",
+  "review_period": {
+    "label": "2026-W07",
+    "starts_at": "2026-02-09T09:00:00Z",
+    "ends_at_exclusive": "2026-02-16T00:00:00Z",
+    "review_cutoff_at": "2026-02-16T09:00:00Z",
+    "source_cutoff_at": "2026-02-16T08:40:00Z"
+  },
+  "comparison": {
+    "prior_fixture_id": "northstar-clean-week-1",
+    "prior_review_label": "2026-W06"
+  },
+  "configuration": {
+    "planning_basis": {
+      "key": "manual_fixture_flag",
+      "description": "Synthetic explicit flag only; it does not imply that Jira sprint membership universally means planned work."
+    },
+    "stalled_threshold_complete_days": 7,
+    "due_soon_threshold_complete_days": 2,
+    "status_mapping": {
+      "To Do": "todo",
+      "In Progress": "in_progress",
+      "Blocked": "blocked",
+      "Done": "done"
+    },
+    "priority_mapping": {
+      "Highest": "high",
+      "High": "high",
+      "Medium": "ordinary",
+      "Low": "ordinary"
+    }
+  },
+  "source_completeness": {
+    "scope_complete": true,
+    "history_complete_by_default": true,
+    "notes": "Individual work items may override history completeness."
+  },
+  "work_items": [
+    {
+      "source_id": "10001",
+      "key": "PLAT-101",
+      "title": "Complete service-token rotation",
+      "item_type": "Story",
+      "priority": "High",
+      "status": "Done",
+      "assignee": "Maya",
+      "created_at": "2026-01-28T10:00:00Z",
+      "updated_at": "2026-02-05T16:00:00Z",
+      "resolved_at": "2026-02-05T16:00:00Z",
+      "due_at": "2026-02-07T17:00:00Z",
+      "planned_at_period_start": false,
+      "history_complete": true,
+      "status_at_period_start": "Done",
+      "changes": [
+        {
+          "field": "status",
+          "from": "In Progress",
+          "to": "Done",
+          "changed_at": "2026-02-05T16:00:00Z"
+        }
+      ]
+    },
+    {
+      "source_id": "10002",
+      "key": "PLAT-102",
+      "title": "Publish platform migration checklist",
+      "item_type": "Story",
+      "priority": "Medium",
+      "status": "Done",
+      "assignee": "Noah",
+      "created_at": "2026-01-25T09:30:00Z",
+      "updated_at": "2026-02-13T15:30:00Z",
+      "resolved_at": "2026-02-13T15:30:00Z",
+      "due_at": "2026-02-14T17:00:00Z",
+      "planned_at_period_start": true,
+      "history_complete": true,
+      "status_at_period_start": "In Progress",
+      "changes": [
+        {
+          "field": "status",
+          "from": "To Do",
+          "to": "In Progress",
+          "changed_at": "2026-02-07T11:00:00Z"
+        },
+        {
+          "field": "status",
+          "from": "In Progress",
+          "to": "Done",
+          "changed_at": "2026-02-13T15:30:00Z"
+        }
+      ]
+    },
+    {
+      "source_id": "10003",
+      "key": "PLAT-103",
+      "title": "Fix production token-refresh regression",
+      "item_type": "Bug",
+      "priority": "High",
+      "status": "Done",
+      "assignee": "Iris",
+      "created_at": "2026-02-04T08:30:00Z",
+      "updated_at": "2026-02-06T15:00:00Z",
+      "resolved_at": "2026-02-06T15:00:00Z",
+      "due_at": null,
+      "planned_at_period_start": false,
+      "history_complete": true,
+      "status_at_period_start": "Done",
+      "changes": [
+        {
+          "field": "status",
+          "from": "To Do",
+          "to": "In Progress",
+          "changed_at": "2026-02-04T09:00:00Z"
+        },
+        {
+          "field": "status",
+          "from": "In Progress",
+          "to": "Done",
+          "changed_at": "2026-02-06T15:00:00Z"
+        }
+      ]
+    },
+    {
+      "source_id": "10004",
+      "key": "PLAT-104",
+      "title": "Complete authentication rollout",
+      "item_type": "Story",
+      "priority": "Highest",
+      "status": "In Progress",
+      "assignee": "Maya",
+      "created_at": "2026-01-20T09:00:00Z",
+      "updated_at": "2026-02-11T10:00:00Z",
+      "resolved_at": null,
+      "due_at": "2026-02-15T17:00:00Z",
+      "planned_at_period_start": true,
+      "history_complete": true,
+      "status_at_period_start": "Blocked",
+      "changes": [
+        {
+          "field": "status",
+          "from": "In Progress",
+          "to": "Blocked",
+          "changed_at": "2026-02-04T11:00:00Z"
+        },
+        {
+          "field": "status",
+          "from": "Blocked",
+          "to": "In Progress",
+          "changed_at": "2026-02-11T10:00:00Z"
+        },
+        {
+          "field": "due_at",
+          "from": "2026-02-08T17:00:00Z",
+          "to": "2026-02-15T17:00:00Z",
+          "changed_at": "2026-02-11T10:05:00Z"
+        }
+      ]
+    },
+    {
+      "source_id": "10005",
+      "key": "PLAT-105",
+      "title": "Choose event-streaming architecture",
+      "item_type": "Story",
+      "priority": "Medium",
+      "status": "In Progress",
+      "assignee": "Leo",
+      "created_at": "2026-01-15T10:00:00Z",
+      "updated_at": "2026-01-27T14:00:00Z",
+      "resolved_at": null,
+      "due_at": null,
+      "planned_at_period_start": true,
+      "history_complete": true,
+      "status_at_period_start": "In Progress",
+      "changes": [
+        {
+          "field": "status",
+          "from": "To Do",
+          "to": "In Progress",
+          "changed_at": "2026-01-27T14:00:00Z"
+        }
+      ]
+    },
+    {
+      "source_id": "10006",
+      "key": "PLAT-106",
+      "title": "Add database failover runbook",
+      "item_type": "Story",
+      "priority": "Medium",
+      "status": "Done",
+      "assignee": "Ava",
+      "created_at": "2026-01-29T12:00:00Z",
+      "updated_at": "2026-02-08T23:59:00Z",
+      "resolved_at": "2026-02-08T23:59:00Z",
+      "due_at": null,
+      "planned_at_period_start": false,
+      "history_complete": true,
+      "status_at_period_start": "Done",
+      "changes": [
+        {
+          "field": "status",
+          "from": "In Progress",
+          "to": "Done",
+          "changed_at": "2026-02-08T23:59:00Z"
+        }
+      ]
+    },
+    {
+      "source_id": "10007",
+      "key": "PLAT-107",
+      "title": "Complete audit-event backfill",
+      "item_type": "Story",
+      "priority": "High",
+      "status": "Done",
+      "assignee": "Noah",
+      "created_at": "2026-01-30T09:00:00Z",
+      "updated_at": "2026-02-09T07:30:00Z",
+      "resolved_at": "2026-02-09T07:30:00Z",
+      "due_at": "2026-02-10T17:00:00Z",
+      "planned_at_period_start": false,
+      "history_complete": true,
+      "status_at_period_start": "Done",
+      "changes": [
+        {
+          "field": "status",
+          "from": "In Progress",
+          "to": "Done",
+          "changed_at": "2026-02-09T07:30:00Z"
+        }
+      ]
+    },
+    {
+      "source_id": "10008",
+      "key": "PLAT-108",
+      "title": "Clean up legacy dashboard filters",
+      "item_type": "Task",
+      "priority": "Low",
+      "status": "To Do",
+      "assignee": "Iris",
+      "created_at": "2026-01-22T13:00:00Z",
+      "updated_at": "2026-01-29T10:00:00Z",
+      "resolved_at": null,
+      "due_at": "2026-02-05T17:00:00Z",
+      "planned_at_period_start": false,
+      "history_complete": true,
+      "status_at_period_start": "To Do",
+      "changes": []
+    },
+    {
+      "source_id": "10009",
+      "key": "PLAT-109",
+      "title": "Validate external compliance evidence",
+      "item_type": "Story",
+      "priority": "High",
+      "status": "Awaiting External Validation",
+      "assignee": "Maya",
+      "created_at": "2026-01-24T09:00:00Z",
+      "updated_at": "2026-02-03T12:00:00Z",
+      "resolved_at": null,
+      "due_at": "2026-02-08T17:00:00Z",
+      "planned_at_period_start": true,
+      "history_complete": true,
+      "status_at_period_start": "Awaiting External Validation",
+      "changes": []
+    },
+    {
+      "source_id": "10010",
+      "key": "PLAT-110",
+      "title": "Refactor tenant-routing middleware",
+      "item_type": "Story",
+      "priority": "High",
+      "status": "In Progress",
+      "assignee": "Ava",
+      "created_at": "2026-01-10T09:00:00Z",
+      "updated_at": "2026-01-20T15:00:00Z",
+      "resolved_at": null,
+      "due_at": null,
+      "planned_at_period_start": true,
+      "history_complete": false,
+      "status_at_period_start": null,
+      "changes": []
+    },
+    {
+      "source_id": "10011",
+      "key": "PLAT-111",
+      "title": "Investigate intermittent build failure",
+      "item_type": "Bug",
+      "priority": "High",
+      "status": "To Do",
+      "assignee": null,
+      "created_at": "2026-02-06T10:00:00Z",
+      "updated_at": "2026-02-06T10:00:00Z",
+      "resolved_at": null,
+      "due_at": null,
+      "planned_at_period_start": true,
+      "history_complete": true,
+      "status_at_period_start": "To Do",
+      "changes": []
+    },
+    {
+      "source_id": "10012",
+      "key": "PLAT-112",
+      "title": "Complete certificate-renewal automation",
+      "item_type": "Story",
+      "priority": "Highest",
+      "status": "In Progress",
+      "assignee": "Leo",
+      "created_at": "2026-01-31T09:00:00Z",
+      "updated_at": "2026-02-08T12:00:00Z",
+      "resolved_at": null,
+      "due_at": "2026-02-09T17:00:00Z",
+      "planned_at_period_start": true,
+      "history_complete": true,
+      "status_at_period_start": "In Progress",
+      "changes": [
+        {
+          "field": "status",
+          "from": "To Do",
+          "to": "In Progress",
+          "changed_at": "2026-02-01T10:00:00Z"
+        }
+      ]
+    },
+    {
+      "source_id": "10013",
+      "key": "PLAT-113",
+      "title": "Restore deployment-audit export",
+      "item_type": "Bug",
+      "priority": "Highest",
+      "status": "Blocked",
+      "assignee": "Iris",
+      "created_at": "2026-02-12T09:00:00Z",
+      "updated_at": "2026-02-14T13:00:00Z",
+      "resolved_at": null,
+      "due_at": "2026-02-18T17:00:00Z",
+      "planned_at_period_start": false,
+      "history_complete": true,
+      "status_at_period_start": null,
+      "changes": [
+        {
+          "field": "status",
+          "from": "To Do",
+          "to": "Blocked",
+          "changed_at": "2026-02-14T13:00:00Z"
+        }
+      ]
+    }
+  ],
+  "commitments_at_preparation": [
+    {
+      "external_key": "COMMITMENT-001",
+      "origin_review_label": "2026-W06",
+      "summary": "Obtain an approval date from the external security team.",
+      "owner": "Maya",
+      "due_at": "2026-02-12T17:00:00Z",
+      "status": "open",
+      "created_at": "2026-02-09T10:15:00Z",
+      "normally_lives": "Follow-up email and Maya's personal task list"
+    }
+  ]
+}
