@@ -1,0 +1,43 @@
+{
+  "contract_version": "shadow-prior-review-human-state-v1",
+  "fixture_id": "northstar-clean-week-1-human-state-for-week-2",
+  "organization_key": "northstar-labs",
+  "team_key": "platform-delivery",
+  "prior_review_label": "2026-W06",
+  "current_review_label": "2026-W07",
+  "finding_feedback": [
+    {
+      "subject_key": "PLAT-104",
+      "related_rule_keys": [
+        "BLOCKED_HIGH_PRIORITY",
+        "OVERDUE_HIGH_PRIORITY"
+      ],
+      "product_disposition": "included",
+      "learning_classification": "already_known",
+      "reason": null
+    },
+    {
+      "subject_key": "PLAT-105",
+      "related_rule_keys": [
+        "STALLED_WORK"
+      ],
+      "product_disposition": "not_for_this_week",
+      "learning_classification": "not_relevant",
+      "reason": "Waiting for a scheduled architecture decision."
+    }
+  ],
+  "commitments": [
+    {
+      "external_key": "COMMITMENT-001",
+      "origin_review_label": "2026-W06",
+      "origin_decision_key": "DECISION-001",
+      "summary": "Obtain an approval date from the external security team.",
+      "owner": "Maya",
+      "due_at": "2026-02-12T17:00:00Z",
+      "created_at": "2026-02-09T10:15:00Z",
+      "status_at_prior_review_completion": "open",
+      "status_at_current_preparation": "open",
+      "normally_lives": "Follow-up email and Maya's personal task list"
+    }
+  ]
+}
