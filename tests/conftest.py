@@ -169,3 +169,59 @@ def clean_week_two_expected():
     return load_expected_artifact(
         CLEAN_WEEK_TWO_EXPECTED
     )
+
+
+MESSY_WEEK_ONE_FIXTURE = (
+    REPOSITORY_ROOT
+    / "fixtures"
+    / "jira"
+    / "northstar_messy_week_1.json"
+)
+
+MESSY_WEEK_ONE_EXPECTED = (
+    REPOSITORY_ROOT
+    / "fixtures"
+    / "jira"
+    / "expected"
+    / "messy_week_1_review.json"
+)
+
+
+@pytest.fixture
+def messy_week_one_path() -> Path:
+    return MESSY_WEEK_ONE_FIXTURE
+
+
+@pytest.fixture
+def messy_week_one_expected_path() -> Path:
+    return MESSY_WEEK_ONE_EXPECTED
+
+
+@pytest.fixture
+def messy_week_one_document():
+    return load_fixture(MESSY_WEEK_ONE_FIXTURE)
+
+
+@pytest.fixture
+def messy_week_one_validated(
+    messy_week_one_document,
+):
+    return validate_fixture(messy_week_one_document)
+
+
+@pytest.fixture
+def messy_week_one_normalized(
+    messy_week_one_validated,
+):
+    return normalize_fixture(messy_week_one_validated)
+
+
+@pytest.fixture
+def messy_week_one_actual():
+    from shadow_orbit.acceptance import execute_messy_week_one
+    return execute_messy_week_one(MESSY_WEEK_ONE_FIXTURE)
+
+
+@pytest.fixture
+def messy_week_one_expected():
+    return load_expected_artifact(MESSY_WEEK_ONE_EXPECTED)
