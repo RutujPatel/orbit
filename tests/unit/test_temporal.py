@@ -107,3 +107,72 @@ def test_more_than_seven_complete_days_exceeds_threshold():
 
     assert elapsed_complete_days(start, end) == 8
     assert elapsed_complete_days(start, end) > 7
+
+
+def test_completion_time_respects_status_mapping():
+    from shadow_orbit.temporal import completion_time
+    from shadow_orbit.types import Change, WorkItem
+
+    item = WorkItem(
+        source_id="1",
+        key="TEST-1",
+        title="Test",
+        item_type="Task",
+        source_priority="High",
+        priority_band="high",
+        source_status="Close",
+        status_category="done",
+        assignee=None,
+        created_at=datetime(2026, 2, 1, 9, 0, tzinfo=UTC),
+        updated_at=datetime(2026, 2, 5, 9, 0, tzinfo=UTC),
+        resolved_at=None,
+        due_at=None,
+        planned_at_period_start=True,
+        history_complete=True,
+        source_status_at_period_start=None,
+        changes=(
+            Change(
+                field="status",
+                from_value="In Progress",
+                to_value="Close",
+                changed_at=datetime(2026, 2, 5, 9, 0, tzinfo=UTC),
+            ),
+        ),
+    )
+    completed_at = completion_time(item, status_mapping={"Close": "done"})
+    assert completed_at == datetime(2026, 2, 5, 9, 0, tzinfo=UTC)
+
+
+def test_blocked_since_respects_status_mapping():
+    from shadow_orbit.temporal import blocked_since
+    from shadow_orbit.types import Change, WorkItem
+
+    item = WorkItem(
+        source_id="2",
+        key="TEST-2",
+        title="Test",
+        item_type="Task",
+        source_priority="High",
+        priority_band="high",
+        source_status="Waiting",
+        status_category="blocked",
+        assignee=None,
+        created_at=datetime(2026, 2, 1, 9, 0, tzinfo=UTC),
+        updated_at=datetime(2026, 2, 4, 9, 0, tzinfo=UTC),
+        resolved_at=None,
+        due_at=None,
+        planned_at_period_start=True,
+        history_complete=True,
+        source_status_at_period_start=None,
+        changes=(
+            Change(
+                field="status",
+                from_value="In Progress",
+                to_value="Waiting",
+                changed_at=datetime(2026, 2, 4, 9, 0, tzinfo=UTC),
+            ),
+        ),
+    )
+    blocked_at = blocked_since(item, status_mapping={"Waiting": "blocked"})
+    assert blocked_at == datetime(2026, 2, 4, 9, 0, tzinfo=UTC)
+

@@ -81,3 +81,75 @@ def test_serialization_is_stable(clean_week_one_actual):
     second = serialize_deterministically(clean_week_one_actual)
 
     assert first == second
+
+
+def test_stalled_work_material_values_uses_latest_meaningful_status_change(
+    clean_week_one_normalized,
+):
+    from dataclasses import replace
+    from datetime import datetime, timezone
+    from shadow_orbit.artifact import build_machine_review_artifact
+    from shadow_orbit.types import Change
+
+    plat_105 = next(
+        item for item in clean_week_one_normalized.work_items if item.key == "PLAT-105"
+    )
+    earlier = Change(
+        field="status",
+        from_value="To Do",
+        to_value="In Progress",
+        changed_at=datetime(2026, 1, 15, 10, 0, tzinfo=timezone.utc),
+    )
+    later = Change(
+        field="status",
+        from_value="In Progress",
+        to_value="In Progress",
+        changed_at=datetime(2026, 1, 27, 14, 0, tzinfo=timezone.utc),
+    )
+    updated_105 = replace(plat_105, changes=(earlier, later))
+    updated_items = tuple(
+        updated_105 if item.key == "PLAT-105" else item
+        for item in clean_week_one_normalized.work_items
+    )
+    fixture = replace(clean_week_one_normalized, work_items=updated_items)
+
+    artifact = build_machine_review_artifact(fixture)
+    attention_105 = next(
+        item
+        for item in artifact["what_needs_attention"]["items"]
+        if item["subject_key"] == "PLAT-105"
+    )
+    assert (
+        attention_105["material_values"]["last_meaningful_status_change_at"]
+        == "2026-01-27T14:00:00Z"
+    )
+
+
+def test_blocked_and_overdue_without_blocked_transition_does_not_crash(
+    clean_week_one_normalized,
+):
+    from dataclasses import replace
+    from shadow_orbit.artifact import build_machine_review_artifact
+
+    plat_104 = next(
+        item for item in clean_week_one_normalized.work_items if item.key == "PLAT-104"
+    )
+    updated_104 = replace(plat_104, changes=())
+    updated_items = tuple(
+        updated_104 if item.key == "PLAT-104" else item
+        for item in clean_week_one_normalized.work_items
+    )
+    fixture = replace(clean_week_one_normalized, work_items=updated_items)
+
+    artifact = build_machine_review_artifact(fixture)
+    attention_104 = next(
+        item
+        for item in artifact["what_needs_attention"]["items"]
+        if item["subject_key"] == "PLAT-104"
+    )
+    assert (
+        "ORBIT could not determine when the blocked condition began"
+        in attention_104["deterministic_explanation"]
+    )
+    assert attention_104["material_values"]["blocked_since"] is None
+

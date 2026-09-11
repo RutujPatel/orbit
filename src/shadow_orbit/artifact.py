@@ -114,23 +114,38 @@ def _combined_explanation(
         "OVERDUE_HIGH_PRIORITY",
     }:
         blocked_change = next(
-            change
-            for change in item.changes
-            if (
-                change.field == "status"
-                and change.to_value == "Blocked"
-            )
+            (
+                change
+                for change in item.changes
+                if (
+                    change.field == "status"
+                    and change.to_value == "Blocked"
+                )
+            ),
+            None,
         )
 
-        return (
-            f"{item.key} has been blocked since "
-            f"{blocked_change.changed_at.day} "
-            f"{blocked_change.changed_at.strftime('%B')} and was due "
-            f"on {item.due_at.day} {item.due_at.strftime('%B')}. It "
-            "remained blocked in the source state used for the "
+        due_date = f"{item.due_at.day} {item.due_at.strftime('%B')}"
+        cutoff_date = (
             f"{fixture.review_period.review_cutoff_at.day} "
-            f"{fixture.review_period.review_cutoff_at.strftime('%B')} "
-            "review."
+            f"{fixture.review_period.review_cutoff_at.strftime('%B')}"
+        )
+
+        if blocked_change is not None:
+            return (
+                f"{item.key} has been blocked since "
+                f"{blocked_change.changed_at.day} "
+                f"{blocked_change.changed_at.strftime('%B')} and was due "
+                f"on {due_date}. It "
+                "remained blocked in the source state used for the "
+                f"{cutoff_date} "
+                "review."
+            )
+
+        return (
+            f"{item.key} was blocked in the source state used for the "
+            f"{cutoff_date} review and was due on {due_date}. "
+            "ORBIT could not determine when the blocked condition began."
         )
 
     return matches[0].deterministic_explanation
@@ -161,16 +176,23 @@ def _material_values(
         "OVERDUE_HIGH_PRIORITY",
     }:
         blocked_change = next(
-            change
-            for change in item.changes
-            if change.field == "status" and change.to_value == "Blocked"
+            (
+                change
+                for change in item.changes
+                if change.field == "status" and change.to_value == "Blocked"
+            ),
+            None,
         )
         return {
             "priority": item.source_priority,
             "priority_band": item.priority_band,
             "status": item.source_status,
             "status_category": item.status_category,
-            "blocked_since": iso(blocked_change.changed_at),
+            "blocked_since": (
+                iso(blocked_change.changed_at)
+                if blocked_change is not None
+                else None
+            ),
             "due_at": iso(item.due_at),
             "source_cutoff_at": iso(
                 fixture.review_period.source_cutoff_at
@@ -182,10 +204,14 @@ def _material_values(
 
     if keys == {"STALLED_WORK"}:
         match = matches[0]
-        transition = next(
+        status_changes = [
             change
             for change in item.changes
             if change.field == "status"
+        ]
+        transition = max(
+            status_changes,
+            key=lambda change: change.changed_at,
         )
         elapsed_seconds = int(
             (

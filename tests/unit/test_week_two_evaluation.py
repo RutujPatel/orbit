@@ -166,3 +166,41 @@ def test_week_two_continuity_manager_facing_findings_and_precedence(
         "OVERDUE_HIGH_PRIORITY",
         "BLOCKED_HIGH_PRIORITY",
     ]
+
+
+def test_week_two_blocked_item_without_transition_does_not_raise(
+    clean_week_one_actual,
+    clean_week_one_normalized,
+    clean_week_two_normalized,
+    clean_week_one_human_state,
+):
+    from dataclasses import replace
+    from shadow_orbit.continuity import build_week_two_continuity_artifact
+
+    plat_113 = next(
+        item for item in clean_week_two_normalized.work_items if item.key == "PLAT-113"
+    )
+    updated_113 = replace(plat_113, changes=())
+    updated_items = tuple(
+        updated_113 if item.key == "PLAT-113" else item
+        for item in clean_week_two_normalized.work_items
+    )
+    current = replace(clean_week_two_normalized, work_items=updated_items)
+
+    artifact = build_week_two_continuity_artifact(
+        prior=clean_week_one_normalized,
+        current=current,
+        prior_machine_artifact=clean_week_one_actual,
+        human_state=clean_week_one_human_state,
+    )
+    attention_113 = next(
+        item
+        for item in artifact["what_needs_attention"]["items"]
+        if item["subject_key"] == "PLAT-113"
+    )
+    assert attention_113["subject_key"] == "PLAT-113"
+    assert (
+        "ORBIT could not determine when the blocked condition began"
+        in attention_113["deterministic_explanation"]
+    )
+

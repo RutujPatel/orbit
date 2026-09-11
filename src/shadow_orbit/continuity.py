@@ -190,20 +190,24 @@ def _week_two_grouped_findings(
                     item,
                     to_value="Blocked",
                 )
-                if blocked_change is None:
-                    raise ValueError(
-                        f"{subject_key} has no supported "
-                        "blocked transition."
+                if blocked_change is not None:
+                    deterministic_explanation = (
+                        f"{subject_key} was created on "
+                        f"{_display_date(item.created_at)}, became blocked "
+                        f"on {_display_date(blocked_change.changed_at)}, "
+                        "and remained blocked in the source state used for "
+                        f"the {_display_date(current.review_period.review_cutoff_at)} "
+                        "review."
                     )
-
-                deterministic_explanation = (
-                    f"{subject_key} was created on "
-                    f"{_display_date(item.created_at)}, became blocked "
-                    f"on {_display_date(blocked_change.changed_at)}, "
-                    "and remained blocked in the source state used for "
-                    f"the {_display_date(current.review_period.review_cutoff_at)} "
-                    "review."
-                )
+                else:
+                    deterministic_explanation = (
+                        f"{subject_key} was created on "
+                        f"{_display_date(item.created_at)} and was blocked "
+                        "in the source state used for the "
+                        f"{_display_date(current.review_period.review_cutoff_at)} "
+                        "review. ORBIT could not determine when the blocked "
+                        "condition began."
+                    )
             else:
                 condition_summary = (
                     "High-priority work remains blocked."
@@ -319,18 +323,17 @@ def _week_two_material_values(
             item,
             to_value="Blocked",
         )
-        if blocked_change is None:
-            raise ValueError(
-                f"{item.key} has no supported blocked transition."
-            )
-
         return {
             "priority": item.source_priority,
             "priority_band": item.priority_band,
             "status": item.source_status,
             "status_category": item.status_category,
             "created_at": _iso(item.created_at),
-            "blocked_since": _iso(blocked_change.changed_at),
+            "blocked_since": (
+                _iso(blocked_change.changed_at)
+                if blocked_change is not None
+                else None
+            ),
             "due_at": _iso(item.due_at),
         }
 
@@ -416,20 +419,16 @@ def _week_two_evidence(
             item,
             to_value="Blocked",
         )
-        if blocked_change is None:
-            raise ValueError(
-                f"{item.key} has no supported blocked transition."
+        if blocked_change is not None:
+            evidence.append(
+                {
+                    "reference": (
+                        f"change:{item.key}:status:"
+                        f"{_iso(blocked_change.changed_at)}"
+                    ),
+                    "role": "blocked_status_transition",
+                }
             )
-
-        evidence.append(
-            {
-                "reference": (
-                    f"change:{item.key}:status:"
-                    f"{_iso(blocked_change.changed_at)}"
-                ),
-                "role": "blocked_status_transition",
-            }
-        )
 
     return evidence
 

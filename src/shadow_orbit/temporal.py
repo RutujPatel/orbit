@@ -30,11 +30,18 @@ def is_overdue(
     return due_at < review_cutoff_at
 
 
-def completion_time(item: WorkItem) -> datetime | None:
+def completion_time(
+    item: WorkItem,
+    status_mapping: dict[str, str] | None = None,
+) -> datetime | None:
     done_transitions = [
         change.changed_at
         for change in item.changes
-        if change.field == "status" and change.to_value == "Done"
+        if change.field == "status"
+        and (
+            (status_mapping is not None and status_mapping.get(change.to_value) == "done")
+            or (status_mapping is None and change.to_value == "Done")
+        )
     ]
 
     candidates = done_transitions[:]
@@ -47,8 +54,9 @@ def completion_time(item: WorkItem) -> datetime | None:
 def completed_during_period(
     item: WorkItem,
     period: ReviewPeriod,
+    status_mapping: dict[str, str] | None = None,
 ) -> bool:
-    completed_at = completion_time(item)
+    completed_at = completion_time(item, status_mapping=status_mapping)
     return (
         completed_at is not None
         and is_within_half_open_period(completed_at, period)
@@ -107,10 +115,17 @@ def last_meaningful_status_change(
     return max(status_changes) if status_changes else None
 
 
-def blocked_since(item: WorkItem) -> datetime | None:
+def blocked_since(
+    item: WorkItem,
+    status_mapping: dict[str, str] | None = None,
+) -> datetime | None:
     transitions = [
         change.changed_at
         for change in item.changes
-        if change.field == "status" and change.to_value == "Blocked"
+        if change.field == "status"
+        and (
+            (status_mapping is not None and status_mapping.get(change.to_value) == "blocked")
+            or (status_mapping is None and change.to_value == "Blocked")
+        )
     ]
     return max(transitions) if transitions else None
