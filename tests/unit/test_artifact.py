@@ -119,9 +119,16 @@ def test_stalled_work_material_values_uses_latest_meaningful_status_change(
         for item in artifact["what_needs_attention"]["items"]
         if item["subject_key"] == "PLAT-105"
     )
+    expected_elapsed_seconds = int(
+        (fixture.review_period.review_cutoff_at - later.changed_at).total_seconds()
+    )
     assert (
         attention_105["material_values"]["last_meaningful_status_change_at"]
         == "2026-01-27T14:00:00Z"
+    )
+    assert (
+        attention_105["material_values"]["elapsed_seconds"]
+        == expected_elapsed_seconds
     )
 
 
