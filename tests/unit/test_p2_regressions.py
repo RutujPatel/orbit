@@ -539,3 +539,71 @@ def test_continuity_find_status_change_uses_status_mapping(
     )
 
 
+def test_artifact_combined_blocked_overdue_uses_status_mapping(
+    clean_week_one_normalized,
+):
+    """artifact.py must use status_mapping in _combined_explanation and _material_values for BLOCKED+OVERDUE."""
+    from copy import deepcopy
+    from dataclasses import replace
+    from datetime import datetime, timezone
+    from shadow_orbit.artifact import build_machine_review_artifact
+    from shadow_orbit.types import Change
+
+    alt_doc = deepcopy(clean_week_one_normalized.raw_document)
+    alt_doc["configuration"]["status_mapping"] = {
+        "To Do": "todo",
+        "In Progress": "in_progress",
+        "On Hold": "blocked",
+        "Done": "done",
+    }
+
+    # PLAT-104 is blocked and overdue. Transition it to "On Hold" (blocked).
+    blocked_at = datetime(2026, 2, 4, 11, 0, tzinfo=timezone.utc)
+    plat_104 = next(
+        item
+        for item in clean_week_one_normalized.work_items
+        if item.key == "PLAT-104"
+    )
+    alt_104 = replace(
+        plat_104,
+        source_status="On Hold",
+        status_category="blocked",
+        changes=(
+            Change(
+                field="status",
+                from_value="In Progress",
+                to_value="On Hold",
+                changed_at=blocked_at,
+            ),
+        ),
+    )
+    updated_items = tuple(
+        alt_104 if item.key == "PLAT-104" else item
+        for item in clean_week_one_normalized.work_items
+    )
+    fixture = replace(
+        clean_week_one_normalized,
+        raw_document=alt_doc,
+        work_items=updated_items,
+    )
+
+    artifact = build_machine_review_artifact(fixture)
+    attention_104 = next(
+        item
+        for item in artifact["what_needs_attention"]["items"]
+        if item["subject_key"] == "PLAT-104"
+    )
+
+    # 1. Explanation must include transition date, not the fallback "could not determine"
+    assert "has been blocked since 4 February" in attention_104["deterministic_explanation"], (
+        "Explanation must use transition date for 'On Hold' transition, not fallback. "
+        f"Got: {attention_104['deterministic_explanation']}"
+    )
+
+    # 2. Material values must record blocked_since
+    assert (
+        attention_104["material_values"]["blocked_since"] == "2026-02-04T11:00:00Z"
+    ), f"blocked_since must be recorded, got {attention_104['material_values']['blocked_since']}"
+
+
+

@@ -113,16 +113,30 @@ def _combined_explanation(
         "BLOCKED_HIGH_PRIORITY",
         "OVERDUE_HIGH_PRIORITY",
     }:
-        blocked_change = next(
-            (
-                change
-                for change in item.changes
-                if (
-                    change.field == "status"
-                    and change.to_value == "Blocked"
+        status_mapping = fixture.raw_document["configuration"].get(
+            "status_mapping"
+        )
+        blocked_changes = [
+            change
+            for change in item.changes
+            if (
+                change.field == "status"
+                and (
+                    (
+                        status_mapping is not None
+                        and status_mapping.get(change.to_value) == "blocked"
+                    )
+                    or (
+                        status_mapping is None
+                        and change.to_value == "Blocked"
+                    )
                 )
-            ),
-            None,
+            )
+        ]
+        blocked_change = max(
+            blocked_changes,
+            key=lambda change: change.changed_at,
+            default=None,
         )
 
         due_date = f"{item.due_at.day} {item.due_at.strftime('%B')}"
@@ -175,13 +189,30 @@ def _material_values(
         "BLOCKED_HIGH_PRIORITY",
         "OVERDUE_HIGH_PRIORITY",
     }:
-        blocked_change = next(
-            (
-                change
-                for change in item.changes
-                if change.field == "status" and change.to_value == "Blocked"
-            ),
-            None,
+        status_mapping = fixture.raw_document["configuration"].get(
+            "status_mapping"
+        )
+        blocked_changes = [
+            change
+            for change in item.changes
+            if (
+                change.field == "status"
+                and (
+                    (
+                        status_mapping is not None
+                        and status_mapping.get(change.to_value) == "blocked"
+                    )
+                    or (
+                        status_mapping is None
+                        and change.to_value == "Blocked"
+                    )
+                )
+            )
+        ]
+        blocked_change = max(
+            blocked_changes,
+            key=lambda change: change.changed_at,
+            default=None,
         )
         return {
             "priority": item.source_priority,
