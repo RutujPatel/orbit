@@ -83,6 +83,9 @@ def evaluate_work_item_deltas(
     """Evaluate the six bounded Week 2 work-item delta types."""
     prior_items = _items_by_key(prior)
     current_items = _items_by_key(current)
+    status_mapping = current.raw_document["configuration"][
+        "status_mapping"
+    ]
     deltas: list[dict[str, Any]] = []
 
     for key in sorted(current_items):
@@ -165,7 +168,9 @@ def evaluate_work_item_deltas(
 
             continue
 
-        completed_at = completion_time(current_item)
+        completed_at = completion_time(
+            current_item, status_mapping=status_mapping
+        )
         if (
             _known_incomplete(prior_item)
             and _known_complete(current_item)

@@ -334,7 +334,11 @@ def _week_two_material_values(
                 if blocked_change is not None
                 else None
             ),
-            "due_at": _iso(item.due_at),
+            "due_at": (
+                _iso(item.due_at)
+                if item.due_at is not None
+                else None
+            ),
         }
 
     raise ValueError(

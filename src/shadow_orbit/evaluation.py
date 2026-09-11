@@ -72,7 +72,9 @@ def calculate_supporting_facts(
     completed = sorted(
         item.key
         for item in fixture.work_items
-        if completed_during_period(item, period)
+        if completed_during_period(
+            item, period, status_mapping=status_mapping
+        )
     )
 
     planned_completed = sorted(set(planned) & set(completed))
@@ -150,7 +152,10 @@ def evaluate_blocked_high_priority(
     if item.status_category != "blocked":
         return None
 
-    began_at = blocked_since(item)
+    status_mapping = fixture.raw_document["configuration"][
+        "status_mapping"
+    ]
+    began_at = blocked_since(item, status_mapping=status_mapping)
     review_date = _display_date(
         fixture.review_period.review_cutoff_at
     )
