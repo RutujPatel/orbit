@@ -50,6 +50,9 @@ def _status_transition(
     no_later_than: datetime,
     from_value: str | None = None,
     to_value: str | None = None,
+    from_category: str | None = None,
+    to_category: str | None = None,
+    status_mapping: dict[str, str] | None = None,
 ):
     matches = [
         change
@@ -65,6 +68,22 @@ def _status_transition(
             and (
                 to_value is None
                 or change.to_value == to_value
+            )
+            and (
+                from_category is None
+                or (
+                    status_mapping.get(change.from_value) == from_category
+                    if status_mapping is not None
+                    else change.from_value == "Blocked"
+                )
+            )
+            and (
+                to_category is None
+                or (
+                    status_mapping.get(change.to_value) == to_category
+                    if status_mapping is not None
+                    else change.to_value == "Blocked"
+                )
             )
         )
     ]
@@ -124,7 +143,8 @@ def evaluate_work_item_deltas(
 
             blocked_change = _status_transition(
                 current_item,
-                to_value="Blocked",
+                to_category="blocked",
+                status_mapping=status_mapping,
                 after=prior.review_period.source_cutoff_at,
                 no_later_than=(
                     current.review_period.source_cutoff_at
@@ -217,7 +237,8 @@ def evaluate_work_item_deltas(
 
         unblocked_change = _status_transition(
             current_item,
-            from_value="Blocked",
+            from_category="blocked",
+            status_mapping=status_mapping,
             after=prior.review_period.source_cutoff_at,
             no_later_than=current.review_period.source_cutoff_at,
         )

@@ -87,6 +87,9 @@ def _find_status_change(
     *,
     to_value: str | None = None,
     from_value: str | None = None,
+    to_category: str | None = None,
+    from_category: str | None = None,
+    status_mapping: dict[str, str] | None = None,
 ):
     changes = [
         change
@@ -100,6 +103,22 @@ def _find_status_change(
             and (
                 from_value is None
                 or change.from_value == from_value
+            )
+            and (
+                to_category is None
+                or (
+                    status_mapping.get(change.to_value) == to_category
+                    if status_mapping is not None
+                    else change.to_value == "Blocked"
+                )
+            )
+            and (
+                from_category is None
+                or (
+                    status_mapping.get(change.from_value) == from_category
+                    if status_mapping is not None
+                    else change.from_value == "Blocked"
+                )
             )
         )
     ]
@@ -125,6 +144,9 @@ def _week_two_grouped_findings(
         item.key: item
         for item in current.work_items
     }
+    status_mapping = current.raw_document["configuration"][
+        "status_mapping"
+    ]
     delta_pairs = {
         (delta["subject_key"], delta["delta_key"])
         for delta in work_item_deltas
@@ -188,7 +210,8 @@ def _week_two_grouped_findings(
                 )
                 blocked_change = _find_status_change(
                     item,
-                    to_value="Blocked",
+                    to_category="blocked",
+                    status_mapping=status_mapping,
                 )
                 if blocked_change is not None:
                     deterministic_explanation = (
@@ -319,9 +342,13 @@ def _week_two_material_values(
         }
 
     if rule_key == "BLOCKED_HIGH_PRIORITY":
+        status_mapping = current.raw_document["configuration"][
+            "status_mapping"
+        ]
         blocked_change = _find_status_change(
             item,
-            to_value="Blocked",
+            to_category="blocked",
+            status_mapping=status_mapping,
         )
         return {
             "priority": item.source_priority,
@@ -419,9 +446,13 @@ def _week_two_evidence(
         )
 
     elif rule_key == "BLOCKED_HIGH_PRIORITY":
+        status_mapping = current.raw_document["configuration"][
+            "status_mapping"
+        ]
         blocked_change = _find_status_change(
             item,
-            to_value="Blocked",
+            to_category="blocked",
+            status_mapping=status_mapping,
         )
         if blocked_change is not None:
             evidence.append(
