@@ -1,0 +1,112 @@
+{
+  "contract_version": "shadow-github-fixture-v1",
+  "fixture_id": "messy_github_week_1",
+  "source_instance": {
+    "source_kind": "github",
+    "instance_id": "github.com/northstar"
+  },
+  "observation_context": {
+    "observation_id": "obs-gh-messy-1",
+    "observed_interval_starts_at": "2026-02-02T09:00:00Z",
+    "observed_interval_ends_at_exclusive": "2026-02-09T09:00:00Z",
+    "source_cutoff_at": "2026-02-09T09:00:00Z",
+    "coverage_note": "pagination_complete: false"
+  },
+  "source_completeness": {
+    "repositories_complete": true,
+    "branches_complete": false,
+    "commits_complete": false,
+    "pull_requests_complete": false,
+    "reviews_complete": "unsupported_non_boolean"
+  },
+  "repositories": [
+    {
+      "repo_id": "repo-messy",
+      "owner": "northstar",
+      "name": "northstar-messy",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "main",
+          "head_commit_id": "abc1"
+        },
+        {
+          "name": "dup-branch",
+          "head_commit_id": "abc2"
+        },
+        {
+          "name": "dup-branch",
+          "head_commit_id": "abc3"
+        }
+      ],
+      "commits": [
+        {
+          "sha": "abc1",
+          "message": "Commit with invalid timestamp",
+          "author_login": "bob",
+          "committed_at": "not-a-valid-timestamp"
+        },
+        {
+          "sha": "dup-sha",
+          "message": "First duplicate",
+          "author_login": "bob",
+          "committed_at": "2026-02-03T10:00:00Z"
+        },
+        {
+          "sha": "dup-sha",
+          "message": "Second duplicate",
+          "author_login": "bob",
+          "committed_at": "2026-02-03T10:00:00Z"
+        }
+      ],
+      "pull_requests": [
+        {
+          "number": 201,
+          "title": "Valid PR with invalid merged_at timestamp",
+          "state": "closed",
+          "author_login": "charlie",
+          "created_at": "2026-02-03T12:00:00Z",
+          "merged_at": "invalid-merged-at",
+          "target_branch": "main",
+          "source_branch": "feature/test",
+          "reviews": [
+            {
+              "review_id": "rev-dup",
+              "state": "APPROVED",
+              "reviewer_login": "alice",
+              "submitted_at": "2026-02-04T12:00:00Z"
+            },
+            {
+              "review_id": "rev-dup",
+              "state": "DISMISSED",
+              "reviewer_login": "alice",
+              "submitted_at": "2026-02-04T13:00:00Z"
+            },
+            {
+              "review_id": "rev-valid",
+              "state": "COMMENTED",
+              "reviewer_login": "bob",
+              "submitted_at": "2026-02-04T14:00:00Z"
+            }
+          ]
+        },
+        {
+          "number": 202,
+          "title": "First duplicate PR",
+          "state": "open",
+          "author_login": "david",
+          "created_at": "2026-02-04T10:00:00Z",
+          "reviews": []
+        },
+        {
+          "number": 202,
+          "title": "Second duplicate PR",
+          "state": "open",
+          "author_login": "david",
+          "created_at": "2026-02-04T10:00:00Z",
+          "reviews": []
+        }
+      ]
+    }
+  ]
+}

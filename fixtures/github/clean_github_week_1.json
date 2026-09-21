@@ -1,0 +1,92 @@
+{
+  "contract_version": "shadow-github-fixture-v1",
+  "fixture_id": "clean_github_week_1",
+  "source_instance": {
+    "source_kind": "github",
+    "instance_id": "github.com/northstar"
+  },
+  "observation_context": {
+    "observation_id": "obs-gh-week-1",
+    "observed_interval_starts_at": "2026-02-02T09:00:00Z",
+    "observed_interval_ends_at_exclusive": "2026-02-09T09:00:00Z",
+    "source_cutoff_at": "2026-02-09T09:00:00Z",
+    "coverage_note": "pagination_complete: true"
+  },
+  "source_completeness": {
+    "repositories_complete": true,
+    "branches_complete": true,
+    "commits_complete": true,
+    "pull_requests_complete": true,
+    "reviews_complete": true
+  },
+  "repositories": [
+    {
+      "repo_id": "repo-core",
+      "owner": "northstar",
+      "name": "northstar-core",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "main",
+          "head_commit_id": "c0ffee1"
+        },
+        {
+          "name": "feature/auth",
+          "head_commit_id": "c0ffee2"
+        }
+      ],
+      "commits": [
+        {
+          "sha": "c0ffee1",
+          "message": "Merge pull request #101",
+          "author_login": "lead-dev",
+          "committed_at": "2026-02-05T14:30:00Z"
+        },
+        {
+          "sha": "c0ffee2",
+          "message": "Add token validation",
+          "author_login": "alice",
+          "committed_at": "2026-02-06T10:15:00Z"
+        }
+      ],
+      "pull_requests": [
+        {
+          "number": 101,
+          "title": "Implement core auth middleware",
+          "state": "merged",
+          "author_login": "alice",
+          "created_at": "2026-02-03T11:00:00Z",
+          "merged_at": "2026-02-05T14:30:00Z",
+          "target_branch": "main",
+          "source_branch": "feature/auth-base",
+          "reviews": [
+            {
+              "review_id": "rev-101-1",
+              "state": "APPROVED",
+              "reviewer_login": "bob",
+              "submitted_at": "2026-02-04T16:00:00Z"
+            }
+          ]
+        },
+        {
+          "number": 102,
+          "title": "Add refresh token endpoint",
+          "state": "open",
+          "author_login": "alice",
+          "created_at": "2026-02-06T11:30:00Z",
+          "merged_at": null,
+          "target_branch": "main",
+          "source_branch": "feature/auth",
+          "reviews": [
+            {
+              "review_id": "rev-102-1",
+              "state": "CHANGES_REQUESTED",
+              "reviewer_login": "lead-dev",
+              "submitted_at": "2026-02-07T09:45:00Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
