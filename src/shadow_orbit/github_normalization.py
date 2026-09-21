@@ -280,6 +280,31 @@ def normalize_github_fixture(
                     if pr.get("source_branch") is not None
                     else None
                 ),
+                head_commit_sha=(
+                    str(pr["head_commit_sha"])
+                    if pr.get("head_commit_sha") is not None
+                    else None
+                ),
+                base_commit_sha=(
+                    str(pr["base_commit_sha"])
+                    if pr.get("base_commit_sha") is not None
+                    else None
+                ),
+                head_repository_id=(
+                    str(pr["head_repository_id"])
+                    if pr.get("head_repository_id") is not None
+                    else None
+                ),
+                is_fork=pr.get("is_fork"),
+                pull_request_commit_shas=tuple(
+                    str(entry["sha"])
+                    for entry in (
+                        pr.get("pull_request_commits")
+                        if isinstance(pr.get("pull_request_commits"), list)
+                        else ()
+                    )
+                    if isinstance(entry, dict) and "sha" in entry
+                ),
             )
             observations.append(
                 EvidenceObservation(

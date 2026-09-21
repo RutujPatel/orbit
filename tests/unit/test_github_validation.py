@@ -548,3 +548,95 @@ class TestGitHubValidationIsolation:
             "shadow_orbit.acceptance",
         ):
             assert forbidden not in source, f"github_validation must not import {forbidden}"
+
+
+class TestCSE15PRValidation:
+    """Validation of additive CSE-1.5 PR structural fields."""
+
+    def test_valid_cse15_fields_accepted(self):
+        doc = _make_minimal_document()
+        pr = doc["repositories"][0]["pull_requests"][0]
+        pr["head_commit_sha"] = "sha_head_1"
+        pr["base_commit_sha"] = "sha_base_1"
+        pr["head_repository_id"] = "fork-repo"
+        pr["is_fork"] = True
+        pr["pull_request_commits"] = [{"sha": "sha1"}, {"sha": "sha2"}]
+
+        validated = validate_github_fixture(doc)
+        v_pr = validated.accepted_repositories[0]["pull_requests"][0]
+        assert v_pr["head_commit_sha"] == "sha_head_1"
+        assert v_pr["base_commit_sha"] == "sha_base_1"
+        assert v_pr["head_repository_id"] == "fork-repo"
+        assert v_pr["is_fork"] is True
+        assert len(v_pr["pull_request_commits"]) == 2
+
+    def test_invalid_head_commit_sha_nulled_with_quality_issue(self):
+        doc = _make_minimal_document()
+        doc["repositories"][0]["pull_requests"][0]["head_commit_sha"] = 12345
+        validated = validate_github_fixture(doc)
+        v_pr = validated.accepted_repositories[0]["pull_requests"][0]
+        assert v_pr["head_commit_sha"] is None
+        assert any(
+            q.code == "invalid" and q.subject_scope == "field:head_commit_sha"
+            for q in validated.quality_issues
+        )
+
+    def test_invalid_base_commit_sha_nulled_with_quality_issue(self):
+        doc = _make_minimal_document()
+        doc["repositories"][0]["pull_requests"][0]["base_commit_sha"] = ""
+        validated = validate_github_fixture(doc)
+        v_pr = validated.accepted_repositories[0]["pull_requests"][0]
+        assert v_pr["base_commit_sha"] is None
+        assert any(
+            q.code == "invalid" and q.subject_scope == "field:base_commit_sha"
+            for q in validated.quality_issues
+        )
+
+    def test_invalid_head_repository_id_nulled_with_quality_issue(self):
+        doc = _make_minimal_document()
+        doc["repositories"][0]["pull_requests"][0]["head_repository_id"] = True
+        validated = validate_github_fixture(doc)
+        v_pr = validated.accepted_repositories[0]["pull_requests"][0]
+        assert v_pr["head_repository_id"] is None
+        assert any(
+            q.code == "invalid" and q.subject_scope == "field:head_repository_id"
+            for q in validated.quality_issues
+        )
+
+    def test_invalid_is_fork_nulled_with_quality_issue(self):
+        doc = _make_minimal_document()
+        doc["repositories"][0]["pull_requests"][0]["is_fork"] = "true"  # string, not bool
+        validated = validate_github_fixture(doc)
+        v_pr = validated.accepted_repositories[0]["pull_requests"][0]
+        assert v_pr["is_fork"] is None
+        assert any(
+            q.code == "invalid" and q.subject_scope == "field:is_fork"
+            for q in validated.quality_issues
+        )
+
+    def test_invalid_pull_request_commits_not_array_nulled_with_issue(self):
+        doc = _make_minimal_document()
+        doc["repositories"][0]["pull_requests"][0]["pull_request_commits"] = "not_an_array"
+        validated = validate_github_fixture(doc)
+        v_pr = validated.accepted_repositories[0]["pull_requests"][0]
+        assert v_pr["pull_request_commits"] is None
+        assert any(
+            q.code == "invalid" and q.subject_scope == "collection:pull_request_commits"
+            for q in validated.quality_issues
+        )
+
+    def test_pull_request_commits_invalid_entry_skipped_with_issue(self):
+        doc = _make_minimal_document()
+        doc["repositories"][0]["pull_requests"][0]["pull_request_commits"] = [
+            {"sha": "valid_sha"},
+            "not_a_dict",
+            {"sha": ""},  # empty sha
+        ]
+        validated = validate_github_fixture(doc)
+        v_pr = validated.accepted_repositories[0]["pull_requests"][0]
+        assert len(v_pr["pull_request_commits"]) == 1
+        assert v_pr["pull_request_commits"][0]["sha"] == "valid_sha"
+        assert len([
+            q for q in validated.quality_issues
+            if q.subject_scope == "collection:pull_request_commits"
+        ]) == 2

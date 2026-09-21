@@ -772,6 +772,89 @@ def validate_github_fixture(document: dict[str, Any]) -> ValidatedGitHubFixture:
                                     )
                                 )
 
+                    # ── CSE-1.5 structural association fields ────────────
+                    for sha_opt in ("head_commit_sha", "base_commit_sha"):
+                        if sha_opt in pr and pr[sha_opt] is not None:
+                            if not _is_non_empty_str(pr[sha_opt]):
+                                clean_pr[sha_opt] = None
+                                quality_issues.append(
+                                    QualityIssue(
+                                        code="invalid",
+                                        message=f"{raw_pr_locator}.{sha_opt} must be a non-empty string or null.",
+                                        subject_ref=pr_ref,
+                                        subject_scope=f"field:{sha_opt}",
+                                    )
+                                )
+
+                    if "head_repository_id" in pr and pr["head_repository_id"] is not None:
+                        if not _is_valid_id(pr["head_repository_id"]):
+                            clean_pr["head_repository_id"] = None
+                            quality_issues.append(
+                                QualityIssue(
+                                    code="invalid",
+                                    message=f"{raw_pr_locator}.head_repository_id must be a non-empty string or integer (not boolean) or null.",
+                                    subject_ref=pr_ref,
+                                    subject_scope="field:head_repository_id",
+                                )
+                            )
+                        else:
+                            clean_pr["head_repository_id"] = str(pr["head_repository_id"])
+
+                    if "is_fork" in pr and pr["is_fork"] is not None:
+                        if not isinstance(pr["is_fork"], bool):
+                            clean_pr["is_fork"] = None
+                            quality_issues.append(
+                                QualityIssue(
+                                    code="invalid",
+                                    message=f"{raw_pr_locator}.is_fork must be a boolean or null.",
+                                    subject_ref=pr_ref,
+                                    subject_scope="field:is_fork",
+                                )
+                            )
+                        else:
+                            clean_pr["is_fork"] = pr["is_fork"]
+
+                    if "pull_request_commits" in pr:
+                        if pr["pull_request_commits"] is None:
+                            clean_pr["pull_request_commits"] = []
+                        elif not isinstance(pr["pull_request_commits"], list):
+                            quality_issues.append(
+                                QualityIssue(
+                                    code="invalid",
+                                    message=f"{raw_pr_locator}.pull_request_commits must be an array or null.",
+                                    subject_ref=pr_ref,
+                                    subject_scope="collection:pull_request_commits",
+                                )
+                            )
+                            clean_pr["pull_request_commits"] = None
+                        else:
+                            accepted_prc: list[dict[str, Any]] = []
+                            for prc_idx, prc_entry in enumerate(pr["pull_request_commits"]):
+                                prc_locator = f"{raw_pr_locator}.pull_request_commits[{prc_idx}]"
+                                if not isinstance(prc_entry, dict):
+                                    quality_issues.append(
+                                        QualityIssue(
+                                            code="invalid",
+                                            message=f"{prc_locator} must be an object.",
+                                            subject_ref=pr_ref,
+                                            subject_scope=f"collection:pull_request_commits",
+                                        )
+                                    )
+                                    continue
+                                prc_sha = prc_entry.get("sha")
+                                if not _is_non_empty_str(prc_sha):
+                                    quality_issues.append(
+                                        QualityIssue(
+                                            code="invalid",
+                                            message=f"{prc_locator}.sha must be a non-empty string.",
+                                            subject_ref=pr_ref,
+                                            subject_scope=f"collection:pull_request_commits",
+                                        )
+                                    )
+                                    continue
+                                accepted_prc.append({"sha": str(prc_sha), "_raw_locator": prc_locator})
+                            clean_pr["pull_request_commits"] = accepted_prc
+
                     # ── Reviews ──────────────────────────────────────────
                     if "reviews" in pr:
                         if not isinstance(pr["reviews"], list):

@@ -122,6 +122,10 @@ The `source_completeness` block explicitly captures extraction boundaries so tha
 | `merged_at` | ISO 8601 string | Optional | Yes | Aware timestamp. If invalid: nulled + `QualityIssue(code="invalid")`. |
 | `target_branch`| string | Optional | Yes | Target/base branch name. |
 | `source_branch`| string | Optional | Yes | Source/head branch name. |
+| `head_commit_sha`| string | Optional | Yes | Commit SHA at PR head. Used for `has_head_commit`. |
+| `base_commit_sha`| string | Optional | Yes | Commit SHA at PR base. Used for `has_base_commit`. |
+| `head_repository_id`| string or integer | Optional | Yes | Repository ID for fork PRs. Used for fork-aware `has_head_branch`. |
+| `pull_request_commits`| array | Optional | Yes | List of commit association objects `[{"sha": "..."}]`. Used for `contains_commit`. |
 | `reviews` | array | Optional | No | List of review objects. Defaults to empty array if omitted. |
 
 **Identity Scope:** Scoped by repository identity: `EntityRef(source_instance, "github_pull_request", f"{repo_id}/{number}")`.
@@ -167,8 +171,9 @@ The `source_completeness` block explicitly captures extraction boundaries so tha
    - No Jira key pattern matching (`[A-Z]+-\d+`) or mention extraction occurs.
    - GitHub usernames are preserved as literal strings without mapping to Jira users.
 
-5. **Deferred Features (Later CSE Stages):**
-   - **Explicit PR-to-Commit Associations:** Association objects linking PRs to commit SHAs (`pull_request_commits`) are deferred to CSE-1.5.
-   - **Fork Head/Base Repository References:** Cross-repository references for pull requests originating from forks are deferred to later CSE stages. In CSE-1.3, all PRs are scoped strictly to the host repository.
-   - **Collection-Scoped Coverage Structure:** Granular collection status, observation coverage counts, and omission reasons are deferred to later CSE stages. In CSE-1.3, document-level `source_completeness` boolean flags declare category-level enumeration claims.
+5. **Structural Associations & Deferred Features:**
+   - **Explicit PR-to-Commit Associations (`CSE-1.5`):** Explicit association objects linking PRs to commit SHAs (`pull_request_commits`) establish `contains_commit` relationships.
+   - **Fork Head Repository Reference (`CSE-1.5`):** `head_repository_id` establishes fork repository scoping for `has_head_branch`.
+   - **Explicit Head/Base Commit SHAs (`CSE-1.5`):** `head_commit_sha` and `base_commit_sha` establish `has_head_commit` and `has_base_commit`.
+   - **Collection-Scoped Coverage Structure:** Granular collection status, observation coverage counts, and omission reasons are deferred to later CSE stages. Document-level `source_completeness` boolean flags declare category-level enumeration claims.
 

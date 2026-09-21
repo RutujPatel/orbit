@@ -49,6 +49,21 @@ QualityCode = Literal[
 ]
 """Structured quality codes.  No severity, confidence, or risk."""
 
+RelationshipKind = Literal[
+    "belongs_to_repository",
+    "review_of",
+    "has_head_branch",
+    "has_base_branch",
+    "contains_commit",
+    "has_head_commit",
+    "has_base_commit",
+]
+"""Closed set of structural relationship types resolved in CSE-1.5."""
+
+RelationshipBasis = Literal["structural_association"]
+"""How a relationship was established.  CSE-1.5 uses only
+structural_association.  No temporal, semantic, or inference bases."""
+
 
 # ── Identity ─────────────────────────────────────────────────────────
 
@@ -249,9 +264,15 @@ class GitHubCommitState:
 
 @dataclass(frozen=True, slots=True)
 class GitHubPullRequestState:
-    """Evidence-layer stub for a GitHub pull request's observed state.
+    """Evidence-layer representation of a GitHub pull request's observed state.
 
-    Fields will be populated in CSE-1.3.
+    CSE-1.3 core fields + CSE-1.5 structural association fields.
+
+    Fork-aware scoping:
+        head_repository_id identifies the repository that owns the
+        source/head branch.  When absent, the head branch's repository
+        scope is unknown and has_head_branch produces an unresolved
+        reference rather than assuming the host repository.
     """
 
     number: int
@@ -262,6 +283,11 @@ class GitHubPullRequestState:
     merged_at: datetime | None = None
     target_branch: str | None = None
     source_branch: str | None = None
+    head_commit_sha: str | None = None
+    base_commit_sha: str | None = None
+    head_repository_id: str | None = None
+    is_fork: bool | None = None
+    pull_request_commit_shas: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True, slots=True)
@@ -320,6 +346,51 @@ class EvidenceBundle:
     observation_contexts: tuple[ObservationContext, ...]
     observations: tuple[EvidenceObservation, ...] = ()
     quality_issues: tuple[QualityIssue, ...] = ()
+
+
+# ── Structural relationships ─────────────────────────────────────────
+
+@dataclass(frozen=True, slots=True)
+class EvidenceRelationship:
+    """A resolved structural relationship between two observed entities.
+
+    Both subject and object must have accepted EvidenceObservation
+    instances.  The observation IDs explicitly identify the observation
+    evidence supporting each endpoint.
+
+    Every relationship has supporting provenance identifying the source
+    record/field or structural nesting that established the edge.
+    """
+
+    subject_ref: EntityRef
+    object_ref: EntityRef
+    kind: RelationshipKind
+    basis: RelationshipBasis
+    subject_observation_id: str
+    object_observation_id: str
+    provenance_refs: tuple[ProvenanceRef, ...]
+    quality_issues: tuple[QualityIssue, ...] = ()
+
+
+@dataclass(frozen=True, slots=True)
+class UnresolvedReference:
+    """Evidence that a structural reference could not be resolved.
+
+    Emitted when a source record references an entity that has no
+    corresponding accepted EvidenceObservation (missing from fixture,
+    quarantined, or ambiguous).
+
+    This does NOT claim the entity does not exist in the source system.
+    It records that the entity was not observed in the current fixture.
+    """
+
+    source_ref: EntityRef
+    source_observation_id: str
+    target_entity_kind: str
+    target_identifier: str
+    relationship_kind: RelationshipKind
+    reason: str
+    provenance_refs: tuple[ProvenanceRef, ...]
 
 
 # ── Serialization ────────────────────────────────────────────────────
@@ -519,3 +590,42 @@ def serialize_evidence_bundle(
             for q in sorted_quality
         ]
     return result
+
+
+def serialize_evidence_relationship(
+    rel: EvidenceRelationship,
+) -> dict[str, Any]:
+    """Serialize an EvidenceRelationship to a JSON-safe dict."""
+    result: dict[str, Any] = {
+        "subject_ref": serialize_entity_ref(rel.subject_ref),
+        "object_ref": serialize_entity_ref(rel.object_ref),
+        "kind": rel.kind,
+        "basis": rel.basis,
+        "subject_observation_id": rel.subject_observation_id,
+        "object_observation_id": rel.object_observation_id,
+        "provenance_refs": [
+            serialize_provenance_ref(p) for p in rel.provenance_refs
+        ],
+    }
+    if rel.quality_issues:
+        result["quality_issues"] = [
+            serialize_quality_issue(q) for q in rel.quality_issues
+        ]
+    return result
+
+
+def serialize_unresolved_reference(
+    unres: UnresolvedReference,
+) -> dict[str, Any]:
+    """Serialize an UnresolvedReference to a JSON-safe dict."""
+    return {
+        "source_ref": serialize_entity_ref(unres.source_ref),
+        "source_observation_id": unres.source_observation_id,
+        "target_entity_kind": unres.target_entity_kind,
+        "target_identifier": unres.target_identifier,
+        "relationship_kind": unres.relationship_kind,
+        "reason": unres.reason,
+        "provenance_refs": [
+            serialize_provenance_ref(p) for p in unres.provenance_refs
+        ],
+    }
