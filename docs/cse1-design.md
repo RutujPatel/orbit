@@ -252,7 +252,7 @@ CSE-1 does NOT:
 | CSE-1.4 | Additive Jira evidence wrapper | ✅ |
 | CSE-1.5 | Structural relationships | ✅ |
 | CSE-1.6 | Explicit Jira mentions (configured lexical policy) | ✅ |
-| CSE-1.7 | Cross-system manifest/orchestration + EvidenceBundle | ⏸ |
+| CSE-1.7 | Cross-system manifest/orchestration + EvidenceBundle | ✅ |
 | CSE-1.8 | Full compatibility + research-safety checkpoint | ⏸ |
 
 Each stage requires review before the next is authorized.

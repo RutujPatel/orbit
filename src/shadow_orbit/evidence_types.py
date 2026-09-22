@@ -339,14 +339,22 @@ class EvidenceObservation:
 class EvidenceBundle:
     """Top-level container for cross-system evidence.
 
-    Not fully wired until CSE-1.7.  The type exists as the structural
-    target so that intermediate stages can build toward it.
+    Assembled by CSE-1.7 from independently produced Jira and GitHub
+    evidence.  This is a container of evidence, not an intelligence
+    object.  No scoring, severity, confidence, risk, recommendations,
+    or semantic inference.
+
+    Determinism: Equivalent input produces equivalent canonical output.
+    All collections are immutable tuples.  Serialization uses canonical
+    sort orders independent of input ordering.
     """
 
     bundle_id: str
     bundle_version: str
     observation_contexts: tuple[ObservationContext, ...]
     observations: tuple[EvidenceObservation, ...] = ()
+    relationships: tuple[EvidenceRelationship, ...] = ()
+    unresolved_references: tuple[UnresolvedReference, ...] = ()
     quality_issues: tuple[QualityIssue, ...] = ()
 
 
@@ -552,7 +560,10 @@ def serialize_evidence_bundle(
 ) -> dict[str, Any]:
     """Serialize an EvidenceBundle to a deterministic JSON-safe dict.
 
-    Observations and contexts are sorted for deterministic output.
+    Observations, contexts, relationships, unresolved references, and quality
+    issues are sorted for deterministic output.
+    Empty relationships, unresolved_references, and quality_issues are
+    omitted for sparse, backward-compatible output.
     No system-clock-generated fields are included.
     """
     sorted_contexts = sorted(
@@ -568,6 +579,27 @@ def serialize_evidence_bundle(
             o.entity_ref.source_instance.instance_id,
             o.entity_ref.entity_kind,
             o.entity_ref.entity_id,
+        ),
+    )
+    sorted_relationships = sorted(
+        bundle.relationships,
+        key=lambda r: (
+            r.kind,
+            r.basis,
+            r.subject_ref.entity_id,
+            r.object_ref.entity_id,
+            r.subject_observation_id,
+            r.object_observation_id,
+        ),
+    )
+    sorted_unresolved = sorted(
+        bundle.unresolved_references,
+        key=lambda u: (
+            u.relationship_kind,
+            u.source_ref.entity_id,
+            u.target_entity_kind,
+            u.target_identifier,
+            u.reason,
         ),
     )
     sorted_quality = sorted(
@@ -586,6 +618,16 @@ def serialize_evidence_bundle(
             for o in sorted_observations
         ],
     }
+    if sorted_relationships:
+        result["relationships"] = [
+            serialize_evidence_relationship(r)
+            for r in sorted_relationships
+        ]
+    if sorted_unresolved:
+        result["unresolved_references"] = [
+            serialize_unresolved_reference(u)
+            for u in sorted_unresolved
+        ]
     if sorted_quality:
         result["quality_issues"] = [
             serialize_quality_issue(q)
