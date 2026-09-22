@@ -57,12 +57,14 @@ RelationshipKind = Literal[
     "contains_commit",
     "has_head_commit",
     "has_base_commit",
+    "mentions",
 ]
-"""Closed set of structural relationship types resolved in CSE-1.5."""
+"""Closed set of relationship types resolved across CSE-1.5 and CSE-1.6."""
 
-RelationshipBasis = Literal["structural_association"]
-"""How a relationship was established.  CSE-1.5 uses only
-structural_association.  No temporal, semantic, or inference bases."""
+RelationshipBasis = Literal["structural_association", "lexical_match"]
+"""How a relationship was established. CSE-1.5 uses structural_association.
+CSE-1.6 uses lexical_match for explicit textual mentions.
+No temporal, semantic, or inference bases."""
 
 
 # ── Identity ─────────────────────────────────────────────────────────

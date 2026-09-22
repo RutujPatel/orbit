@@ -145,18 +145,19 @@ An entity may appear in multiple observations with stable identity.
 
 ---
 
-## 6. Relationship Semantics (Future — CSE-1.5+)
+## 6. Relationship Semantics (CSE-1.5 & CSE-1.6)
 
-Relationships will be explicit, typed, and provenance-bearing.
+Relationships are explicit, typed, and provenance-bearing.
 
-A text match (e.g., "GG-123" appearing in a PR description)
-proves only the text match — not business association,
+- CSE-1.5 establishes structural relationships (`belongs_to_repository`, `review_of`, `has_head_branch`, `has_base_branch`, `contains_commit`, `has_head_commit`, `has_base_commit`) under `basis="structural_association"`.
+- CSE-1.6 establishes explicit textual mentions (`mentions`) under `basis="lexical_match"` via a configured lexical policy.
+
+A text match (e.g., "PLAT-101" appearing in a PR title or commit message)
+proves only the literal text match — not business association,
 implementation, completion, approval, or deployment.
 
-"mentions" remains literal.
-
-Relationships will be introduced in CSE-1.5/CSE-1.6 and are
-not implemented in the foundation.
+"mentions" remains strictly literal. No scoring, severity, confidence, or
+semantic inference.
 
 ---
 
@@ -246,11 +247,11 @@ CSE-1 does NOT:
 | Stage | Purpose | Status |
 |-------|---------|--------|
 | CSE-1.1 | Contract & compatibility checkpoint | ✅ |
-| CSE-1.2 | Identity, observation, provenance foundation | 🔧 |
-| CSE-1.3 | GitHub typed entities + validation + normalization | ⏸ |
-| CSE-1.4 | Additive Jira evidence wrapper | ⏸ |
-| CSE-1.5 | Structural relationships | ⏸ |
-| CSE-1.6 | Explicit Jira mentions (configured lexical policy) | ⏸ |
+| CSE-1.2 | Identity, observation, provenance foundation | ✅ |
+| CSE-1.3 | GitHub typed entities + validation + normalization | ✅ |
+| CSE-1.4 | Additive Jira evidence wrapper | ✅ |
+| CSE-1.5 | Structural relationships | ✅ |
+| CSE-1.6 | Explicit Jira mentions (configured lexical policy) | ✅ |
 | CSE-1.7 | Cross-system manifest/orchestration + EvidenceBundle | ⏸ |
 | CSE-1.8 | Full compatibility + research-safety checkpoint | ⏸ |
 

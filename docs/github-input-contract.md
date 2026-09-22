@@ -166,14 +166,16 @@ The `source_completeness` block explicitly captures extraction boundaries so tha
    `ProvenanceRef.record_locator` MUST address the **original raw fixture document** using 0-based indexing before any validation or quarantine filtering.
    Example: `repositories[0].pull_requests[1].reviews[0]`.
 
-4. **Source Independence:**
+4. **Source Independence & Cross-System Mentions:**
    - GitHub pull requests are NOT Jira WorkItems.
-   - No Jira key pattern matching (`[A-Z]+-\d+`) or mention extraction occurs.
+   - GitHub normalization preserves PR titles, commit messages, and branch names as literal text without extracting Jira mentions during ingestion.
    - GitHub usernames are preserved as literal strings without mapping to Jira users.
+   - In CSE-1.6, explicit textual Jira mentions across inspected fields (`title`, `source_branch`, `target_branch`, `message`, `name`) are resolved by a dedicated resolver (`github_mentions.py`) under a configured lexical policy (`basis="lexical_match"`), producing literal evidence without semantic inference.
 
-5. **Structural Associations & Deferred Features:**
+5. **Structural Associations & Mentions:**
    - **Explicit PR-to-Commit Associations (`CSE-1.5`):** Explicit association objects linking PRs to commit SHAs (`pull_request_commits`) establish `contains_commit` relationships.
    - **Fork Head Repository Reference (`CSE-1.5`):** `head_repository_id` establishes fork repository scoping for `has_head_branch`.
    - **Explicit Head/Base Commit SHAs (`CSE-1.5`):** `head_commit_sha` and `base_commit_sha` establish `has_head_commit` and `has_base_commit`.
+   - **Explicit Jira Mentions (`CSE-1.6`):** `resolve_github_jira_mentions()` resolves explicit textual Jira mentions against accepted Jira observations under a configured `MentionLexicalPolicy`.
    - **Collection-Scoped Coverage Structure:** Granular collection status, observation coverage counts, and omission reasons are deferred to later CSE stages. Document-level `source_completeness` boolean flags declare category-level enumeration claims.
 
