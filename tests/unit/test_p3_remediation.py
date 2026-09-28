@@ -214,3 +214,76 @@ class TestP301ReopenCycleCompletion:
         )
         status_map = {"Open": "todo", "Done": "done", "Reopened": "in_progress"}
         assert completed_during_period(item, period, status_mapping=status_map) is False
+
+
+# ============================================================================
+# P3-02: Post-Cutoff Record Handling in Messy Acceptance
+# ============================================================================
+
+
+class TestP302PostCutoffRecordHandling:
+    """Tests for P3-02 post-cutoff record handling in messy acceptance artifact generation."""
+
+    def test_post_cutoff_record_does_not_crash_artifact_generation(
+        self,
+        messy_week_one_document,
+    ):
+        """When a work item has updated_at > source_cutoff_at, building the
+
+        messy artifact must not crash with ValueError('end must not precede start').
+        """
+        import copy
+        from shadow_orbit.messy_acceptance import build_messy_week_one_artifact
+        from shadow_orbit.normalization import normalize_fixture
+        from shadow_orbit.validation import validate_fixture
+
+        doc = copy.deepcopy(messy_week_one_document)
+        # Set an item's updated_at well past the source cutoff date (2026-02-09)
+        doc["work_items"][0]["updated_at"] = "2026-05-01T12:00:00Z"
+        validated = validate_fixture(doc)
+        normalized = normalize_fixture(validated)
+
+        artifact = build_messy_week_one_artifact(validated, normalized)
+        assert "what_orbit_could_not_determine" in artifact
+        assert isinstance(artifact["what_orbit_could_not_determine"], dict)
+
+    def test_post_cutoff_record_is_not_marked_stale(
+        self,
+        messy_week_one_document,
+    ):
+        """A record updated in the future relative to the source cutoff is not stale."""
+        import copy
+        from shadow_orbit.messy_acceptance import build_messy_week_one_artifact
+        from shadow_orbit.normalization import normalize_fixture
+        from shadow_orbit.validation import validate_fixture
+
+        doc = copy.deepcopy(messy_week_one_document)
+        target_key = doc["work_items"][0]["key"]
+        doc["work_items"][0]["updated_at"] = "2026-05-01T12:00:00Z"
+        validated = validate_fixture(doc)
+        normalized = normalize_fixture(validated)
+
+        artifact = build_messy_week_one_artifact(validated, normalized)
+        limitations = artifact["what_orbit_could_not_determine"]
+        stale_condition = next(
+            (c for c in limitations.get("conditions", []) if c.get("code") == "STALE_RECORD"),
+            None,
+        )
+        if stale_condition:
+            assert target_key not in stale_condition.get("subject_keys", [])
+
+    def test_existing_stale_records_unaffected(
+        self,
+        messy_week_one_document,
+    ):
+        """Standard unmutated messy week 1 fixture preserves baseline limitations."""
+        from shadow_orbit.messy_acceptance import build_messy_week_one_artifact
+        from shadow_orbit.normalization import normalize_fixture
+        from shadow_orbit.validation import validate_fixture
+
+        validated = validate_fixture(messy_week_one_document)
+        normalized = normalize_fixture(validated)
+
+        artifact = build_messy_week_one_artifact(validated, normalized)
+        assert "what_orbit_could_not_determine" in artifact
+

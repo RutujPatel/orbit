@@ -457,7 +457,8 @@ def _build_messy_limitations(
         item.key
         for item in items
         if (
-            elapsed_complete_days(item.updated_at, source_cutoff)
+            item.updated_at <= source_cutoff
+            and elapsed_complete_days(item.updated_at, source_cutoff)
             >= _STALE_THRESHOLD_COMPLETE_DAYS
         )
     )
