@@ -402,3 +402,112 @@ class TestP303BooleanPrimitiveTypeSafety:
             assert len(quarantined) == 1, f"Expected {bad_val!r} for planned to be quarantined"
 
 
+# ============================================================================
+# P3-04: Chronological Coherence Enforcement
+# ============================================================================
+
+
+class TestP304ChronologicalCoherence:
+    """Tests for P3-04 chronological coherence enforcement in validation."""
+
+    def test_updated_before_created_quarantined(
+        self,
+        clean_week_one_document,
+    ):
+        """A record where updated_at < created_at must be quarantined with CHRONOLOGICAL_INCOHERENCE."""
+        import copy
+        from shadow_orbit.validation import validate_fixture
+
+        doc = copy.deepcopy(clean_week_one_document)
+        target_key = doc["work_items"][0]["key"]
+        doc["work_items"][0]["created_at"] = "2021-05-10T10:00:00Z"
+        doc["work_items"][0]["updated_at"] = "2021-05-01T10:00:00Z"
+
+        result = validate_fixture(doc)
+        quarantined = [q for q in result.quarantined_records if q.source_key == target_key]
+        assert len(quarantined) == 1
+        assert quarantined[0].reason_code == "CHRONOLOGICAL_INCOHERENCE"
+        assert "precedes created_at" in quarantined[0].reason
+
+    def test_updated_equal_created_accepted(
+        self,
+        clean_week_one_document,
+    ):
+        """A record where updated_at == created_at must be accepted."""
+        import copy
+        from shadow_orbit.validation import validate_fixture
+
+        doc = copy.deepcopy(clean_week_one_document)
+        target_key = doc["work_items"][0]["key"]
+        doc["work_items"][0]["created_at"] = "2021-05-10T10:00:00Z"
+        doc["work_items"][0]["updated_at"] = "2021-05-10T10:00:00Z"
+
+        result = validate_fixture(doc)
+        quarantined = [q for q in result.quarantined_records if q.source_key == target_key]
+        assert len(quarantined) == 0
+
+    def test_updated_after_created_accepted(
+        self,
+        clean_week_one_document,
+    ):
+        """Standard record with updated_at > created_at is accepted."""
+        import copy
+        from shadow_orbit.validation import validate_fixture
+
+        doc = copy.deepcopy(clean_week_one_document)
+        target_key = doc["work_items"][0]["key"]
+        doc["work_items"][0]["created_at"] = "2021-05-10T10:00:00Z"
+        doc["work_items"][0]["updated_at"] = "2021-05-10T10:01:00Z"
+
+        result = validate_fixture(doc)
+        quarantined = [q for q in result.quarantined_records if q.source_key == target_key]
+        assert len(quarantined) == 0
+
+    def test_adversarial_microsecond_incoherence(
+        self,
+        clean_week_one_document,
+    ):
+        """Even a 1-microsecond backward timestamp must be quarantined."""
+        import copy
+        from shadow_orbit.validation import validate_fixture
+
+        doc = copy.deepcopy(clean_week_one_document)
+        target_key = doc["work_items"][0]["key"]
+        doc["work_items"][0]["created_at"] = "2021-05-10T10:00:00.000002Z"
+        doc["work_items"][0]["updated_at"] = "2021-05-10T10:00:00.000001Z"
+
+        result = validate_fixture(doc)
+        quarantined = [q for q in result.quarantined_records if q.source_key == target_key]
+        assert len(quarantined) == 1
+        assert quarantined[0].reason_code == "CHRONOLOGICAL_INCOHERENCE"
+
+    def test_adversarial_timezone_offsets(
+        self,
+        clean_week_one_document,
+    ):
+        """Chronological comparison must be normalized across differing timezone offsets."""
+        import copy
+        from shadow_orbit.validation import validate_fixture
+
+        # 12:00:00+05:30 is 06:30:00 UTC.
+        # Updated at 07:00:00Z is after created -> Accepted.
+        doc1 = copy.deepcopy(clean_week_one_document)
+        target_key = doc1["work_items"][0]["key"]
+        doc1["work_items"][0]["created_at"] = "2021-05-10T12:00:00+05:30"
+        doc1["work_items"][0]["updated_at"] = "2021-05-10T07:00:00Z"
+
+        res1 = validate_fixture(doc1)
+        assert len([q for q in res1.quarantined_records if q.source_key == target_key]) == 0
+
+        # Updated at 06:00:00Z is before created (06:30:00 UTC) -> Quarantined.
+        doc2 = copy.deepcopy(clean_week_one_document)
+        doc2["work_items"][0]["created_at"] = "2021-05-10T12:00:00+05:30"
+        doc2["work_items"][0]["updated_at"] = "2021-05-10T06:00:00Z"
+
+        res2 = validate_fixture(doc2)
+        quarantined2 = [q for q in res2.quarantined_records if q.source_key == target_key]
+        assert len(quarantined2) == 1
+        assert quarantined2[0].reason_code == "CHRONOLOGICAL_INCOHERENCE"
+
+
+

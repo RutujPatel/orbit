@@ -245,10 +245,10 @@ def validate_fixture(document: dict[str, Any]) -> ValidatedFixture:
             continue
 
         try:
-            parse_aware_datetime(
+            created_dt = parse_aware_datetime(
                 item["created_at"], f"{source_key}.created_at"
             )
-            parse_aware_datetime(
+            updated_dt = parse_aware_datetime(
                 item["updated_at"], f"{source_key}.updated_at"
             )
 
@@ -279,6 +279,20 @@ def validate_fixture(document: dict[str, Any]) -> ValidatedFixture:
                     source_id=source_id,
                     reason_code="INVALID_REQUIRED_TIMESTAMP",
                     reason=str(exc),
+                )
+            )
+            continue
+
+        if updated_dt < created_dt:
+            quarantined.append(
+                QuarantinedRecord(
+                    source_key=source_key,
+                    source_id=source_id,
+                    reason_code="CHRONOLOGICAL_INCOHERENCE",
+                    reason=(
+                        f"Record updated_at ({item['updated_at']}) precedes "
+                        f"created_at ({item['created_at']})."
+                    ),
                 )
             )
             continue
