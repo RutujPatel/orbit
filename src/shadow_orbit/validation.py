@@ -283,6 +283,19 @@ def validate_fixture(document: dict[str, Any]) -> ValidatedFixture:
             )
             continue
 
+        if type(item.get("history_complete")) is not bool:
+            quarantined.append(
+                QuarantinedRecord(
+                    source_key=source_key,
+                    source_id=source_id,
+                    reason_code="INVALID_PRIMITIVE_TYPE",
+                    reason=(
+                        f"Field 'history_complete' must be a strict boolean primitive (got {item.get('history_complete')!r})."
+                    ),
+                )
+            )
+            continue
+
         accepted_item = deepcopy(item)
 
         for optional_field in ("resolved_at", "due_at"):
@@ -307,7 +320,7 @@ def validate_fixture(document: dict[str, Any]) -> ValidatedFixture:
                 )
 
         planned = accepted_item["planned_at_period_start"]
-        if planned not in (True, False, None):
+        if planned is not None and type(planned) is not bool:
             quarantined.append(
                 QuarantinedRecord(
                     source_key=source_key,

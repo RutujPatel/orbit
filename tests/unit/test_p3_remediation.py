@@ -287,3 +287,118 @@ class TestP302PostCutoffRecordHandling:
         artifact = build_messy_week_one_artifact(validated, normalized)
         assert "what_orbit_could_not_determine" in artifact
 
+
+# ============================================================================
+# P3-03: Strict Boolean Primitive Type Safety
+# ============================================================================
+
+
+class TestP303BooleanPrimitiveTypeSafety:
+    """Tests for P3-03 strict boolean primitive type safety in validation."""
+
+    def test_boolean_field_string_false_quarantined(
+        self,
+        clean_week_one_document,
+    ):
+        """String 'false' for history_complete must be quarantined, not coerced to True."""
+        import copy
+        from shadow_orbit.validation import validate_fixture
+
+        doc = copy.deepcopy(clean_week_one_document)
+        target_key = doc["work_items"][0]["key"]
+        doc["work_items"][0]["history_complete"] = "false"
+
+        result = validate_fixture(doc)
+        quarantined = [q for q in result.quarantined_records if q.source_key == target_key]
+        assert len(quarantined) == 1
+        assert quarantined[0].reason_code == "INVALID_PRIMITIVE_TYPE"
+        assert "history_complete" in quarantined[0].reason
+
+    def test_boolean_field_string_true_quarantined(
+        self,
+        clean_week_one_document,
+    ):
+        """String 'true' for history_complete must be quarantined."""
+        import copy
+        from shadow_orbit.validation import validate_fixture
+
+        doc = copy.deepcopy(clean_week_one_document)
+        target_key = doc["work_items"][0]["key"]
+        doc["work_items"][0]["history_complete"] = "true"
+
+        result = validate_fixture(doc)
+        quarantined = [q for q in result.quarantined_records if q.source_key == target_key]
+        assert len(quarantined) == 1
+        assert quarantined[0].reason_code == "INVALID_PRIMITIVE_TYPE"
+
+    def test_boolean_field_integer_quarantined(
+        self,
+        clean_week_one_document,
+    ):
+        """Integers 1 and 0 for history_complete must be quarantined."""
+        import copy
+        from shadow_orbit.validation import validate_fixture
+
+        for val in (1, 0):
+            doc = copy.deepcopy(clean_week_one_document)
+            target_key = doc["work_items"][0]["key"]
+            doc["work_items"][0]["history_complete"] = val
+
+            result = validate_fixture(doc)
+            quarantined = [q for q in result.quarantined_records if q.source_key == target_key]
+            assert len(quarantined) == 1, f"Expected integer {val} to be quarantined"
+            assert quarantined[0].reason_code == "INVALID_PRIMITIVE_TYPE"
+
+    def test_boolean_field_genuine_bool_accepted(
+        self,
+        clean_week_one_document,
+    ):
+        """Genuine booleans True and False must be accepted without quarantine."""
+        import copy
+        from shadow_orbit.validation import validate_fixture
+
+        for val in (True, False):
+            doc = copy.deepcopy(clean_week_one_document)
+            target_key = doc["work_items"][0]["key"]
+            doc["work_items"][0]["history_complete"] = val
+
+            result = validate_fixture(doc)
+            quarantined = [q for q in result.quarantined_records if q.source_key == target_key]
+            assert len(quarantined) == 0
+
+    def test_adversarial_non_boolean_structures(
+        self,
+        clean_week_one_document,
+    ):
+        """Adversarial values (None, empty string, list, dict) for history_complete must be quarantined."""
+        import copy
+        from shadow_orbit.validation import validate_fixture
+
+        for bad_val in (None, "", [], {}):
+            doc = copy.deepcopy(clean_week_one_document)
+            target_key = doc["work_items"][0]["key"]
+            doc["work_items"][0]["history_complete"] = bad_val
+
+            result = validate_fixture(doc)
+            quarantined = [q for q in result.quarantined_records if q.source_key == target_key]
+            assert len(quarantined) == 1, f"Expected {bad_val!r} to be quarantined"
+            assert quarantined[0].reason_code == "INVALID_PRIMITIVE_TYPE"
+
+    def test_planned_at_period_start_strict_boolean(
+        self,
+        clean_week_one_document,
+    ):
+        """Integer 1 or string 'true' for planned_at_period_start must be quarantined."""
+        import copy
+        from shadow_orbit.validation import validate_fixture
+
+        for bad_val in (1, 0, "true", "false"):
+            doc = copy.deepcopy(clean_week_one_document)
+            target_key = doc["work_items"][0]["key"]
+            doc["work_items"][0]["planned_at_period_start"] = bad_val
+
+            result = validate_fixture(doc)
+            quarantined = [q for q in result.quarantined_records if q.source_key == target_key]
+            assert len(quarantined) == 1, f"Expected {bad_val!r} for planned to be quarantined"
+
+
