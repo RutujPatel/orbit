@@ -34,21 +34,44 @@ def completion_time(
     item: WorkItem,
     status_mapping: dict[str, str] | None = None,
 ) -> datetime | None:
-    done_transitions = [
-        change.changed_at
-        for change in item.changes
-        if change.field == "status"
-        and (
-            (status_mapping is not None and status_mapping.get(change.to_value) == "done")
-            or (status_mapping is None and change.to_value == "Done")
-        )
-    ]
+    def _is_done(status: Any) -> bool:
+        if not isinstance(status, str):
+            return False
+        if status_mapping is not None:
+            return status_mapping.get(status) == "done"
+        return status == "Done"
 
-    candidates = done_transitions[:]
-    if item.resolved_at is not None:
-        candidates.append(item.resolved_at)
+    # 1. Current status check: If the item is not currently completed, completion_time is None.
+    current_is_done = _is_done(item.source_status)
+    if not current_is_done and status_mapping is None and item.status_category == "done":
+        current_is_done = True
 
-    return min(candidates) if candidates else None
+    if not current_is_done:
+        return None
+
+    # 2. Extract and sort all status changes chronologically.
+    status_changes = sorted(
+        [change for change in item.changes if change.field == "status"],
+        key=lambda change: change.changed_at,
+    )
+
+    # 3. If there are status changes, find the latest transition that established
+    #    the current terminal completed state (i.e. not superseded by a non-done status).
+    if status_changes:
+        terminal_done_changes: list[Change] = []
+        for change in reversed(status_changes):
+            if _is_done(change.to_value):
+                terminal_done_changes.append(change)
+                if not _is_done(change.from_value):
+                    break
+            else:
+                break
+
+        if terminal_done_changes:
+            return terminal_done_changes[-1].changed_at
+
+    # 4. Fallback to resolved_at if no transition established the terminal completed state.
+    return item.resolved_at
 
 
 def completed_during_period(
