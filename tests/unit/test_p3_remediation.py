@@ -10,7 +10,13 @@ Covers:
 from __future__ import annotations
 
 from datetime import datetime, timezone
+from pathlib import Path
+import sys
 import pytest
+
+_REPO_ROOT = Path(__file__).resolve().parents[2]
+if str(_REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(_REPO_ROOT))
 
 from shadow_orbit.temporal import completed_during_period, completion_time
 from shadow_orbit.types import Change, ReviewPeriod, WorkItem
@@ -508,6 +514,50 @@ class TestP304ChronologicalCoherence:
         quarantined2 = [q for q in res2.quarantined_records if q.source_key == target_key]
         assert len(quarantined2) == 1
         assert quarantined2[0].reason_code == "CHRONOLOGICAL_INCOHERENCE"
+
+
+# ============================================================================
+# P3-08: Measurable Safety Invariant Instrumentation
+# ============================================================================
+
+
+class TestP308ActiveMutationGuard:
+    """Tests for P3-08 active runtime mutation guard instrumentation in runner.py."""
+
+    def test_jira_write_attempt_raises_fatal_guard_violation(self):
+        """Any attempt to mutate Jira resources through the guard must raise SecurityViolationError."""
+        from qualification.mahout.runner import ReadOnlyJiraGuard, SecurityViolationError
+
+        guard = ReadOnlyJiraGuard()
+        with pytest.raises(SecurityViolationError, match="unauthorized Jira mutation"):
+            guard.record_mutation_attempt("create_issue", project="ORBITLAB")
+
+        assert guard.mutations_attempted == 1
+
+    def test_jira_configuration_write_attempt_raises_fatal_guard_violation(self):
+        """Any attempt to mutate Jira configuration through the guard must raise SecurityViolationError."""
+        from qualification.mahout.runner import ReadOnlyJiraGuard, SecurityViolationError
+
+        guard = ReadOnlyJiraGuard()
+        with pytest.raises(SecurityViolationError, match="unauthorized Jira configuration mutation"):
+            guard.record_configuration_mutation_attempt("update_workflow", workflow="ORBIT-WF")
+
+        assert guard.configuration_mutations_attempted == 1
+
+    def test_runner_verifies_zero_mutations_dynamically(self):
+        """The qualification runner must execute with active guard and record 0 mutations dynamically."""
+        from qualification.mahout.runner import run_mahout_qualification
+
+        result = run_mahout_qualification(save_golden=False)
+        assert getattr(result, "mutation_guard_active", False) is True
+        assert getattr(result, "jira_mutation_count", -1) == 0
+        assert getattr(result, "jira_configuration_mutation_count", -1) == 0
+
+        summary = result.to_summary_dict()
+        assert summary.get("mutation_guard_active") is True
+        assert summary.get("jira_mutation_count") == 0
+        assert summary.get("jira_configuration_mutation_count") == 0
+
 
 
 
