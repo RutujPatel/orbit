@@ -58,13 +58,33 @@ RelationshipKind = Literal[
     "has_head_commit",
     "has_base_commit",
     "mentions",
+    "explicit_link",
 ]
-"""Closed set of relationship types resolved across CSE-1.5 and CSE-1.6."""
+"""Closed set of relationship types resolved across CSE-1.5, CSE-1.6, and Milestone 2."""
 
-RelationshipBasis = Literal["structural_association", "lexical_match"]
+RelationshipBasis = Literal[
+    "structural_association",
+    "lexical_match",
+    "explicit_metadata",
+]
 """How a relationship was established. CSE-1.5 uses structural_association.
 CSE-1.6 uses lexical_match for explicit textual mentions.
+Milestone 2 authorizes explicit_metadata for native integration links.
 No temporal, semantic, or inference bases."""
+
+CrossSystemStateComparison = Literal[
+    "CONSISTENT",
+    "CONFLICTING",
+    "INSUFFICIENT_EVIDENCE",
+]
+"""Taxonomy of cross-system state comparisons (ADR-005 D1)."""
+
+CrossSystemTemporalComparison = Literal[
+    "COHERENT",
+    "INVERTED",
+    "INDETERMINATE",
+]
+"""Taxonomy of cross-system temporal comparisons (ADR-005 D1)."""
 
 
 # ── Identity ─────────────────────────────────────────────────────────
@@ -356,6 +376,7 @@ class EvidenceBundle:
     relationships: tuple[EvidenceRelationship, ...] = ()
     unresolved_references: tuple[UnresolvedReference, ...] = ()
     quality_issues: tuple[QualityIssue, ...] = ()
+    cross_system_alignments: tuple[CrossSystemStateAlignment, ...] = ()
 
 
 # ── Structural relationships ─────────────────────────────────────────
@@ -401,6 +422,26 @@ class UnresolvedReference:
     relationship_kind: RelationshipKind
     reason: str
     provenance_refs: tuple[ProvenanceRef, ...]
+
+
+# ── Cross-system state & temporal alignments ─────────────────────────
+
+@dataclass(frozen=True, slots=True)
+class CrossSystemStateAlignment:
+    """A cross-system state and temporal comparison between Jira and GitHub observations.
+
+    Captures state coherence and temporal ordering between a Jira work item
+    and a referencing GitHub artifact without inferring causality, completion,
+    or developer identity.
+    """
+
+    jira_ref: EntityRef
+    github_ref: EntityRef
+    relationship_kind: str
+    state_comparison: CrossSystemStateComparison
+    temporal_comparison: CrossSystemTemporalComparison
+    rationale: str
+    provenance_refs: tuple[ProvenanceRef, ...] = ()
 
 
 # ── Serialization ────────────────────────────────────────────────────
@@ -633,6 +674,22 @@ def serialize_evidence_bundle(
             serialize_quality_issue(q)
             for q in sorted_quality
         ]
+    if bundle.cross_system_alignments:
+        sorted_alignments = sorted(
+            bundle.cross_system_alignments,
+            key=lambda a: (
+                a.jira_ref.entity_id,
+                a.github_ref.entity_id,
+                a.relationship_kind,
+                a.state_comparison,
+                a.temporal_comparison,
+                a.rationale,
+            ),
+        )
+        result["cross_system_alignments"] = [
+            serialize_cross_system_alignment(a)
+            for a in sorted_alignments
+        ]
     return result
 
 
@@ -673,3 +730,22 @@ def serialize_unresolved_reference(
             serialize_provenance_ref(p) for p in unres.provenance_refs
         ],
     }
+
+
+def serialize_cross_system_alignment(
+    alignment: CrossSystemStateAlignment,
+) -> dict[str, Any]:
+    """Serialize a CrossSystemStateAlignment to a JSON-safe dict."""
+    result: dict[str, Any] = {
+        "jira_ref": serialize_entity_ref(alignment.jira_ref),
+        "github_ref": serialize_entity_ref(alignment.github_ref),
+        "relationship_kind": alignment.relationship_kind,
+        "state_comparison": alignment.state_comparison,
+        "temporal_comparison": alignment.temporal_comparison,
+        "rationale": alignment.rationale,
+    }
+    if alignment.provenance_refs:
+        result["provenance_refs"] = [
+            serialize_provenance_ref(p) for p in alignment.provenance_refs
+        ]
+    return result
