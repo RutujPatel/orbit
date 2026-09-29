@@ -20,6 +20,7 @@ from collections import Counter
 from typing import Any
 
 from shadow_orbit.evidence_types import (
+    CrossSystemStateAlignment,
     EntityRef,
     EvidenceBundle,
     EvidenceObservation,
@@ -33,6 +34,7 @@ from shadow_orbit.evidence_types import (
     UnresolvedReference,
 )
 from shadow_orbit.github_normalization import NormalizedGitHubFixture
+from shadow_orbit.provenance_dereference import dereference_provenance_ref
 
 
 # ── Authorized Predicate and Entity Vocabularies ─────────────────────
@@ -71,9 +73,16 @@ def _provenance_sort_key(p: ProvenanceRef) -> tuple[str, str, str, str, str]:
     )
 
 
-def _quality_issue_sort_key(q: QualityIssue) -> tuple[str, str]:
+def _quality_issue_sort_key(q: QualityIssue) -> tuple[str, str, str, str]:
     """Deterministic sort key for a QualityIssue."""
-    return (q.code, q.message)
+    ref_key = ""
+    if q.subject_ref is not None:
+        ref_key = (
+            f"{q.subject_ref.source_instance.instance_id}:"
+            f"{q.subject_ref.entity_kind}:"
+            f"{q.subject_ref.entity_id}"
+        )
+    return (q.code, q.message, q.subject_scope or "", ref_key)
 
 
 def _deduplicate_relationships(
@@ -200,6 +209,67 @@ def _deduplicate_unresolved(
     return tuple(result)
 
 
+def _sort_alignment_key(
+    a: CrossSystemStateAlignment,
+) -> tuple[str, str, str, str, str, str]:
+    return (
+        a.jira_ref.entity_id,
+        a.github_ref.entity_id,
+        a.relationship_kind,
+        a.state_comparison,
+        a.temporal_comparison,
+        a.rationale,
+    )
+
+
+def _deduplicate_alignments(
+    alignments: tuple[CrossSystemStateAlignment, ...],
+) -> tuple[CrossSystemStateAlignment, ...]:
+    """Deduplicate cross-system alignments with identical endpoints and classification.
+
+    Merges provenance_refs (union, deterministically sorted).
+    """
+    dedup: dict[
+        tuple[EntityRef, EntityRef, str, str, str, str],
+        tuple[CrossSystemStateAlignment, list[ProvenanceRef]],
+    ] = {}
+
+    for a in alignments:
+        key = (
+            a.jira_ref,
+            a.github_ref,
+            a.relationship_kind,
+            a.state_comparison,
+            a.temporal_comparison,
+            a.rationale,
+        )
+        if key not in dedup:
+            dedup[key] = (a, list(a.provenance_refs))
+        else:
+            _, prov_list = dedup[key]
+            for p in a.provenance_refs:
+                if p not in prov_list:
+                    prov_list.append(p)
+
+    result: list[CrossSystemStateAlignment] = []
+    for base_a, prov_list in dedup.values():
+        sorted_prov = tuple(sorted(prov_list, key=_provenance_sort_key))
+        result.append(
+            CrossSystemStateAlignment(
+                jira_ref=base_a.jira_ref,
+                github_ref=base_a.github_ref,
+                relationship_kind=base_a.relationship_kind,
+                state_comparison=base_a.state_comparison,
+                temporal_comparison=base_a.temporal_comparison,
+                rationale=base_a.rationale,
+                provenance_refs=sorted_prov,
+            )
+        )
+
+    result.sort(key=_sort_alignment_key)
+    return tuple(result)
+
+
 # ── Public Assembly Function ─────────────────────────────────────────
 
 def assemble_evidence_bundle(
@@ -213,6 +283,7 @@ def assemble_evidence_bundle(
     github_structural_unresolved: tuple[UnresolvedReference, ...] = (),
     github_mention_relationships: tuple[EvidenceRelationship, ...] = (),
     github_mention_unresolved: tuple[UnresolvedReference, ...] = (),
+    cross_system_alignments: tuple[CrossSystemStateAlignment, ...] = (),
 ) -> EvidenceBundle:
     """Assemble independently produced evidence artifacts into an EvidenceBundle.
 
@@ -335,7 +406,10 @@ def assemble_evidence_bundle(
             deduped_quality.append(q)
     deduped_quality.sort(key=_quality_issue_sort_key)
 
-    # ── 7. Construct and Return Frozen Bundle ────────────────────────
+    # ── 7. Deduplicate Cross-System Alignments ───────────────────────
+    deduped_alignments = _deduplicate_alignments(cross_system_alignments)
+
+    # ── 8. Construct and Return Frozen Bundle ────────────────────────
     return EvidenceBundle(
         bundle_id=bundle_id,
         bundle_version=bundle_version,
@@ -344,6 +418,7 @@ def assemble_evidence_bundle(
         relationships=deduped_relationships,
         unresolved_references=deduped_unresolved,
         quality_issues=tuple(deduped_quality),
+        cross_system_alignments=deduped_alignments,
     )
 
 
@@ -351,6 +426,7 @@ def assemble_evidence_bundle(
 
 def validate_evidence_bundle(
     bundle: EvidenceBundle,
+    fixtures_by_id: dict[str, Any] | None = None,
 ) -> tuple[QualityIssue, ...]:
     """Validate internal consistency and integrity of an assembled EvidenceBundle.
 
@@ -365,6 +441,19 @@ def validate_evidence_bundle(
     6. Prevention of contradictory resolved-vs-unresolved references.
     7. Accidental duplicate observation identity detection.
     8. Observation context uniqueness.
+    9. In-memory provenance dereferencing against provided source fixtures
+       (when fixtures_by_id is provided): verifies locator grammar, bounds,
+       entity identity alignment, optional source_field_path existence, and
+       staleness.
+
+    Parameters
+    ----------
+    bundle:
+        The EvidenceBundle to validate.
+    fixtures_by_id:
+        Optional mapping of fixture_id to in-memory fixture documents (or fixture
+        wrappers with a raw_document dict). If None, provenance dereferencing
+        is skipped, preserving backward compatibility.
 
     Returns
     -------
@@ -431,7 +520,12 @@ def validate_evidence_bundle(
                     subject_scope=scope,
                 )
             )
+        seen_prov: set[ProvenanceRef] = set()
         for p in prov_refs:
+            if p in seen_prov:
+                continue
+            seen_prov.add(p)
+
             reg_ctx = contexts_by_id.get(p.observation_id)
             if reg_ctx is None:
                 issues.append(
@@ -458,6 +552,43 @@ def validate_evidence_bundle(
                         subject_scope="provenance:context",
                     )
                 )
+
+            # Active in-memory provenance dereferencing (Pass 4 / Wave 2)
+            if fixtures_by_id is not None and p.record_locator is not None:
+                if p.fixture_id is None:
+                    issues.append(
+                        QualityIssue(
+                            code="unresolved",
+                            message=(
+                                f"{owner_desc} provenance has record_locator '{p.record_locator}' "
+                                f"but fixture_id is absent."
+                            ),
+                            subject_ref=subject_ref,
+                            subject_scope="provenance:fixture",
+                        )
+                    )
+                elif p.fixture_id not in fixtures_by_id or fixtures_by_id[p.fixture_id] is None:
+                    issues.append(
+                        QualityIssue(
+                            code="unresolved",
+                            message=(
+                                f"{owner_desc} provenance references fixture_id '{p.fixture_id}' "
+                                f"which is unavailable in fixtures_by_id."
+                            ),
+                            subject_ref=subject_ref,
+                            subject_scope="provenance:fixture",
+                        )
+                    )
+                else:
+                    fixture = fixtures_by_id[p.fixture_id]
+                    res = dereference_provenance_ref(
+                        prov_ref=p,
+                        fixture=fixture,
+                        expected_entity_ref=subject_ref,
+                        source_cutoff_at=reg_ctx.source_cutoff_at if reg_ctx else None,
+                    )
+                    if not res.is_resolved and res.quality_issue is not None:
+                        issues.append(res.quality_issue)
 
     # Observation context resolution & identity contamination
     for obs in bundle.observations:
@@ -532,6 +663,7 @@ def validate_evidence_bundle(
     # ── Relationship validation ──────────────────────────────────────
     # Lookup for joint pairing: (EntityRef, observation_id)
     known_obs_pairs: set[tuple[EntityRef, str]] = set(obs_identity_counts.keys())
+    known_entities: set[EntityRef] = {ref for ref, _ in known_obs_pairs}
 
     for rel in bundle.relationships:
         # Invariant 1: Joint endpoint-observation pairing
@@ -587,6 +719,19 @@ def validate_evidence_bundle(
                         message=(
                             f"Relationship kind '{rel.kind}' is invalid for basis "
                             f"'lexical_match'; expected 'mentions'."
+                        ),
+                        subject_ref=rel.subject_ref,
+                        subject_scope="relationship:basis",
+                    )
+                )
+        elif rel.basis == "explicit_metadata":
+            if rel.kind != "explicit_link":
+                issues.append(
+                    QualityIssue(
+                        code="invalid",
+                        message=(
+                            f"Relationship kind '{rel.kind}' is invalid for basis "
+                            f"'explicit_metadata'; expected 'explicit_link'."
                         ),
                         subject_ref=rel.subject_ref,
                         subject_scope="relationship:basis",
@@ -664,6 +809,48 @@ def validate_evidence_bundle(
                             subject_scope="relationship:resolution",
                         )
                     )
+
+    # ── Cross-system state alignment validation ──────────────────────
+    for a in bundle.cross_system_alignments:
+        if (
+            a.jira_ref not in known_entities
+            or a.jira_ref.source_instance.source_kind != "jira"
+        ):
+            issues.append(
+                QualityIssue(
+                    code="unresolved",
+                    message=(
+                        f"Cross-system alignment Jira endpoint '{a.jira_ref.entity_id}' "
+                        f"does not resolve to an accepted Jira observation."
+                    ),
+                    subject_ref=a.jira_ref,
+                    subject_scope="alignment:endpoint",
+                )
+            )
+
+        if (
+            a.github_ref not in known_entities
+            or a.github_ref.source_instance.source_kind != "github"
+        ):
+            issues.append(
+                QualityIssue(
+                    code="unresolved",
+                    message=(
+                        f"Cross-system alignment GitHub endpoint '{a.github_ref.entity_id}' "
+                        f"does not resolve to an accepted GitHub observation."
+                    ),
+                    subject_ref=a.github_ref,
+                    subject_scope="alignment:endpoint",
+                )
+            )
+
+        _validate_provenance_refs(
+            a.provenance_refs,
+            subject_ref=a.github_ref,
+            scope="alignment:provenance",
+            owner_desc=f"Cross-system alignment ({a.jira_ref.entity_id} <-> {a.github_ref.entity_id})",
+            require_non_empty=True,
+        )
 
     issues.sort(key=_quality_issue_sort_key)
     return tuple(issues)
