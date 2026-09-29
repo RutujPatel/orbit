@@ -41,14 +41,99 @@ ProvenanceResolutionStatus = Literal[
 ]
 """Closed set of provenance dereferencing outcomes (Pass 4 / ADR-004)."""
 
-_AUTHORIZED_COLLECTIONS: frozenset[str] = frozenset({
-    "work_items",
-    "repositories",
-    "branches",
-    "commits",
-    "pull_requests",
-    "reviews",
-})
+@dataclass(frozen=True, slots=True)
+class ProvenanceCollectionDescriptor:
+    """Descriptor defining an authorized provenance collection and its locator lookup keys."""
+
+    name: str
+    primary_key_fields: tuple[str, ...] = ()
+    description: str = ""
+
+    def __init__(
+        self,
+        name: str = "",
+        primary_key_fields: tuple[str, ...] | list[str] = (),
+        description: str = "",
+        *,
+        collection_name: str | None = None,
+    ) -> None:
+        eff_name = collection_name if collection_name is not None else name
+        if not isinstance(eff_name, str) or not eff_name.strip():
+            raise ValueError("name must be a non-empty string")
+        if not isinstance(primary_key_fields, (tuple, list)):
+            raise TypeError("primary_key_fields must be a tuple or list of strings")
+        for f in primary_key_fields:
+            if not isinstance(f, str) or not f.strip():
+                raise ValueError("primary_key_fields must contain non-empty strings")
+        object.__setattr__(self, "name", eff_name)
+        object.__setattr__(self, "primary_key_fields", tuple(primary_key_fields))
+        object.__setattr__(self, "description", description)
+
+    @property
+    def collection_name(self) -> str:
+        """Alias for name."""
+        return self.name
+
+
+
+_BUILTIN_COLLECTIONS: dict[str, ProvenanceCollectionDescriptor] = {
+    "work_items": ProvenanceCollectionDescriptor(
+        name="work_items",
+        primary_key_fields=("key", "source_id", "id"),
+        description="Work items / issues collection",
+    ),
+    "repositories": ProvenanceCollectionDescriptor(
+        name="repositories",
+        primary_key_fields=("repo_id", "name"),
+        description="Source code repositories collection",
+    ),
+    "branches": ProvenanceCollectionDescriptor(
+        name="branches",
+        primary_key_fields=("name",),
+        description="Repository branches collection",
+    ),
+    "commits": ProvenanceCollectionDescriptor(
+        name="commits",
+        primary_key_fields=("sha",),
+        description="Commit records collection",
+    ),
+    "pull_requests": ProvenanceCollectionDescriptor(
+        name="pull_requests",
+        primary_key_fields=("number", "title"),
+        description="Pull requests / code change proposals collection",
+    ),
+    "reviews": ProvenanceCollectionDescriptor(
+        name="reviews",
+        primary_key_fields=("review_id", "id"),
+        description="Code reviews collection",
+    ),
+}
+
+_COLLECTION_REGISTRY: dict[str, ProvenanceCollectionDescriptor] = dict(_BUILTIN_COLLECTIONS)
+
+
+def register_provenance_collection(descriptor: ProvenanceCollectionDescriptor) -> None:
+    """Register an authorized provenance collection descriptor.
+
+    Registration is deterministic and in-memory only.
+    """
+    if not isinstance(descriptor, ProvenanceCollectionDescriptor):
+        raise TypeError("descriptor must be a ProvenanceCollectionDescriptor")
+    _COLLECTION_REGISTRY[descriptor.name] = descriptor
+
+
+def reset_provenance_collections() -> None:
+    """Reset the collection registry back to built-in collections (for testing)."""
+    _COLLECTION_REGISTRY.clear()
+    _COLLECTION_REGISTRY.update(_BUILTIN_COLLECTIONS)
+
+
+def get_authorized_collections() -> frozenset[str]:
+    """Return the set of currently authorized collection names."""
+    return frozenset(_COLLECTION_REGISTRY.keys())
+
+
+_AUTHORIZED_COLLECTIONS: frozenset[str] = frozenset(_BUILTIN_COLLECTIONS.keys())
 
 _SEGMENT_REGEX = re.compile(r"^([a-zA-Z_][a-zA-Z0-9_]*)\[([^\[\]]+)\]$")
 
@@ -104,7 +189,7 @@ def parse_locator(locator: str | None) -> tuple[tuple[LocatorSegment, ...], str 
         if not col or not sel:
             return (), f"Malformed segment '{part}'"
 
-        if col not in _AUTHORIZED_COLLECTIONS:
+        if col not in get_authorized_collections():
             return (), f"Collection '{col}' is not an authorized locator collection"
 
         if sel.isdigit():
@@ -162,6 +247,10 @@ def _resolve_selector_in_list(
                 matched = str(item.get("sha")) == ident
             elif collection == "reviews":
                 matched = str(item.get("review_id")) == ident or str(item.get("id")) == ident
+            else:
+                desc = _COLLECTION_REGISTRY.get(collection)
+                if desc:
+                    matched = any(str(item.get(k)) == ident for k in desc.primary_key_fields)
             if matched:
                 matches.append(item)
 
@@ -216,7 +305,9 @@ def _resolve_selector_in_list(
         elif collection == "reviews":
             matched = str(item.get("review_id")) == ident or str(item.get("id")) == ident
         else:
-            matched = False
+            desc = _COLLECTION_REGISTRY.get(collection)
+            if desc:
+                matched = any(str(item.get(k)) == ident for k in desc.primary_key_fields)
 
         if matched:
             matches.append(item)
@@ -235,19 +326,20 @@ def _resolve_selector_in_list(
 def _verify_entity_identity(
     resolved_record: dict[str, Any],
     expected_ref: EntityRef,
+    collection: str | None = None,
 ) -> tuple[bool, str | None]:
     """Verify that resolved record identity matches the expected EntityRef."""
     kind = expected_ref.entity_kind
     expected_id = expected_ref.entity_id
 
-    if kind == "jira_issue":
+    if kind in ("jira_issue", "work_item"):
         key = resolved_record.get("key")
         source_id = str(resolved_record.get("source_id", ""))
         raw_id = str(resolved_record.get("id", ""))
         if expected_id not in (key, source_id, raw_id):
             return (
                 False,
-                f"Resolved Jira record key '{key}' does not match expected entity_id '{expected_id}'",
+                f"Resolved record key '{key}' does not match expected entity_id '{expected_id}'",
             )
         return True, None
 
@@ -280,12 +372,13 @@ def _verify_entity_identity(
             )
         return True, None
 
-    if kind == "github_pull_request":
+    if kind in ("github_pull_request", "code_change"):
         num = str(resolved_record.get("number", ""))
-        if expected_id != num and not expected_id.endswith(f"/{num}"):
+        raw_id = str(resolved_record.get("id", ""))
+        if expected_id not in (num, raw_id) and not expected_id.endswith(f"/{num}"):
             return (
                 False,
-                f"Resolved GitHub PR number '{num}' does not match expected entity_id '{expected_id}'",
+                f"Resolved record number '{num}' does not match expected entity_id '{expected_id}'",
             )
         return True, None
 
@@ -298,6 +391,34 @@ def _verify_entity_identity(
             )
         return True, None
 
+    # Generic or provider-neutral entity kinds
+    desc = _COLLECTION_REGISTRY.get(collection) if collection else None
+    if desc and desc.primary_key_fields:
+        candidate_keys = desc.primary_key_fields
+    else:
+        candidate_keys = (
+            "key",
+            "source_id",
+            "id",
+            "number",
+            "name",
+            "sha",
+            "repo_id",
+            "review_id",
+        )
+
+    matched = False
+    for k in candidate_keys:
+        if k in resolved_record:
+            val = str(resolved_record[k])
+            if expected_id == val or expected_id.endswith(f"/{val}"):
+                matched = True
+                break
+    if not matched:
+        return (
+            False,
+            f"Resolved record does not match expected entity_id '{expected_id}'",
+        )
     return True, None
 
 
@@ -482,7 +603,10 @@ def dereference_locator(
 
     # Check Entity Identity if requested
     if expected_entity_ref is not None:
-        identity_ok, id_err = _verify_entity_identity(resolved_record, expected_entity_ref)
+        last_collection = segments[-1].collection if segments else None
+        identity_ok, id_err = _verify_entity_identity(
+            resolved_record, expected_entity_ref, collection=last_collection
+        )
         if not identity_ok:
             return DereferenceResult(
                 status="INVALID",

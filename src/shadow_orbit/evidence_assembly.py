@@ -213,8 +213,8 @@ def _sort_alignment_key(
     a: CrossSystemStateAlignment,
 ) -> tuple[str, str, str, str, str, str]:
     return (
-        a.jira_ref.entity_id,
-        a.github_ref.entity_id,
+        a.subject_ref.entity_id,
+        a.corroborating_ref.entity_id,
         a.relationship_kind,
         a.state_comparison,
         a.temporal_comparison,
@@ -236,8 +236,8 @@ def _deduplicate_alignments(
 
     for a in alignments:
         key = (
-            a.jira_ref,
-            a.github_ref,
+            a.subject_ref,
+            a.corroborating_ref,
             a.relationship_kind,
             a.state_comparison,
             a.temporal_comparison,
@@ -256,8 +256,8 @@ def _deduplicate_alignments(
         sorted_prov = tuple(sorted(prov_list, key=_provenance_sort_key))
         result.append(
             CrossSystemStateAlignment(
-                jira_ref=base_a.jira_ref,
-                github_ref=base_a.github_ref,
+                subject_ref=base_a.subject_ref,
+                corroborating_ref=base_a.corroborating_ref,
                 relationship_kind=base_a.relationship_kind,
                 state_comparison=base_a.state_comparison,
                 temporal_comparison=base_a.temporal_comparison,
@@ -625,7 +625,7 @@ def validate_evidence_bundle(
 
         # Cross-system entity contamination check
         if ref.source_instance.source_kind == "jira":
-            if ref.entity_kind not in _JIRA_ENTITY_KINDS:
+            if ref.entity_kind not in _JIRA_ENTITY_KINDS and ref.entity_kind != "work_item":
                 issues.append(
                     QualityIssue(
                         code="invalid",
@@ -638,7 +638,7 @@ def validate_evidence_bundle(
                     )
                 )
         elif ref.source_instance.source_kind == "github":
-            if ref.entity_kind not in _GITHUB_ENTITY_KINDS:
+            if ref.entity_kind not in _GITHUB_ENTITY_KINDS and ref.entity_kind != "code_change":
                 issues.append(
                     QualityIssue(
                         code="invalid",
@@ -812,43 +812,39 @@ def validate_evidence_bundle(
 
     # ── Cross-system state alignment validation ──────────────────────
     for a in bundle.cross_system_alignments:
-        if (
-            a.jira_ref not in known_entities
-            or a.jira_ref.source_instance.source_kind != "jira"
-        ):
+        if a.subject_ref not in known_entities:
+            endpoint_name = "Jira" if a.subject_ref.source_instance.source_kind == "jira" else "subject"
             issues.append(
                 QualityIssue(
                     code="unresolved",
                     message=(
-                        f"Cross-system alignment Jira endpoint '{a.jira_ref.entity_id}' "
-                        f"does not resolve to an accepted Jira observation."
+                        f"Cross-system alignment {endpoint_name} endpoint '{a.subject_ref.entity_id}' "
+                        f"does not resolve to an accepted {endpoint_name} observation."
                     ),
-                    subject_ref=a.jira_ref,
+                    subject_ref=a.subject_ref,
                     subject_scope="alignment:endpoint",
                 )
             )
 
-        if (
-            a.github_ref not in known_entities
-            or a.github_ref.source_instance.source_kind != "github"
-        ):
+        if a.corroborating_ref not in known_entities:
+            endpoint_name = "GitHub" if a.corroborating_ref.source_instance.source_kind == "github" else "corroborating"
             issues.append(
                 QualityIssue(
                     code="unresolved",
                     message=(
-                        f"Cross-system alignment GitHub endpoint '{a.github_ref.entity_id}' "
-                        f"does not resolve to an accepted GitHub observation."
+                        f"Cross-system alignment {endpoint_name} endpoint '{a.corroborating_ref.entity_id}' "
+                        f"does not resolve to an accepted {endpoint_name} observation."
                     ),
-                    subject_ref=a.github_ref,
+                    subject_ref=a.corroborating_ref,
                     subject_scope="alignment:endpoint",
                 )
             )
 
         _validate_provenance_refs(
             a.provenance_refs,
-            subject_ref=a.github_ref,
+            subject_ref=a.corroborating_ref,
             scope="alignment:provenance",
-            owner_desc=f"Cross-system alignment ({a.jira_ref.entity_id} <-> {a.github_ref.entity_id})",
+            owner_desc=f"Cross-system alignment ({a.subject_ref.entity_id} <-> {a.corroborating_ref.entity_id})",
             require_non_empty=True,
         )
 

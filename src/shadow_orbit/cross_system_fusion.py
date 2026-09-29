@@ -63,8 +63,8 @@ def _sort_alignment_key(
 ) -> tuple[str, str, str, str, str, str]:
     """Deterministic canonical sort key for CrossSystemStateAlignment."""
     return (
-        a.jira_ref.entity_id,
-        a.github_ref.entity_id,
+        a.subject_ref.entity_id,
+        a.corroborating_ref.entity_id,
         a.relationship_kind,
         a.state_comparison,
         a.temporal_comparison,
@@ -265,8 +265,8 @@ def correlate_cross_system_evidence(
 
         state_alignments.append(
             CrossSystemStateAlignment(
-                jira_ref=jira_ref,
-                github_ref=gh_ref,
+                subject_ref=jira_ref,
+                corroborating_ref=gh_ref,
                 relationship_kind=rel.kind,
                 state_comparison=state_comp,
                 temporal_comparison=temporal_comp,

@@ -29,6 +29,7 @@ import hashlib
 from typing import Any, Literal
 
 from shadow_orbit.evidence_types import (
+    CodeChangeState,
     CrossSystemStateAlignment,
     EntityRef,
     EvidenceBundle,
@@ -41,7 +42,10 @@ from shadow_orbit.evidence_types import (
     ProvenanceRef,
     QualityIssue,
     UnresolvedReference,
+    WorkItemState,
     _serialize_datetime,
+    as_code_change_state,
+    as_work_item_state,
     serialize_entity_ref,
     serialize_provenance_ref,
     serialize_quality_issue,
@@ -225,29 +229,34 @@ def evaluate_evidence_bundle(
         obs_by_key.setdefault(k, []).append(obs)
 
     # ── 2. Index Cross-System Relationships ──────────────────────────
-    # Map (jira_ref, github_ref) -> list of EvidenceRelationship
+    # Map (subject_ref, corroborating_ref) -> list of EvidenceRelationship
     rels_by_pair: dict[tuple[EntityRef, EntityRef], list[EvidenceRelationship]] = {}
     for rel in bundle.relationships:
         if (
-            rel.subject_ref.entity_kind == "jira_issue"
-            and rel.object_ref.entity_kind.startswith("github_")
+            rel.subject_ref.entity_kind in ("jira_issue", "work_item")
+            and (rel.object_ref.entity_kind.startswith("github_") or rel.object_ref.entity_kind in ("code_change", "commit", "branch"))
         ):
             pair = (rel.subject_ref, rel.object_ref)
             rels_by_pair.setdefault(pair, []).append(rel)
         elif (
-            rel.object_ref.entity_kind == "jira_issue"
-            and rel.subject_ref.entity_kind.startswith("github_")
+            rel.object_ref.entity_kind in ("jira_issue", "work_item")
+            and (rel.subject_ref.entity_kind.startswith("github_") or rel.subject_ref.entity_kind in ("code_change", "commit", "branch"))
         ):
             pair = (rel.object_ref, rel.subject_ref)
             rels_by_pair.setdefault(pair, []).append(rel)
+        elif (
+            rel.subject_ref.source_instance.source_kind != rel.object_ref.source_instance.source_kind
+        ):
+            pair = (rel.subject_ref, rel.object_ref)
+            rels_by_pair.setdefault(pair, []).append(rel)
 
     # ── 3. Index Cross-System Alignments ─────────────────────────────
-    # Map (jira_ref, github_ref) -> list of CrossSystemStateAlignment
+    # Map (subject_ref, corroborating_ref) -> list of CrossSystemStateAlignment
     alignments_by_pair: dict[
         tuple[EntityRef, EntityRef], list[CrossSystemStateAlignment]
     ] = {}
     for align in bundle.cross_system_alignments:
-        pair = (align.jira_ref, align.github_ref)
+        pair = (align.subject_ref, align.corroborating_ref)
         alignments_by_pair.setdefault(pair, []).append(align)
 
     # ── 4. Collect Established Candidate Pairs (Strictly Anti-Cartesian)
@@ -286,7 +295,7 @@ def evaluate_evidence_bundle(
 
     # ── 5. Evaluate Established Pairs ────────────────────────────────
     for pair in candidate_pairs.values():
-        jira_ref, gh_ref = pair
+        subject_ref, corr_ref = pair
 
         matching_rels = rels_by_pair.get(pair, [])
         matching_alignments = alignments_by_pair.get(pair, [])
@@ -316,71 +325,77 @@ def evaluate_evidence_bundle(
             rel_prov.extend(a.provenance_refs)
 
         # Lookup observations
-        jira_obs_list = obs_by_key.get(
-            (jira_ref.entity_kind, jira_ref.entity_id), []
+        subject_obs_list = obs_by_key.get(
+            (subject_ref.entity_kind, subject_ref.entity_id), []
         )
-        gh_obs_list = obs_by_key.get(
-            (gh_ref.entity_kind, gh_ref.entity_id), []
+        corr_obs_list = obs_by_key.get(
+            (corr_ref.entity_kind, corr_ref.entity_id), []
         )
 
-        # Handle missing Jira observation
-        if not jira_obs_list:
-            if gh_ref.entity_kind == "github_pull_request":
+        # Handle missing subject observation
+        if not subject_obs_list:
+            if corr_ref.entity_kind in ("github_pull_request", "code_change"):
                 fid = _generate_finding_id(
-                    "ORBIT-XB-01", jira_ref, (gh_ref,), "INSUFFICIENT_EVIDENCE"
+                    "ORBIT-XB-01", subject_ref, (corr_ref,), "INSUFFICIENT_EVIDENCE"
                 )
                 combined_p = _merge_provenance(
                     tuple(rel_prov),
-                    *(o.provenance_refs for o in gh_obs_list),
+                    *(o.provenance_refs for o in corr_obs_list),
+                )
+                is_jira = subject_ref.entity_kind == "jira_issue" or subject_ref.source_instance.source_kind == "jira"
+                desc = (
+                    f"Referenced Jira issue {subject_ref.entity_id} was not observed in the evidence bundle."
+                    if is_jira
+                    else f"Referenced work item {subject_ref.entity_id} was not observed in the evidence bundle."
                 )
                 suppressed_evaluations.append(
                     TrackBFinding(
                         finding_id=fid,
                         rule_id="ORBIT-XB-01",
                         rule_version="1.0.0",
-                        subject_ref=jira_ref,
-                        corroborating_refs=(gh_ref,),
+                        subject_ref=subject_ref,
+                        corroborating_refs=(corr_ref,),
                         disposition="INSUFFICIENT_EVIDENCE",
                         sufficiency="UNRESOLVED",
-                        deterministic_explanation=(
-                            f"Referenced Jira issue {jira_ref.entity_id} "
-                            "was not observed in the evidence bundle."
-                        ),
+                        deterministic_explanation=desc,
                         observed_facts={
-                            "missing_entity": f"{jira_ref.entity_kind}:{jira_ref.entity_id}",
-                            "referencing_entity": f"{gh_ref.entity_kind}:{gh_ref.entity_id}",
+                            "missing_entity": f"{subject_ref.entity_kind}:{subject_ref.entity_id}",
+                            "referencing_entity": f"{corr_ref.entity_kind}:{corr_ref.entity_id}",
                         },
                         provenance_refs=combined_p,
                     )
                 )
             continue
 
-        # Handle missing GitHub observation
-        if not gh_obs_list:
-            if gh_ref.entity_kind == "github_pull_request":
+        # Handle missing corroborating observation
+        if not corr_obs_list:
+            if corr_ref.entity_kind in ("github_pull_request", "code_change"):
                 fid = _generate_finding_id(
-                    "ORBIT-XB-01", jira_ref, (gh_ref,), "INSUFFICIENT_EVIDENCE"
+                    "ORBIT-XB-01", subject_ref, (corr_ref,), "INSUFFICIENT_EVIDENCE"
                 )
                 combined_p = _merge_provenance(
                     tuple(rel_prov),
-                    *(o.provenance_refs for o in jira_obs_list),
+                    *(o.provenance_refs for o in subject_obs_list),
+                )
+                is_gh = corr_ref.entity_kind.startswith("github_") or corr_ref.source_instance.source_kind == "github"
+                desc = (
+                    f"Referenced GitHub entity {corr_ref.entity_id} was not observed in the evidence bundle."
+                    if is_gh
+                    else f"Referenced code change {corr_ref.entity_id} was not observed in the evidence bundle."
                 )
                 suppressed_evaluations.append(
                     TrackBFinding(
                         finding_id=fid,
                         rule_id="ORBIT-XB-01",
                         rule_version="1.0.0",
-                        subject_ref=jira_ref,
-                        corroborating_refs=(gh_ref,),
+                        subject_ref=subject_ref,
+                        corroborating_refs=(corr_ref,),
                         disposition="INSUFFICIENT_EVIDENCE",
                         sufficiency="UNRESOLVED",
-                        deterministic_explanation=(
-                            f"Referenced GitHub entity {gh_ref.entity_id} "
-                            "was not observed in the evidence bundle."
-                        ),
+                        deterministic_explanation=desc,
                         observed_facts={
-                            "missing_entity": f"{gh_ref.entity_kind}:{gh_ref.entity_id}",
-                            "referencing_entity": f"{jira_ref.entity_kind}:{jira_ref.entity_id}",
+                            "missing_entity": f"{corr_ref.entity_kind}:{corr_ref.entity_id}",
+                            "referencing_entity": f"{subject_ref.entity_kind}:{subject_ref.entity_id}",
                         },
                         provenance_refs=combined_p,
                     )
@@ -388,139 +403,179 @@ def evaluate_evidence_bundle(
             continue
 
         # Handle ambiguous observations (> 1 match)
-        if len(jira_obs_list) > 1 or len(gh_obs_list) > 1:
+        if len(subject_obs_list) > 1 or len(corr_obs_list) > 1:
             fid = _generate_finding_id(
-                "ORBIT-XB-01", jira_ref, (gh_ref,), "INSUFFICIENT_EVIDENCE"
+                "ORBIT-XB-01", subject_ref, (corr_ref,), "INSUFFICIENT_EVIDENCE"
             )
             combined_p = _merge_provenance(
                 tuple(rel_prov),
-                *(o.provenance_refs for o in jira_obs_list),
-                *(o.provenance_refs for o in gh_obs_list),
+                *(o.provenance_refs for o in subject_obs_list),
+                *(o.provenance_refs for o in corr_obs_list),
             )
+            obs_facts: dict[str, Any] = {}
+            if subject_ref.source_instance.source_kind == "jira" or subject_ref.entity_kind == "jira_issue":
+                obs_facts["jira_obs_count"] = len(subject_obs_list)
+            else:
+                obs_facts["subject_obs_count"] = len(subject_obs_list)
+
+            if corr_ref.source_instance.source_kind == "github" or corr_ref.entity_kind.startswith("github_"):
+                obs_facts["github_obs_count"] = len(corr_obs_list)
+            else:
+                obs_facts["corroborating_obs_count"] = len(corr_obs_list)
+
             suppressed_evaluations.append(
                 TrackBFinding(
                     finding_id=fid,
                     rule_id="ORBIT-XB-01",
                     rule_version="1.0.0",
-                    subject_ref=jira_ref,
-                    corroborating_refs=(gh_ref,),
+                    subject_ref=subject_ref,
+                    corroborating_refs=(corr_ref,),
                     disposition="INSUFFICIENT_EVIDENCE",
                     sufficiency="AMBIGUOUS",
                     deterministic_explanation=(
                         f"Multiple candidate observations found for pair "
-                        f"({jira_ref.entity_id}, {gh_ref.entity_id})."
+                        f"({subject_ref.entity_id}, {corr_ref.entity_id})."
                     ),
-                    observed_facts={
-                        "jira_obs_count": len(jira_obs_list),
-                        "github_obs_count": len(gh_obs_list),
-                    },
+                    observed_facts=obs_facts,
                     provenance_refs=combined_p,
                 )
             )
             continue
 
-        jira_obs = jira_obs_list[0]
-        gh_obs = gh_obs_list[0]
-        jira_state = jira_obs.observed_state
-        gh_state = gh_obs.observed_state
+        subject_obs = subject_obs_list[0]
+        corr_obs = corr_obs_list[0]
 
         combined_prov = _merge_provenance(
-            jira_obs.provenance_refs,
-            gh_obs.provenance_refs,
+            subject_obs.provenance_refs,
+            corr_obs.provenance_refs,
             tuple(rel_prov),
         )
         combined_qi = _merge_quality_issues(
-            jira_obs.quality_issues,
-            gh_obs.quality_issues,
+            subject_obs.quality_issues,
+            corr_obs.quality_issues,
         )
 
         is_stale = any(q.code == "STALE" for q in combined_qi)
 
+        work_state = as_work_item_state(subject_obs.observed_state)
+        code_state = as_code_change_state(corr_obs.observed_state)
+        is_raw_jira = isinstance(subject_obs.observed_state, JiraIssueState)
+        is_raw_gh_pr = isinstance(corr_obs.observed_state, GitHubPullRequestState)
+
         # ── 5.1 Evaluate ORBIT-XB-01: UNMERGED_PR_ON_RESOLVED_ISSUE ──
-        if gh_ref.entity_kind == "github_pull_request":
-            if not isinstance(jira_state, JiraIssueState) or not isinstance(
-                gh_state, GitHubPullRequestState
-            ):
+        is_pr_like = corr_ref.entity_kind == "github_pull_request" or (
+            corr_ref.entity_kind == "code_change"
+            and (code_state is None or code_state.change_type in ("pull_request", "merge_request", "revision"))
+        )
+        if is_pr_like:
+            if work_state is None or code_state is None:
                 fid = _generate_finding_id(
-                    "ORBIT-XB-01", jira_ref, (gh_ref,), "INSUFFICIENT_EVIDENCE"
+                    "ORBIT-XB-01", subject_ref, (corr_ref,), "INSUFFICIENT_EVIDENCE"
                 )
                 suppressed_evaluations.append(
                     TrackBFinding(
                         finding_id=fid,
                         rule_id="ORBIT-XB-01",
                         rule_version="1.0.0",
-                        subject_ref=jira_ref,
-                        corroborating_refs=(gh_ref,),
+                        subject_ref=subject_ref,
+                        corroborating_refs=(corr_ref,),
                         disposition="INSUFFICIENT_EVIDENCE",
                         sufficiency="INSUFFICIENT_EVIDENCE",
                         deterministic_explanation=(
-                            f"Observation state types for pair ({jira_ref.entity_id}, "
-                            f"{gh_ref.entity_id}) are missing or incompatible."
+                            f"Observation state types for pair ({subject_ref.entity_id}, "
+                            f"{corr_ref.entity_id}) are missing or incompatible."
                         ),
                         observed_facts={},
                         provenance_refs=combined_prov,
                         quality_issues=combined_qi,
                     )
                 )
-            elif gh_state.state is None or gh_state.state not in {
+            elif code_state.state is None or code_state.state not in {
                 "open",
                 "closed",
                 "merged",
             }:
                 fid = _generate_finding_id(
-                    "ORBIT-XB-01", jira_ref, (gh_ref,), "INSUFFICIENT_EVIDENCE"
+                    "ORBIT-XB-01", subject_ref, (corr_ref,), "INSUFFICIENT_EVIDENCE"
                 )
+                prefix = "GitHub PR #" if is_raw_gh_pr else "Code change #"
+                fact_key = "pr_state" if is_raw_gh_pr else "code_change_state"
+                ident = code_state.number if is_raw_gh_pr else code_state.identifier
                 suppressed_evaluations.append(
                     TrackBFinding(
                         finding_id=fid,
                         rule_id="ORBIT-XB-01",
                         rule_version="1.0.0",
-                        subject_ref=jira_ref,
-                        corroborating_refs=(gh_ref,),
+                        subject_ref=subject_ref,
+                        corroborating_refs=(corr_ref,),
                         disposition="INSUFFICIENT_EVIDENCE",
                         sufficiency="INSUFFICIENT_EVIDENCE",
                         deterministic_explanation=(
-                            f"GitHub PR #{gh_state.number} state is missing or indeterminate."
+                            f"{prefix}{ident} state is missing or indeterminate."
                         ),
-                        observed_facts={"pr_state": gh_state.state},
+                        observed_facts={fact_key: code_state.state},
                         provenance_refs=combined_prov,
                         quality_issues=combined_qi,
                     )
                 )
-            elif jira_state.status_category == "done" and gh_state.state == "open":
+            elif work_state.status_category == "done" and code_state.state == "open":
                 fid = _generate_finding_id(
-                    "ORBIT-XB-01", jira_ref, (gh_ref,), "TRIGGERED"
+                    "ORBIT-XB-01", subject_ref, (corr_ref,), "TRIGGERED"
                 )
                 finding_sufficiency = "STALE" if is_stale else base_sufficiency
                 finding_disposition = (
                     "SUPPRESSED" if is_stale else "TRIGGERED"
                 )
+                if is_raw_jira and is_raw_gh_pr:
+                    explanation = (
+                        f"Jira issue {work_state.key} is marked "
+                        f"'{work_state.source_status}' (status category: done) "
+                        f"while referenced GitHub PR #{code_state.number} "
+                        f"('{code_state.title}') remains open. This records a "
+                        "cross-system lifecycle state discrepancy without inferring "
+                        "defect or causality."
+                    )
+                    facts = {
+                        "jira_key": work_state.key,
+                        "jira_status": work_state.source_status,
+                        "jira_status_category": work_state.status_category,
+                        "pr_number": code_state.number,
+                        "pr_title": code_state.title,
+                        "pr_state": code_state.state,
+                        "relationship_kind": rel_kind,
+                        "relationship_basis": rel_basis,
+                    }
+                else:
+                    explanation = (
+                        f"Work item {work_state.key} is marked "
+                        f"'{work_state.source_status}' (status category: done) "
+                        f"while referenced code change #{code_state.identifier} "
+                        f"('{code_state.title}') remains open. This records a "
+                        "cross-system lifecycle state discrepancy without inferring "
+                        "defect or causality."
+                    )
+                    facts = {
+                        "work_item_key": work_state.key,
+                        "work_item_status": work_state.source_status,
+                        "work_item_status_category": work_state.status_category,
+                        "code_change_identifier": code_state.identifier,
+                        "code_change_number": code_state.number,
+                        "code_change_title": code_state.title,
+                        "code_change_state": code_state.state,
+                        "relationship_kind": rel_kind,
+                        "relationship_basis": rel_basis,
+                    }
+
                 finding = TrackBFinding(
                     finding_id=fid,
                     rule_id="ORBIT-XB-01",
                     rule_version="1.0.0",
-                    subject_ref=jira_ref,
-                    corroborating_refs=(gh_ref,),
+                    subject_ref=subject_ref,
+                    corroborating_refs=(corr_ref,),
                     disposition=finding_disposition,
                     sufficiency=finding_sufficiency,
-                    deterministic_explanation=(
-                        f"Jira issue {jira_state.key} is marked "
-                        f"'{jira_state.source_status}' (status category: done) "
-                        f"while referenced GitHub PR #{gh_state.number} "
-                        f"('{gh_state.title}') remains open. This records a "
-                        "cross-system lifecycle state discrepancy without inferring "
-                        "defect or causality."
-                    ),
-                    observed_facts={
-                        "jira_key": jira_state.key,
-                        "jira_status": jira_state.source_status,
-                        "jira_status_category": jira_state.status_category,
-                        "pr_number": gh_state.number,
-                        "pr_title": gh_state.title,
-                        "pr_state": gh_state.state,
-                        "relationship_kind": rel_kind,
-                        "relationship_basis": rel_basis,
-                    },
+                    deterministic_explanation=explanation,
+                    observed_facts=facts,
                     provenance_refs=combined_prov,
                     quality_issues=combined_qi,
                 )
@@ -530,53 +585,70 @@ def evaluate_evidence_bundle(
                     findings.append(finding)
 
         # ── 5.2 Evaluate ORBIT-XB-02: MERGED_PR_ON_UNRESOLVED_ISSUE ──
-        if gh_ref.entity_kind == "github_pull_request":
-            if isinstance(jira_state, JiraIssueState) and isinstance(
-                gh_state, GitHubPullRequestState
-            ):
-                if gh_state.state == "merged":
-                    if jira_state.status_category in {
+        if is_pr_like:
+            if work_state is not None and code_state is not None:
+                if code_state.state == "merged":
+                    if work_state.status_category in {
                         "todo",
                         "in_progress",
                         "blocked",
                     }:
-                        if gh_state.merged_at is None:
+                        if code_state.merged_at is None:
                             fid = _generate_finding_id(
                                 "ORBIT-XB-02",
-                                jira_ref,
-                                (gh_ref,),
+                                subject_ref,
+                                (corr_ref,),
                                 "INSUFFICIENT_EVIDENCE",
                             )
+                            if is_raw_jira and is_raw_gh_pr:
+                                explanation = (
+                                    f"GitHub PR #{code_state.number} is marked merged "
+                                    f"while referenced Jira issue {work_state.key} "
+                                    f"remains '{work_state.source_status}', but PR "
+                                    "merged_at timestamp is missing."
+                                )
+                                facts = {
+                                    "jira_key": work_state.key,
+                                    "jira_status": work_state.source_status,
+                                    "jira_status_category": work_state.status_category,
+                                    "pr_number": code_state.number,
+                                    "pr_state": code_state.state,
+                                    "pr_merged_at": None,
+                                }
+                            else:
+                                explanation = (
+                                    f"Code change #{code_state.identifier} is marked merged "
+                                    f"while referenced work item {work_state.key} "
+                                    f"remains '{work_state.source_status}', but "
+                                    "merged_at timestamp is missing."
+                                )
+                                facts = {
+                                    "work_item_key": work_state.key,
+                                    "work_item_status": work_state.source_status,
+                                    "work_item_status_category": work_state.status_category,
+                                    "code_change_identifier": code_state.identifier,
+                                    "code_change_number": code_state.number,
+                                    "code_change_state": code_state.state,
+                                    "code_change_merged_at": None,
+                                }
                             suppressed_evaluations.append(
                                 TrackBFinding(
                                     finding_id=fid,
                                     rule_id="ORBIT-XB-02",
                                     rule_version="1.0.0",
-                                    subject_ref=jira_ref,
-                                    corroborating_refs=(gh_ref,),
+                                    subject_ref=subject_ref,
+                                    corroborating_refs=(corr_ref,),
                                     disposition="INSUFFICIENT_EVIDENCE",
                                     sufficiency="INSUFFICIENT_EVIDENCE",
-                                    deterministic_explanation=(
-                                        f"GitHub PR #{gh_state.number} is marked merged "
-                                        f"while referenced Jira issue {jira_state.key} "
-                                        f"remains '{jira_state.source_status}', but PR "
-                                        "merged_at timestamp is missing."
-                                    ),
-                                    observed_facts={
-                                        "jira_key": jira_state.key,
-                                        "jira_status": jira_state.source_status,
-                                        "jira_status_category": jira_state.status_category,
-                                        "pr_number": gh_state.number,
-                                        "pr_state": gh_state.state,
-                                        "pr_merged_at": None,
-                                    },
+                                    deterministic_explanation=explanation,
+                                    observed_facts=facts,
                                     provenance_refs=combined_prov,
                                     quality_issues=combined_qi,
                                 )
                             )
                         else:
                             fid = _generate_finding_id(
-                                "ORBIT-XB-02", jira_ref, (gh_ref,), "TRIGGERED"
+                                "ORBIT-XB-02", subject_ref, (corr_ref,), "TRIGGERED"
                             )
                             finding_sufficiency = (
                                 "STALE" if is_stale else base_sufficiency
@@ -584,35 +656,61 @@ def evaluate_evidence_bundle(
                             finding_disposition = (
                                 "SUPPRESSED" if is_stale else "TRIGGERED"
                             )
+                            if is_raw_jira and is_raw_gh_pr:
+                                explanation = (
+                                    f"GitHub PR #{code_state.number} ('{code_state.title}') "
+                                    f"is merged while referenced Jira issue {work_state.key} "
+                                    f"remains '{work_state.source_status}' "
+                                    f"(status category: {work_state.status_category}). "
+                                    "This records a cross-system lifecycle tracking lag; "
+                                    "merging code does not prove issue completion."
+                                )
+                                facts = {
+                                    "jira_key": work_state.key,
+                                    "jira_status": work_state.source_status,
+                                    "jira_status_category": work_state.status_category,
+                                    "pr_number": code_state.number,
+                                    "pr_title": code_state.title,
+                                    "pr_state": code_state.state,
+                                    "pr_merged_at": _serialize_datetime(
+                                        code_state.merged_at
+                                    ),
+                                    "relationship_kind": rel_kind,
+                                    "relationship_basis": rel_basis,
+                                }
+                            else:
+                                explanation = (
+                                    f"Code change #{code_state.identifier} ('{code_state.title}') "
+                                    f"is merged while referenced work item {work_state.key} "
+                                    f"remains '{work_state.source_status}' "
+                                    f"(status category: {work_state.status_category}). "
+                                    "This records a cross-system lifecycle tracking lag; "
+                                    "merging code does not prove issue completion."
+                                )
+                                facts = {
+                                    "work_item_key": work_state.key,
+                                    "work_item_status": work_state.source_status,
+                                    "work_item_status_category": work_state.status_category,
+                                    "code_change_identifier": code_state.identifier,
+                                    "code_change_number": code_state.number,
+                                    "code_change_title": code_state.title,
+                                    "code_change_state": code_state.state,
+                                    "code_change_merged_at": _serialize_datetime(
+                                        code_state.merged_at
+                                    ),
+                                    "relationship_kind": rel_kind,
+                                    "relationship_basis": rel_basis,
+                                }
                             finding = TrackBFinding(
                                 finding_id=fid,
                                 rule_id="ORBIT-XB-02",
                                 rule_version="1.0.0",
-                                subject_ref=jira_ref,
-                                corroborating_refs=(gh_ref,),
+                                subject_ref=subject_ref,
+                                corroborating_refs=(corr_ref,),
                                 disposition=finding_disposition,
                                 sufficiency=finding_sufficiency,
-                                deterministic_explanation=(
-                                    f"GitHub PR #{gh_state.number} ('{gh_state.title}') "
-                                    f"is merged while referenced Jira issue {jira_state.key} "
-                                    f"remains '{jira_state.source_status}' "
-                                    f"(status category: {jira_state.status_category}). "
-                                    "This records a cross-system lifecycle tracking lag; "
-                                    "merging code does not prove issue completion."
-                                ),
-                                observed_facts={
-                                    "jira_key": jira_state.key,
-                                    "jira_status": jira_state.source_status,
-                                    "jira_status_category": jira_state.status_category,
-                                    "pr_number": gh_state.number,
-                                    "pr_title": gh_state.title,
-                                    "pr_state": gh_state.state,
-                                    "pr_merged_at": _serialize_datetime(
-                                        gh_state.merged_at
-                                    ),
-                                    "relationship_kind": rel_kind,
-                                    "relationship_basis": rel_basis,
-                                },
+                                deterministic_explanation=explanation,
+                                observed_facts=facts,
                                 provenance_refs=combined_prov,
                                 quality_issues=combined_qi,
                             )
@@ -620,35 +718,52 @@ def evaluate_evidence_bundle(
                                 suppressed_evaluations.append(finding)
                             else:
                                 findings.append(finding)
-                    elif jira_state.status_category != "done":
+                    elif work_state.status_category != "done":
                         # Unknown or unmapped Jira status category
                         fid = _generate_finding_id(
                             "ORBIT-XB-02",
-                            jira_ref,
-                            (gh_ref,),
+                            subject_ref,
+                            (corr_ref,),
                             "INSUFFICIENT_EVIDENCE",
                         )
+                        if is_raw_jira and is_raw_gh_pr:
+                            explanation = (
+                                f"GitHub PR #{code_state.number} is merged, but Jira issue "
+                                f"{work_state.key} status category '{work_state.status_category}' "
+                                "is indeterminate or unmapped."
+                            )
+                            facts = {
+                                "jira_key": work_state.key,
+                                "jira_status": work_state.source_status,
+                                "jira_status_category": work_state.status_category,
+                                "pr_number": code_state.number,
+                                "pr_state": code_state.state,
+                            }
+                        else:
+                            explanation = (
+                                f"Code change #{code_state.identifier} is merged, but work item "
+                                f"{work_state.key} status category '{work_state.status_category}' "
+                                "is indeterminate or unmapped."
+                            )
+                            facts = {
+                                "work_item_key": work_state.key,
+                                "work_item_status": work_state.source_status,
+                                "work_item_status_category": work_state.status_category,
+                                "code_change_identifier": code_state.identifier,
+                                "code_change_number": code_state.number,
+                                "code_change_state": code_state.state,
+                            }
                         suppressed_evaluations.append(
                             TrackBFinding(
                                 finding_id=fid,
                                 rule_id="ORBIT-XB-02",
                                 rule_version="1.0.0",
-                                subject_ref=jira_ref,
-                                corroborating_refs=(gh_ref,),
+                                subject_ref=subject_ref,
+                                corroborating_refs=(corr_ref,),
                                 disposition="INSUFFICIENT_EVIDENCE",
                                 sufficiency="INSUFFICIENT_EVIDENCE",
-                                deterministic_explanation=(
-                                    f"GitHub PR #{gh_state.number} is merged, but Jira issue "
-                                    f"{jira_state.key} status category '{jira_state.status_category}' "
-                                    "is indeterminate or unmapped."
-                                ),
-                                observed_facts={
-                                    "jira_key": jira_state.key,
-                                    "jira_status": jira_state.source_status,
-                                    "jira_status_category": jira_state.status_category,
-                                    "pr_number": gh_state.number,
-                                    "pr_state": gh_state.state,
-                                },
+                                deterministic_explanation=explanation,
+                                observed_facts=facts,
                                 provenance_refs=combined_prov,
                                 quality_issues=combined_qi,
                             )
@@ -656,36 +771,45 @@ def evaluate_evidence_bundle(
 
         # ── 5.3 Evaluate ORBIT-XB-03: POST_RESOLUTION_WORK_ACTIVITY ──
         # OBSERVATIONAL ONLY. Never CONFLICTING. Never asserts defect or fault.
-        if isinstance(jira_state, JiraIssueState):
+        if work_state is not None:
             activity_dt: datetime | None = None
             activity_kind: str | None = None
             activity_desc: str | None = None
             activity_evaluated = False
 
-            if isinstance(gh_state, GitHubPullRequestState):
-                if gh_state.state == "merged" or gh_state.merged_at is not None:
-                    activity_dt = gh_state.merged_at
-                    activity_kind = "pull request merge"
+            raw_corr_state = corr_obs.observed_state
+
+            if code_state is not None:
+                if code_state.change_type == "commit" or (code_state.committed_at is not None and code_state.merged_at is None):
+                    activity_dt = code_state.committed_at
+                    activity_kind = "commit"
+                    activity_desc = f"commit {code_state.identifier[:8]}"
+                    activity_evaluated = True
+                elif code_state.state == "merged" or code_state.merged_at is not None:
+                    activity_dt = code_state.merged_at
+                    activity_kind = "pull request merge" if is_raw_gh_pr else "code change merge"
                     activity_desc = (
-                        f"PR #{gh_state.number} ('{gh_state.title}')"
+                        f"PR #{code_state.number} ('{code_state.title}')"
+                        if is_raw_gh_pr
+                        else f"code change #{code_state.identifier} ('{code_state.title}')"
                     )
                     activity_evaluated = True
-            elif isinstance(gh_state, GitHubCommitState):
-                activity_dt = gh_state.committed_at
+            elif isinstance(raw_corr_state, GitHubCommitState):
+                activity_dt = raw_corr_state.committed_at
                 activity_kind = "commit"
-                activity_desc = f"commit {gh_state.sha[:8]}"
+                activity_desc = f"commit {raw_corr_state.sha[:8]}"
                 activity_evaluated = True
 
             if activity_evaluated:
-                if jira_state.resolved_at is not None:
+                if work_state.resolved_at is not None:
                     if activity_dt is not None:
-                        if activity_dt > jira_state.resolved_at:
+                        if activity_dt > work_state.resolved_at:
                             # Observed temporal inversion -> TRIGGERED
                             days = elapsed_complete_days(
-                                jira_state.resolved_at, activity_dt
+                                work_state.resolved_at, activity_dt
                             )
                             fid = _generate_finding_id(
-                                "ORBIT-XB-03", jira_ref, (gh_ref,), "TRIGGERED"
+                                "ORBIT-XB-03", subject_ref, (corr_ref,), "TRIGGERED"
                             )
                             finding_sufficiency = (
                                 "STALE" if is_stale else base_sufficiency
@@ -693,27 +817,20 @@ def evaluate_evidence_bundle(
                             finding_disposition = (
                                 "SUPPRESSED" if is_stale else "TRIGGERED"
                             )
-                            finding = TrackBFinding(
-                                finding_id=fid,
-                                rule_id="ORBIT-XB-03",
-                                rule_version="1.0.0",
-                                subject_ref=jira_ref,
-                                corroborating_refs=(gh_ref,),
-                                disposition=finding_disposition,
-                                sufficiency=finding_sufficiency,
-                                deterministic_explanation=(
+                            if is_raw_jira and (is_raw_gh_pr or isinstance(raw_corr_state, GitHubCommitState)):
+                                explanation = (
                                     f"GitHub {activity_kind} ({activity_desc}) occurred at "
-                                    f"{_serialize_datetime(activity_dt)} after Jira issue {jira_state.key} "
-                                    f"was recorded as resolved at {_serialize_datetime(jira_state.resolved_at)} "
+                                    f"{_serialize_datetime(activity_dt)} after Jira issue {work_state.key} "
+                                    f"was recorded as resolved at {_serialize_datetime(work_state.resolved_at)} "
                                     f"({days} complete days post-resolution). This is an observational temporal finding."
-                                ),
-                                observed_facts={
-                                    "jira_key": jira_state.key,
+                                )
+                                facts = {
+                                    "jira_key": work_state.key,
                                     "jira_resolved_at": _serialize_datetime(
-                                        jira_state.resolved_at
+                                        work_state.resolved_at
                                     ),
-                                    "github_entity_kind": gh_ref.entity_kind,
-                                    "github_entity_id": gh_ref.entity_id,
+                                    "github_entity_kind": corr_ref.entity_kind,
+                                    "github_entity_id": corr_ref.entity_id,
                                     "github_activity_kind": activity_kind,
                                     "github_activity_at": _serialize_datetime(
                                         activity_dt
@@ -722,7 +839,40 @@ def evaluate_evidence_bundle(
                                     "temporal_comparison": "INVERTED",
                                     "relationship_kind": rel_kind,
                                     "relationship_basis": rel_basis,
-                                },
+                                }
+                            else:
+                                explanation = (
+                                    f"Corroborating {activity_kind} ({activity_desc}) occurred at "
+                                    f"{_serialize_datetime(activity_dt)} after work item {work_state.key} "
+                                    f"was recorded as resolved at {_serialize_datetime(work_state.resolved_at)} "
+                                    f"({days} complete days post-resolution). This is an observational temporal finding."
+                                )
+                                facts = {
+                                    "work_item_key": work_state.key,
+                                    "work_item_resolved_at": _serialize_datetime(
+                                        work_state.resolved_at
+                                    ),
+                                    "corroborating_entity_kind": corr_ref.entity_kind,
+                                    "corroborating_entity_id": corr_ref.entity_id,
+                                    "corroborating_activity_kind": activity_kind,
+                                    "corroborating_activity_at": _serialize_datetime(
+                                        activity_dt
+                                    ),
+                                    "elapsed_complete_days_post_resolution": days,
+                                    "temporal_comparison": "INVERTED",
+                                    "relationship_kind": rel_kind,
+                                    "relationship_basis": rel_basis,
+                                }
+                            finding = TrackBFinding(
+                                finding_id=fid,
+                                rule_id="ORBIT-XB-03",
+                                rule_version="1.0.0",
+                                subject_ref=subject_ref,
+                                corroborating_refs=(corr_ref,),
+                                disposition=finding_disposition,
+                                sufficiency=finding_sufficiency,
+                                deterministic_explanation=explanation,
+                                observed_facts=facts,
                                 provenance_refs=combined_prov,
                                 quality_issues=combined_qi,
                             )
@@ -736,66 +886,99 @@ def evaluate_evidence_bundle(
                         # Required activity timestamp is missing
                         fid = _generate_finding_id(
                             "ORBIT-XB-03",
-                            jira_ref,
-                            (gh_ref,),
+                            subject_ref,
+                            (corr_ref,),
                             "INSUFFICIENT_EVIDENCE",
                         )
+                        if is_raw_jira and (is_raw_gh_pr or isinstance(raw_corr_state, GitHubCommitState)):
+                            explanation = (
+                                f"Jira issue {work_state.key} was recorded as resolved at "
+                                f"{_serialize_datetime(work_state.resolved_at)}, but associated "
+                                f"GitHub {activity_kind} activity timestamp is missing."
+                            )
+                            facts = {
+                                "jira_key": work_state.key,
+                                "jira_resolved_at": _serialize_datetime(
+                                    work_state.resolved_at
+                                ),
+                                "github_entity_kind": corr_ref.entity_kind,
+                                "github_entity_id": corr_ref.entity_id,
+                                "github_activity_kind": activity_kind,
+                                "github_activity_at": None,
+                            }
+                        else:
+                            explanation = (
+                                f"Work item {work_state.key} was recorded as resolved at "
+                                f"{_serialize_datetime(work_state.resolved_at)}, but associated "
+                                f"corroborating {activity_kind} activity timestamp is missing."
+                            )
+                            facts = {
+                                "work_item_key": work_state.key,
+                                "work_item_resolved_at": _serialize_datetime(
+                                    work_state.resolved_at
+                                ),
+                                "corroborating_entity_kind": corr_ref.entity_kind,
+                                "corroborating_entity_id": corr_ref.entity_id,
+                                "corroborating_activity_kind": activity_kind,
+                                "corroborating_activity_at": None,
+                            }
                         suppressed_evaluations.append(
                             TrackBFinding(
                                 finding_id=fid,
                                 rule_id="ORBIT-XB-03",
                                 rule_version="1.0.0",
-                                subject_ref=jira_ref,
-                                corroborating_refs=(gh_ref,),
+                                subject_ref=subject_ref,
+                                corroborating_refs=(corr_ref,),
                                 disposition="INSUFFICIENT_EVIDENCE",
                                 sufficiency="INSUFFICIENT_EVIDENCE",
-                                deterministic_explanation=(
-                                    f"Jira issue {jira_state.key} was recorded as resolved at "
-                                    f"{_serialize_datetime(jira_state.resolved_at)}, but associated "
-                                    f"GitHub {activity_kind} activity timestamp is missing."
-                                ),
-                                observed_facts={
-                                    "jira_key": jira_state.key,
-                                    "jira_resolved_at": _serialize_datetime(
-                                        jira_state.resolved_at
-                                    ),
-                                    "github_entity_kind": gh_ref.entity_kind,
-                                    "github_entity_id": gh_ref.entity_id,
-                                    "github_activity_kind": activity_kind,
-                                    "github_activity_at": None,
-                                },
+                                deterministic_explanation=explanation,
+                                observed_facts=facts,
                                 provenance_refs=combined_prov,
                                 quality_issues=combined_qi,
                             )
                         )
                 else:
-                    # Jira resolved_at is None
-                    if jira_state.status_category == "done":
+                    # work_state resolved_at is None
+                    if work_state.status_category == "done":
                         fid = _generate_finding_id(
                             "ORBIT-XB-03",
-                            jira_ref,
-                            (gh_ref,),
+                            subject_ref,
+                            (corr_ref,),
                             "INSUFFICIENT_EVIDENCE",
                         )
+                        if is_raw_jira:
+                            explanation = (
+                                f"Jira issue {work_state.key} is marked '{work_state.source_status}' "
+                                "(status category: done) but lacks an explicit resolved_at timestamp."
+                            )
+                            facts = {
+                                "jira_key": work_state.key,
+                                "jira_status": work_state.source_status,
+                                "jira_status_category": work_state.status_category,
+                                "jira_resolved_at": None,
+                            }
+                        else:
+                            explanation = (
+                                f"Work item {work_state.key} is marked '{work_state.source_status}' "
+                                "(status category: done) but lacks an explicit resolved_at timestamp."
+                            )
+                            facts = {
+                                "work_item_key": work_state.key,
+                                "work_item_status": work_state.source_status,
+                                "work_item_status_category": work_state.status_category,
+                                "work_item_resolved_at": None,
+                            }
                         suppressed_evaluations.append(
                             TrackBFinding(
                                 finding_id=fid,
                                 rule_id="ORBIT-XB-03",
                                 rule_version="1.0.0",
-                                subject_ref=jira_ref,
-                                corroborating_refs=(gh_ref,),
+                                subject_ref=subject_ref,
+                                corroborating_refs=(corr_ref,),
                                 disposition="INSUFFICIENT_EVIDENCE",
                                 sufficiency="INSUFFICIENT_EVIDENCE",
-                                deterministic_explanation=(
-                                    f"Jira issue {jira_state.key} is marked '{jira_state.source_status}' "
-                                    "(status category: done) but lacks an explicit resolved_at timestamp."
-                                ),
-                                observed_facts={
-                                    "jira_key": jira_state.key,
-                                    "jira_status": jira_state.source_status,
-                                    "jira_status_category": jira_state.status_category,
-                                    "jira_resolved_at": None,
-                                },
+                                deterministic_explanation=explanation,
+                                observed_facts=facts,
                                 provenance_refs=combined_prov,
                                 quality_issues=combined_qi,
                             )
@@ -805,12 +988,12 @@ def evaluate_evidence_bundle(
     # Emits explicit INSUFFICIENT_EVIDENCE / UNRESOLVED suppressions for broken links
     for u in bundle.unresolved_references:
         if (
-            u.source_ref.entity_kind == "github_pull_request"
-            and u.target_entity_kind == "jira_issue"
+            u.source_ref.entity_kind in ("github_pull_request", "code_change")
+            and u.target_entity_kind in ("jira_issue", "work_item")
         ):
             target_ref = EntityRef(
                 source_instance=u.source_ref.source_instance,
-                entity_kind="jira_issue",
+                entity_kind=u.target_entity_kind,
                 entity_id=u.target_identifier,
             )
             fid = _generate_finding_id(
@@ -819,6 +1002,18 @@ def evaluate_evidence_bundle(
                 (u.source_ref,),
                 "INSUFFICIENT_EVIDENCE",
             )
+            if u.target_entity_kind == "jira_issue" and u.source_ref.entity_kind == "github_pull_request":
+                explanation = (
+                    f"Referenced Jira issue '{u.target_identifier}' cited by GitHub PR "
+                    f"#{u.source_ref.entity_id} could not be resolved in the evidence bundle "
+                    f"({u.reason})."
+                )
+            else:
+                explanation = (
+                    f"Referenced work item '{u.target_identifier}' cited by code change "
+                    f"#{u.source_ref.entity_id} could not be resolved in the evidence bundle "
+                    f"({u.reason})."
+                )
             suppressed_evaluations.append(
                 TrackBFinding(
                     finding_id=fid,
@@ -828,11 +1023,7 @@ def evaluate_evidence_bundle(
                     corroborating_refs=(u.source_ref,),
                     disposition="INSUFFICIENT_EVIDENCE",
                     sufficiency="UNRESOLVED",
-                    deterministic_explanation=(
-                        f"Referenced Jira issue '{u.target_identifier}' cited by GitHub PR "
-                        f"#{u.source_ref.entity_id} could not be resolved in the evidence bundle "
-                        f"({u.reason})."
-                    ),
+                    deterministic_explanation=explanation,
                     observed_facts={
                         "unresolved_target_key": u.target_identifier,
                         "source_entity": f"{u.source_ref.entity_kind}:{u.source_ref.entity_id}",
