@@ -380,20 +380,29 @@ class RepositoryProvenanceRef:
     record_locator: str
     sha256_digest: str
     observation_id: str = "obs-provenance"
+    source_field_path: str | None = None
 
 
 def verify_provenance_file_digest(
-    prov: RepositoryProvenanceRef | ProvenanceRef,
+    prov: RepositoryProvenanceRef,
     base_dir: str = ".",
 ) -> bool:
     """Cryptographically verify that fixture_id file exists on disk and matches sha256_digest."""
+    if not isinstance(prov, RepositoryProvenanceRef):
+        return False
+    if not isinstance(prov.fixture_id, str) or not prov.fixture_id.strip():
+        return False
+    if not isinstance(prov.sha256_digest, str) or not prov.sha256_digest.strip():
+        return False
     path = os.path.join(base_dir, prov.fixture_id)
     if not os.path.isfile(path):
         return False
-    with open(path, "rb") as f:
-        actual_sha = hashlib.sha256(f.read()).hexdigest()
-    expected_sha = getattr(prov, "sha256_digest", None)
-    return actual_sha == expected_sha
+    try:
+        with open(path, "rb") as f:
+            actual_sha = hashlib.sha256(f.read()).hexdigest()
+        return actual_sha == prov.sha256_digest
+    except (OSError, IOError):
+        return False
 
 
 # ── Repository Evolution Taxonomies ──────────────────────────────────────────
@@ -473,6 +482,8 @@ DEFAULT_DIRECTIONALITY: dict[RelationshipType, Directionality] = {
 }
 
 REPOSITORY_NAME_PATTERN = re.compile(r"^[a-zA-Z0-9_.-]+/[a-zA-Z0-9_.-]+$")
+SHA256_HEX_PATTERN = re.compile(r"^[0-9a-f]{64}$")
+EMPTY_STRING_SHA256 = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 
 # ── Deterministic Identifier Derivation ──────────────────────────────────────
@@ -539,7 +550,7 @@ class RepositoryEvolutionRelationship:
     transitivity_rule: TransitivityRule
     verification_status: VerificationStatus
     observed_at: datetime
-    provenance_refs: tuple[ProvenanceRef | RepositoryProvenanceRef, ...]
+    provenance_refs: tuple[RepositoryProvenanceRef, ...]
     family_payload: dict[str, Any] = field(default_factory=dict)
     semantic_firewall: SemanticFirewall = field(default_factory=SemanticFirewall)
     valid_from: datetime | None = None
@@ -557,7 +568,7 @@ class RepositoryEvolutionRelationship:
         target_repository: EntityRef,
         verification_status: VerificationStatus,
         observed_at: datetime,
-        provenance_refs: tuple[ProvenanceRef | RepositoryProvenanceRef, ...],
+        provenance_refs: tuple[RepositoryProvenanceRef, ...],
         directionality: Directionality | None = None,
         transitivity_rule: TransitivityRule | None = None,
         family_payload: dict[str, Any] | None = None,
@@ -623,13 +634,11 @@ class RepositoryEvolutionRelationship:
                         "source_kind": p.source_instance.source_kind,
                         "instance_id": p.source_instance.instance_id,
                     },
-                    "fixture_id": p.fixture_id or "fixture.json",
-                    "record_locator": p.record_locator or "root",
-                    "sha256_digest": getattr(
-                        p,
-                        "sha256_digest",
-                        "",
-                    ),
+                    "fixture_id": p.fixture_id,
+                    "record_locator": p.record_locator,
+                    "sha256_digest": p.sha256_digest,
+                    "observation_id": p.observation_id,
+                    "source_field_path": p.source_field_path,
                 }
                 for p in self.provenance_refs
             ],
@@ -706,12 +715,28 @@ def validate_repository_evolution_relationship(
 
     # INV-EV-01: Mandatory Provenance & Authenticity
     if not rel.provenance_refs or len(rel.provenance_refs) == 0:
-        raise ValueError("INV-EV-01 violated: provenance_refs must contain at least 1 ProvenanceRef.")
+        raise ValueError("INV-EV-01 violated: provenance_refs must contain at least 1 RepositoryProvenanceRef.")
 
-    EMPTY_STRING_SHA256 = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    for p in rel.provenance_refs:
-        digest = getattr(p, "sha256_digest", None)
-        if digest == EMPTY_STRING_SHA256:
+    for i, p in enumerate(rel.provenance_refs):
+        if not isinstance(p, RepositoryProvenanceRef):
+            raise TypeError(
+                f"INV-EV-01 violated: provenance_refs[{i}] must be an instance of RepositoryProvenanceRef, "
+                f"got {type(p).__name__}."
+            )
+        if not isinstance(p.fixture_id, str) or not p.fixture_id.strip():
+            raise ValueError(
+                f"INV-EV-01 violated: provenance_refs[{i}].fixture_id must be a non-empty string."
+            )
+        if not isinstance(p.record_locator, str) or not p.record_locator.strip():
+            raise ValueError(
+                f"INV-EV-01 violated: provenance_refs[{i}].record_locator must be a non-empty string."
+            )
+        if not isinstance(p.sha256_digest, str) or not SHA256_HEX_PATTERN.fullmatch(p.sha256_digest):
+            raise ValueError(
+                f"INV-EV-01 violated: provenance_refs[{i}].sha256_digest must be a 64-character lowercase hex string, "
+                f"got {p.sha256_digest!r}."
+            )
+        if p.sha256_digest == EMPTY_STRING_SHA256:
             raise ValueError(
                 f"INV-EV-01 violated: Provenance ref {p.fixture_id} has invalid empty-string SHA-256 digest. "
                 "Authentic cryptographic provenance is required."
@@ -740,6 +765,11 @@ def validate_repository_evolution_relationship(
 
 # ── Graph Acyclicity Validator ───────────────────────────────────────────────
 
+def _repo_endpoint_key(repo: EntityRef) -> str:
+    """Composite endpoint identifier preserving provider, instance, and entity scope."""
+    return f"{repo.source_instance.source_kind}:{repo.source_instance.instance_id}:{repo.entity_id}"
+
+
 def validate_repository_evolution_graph(
     relationships: tuple[RepositoryEvolutionRelationship, ...] | list[RepositoryEvolutionRelationship],
 ) -> None:
@@ -752,13 +782,13 @@ def validate_repository_evolution_graph(
     routing_adj: dict[str, list[str]] = {}
     for r in relationships:
         if r.relationship_family == "NAVIGATION_ROUTING":
-            src = r.source_repository.entity_id
-            tgt = r.target_repository.entity_id
-            if src == tgt:
+            src_key = _repo_endpoint_key(r.source_repository)
+            tgt_key = _repo_endpoint_key(r.target_repository)
+            if src_key == tgt_key:
                 raise ValueError(
-                    f"INV-GR-02 violated: Self-referential redirect detected on {src!r}."
+                    f"INV-GR-02 violated: Self-referential redirect detected on {r.source_repository.entity_id!r}."
                 )
-            routing_adj.setdefault(src, []).append(tgt)
+            routing_adj.setdefault(src_key, []).append(tgt_key)
 
     _assert_dag(routing_adj, "INV-GR-02: Cycle detected in NAVIGATION_ROUTING graph")
 
@@ -766,13 +796,13 @@ def validate_repository_evolution_graph(
     lineage_adj: dict[str, list[str]] = {}
     for r in relationships:
         if r.relationship_family == "PROJECT_LINEAGE":
-            src = r.source_repository.entity_id
-            tgt = r.target_repository.entity_id
-            if src == tgt:
+            src_key = _repo_endpoint_key(r.source_repository)
+            tgt_key = _repo_endpoint_key(r.target_repository)
+            if src_key == tgt_key:
                 raise ValueError(
-                    f"INV-GR-01 violated: Self-referential predecessor detected on {src!r}."
+                    f"INV-GR-01 violated: Self-referential predecessor detected on {r.source_repository.entity_id!r}."
                 )
-            lineage_adj.setdefault(src, []).append(tgt)
+            lineage_adj.setdefault(src_key, []).append(tgt_key)
 
     _assert_dag(lineage_adj, "INV-GR-01: Cycle detected in PROJECT_LINEAGE graph")
 
@@ -1638,6 +1668,7 @@ def deserialize_repository_evolution_relationship(
                 record_locator=p.get("record_locator", ""),
                 sha256_digest=p.get("sha256_digest", ""),
                 observation_id=p.get("observation_id", "obs-provenance"),
+                source_field_path=p.get("source_field_path"),
             )
         )
     firewall_data = data.get("semantic_firewall", {})

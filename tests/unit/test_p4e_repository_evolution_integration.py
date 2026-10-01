@@ -547,3 +547,302 @@ class TestAuthenticApacheProductionPath:
         # INV-FW-01 to 04:
         for r in bundle.repository_relationships:
             r.semantic_firewall.validate()
+
+
+class TestPhase4EBHardeningGate:
+    """Verifies all Phase 4E-B Hardening Gate findings:
+    - Finding 1: Provenance type safety and cryptographic SHA-256 validation
+    - Finding 2: Lossless provenance serialization roundtrip (observation_id & source_field_path)
+    - Finding 3: Semantic conflict detection during deduplication and contradictory quality issue
+    - Finding 4: Cross-provider endpoint identity isolation in graph cycle detection
+    """
+
+    def test_h1_provenance_type_safety_rejects_plain_provenance_ref(
+        self, gh_source: SourceInstance
+    ):
+        plain_prov = ProvenanceRef(
+            source_instance=gh_source,
+            observation_id="obs-1",
+            fixture_id="qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_254.json",
+            record_locator="issues[0]",
+        )
+        with pytest.raises(TypeError, match="must be an instance of RepositoryProvenanceRef"):
+            RepositoryEvolutionRelationship.create(
+                relationship_family="NAVIGATION_ROUTING",
+                relationship_type="REDIRECT",
+                source_repository=EntityRef(gh_source, "repository", "apache/incubator-flink"),
+                target_repository=EntityRef(gh_source, "repository", "apache/flink"),
+                verification_status="PROVEN",
+                observed_at=datetime(2026, 9, 30, 12, 0, 0, tzinfo=timezone.utc),
+                provenance_refs=(plain_prov,),  # type: ignore
+            )
+
+    def test_h1_provenance_rejects_empty_locator_and_empty_fixture(
+        self, gh_source: SourceInstance
+    ):
+        # Empty fixture_id
+        p_bad_fix = RepositoryProvenanceRef(
+            source_instance=gh_source,
+            fixture_id="",
+            record_locator="locator-1",
+            sha256_digest="85ea7b74f797099be91424b9c3e793f0f8cdcd8dda61e8f82a1cf8468f17754b",
+        )
+        with pytest.raises(ValueError, match="fixture_id must be a non-empty string"):
+            RepositoryEvolutionRelationship.create(
+                relationship_family="NAVIGATION_ROUTING",
+                relationship_type="REDIRECT",
+                source_repository=EntityRef(gh_source, "repository", "apache/incubator-flink"),
+                target_repository=EntityRef(gh_source, "repository", "apache/flink"),
+                verification_status="PROVEN",
+                observed_at=datetime(2026, 9, 30, 12, 0, 0, tzinfo=timezone.utc),
+                provenance_refs=(p_bad_fix,),
+            )
+
+        # Empty record_locator
+        p_bad_loc = RepositoryProvenanceRef(
+            source_instance=gh_source,
+            fixture_id="qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_254.json",
+            record_locator="",
+            sha256_digest="85ea7b74f797099be91424b9c3e793f0f8cdcd8dda61e8f82a1cf8468f17754b",
+        )
+        with pytest.raises(ValueError, match="record_locator must be a non-empty string"):
+            RepositoryEvolutionRelationship.create(
+                relationship_family="NAVIGATION_ROUTING",
+                relationship_type="REDIRECT",
+                source_repository=EntityRef(gh_source, "repository", "apache/incubator-flink"),
+                target_repository=EntityRef(gh_source, "repository", "apache/flink"),
+                verification_status="PROVEN",
+                observed_at=datetime(2026, 9, 30, 12, 0, 0, tzinfo=timezone.utc),
+                provenance_refs=(p_bad_loc,),
+            )
+
+    def test_h1_provenance_rejects_malformed_and_empty_string_sha256(
+        self, gh_source: SourceInstance
+    ):
+        # Malformed SHA (non-hex, wrong length)
+        for bad_sha in ["short", "G" * 64, "85EA7B74F797099BE91424B9C3E793F0F8CDCD8DDA61E8F82A1CF8468F17754B", ""]:
+            p_malformed = RepositoryProvenanceRef(
+                source_instance=gh_source,
+                fixture_id="qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_254.json",
+                record_locator="locator-1",
+                sha256_digest=bad_sha,
+            )
+            with pytest.raises(ValueError, match="sha256_digest must be a 64-character lowercase hex string"):
+                RepositoryEvolutionRelationship.create(
+                    relationship_family="NAVIGATION_ROUTING",
+                    relationship_type="REDIRECT",
+                    source_repository=EntityRef(gh_source, "repository", "apache/incubator-flink"),
+                    target_repository=EntityRef(gh_source, "repository", "apache/flink"),
+                    verification_status="PROVEN",
+                    observed_at=datetime(2026, 9, 30, 12, 0, 0, tzinfo=timezone.utc),
+                    provenance_refs=(p_malformed,),
+                )
+
+        # Empty-string SHA digest
+        p_empty_sha = RepositoryProvenanceRef(
+            source_instance=gh_source,
+            fixture_id="qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_254.json",
+            record_locator="locator-1",
+            sha256_digest="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        )
+        with pytest.raises(ValueError, match="invalid empty-string SHA-256 digest"):
+            RepositoryEvolutionRelationship.create(
+                relationship_family="NAVIGATION_ROUTING",
+                relationship_type="REDIRECT",
+                source_repository=EntityRef(gh_source, "repository", "apache/incubator-flink"),
+                target_repository=EntityRef(gh_source, "repository", "apache/flink"),
+                verification_status="PROVEN",
+                observed_at=datetime(2026, 9, 30, 12, 0, 0, tzinfo=timezone.utc),
+                provenance_refs=(p_empty_sha,),
+            )
+
+    def test_h1_verify_provenance_file_digest_guards(self, gh_source: SourceInstance):
+        # Wrong type returns False safely
+        assert verify_provenance_file_digest("not-a-prov") is False  # type: ignore
+
+        # Empty fixture_id returns False safely
+        p_empty = RepositoryProvenanceRef(
+            source_instance=gh_source,
+            fixture_id="",
+            record_locator="loc",
+            sha256_digest="85ea7b74f797099be91424b9c3e793f0f8cdcd8dda61e8f82a1cf8468f17754b",
+        )
+        assert verify_provenance_file_digest(p_empty) is False
+
+        # Non-existent file returns False safely
+        p_missing = RepositoryProvenanceRef(
+            source_instance=gh_source,
+            fixture_id="nonexistent/file.json",
+            record_locator="loc",
+            sha256_digest="85ea7b74f797099be91424b9c3e793f0f8cdcd8dda61e8f82a1cf8468f17754b",
+        )
+        assert verify_provenance_file_digest(p_missing) is False
+
+    def test_h2_lossless_provenance_roundtrip_with_optional_fields(
+        self, gh_source: SourceInstance
+    ):
+        prov = RepositoryProvenanceRef(
+            source_instance=gh_source,
+            fixture_id="qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_254.json",
+            record_locator="base.repo.full_name",
+            sha256_digest="85ea7b74f797099be91424b9c3e793f0f8cdcd8dda61e8f82a1cf8468f17754b",
+            observation_id="custom-obs-123",
+            source_field_path="commits[0].author.name",
+        )
+        rel = RepositoryEvolutionRelationship.create(
+            relationship_family="NAVIGATION_ROUTING",
+            relationship_type="REDIRECT",
+            source_repository=EntityRef(gh_source, "repository", "apache/incubator-flink"),
+            target_repository=EntityRef(gh_source, "repository", "apache/flink"),
+            verification_status="PROVEN",
+            observed_at=datetime(2026, 9, 30, 12, 0, 0, tzinfo=timezone.utc),
+            provenance_refs=(prov,),
+        )
+        d = serialize_repository_evolution_relationship(rel)
+        assert d["provenance_refs"][0]["observation_id"] == "custom-obs-123"
+        assert d["provenance_refs"][0]["source_field_path"] == "commits[0].author.name"
+
+        deserialized = deserialize_repository_evolution_relationship(d)
+        assert deserialized == rel
+        assert deserialized.provenance_refs[0].observation_id == "custom-obs-123"
+        assert deserialized.provenance_refs[0].source_field_path == "commits[0].author.name"
+
+    def test_h3_semantic_conflict_during_deduplication_raises_value_error(
+        self, sample_obs_context: ObservationContext, gh_source: SourceInstance
+    ):
+        p1 = RepositoryProvenanceRef(
+            source_instance=gh_source,
+            fixture_id="qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_254.json",
+            record_locator="locator-1",
+            sha256_digest="85ea7b74f797099be91424b9c3e793f0f8cdcd8dda61e8f82a1cf8468f17754b",
+        )
+        p2 = RepositoryProvenanceRef(
+            source_instance=gh_source,
+            fixture_id="qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_254.json",
+            record_locator="locator-2",
+            sha256_digest="85ea7b74f797099be91424b9c3e793f0f8cdcd8dda61e8f82a1cf8468f17754b",
+        )
+        # Identical ID but conflicting verification_status: PROVEN vs UNVERIFIED
+        rel1 = RepositoryEvolutionRelationship.create(
+            relationship_family="NAVIGATION_ROUTING",
+            relationship_type="REDIRECT",
+            source_repository=EntityRef(gh_source, "repository", "apache/incubator-flink"),
+            target_repository=EntityRef(gh_source, "repository", "apache/flink"),
+            verification_status="PROVEN",
+            observed_at=datetime(2026, 9, 30, 12, 0, 0, tzinfo=timezone.utc),
+            provenance_refs=(p1,),
+        )
+        rel2 = RepositoryEvolutionRelationship.create(
+            relationship_family="NAVIGATION_ROUTING",
+            relationship_type="REDIRECT",
+            source_repository=EntityRef(gh_source, "repository", "apache/incubator-flink"),
+            target_repository=EntityRef(gh_source, "repository", "apache/flink"),
+            verification_status="UNVERIFIED",
+            observed_at=datetime(2026, 9, 30, 12, 0, 0, tzinfo=timezone.utc),
+            provenance_refs=(p2,),
+        )
+        assert rel1.relationship_id == rel2.relationship_id
+
+        with pytest.raises(ValueError, match="Semantic conflict detected for relationship_id"):
+            assemble_evidence_bundle(
+                bundle_id="b-conflict-test",
+                bundle_version="1.0.0",
+                jira_context=sample_obs_context,
+                repository_relationships=(rel1, rel2),
+            )
+
+    def test_h3_validate_evidence_bundle_flags_conflicting_duplicates_as_contradictory(
+        self, gh_source: SourceInstance
+    ):
+        p1 = RepositoryProvenanceRef(
+            source_instance=gh_source,
+            fixture_id="qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_254.json",
+            record_locator="locator-1",
+            sha256_digest="85ea7b74f797099be91424b9c3e793f0f8cdcd8dda61e8f82a1cf8468f17754b",
+        )
+        p2 = RepositoryProvenanceRef(
+            source_instance=gh_source,
+            fixture_id="qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_254.json",
+            record_locator="locator-2",
+            sha256_digest="85ea7b74f797099be91424b9c3e793f0f8cdcd8dda61e8f82a1cf8468f17754b",
+        )
+        # Construct directly without assemble to test validate_evidence_bundle
+        rel1 = RepositoryEvolutionRelationship.create(
+            relationship_family="NAVIGATION_ROUTING",
+            relationship_type="REDIRECT",
+            source_repository=EntityRef(gh_source, "repository", "apache/incubator-flink"),
+            target_repository=EntityRef(gh_source, "repository", "apache/flink"),
+            verification_status="PROVEN",
+            observed_at=datetime(2026, 9, 30, 12, 0, 0, tzinfo=timezone.utc),
+            provenance_refs=(p1,),
+        )
+        rel2 = RepositoryEvolutionRelationship.create(
+            relationship_family="NAVIGATION_ROUTING",
+            relationship_type="REDIRECT",
+            source_repository=EntityRef(gh_source, "repository", "apache/incubator-flink"),
+            target_repository=EntityRef(gh_source, "repository", "apache/flink"),
+            verification_status="SUPPORTED",
+            observed_at=datetime(2026, 9, 30, 12, 0, 0, tzinfo=timezone.utc),
+            provenance_refs=(p2,),
+        )
+        bundle = EvidenceBundle(
+            bundle_id="b-contradictory-test",
+            bundle_version="1.0.0",
+            observation_contexts=(),
+            repository_relationships=(rel1, rel2),
+        )
+        issues = validate_evidence_bundle(bundle)
+        contradictory_issues = [i for i in issues if i.code == "contradictory"]
+        assert len(contradictory_issues) == 1
+        assert "Conflicting repository evolution relationships recorded" in contradictory_issues[0].message
+
+    def test_h4_graph_identity_isolation_prevents_false_cross_provider_cycle(self):
+        gh_source = SourceInstance("github", "github.com/org")
+        gl_source = SourceInstance("gitlab", "gitlab.com/org")
+        prov_gh = RepositoryProvenanceRef(
+            source_instance=gh_source,
+            fixture_id="qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_254.json",
+            record_locator="gh",
+            sha256_digest="85ea7b74f797099be91424b9c3e793f0f8cdcd8dda61e8f82a1cf8468f17754b",
+        )
+        prov_gl = RepositoryProvenanceRef(
+            source_instance=gl_source,
+            fixture_id="qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_254.json",
+            record_locator="gl",
+            sha256_digest="85ea7b74f797099be91424b9c3e793f0f8cdcd8dda61e8f82a1cf8468f17754b",
+        )
+        # GitHub: repo-a -> repo-b
+        rel_gh = RepositoryEvolutionRelationship.create(
+            relationship_family="PROJECT_LINEAGE",
+            relationship_type="PREDECESSOR_SUCCESSOR",
+            source_repository=EntityRef(gh_source, "repository", "org/repo-a"),
+            target_repository=EntityRef(gh_source, "repository", "org/repo-b"),
+            verification_status="PROVEN",
+            observed_at=datetime(2026, 9, 30, 12, 0, 0, tzinfo=timezone.utc),
+            provenance_refs=(prov_gh,),
+        )
+        # GitLab: repo-b -> repo-a (same entity_ids, but DIFFERENT provider)
+        rel_gl = RepositoryEvolutionRelationship.create(
+            relationship_family="PROJECT_LINEAGE",
+            relationship_type="PREDECESSOR_SUCCESSOR",
+            source_repository=EntityRef(gl_source, "repository", "org/repo-b"),
+            target_repository=EntityRef(gl_source, "repository", "org/repo-a"),
+            verification_status="PROVEN",
+            observed_at=datetime(2026, 9, 30, 12, 0, 0, tzinfo=timezone.utc),
+            provenance_refs=(prov_gl,),
+        )
+        # This MUST NOT raise a cycle error because endpoints are distinct (github vs gitlab)
+        validate_repository_evolution_graph((rel_gh, rel_gl))
+
+        # But within the same provider, it MUST raise a cycle error
+        rel_gh_cycle = RepositoryEvolutionRelationship.create(
+            relationship_family="PROJECT_LINEAGE",
+            relationship_type="PREDECESSOR_SUCCESSOR",
+            source_repository=EntityRef(gh_source, "repository", "org/repo-b"),
+            target_repository=EntityRef(gh_source, "repository", "org/repo-a"),
+            verification_status="PROVEN",
+            observed_at=datetime(2026, 9, 30, 12, 0, 0, tzinfo=timezone.utc),
+            provenance_refs=(prov_gh,),
+        )
+        with pytest.raises(ValueError, match="INV-GR-01: Cycle detected"):
+            validate_repository_evolution_graph((rel_gh, rel_gh_cycle))

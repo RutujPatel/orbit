@@ -274,17 +274,52 @@ def _deduplicate_alignments(
     return tuple(result)
 
 
+def _repository_relationships_semantically_conflict(
+    r1: RepositoryEvolutionRelationship,
+    r2: RepositoryEvolutionRelationship,
+) -> str | None:
+    """Return description of conflict if two relationships share an ID but disagree on semantics."""
+    diffs: list[str] = []
+    if r1.relationship_family != r2.relationship_family:
+        diffs.append(f"relationship_family ({r1.relationship_family!r} vs {r2.relationship_family!r})")
+    if r1.relationship_type != r2.relationship_type:
+        diffs.append(f"relationship_type ({r1.relationship_type!r} vs {r2.relationship_type!r})")
+    if r1.source_repository != r2.source_repository:
+        diffs.append(f"source_repository ({r1.source_repository} vs {r2.source_repository})")
+    if r1.target_repository != r2.target_repository:
+        diffs.append(f"target_repository ({r1.target_repository} vs {r2.target_repository})")
+    if r1.directionality != r2.directionality:
+        diffs.append(f"directionality ({r1.directionality!r} vs {r2.directionality!r})")
+    if r1.transitivity_rule != r2.transitivity_rule:
+        diffs.append(f"transitivity_rule ({r1.transitivity_rule!r} vs {r2.transitivity_rule!r})")
+    if r1.verification_status != r2.verification_status:
+        diffs.append(f"verification_status ({r1.verification_status!r} vs {r2.verification_status!r})")
+    if r1.observed_at != r2.observed_at:
+        diffs.append(f"observed_at ({r1.observed_at.isoformat()} vs {r2.observed_at.isoformat()})")
+    if r1.valid_from != r2.valid_from:
+        diffs.append(f"valid_from ({r1.valid_from} vs {r2.valid_from})")
+    if r1.valid_to != r2.valid_to:
+        diffs.append(f"valid_to ({r1.valid_to} vs {r2.valid_to})")
+    if r1.family_payload != r2.family_payload:
+        diffs.append(f"family_payload ({r1.family_payload} vs {r2.family_payload})")
+    if r1.semantic_firewall != r2.semantic_firewall:
+        diffs.append(f"semantic_firewall ({r1.semantic_firewall} vs {r2.semantic_firewall})")
+    if diffs:
+        return ", ".join(diffs)
+    return None
+
+
 def _repo_provenance_sort_key(
-    p: ProvenanceRef | RepositoryProvenanceRef,
+    p: RepositoryProvenanceRef,
 ) -> tuple[str, str, str, str, str, str]:
-    """Deterministic sort key for RepositoryProvenanceRef or ProvenanceRef."""
+    """Deterministic sort key for RepositoryProvenanceRef."""
     return (
         p.source_instance.instance_id,
-        getattr(p, "observation_id", "") or "",
-        getattr(p, "fixture_id", "") or "",
-        getattr(p, "record_locator", "") or "",
-        getattr(p, "source_field_path", "") or "",
-        getattr(p, "sha256_digest", "") or "",
+        p.observation_id or "",
+        p.fixture_id or "",
+        p.record_locator or "",
+        p.source_field_path or "",
+        p.sha256_digest or "",
     )
 
 
@@ -294,13 +329,21 @@ def _deduplicate_repository_relationships(
     """Deduplicate repository evolution relationships by relationship_id.
 
     Merges provenance_refs (union, deterministically sorted).
+    Fails closed with ValueError if relationships with identical relationship_id
+    have conflicting semantic attributes.
     """
-    dedup: dict[str, tuple[RepositoryEvolutionRelationship, list[ProvenanceRef | RepositoryProvenanceRef]]] = {}
+    dedup: dict[str, tuple[RepositoryEvolutionRelationship, list[RepositoryProvenanceRef]]] = {}
     for rel in relationships:
         if rel.relationship_id not in dedup:
             dedup[rel.relationship_id] = (rel, list(rel.provenance_refs))
         else:
-            _, prov_list = dedup[rel.relationship_id]
+            base_rel, prov_list = dedup[rel.relationship_id]
+            conflict = _repository_relationships_semantically_conflict(base_rel, rel)
+            if conflict is not None:
+                raise ValueError(
+                    f"Semantic conflict detected for relationship_id {rel.relationship_id}: "
+                    f"conflicting fields [{conflict}]."
+                )
             for p in rel.provenance_refs:
                 if p not in prov_list:
                     prov_list.append(p)
@@ -923,10 +966,11 @@ def validate_evidence_bundle(
         )
 
     # ── Repository evolution validation ──────────────────────────────
+    seen_repo_rels: dict[str, RepositoryEvolutionRelationship] = {}
     for rel in bundle.repository_relationships:
         try:
             validate_repository_evolution_relationship(rel)
-        except ValueError as exc:
+        except (ValueError, TypeError) as exc:
             issues.append(
                 QualityIssue(
                     code="invalid",
@@ -935,6 +979,24 @@ def validate_evidence_bundle(
                     subject_scope="repository_evolution:relationship",
                 )
             )
+
+        if rel.relationship_id in seen_repo_rels:
+            base_rel = seen_repo_rels[rel.relationship_id]
+            conflict = _repository_relationships_semantically_conflict(base_rel, rel)
+            if conflict is not None:
+                issues.append(
+                    QualityIssue(
+                        code="contradictory",
+                        message=(
+                            f"Conflicting repository evolution relationships recorded for ID "
+                            f"'{rel.relationship_id}': {conflict}."
+                        ),
+                        subject_ref=rel.source_repository,
+                        subject_scope="repository_evolution:relationship",
+                    )
+                )
+        else:
+            seen_repo_rels[rel.relationship_id] = rel
 
     if bundle.repository_relationships:
         try:
