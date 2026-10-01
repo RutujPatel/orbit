@@ -40,6 +40,7 @@ from qualification.repository_evolution.firewall import (
 from qualification.repository_evolution.schema import (
     validate_repository_evolution_graph,
     validate_repository_evolution_relationship,
+    verify_provenance_file_digest,
 )
 
 
@@ -188,3 +189,17 @@ class TestAuthenticCases:
 
         # Validate graph
         validate_repository_evolution_graph([rel_a, rel_b, rel_c, rel_d])
+
+    def test_authentic_provenance_cryptographic_verification(self):
+        """All 4 cases have verified provenance pointing to authentic files on disk with matching SHA-256."""
+        cases = [
+            make_flink_1359_relationship(),
+            make_stratosphere_flink_relationship(),
+            make_kafka_rocksdb_relationship(),
+            make_flink_docker_relationship(),
+        ]
+        for rel in cases:
+            for prov in rel.provenance_refs:
+                assert verify_provenance_file_digest(prov), (
+                    f"Cryptographic verification failed for {rel.relationship_type} provenance {prov.fixture_id}"
+                )

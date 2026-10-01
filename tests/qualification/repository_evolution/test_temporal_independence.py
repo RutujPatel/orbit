@@ -48,9 +48,9 @@ class TestTemporalIndependence:
             provenance_refs=(
                 RepositoryProvenanceRef(
                     source_instance=GH_SOURCE,
-                    fixture_id="fixtures/github/flink/repo.json",
-                    record_locator="name",
-                    sha256_digest="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                    fixture_id="qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_254.json",
+                    record_locator="base.repo.full_name",
+                    sha256_digest="85ea7b74f797099be91424b9c3e793f0f8cdcd8dda61e8f82a1cf8468f17754b",
                 ),
             ),
         )
@@ -112,9 +112,9 @@ class TestTemporalIndependence:
 
         prov = RepositoryProvenanceRef(
             source_instance=GH_SOURCE,
-            fixture_id="fixtures/github/parquet/repos.json",
-            record_locator="repositories[parquet-format]",
-            sha256_digest="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            fixture_id="qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_254.json",
+            record_locator="base.repo.full_name",
+            sha256_digest="85ea7b74f797099be91424b9c3e793f0f8cdcd8dda61e8f82a1cf8468f17754b",
         )
 
         # Correct relationship: COMPANION_SPECIFICATION in ECOSYSTEM_DEPENDENCY

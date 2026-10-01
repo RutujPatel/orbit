@@ -211,9 +211,9 @@ class TestAdversarialCategoryA:
         assert gitbox_kafka != github_kafka
         prov = RepositoryProvenanceRef(
             source_instance=SourceInstance("github", "github.com/apache"),
-            fixture_id="fixtures/git/mirror_config.json",
+            fixture_id="qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_254.json",
             record_locator="remotes.origin",
-            sha256_digest="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            sha256_digest="85ea7b74f797099be91424b9c3e793f0f8cdcd8dda61e8f82a1cf8468f17754b",
         )
         mirror_rel = RepositoryEvolutionRelationship.create(
             relationship_family="REPOSITORY_TOPOLOGY",
@@ -250,3 +250,22 @@ class TestAdversarialCategoryA:
         assert rel.relationship_type == "PREDECESSOR_SUCCESSOR"
         assert rel.source_repository.entity_id == "stratosphere/stratosphere"
         assert rel.target_repository.entity_id == "apache/flink"
+
+    def test_inv_ev_01_empty_sha256_rejected(self, flink_repo_ref: EntityRef, incubator_flink_repo_ref: EntityRef, sample_observed_at: datetime):
+        """INV-EV-01: Empty-string SHA-256 digest is rejected as invalid/ungrounded provenance."""
+        empty_prov = RepositoryProvenanceRef(
+            source_instance=SourceInstance("github", "github.com/apache"),
+            fixture_id="qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_254.json",
+            record_locator="base.repo.full_name",
+            sha256_digest="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        )
+        with pytest.raises(ValueError, match="INV-EV-01 violated.*empty-string SHA-256"):
+            RepositoryEvolutionRelationship.create(
+                relationship_family="NAVIGATION_ROUTING",
+                relationship_type="REDIRECT",
+                source_repository=incubator_flink_repo_ref,
+                target_repository=flink_repo_ref,
+                verification_status="PROVEN",
+                observed_at=sample_observed_at,
+                provenance_refs=(empty_prov,),
+            )

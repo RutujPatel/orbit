@@ -27,8 +27,22 @@ class RepositoryProvenanceRef:
     source_instance: SourceInstance
     fixture_id: str
     record_locator: str
-    sha256_digest: str = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    sha256_digest: str
     observation_id: str = "obs-provenance"
+
+
+def verify_provenance_file_digest(
+    prov: RepositoryProvenanceRef | ProvenanceRef,
+    base_dir: str = ".",
+) -> bool:
+    """Cryptographically verify that fixture_id file exists on disk and matches sha256_digest."""
+    path = os.path.join(base_dir, prov.fixture_id)
+    if not os.path.isfile(path):
+        return False
+    with open(path, "rb") as f:
+        actual_sha = hashlib.sha256(f.read()).hexdigest()
+    expected_sha = getattr(prov, "sha256_digest", None)
+    return actual_sha == expected_sha
 
 # ── Closed Taxonomies ────────────────────────────────────────────────────────
 
@@ -349,9 +363,18 @@ def validate_repository_evolution_relationship(
             f"deterministic derivation {expected_id!r}."
         )
 
-    # INV-EV-01: Mandatory Provenance
+    # INV-EV-01: Mandatory Provenance & Authenticity
     if not rel.provenance_refs or len(rel.provenance_refs) == 0:
         raise ValueError("INV-EV-01 violated: provenance_refs must contain at least 1 ProvenanceRef.")
+
+    EMPTY_STRING_SHA256 = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    for p in rel.provenance_refs:
+        digest = getattr(p, "sha256_digest", None)
+        if digest == EMPTY_STRING_SHA256:
+            raise ValueError(
+                f"INV-EV-01 violated: Provenance ref {p.fixture_id} has invalid empty-string SHA-256 digest. "
+                "Authentic cryptographic provenance is required."
+            )
 
     # Timezone checks
     if rel.observed_at.tzinfo is None:

@@ -1,10 +1,10 @@
 {
-  "phase": "Pass 5 / Wave 3 / Phase 4D — Controlled Prototype Qualification",
+  "phase": "Pass 5 / Wave 3 / Phase 4D \u2014 Controlled Prototype Qualification",
   "status": "PASS",
   "governing_semantic_baseline": "6d82d123f8bf50316d2b1ab7a025bc5862a474ed",
   "consolidation_head": "ea464540b8a414e4ab6e9a2b1a4be53ae31b40ab",
   "active_branch": "develop",
-  "timestamp_utc": "2026-10-01T15:00:00Z",
+  "timestamp_utc": "2026-10-01T15:40:00Z",
   "firewall_verification": {
     "src_shadow_orbit_diff_bytes": 0,
     "production_semantics_modified": false,
@@ -13,59 +13,94 @@
     "jira_adapter_modified": false
   },
   "test_suite_execution": {
-    "total_passed": 845,
+    "total_passed": 847,
     "total_skipped": 12,
     "total_failed": 0,
     "warnings": 3,
     "pre_phase4d_baseline_passed": 809,
-    "phase4d_qualification_tests_passed": 36,
+    "phase4d_qualification_tests_passed": 38,
     "regression_detected": false
   },
   "qualification_categories": {
     "identity_invariants": {
-      "tests_run": 13,
-      "passed": 13,
-      "invariants_verified": ["INV-ID-01", "INV-ID-02", "INV-ID-03", "INV-ID-04"],
-      "adversarial_scenarios_verified": ["ADV-ID-01", "ADV-ID-02", "ADV-ID-03", "ADV-ID-04", "ADV-ID-05"]
+      "tests_run": 14,
+      "passed": 14,
+      "invariants_verified": [
+        "INV-ID-01",
+        "INV-ID-02",
+        "INV-ID-03",
+        "INV-ID-04",
+        "INV-EV-01"
+      ],
+      "adversarial_scenarios_verified": [
+        "ADV-ID-01",
+        "ADV-ID-02",
+        "ADV-ID-03",
+        "ADV-ID-04",
+        "ADV-ID-05"
+      ]
     },
     "linkage_firewall": {
       "tests_run": 5,
       "passed": 5,
-      "invariants_verified": ["INV-LK-01", "INV-LK-02"],
-      "adversarial_scenarios_verified": ["ADV-FW-01", "ADV-PR-01"]
+      "invariants_verified": [
+        "INV-LK-01",
+        "INV-LK-02"
+      ],
+      "adversarial_scenarios_verified": [
+        "ADV-FW-01",
+        "ADV-PR-01"
+      ]
     },
     "state_firewall": {
       "tests_run": 5,
       "passed": 5,
-      "invariants_verified": ["INV-ST-01", "INV-ST-02"],
-      "adversarial_scenarios_verified": ["ADV-FW-02"]
+      "invariants_verified": [
+        "INV-ST-01",
+        "INV-ST-02"
+      ],
+      "adversarial_scenarios_verified": [
+        "ADV-FW-02"
+      ]
     },
     "temporal_independence": {
       "tests_run": 4,
       "passed": 4,
-      "invariants_verified": ["INV-TM-01", "INV-TM-02"],
-      "adversarial_scenarios_verified": ["ADV-FW-03", "ADV-FW-04"]
+      "invariants_verified": [
+        "INV-TM-01",
+        "INV-TM-02"
+      ],
+      "adversarial_scenarios_verified": [
+        "ADV-FW-03",
+        "ADV-FW-04"
+      ]
     },
     "authentic_cases": {
-      "tests_run": 5,
-      "passed": 5,
+      "tests_run": 6,
+      "passed": 6,
       "cases_evaluated": [
         "Case A: FLINK-1359 (REDIRECT / Navigation Routing)",
         "Case B: stratosphere#126 (PREDECESSOR_SUCCESSOR / Lineage Isolation)",
         "Case C: KAFKA-9168 (EXTERNAL_DEPENDENCY / External Library Isolation)",
         "Case D: FLINK-20650 (ECOSYSTEM_PACKAGING / Temporal Independence)",
-        "Combined Graph: Acyclicity Verification (INV-GR-01, INV-GR-02)"
+        "Combined Graph: Acyclicity Verification (INV-GR-01, INV-GR-02)",
+        "Cryptographic Provenance Verification: All 4 Fixtures Verified against Raw Disk Bytes"
       ]
     },
     "determinism_and_serialization": {
       "tests_run": 4,
       "passed": 4,
-      "invariants_verified": ["INV-ID-04", "Permutation Invariance", "Byte-Identical JSON Serialization", "JSON Schema Draft 2020-12 Conformance"]
+      "invariants_verified": [
+        "INV-ID-04",
+        "Permutation Invariance",
+        "Byte-Identical JSON Serialization",
+        "JSON Schema Draft 2020-12 Conformance"
+      ]
     }
   },
   "authentic_empirical_cases": {
     "FLINK-1359": {
-      "relationship_id": "76d1d2579dfae98aa90c8888b14a2f8c05763ca7ea0ff7071dbd75e01dc3f121",
+      "relationship_id": "ea58025bed11e6b3a7c123abfa874b431feff16e0c6a76745c1c9e6d192da06a",
       "relationship_family": "NAVIGATION_ROUTING",
       "relationship_type": "REDIRECT",
       "source_repository": "apache/incubator-flink",
@@ -76,10 +111,13 @@
       "linkage_kind_preserved": "mentions",
       "state_category_preserved": "done",
       "temporal_outcome": "COHERENT",
+      "provenance_fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_254.json",
+      "provenance_sha256": "85ea7b74f797099be91424b9c3e793f0f8cdcd8dda61e8f82a1cf8468f17754b",
+      "provenance_verified": true,
       "entity_ref_mutation": false
     },
     "stratosphere#126": {
-      "relationship_id": "42aa471fe4d7d13cf4434289874a7eb0085a21ca7ca3921b79f8ddafce98555e",
+      "relationship_id": "3960d52b72a00acbfbe098f61bd3d37c26b1aa74c5ff29da42c6acd3c15e32e2",
       "relationship_family": "PROJECT_LINEAGE",
       "relationship_type": "PREDECESSOR_SUCCESSOR",
       "source_repository": "stratosphere/stratosphere",
@@ -90,10 +128,13 @@
       "pr_number_collision_isolated": true,
       "stratosphere_pr_entity": "stratosphere/stratosphere/126",
       "flink_pr_entity": "apache/flink/126",
+      "provenance_fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_126.json",
+      "provenance_sha256": "24a167fa67ab6de89744302956fbfb331cecc682a7b6282ec5ae778d5f9e7349",
+      "provenance_verified": true,
       "entity_ref_mutation": false
     },
     "KAFKA-9168": {
-      "relationship_id": "848243be1fe10dd84c798e1f0e21a24d5ba7e527027d7d06faad50e4171050a9",
+      "relationship_id": "b6fbf9493ec6d258cf4f12e433cdfe363d7162fc0cdee6a90a8268390edf1c5d",
       "relationship_family": "ECOSYSTEM_DEPENDENCY",
       "relationship_type": "EXTERNAL_DEPENDENCY",
       "source_repository": "apache/kafka",
@@ -103,10 +144,13 @@
       "transitivity_rule": "STRICTLY_NON_TRANSITIVE",
       "kafka_issue_status_preserved": "in_progress",
       "external_pr_merge_transferred": false,
+      "provenance_fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/facebook__rocksdb/pr_2283.json",
+      "provenance_sha256": "a7f3452529a32ab8a361535e8e639b7e30c74c68b3c5fb41e9d4204c9ef03c55",
+      "provenance_verified": true,
       "entity_ref_mutation": false
     },
     "FLINK-20650": {
-      "relationship_id": "f5e9fc453531b4fcbb41cb27f71f652033bc8e56eb60086208a55c2ff58fb8ea",
+      "relationship_id": "a9379cfa4aff8ffed3730c7ef38b61ee757ea6e4196a8d63a276e0057ffa5893",
       "relationship_family": "ECOSYSTEM_DEPENDENCY",
       "relationship_type": "ECOSYSTEM_PACKAGING",
       "source_repository": "apache/flink",
@@ -116,6 +160,9 @@
       "transitivity_rule": "STRICTLY_NON_TRANSITIVE",
       "temporal_outcome": "INVERTED",
       "defect_synthesized": false,
+      "provenance_fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/docker-library__official-images/pr_9249.json",
+      "provenance_sha256": "0a4625bf63f8fb172679ae4c2b54ef41e4faba26ab344f4a4ceaa7edeb4f6acc",
+      "provenance_verified": true,
       "entity_ref_mutation": false
     }
   }

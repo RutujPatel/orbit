@@ -44,7 +44,7 @@ def make_flink_1359_relationship() -> RepositoryEvolutionRelationship:
         source_instance=GH_SOURCE,
         fixture_id="qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_254.json",
         record_locator="base.repo.full_name",
-        sha256_digest="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        sha256_digest="85ea7b74f797099be91424b9c3e793f0f8cdcd8dda61e8f82a1cf8468f17754b",
     )
     return RepositoryEvolutionRelationship.create(
         relationship_family="NAVIGATION_ROUTING",
@@ -123,9 +123,9 @@ def make_stratosphere_flink_relationship() -> RepositoryEvolutionRelationship:
     tgt_repo = EntityRef(GH_SOURCE, "repository", "apache/flink")
     prov = RepositoryProvenanceRef(
         source_instance=GH_SOURCE,
-        fixture_id="qualification/wave3/phase4b_repository_identity/governance_donation.json",
-        record_locator="asf_donation_resolution",
-        sha256_digest="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        fixture_id="qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_126.json",
+        record_locator="head.repo.full_name",
+        sha256_digest="24a167fa67ab6de89744302956fbfb331cecc682a7b6282ec5ae778d5f9e7349",
     )
     return RepositoryEvolutionRelationship.create(
         relationship_family="PROJECT_LINEAGE",
@@ -201,8 +201,8 @@ def make_kafka_rocksdb_relationship() -> RepositoryEvolutionRelationship:
     prov = RepositoryProvenanceRef(
         source_instance=GH_SOURCE,
         fixture_id="qualification/wave3/phase3a_acquisition/raw/KAFKA/facebook__rocksdb/pr_2283.json",
-        record_locator="pom.xml:dependencies",
-        sha256_digest="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        record_locator="head.repo.full_name",
+        sha256_digest="a7f3452529a32ab8a361535e8e639b7e30c74c68b3c5fb41e9d4204c9ef03c55",
     )
     return RepositoryEvolutionRelationship.create(
         relationship_family="ECOSYSTEM_DEPENDENCY",
@@ -281,9 +281,9 @@ def make_flink_docker_relationship() -> RepositoryEvolutionRelationship:
     tgt_repo = EntityRef(DOCKER_SOURCE, "repository", "docker-library/official-images")
     prov = RepositoryProvenanceRef(
         source_instance=GH_SOURCE,
-        fixture_id="qualification/wave3/phase4b_repository_identity/docker_ecosystem.json",
-        record_locator="dockerhub:official_images:flink",
-        sha256_digest="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        fixture_id="qualification/wave3/phase3a_acquisition/raw/FLINK/docker-library__official-images/pr_9249.json",
+        record_locator="head.repo.full_name",
+        sha256_digest="0a4625bf63f8fb172679ae4c2b54ef41e4faba26ab344f4a4ceaa7edeb4f6acc",
     )
     return RepositoryEvolutionRelationship.create(
         relationship_family="ECOSYSTEM_DEPENDENCY",

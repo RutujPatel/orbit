@@ -54,9 +54,9 @@ def rocksdb_repo_ref() -> EntityRef:
 def sample_provenance(gh_source: SourceInstance) -> RepositoryProvenanceRef:
     return RepositoryProvenanceRef(
         source_instance=gh_source,
-        fixture_id="qualification/wave3/sample_fixture.json",
+        fixture_id="qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_254.json",
         record_locator="base.repo.full_name",
-        sha256_digest="e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        sha256_digest="85ea7b74f797099be91424b9c3e793f0f8cdcd8dda61e8f82a1cf8468f17754b",
     )
 
 
