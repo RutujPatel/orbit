@@ -1,0 +1,962 @@
+[
+  {
+    "id": 223593047,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjIzNTkzMDQ3",
+    "user": {
+      "login": "Myasuka",
+      "id": 1709104,
+      "node_id": "MDQ6VXNlcjE3MDkxMDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1709104?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Myasuka",
+      "html_url": "https://github.com/Myasuka",
+      "followers_url": "https://api.github.com/users/Myasuka/followers",
+      "following_url": "https://api.github.com/users/Myasuka/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Myasuka/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Myasuka/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Myasuka/subscriptions",
+      "organizations_url": "https://api.github.com/users/Myasuka/orgs",
+      "repos_url": "https://api.github.com/users/Myasuka/repos",
+      "events_url": "https://api.github.com/users/Myasuka/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Myasuka/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "@piyushnarang Thanks for you contribution! And please take a look at the comments.\r\nMoreover, \r\n1. why not change `flink-dist/src/main/assemblies/opt.xml` so that we could see this filesystem jar located under `/opt` folder.\r\n1. How about add a documentation of this `azureFs`?\r\n",
+    "state": "CHANGES_REQUESTED",
+    "html_url": "https://github.com/apache/flink/pull/8117#pullrequestreview-223593047",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8117",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8117#pullrequestreview-223593047"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8117"
+      }
+    },
+    "submitted_at": "2019-04-07T17:51:05Z",
+    "commit_id": "02c063a108989acc71a45428fc405554a12c55e2"
+  },
+  {
+    "id": 223997782,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjIzOTk3Nzgy",
+    "user": {
+      "login": "piyushnarang",
+      "id": 9885908,
+      "node_id": "MDQ6VXNlcjk4ODU5MDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9885908?u=b65e759c53bfd10b054aa79ed029e32528c8af36&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/piyushnarang",
+      "html_url": "https://github.com/piyushnarang",
+      "followers_url": "https://api.github.com/users/piyushnarang/followers",
+      "following_url": "https://api.github.com/users/piyushnarang/following{/other_user}",
+      "gists_url": "https://api.github.com/users/piyushnarang/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/piyushnarang/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/piyushnarang/subscriptions",
+      "organizations_url": "https://api.github.com/users/piyushnarang/orgs",
+      "repos_url": "https://api.github.com/users/piyushnarang/repos",
+      "events_url": "https://api.github.com/users/piyushnarang/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/piyushnarang/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8117#pullrequestreview-223997782",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8117",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8117#pullrequestreview-223997782"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8117"
+      }
+    },
+    "submitted_at": "2019-04-08T17:55:09Z",
+    "commit_id": "f3f1d01c93f652a8b9568df7163e22b5225c50cf"
+  },
+  {
+    "id": 223997895,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjIzOTk3ODk1",
+    "user": {
+      "login": "piyushnarang",
+      "id": 9885908,
+      "node_id": "MDQ6VXNlcjk4ODU5MDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9885908?u=b65e759c53bfd10b054aa79ed029e32528c8af36&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/piyushnarang",
+      "html_url": "https://github.com/piyushnarang",
+      "followers_url": "https://api.github.com/users/piyushnarang/followers",
+      "following_url": "https://api.github.com/users/piyushnarang/following{/other_user}",
+      "gists_url": "https://api.github.com/users/piyushnarang/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/piyushnarang/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/piyushnarang/subscriptions",
+      "organizations_url": "https://api.github.com/users/piyushnarang/orgs",
+      "repos_url": "https://api.github.com/users/piyushnarang/repos",
+      "events_url": "https://api.github.com/users/piyushnarang/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/piyushnarang/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8117#pullrequestreview-223997895",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8117",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8117#pullrequestreview-223997895"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8117"
+      }
+    },
+    "submitted_at": "2019-04-08T17:55:21Z",
+    "commit_id": "f3f1d01c93f652a8b9568df7163e22b5225c50cf"
+  },
+  {
+    "id": 224001129,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjI0MDAxMTI5",
+    "user": {
+      "login": "piyushnarang",
+      "id": 9885908,
+      "node_id": "MDQ6VXNlcjk4ODU5MDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9885908?u=b65e759c53bfd10b054aa79ed029e32528c8af36&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/piyushnarang",
+      "html_url": "https://github.com/piyushnarang",
+      "followers_url": "https://api.github.com/users/piyushnarang/followers",
+      "following_url": "https://api.github.com/users/piyushnarang/following{/other_user}",
+      "gists_url": "https://api.github.com/users/piyushnarang/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/piyushnarang/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/piyushnarang/subscriptions",
+      "organizations_url": "https://api.github.com/users/piyushnarang/orgs",
+      "repos_url": "https://api.github.com/users/piyushnarang/repos",
+      "events_url": "https://api.github.com/users/piyushnarang/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/piyushnarang/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8117#pullrequestreview-224001129",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8117",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8117#pullrequestreview-224001129"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8117"
+      }
+    },
+    "submitted_at": "2019-04-08T18:01:46Z",
+    "commit_id": "f3f1d01c93f652a8b9568df7163e22b5225c50cf"
+  },
+  {
+    "id": 225087743,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjI1MDg3NzQz",
+    "user": {
+      "login": "Myasuka",
+      "id": 1709104,
+      "node_id": "MDQ6VXNlcjE3MDkxMDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1709104?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Myasuka",
+      "html_url": "https://github.com/Myasuka",
+      "followers_url": "https://api.github.com/users/Myasuka/followers",
+      "following_url": "https://api.github.com/users/Myasuka/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Myasuka/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Myasuka/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Myasuka/subscriptions",
+      "organizations_url": "https://api.github.com/users/Myasuka/orgs",
+      "repos_url": "https://api.github.com/users/Myasuka/repos",
+      "events_url": "https://api.github.com/users/Myasuka/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Myasuka/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8117#pullrequestreview-225087743",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8117",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8117#pullrequestreview-225087743"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8117"
+      }
+    },
+    "submitted_at": "2019-04-10T16:37:03Z",
+    "commit_id": "f3f1d01c93f652a8b9568df7163e22b5225c50cf"
+  },
+  {
+    "id": 225108414,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjI1MTA4NDE0",
+    "user": {
+      "login": "piyushnarang",
+      "id": 9885908,
+      "node_id": "MDQ6VXNlcjk4ODU5MDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9885908?u=b65e759c53bfd10b054aa79ed029e32528c8af36&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/piyushnarang",
+      "html_url": "https://github.com/piyushnarang",
+      "followers_url": "https://api.github.com/users/piyushnarang/followers",
+      "following_url": "https://api.github.com/users/piyushnarang/following{/other_user}",
+      "gists_url": "https://api.github.com/users/piyushnarang/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/piyushnarang/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/piyushnarang/subscriptions",
+      "organizations_url": "https://api.github.com/users/piyushnarang/orgs",
+      "repos_url": "https://api.github.com/users/piyushnarang/repos",
+      "events_url": "https://api.github.com/users/piyushnarang/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/piyushnarang/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8117#pullrequestreview-225108414",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8117",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8117#pullrequestreview-225108414"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8117"
+      }
+    },
+    "submitted_at": "2019-04-10T17:18:32Z",
+    "commit_id": "f3f1d01c93f652a8b9568df7163e22b5225c50cf"
+  },
+  {
+    "id": 230078622,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjMwMDc4NjIy",
+    "user": {
+      "login": "tillrohrmann",
+      "id": 5756858,
+      "node_id": "MDQ6VXNlcjU3NTY4NTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5756858?u=436cadce64986f7391ad0b9edbc97b560e0371ab&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tillrohrmann",
+      "html_url": "https://github.com/tillrohrmann",
+      "followers_url": "https://api.github.com/users/tillrohrmann/followers",
+      "following_url": "https://api.github.com/users/tillrohrmann/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tillrohrmann/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tillrohrmann/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tillrohrmann/subscriptions",
+      "organizations_url": "https://api.github.com/users/tillrohrmann/orgs",
+      "repos_url": "https://api.github.com/users/tillrohrmann/repos",
+      "events_url": "https://api.github.com/users/tillrohrmann/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tillrohrmann/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "Thanks for adding AzureFS @piyushnarang. I had some comments concerning how we build the jar and reusing some code.\r\n\r\nHow did you do it when testing the FileSystem on a cluster? Did you copy the `hadoop-azure` dependency manually to `lib`?\r\n\r\nI think it would be good to also add an end-to-end test similar to `test_shaded_presto_s3.sh` which tests the `AzureFS` if the credentials are correctly set.",
+    "state": "CHANGES_REQUESTED",
+    "html_url": "https://github.com/apache/flink/pull/8117#pullrequestreview-230078622",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8117",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8117#pullrequestreview-230078622"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8117"
+      }
+    },
+    "submitted_at": "2019-04-24T13:02:22Z",
+    "commit_id": "f3f1d01c93f652a8b9568df7163e22b5225c50cf"
+  },
+  {
+    "id": 231915336,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjMxOTE1MzM2",
+    "user": {
+      "login": "piyushnarang",
+      "id": 9885908,
+      "node_id": "MDQ6VXNlcjk4ODU5MDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9885908?u=b65e759c53bfd10b054aa79ed029e32528c8af36&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/piyushnarang",
+      "html_url": "https://github.com/piyushnarang",
+      "followers_url": "https://api.github.com/users/piyushnarang/followers",
+      "following_url": "https://api.github.com/users/piyushnarang/following{/other_user}",
+      "gists_url": "https://api.github.com/users/piyushnarang/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/piyushnarang/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/piyushnarang/subscriptions",
+      "organizations_url": "https://api.github.com/users/piyushnarang/orgs",
+      "repos_url": "https://api.github.com/users/piyushnarang/repos",
+      "events_url": "https://api.github.com/users/piyushnarang/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/piyushnarang/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8117#pullrequestreview-231915336",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8117",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8117#pullrequestreview-231915336"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8117"
+      }
+    },
+    "submitted_at": "2019-04-29T21:37:14Z",
+    "commit_id": "f3f1d01c93f652a8b9568df7163e22b5225c50cf"
+  },
+  {
+    "id": 231916107,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjMxOTE2MTA3",
+    "user": {
+      "login": "piyushnarang",
+      "id": 9885908,
+      "node_id": "MDQ6VXNlcjk4ODU5MDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9885908?u=b65e759c53bfd10b054aa79ed029e32528c8af36&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/piyushnarang",
+      "html_url": "https://github.com/piyushnarang",
+      "followers_url": "https://api.github.com/users/piyushnarang/followers",
+      "following_url": "https://api.github.com/users/piyushnarang/following{/other_user}",
+      "gists_url": "https://api.github.com/users/piyushnarang/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/piyushnarang/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/piyushnarang/subscriptions",
+      "organizations_url": "https://api.github.com/users/piyushnarang/orgs",
+      "repos_url": "https://api.github.com/users/piyushnarang/repos",
+      "events_url": "https://api.github.com/users/piyushnarang/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/piyushnarang/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8117#pullrequestreview-231916107",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8117",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8117#pullrequestreview-231916107"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8117"
+      }
+    },
+    "submitted_at": "2019-04-29T21:39:25Z",
+    "commit_id": "f3f1d01c93f652a8b9568df7163e22b5225c50cf"
+  },
+  {
+    "id": 232126453,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjMyMTI2NDUz",
+    "user": {
+      "login": "tillrohrmann",
+      "id": 5756858,
+      "node_id": "MDQ6VXNlcjU3NTY4NTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5756858?u=436cadce64986f7391ad0b9edbc97b560e0371ab&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tillrohrmann",
+      "html_url": "https://github.com/tillrohrmann",
+      "followers_url": "https://api.github.com/users/tillrohrmann/followers",
+      "following_url": "https://api.github.com/users/tillrohrmann/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tillrohrmann/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tillrohrmann/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tillrohrmann/subscriptions",
+      "organizations_url": "https://api.github.com/users/tillrohrmann/orgs",
+      "repos_url": "https://api.github.com/users/tillrohrmann/repos",
+      "events_url": "https://api.github.com/users/tillrohrmann/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tillrohrmann/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8117#pullrequestreview-232126453",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8117",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8117#pullrequestreview-232126453"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8117"
+      }
+    },
+    "submitted_at": "2019-04-30T11:56:04Z",
+    "commit_id": "f3f1d01c93f652a8b9568df7163e22b5225c50cf"
+  },
+  {
+    "id": 232354399,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjMyMzU0Mzk5",
+    "user": {
+      "login": "piyushnarang",
+      "id": 9885908,
+      "node_id": "MDQ6VXNlcjk4ODU5MDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9885908?u=b65e759c53bfd10b054aa79ed029e32528c8af36&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/piyushnarang",
+      "html_url": "https://github.com/piyushnarang",
+      "followers_url": "https://api.github.com/users/piyushnarang/followers",
+      "following_url": "https://api.github.com/users/piyushnarang/following{/other_user}",
+      "gists_url": "https://api.github.com/users/piyushnarang/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/piyushnarang/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/piyushnarang/subscriptions",
+      "organizations_url": "https://api.github.com/users/piyushnarang/orgs",
+      "repos_url": "https://api.github.com/users/piyushnarang/repos",
+      "events_url": "https://api.github.com/users/piyushnarang/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/piyushnarang/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8117#pullrequestreview-232354399",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8117",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8117#pullrequestreview-232354399"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8117"
+      }
+    },
+    "submitted_at": "2019-04-30T19:12:31Z",
+    "commit_id": "f3f1d01c93f652a8b9568df7163e22b5225c50cf"
+  },
+  {
+    "id": 232925284,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjMyOTI1Mjg0",
+    "user": {
+      "login": "tillrohrmann",
+      "id": 5756858,
+      "node_id": "MDQ6VXNlcjU3NTY4NTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5756858?u=436cadce64986f7391ad0b9edbc97b560e0371ab&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tillrohrmann",
+      "html_url": "https://github.com/tillrohrmann",
+      "followers_url": "https://api.github.com/users/tillrohrmann/followers",
+      "following_url": "https://api.github.com/users/tillrohrmann/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tillrohrmann/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tillrohrmann/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tillrohrmann/subscriptions",
+      "organizations_url": "https://api.github.com/users/tillrohrmann/orgs",
+      "repos_url": "https://api.github.com/users/tillrohrmann/repos",
+      "events_url": "https://api.github.com/users/tillrohrmann/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tillrohrmann/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "Thanks for updating this PR @piyushnarang. I've had some more comments.\r\n\r\n@shuai-xu could you rerun your tests with the updated PR and also try out the added end-to-end test?",
+    "state": "CHANGES_REQUESTED",
+    "html_url": "https://github.com/apache/flink/pull/8117#pullrequestreview-232925284",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8117",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8117#pullrequestreview-232925284"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8117"
+      }
+    },
+    "submitted_at": "2019-05-02T10:14:08Z",
+    "commit_id": "8205a210b748110944ac27a3590b995d0c942a42"
+  },
+  {
+    "id": 232978874,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjMyOTc4ODc0",
+    "user": {
+      "login": "piyushnarang",
+      "id": 9885908,
+      "node_id": "MDQ6VXNlcjk4ODU5MDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9885908?u=b65e759c53bfd10b054aa79ed029e32528c8af36&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/piyushnarang",
+      "html_url": "https://github.com/piyushnarang",
+      "followers_url": "https://api.github.com/users/piyushnarang/followers",
+      "following_url": "https://api.github.com/users/piyushnarang/following{/other_user}",
+      "gists_url": "https://api.github.com/users/piyushnarang/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/piyushnarang/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/piyushnarang/subscriptions",
+      "organizations_url": "https://api.github.com/users/piyushnarang/orgs",
+      "repos_url": "https://api.github.com/users/piyushnarang/repos",
+      "events_url": "https://api.github.com/users/piyushnarang/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/piyushnarang/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8117#pullrequestreview-232978874",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8117",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8117#pullrequestreview-232978874"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8117"
+      }
+    },
+    "submitted_at": "2019-05-02T12:32:43Z",
+    "commit_id": "d58218540f12aa736e8ebe644e93e5f1bfe3afa4"
+  },
+  {
+    "id": 232980671,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjMyOTgwNjcx",
+    "user": {
+      "login": "piyushnarang",
+      "id": 9885908,
+      "node_id": "MDQ6VXNlcjk4ODU5MDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9885908?u=b65e759c53bfd10b054aa79ed029e32528c8af36&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/piyushnarang",
+      "html_url": "https://github.com/piyushnarang",
+      "followers_url": "https://api.github.com/users/piyushnarang/followers",
+      "following_url": "https://api.github.com/users/piyushnarang/following{/other_user}",
+      "gists_url": "https://api.github.com/users/piyushnarang/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/piyushnarang/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/piyushnarang/subscriptions",
+      "organizations_url": "https://api.github.com/users/piyushnarang/orgs",
+      "repos_url": "https://api.github.com/users/piyushnarang/repos",
+      "events_url": "https://api.github.com/users/piyushnarang/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/piyushnarang/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8117#pullrequestreview-232980671",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8117",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8117#pullrequestreview-232980671"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8117"
+      }
+    },
+    "submitted_at": "2019-05-02T12:37:06Z",
+    "commit_id": "d58218540f12aa736e8ebe644e93e5f1bfe3afa4"
+  },
+  {
+    "id": 232981617,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjMyOTgxNjE3",
+    "user": {
+      "login": "piyushnarang",
+      "id": 9885908,
+      "node_id": "MDQ6VXNlcjk4ODU5MDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9885908?u=b65e759c53bfd10b054aa79ed029e32528c8af36&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/piyushnarang",
+      "html_url": "https://github.com/piyushnarang",
+      "followers_url": "https://api.github.com/users/piyushnarang/followers",
+      "following_url": "https://api.github.com/users/piyushnarang/following{/other_user}",
+      "gists_url": "https://api.github.com/users/piyushnarang/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/piyushnarang/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/piyushnarang/subscriptions",
+      "organizations_url": "https://api.github.com/users/piyushnarang/orgs",
+      "repos_url": "https://api.github.com/users/piyushnarang/repos",
+      "events_url": "https://api.github.com/users/piyushnarang/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/piyushnarang/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8117#pullrequestreview-232981617",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8117",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8117#pullrequestreview-232981617"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8117"
+      }
+    },
+    "submitted_at": "2019-05-02T12:39:24Z",
+    "commit_id": "d58218540f12aa736e8ebe644e93e5f1bfe3afa4"
+  },
+  {
+    "id": 232996635,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjMyOTk2NjM1",
+    "user": {
+      "login": "tillrohrmann",
+      "id": 5756858,
+      "node_id": "MDQ6VXNlcjU3NTY4NTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5756858?u=436cadce64986f7391ad0b9edbc97b560e0371ab&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tillrohrmann",
+      "html_url": "https://github.com/tillrohrmann",
+      "followers_url": "https://api.github.com/users/tillrohrmann/followers",
+      "following_url": "https://api.github.com/users/tillrohrmann/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tillrohrmann/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tillrohrmann/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tillrohrmann/subscriptions",
+      "organizations_url": "https://api.github.com/users/tillrohrmann/orgs",
+      "repos_url": "https://api.github.com/users/tillrohrmann/repos",
+      "events_url": "https://api.github.com/users/tillrohrmann/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tillrohrmann/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8117#pullrequestreview-232996635",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8117",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8117#pullrequestreview-232996635"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8117"
+      }
+    },
+    "submitted_at": "2019-05-02T13:12:24Z",
+    "commit_id": "d58218540f12aa736e8ebe644e93e5f1bfe3afa4"
+  },
+  {
+    "id": 233001392,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjMzMDAxMzky",
+    "user": {
+      "login": "tillrohrmann",
+      "id": 5756858,
+      "node_id": "MDQ6VXNlcjU3NTY4NTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5756858?u=436cadce64986f7391ad0b9edbc97b560e0371ab&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tillrohrmann",
+      "html_url": "https://github.com/tillrohrmann",
+      "followers_url": "https://api.github.com/users/tillrohrmann/followers",
+      "following_url": "https://api.github.com/users/tillrohrmann/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tillrohrmann/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tillrohrmann/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tillrohrmann/subscriptions",
+      "organizations_url": "https://api.github.com/users/tillrohrmann/orgs",
+      "repos_url": "https://api.github.com/users/tillrohrmann/repos",
+      "events_url": "https://api.github.com/users/tillrohrmann/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tillrohrmann/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8117#pullrequestreview-233001392",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8117",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8117#pullrequestreview-233001392"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8117"
+      }
+    },
+    "submitted_at": "2019-05-02T13:21:54Z",
+    "commit_id": "d58218540f12aa736e8ebe644e93e5f1bfe3afa4"
+  },
+  {
+    "id": 233012758,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjMzMDEyNzU4",
+    "user": {
+      "login": "piyushnarang",
+      "id": 9885908,
+      "node_id": "MDQ6VXNlcjk4ODU5MDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9885908?u=b65e759c53bfd10b054aa79ed029e32528c8af36&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/piyushnarang",
+      "html_url": "https://github.com/piyushnarang",
+      "followers_url": "https://api.github.com/users/piyushnarang/followers",
+      "following_url": "https://api.github.com/users/piyushnarang/following{/other_user}",
+      "gists_url": "https://api.github.com/users/piyushnarang/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/piyushnarang/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/piyushnarang/subscriptions",
+      "organizations_url": "https://api.github.com/users/piyushnarang/orgs",
+      "repos_url": "https://api.github.com/users/piyushnarang/repos",
+      "events_url": "https://api.github.com/users/piyushnarang/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/piyushnarang/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8117#pullrequestreview-233012758",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8117",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8117#pullrequestreview-233012758"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8117"
+      }
+    },
+    "submitted_at": "2019-05-02T13:42:03Z",
+    "commit_id": "d58218540f12aa736e8ebe644e93e5f1bfe3afa4"
+  },
+  {
+    "id": 233068365,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjMzMDY4MzY1",
+    "user": {
+      "login": "piyushnarang",
+      "id": 9885908,
+      "node_id": "MDQ6VXNlcjk4ODU5MDg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9885908?u=b65e759c53bfd10b054aa79ed029e32528c8af36&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/piyushnarang",
+      "html_url": "https://github.com/piyushnarang",
+      "followers_url": "https://api.github.com/users/piyushnarang/followers",
+      "following_url": "https://api.github.com/users/piyushnarang/following{/other_user}",
+      "gists_url": "https://api.github.com/users/piyushnarang/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/piyushnarang/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/piyushnarang/subscriptions",
+      "organizations_url": "https://api.github.com/users/piyushnarang/orgs",
+      "repos_url": "https://api.github.com/users/piyushnarang/repos",
+      "events_url": "https://api.github.com/users/piyushnarang/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/piyushnarang/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8117#pullrequestreview-233068365",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8117",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8117#pullrequestreview-233068365"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8117"
+      }
+    },
+    "submitted_at": "2019-05-02T15:13:08Z",
+    "commit_id": "674040bca95aacba1ca00d7956a0abff86bb160d"
+  },
+  {
+    "id": 234039420,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjM0MDM5NDIw",
+    "user": {
+      "login": "tillrohrmann",
+      "id": 5756858,
+      "node_id": "MDQ6VXNlcjU3NTY4NTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5756858?u=436cadce64986f7391ad0b9edbc97b560e0371ab&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tillrohrmann",
+      "html_url": "https://github.com/tillrohrmann",
+      "followers_url": "https://api.github.com/users/tillrohrmann/followers",
+      "following_url": "https://api.github.com/users/tillrohrmann/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tillrohrmann/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tillrohrmann/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tillrohrmann/subscriptions",
+      "organizations_url": "https://api.github.com/users/tillrohrmann/orgs",
+      "repos_url": "https://api.github.com/users/tillrohrmann/repos",
+      "events_url": "https://api.github.com/users/tillrohrmann/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tillrohrmann/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "Thanks for updating this PR @piyushnarang. I had another pass and given that we want to create the Azure FS as a self-contained jar without a large dependency footprint, I think we should also add the `flink-fs-hadoop-shaded` module which contains relocated Hadoop file system classes.\r\n\r\nSorry for the frequent back and forth. Some of these things have only become clear to me while looking through your changes.",
+    "state": "CHANGES_REQUESTED",
+    "html_url": "https://github.com/apache/flink/pull/8117#pullrequestreview-234039420",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8117",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8117#pullrequestreview-234039420"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8117"
+      }
+    },
+    "submitted_at": "2019-05-06T15:31:31Z",
+    "commit_id": "671d9c952eb7f061756c9d49d413d15a12e226a7"
+  },
+  {
+    "id": 234050993,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjM0MDUwOTkz",
+    "user": {
+      "login": "tillrohrmann",
+      "id": 5756858,
+      "node_id": "MDQ6VXNlcjU3NTY4NTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5756858?u=436cadce64986f7391ad0b9edbc97b560e0371ab&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tillrohrmann",
+      "html_url": "https://github.com/tillrohrmann",
+      "followers_url": "https://api.github.com/users/tillrohrmann/followers",
+      "following_url": "https://api.github.com/users/tillrohrmann/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tillrohrmann/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tillrohrmann/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tillrohrmann/subscriptions",
+      "organizations_url": "https://api.github.com/users/tillrohrmann/orgs",
+      "repos_url": "https://api.github.com/users/tillrohrmann/repos",
+      "events_url": "https://api.github.com/users/tillrohrmann/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tillrohrmann/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8117#pullrequestreview-234050993",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8117",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8117#pullrequestreview-234050993"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8117"
+      }
+    },
+    "submitted_at": "2019-05-06T15:41:58Z",
+    "commit_id": "671d9c952eb7f061756c9d49d413d15a12e226a7"
+  },
+  {
+    "id": 234055484,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjM0MDU1NDg0",
+    "user": {
+      "login": "tillrohrmann",
+      "id": 5756858,
+      "node_id": "MDQ6VXNlcjU3NTY4NTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5756858?u=436cadce64986f7391ad0b9edbc97b560e0371ab&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tillrohrmann",
+      "html_url": "https://github.com/tillrohrmann",
+      "followers_url": "https://api.github.com/users/tillrohrmann/followers",
+      "following_url": "https://api.github.com/users/tillrohrmann/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tillrohrmann/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tillrohrmann/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tillrohrmann/subscriptions",
+      "organizations_url": "https://api.github.com/users/tillrohrmann/orgs",
+      "repos_url": "https://api.github.com/users/tillrohrmann/repos",
+      "events_url": "https://api.github.com/users/tillrohrmann/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tillrohrmann/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8117#pullrequestreview-234055484",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8117",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8117#pullrequestreview-234055484"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8117"
+      }
+    },
+    "submitted_at": "2019-05-06T15:50:20Z",
+    "commit_id": "671d9c952eb7f061756c9d49d413d15a12e226a7"
+  },
+  {
+    "id": 234064591,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjM0MDY0NTkx",
+    "user": {
+      "login": "tillrohrmann",
+      "id": 5756858,
+      "node_id": "MDQ6VXNlcjU3NTY4NTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5756858?u=436cadce64986f7391ad0b9edbc97b560e0371ab&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tillrohrmann",
+      "html_url": "https://github.com/tillrohrmann",
+      "followers_url": "https://api.github.com/users/tillrohrmann/followers",
+      "following_url": "https://api.github.com/users/tillrohrmann/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tillrohrmann/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tillrohrmann/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tillrohrmann/subscriptions",
+      "organizations_url": "https://api.github.com/users/tillrohrmann/orgs",
+      "repos_url": "https://api.github.com/users/tillrohrmann/repos",
+      "events_url": "https://api.github.com/users/tillrohrmann/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tillrohrmann/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8117#pullrequestreview-234064591",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8117",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8117#pullrequestreview-234064591"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8117"
+      }
+    },
+    "submitted_at": "2019-05-06T16:09:14Z",
+    "commit_id": "671d9c952eb7f061756c9d49d413d15a12e226a7"
+  },
+  {
+    "id": 234065129,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjM0MDY1MTI5",
+    "user": {
+      "login": "tillrohrmann",
+      "id": 5756858,
+      "node_id": "MDQ6VXNlcjU3NTY4NTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5756858?u=436cadce64986f7391ad0b9edbc97b560e0371ab&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tillrohrmann",
+      "html_url": "https://github.com/tillrohrmann",
+      "followers_url": "https://api.github.com/users/tillrohrmann/followers",
+      "following_url": "https://api.github.com/users/tillrohrmann/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tillrohrmann/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tillrohrmann/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tillrohrmann/subscriptions",
+      "organizations_url": "https://api.github.com/users/tillrohrmann/orgs",
+      "repos_url": "https://api.github.com/users/tillrohrmann/repos",
+      "events_url": "https://api.github.com/users/tillrohrmann/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tillrohrmann/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8117#pullrequestreview-234065129",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8117",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8117#pullrequestreview-234065129"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8117"
+      }
+    },
+    "submitted_at": "2019-05-06T16:10:22Z",
+    "commit_id": "671d9c952eb7f061756c9d49d413d15a12e226a7"
+  }
+]

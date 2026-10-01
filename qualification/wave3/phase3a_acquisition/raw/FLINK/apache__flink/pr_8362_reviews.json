@@ -1,0 +1,1202 @@
+[
+  {
+    "id": 235978359,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjM1OTc4MzU5",
+    "user": {
+      "login": "zhijiangW",
+      "id": 12387855,
+      "node_id": "MDQ6VXNlcjEyMzg3ODU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12387855?u=37edbfccb6908541f359433f420f9f1bc25bc714&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zhijiangW",
+      "html_url": "https://github.com/zhijiangW",
+      "followers_url": "https://api.github.com/users/zhijiangW/followers",
+      "following_url": "https://api.github.com/users/zhijiangW/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zhijiangW/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zhijiangW/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zhijiangW/subscriptions",
+      "organizations_url": "https://api.github.com/users/zhijiangW/orgs",
+      "repos_url": "https://api.github.com/users/zhijiangW/repos",
+      "events_url": "https://api.github.com/users/zhijiangW/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zhijiangW/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-235978359",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-235978359"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-10T08:16:18Z",
+    "commit_id": "1c8463510be743908fcaba98e0f877b88aec5039"
+  },
+  {
+    "id": 235978671,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjM1OTc4Njcx",
+    "user": {
+      "login": "zhijiangW",
+      "id": 12387855,
+      "node_id": "MDQ6VXNlcjEyMzg3ODU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12387855?u=37edbfccb6908541f359433f420f9f1bc25bc714&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zhijiangW",
+      "html_url": "https://github.com/zhijiangW",
+      "followers_url": "https://api.github.com/users/zhijiangW/followers",
+      "following_url": "https://api.github.com/users/zhijiangW/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zhijiangW/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zhijiangW/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zhijiangW/subscriptions",
+      "organizations_url": "https://api.github.com/users/zhijiangW/orgs",
+      "repos_url": "https://api.github.com/users/zhijiangW/repos",
+      "events_url": "https://api.github.com/users/zhijiangW/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zhijiangW/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-235978671",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-235978671"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-10T08:16:59Z",
+    "commit_id": "1c8463510be743908fcaba98e0f877b88aec5039"
+  },
+  {
+    "id": 235980055,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjM1OTgwMDU1",
+    "user": {
+      "login": "zhijiangW",
+      "id": 12387855,
+      "node_id": "MDQ6VXNlcjEyMzg3ODU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12387855?u=37edbfccb6908541f359433f420f9f1bc25bc714&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zhijiangW",
+      "html_url": "https://github.com/zhijiangW",
+      "followers_url": "https://api.github.com/users/zhijiangW/followers",
+      "following_url": "https://api.github.com/users/zhijiangW/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zhijiangW/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zhijiangW/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zhijiangW/subscriptions",
+      "organizations_url": "https://api.github.com/users/zhijiangW/orgs",
+      "repos_url": "https://api.github.com/users/zhijiangW/repos",
+      "events_url": "https://api.github.com/users/zhijiangW/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zhijiangW/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-235980055",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-235980055"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-10T08:20:27Z",
+    "commit_id": "1c8463510be743908fcaba98e0f877b88aec5039"
+  },
+  {
+    "id": 235982701,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjM1OTgyNzAx",
+    "user": {
+      "login": "zhijiangW",
+      "id": 12387855,
+      "node_id": "MDQ6VXNlcjEyMzg3ODU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12387855?u=37edbfccb6908541f359433f420f9f1bc25bc714&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zhijiangW",
+      "html_url": "https://github.com/zhijiangW",
+      "followers_url": "https://api.github.com/users/zhijiangW/followers",
+      "following_url": "https://api.github.com/users/zhijiangW/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zhijiangW/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zhijiangW/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zhijiangW/subscriptions",
+      "organizations_url": "https://api.github.com/users/zhijiangW/orgs",
+      "repos_url": "https://api.github.com/users/zhijiangW/repos",
+      "events_url": "https://api.github.com/users/zhijiangW/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zhijiangW/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-235982701",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-235982701"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-10T08:26:35Z",
+    "commit_id": "1c8463510be743908fcaba98e0f877b88aec5039"
+  },
+  {
+    "id": 235985975,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjM1OTg1OTc1",
+    "user": {
+      "login": "zhijiangW",
+      "id": 12387855,
+      "node_id": "MDQ6VXNlcjEyMzg3ODU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12387855?u=37edbfccb6908541f359433f420f9f1bc25bc714&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zhijiangW",
+      "html_url": "https://github.com/zhijiangW",
+      "followers_url": "https://api.github.com/users/zhijiangW/followers",
+      "following_url": "https://api.github.com/users/zhijiangW/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zhijiangW/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zhijiangW/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zhijiangW/subscriptions",
+      "organizations_url": "https://api.github.com/users/zhijiangW/orgs",
+      "repos_url": "https://api.github.com/users/zhijiangW/repos",
+      "events_url": "https://api.github.com/users/zhijiangW/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zhijiangW/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-235985975",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-235985975"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-10T08:33:57Z",
+    "commit_id": "1c8463510be743908fcaba98e0f877b88aec5039"
+  },
+  {
+    "id": 236037450,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjM2MDM3NDUw",
+    "user": {
+      "login": "zhijiangW",
+      "id": 12387855,
+      "node_id": "MDQ6VXNlcjEyMzg3ODU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12387855?u=37edbfccb6908541f359433f420f9f1bc25bc714&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zhijiangW",
+      "html_url": "https://github.com/zhijiangW",
+      "followers_url": "https://api.github.com/users/zhijiangW/followers",
+      "following_url": "https://api.github.com/users/zhijiangW/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zhijiangW/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zhijiangW/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zhijiangW/subscriptions",
+      "organizations_url": "https://api.github.com/users/zhijiangW/orgs",
+      "repos_url": "https://api.github.com/users/zhijiangW/repos",
+      "events_url": "https://api.github.com/users/zhijiangW/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zhijiangW/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-236037450",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-236037450"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-10T10:36:58Z",
+    "commit_id": "1c8463510be743908fcaba98e0f877b88aec5039"
+  },
+  {
+    "id": 236039444,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjM2MDM5NDQ0",
+    "user": {
+      "login": "zhijiangW",
+      "id": 12387855,
+      "node_id": "MDQ6VXNlcjEyMzg3ODU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12387855?u=37edbfccb6908541f359433f420f9f1bc25bc714&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zhijiangW",
+      "html_url": "https://github.com/zhijiangW",
+      "followers_url": "https://api.github.com/users/zhijiangW/followers",
+      "following_url": "https://api.github.com/users/zhijiangW/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zhijiangW/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zhijiangW/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zhijiangW/subscriptions",
+      "organizations_url": "https://api.github.com/users/zhijiangW/orgs",
+      "repos_url": "https://api.github.com/users/zhijiangW/repos",
+      "events_url": "https://api.github.com/users/zhijiangW/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zhijiangW/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "Thanks for opening this PR and it seems really good @azagrebin . \r\n\r\nI just left some minor inline comments and thought of two concerns currently.  I have not finished the whole review and would continue on it.\r\n\r\n1. The class `PartitionInfo` seems a bit redundant which might be replaced by `InputGateDeploymentDescriptor(IGDD)` completely. Because they cover most of the same informations, only `ResultPartitionType ` and `consumedSubpartitionIndex` in `IGDD` seems not necessary for `PartitionInfo` now, but the `ResultPartitionType` might also make sense in `PartitionInfo` if we support the dynamically determine the type future.  The current `TaskExecutor#updatePartitions(IGDD)` could also work well to make a bit change. And it seems also consistent to use the same structure during deploying and updating.\r\n\r\n2. I am not sure it is a good way for using `instanceof` in `SingleInputGate` to check the instance of `ShuffleDeploymentDescriptor` and make the transformation. Another option is we define some methods in the interface `ShuffleDeploymentDescriptor`, such as `boolean isUnknown()`, `getResultPartitionID()`, `getConnectionID()` to avoid this.",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-236039444",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-236039444"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-10T10:42:43Z",
+    "commit_id": "1c8463510be743908fcaba98e0f877b88aec5039"
+  },
+  {
+    "id": 237178895,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjM3MTc4ODk1",
+    "user": {
+      "login": "azagrebin",
+      "id": 10573485,
+      "node_id": "MDQ6VXNlcjEwNTczNDg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10573485?u=8041502103bff662e7c80b3174091ffc94503bea&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/azagrebin",
+      "html_url": "https://github.com/azagrebin",
+      "followers_url": "https://api.github.com/users/azagrebin/followers",
+      "following_url": "https://api.github.com/users/azagrebin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/azagrebin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/azagrebin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/azagrebin/subscriptions",
+      "organizations_url": "https://api.github.com/users/azagrebin/orgs",
+      "repos_url": "https://api.github.com/users/azagrebin/repos",
+      "events_url": "https://api.github.com/users/azagrebin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/azagrebin/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-237178895",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-237178895"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-14T11:20:34Z",
+    "commit_id": "1c8463510be743908fcaba98e0f877b88aec5039"
+  },
+  {
+    "id": 238415575,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjM4NDE1NTc1",
+    "user": {
+      "login": "tillrohrmann",
+      "id": 5756858,
+      "node_id": "MDQ6VXNlcjU3NTY4NTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5756858?u=436cadce64986f7391ad0b9edbc97b560e0371ab&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tillrohrmann",
+      "html_url": "https://github.com/tillrohrmann",
+      "followers_url": "https://api.github.com/users/tillrohrmann/followers",
+      "following_url": "https://api.github.com/users/tillrohrmann/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tillrohrmann/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tillrohrmann/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tillrohrmann/subscriptions",
+      "organizations_url": "https://api.github.com/users/tillrohrmann/orgs",
+      "repos_url": "https://api.github.com/users/tillrohrmann/repos",
+      "events_url": "https://api.github.com/users/tillrohrmann/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tillrohrmann/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "Thanks for opening this PR @azagrebin. I gave it a first pass mainly having minor comments (many style comments which do not affect correctness). I will give it another pass to look in detail at the abstractions. I will post comments regarding the abstractions next.",
+    "state": "CHANGES_REQUESTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-238415575",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-238415575"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-20T13:19:43Z",
+    "commit_id": "6928d026b35418859fb057722c575be10a4d4153"
+  },
+  {
+    "id": 239506968,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjM5NTA2OTY4",
+    "user": {
+      "login": "tillrohrmann",
+      "id": 5756858,
+      "node_id": "MDQ6VXNlcjU3NTY4NTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5756858?u=436cadce64986f7391ad0b9edbc97b560e0371ab&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tillrohrmann",
+      "html_url": "https://github.com/tillrohrmann",
+      "followers_url": "https://api.github.com/users/tillrohrmann/followers",
+      "following_url": "https://api.github.com/users/tillrohrmann/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tillrohrmann/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tillrohrmann/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tillrohrmann/subscriptions",
+      "organizations_url": "https://api.github.com/users/tillrohrmann/orgs",
+      "repos_url": "https://api.github.com/users/tillrohrmann/repos",
+      "events_url": "https://api.github.com/users/tillrohrmann/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tillrohrmann/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "I like the abstractions you've put in place @azagrebin. Good work! I've had a couple of minor comments.",
+    "state": "CHANGES_REQUESTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-239506968",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-239506968"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-20T14:57:02Z",
+    "commit_id": "6928d026b35418859fb057722c575be10a4d4153"
+  },
+  {
+    "id": 241739717,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjQxNzM5NzE3",
+    "user": {
+      "login": "azagrebin",
+      "id": 10573485,
+      "node_id": "MDQ6VXNlcjEwNTczNDg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10573485?u=8041502103bff662e7c80b3174091ffc94503bea&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/azagrebin",
+      "html_url": "https://github.com/azagrebin",
+      "followers_url": "https://api.github.com/users/azagrebin/followers",
+      "following_url": "https://api.github.com/users/azagrebin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/azagrebin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/azagrebin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/azagrebin/subscriptions",
+      "organizations_url": "https://api.github.com/users/azagrebin/orgs",
+      "repos_url": "https://api.github.com/users/azagrebin/repos",
+      "events_url": "https://api.github.com/users/azagrebin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/azagrebin/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-241739717",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-241739717"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-24T13:28:15Z",
+    "commit_id": "f17dc41be5f9dbc56559ed0365e201b97bb9c934"
+  },
+  {
+    "id": 241744473,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjQxNzQ0NDcz",
+    "user": {
+      "login": "azagrebin",
+      "id": 10573485,
+      "node_id": "MDQ6VXNlcjEwNTczNDg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10573485?u=8041502103bff662e7c80b3174091ffc94503bea&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/azagrebin",
+      "html_url": "https://github.com/azagrebin",
+      "followers_url": "https://api.github.com/users/azagrebin/followers",
+      "following_url": "https://api.github.com/users/azagrebin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/azagrebin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/azagrebin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/azagrebin/subscriptions",
+      "organizations_url": "https://api.github.com/users/azagrebin/orgs",
+      "repos_url": "https://api.github.com/users/azagrebin/repos",
+      "events_url": "https://api.github.com/users/azagrebin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/azagrebin/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-241744473",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-241744473"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-24T13:37:17Z",
+    "commit_id": "f17dc41be5f9dbc56559ed0365e201b97bb9c934"
+  },
+  {
+    "id": 241744935,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjQxNzQ0OTM1",
+    "user": {
+      "login": "azagrebin",
+      "id": 10573485,
+      "node_id": "MDQ6VXNlcjEwNTczNDg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10573485?u=8041502103bff662e7c80b3174091ffc94503bea&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/azagrebin",
+      "html_url": "https://github.com/azagrebin",
+      "followers_url": "https://api.github.com/users/azagrebin/followers",
+      "following_url": "https://api.github.com/users/azagrebin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/azagrebin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/azagrebin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/azagrebin/subscriptions",
+      "organizations_url": "https://api.github.com/users/azagrebin/orgs",
+      "repos_url": "https://api.github.com/users/azagrebin/repos",
+      "events_url": "https://api.github.com/users/azagrebin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/azagrebin/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-241744935",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-241744935"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-24T13:38:05Z",
+    "commit_id": "f17dc41be5f9dbc56559ed0365e201b97bb9c934"
+  },
+  {
+    "id": 241744987,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjQxNzQ0OTg3",
+    "user": {
+      "login": "azagrebin",
+      "id": 10573485,
+      "node_id": "MDQ6VXNlcjEwNTczNDg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10573485?u=8041502103bff662e7c80b3174091ffc94503bea&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/azagrebin",
+      "html_url": "https://github.com/azagrebin",
+      "followers_url": "https://api.github.com/users/azagrebin/followers",
+      "following_url": "https://api.github.com/users/azagrebin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/azagrebin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/azagrebin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/azagrebin/subscriptions",
+      "organizations_url": "https://api.github.com/users/azagrebin/orgs",
+      "repos_url": "https://api.github.com/users/azagrebin/repos",
+      "events_url": "https://api.github.com/users/azagrebin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/azagrebin/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-241744987",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-241744987"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-24T13:38:10Z",
+    "commit_id": "f17dc41be5f9dbc56559ed0365e201b97bb9c934"
+  },
+  {
+    "id": 241751849,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjQxNzUxODQ5",
+    "user": {
+      "login": "azagrebin",
+      "id": 10573485,
+      "node_id": "MDQ6VXNlcjEwNTczNDg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10573485?u=8041502103bff662e7c80b3174091ffc94503bea&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/azagrebin",
+      "html_url": "https://github.com/azagrebin",
+      "followers_url": "https://api.github.com/users/azagrebin/followers",
+      "following_url": "https://api.github.com/users/azagrebin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/azagrebin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/azagrebin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/azagrebin/subscriptions",
+      "organizations_url": "https://api.github.com/users/azagrebin/orgs",
+      "repos_url": "https://api.github.com/users/azagrebin/repos",
+      "events_url": "https://api.github.com/users/azagrebin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/azagrebin/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-241751849",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-241751849"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-24T13:50:35Z",
+    "commit_id": "f17dc41be5f9dbc56559ed0365e201b97bb9c934"
+  },
+  {
+    "id": 242051037,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjQyMDUxMDM3",
+    "user": {
+      "login": "azagrebin",
+      "id": 10573485,
+      "node_id": "MDQ6VXNlcjEwNTczNDg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10573485?u=8041502103bff662e7c80b3174091ffc94503bea&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/azagrebin",
+      "html_url": "https://github.com/azagrebin",
+      "followers_url": "https://api.github.com/users/azagrebin/followers",
+      "following_url": "https://api.github.com/users/azagrebin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/azagrebin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/azagrebin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/azagrebin/subscriptions",
+      "organizations_url": "https://api.github.com/users/azagrebin/orgs",
+      "repos_url": "https://api.github.com/users/azagrebin/repos",
+      "events_url": "https://api.github.com/users/azagrebin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/azagrebin/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-242051037",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-242051037"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-26T18:49:11Z",
+    "commit_id": "f17dc41be5f9dbc56559ed0365e201b97bb9c934"
+  },
+  {
+    "id": 242051109,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjQyMDUxMTA5",
+    "user": {
+      "login": "azagrebin",
+      "id": 10573485,
+      "node_id": "MDQ6VXNlcjEwNTczNDg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10573485?u=8041502103bff662e7c80b3174091ffc94503bea&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/azagrebin",
+      "html_url": "https://github.com/azagrebin",
+      "followers_url": "https://api.github.com/users/azagrebin/followers",
+      "following_url": "https://api.github.com/users/azagrebin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/azagrebin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/azagrebin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/azagrebin/subscriptions",
+      "organizations_url": "https://api.github.com/users/azagrebin/orgs",
+      "repos_url": "https://api.github.com/users/azagrebin/repos",
+      "events_url": "https://api.github.com/users/azagrebin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/azagrebin/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-242051109",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-242051109"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-26T18:51:08Z",
+    "commit_id": "f17dc41be5f9dbc56559ed0365e201b97bb9c934"
+  },
+  {
+    "id": 242052154,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjQyMDUyMTU0",
+    "user": {
+      "login": "azagrebin",
+      "id": 10573485,
+      "node_id": "MDQ6VXNlcjEwNTczNDg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10573485?u=8041502103bff662e7c80b3174091ffc94503bea&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/azagrebin",
+      "html_url": "https://github.com/azagrebin",
+      "followers_url": "https://api.github.com/users/azagrebin/followers",
+      "following_url": "https://api.github.com/users/azagrebin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/azagrebin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/azagrebin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/azagrebin/subscriptions",
+      "organizations_url": "https://api.github.com/users/azagrebin/orgs",
+      "repos_url": "https://api.github.com/users/azagrebin/repos",
+      "events_url": "https://api.github.com/users/azagrebin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/azagrebin/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-242052154",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-242052154"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-26T19:24:58Z",
+    "commit_id": "f17dc41be5f9dbc56559ed0365e201b97bb9c934"
+  },
+  {
+    "id": 242288666,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjQyMjg4NjY2",
+    "user": {
+      "login": "azagrebin",
+      "id": 10573485,
+      "node_id": "MDQ6VXNlcjEwNTczNDg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10573485?u=8041502103bff662e7c80b3174091ffc94503bea&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/azagrebin",
+      "html_url": "https://github.com/azagrebin",
+      "followers_url": "https://api.github.com/users/azagrebin/followers",
+      "following_url": "https://api.github.com/users/azagrebin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/azagrebin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/azagrebin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/azagrebin/subscriptions",
+      "organizations_url": "https://api.github.com/users/azagrebin/orgs",
+      "repos_url": "https://api.github.com/users/azagrebin/repos",
+      "events_url": "https://api.github.com/users/azagrebin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/azagrebin/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-242288666",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-242288666"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-27T13:54:33Z",
+    "commit_id": "cdf56b1d3d087c877951b6485dc9cae095f21cd2"
+  },
+  {
+    "id": 242593333,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjQyNTkzMzMz",
+    "user": {
+      "login": "zentol",
+      "id": 5725237,
+      "node_id": "MDQ6VXNlcjU3MjUyMzc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5725237?u=ad355b2fd84f94db267035f067e4233be08a9e37&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zentol",
+      "html_url": "https://github.com/zentol",
+      "followers_url": "https://api.github.com/users/zentol/followers",
+      "following_url": "https://api.github.com/users/zentol/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zentol/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zentol/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zentol/subscriptions",
+      "organizations_url": "https://api.github.com/users/zentol/orgs",
+      "repos_url": "https://api.github.com/users/zentol/repos",
+      "events_url": "https://api.github.com/users/zentol/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zentol/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-242593333",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-242593333"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-28T10:59:26Z",
+    "commit_id": "cdf56b1d3d087c877951b6485dc9cae095f21cd2"
+  },
+  {
+    "id": 244114712,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjQ0MTE0NzEy",
+    "user": {
+      "login": "zhijiangW",
+      "id": 12387855,
+      "node_id": "MDQ6VXNlcjEyMzg3ODU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12387855?u=37edbfccb6908541f359433f420f9f1bc25bc714&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zhijiangW",
+      "html_url": "https://github.com/zhijiangW",
+      "followers_url": "https://api.github.com/users/zhijiangW/followers",
+      "following_url": "https://api.github.com/users/zhijiangW/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zhijiangW/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zhijiangW/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zhijiangW/subscriptions",
+      "organizations_url": "https://api.github.com/users/zhijiangW/orgs",
+      "repos_url": "https://api.github.com/users/zhijiangW/repos",
+      "events_url": "https://api.github.com/users/zhijiangW/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zhijiangW/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-244114712",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-244114712"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-31T02:53:10Z",
+    "commit_id": "cdf56b1d3d087c877951b6485dc9cae095f21cd2"
+  },
+  {
+    "id": 244116458,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjQ0MTE2NDU4",
+    "user": {
+      "login": "zhijiangW",
+      "id": 12387855,
+      "node_id": "MDQ6VXNlcjEyMzg3ODU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12387855?u=37edbfccb6908541f359433f420f9f1bc25bc714&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zhijiangW",
+      "html_url": "https://github.com/zhijiangW",
+      "followers_url": "https://api.github.com/users/zhijiangW/followers",
+      "following_url": "https://api.github.com/users/zhijiangW/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zhijiangW/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zhijiangW/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zhijiangW/subscriptions",
+      "organizations_url": "https://api.github.com/users/zhijiangW/orgs",
+      "repos_url": "https://api.github.com/users/zhijiangW/repos",
+      "events_url": "https://api.github.com/users/zhijiangW/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zhijiangW/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-244116458",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-244116458"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-31T03:03:22Z",
+    "commit_id": "cdf56b1d3d087c877951b6485dc9cae095f21cd2"
+  },
+  {
+    "id": 244117461,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjQ0MTE3NDYx",
+    "user": {
+      "login": "zhijiangW",
+      "id": 12387855,
+      "node_id": "MDQ6VXNlcjEyMzg3ODU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12387855?u=37edbfccb6908541f359433f420f9f1bc25bc714&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zhijiangW",
+      "html_url": "https://github.com/zhijiangW",
+      "followers_url": "https://api.github.com/users/zhijiangW/followers",
+      "following_url": "https://api.github.com/users/zhijiangW/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zhijiangW/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zhijiangW/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zhijiangW/subscriptions",
+      "organizations_url": "https://api.github.com/users/zhijiangW/orgs",
+      "repos_url": "https://api.github.com/users/zhijiangW/repos",
+      "events_url": "https://api.github.com/users/zhijiangW/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zhijiangW/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-244117461",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-244117461"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-31T03:09:49Z",
+    "commit_id": "cdf56b1d3d087c877951b6485dc9cae095f21cd2"
+  },
+  {
+    "id": 244119664,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjQ0MTE5NjY0",
+    "user": {
+      "login": "zhijiangW",
+      "id": 12387855,
+      "node_id": "MDQ6VXNlcjEyMzg3ODU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12387855?u=37edbfccb6908541f359433f420f9f1bc25bc714&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zhijiangW",
+      "html_url": "https://github.com/zhijiangW",
+      "followers_url": "https://api.github.com/users/zhijiangW/followers",
+      "following_url": "https://api.github.com/users/zhijiangW/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zhijiangW/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zhijiangW/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zhijiangW/subscriptions",
+      "organizations_url": "https://api.github.com/users/zhijiangW/orgs",
+      "repos_url": "https://api.github.com/users/zhijiangW/repos",
+      "events_url": "https://api.github.com/users/zhijiangW/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zhijiangW/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-244119664",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-244119664"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-31T03:23:36Z",
+    "commit_id": "cdf56b1d3d087c877951b6485dc9cae095f21cd2"
+  },
+  {
+    "id": 244121050,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjQ0MTIxMDUw",
+    "user": {
+      "login": "zhijiangW",
+      "id": 12387855,
+      "node_id": "MDQ6VXNlcjEyMzg3ODU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12387855?u=37edbfccb6908541f359433f420f9f1bc25bc714&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zhijiangW",
+      "html_url": "https://github.com/zhijiangW",
+      "followers_url": "https://api.github.com/users/zhijiangW/followers",
+      "following_url": "https://api.github.com/users/zhijiangW/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zhijiangW/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zhijiangW/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zhijiangW/subscriptions",
+      "organizations_url": "https://api.github.com/users/zhijiangW/orgs",
+      "repos_url": "https://api.github.com/users/zhijiangW/repos",
+      "events_url": "https://api.github.com/users/zhijiangW/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zhijiangW/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-244121050",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-244121050"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-31T03:32:53Z",
+    "commit_id": "cdf56b1d3d087c877951b6485dc9cae095f21cd2"
+  },
+  {
+    "id": 244121294,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjQ0MTIxMjk0",
+    "user": {
+      "login": "zhijiangW",
+      "id": 12387855,
+      "node_id": "MDQ6VXNlcjEyMzg3ODU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12387855?u=37edbfccb6908541f359433f420f9f1bc25bc714&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zhijiangW",
+      "html_url": "https://github.com/zhijiangW",
+      "followers_url": "https://api.github.com/users/zhijiangW/followers",
+      "following_url": "https://api.github.com/users/zhijiangW/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zhijiangW/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zhijiangW/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zhijiangW/subscriptions",
+      "organizations_url": "https://api.github.com/users/zhijiangW/orgs",
+      "repos_url": "https://api.github.com/users/zhijiangW/repos",
+      "events_url": "https://api.github.com/users/zhijiangW/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zhijiangW/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-244121294",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-244121294"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-31T03:34:27Z",
+    "commit_id": "cdf56b1d3d087c877951b6485dc9cae095f21cd2"
+  },
+  {
+    "id": 244123612,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjQ0MTIzNjEy",
+    "user": {
+      "login": "zhijiangW",
+      "id": 12387855,
+      "node_id": "MDQ6VXNlcjEyMzg3ODU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12387855?u=37edbfccb6908541f359433f420f9f1bc25bc714&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zhijiangW",
+      "html_url": "https://github.com/zhijiangW",
+      "followers_url": "https://api.github.com/users/zhijiangW/followers",
+      "following_url": "https://api.github.com/users/zhijiangW/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zhijiangW/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zhijiangW/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zhijiangW/subscriptions",
+      "organizations_url": "https://api.github.com/users/zhijiangW/orgs",
+      "repos_url": "https://api.github.com/users/zhijiangW/repos",
+      "events_url": "https://api.github.com/users/zhijiangW/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zhijiangW/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-244123612",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-244123612"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-31T03:50:26Z",
+    "commit_id": "cdf56b1d3d087c877951b6485dc9cae095f21cd2"
+  },
+  {
+    "id": 244123930,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjQ0MTIzOTMw",
+    "user": {
+      "login": "zhijiangW",
+      "id": 12387855,
+      "node_id": "MDQ6VXNlcjEyMzg3ODU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12387855?u=37edbfccb6908541f359433f420f9f1bc25bc714&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zhijiangW",
+      "html_url": "https://github.com/zhijiangW",
+      "followers_url": "https://api.github.com/users/zhijiangW/followers",
+      "following_url": "https://api.github.com/users/zhijiangW/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zhijiangW/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zhijiangW/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zhijiangW/subscriptions",
+      "organizations_url": "https://api.github.com/users/zhijiangW/orgs",
+      "repos_url": "https://api.github.com/users/zhijiangW/repos",
+      "events_url": "https://api.github.com/users/zhijiangW/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zhijiangW/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-244123930",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-244123930"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-31T03:52:38Z",
+    "commit_id": "cdf56b1d3d087c877951b6485dc9cae095f21cd2"
+  },
+  {
+    "id": 244143195,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjQ0MTQzMTk1",
+    "user": {
+      "login": "zhijiangW",
+      "id": 12387855,
+      "node_id": "MDQ6VXNlcjEyMzg3ODU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12387855?u=37edbfccb6908541f359433f420f9f1bc25bc714&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zhijiangW",
+      "html_url": "https://github.com/zhijiangW",
+      "followers_url": "https://api.github.com/users/zhijiangW/followers",
+      "following_url": "https://api.github.com/users/zhijiangW/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zhijiangW/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zhijiangW/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zhijiangW/subscriptions",
+      "organizations_url": "https://api.github.com/users/zhijiangW/orgs",
+      "repos_url": "https://api.github.com/users/zhijiangW/repos",
+      "events_url": "https://api.github.com/users/zhijiangW/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zhijiangW/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-244143195",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-244143195"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-31T05:52:32Z",
+    "commit_id": "cdf56b1d3d087c877951b6485dc9cae095f21cd2"
+  },
+  {
+    "id": 244146187,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjQ0MTQ2MTg3",
+    "user": {
+      "login": "zhijiangW",
+      "id": 12387855,
+      "node_id": "MDQ6VXNlcjEyMzg3ODU1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12387855?u=37edbfccb6908541f359433f420f9f1bc25bc714&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zhijiangW",
+      "html_url": "https://github.com/zhijiangW",
+      "followers_url": "https://api.github.com/users/zhijiangW/followers",
+      "following_url": "https://api.github.com/users/zhijiangW/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zhijiangW/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zhijiangW/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zhijiangW/subscriptions",
+      "organizations_url": "https://api.github.com/users/zhijiangW/orgs",
+      "repos_url": "https://api.github.com/users/zhijiangW/repos",
+      "events_url": "https://api.github.com/users/zhijiangW/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zhijiangW/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/8362#pullrequestreview-244146187",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/8362",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/8362#pullrequestreview-244146187"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/8362"
+      }
+    },
+    "submitted_at": "2019-05-31T06:06:57Z",
+    "commit_id": "cdf56b1d3d087c877951b6485dc9cae095f21cd2"
+  }
+]

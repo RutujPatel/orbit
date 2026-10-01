@@ -1,0 +1,248 @@
+[
+  {
+    "sha": "2dd2cb7aaed4394cf1749d7992e46b2a94617e13",
+    "node_id": "MDY6Q29tbWl0OTkzODYyMjoyZGQyY2I3YWFlZDQzOTRjZjE3NDlkNzk5MmU0NmIyYTk0NjE3ZTEz",
+    "commit": {
+      "author": {
+        "name": "Robert Metzger",
+        "email": "metzgerr@web.de",
+        "date": "2013-11-30T21:21:37Z"
+      },
+      "committer": {
+        "name": "Robert Metzger",
+        "email": "metzgerr@web.de",
+        "date": "2013-12-07T15:45:59Z"
+      },
+      "message": "Add \"stratosphere-yarn\" sub-project\n\nbased on https://github.com/hortonworks/simple-yarn-app\n\nBuild debian package only with special profile for that (to speed up the build)\nBuild uber-jar of stratosphere (for super-handy yarn deployment)\n\nOld commit messages (from rebase:)\n\nadvanced configuration file handling (maven and jar magic)\nCommand line arguments for client (not yet done)\n\nChange JobManager startup to allow external control\nUse environment variables to pass variables to ApplicationMaster\nUse contstants for settings\nFix CLI options\nminor refinemens (pact-hbase dependencies)\n\nYarn runs with HDFS\njar files and configs are now shared using hdfs\nmany many deployment bug fixes\nuberjar is automatically uploaded to dopa server",
+      "tree": {
+        "sha": "5a6bd461f75dc38eaf57602e67c1ae873c992ec1",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/5a6bd461f75dc38eaf57602e67c1ae873c992ec1"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/2dd2cb7aaed4394cf1749d7992e46b2a94617e13",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/2dd2cb7aaed4394cf1749d7992e46b2a94617e13",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/2dd2cb7aaed4394cf1749d7992e46b2a94617e13",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/2dd2cb7aaed4394cf1749d7992e46b2a94617e13/comments",
+    "author": {
+      "login": "rmetzger",
+      "id": 89049,
+      "node_id": "MDQ6VXNlcjg5MDQ5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89049?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rmetzger",
+      "html_url": "https://github.com/rmetzger",
+      "followers_url": "https://api.github.com/users/rmetzger/followers",
+      "following_url": "https://api.github.com/users/rmetzger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rmetzger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rmetzger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rmetzger/subscriptions",
+      "organizations_url": "https://api.github.com/users/rmetzger/orgs",
+      "repos_url": "https://api.github.com/users/rmetzger/repos",
+      "events_url": "https://api.github.com/users/rmetzger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rmetzger/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rmetzger",
+      "id": 89049,
+      "node_id": "MDQ6VXNlcjg5MDQ5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89049?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rmetzger",
+      "html_url": "https://github.com/rmetzger",
+      "followers_url": "https://api.github.com/users/rmetzger/followers",
+      "following_url": "https://api.github.com/users/rmetzger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rmetzger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rmetzger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rmetzger/subscriptions",
+      "organizations_url": "https://api.github.com/users/rmetzger/orgs",
+      "repos_url": "https://api.github.com/users/rmetzger/repos",
+      "events_url": "https://api.github.com/users/rmetzger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rmetzger/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7b0c53b4c501690866523468f6c3e7f06438658c",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/7b0c53b4c501690866523468f6c3e7f06438658c",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/7b0c53b4c501690866523468f6c3e7f06438658c"
+      }
+    ]
+  },
+  {
+    "sha": "28780d44f89665b7baa32ba09cf256c0dd097be8",
+    "node_id": "MDY6Q29tbWl0OTkzODYyMjoyODc4MGQ0NGY4OTY2NWI3YmFhMzJiYTA5Y2YyNTZjMGRkMDk3YmU4",
+    "commit": {
+      "author": {
+        "name": "Robert Metzger",
+        "email": "metzgerr@web.de",
+        "date": "2013-12-05T20:47:25Z"
+      },
+      "committer": {
+        "name": "Robert Metzger",
+        "email": "metzgerr@web.de",
+        "date": "2013-12-07T15:45:59Z"
+      },
+      "message": "generate debian package for dopa; new configuration parameter for yarn client to create default yaml",
+      "tree": {
+        "sha": "ee334366261f1eeed30fc3ded2ff89b6649ffbb6",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/ee334366261f1eeed30fc3ded2ff89b6649ffbb6"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/28780d44f89665b7baa32ba09cf256c0dd097be8",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/28780d44f89665b7baa32ba09cf256c0dd097be8",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/28780d44f89665b7baa32ba09cf256c0dd097be8",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/28780d44f89665b7baa32ba09cf256c0dd097be8/comments",
+    "author": {
+      "login": "rmetzger",
+      "id": 89049,
+      "node_id": "MDQ6VXNlcjg5MDQ5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89049?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rmetzger",
+      "html_url": "https://github.com/rmetzger",
+      "followers_url": "https://api.github.com/users/rmetzger/followers",
+      "following_url": "https://api.github.com/users/rmetzger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rmetzger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rmetzger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rmetzger/subscriptions",
+      "organizations_url": "https://api.github.com/users/rmetzger/orgs",
+      "repos_url": "https://api.github.com/users/rmetzger/repos",
+      "events_url": "https://api.github.com/users/rmetzger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rmetzger/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rmetzger",
+      "id": 89049,
+      "node_id": "MDQ6VXNlcjg5MDQ5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89049?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rmetzger",
+      "html_url": "https://github.com/rmetzger",
+      "followers_url": "https://api.github.com/users/rmetzger/followers",
+      "following_url": "https://api.github.com/users/rmetzger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rmetzger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rmetzger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rmetzger/subscriptions",
+      "organizations_url": "https://api.github.com/users/rmetzger/orgs",
+      "repos_url": "https://api.github.com/users/rmetzger/repos",
+      "events_url": "https://api.github.com/users/rmetzger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rmetzger/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2dd2cb7aaed4394cf1749d7992e46b2a94617e13",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/2dd2cb7aaed4394cf1749d7992e46b2a94617e13",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/2dd2cb7aaed4394cf1749d7992e46b2a94617e13"
+      }
+    ]
+  },
+  {
+    "sha": "8114f64842c1a057b416e78e1ccc620c6b26a449",
+    "node_id": "MDY6Q29tbWl0OTkzODYyMjo4MTE0ZjY0ODQyYzFhMDU3YjQxNmU3OGUxY2NjNjIwYzZiMjZhNDQ5",
+    "commit": {
+      "author": {
+        "name": "Robert Metzger",
+        "email": "metzgerr@web.de",
+        "date": "2013-12-06T10:23:44Z"
+      },
+      "committer": {
+        "name": "Robert Metzger",
+        "email": "metzgerr@web.de",
+        "date": "2013-12-07T15:46:43Z"
+      },
+      "message": "move yarn to separate profile to disable it individually\n\nThis is a combination of 5 commits:\nextended submission client\n\nminor yarn refinements\n\nsome minor fixes\n\nmoved print usage",
+      "tree": {
+        "sha": "23a694cebce41d4b20f35cbfad3dc663aad4de48",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/23a694cebce41d4b20f35cbfad3dc663aad4de48"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/8114f64842c1a057b416e78e1ccc620c6b26a449",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/8114f64842c1a057b416e78e1ccc620c6b26a449",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/8114f64842c1a057b416e78e1ccc620c6b26a449",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/8114f64842c1a057b416e78e1ccc620c6b26a449/comments",
+    "author": {
+      "login": "rmetzger",
+      "id": 89049,
+      "node_id": "MDQ6VXNlcjg5MDQ5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89049?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rmetzger",
+      "html_url": "https://github.com/rmetzger",
+      "followers_url": "https://api.github.com/users/rmetzger/followers",
+      "following_url": "https://api.github.com/users/rmetzger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rmetzger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rmetzger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rmetzger/subscriptions",
+      "organizations_url": "https://api.github.com/users/rmetzger/orgs",
+      "repos_url": "https://api.github.com/users/rmetzger/repos",
+      "events_url": "https://api.github.com/users/rmetzger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rmetzger/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rmetzger",
+      "id": 89049,
+      "node_id": "MDQ6VXNlcjg5MDQ5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89049?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rmetzger",
+      "html_url": "https://github.com/rmetzger",
+      "followers_url": "https://api.github.com/users/rmetzger/followers",
+      "following_url": "https://api.github.com/users/rmetzger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rmetzger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rmetzger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rmetzger/subscriptions",
+      "organizations_url": "https://api.github.com/users/rmetzger/orgs",
+      "repos_url": "https://api.github.com/users/rmetzger/repos",
+      "events_url": "https://api.github.com/users/rmetzger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rmetzger/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "28780d44f89665b7baa32ba09cf256c0dd097be8",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/28780d44f89665b7baa32ba09cf256c0dd097be8",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/28780d44f89665b7baa32ba09cf256c0dd097be8"
+      }
+    ]
+  }
+]

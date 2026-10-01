@@ -1,0 +1,16 @@
+{
+  "phase3b_canonical_alignments.json": "25b54ccdf72f1c39834f5a12d4f2a7f783aa6c41ba644fc6e2f4b42806414e44",
+  "phase3b_canonical_observations.json": "53fdd2303ec036c3e8708780a78bd4d32044a64a2b06747813c9546794e6a0eb",
+  "phase3b_determinism.json": "c06ccfe7f5e9b9f92f2511dc5de0e139f4c495396340e0e88dcd05601d2377c2",
+  "phase3b_manual_adjudication.json": "46da330601795ef3bdd369135486c238975f004149421d4f50e7927f2deb1afd",
+  "phase3b_metrics.json": "111a7625ccb9e705026808d483e3be8915e349c8f6c4141903d7407af333c529",
+  "phase3b_negative_controls.json": "9994b9866b077313688c591aaaa687bc23923f848758cbfbf6379a7e8984797e",
+  "phase3b_provenance_results.json": "b1f40c06c2fb8e772e89ff5a59fb0437eed9ef00267a90906f17f3937871be76",
+  "phase3b_raw_artifact_integrity.json": "47dbc3b99f01bf137ee2a8b195e50b8b5f814527a6e0ae8551d0aadfb1202fa6",
+  "phase3b_reconciliation.csv": "11a905efc5bfa0e01fde86cc16063a4eceb3075478bf246f25a2d3e2cebf519e",
+  "phase3b_reconciliation.json": "56eb17911f857565806448690e2482d10d1cbb266cc7ec2b7289c179c345c8e3",
+  "phase3b_regression.json": "f033f7d9bc78baee4f4bbfaf9d862bb646df7510e0e60892ce45d52ac18cf83c",
+  "phase3b_report.md": "0b702e6849fb4657336a75a4dd827301289554eb0ff3bf3e2a8539ca86064cf4",
+  "phase3b_runner.py": "972e2716a0316f6f071f7463284862029fd4f625f2cb199d18c60bcffd7c9d0c",
+  "phase3b_temporal_evaluation.json": "e104de9269f47282c7b85d7bb358a5a3d444153489c798471da505be959ce04a"
+}

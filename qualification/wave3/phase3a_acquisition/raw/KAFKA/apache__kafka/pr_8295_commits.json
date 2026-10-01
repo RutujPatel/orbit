@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "78cb96fc13e5c337372b24b5ea50d7ade30485fc",
+    "node_id": "MDY6Q29tbWl0NTM3NDYyMDg6NzhjYjk2ZmMxM2U1YzMzNzM3MmIyNGI1ZWE1MGQ3YWRlMzA0ODVmYw==",
+    "commit": {
+      "author": {
+        "name": "Mickael Maison",
+        "email": "mickael.maison@gmail.com",
+        "date": "2020-03-02T11:24:36Z"
+      },
+      "committer": {
+        "name": "Mickael Maison",
+        "email": "mickael.maison@gmail.com",
+        "date": "2020-09-24T08:51:31Z"
+      },
+      "message": "KAFKA-9627: Replace ListOffset request/response with automated protocol\n\nCo-authored-by: Mickael Maison <mickael.maison@gmail.com>\nCo-authored-by: Edoardo Comar <ecomar@uk.ibm.com>",
+      "tree": {
+        "sha": "39bb49ea5df95a0a5855cbaf446fd18ff62d401c",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/39bb49ea5df95a0a5855cbaf446fd18ff62d401c"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/78cb96fc13e5c337372b24b5ea50d7ade30485fc",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/78cb96fc13e5c337372b24b5ea50d7ade30485fc",
+    "html_url": "https://github.com/apache/kafka/commit/78cb96fc13e5c337372b24b5ea50d7ade30485fc",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/78cb96fc13e5c337372b24b5ea50d7ade30485fc/comments",
+    "author": {
+      "login": "mimaison",
+      "id": 903615,
+      "node_id": "MDQ6VXNlcjkwMzYxNQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/903615?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mimaison",
+      "html_url": "https://github.com/mimaison",
+      "followers_url": "https://api.github.com/users/mimaison/followers",
+      "following_url": "https://api.github.com/users/mimaison/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mimaison/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mimaison/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mimaison/subscriptions",
+      "organizations_url": "https://api.github.com/users/mimaison/orgs",
+      "repos_url": "https://api.github.com/users/mimaison/repos",
+      "events_url": "https://api.github.com/users/mimaison/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mimaison/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mimaison",
+      "id": 903615,
+      "node_id": "MDQ6VXNlcjkwMzYxNQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/903615?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mimaison",
+      "html_url": "https://github.com/mimaison",
+      "followers_url": "https://api.github.com/users/mimaison/followers",
+      "following_url": "https://api.github.com/users/mimaison/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mimaison/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mimaison/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mimaison/subscriptions",
+      "organizations_url": "https://api.github.com/users/mimaison/orgs",
+      "repos_url": "https://api.github.com/users/mimaison/repos",
+      "events_url": "https://api.github.com/users/mimaison/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mimaison/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7abed3dbb092fdbd0c7a3afd1bd4081f2ba63bc4",
+        "url": "https://api.github.com/repos/apache/kafka/commits/7abed3dbb092fdbd0c7a3afd1bd4081f2ba63bc4",
+        "html_url": "https://github.com/apache/kafka/commit/7abed3dbb092fdbd0c7a3afd1bd4081f2ba63bc4"
+      }
+    ]
+  }
+]

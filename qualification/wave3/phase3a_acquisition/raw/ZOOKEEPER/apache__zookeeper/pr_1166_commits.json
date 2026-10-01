@@ -1,0 +1,44 @@
+[
+  {
+    "sha": "3604459121322a8cff6db3af6e2275bbf000dfea",
+    "node_id": "MDY6Q29tbWl0MjIxNTE4MTEzOjM2MDQ0NTkxMjEzMjJhOGNmZjZkYjNhZjZlMjI3NWJiZjAwMGRmZWE=",
+    "commit": {
+      "author": {
+        "name": "sangitanalkar",
+        "email": "snalkar@us.ibm.com",
+        "date": "2019-12-06T08:44:27Z"
+      },
+      "committer": {
+        "name": "sangitanalkar",
+        "email": "snalkar@us.ibm.com",
+        "date": "2020-01-08T09:14:51Z"
+      },
+      "message": "ZOOKEEPER-3681: s390x support for Travis",
+      "tree": {
+        "sha": "d0098dba414d4f6b80d2fc89e49054f3b7f286ec",
+        "url": "https://api.github.com/repos/apache/zookeeper/git/trees/d0098dba414d4f6b80d2fc89e49054f3b7f286ec"
+      },
+      "url": "https://api.github.com/repos/apache/zookeeper/git/commits/3604459121322a8cff6db3af6e2275bbf000dfea",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/zookeeper/commits/3604459121322a8cff6db3af6e2275bbf000dfea",
+    "html_url": "https://github.com/apache/zookeeper/commit/3604459121322a8cff6db3af6e2275bbf000dfea",
+    "comments_url": "https://api.github.com/repos/apache/zookeeper/commits/3604459121322a8cff6db3af6e2275bbf000dfea/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "b2a671e6a7b7f323a2a5659222429dfcc21e17cd",
+        "url": "https://api.github.com/repos/apache/zookeeper/commits/b2a671e6a7b7f323a2a5659222429dfcc21e17cd",
+        "html_url": "https://github.com/apache/zookeeper/commit/b2a671e6a7b7f323a2a5659222429dfcc21e17cd"
+      }
+    ]
+  }
+]

@@ -18,26 +18,82 @@ Design reference: docs/cse1-design.md
 
 from __future__ import annotations
 
-from dataclasses import dataclass, fields
+from dataclasses import dataclass, field, fields
 from datetime import datetime, timezone
 from typing import Any, Literal, Union
 
 
-# ── Closed vocabularies ──────────────────────────────────────────────
+import re
 
-SourceKind = Literal["jira", "github"]
-"""Supported source system kinds.  Static typing only; runtime
-validation of incoming values belongs to source-specific validators."""
+# ── Validated provider and entity identifiers (Pass 5 / Wave 1) ─────────────
 
-EntityKind = Literal[
-    "jira_issue",
-    "github_repository",
-    "github_branch",
-    "github_commit",
-    "github_pull_request",
-    "github_review",
-]
-"""Closed set of entity types across supported sources."""
+SourceKind = str
+"""A validated provider identifier representing a source system kind.
+
+Provider identification is validated at the provider/evidence boundary via
+validate_source_kind(). Must be a non-empty, lowercase alphanumeric string
+(including underscores and hyphens), e.g. 'jira', 'github', 'linear', 'gitlab'.
+"""
+
+EntityKind = str
+"""A validated entity type identifier representing a domain entity kind.
+
+Validated at the provider/evidence boundary via validate_entity_kind().
+Must be a non-empty, lowercase alphanumeric string (including underscores and hyphens),
+e.g. 'jira_issue', 'github_pull_request', 'work_item', 'code_change'.
+"""
+
+_IDENTIFIER_PATTERN = re.compile(r"^[a-z0-9][a-z0-9_\-]*[a-z0-9]$|^[a-z0-9]$")
+
+
+def validate_source_kind(value: Any) -> str:
+    """Validate a source_kind identifier at the provider/evidence boundary.
+
+    Fails closed on non-string, empty, whitespace, uppercase, length > 64, or invalid characters.
+    """
+    if not isinstance(value, str):
+        raise ValueError(f"source_kind must be a string, got {type(value).__name__}")
+    clean = value.strip()
+    if not clean:
+        raise ValueError("source_kind must not be empty or whitespace")
+    if clean != value:
+        raise ValueError(
+            f"source_kind '{value}' must not have leading or trailing whitespace"
+        )
+    if len(value) > 64:
+        raise ValueError(
+            f"source_kind '{value}' exceeds maximum length of 64 characters ({len(value)})"
+        )
+    if not _IDENTIFIER_PATTERN.fullmatch(value):
+        raise ValueError(
+            f"Invalid source_kind '{value}'. Must be lowercase alphanumeric with hyphens/underscores."
+        )
+    return value
+
+
+def validate_entity_kind(value: Any) -> str:
+    """Validate an entity_kind identifier at the provider/evidence boundary.
+
+    Fails closed on non-string, empty, whitespace, uppercase, length > 64, or invalid characters.
+    """
+    if not isinstance(value, str):
+        raise ValueError(f"entity_kind must be a string, got {type(value).__name__}")
+    clean = value.strip()
+    if not clean:
+        raise ValueError("entity_kind must not be empty or whitespace")
+    if clean != value:
+        raise ValueError(
+            f"entity_kind '{value}' must not have leading or trailing whitespace"
+        )
+    if len(value) > 64:
+        raise ValueError(
+            f"entity_kind '{value}' exceeds maximum length of 64 characters ({len(value)})"
+        )
+    if not _IDENTIFIER_PATTERN.fullmatch(value):
+        raise ValueError(
+            f"Invalid entity_kind '{value}'. Must be lowercase alphanumeric with hyphens/underscores."
+        )
+    return value
 
 QualityCode = Literal[
     "missing",
@@ -48,6 +104,29 @@ QualityCode = Literal[
     "unresolved",
 ]
 """Structured quality codes.  No severity, confidence, or risk."""
+
+VALID_QUALITY_CODES: frozenset[str] = frozenset({
+    "missing",
+    "invalid",
+    "unsupported_value",
+    "contradictory",
+    "incomplete",
+    "unresolved",
+})
+
+
+def validate_quality_code(value: Any) -> str:
+    """Validate that a value is an authorized QualityCode."""
+    if not isinstance(value, str):
+        raise TypeError(
+            f"Quality code must be a str, got {type(value).__name__}: {value!r}"
+        )
+    if value not in VALID_QUALITY_CODES:
+        raise ValueError(
+            f"Unknown quality code {value!r}. Must be one of {sorted(VALID_QUALITY_CODES)}."
+        )
+    return value
+
 
 RelationshipKind = Literal[
     "belongs_to_repository",
@@ -62,15 +141,64 @@ RelationshipKind = Literal[
 ]
 """Closed set of relationship types resolved across CSE-1.5, CSE-1.6, and Milestone 2."""
 
+VALID_RELATIONSHIP_KINDS: frozenset[str] = frozenset({
+    "belongs_to_repository",
+    "review_of",
+    "has_head_branch",
+    "has_base_branch",
+    "contains_commit",
+    "has_head_commit",
+    "has_base_commit",
+    "mentions",
+    "explicit_link",
+})
+
+
+def validate_relationship_kind(value: Any) -> str:
+    """Validate that a value is an authorized RelationshipKind."""
+    if not isinstance(value, str):
+        raise TypeError(
+            f"Relationship kind must be a str, got {type(value).__name__}: {value!r}"
+        )
+    if value not in VALID_RELATIONSHIP_KINDS:
+        raise ValueError(
+            f"Unknown relationship kind {value!r}. Must be one of {sorted(VALID_RELATIONSHIP_KINDS)}."
+        )
+    return value
+
+
 RelationshipBasis = Literal[
     "structural_association",
+    "structural_containment",
     "lexical_match",
     "explicit_metadata",
+    "declared_mention",
 ]
 """How a relationship was established. CSE-1.5 uses structural_association.
 CSE-1.6 uses lexical_match for explicit textual mentions.
 Milestone 2 authorizes explicit_metadata for native integration links.
-No temporal, semantic, or inference bases."""
+Wave 5 / Pass 5 recognize declared_mention and structural_containment."""
+
+VALID_RELATIONSHIP_BASES: frozenset[str] = frozenset({
+    "structural_association",
+    "structural_containment",
+    "lexical_match",
+    "explicit_metadata",
+    "declared_mention",
+})
+
+
+def validate_relationship_basis(value: Any) -> str:
+    """Validate that a value is an authorized RelationshipBasis."""
+    if not isinstance(value, str):
+        raise TypeError(
+            f"Relationship basis must be a str, got {type(value).__name__}: {value!r}"
+        )
+    if value not in VALID_RELATIONSHIP_BASES:
+        raise ValueError(
+            f"Unknown relationship basis {value!r}. Must be one of {sorted(VALID_RELATIONSHIP_BASES)}."
+        )
+    return value
 
 CrossSystemStateComparison = Literal[
     "CONSISTENT",
@@ -101,6 +229,11 @@ class SourceInstance:
     source_kind: SourceKind
     instance_id: str
 
+    def __post_init__(self) -> None:
+        validate_source_kind(self.source_kind)
+        if not isinstance(self.instance_id, str) or not self.instance_id.strip():
+            raise ValueError("instance_id must be a non-empty string")
+
 
 @dataclass(frozen=True, slots=True)
 class EntityRef:
@@ -120,6 +253,13 @@ class EntityRef:
     source_instance: SourceInstance
     entity_kind: EntityKind
     entity_id: str
+
+    def __post_init__(self) -> None:
+        if not isinstance(self.source_instance, SourceInstance):
+            raise TypeError("source_instance must be a SourceInstance")
+        validate_entity_kind(self.entity_kind)
+        if not isinstance(self.entity_id, str) or not self.entity_id.strip():
+            raise ValueError("entity_id must be a non-empty string")
 
 
 @dataclass(frozen=True, slots=True)
@@ -192,6 +332,9 @@ class QualityIssue:
     message: str
     subject_ref: EntityRef | None = None
     subject_scope: str | None = None
+
+    def __post_init__(self) -> None:
+        validate_quality_code(self.code)
 
 
 # ── Provenance ───────────────────────────────────────────────────────
@@ -325,7 +468,204 @@ class GitHubReviewState:
     submitted_at: datetime | None = None
 
 
+# ── Canonical State Models (Pass 5 / Wave 1) ─────────────────────────
+
+@dataclass(frozen=True, slots=True)
+class WorkItemState:
+    """Canonical, provider-neutral representation of a tracked work item's observed state.
+
+    Represents a discrete tracked work item across any work tracking system
+    (Jira, Linear, GitLab Issues, Azure Work Items, etc.).
+    Contains only properties genuinely required by evaluation rules.
+    """
+
+    key: str
+    source_status: str
+    status_category: str
+    created_at: datetime
+    updated_at: datetime
+    source_priority: str = ""
+    priority_band: str = "medium"
+    assignee: str | None = None
+    resolved_at: datetime | None = None
+    due_at: datetime | None = None
+    extra_properties: dict[str, Any] = field(default_factory=dict)
+
+    def __init__(
+        self,
+        key: str = "",
+        source_status: str = "",
+        status_category: str = "",
+        created_at: datetime | None = None,
+        updated_at: datetime | None = None,
+        source_priority: str = "",
+        priority_band: str = "medium",
+        assignee: str | None = None,
+        resolved_at: datetime | None = None,
+        due_at: datetime | None = None,
+        extra_properties: dict[str, Any] | None = None,
+        *,
+        identifier: str | None = None,
+    ) -> None:
+        eff_key = identifier if identifier is not None else key
+        if not eff_key:
+            raise ValueError("WorkItemState requires a key or identifier")
+        if created_at is None:
+            raise ValueError("WorkItemState requires created_at")
+        eff_updated = updated_at if updated_at is not None else (resolved_at or created_at)
+        object.__setattr__(self, "key", eff_key)
+        object.__setattr__(self, "source_status", source_status)
+        object.__setattr__(self, "status_category", status_category)
+        object.__setattr__(self, "created_at", created_at)
+        object.__setattr__(self, "updated_at", eff_updated)
+        object.__setattr__(self, "source_priority", source_priority)
+        object.__setattr__(self, "priority_band", priority_band)
+        object.__setattr__(self, "assignee", assignee)
+        object.__setattr__(self, "resolved_at", resolved_at)
+        object.__setattr__(self, "due_at", due_at)
+        object.__setattr__(self, "extra_properties", extra_properties if extra_properties is not None else {})
+
+    @property
+    def identifier(self) -> str:
+        """Canonical provider-neutral alias for key."""
+        return self.key
+
+
+@dataclass(frozen=True, slots=True)
+class CodeChangeState:
+    """Canonical, provider-neutral representation of a code change artifact's observed state.
+
+    Represents a proposed or merged code modification across any source control system
+    (GitHub Pull Request, GitLab Merge Request, Azure PR, commit, revision, etc.).
+    Contains only properties genuinely required by evaluation rules.
+    """
+
+    change_type: str
+    identifier: str
+    state: str
+    title: str = ""
+    created_at: datetime | None = None
+    merged_at: datetime | None = None
+    committed_at: datetime | None = None
+    author: str | None = None
+    source_branch: str | None = None
+    target_branch: str | None = None
+    head_commit_sha: str | None = None
+    base_commit_sha: str | None = None
+    extra_properties: dict[str, Any] = field(default_factory=dict)
+
+    def __init__(
+        self,
+        change_type: str = "pull_request",
+        identifier: str | None = None,
+        state: str = "open",
+        title: str = "",
+        created_at: datetime | None = None,
+        merged_at: datetime | None = None,
+        committed_at: datetime | None = None,
+        author: str | None = None,
+        source_branch: str | None = None,
+        target_branch: str | None = None,
+        head_commit_sha: str | None = None,
+        base_commit_sha: str | None = None,
+        extra_properties: dict[str, Any] | None = None,
+        *,
+        number: int | str | None = None,
+        change_id: str | None = None,
+        sha: str | None = None,
+        author_login: str | None = None,
+    ) -> None:
+        eff_id = str(identifier if identifier is not None else (number if number is not None else (change_id if change_id is not None else (sha or ""))))
+        eff_author = author if author is not None else author_login
+        object.__setattr__(self, "change_type", change_type)
+        object.__setattr__(self, "identifier", eff_id)
+        object.__setattr__(self, "state", state)
+        object.__setattr__(self, "title", title)
+        object.__setattr__(self, "created_at", created_at)
+        object.__setattr__(self, "merged_at", merged_at)
+        object.__setattr__(self, "committed_at", committed_at)
+        object.__setattr__(self, "author", eff_author)
+        object.__setattr__(self, "source_branch", source_branch)
+        object.__setattr__(self, "target_branch", target_branch)
+        object.__setattr__(self, "head_commit_sha", head_commit_sha)
+        object.__setattr__(self, "base_commit_sha", base_commit_sha)
+        object.__setattr__(self, "extra_properties", extra_properties if extra_properties is not None else {})
+
+    @property
+    def number(self) -> int | None:
+        """Backward-compatible integer number accessor for PR-like entities."""
+        try:
+            return int(self.identifier)
+        except (ValueError, TypeError):
+            return None
+
+    @property
+    def author_login(self) -> str | None:
+        """Backward-compatible author_login alias."""
+        return self.author
+
+    @property
+    def change_id(self) -> str:
+        """Alias for identifier."""
+        return self.identifier
+
+
+def as_work_item_state(state: Any) -> WorkItemState | None:
+    """Extract or adapt canonical WorkItemState from an observed state payload."""
+    if isinstance(state, WorkItemState):
+        return state
+    if isinstance(state, JiraIssueState):
+        return WorkItemState(
+            key=state.key,
+            source_status=state.source_status,
+            source_priority=state.source_priority,
+            status_category=state.status_category,
+            priority_band=state.priority_band,
+            assignee=state.assignee,
+            created_at=state.created_at,
+            updated_at=state.updated_at,
+            resolved_at=state.resolved_at,
+            due_at=state.due_at,
+        )
+    return None
+
+
+def as_code_change_state(state: Any) -> CodeChangeState | None:
+    """Extract or adapt canonical CodeChangeState from an observed state payload."""
+    if isinstance(state, CodeChangeState):
+        return state
+    if isinstance(state, GitHubPullRequestState):
+        return CodeChangeState(
+            change_type="pull_request",
+            identifier=str(state.number),
+            state=state.state,
+            title=state.title,
+            created_at=state.created_at,
+            merged_at=state.merged_at,
+            committed_at=None,
+            author=state.author_login,
+            target_branch=state.target_branch,
+            source_branch=state.source_branch,
+            head_commit_sha=state.head_commit_sha,
+            base_commit_sha=state.base_commit_sha,
+        )
+    if isinstance(state, GitHubCommitState):
+        return CodeChangeState(
+            change_type="commit",
+            identifier=state.sha,
+            state="committed",
+            title=state.message,
+            created_at=state.committed_at,
+            committed_at=state.committed_at,
+            author=state.author_login,
+        )
+    return None
+
+
+
 ObservedState = Union[
+    WorkItemState,
+    CodeChangeState,
     JiraIssueState,
     GitHubRepositoryState,
     GitHubBranchState,
@@ -402,6 +742,10 @@ class EvidenceRelationship:
     provenance_refs: tuple[ProvenanceRef, ...]
     quality_issues: tuple[QualityIssue, ...] = ()
 
+    def __post_init__(self) -> None:
+        validate_relationship_kind(self.kind)
+        validate_relationship_basis(self.basis)
+
 
 @dataclass(frozen=True, slots=True)
 class UnresolvedReference:
@@ -423,25 +767,67 @@ class UnresolvedReference:
     reason: str
     provenance_refs: tuple[ProvenanceRef, ...]
 
+    def __post_init__(self) -> None:
+        validate_entity_kind(self.target_entity_kind)
+        if not isinstance(self.target_identifier, str) or not self.target_identifier.strip():
+            raise ValueError("target_identifier must be a non-empty string")
+
 
 # ── Cross-system state & temporal alignments ─────────────────────────
 
 @dataclass(frozen=True, slots=True)
 class CrossSystemStateAlignment:
-    """A cross-system state and temporal comparison between Jira and GitHub observations.
+    """A provider-neutral cross-system state and temporal comparison between two observations.
 
-    Captures state coherence and temporal ordering between a Jira work item
-    and a referencing GitHub artifact without inferring causality, completion,
-    or developer identity.
+    Captures state coherence and temporal ordering between a subject entity (e.g. work item)
+    and a corroborating entity (e.g. code change, commit, branch) without inferring causality,
+    completion, or developer identity.
     """
 
-    jira_ref: EntityRef
-    github_ref: EntityRef
+    subject_ref: EntityRef
+    corroborating_ref: EntityRef
     relationship_kind: str
     state_comparison: CrossSystemStateComparison
     temporal_comparison: CrossSystemTemporalComparison
     rationale: str
     provenance_refs: tuple[ProvenanceRef, ...] = ()
+
+    def __init__(
+        self,
+        subject_ref: EntityRef | None = None,
+        corroborating_ref: EntityRef | None = None,
+        relationship_kind: str = "",
+        state_comparison: CrossSystemStateComparison = "INSUFFICIENT_EVIDENCE",
+        temporal_comparison: CrossSystemTemporalComparison = "INDETERMINATE",
+        rationale: str = "",
+        provenance_refs: tuple[ProvenanceRef, ...] = (),
+        *,
+        jira_ref: EntityRef | None = None,
+        github_ref: EntityRef | None = None,
+    ) -> None:
+        s = subject_ref if subject_ref is not None else jira_ref
+        c = corroborating_ref if corroborating_ref is not None else github_ref
+        if s is None or c is None:
+            raise ValueError(
+                "CrossSystemStateAlignment requires both subject_ref and corroborating_ref (or jira_ref/github_ref)"
+            )
+        object.__setattr__(self, "subject_ref", s)
+        object.__setattr__(self, "corroborating_ref", c)
+        object.__setattr__(self, "relationship_kind", relationship_kind)
+        object.__setattr__(self, "state_comparison", state_comparison)
+        object.__setattr__(self, "temporal_comparison", temporal_comparison)
+        object.__setattr__(self, "rationale", rationale)
+        object.__setattr__(self, "provenance_refs", provenance_refs)
+
+    @property
+    def jira_ref(self) -> EntityRef:
+        """Backward-compatible alias for subject_ref."""
+        return self.subject_ref
+
+    @property
+    def github_ref(self) -> EntityRef:
+        """Backward-compatible alias for corroborating_ref."""
+        return self.corroborating_ref
 
 
 # ── Serialization ────────────────────────────────────────────────────
@@ -678,8 +1064,8 @@ def serialize_evidence_bundle(
         sorted_alignments = sorted(
             bundle.cross_system_alignments,
             key=lambda a: (
-                a.jira_ref.entity_id,
-                a.github_ref.entity_id,
+                a.subject_ref.entity_id,
+                a.corroborating_ref.entity_id,
                 a.relationship_kind,
                 a.state_comparison,
                 a.temporal_comparison,
@@ -735,15 +1121,27 @@ def serialize_unresolved_reference(
 def serialize_cross_system_alignment(
     alignment: CrossSystemStateAlignment,
 ) -> dict[str, Any]:
-    """Serialize a CrossSystemStateAlignment to a JSON-safe dict."""
+    """Serialize a CrossSystemStateAlignment to a JSON-safe dict.
+
+    Canonical endpoints are serialized as 'subject_ref' and 'corroborating_ref'.
+    Legacy 'jira_ref' and 'github_ref' keys are included ONLY for legacy Jira/GitHub
+    alignments to satisfy backward-compatible consumers.
+    """
     result: dict[str, Any] = {
-        "jira_ref": serialize_entity_ref(alignment.jira_ref),
-        "github_ref": serialize_entity_ref(alignment.github_ref),
+        "subject_ref": serialize_entity_ref(alignment.subject_ref),
+        "corroborating_ref": serialize_entity_ref(alignment.corroborating_ref),
         "relationship_kind": alignment.relationship_kind,
         "state_comparison": alignment.state_comparison,
         "temporal_comparison": alignment.temporal_comparison,
         "rationale": alignment.rationale,
     }
+    # Conditional legacy backward compatibility: emit legacy keys only for Jira/GitHub pairs
+    if (
+        alignment.subject_ref.source_instance.source_kind == "jira"
+        and alignment.corroborating_ref.source_instance.source_kind == "github"
+    ):
+        result["jira_ref"] = serialize_entity_ref(alignment.subject_ref)
+        result["github_ref"] = serialize_entity_ref(alignment.corroborating_ref)
     if alignment.provenance_refs:
         result["provenance_refs"] = [
             serialize_provenance_ref(p) for p in alignment.provenance_refs

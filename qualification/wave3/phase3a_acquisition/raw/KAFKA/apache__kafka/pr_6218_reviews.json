@@ -1,0 +1,642 @@
+[
+  {
+    "id": 200377922,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjAwMzc3OTIy",
+    "user": {
+      "login": "dhruvilshah3",
+      "id": 14958864,
+      "node_id": "MDQ6VXNlcjE0OTU4ODY0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14958864?u=d7fed0ad5070bc54f3d454ab913f34e9edcfef91&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dhruvilshah3",
+      "html_url": "https://github.com/dhruvilshah3",
+      "followers_url": "https://api.github.com/users/dhruvilshah3/followers",
+      "following_url": "https://api.github.com/users/dhruvilshah3/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhruvilshah3/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhruvilshah3/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhruvilshah3/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhruvilshah3/orgs",
+      "repos_url": "https://api.github.com/users/dhruvilshah3/repos",
+      "events_url": "https://api.github.com/users/dhruvilshah3/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhruvilshah3/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/6218#pullrequestreview-200377922",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/6218",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/6218#pullrequestreview-200377922"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/6218"
+      }
+    },
+    "submitted_at": "2019-02-06T01:03:53Z",
+    "commit_id": "292d279ab8873d1d639aa9364f6b9786f3cce76d"
+  },
+  {
+    "id": 200377991,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjAwMzc3OTkx",
+    "user": {
+      "login": "dhruvilshah3",
+      "id": 14958864,
+      "node_id": "MDQ6VXNlcjE0OTU4ODY0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14958864?u=d7fed0ad5070bc54f3d454ab913f34e9edcfef91&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dhruvilshah3",
+      "html_url": "https://github.com/dhruvilshah3",
+      "followers_url": "https://api.github.com/users/dhruvilshah3/followers",
+      "following_url": "https://api.github.com/users/dhruvilshah3/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dhruvilshah3/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dhruvilshah3/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dhruvilshah3/subscriptions",
+      "organizations_url": "https://api.github.com/users/dhruvilshah3/orgs",
+      "repos_url": "https://api.github.com/users/dhruvilshah3/repos",
+      "events_url": "https://api.github.com/users/dhruvilshah3/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dhruvilshah3/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "Thanks for the PR, LGTM. Just a minor comment.",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/6218#pullrequestreview-200377991",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/6218",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/6218#pullrequestreview-200377991"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/6218"
+      }
+    },
+    "submitted_at": "2019-02-06T01:04:13Z",
+    "commit_id": "292d279ab8873d1d639aa9364f6b9786f3cce76d"
+  },
+  {
+    "id": 200742655,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjAwNzQyNjU1",
+    "user": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?u=a2e63ff9ae8e17464401dc81de5ca21495e3198d&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/6218#pullrequestreview-200742655",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/6218",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/6218#pullrequestreview-200742655"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/6218"
+      }
+    },
+    "submitted_at": "2019-02-06T18:49:01Z",
+    "commit_id": "292d279ab8873d1d639aa9364f6b9786f3cce76d"
+  },
+  {
+    "id": 201328611,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjAxMzI4NjEx",
+    "user": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?u=a2e63ff9ae8e17464401dc81de5ca21495e3198d&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/6218#pullrequestreview-201328611",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/6218",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/6218#pullrequestreview-201328611"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/6218"
+      }
+    },
+    "submitted_at": "2019-02-07T21:17:37Z",
+    "commit_id": "4dfef4491c228a704be90f6cc412c1d1d5d12354"
+  },
+  {
+    "id": 202975429,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjAyOTc1NDI5",
+    "user": {
+      "login": "junrao",
+      "id": 132330,
+      "node_id": "MDQ6VXNlcjEzMjMzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/132330?u=6960a493b75cb868da9525c55e056eb669b24ddd&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/junrao",
+      "html_url": "https://github.com/junrao",
+      "followers_url": "https://api.github.com/users/junrao/followers",
+      "following_url": "https://api.github.com/users/junrao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/junrao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/junrao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/junrao/subscriptions",
+      "organizations_url": "https://api.github.com/users/junrao/orgs",
+      "repos_url": "https://api.github.com/users/junrao/repos",
+      "events_url": "https://api.github.com/users/junrao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/junrao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "@gardnervickers : Thanks for the patch. A couple of comments below.",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/6218#pullrequestreview-202975429",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/6218",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/6218#pullrequestreview-202975429"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/6218"
+      }
+    },
+    "submitted_at": "2019-02-13T02:04:56Z",
+    "commit_id": "445a3af5094b3f55ceedc9a86677338556e88112"
+  },
+  {
+    "id": 203423660,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjAzNDIzNjYw",
+    "user": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?u=a2e63ff9ae8e17464401dc81de5ca21495e3198d&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/6218#pullrequestreview-203423660",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/6218",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/6218#pullrequestreview-203423660"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/6218"
+      }
+    },
+    "submitted_at": "2019-02-13T20:11:18Z",
+    "commit_id": "445a3af5094b3f55ceedc9a86677338556e88112"
+  },
+  {
+    "id": 203424871,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjAzNDI0ODcx",
+    "user": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?u=a2e63ff9ae8e17464401dc81de5ca21495e3198d&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/6218#pullrequestreview-203424871",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/6218",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/6218#pullrequestreview-203424871"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/6218"
+      }
+    },
+    "submitted_at": "2019-02-13T20:14:07Z",
+    "commit_id": "a2c0f91e57e663106164dc3e94c46c886389c8bc"
+  },
+  {
+    "id": 203465732,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjAzNDY1NzMy",
+    "user": {
+      "login": "junrao",
+      "id": 132330,
+      "node_id": "MDQ6VXNlcjEzMjMzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/132330?u=6960a493b75cb868da9525c55e056eb669b24ddd&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/junrao",
+      "html_url": "https://github.com/junrao",
+      "followers_url": "https://api.github.com/users/junrao/followers",
+      "following_url": "https://api.github.com/users/junrao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/junrao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/junrao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/junrao/subscriptions",
+      "organizations_url": "https://api.github.com/users/junrao/orgs",
+      "repos_url": "https://api.github.com/users/junrao/repos",
+      "events_url": "https://api.github.com/users/junrao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/junrao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "@gardnervickers : Thanks for the updated patch. One more suggestion below.",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/6218#pullrequestreview-203465732",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/6218",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/6218#pullrequestreview-203465732"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/6218"
+      }
+    },
+    "submitted_at": "2019-02-13T21:49:52Z",
+    "commit_id": "a2c0f91e57e663106164dc3e94c46c886389c8bc"
+  },
+  {
+    "id": 204940333,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjA0OTQwMzMz",
+    "user": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?u=a2e63ff9ae8e17464401dc81de5ca21495e3198d&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/6218#pullrequestreview-204940333",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/6218",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/6218#pullrequestreview-204940333"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/6218"
+      }
+    },
+    "submitted_at": "2019-02-18T20:14:30Z",
+    "commit_id": "a2c0f91e57e663106164dc3e94c46c886389c8bc"
+  },
+  {
+    "id": 205378198,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjA1Mzc4MTk4",
+    "user": {
+      "login": "junrao",
+      "id": 132330,
+      "node_id": "MDQ6VXNlcjEzMjMzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/132330?u=6960a493b75cb868da9525c55e056eb669b24ddd&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/junrao",
+      "html_url": "https://github.com/junrao",
+      "followers_url": "https://api.github.com/users/junrao/followers",
+      "following_url": "https://api.github.com/users/junrao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/junrao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/junrao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/junrao/subscriptions",
+      "organizations_url": "https://api.github.com/users/junrao/orgs",
+      "repos_url": "https://api.github.com/users/junrao/repos",
+      "events_url": "https://api.github.com/users/junrao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/junrao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "@gardnervickers : Since the usage of ShutdownableThread is mostly simple, perhaps we can just take the current patch for now. Could you file a jira and include it in the PR title so that we can track it? Just one other comment below.",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/6218#pullrequestreview-205378198",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/6218",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/6218#pullrequestreview-205378198"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/6218"
+      }
+    },
+    "submitted_at": "2019-02-19T18:52:37Z",
+    "commit_id": "7c6ac0d25b8c9ca48b4c190f6a11bc0ab8576054"
+  },
+  {
+    "id": 205428261,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjA1NDI4MjYx",
+    "user": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?u=a2e63ff9ae8e17464401dc81de5ca21495e3198d&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/6218#pullrequestreview-205428261",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/6218",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/6218#pullrequestreview-205428261"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/6218"
+      }
+    },
+    "submitted_at": "2019-02-19T20:13:50Z",
+    "commit_id": "7c6ac0d25b8c9ca48b4c190f6a11bc0ab8576054"
+  },
+  {
+    "id": 205441203,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjA1NDQxMjAz",
+    "user": {
+      "login": "junrao",
+      "id": 132330,
+      "node_id": "MDQ6VXNlcjEzMjMzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/132330?u=6960a493b75cb868da9525c55e056eb669b24ddd&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/junrao",
+      "html_url": "https://github.com/junrao",
+      "followers_url": "https://api.github.com/users/junrao/followers",
+      "following_url": "https://api.github.com/users/junrao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/junrao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/junrao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/junrao/subscriptions",
+      "organizations_url": "https://api.github.com/users/junrao/orgs",
+      "repos_url": "https://api.github.com/users/junrao/repos",
+      "events_url": "https://api.github.com/users/junrao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/junrao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/6218#pullrequestreview-205441203",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/6218",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/6218#pullrequestreview-205441203"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/6218"
+      }
+    },
+    "submitted_at": "2019-02-19T20:44:06Z",
+    "commit_id": "7c6ac0d25b8c9ca48b4c190f6a11bc0ab8576054"
+  },
+  {
+    "id": 205452710,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjA1NDUyNzEw",
+    "user": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?u=a2e63ff9ae8e17464401dc81de5ca21495e3198d&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/6218#pullrequestreview-205452710",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/6218",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/6218#pullrequestreview-205452710"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/6218"
+      }
+    },
+    "submitted_at": "2019-02-19T21:09:07Z",
+    "commit_id": "7c6ac0d25b8c9ca48b4c190f6a11bc0ab8576054"
+  },
+  {
+    "id": 206037793,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjA2MDM3Nzkz",
+    "user": {
+      "login": "junrao",
+      "id": 132330,
+      "node_id": "MDQ6VXNlcjEzMjMzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/132330?u=6960a493b75cb868da9525c55e056eb669b24ddd&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/junrao",
+      "html_url": "https://github.com/junrao",
+      "followers_url": "https://api.github.com/users/junrao/followers",
+      "following_url": "https://api.github.com/users/junrao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/junrao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/junrao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/junrao/subscriptions",
+      "organizations_url": "https://api.github.com/users/junrao/orgs",
+      "repos_url": "https://api.github.com/users/junrao/repos",
+      "events_url": "https://api.github.com/users/junrao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/junrao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "@gardnervickers : Thanks for the patch. LGTM. Just waiting for the tests to pass.",
+    "state": "APPROVED",
+    "html_url": "https://github.com/apache/kafka/pull/6218#pullrequestreview-206037793",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/6218",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/6218#pullrequestreview-206037793"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/6218"
+      }
+    },
+    "submitted_at": "2019-02-20T22:36:19Z",
+    "commit_id": "92f71e48c53593a8c4f2455dca9dfb7ca2b863b5"
+  },
+  {
+    "id": 207713182,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjA3NzEzMTgy",
+    "user": {
+      "login": "junrao",
+      "id": 132330,
+      "node_id": "MDQ6VXNlcjEzMjMzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/132330?u=6960a493b75cb868da9525c55e056eb669b24ddd&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/junrao",
+      "html_url": "https://github.com/junrao",
+      "followers_url": "https://api.github.com/users/junrao/followers",
+      "following_url": "https://api.github.com/users/junrao/following{/other_user}",
+      "gists_url": "https://api.github.com/users/junrao/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/junrao/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/junrao/subscriptions",
+      "organizations_url": "https://api.github.com/users/junrao/orgs",
+      "repos_url": "https://api.github.com/users/junrao/repos",
+      "events_url": "https://api.github.com/users/junrao/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/junrao/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "@gardnervickers : Thanks for the updated PR. LGTM. Just a minor comment below.",
+    "state": "APPROVED",
+    "html_url": "https://github.com/apache/kafka/pull/6218#pullrequestreview-207713182",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/6218",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/6218#pullrequestreview-207713182"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/6218"
+      }
+    },
+    "submitted_at": "2019-02-26T00:55:32Z",
+    "commit_id": "4a202222000211a951f6954b68a750e7db6a9577"
+  },
+  {
+    "id": 207718385,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjA3NzE4Mzg1",
+    "user": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?u=a2e63ff9ae8e17464401dc81de5ca21495e3198d&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/6218#pullrequestreview-207718385",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/6218",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/6218#pullrequestreview-207718385"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/6218"
+      }
+    },
+    "submitted_at": "2019-02-26T01:15:58Z",
+    "commit_id": "4a202222000211a951f6954b68a750e7db6a9577"
+  }
+]

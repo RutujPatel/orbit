@@ -1,0 +1,1680 @@
+{
+  "_id": {
+    "$oid": "61d60d07f4d395ee22226fa8"
+  },
+  "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+  "id": "13404207",
+  "self": "https://issues.apache.org/jira/rest/api/2/issue/13404207",
+  "key": "FLINK-24409",
+  "fields": {
+    "fixVersions": [
+      {
+        "self": "https://issues.apache.org/jira/rest/api/2/version/12350442",
+        "id": "12350442",
+        "name": "1.15.0",
+        "archived": false,
+        "released": false
+      },
+      {
+        "self": "https://issues.apache.org/jira/rest/api/2/version/12351075",
+        "id": "12351075",
+        "name": "1.14.3",
+        "archived": false,
+        "released": false
+      }
+    ],
+    "resolution": {
+      "self": "https://issues.apache.org/jira/rest/api/2/resolution/1",
+      "id": "1",
+      "description": "A fix for this issue is checked into the tree and tested.",
+      "name": "Fixed"
+    },
+    "customfield_12312322": null,
+    "customfield_12312323": null,
+    "customfield_12310420": "9223372036854775807",
+    "customfield_12312320": null,
+    "customfield_12312321": null,
+    "customfield_12312328": null,
+    "customfield_12312329": null,
+    "customfield_12312326": null,
+    "customfield_12310300": null,
+    "customfield_12312327": null,
+    "customfield_12312324": null,
+    "customfield_12312720": null,
+    "customfield_12312325": null,
+    "lastViewed": null,
+    "priority": {
+      "self": "https://issues.apache.org/jira/rest/api/2/priority/3",
+      "iconUrl": "https://issues.apache.org/jira/images/icons/priorities/major.svg",
+      "name": "Major",
+      "id": "3"
+    },
+    "labels": [
+      "pull-request-available"
+    ],
+    "customfield_12312333": null,
+    "customfield_12312334": null,
+    "customfield_12313422": "false",
+    "customfield_12312331": null,
+    "customfield_12312332": null,
+    "aggregatetimeoriginalestimate": null,
+    "timeestimate": null,
+    "customfield_12312330": null,
+    "versions": [
+      {
+        "self": "https://issues.apache.org/jira/rest/api/2/version/12349614",
+        "id": "12349614",
+        "name": "1.14.0",
+        "archived": false,
+        "released": true,
+        "releaseDate": "2021-09-28"
+      },
+      {
+        "self": "https://issues.apache.org/jira/rest/api/2/version/12350442",
+        "id": "12350442",
+        "name": "1.15.0",
+        "archived": false,
+        "released": false
+      }
+    ],
+    "customfield_12311120": null,
+    "customfield_12313826": null,
+    "issuelinks": [
+      {
+        "id": "12624602",
+        "self": "https://issues.apache.org/jira/rest/api/2/issueLink/12624602",
+        "type": {
+          "id": "12310560",
+          "name": "Problem/Incident",
+          "inward": "is caused by",
+          "outward": "causes",
+          "self": "https://issues.apache.org/jira/rest/api/2/issueLinkType/12310560"
+        },
+        "outwardIssue": {
+          "id": "13405850",
+          "key": "FLINK-24497",
+          "self": "https://issues.apache.org/jira/rest/api/2/issue/13405850",
+          "fields": {
+            "summary": "Kafka metrics fetching throws IllegalStateException ",
+            "status": {
+              "self": "https://issues.apache.org/jira/rest/api/2/status/1",
+              "description": "The issue is open and ready for the assignee to start work on it.",
+              "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/open.png",
+              "name": "Open",
+              "id": "1",
+              "statusCategory": {
+                "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/2",
+                "id": 2,
+                "key": "new",
+                "colorName": "blue-gray",
+                "name": "To Do"
+              }
+            },
+            "priority": {
+              "self": "https://issues.apache.org/jira/rest/api/2/priority/4",
+              "iconUrl": "https://issues.apache.org/jira/images/icons/priorities/minor.svg",
+              "name": "Minor",
+              "id": "4"
+            },
+            "issuetype": {
+              "self": "https://issues.apache.org/jira/rest/api/2/issuetype/1",
+              "id": "1",
+              "description": "A problem which impairs or prevents the functions of the product.",
+              "iconUrl": "https://issues.apache.org/jira/secure/viewavatar?size=xsmall&avatarId=21133&avatarType=issuetype",
+              "name": "Bug",
+              "subtask": false,
+              "avatarId": 21133
+            }
+          }
+        }
+      }
+    ],
+    "customfield_12312339": null,
+    "customfield_12313825": null,
+    "assignee": {
+      "self": "<<|author_self|>>",
+      "name": "<<|author_name|2ce2c751-dd12-4722-9b28-e68cdcfb899e|>>",
+      "key": "<<|author_key|ab3648e5-6c7f-4543-8948-7bcb850a93d9|>>",
+      "avatarUrls": "<<|author_avatarUrls|>>",
+      "displayName": "<<|author_displayName|ddbfcb77-9ebc-44a7-b920-ac1a2d5a852e|>>",
+      "active": true,
+      "timeZone": "<<|author_timeZone|>>"
+    },
+    "customfield_12312337": null,
+    "customfield_12313823": null,
+    "customfield_12312338": null,
+    "customfield_12311920": null,
+    "customfield_12313822": null,
+    "customfield_12312335": null,
+    "customfield_12313821": null,
+    "customfield_12312336": null,
+    "customfield_12313820": null,
+    "status": {
+      "self": "https://issues.apache.org/jira/rest/api/2/status/5",
+      "description": "A resolution has been taken, and it is awaiting verification by reporter. From here issues are either reopened, or are closed.",
+      "iconUrl": "https://issues.apache.org/jira/images/icons/statuses/resolved.png",
+      "name": "Resolved",
+      "id": "5",
+      "statusCategory": {
+        "self": "https://issues.apache.org/jira/rest/api/2/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "components": [
+      {
+        "self": "https://issues.apache.org/jira/rest/api/2/component/12326709",
+        "id": "12326709",
+        "name": "Connectors / Kafka",
+        "description": "Status: Feb-2019 proposal."
+      }
+    ],
+    "customfield_12312026": null,
+    "customfield_12312023": null,
+    "customfield_12312024": null,
+    "aggregatetimeestimate": null,
+    "customfield_12312022": null,
+    "customfield_12310921": null,
+    "customfield_12310920": "9223372036854775807",
+    "customfield_12312823": null,
+    "creator": {
+      "self": "<<|author_self|>>",
+      "name": "<<|author_name|a8d0b117-6c74-4d67-8291-3d90ace35999|>>",
+      "key": "<<|author_key|c7cf2756-fb5a-4b6d-a091-3b21af8e97ae|>>",
+      "avatarUrls": "<<|author_avatarUrls|>>",
+      "displayName": "<<|author_displayName|891236b2-629f-4941-bc03-01a55b67d71f|>>",
+      "active": true,
+      "timeZone": "<<|author_timeZone|>>"
+    },
+    "subtasks": [],
+    "reporter": {
+      "self": "<<|author_self|>>",
+      "name": "<<|author_name|a8d0b117-6c74-4d67-8291-3d90ace35999|>>",
+      "key": "<<|author_key|c7cf2756-fb5a-4b6d-a091-3b21af8e97ae|>>",
+      "avatarUrls": "<<|author_avatarUrls|>>",
+      "displayName": "<<|author_displayName|891236b2-629f-4941-bc03-01a55b67d71f|>>",
+      "active": true,
+      "timeZone": "<<|author_timeZone|>>"
+    },
+    "aggregateprogress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_12313520": null,
+    "customfield_12310250": null,
+    "progress": {
+      "progress": 0,
+      "total": 0
+    },
+    "customfield_12313924": null,
+    "votes": {
+      "self": "https://issues.apache.org/jira/rest/api/2/issue/FLINK-24409/votes",
+      "votes": 0,
+      "hasVoted": false
+    },
+    "customfield_12313920": null,
+    "issuetype": {
+      "self": "https://issues.apache.org/jira/rest/api/2/issuetype/1",
+      "id": "1",
+      "description": "A problem which impairs or prevents the functions of the product.",
+      "iconUrl": "https://issues.apache.org/jira/secure/viewavatar?size=xsmall&avatarId=21133&avatarType=issuetype",
+      "name": "Bug",
+      "subtask": false,
+      "avatarId": 21133
+    },
+    "timespent": null,
+    "customfield_12314020": "{summaryBean=com.atlassian.jira.plugin.devstatus.rest.SummaryBean@806d790[summary={pullrequest=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@59028e8a[overall=PullRequestOverallBean{stateCount=0, state='OPEN', details=PullRequestOverallDetails{openCount=0, mergedCount=0, declinedCount=0}},byInstanceType={}], build=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@75cfe99f[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BuildOverallBean@38745f72[failedBuildCount=0,successfulBuildCount=0,unknownBuildCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], review=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@6570075e[overall=com.atlassian.jira.plugin.devstatus.summary.beans.ReviewsOverallBean@76c1bcd4[stateCount=0,state=<null>,dueDate=<null>,overDue=false,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], deployment-environment=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@7cc83082[overall=com.atlassian.jira.plugin.devstatus.summary.beans.DeploymentOverallBean@66dd7fa6[topEnvironments=[],showProjects=false,successfulCount=0,count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], repository=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@3f2ded4[overall=com.atlassian.jira.plugin.devstatus.summary.beans.CommitOverallBean@782ef562[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}], branch=com.atlassian.jira.plugin.devstatus.rest.SummaryItemBean@455f96c5[overall=com.atlassian.jira.plugin.devstatus.summary.beans.BranchOverallBean@4872f187[count=0,lastUpdated=<null>,lastUpdatedTimestamp=<null>],byInstanceType={}]},errors=[],configErrors=[]], devSummaryJson={\"cachedValue\":{\"errors\":[],\"configErrors\":[],\"summary\":{\"pullrequest\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":\"OPEN\",\"details\":{\"openCount\":0,\"mergedCount\":0,\"declinedCount\":0,\"total\":0},\"open\":true},\"byInstanceType\":{}},\"build\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"failedBuildCount\":0,\"successfulBuildCount\":0,\"unknownBuildCount\":0},\"byInstanceType\":{}},\"review\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"stateCount\":0,\"state\":null,\"dueDate\":null,\"overDue\":false,\"completed\":false},\"byInstanceType\":{}},\"deployment-environment\":{\"overall\":{\"count\":0,\"lastUpdated\":null,\"topEnvironments\":[],\"showProjects\":false,\"successfulCount\":0},\"byInstanceType\":{}},\"repository\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}},\"branch\":{\"overall\":{\"count\":0,\"lastUpdated\":null},\"byInstanceType\":{}}}},\"isStale\":false}}",
+    "customfield_12314141": null,
+    "customfield_12314140": null,
+    "project": {
+      "self": "https://issues.apache.org/jira/rest/api/2/project/12315522",
+      "id": "12315522",
+      "key": "FLINK",
+      "name": "Flink",
+      "projectTypeKey": "software",
+      "avatarUrls": {
+        "48x48": "https://issues.apache.org/jira/secure/projectavatar?pid=12315522&avatarId=21685",
+        "24x24": "https://issues.apache.org/jira/secure/projectavatar?size=small&pid=12315522&avatarId=21685",
+        "16x16": "https://issues.apache.org/jira/secure/projectavatar?size=xsmall&pid=12315522&avatarId=21685",
+        "32x32": "https://issues.apache.org/jira/secure/projectavatar?size=medium&pid=12315522&avatarId=21685"
+      },
+      "projectCategory": {
+        "self": "https://issues.apache.org/jira/rest/api/2/projectCategory/13360",
+        "id": "13360",
+        "description": "Apache Flink",
+        "name": "Flink"
+      }
+    },
+    "aggregatetimespent": null,
+    "customfield_12312520": null,
+    "customfield_12314422": null,
+    "customfield_12314421": null,
+    "customfield_12314146": null,
+    "customfield_12314420": null,
+    "customfield_12314145": null,
+    "customfield_12314144": null,
+    "customfield_12314143": null,
+    "resolutiondate": "2021-11-17T16:57:13.000+0000",
+    "workratio": -1,
+    "customfield_12312923": null,
+    "customfield_12312920": null,
+    "customfield_12312921": null,
+    "watches": {
+      "self": "https://issues.apache.org/jira/rest/api/2/issue/FLINK-24409/watchers",
+      "watchCount": 4,
+      "isWatching": false
+    },
+    "created": "2021-09-30T07:41:46.000+0000",
+    "customfield_12310192": null,
+    "updated": "2021-12-15T01:44:16.000+0000",
+    "timeoriginalestimate": null,
+    "description": "Attempting to port a job that worked on 1.13.2 over to 1.14.0 I encountered [this|https://gist.github.com/jherico/1f2d1cf441a4a9724ae370c375c90fde]\u00a0error.\u00a0 Going into the code I discovered that the reason seems to be [this logic|https://github.com/apache/flink/blob/master/flink-connectors/flink-connector-kafka/src/main/java/org/apache/flink/connector/kafka/source/metrics/KafkaSourceReaderMetrics.java#L297].\u00a0 But the tags being examined here are generated at least partly by [this code|https://github.com/apache/kafka/blob/trunk/clients/src/main/java/org/apache/kafka/clients/consumer/internals/Fetcher.java#L1937].\u00a0 The tags always translate periods in the topic name to underscores, but the code in\u00a0KafkaSourceReaderMetrics uses the untransformed topic name in the filter.\u00a0 Therefore if the topic name has a period in it the filtering logic will _always_ fail.\r\n\r\n\u00a0The code that's generating the error is apparently very recent, being merged in this PR [https://github.com/apache/flink/pull/16838]\r\n\r\n\u00a0\r\n\r\n\u00a0",
+    "customfield_10010": null,
+    "customfield_12314523": null,
+    "customfield_12314127": null,
+    "customfield_12314522": null,
+    "customfield_12314126": null,
+    "customfield_12314521": null,
+    "customfield_12314125": null,
+    "customfield_12314520": null,
+    "customfield_12314124": null,
+    "customfield_12312340": null,
+    "customfield_12314123": null,
+    "customfield_12312341": null,
+    "customfield_12312220": null,
+    "customfield_12314122": null,
+    "customfield_12314121": null,
+    "customfield_12314120": null,
+    "customfield_12314129": null,
+    "customfield_12314524": null,
+    "customfield_12314128": null,
+    "summary": "Kafka topics with periods in their names generate a constant stream of errors",
+    "customfield_12314130": null,
+    "customfield_12310291": null,
+    "customfield_12310290": null,
+    "customfield_12311024": null,
+    "customfield_12314138": null,
+    "customfield_12314137": null,
+    "environment": null,
+    "customfield_12314136": null,
+    "customfield_12314135": null,
+    "customfield_12311020": null,
+    "customfield_12314134": null,
+    "duedate": null,
+    "customfield_12314132": null,
+    "customfield_12314131": null,
+    "customfield_12311820": "0|z0vfy0:",
+    "customfield_12314139": null,
+    "comments": [
+      {
+        "self": "https://issues.apache.org/jira/rest/api/2/issue/13404207/comment/17445368",
+        "id": "17445368",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|2ce2c751-dd12-4722-9b28-e68cdcfb899e|>>",
+          "key": "<<|author_key|ab3648e5-6c7f-4543-8948-7bcb850a93d9|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|ddbfcb77-9ebc-44a7-b920-ac1a2d5a852e|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "body": "Merged\r\n- master: da8ef265e3f78ec71aad43b4f8209884eaf3a860\r\n- release-1.14 e68e30dc8c355f88169f6a9ac1c7044c895aff30",
+        "updateAuthor": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|2ce2c751-dd12-4722-9b28-e68cdcfb899e|>>",
+          "key": "<<|author_key|ab3648e5-6c7f-4543-8948-7bcb850a93d9|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|ddbfcb77-9ebc-44a7-b920-ac1a2d5a852e|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-17T16:56:53.255+0000",
+        "updated": "2021-11-17T16:56:53.255+0000"
+      }
+    ]
+  },
+  "changelog": {
+    "startAt": 0,
+    "maxResults": 57,
+    "total": 57,
+    "histories": [
+      {
+        "id": "20082760",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|a8d0b117-6c74-4d67-8291-3d90ace35999|>>",
+          "key": "<<|author_key|c7cf2756-fb5a-4b6d-a091-3b21af8e97ae|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|891236b2-629f-4941-bc03-01a55b67d71f|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-09-30T07:45:29.402+0000",
+        "items": [
+          {
+            "field": "description",
+            "fieldtype": "jira",
+            "from": null,
+            "fromString": "Attempting to port a job that worked on 1.13.2 over to 1.14.0 I encountered [this|https://gist.github.com/jherico/1f2d1cf441a4a9724ae370c375c90fde]\u00a0error.\u00a0 Going into the code I discovered that the reason seems to be [this logic|https://github.com/apache/flink/blob/master/flink-connectors/flink-connector-kafka/src/main/java/org/apache/flink/connector/kafka/source/metrics/KafkaSourceReaderMetrics.java#L297].\u00a0 But the tags being examined here are generated at least partly by [this code|https://github.com/apache/kafka/blob/trunk/clients/src/main/java/org/apache/kafka/clients/consumer/internals/Fetcher.java#L1937].\u00a0 The tags always translate periods in the topic name to underscores, but the code in\u00a0KafkaSourceReaderMetrics uses the untransformed topic name in the filter.\u00a0 Therefore if the topic name has a period in it the filtering logic will _always_ fail.\r\n\r\n\u00a0\r\n\r\n\u00a0",
+            "to": null,
+            "toString": "Attempting to port a job that worked on 1.13.2 over to 1.14.0 I encountered [this|https://gist.github.com/jherico/1f2d1cf441a4a9724ae370c375c90fde]\u00a0error.\u00a0 Going into the code I discovered that the reason seems to be [this logic|https://github.com/apache/flink/blob/master/flink-connectors/flink-connector-kafka/src/main/java/org/apache/flink/connector/kafka/source/metrics/KafkaSourceReaderMetrics.java#L297].\u00a0 But the tags being examined here are generated at least partly by [this code|https://github.com/apache/kafka/blob/trunk/clients/src/main/java/org/apache/kafka/clients/consumer/internals/Fetcher.java#L1937].\u00a0 The tags always translate periods in the topic name to underscores, but the code in\u00a0KafkaSourceReaderMetrics uses the untransformed topic name in the filter.\u00a0 Therefore if the topic name has a period in it the filtering logic will _always_ fail.\r\n\r\n\u00a0The code that's generating the error is apparently very recent, being merged in this PR [https://github.com/apache/flink/pull/16838]\r\n\r\n\u00a0\r\n\r\n\u00a0"
+          }
+        ]
+      },
+      {
+        "id": "20083128",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|2ce2c751-dd12-4722-9b28-e68cdcfb899e|>>",
+          "key": "<<|author_key|ab3648e5-6c7f-4543-8948-7bcb850a93d9|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|ddbfcb77-9ebc-44a7-b920-ac1a2d5a852e|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-09-30T09:36:30.616+0000",
+        "items": [
+          {
+            "field": "issuetype",
+            "fieldtype": "jira",
+            "from": "4",
+            "fromString": "Improvement",
+            "to": "1",
+            "toString": "Bug"
+          }
+        ]
+      },
+      {
+        "id": "20085265",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-10-01T06:32:57.075+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": null,
+            "fromString": null,
+            "to": "255835",
+            "toString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20085266",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-10-01T06:32:58.147+0000",
+        "items": [
+          {
+            "field": "labels",
+            "fieldtype": "jira",
+            "from": null,
+            "fromString": "",
+            "to": null,
+            "toString": "pull-request-available"
+          }
+        ]
+      },
+      {
+        "id": "20085267",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-10-01T06:35:59.778+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "255835",
+            "fromString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\"",
+            "to": "255835",
+            "toString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20085278",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-10-01T06:47:41.326+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "255835",
+            "fromString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\"",
+            "to": "255835",
+            "toString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20085481",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-10-01T07:22:41.299+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "255835",
+            "fromString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\"",
+            "to": "255835",
+            "toString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20085899",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-10-01T10:59:07.558+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "255835",
+            "fromString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\"",
+            "to": "255835",
+            "toString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20093964",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|228847ff-9a41-4d7e-a600-0a8a4a5983a1|>>",
+          "key": "<<|author_key|5e5cae58-7f11-48cf-9898-9c857e9395a6|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|a23607c8-54ae-4377-b8a0-e204f8a4db2f|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-10-06T11:16:19.199+0000",
+        "items": [
+          {
+            "field": "assignee",
+            "fieldtype": "jira",
+            "from": null,
+            "fromString": null,
+            "to": "<<|author_key|5e5cae58-7f11-48cf-9898-9c857e9395a6|>>",
+            "toString": "<<|author_displayName|a23607c8-54ae-4377-b8a0-e204f8a4db2f|>>"
+          }
+        ]
+      },
+      {
+        "id": "20095838",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-10-07T06:45:47.626+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "255835",
+            "fromString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\"",
+            "to": "255835",
+            "toString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20095884",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|228847ff-9a41-4d7e-a600-0a8a4a5983a1|>>",
+          "key": "<<|author_key|5e5cae58-7f11-48cf-9898-9c857e9395a6|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|a23607c8-54ae-4377-b8a0-e204f8a4db2f|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-10-07T07:13:14.882+0000",
+        "items": [
+          {
+            "field": "assignee",
+            "fieldtype": "jira",
+            "from": "<<|author_key|5e5cae58-7f11-48cf-9898-9c857e9395a6|>>",
+            "fromString": "<<|author_displayName|a23607c8-54ae-4377-b8a0-e204f8a4db2f|>>",
+            "to": "<<|author_key|5bda0afc-c17f-47ae-b7fd-24a673613849|>>",
+            "toString": "<<|author_displayName|d35c5fb3-2cc5-4035-b4cd-cced077f86a9|>>"
+          }
+        ]
+      },
+      {
+        "id": "20098706",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-10-07T23:23:33.042+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "255835",
+            "fromString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\"",
+            "to": "255835",
+            "toString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20100892",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-10-08T11:39:31.330+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "255835",
+            "fromString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\"",
+            "to": "255835",
+            "toString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20114759",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|07fe1d2a-227c-42c3-98ed-2260dd210cd2|>>",
+          "key": "<<|author_key|5bda0afc-c17f-47ae-b7fd-24a673613849|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|d35c5fb3-2cc5-4035-b4cd-cced077f86a9|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-10-15T03:02:14.563+0000",
+        "items": [
+          {
+            "field": "Link",
+            "fieldtype": "jira",
+            "from": null,
+            "fromString": null,
+            "to": "FLINK-24497",
+            "toString": "This issue causes FLINK-24497"
+          }
+        ]
+      },
+      {
+        "id": "20119868",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-10-19T07:34:14.851+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "255835",
+            "fromString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\"",
+            "to": "255835",
+            "toString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20179521",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-10T11:58:12.988+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "255835",
+            "fromString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\"",
+            "to": "255835",
+            "toString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20180927",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-10T19:44:28.068+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "255835",
+            "fromString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\"",
+            "to": "255835",
+            "toString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20180947",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-10T19:47:27.009+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "255835",
+            "fromString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\"",
+            "to": "255835",
+            "toString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20182261",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-11T07:34:11.031+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "255835",
+            "fromString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\"",
+            "to": "255835",
+            "toString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20185028",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-12T08:31:22.011+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": null,
+            "fromString": null,
+            "to": "260225",
+            "toString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20185029",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|2ce2c751-dd12-4722-9b28-e68cdcfb899e|>>",
+          "key": "<<|author_key|ab3648e5-6c7f-4543-8948-7bcb850a93d9|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|ddbfcb77-9ebc-44a7-b920-ac1a2d5a852e|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-12T08:31:44.520+0000",
+        "items": [
+          {
+            "field": "assignee",
+            "fieldtype": "jira",
+            "from": "<<|author_key|5bda0afc-c17f-47ae-b7fd-24a673613849|>>",
+            "fromString": "<<|author_displayName|d35c5fb3-2cc5-4035-b4cd-cced077f86a9|>>",
+            "to": "<<|author_key|ab3648e5-6c7f-4543-8948-7bcb850a93d9|>>",
+            "toString": "<<|author_displayName|ddbfcb77-9ebc-44a7-b920-ac1a2d5a852e|>>"
+          }
+        ]
+      },
+      {
+        "id": "20185035",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|2ce2c751-dd12-4722-9b28-e68cdcfb899e|>>",
+          "key": "<<|author_key|ab3648e5-6c7f-4543-8948-7bcb850a93d9|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|ddbfcb77-9ebc-44a7-b920-ac1a2d5a852e|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-12T08:33:37.022+0000",
+        "items": [
+          {
+            "field": "Version",
+            "fieldtype": "jira",
+            "from": null,
+            "fromString": null,
+            "to": "12350442",
+            "toString": "1.15.0"
+          }
+        ]
+      },
+      {
+        "id": "20185038",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-12T08:34:37.659+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260225",
+            "fromString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\"",
+            "to": "260225",
+            "toString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20185045",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-12T08:36:25.584+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260225",
+            "fromString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\"",
+            "to": "260225",
+            "toString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20185051",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-12T08:37:56.969+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260225",
+            "fromString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\"",
+            "to": "260225",
+            "toString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20185602",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-12T12:32:27.503+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260225",
+            "fromString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\"",
+            "to": "260225",
+            "toString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20189160",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-15T09:56:00.560+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260225",
+            "fromString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\"",
+            "to": "260225",
+            "toString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20189217",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-15T10:12:39.484+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260225",
+            "fromString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\"",
+            "to": "260225",
+            "toString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20189226",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-15T10:15:18.682+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260225",
+            "fromString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\"",
+            "to": "260225",
+            "toString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20189238",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-15T10:18:51.720+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260225",
+            "fromString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\"",
+            "to": "260225",
+            "toString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20189418",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-15T10:55:44.505+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260225",
+            "fromString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\"",
+            "to": "260225",
+            "toString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20189419",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-15T10:56:17.446+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260225",
+            "fromString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\"",
+            "to": "260225",
+            "toString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20189831",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-15T13:36:48.602+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260225",
+            "fromString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\"",
+            "to": "260225",
+            "toString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20190762",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-15T16:30:03.349+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": null,
+            "fromString": null,
+            "to": "260508",
+            "toString": "This issue links to \"GitHub Pull Request #17799 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20190768",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-15T16:34:02.091+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260508",
+            "fromString": "This issue links to \"GitHub Pull Request #17799 (Web Link)\"",
+            "to": "260508",
+            "toString": "This issue links to \"GitHub Pull Request #17799 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20190770",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-15T16:34:57.777+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260508",
+            "fromString": "This issue links to \"GitHub Pull Request #17799 (Web Link)\"",
+            "to": "260508",
+            "toString": "This issue links to \"GitHub Pull Request #17799 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20190776",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-15T16:38:57.504+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260508",
+            "fromString": "This issue links to \"GitHub Pull Request #17799 (Web Link)\"",
+            "to": "260508",
+            "toString": "This issue links to \"GitHub Pull Request #17799 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20191363",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-15T20:12:49.439+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260508",
+            "fromString": "This issue links to \"GitHub Pull Request #17799 (Web Link)\"",
+            "to": "260508",
+            "toString": "This issue links to \"GitHub Pull Request #17799 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20192530",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-16T08:17:52.022+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260225",
+            "fromString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\"",
+            "to": "260225",
+            "toString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20192532",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-16T08:18:03.946+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260225",
+            "fromString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\"",
+            "to": "260225",
+            "toString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20194290",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-16T18:59:06.598+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260225",
+            "fromString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\"",
+            "to": "260225",
+            "toString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20195806",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-17T10:00:10.424+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260225",
+            "fromString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\"",
+            "to": "260225",
+            "toString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20195829",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-17T10:03:52.692+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260225",
+            "fromString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\"",
+            "to": "260225",
+            "toString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20195903",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-17T10:15:16.429+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260508",
+            "fromString": "This issue links to \"GitHub Pull Request #17799 (Web Link)\"",
+            "to": "260508",
+            "toString": "This issue links to \"GitHub Pull Request #17799 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20195918",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-17T10:19:00.493+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260508",
+            "fromString": "This issue links to \"GitHub Pull Request #17799 (Web Link)\"",
+            "to": "260508",
+            "toString": "This issue links to \"GitHub Pull Request #17799 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20196229",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-17T12:09:53.777+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260225",
+            "fromString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\"",
+            "to": "260225",
+            "toString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20196505",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-17T13:54:05.616+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260508",
+            "fromString": "This issue links to \"GitHub Pull Request #17799 (Web Link)\"",
+            "to": "260508",
+            "toString": "This issue links to \"GitHub Pull Request #17799 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20197189",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-17T16:45:30.041+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260225",
+            "fromString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\"",
+            "to": "260225",
+            "toString": "This issue links to \"GitHub Pull Request #17773 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20197190",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-17T16:45:41.853+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "260508",
+            "fromString": "This issue links to \"GitHub Pull Request #17799 (Web Link)\"",
+            "to": "260508",
+            "toString": "This issue links to \"GitHub Pull Request #17799 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20197250",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|2ce2c751-dd12-4722-9b28-e68cdcfb899e|>>",
+          "key": "<<|author_key|ab3648e5-6c7f-4543-8948-7bcb850a93d9|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|ddbfcb77-9ebc-44a7-b920-ac1a2d5a852e|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-17T16:57:13.187+0000",
+        "items": [
+          {
+            "field": "Fix Version",
+            "fieldtype": "jira",
+            "from": null,
+            "fromString": null,
+            "to": "12350442",
+            "toString": "1.15.0"
+          },
+          {
+            "field": "Fix Version",
+            "fieldtype": "jira",
+            "from": null,
+            "fromString": null,
+            "to": "12350512",
+            "toString": "1.14.1"
+          },
+          {
+            "field": "resolution",
+            "fieldtype": "jira",
+            "from": null,
+            "fromString": null,
+            "to": "1",
+            "toString": "Fixed"
+          },
+          {
+            "field": "status",
+            "fieldtype": "jira",
+            "from": "1",
+            "fromString": "Open",
+            "to": "5",
+            "toString": "Resolved"
+          }
+        ]
+      },
+      {
+        "id": "20197541",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-17T18:36:05.637+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "255835",
+            "fromString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\"",
+            "to": "255835",
+            "toString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20197542",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-17T18:36:07.407+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "255835",
+            "fromString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\"",
+            "to": "255835",
+            "toString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20197676",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|f460f120-a486-4a9d-a942-43639a6acffa|>>",
+          "key": "<<|author_key|9f77c70c-b101-447f-b870-435f5b4a6ef0|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|1b1c2e3c-1121-41ee-9d1f-fd12913d64f8|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-11-17T19:37:42.959+0000",
+        "items": [
+          {
+            "field": "RemoteIssueLink",
+            "fieldtype": "jira",
+            "from": "255835",
+            "fromString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\"",
+            "to": "255835",
+            "toString": "This issue links to \"GitHub Pull Request #17401 (Web Link)\""
+          }
+        ]
+      },
+      {
+        "id": "20263403",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|b2cfefff-5733-41ce-aeb7-fac3ad5145b2|>>",
+          "key": "<<|author_key|1bad928f-8316-4763-b1a7-84b6d28af004|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|db5e9923-a7d4-4259-ad3b-aebcd240652f|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-12-13T18:27:57.512+0000",
+        "items": [
+          {
+            "field": "Fix Version",
+            "fieldtype": "jira",
+            "from": null,
+            "fromString": null,
+            "to": "12351059",
+            "toString": "1.14.2"
+          }
+        ]
+      },
+      {
+        "id": "20263630",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|b2cfefff-5733-41ce-aeb7-fac3ad5145b2|>>",
+          "key": "<<|author_key|1bad928f-8316-4763-b1a7-84b6d28af004|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|db5e9923-a7d4-4259-ad3b-aebcd240652f|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-12-13T18:29:05.934+0000",
+        "items": [
+          {
+            "field": "Fix Version",
+            "fieldtype": "jira",
+            "from": "12350512",
+            "fromString": "1.14.1",
+            "to": null,
+            "toString": null
+          }
+        ]
+      },
+      {
+        "id": "20269203",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|b2cfefff-5733-41ce-aeb7-fac3ad5145b2|>>",
+          "key": "<<|author_key|1bad928f-8316-4763-b1a7-84b6d28af004|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|db5e9923-a7d4-4259-ad3b-aebcd240652f|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-12-15T01:42:24.532+0000",
+        "items": [
+          {
+            "field": "Fix Version",
+            "fieldtype": "jira",
+            "from": null,
+            "fromString": null,
+            "to": "12351075",
+            "toString": "1.14.3"
+          }
+        ]
+      },
+      {
+        "id": "20269743",
+        "author": {
+          "self": "<<|author_self|>>",
+          "name": "<<|author_name|b2cfefff-5733-41ce-aeb7-fac3ad5145b2|>>",
+          "key": "<<|author_key|1bad928f-8316-4763-b1a7-84b6d28af004|>>",
+          "avatarUrls": "<<|author_avatarUrls|>>",
+          "displayName": "<<|author_displayName|db5e9923-a7d4-4259-ad3b-aebcd240652f|>>",
+          "active": true,
+          "timeZone": "<<|author_timeZone|>>"
+        },
+        "created": "2021-12-15T01:44:16.919+0000",
+        "items": [
+          {
+            "field": "Fix Version",
+            "fieldtype": "jira",
+            "from": "12351059",
+            "fromString": "1.14.2",
+            "to": null,
+            "toString": null
+          }
+        ]
+      }
+    ]
+  }
+}

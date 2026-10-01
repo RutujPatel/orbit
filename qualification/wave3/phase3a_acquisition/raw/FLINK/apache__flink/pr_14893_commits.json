@@ -1,0 +1,171 @@
+[
+  {
+    "sha": "521b6d5ad32becde67f8477258633b1e1a1ac59b",
+    "node_id": "MDY6Q29tbWl0MjY2MTI4MDg1OjUyMWI2ZDVhZDMyYmVjZGU2N2Y4NDc3MjU4NjMzYjFlMWExYWM1OWI=",
+    "commit": {
+      "author": {
+        "name": "Joey Pereira",
+        "email": "joey@pereira.io",
+        "date": "2020-05-26T12:26:58Z"
+      },
+      "committer": {
+        "name": "Joey Pereira",
+        "email": "joey@pereira.io",
+        "date": "2021-02-08T13:52:17Z"
+      },
+      "message": "[FLINK-21321]: change RocksDB rescale to use deleteRange\n\nPreviously, the Flink incremental checkpoint restore operation would\nscan and delete individual keys during recovery when rescaling. This is\ndone to truncate the ranges of the checkpoints which are no longer part\nof the assigned key-range for a worker.\n\nNow, this operation is replaced and uses RocksDB's deleteRange\noperation. This operation is preferred because it can cheaply remove\ndata, via tombstones.\n\nThe RocksDB API for DeleteRange is here,\nhttps://github.com/facebook/rocksdb/blob/bcd32560dd5898956b9d24553c2bb3c1b1d2319f/include/rocksdb/db.h#L357-L373\n\nTombstones are described in further detail here,\nhttps://rocksdb.org/blog/2018/11/21/delete-range.html\n\nAdditionally, this adds a benchmark test based on\nRocksIncrementalCheckpointRescalingTest which triggers the modified\nre-scaling code.",
+      "tree": {
+        "sha": "e30c6950a874faab615a23b75e00f658b9e8d74f",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/e30c6950a874faab615a23b75e00f658b9e8d74f"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/521b6d5ad32becde67f8477258633b1e1a1ac59b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/521b6d5ad32becde67f8477258633b1e1a1ac59b",
+    "html_url": "https://github.com/apache/flink/commit/521b6d5ad32becde67f8477258633b1e1a1ac59b",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/521b6d5ad32becde67f8477258633b1e1a1ac59b/comments",
+    "author": {
+      "login": "lgo",
+      "id": 1161183,
+      "node_id": "MDQ6VXNlcjExNjExODM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1161183?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lgo",
+      "html_url": "https://github.com/lgo",
+      "followers_url": "https://api.github.com/users/lgo/followers",
+      "following_url": "https://api.github.com/users/lgo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/lgo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/lgo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/lgo/subscriptions",
+      "organizations_url": "https://api.github.com/users/lgo/orgs",
+      "repos_url": "https://api.github.com/users/lgo/repos",
+      "events_url": "https://api.github.com/users/lgo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/lgo/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "lgo",
+      "id": 1161183,
+      "node_id": "MDQ6VXNlcjExNjExODM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1161183?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lgo",
+      "html_url": "https://github.com/lgo",
+      "followers_url": "https://api.github.com/users/lgo/followers",
+      "following_url": "https://api.github.com/users/lgo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/lgo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/lgo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/lgo/subscriptions",
+      "organizations_url": "https://api.github.com/users/lgo/orgs",
+      "repos_url": "https://api.github.com/users/lgo/repos",
+      "events_url": "https://api.github.com/users/lgo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/lgo/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4a5ef8af0bbc49d738717ae477576c172e60e62c",
+        "url": "https://api.github.com/repos/apache/flink/commits/4a5ef8af0bbc49d738717ae477576c172e60e62c",
+        "html_url": "https://github.com/apache/flink/commit/4a5ef8af0bbc49d738717ae477576c172e60e62c"
+      }
+    ]
+  },
+  {
+    "sha": "f06580b2165ffc8bd6b13df1a9ce3bf2b241a3c3",
+    "node_id": "MDY6Q29tbWl0MjY2MTI4MDg1OmYwNjU4MGIyMTY1ZmZjOGJkNmIxM2RmMWE5Y2UzYmYyYjI0MWEzYzM=",
+    "commit": {
+      "author": {
+        "name": "Joey Pereira",
+        "email": "legojoey17@gmail.com",
+        "date": "2021-08-18T04:37:18Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-08-18T04:37:18Z"
+      },
+      "message": "Merge branch 'master' into joey-improved-incremental-rescale",
+      "tree": {
+        "sha": "9796c3b1d330e9c3c458b4349d267271cd513010",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/9796c3b1d330e9c3c458b4349d267271cd513010"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/f06580b2165ffc8bd6b13df1a9ce3bf2b241a3c3",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhHI5+CRBK7hj4Ov3rIwAAb00IAF9AJgbqrzL8OC9LmPFo5etY\nrTV8i3XHkeb3qXfRxELemAgJiGlyYxOywk0hl5Svr6Js+1++aiADnkcUD9vAZkbX\nFuvcJxD0Kzk5Nr4E9d6eL9Qwqy9S0N2GJxQvRKpKt4E6sCK6HI89jfKHJzywuTB6\nh72D1PAlfUlbVU13JJp/+1pWILwmXUDQecCrnvLKM2lljb9EaoTVaTdShwX9EOu7\npqIkbMZcBLtyrwO65JjxaWU1WzXGdft9gj9a1IFjCA7C4F4YMeAXkExKaIS+XbWG\nDICm+rOgX9vVwxM89fSLPWhDiL6NojGMB+luPneOF0LTM7dGiuL907oH4idyk4g=\n=6zTH\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 9796c3b1d330e9c3c458b4349d267271cd513010\nparent 521b6d5ad32becde67f8477258633b1e1a1ac59b\nparent d5cdd6f3b207c01b3ff7dd363d07527e0185f347\nauthor Joey Pereira <legojoey17@gmail.com> 1629261438 -0400\ncommitter GitHub <noreply@github.com> 1629261438 -0400\n\nMerge branch 'master' into joey-improved-incremental-rescale",
+        "verified_at": "2024-11-10T13:30:08Z"
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/f06580b2165ffc8bd6b13df1a9ce3bf2b241a3c3",
+    "html_url": "https://github.com/apache/flink/commit/f06580b2165ffc8bd6b13df1a9ce3bf2b241a3c3",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/f06580b2165ffc8bd6b13df1a9ce3bf2b241a3c3/comments",
+    "author": {
+      "login": "lgo",
+      "id": 1161183,
+      "node_id": "MDQ6VXNlcjExNjExODM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1161183?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lgo",
+      "html_url": "https://github.com/lgo",
+      "followers_url": "https://api.github.com/users/lgo/followers",
+      "following_url": "https://api.github.com/users/lgo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/lgo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/lgo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/lgo/subscriptions",
+      "organizations_url": "https://api.github.com/users/lgo/orgs",
+      "repos_url": "https://api.github.com/users/lgo/repos",
+      "events_url": "https://api.github.com/users/lgo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/lgo/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "521b6d5ad32becde67f8477258633b1e1a1ac59b",
+        "url": "https://api.github.com/repos/apache/flink/commits/521b6d5ad32becde67f8477258633b1e1a1ac59b",
+        "html_url": "https://github.com/apache/flink/commit/521b6d5ad32becde67f8477258633b1e1a1ac59b"
+      },
+      {
+        "sha": "d5cdd6f3b207c01b3ff7dd363d07527e0185f347",
+        "url": "https://api.github.com/repos/apache/flink/commits/d5cdd6f3b207c01b3ff7dd363d07527e0185f347",
+        "html_url": "https://github.com/apache/flink/commit/d5cdd6f3b207c01b3ff7dd363d07527e0185f347"
+      }
+    ]
+  }
+]

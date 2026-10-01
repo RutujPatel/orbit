@@ -1,0 +1,128 @@
+[
+  {
+    "sha": "e1c7f38f0017d5d8758aaa9c23eff402358e8606",
+    "node_id": "MDY6Q29tbWl0OTQ5OTQyMjplMWM3ZjM4ZjAwMTdkNWQ4NzU4YWFhOWMyM2VmZjQwMjM1OGU4NjA2",
+    "commit": {
+      "author": {
+        "name": "uce",
+        "email": "u.celebi@fu-berlin.de",
+        "date": "2014-04-07T15:25:09Z"
+      },
+      "committer": {
+        "name": "uce",
+        "email": "u.celebi@fu-berlin.de",
+        "date": "2014-06-05T12:20:24Z"
+      },
+      "message": "Add count method to DataSet and implement CountOperator",
+      "tree": {
+        "sha": "8b41152db4327d6ee2ff4ac35fe6f2996203fc26",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/8b41152db4327d6ee2ff4ac35fe6f2996203fc26"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/e1c7f38f0017d5d8758aaa9c23eff402358e8606",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/e1c7f38f0017d5d8758aaa9c23eff402358e8606",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/e1c7f38f0017d5d8758aaa9c23eff402358e8606",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/e1c7f38f0017d5d8758aaa9c23eff402358e8606/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "1ce11d3a38f0e310bb8287a51208ac2e42b13d63",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/1ce11d3a38f0e310bb8287a51208ac2e42b13d63",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/1ce11d3a38f0e310bb8287a51208ac2e42b13d63"
+      }
+    ]
+  },
+  {
+    "sha": "f0ca0ceb10e51003dbac6050f30bf6316c46a09c",
+    "node_id": "MDY6Q29tbWl0OTQ5OTQyMjpmMGNhMGNlYjEwZTUxMDAzZGJhYzYwNTBmMzBiZjYzMTZjNDZhMDlj",
+    "commit": {
+      "author": {
+        "name": "uce",
+        "email": "u.celebi@fu-berlin.de",
+        "date": "2014-06-01T15:54:45Z"
+      },
+      "committer": {
+        "name": "uce",
+        "email": "u.celebi@fu-berlin.de",
+        "date": "2014-06-05T12:20:24Z"
+      },
+      "message": "Specify degree of parallelism and add serialVersionUID",
+      "tree": {
+        "sha": "72e517a5a81a1a82e168995d8ccd8b9280bd5fb8",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/72e517a5a81a1a82e168995d8ccd8b9280bd5fb8"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/f0ca0ceb10e51003dbac6050f30bf6316c46a09c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/f0ca0ceb10e51003dbac6050f30bf6316c46a09c",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/f0ca0ceb10e51003dbac6050f30bf6316c46a09c",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/f0ca0ceb10e51003dbac6050f30bf6316c46a09c/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "e1c7f38f0017d5d8758aaa9c23eff402358e8606",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/e1c7f38f0017d5d8758aaa9c23eff402358e8606",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/e1c7f38f0017d5d8758aaa9c23eff402358e8606"
+      }
+    ]
+  },
+  {
+    "sha": "9c8dee7c3fec9b449bff4f37be44bb2d4df419ef",
+    "node_id": "MDY6Q29tbWl0OTQ5OTQyMjo5YzhkZWU3YzNmZWM5YjQ0OWJmZjRmMzdiZTQ0YmIyZDRkZjQxOWVm",
+    "commit": {
+      "author": {
+        "name": "uce",
+        "email": "u.celebi@fu-berlin.de",
+        "date": "2014-06-04T15:45:25Z"
+      },
+      "committer": {
+        "name": "uce",
+        "email": "u.celebi@fu-berlin.de",
+        "date": "2014-06-05T12:20:24Z"
+      },
+      "message": "Rebase on current SNAPSHOT and add dummy source for zero counts",
+      "tree": {
+        "sha": "887c3b810748acac0aafa4803395e44d65e785e7",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/887c3b810748acac0aafa4803395e44d65e785e7"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/9c8dee7c3fec9b449bff4f37be44bb2d4df419ef",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/9c8dee7c3fec9b449bff4f37be44bb2d4df419ef",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/9c8dee7c3fec9b449bff4f37be44bb2d4df419ef",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/9c8dee7c3fec9b449bff4f37be44bb2d4df419ef/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "f0ca0ceb10e51003dbac6050f30bf6316c46a09c",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/f0ca0ceb10e51003dbac6050f30bf6316c46a09c",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/f0ca0ceb10e51003dbac6050f30bf6316c46a09c"
+      }
+    ]
+  }
+]

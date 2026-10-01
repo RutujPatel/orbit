@@ -1,0 +1,242 @@
+[
+  {
+    "id": 585114641,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NTg1MTE0NjQx",
+    "user": {
+      "login": "lgo",
+      "id": 1161183,
+      "node_id": "MDQ6VXNlcjExNjExODM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1161183?u=b7bab2014b120f10b74d4e74e170bbe3bd03dfd0&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/lgo",
+      "html_url": "https://github.com/lgo",
+      "followers_url": "https://api.github.com/users/lgo/followers",
+      "following_url": "https://api.github.com/users/lgo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/lgo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/lgo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/lgo/subscriptions",
+      "organizations_url": "https://api.github.com/users/lgo/orgs",
+      "repos_url": "https://api.github.com/users/lgo/repos",
+      "events_url": "https://api.github.com/users/lgo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/lgo/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "Regarding the in-line commit, I expected the performance increase to be far more significant than the measurements I got because this change should be going from an O(n) operation to an O(1) operation.\r\n\r\nI suspect the biggest cause is just the lack of a proper test setup, and just running the benchmark on my laptop to the highest reasonable limit I could run it with (~200k records).\r\n\r\nAre there tools available to very easily set up a test application for the purposes of benchmarking? That would be extremely handy as I do not have an environment available for experimenting. ",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/14893#pullrequestreview-585114641",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/14893",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/14893#pullrequestreview-585114641"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/14893"
+      }
+    },
+    "submitted_at": "2021-02-08T01:49:14Z",
+    "commit_id": "ee31b03b7bfced8fdd46a67513c4c11408c4b28c"
+  },
+  {
+    "id": 793874597,
+    "node_id": "PRR_kwDOATokT84vUZCl",
+    "user": {
+      "login": "Myasuka",
+      "id": 1709104,
+      "node_id": "MDQ6VXNlcjE3MDkxMDQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1709104?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Myasuka",
+      "html_url": "https://github.com/Myasuka",
+      "followers_url": "https://api.github.com/users/Myasuka/followers",
+      "following_url": "https://api.github.com/users/Myasuka/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Myasuka/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Myasuka/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Myasuka/subscriptions",
+      "organizations_url": "https://api.github.com/users/Myasuka/orgs",
+      "repos_url": "https://api.github.com/users/Myasuka/repos",
+      "events_url": "https://api.github.com/users/Myasuka/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Myasuka/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "@lgo Thanks for your contribution, please rebase with latest master branch to finish the PR.",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/14893#pullrequestreview-793874597",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/14893",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/14893#pullrequestreview-793874597"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/14893"
+      }
+    },
+    "submitted_at": "2021-11-01T06:00:29Z",
+    "commit_id": "f06580b2165ffc8bd6b13df1a9ce3bf2b241a3c3"
+  },
+  {
+    "id": 796158587,
+    "node_id": "PRR_kwDOATokT84vdGp7",
+    "user": {
+      "login": "Aitozi",
+      "id": 9486140,
+      "node_id": "MDQ6VXNlcjk0ODYxNDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9486140?u=e7e6162e7a42b17dff07dfd5d5d7422c99aaaf57&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Aitozi",
+      "html_url": "https://github.com/Aitozi",
+      "followers_url": "https://api.github.com/users/Aitozi/followers",
+      "following_url": "https://api.github.com/users/Aitozi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Aitozi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Aitozi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Aitozi/subscriptions",
+      "organizations_url": "https://api.github.com/users/Aitozi/orgs",
+      "repos_url": "https://api.github.com/users/Aitozi/repos",
+      "events_url": "https://api.github.com/users/Aitozi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Aitozi/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/14893#pullrequestreview-796158587",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/14893",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/14893#pullrequestreview-796158587"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/14893"
+      }
+    },
+    "submitted_at": "2021-11-03T06:54:23Z",
+    "commit_id": "f06580b2165ffc8bd6b13df1a9ce3bf2b241a3c3"
+  },
+  {
+    "id": 823555506,
+    "node_id": "PRR_kwDOATokT84xFnWy",
+    "user": {
+      "login": "curcur",
+      "id": 11065508,
+      "node_id": "MDQ6VXNlcjExMDY1NTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11065508?u=69c6d3e1a4a04128e7ccc6e847bbec47c835b9f3&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/curcur",
+      "html_url": "https://github.com/curcur",
+      "followers_url": "https://api.github.com/users/curcur/followers",
+      "following_url": "https://api.github.com/users/curcur/following{/other_user}",
+      "gists_url": "https://api.github.com/users/curcur/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/curcur/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/curcur/subscriptions",
+      "organizations_url": "https://api.github.com/users/curcur/orgs",
+      "repos_url": "https://api.github.com/users/curcur/repos",
+      "events_url": "https://api.github.com/users/curcur/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/curcur/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/14893#pullrequestreview-823555506",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/14893",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/14893#pullrequestreview-823555506"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/14893"
+      }
+    },
+    "submitted_at": "2021-12-06T05:47:19Z",
+    "commit_id": "f06580b2165ffc8bd6b13df1a9ce3bf2b241a3c3"
+  },
+  {
+    "id": 823557453,
+    "node_id": "PRR_kwDOATokT84xFn1N",
+    "user": {
+      "login": "curcur",
+      "id": 11065508,
+      "node_id": "MDQ6VXNlcjExMDY1NTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11065508?u=69c6d3e1a4a04128e7ccc6e847bbec47c835b9f3&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/curcur",
+      "html_url": "https://github.com/curcur",
+      "followers_url": "https://api.github.com/users/curcur/followers",
+      "following_url": "https://api.github.com/users/curcur/following{/other_user}",
+      "gists_url": "https://api.github.com/users/curcur/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/curcur/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/curcur/subscriptions",
+      "organizations_url": "https://api.github.com/users/curcur/orgs",
+      "repos_url": "https://api.github.com/users/curcur/repos",
+      "events_url": "https://api.github.com/users/curcur/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/curcur/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/14893#pullrequestreview-823557453",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/14893",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/14893#pullrequestreview-823557453"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/14893"
+      }
+    },
+    "submitted_at": "2021-12-06T05:51:33Z",
+    "commit_id": "f06580b2165ffc8bd6b13df1a9ce3bf2b241a3c3"
+  },
+  {
+    "id": 858088025,
+    "node_id": "PRR_kwDOATokT84zJWJZ",
+    "user": {
+      "login": "Aitozi",
+      "id": 9486140,
+      "node_id": "MDQ6VXNlcjk0ODYxNDA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9486140?u=e7e6162e7a42b17dff07dfd5d5d7422c99aaaf57&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Aitozi",
+      "html_url": "https://github.com/Aitozi",
+      "followers_url": "https://api.github.com/users/Aitozi/followers",
+      "following_url": "https://api.github.com/users/Aitozi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/Aitozi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/Aitozi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/Aitozi/subscriptions",
+      "organizations_url": "https://api.github.com/users/Aitozi/orgs",
+      "repos_url": "https://api.github.com/users/Aitozi/repos",
+      "events_url": "https://api.github.com/users/Aitozi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/Aitozi/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/14893#pullrequestreview-858088025",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/14893",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/14893#pullrequestreview-858088025"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/14893"
+      }
+    },
+    "submitted_at": "2022-01-20T11:01:19Z",
+    "commit_id": "f06580b2165ffc8bd6b13df1a9ce3bf2b241a3c3"
+  }
+]

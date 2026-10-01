@@ -1,0 +1,42 @@
+[
+  {
+    "id": 655180300,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NjU1MTgwMzAw",
+    "user": {
+      "login": "ijuma",
+      "id": 24747,
+      "node_id": "MDQ6VXNlcjI0NzQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24747?u=6a146eae75e86bdcc612ecf7130b9f74f5a3192b&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ijuma",
+      "html_url": "https://github.com/ijuma",
+      "followers_url": "https://api.github.com/users/ijuma/followers",
+      "following_url": "https://api.github.com/users/ijuma/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ijuma/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ijuma/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ijuma/subscriptions",
+      "organizations_url": "https://api.github.com/users/ijuma/orgs",
+      "repos_url": "https://api.github.com/users/ijuma/repos",
+      "events_url": "https://api.github.com/users/ijuma/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ijuma/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "LGTM",
+    "state": "APPROVED",
+    "html_url": "https://github.com/apache/kafka/pull/10656#pullrequestreview-655180300",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/10656",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/10656#pullrequestreview-655180300"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/10656"
+      }
+    },
+    "submitted_at": "2021-05-10T02:00:59Z",
+    "commit_id": "c8c01ec7fb1b81376c748325f33b72f930574ded"
+  }
+]

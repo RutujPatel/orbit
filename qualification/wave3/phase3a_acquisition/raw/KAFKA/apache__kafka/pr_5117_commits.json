@@ -1,0 +1,1078 @@
+[
+  {
+    "sha": "34c35aacbe41741a05d6328c99d3e9b8887cbddf",
+    "node_id": "MDY6Q29tbWl0MTIyNDcyMDkyOjM0YzM1YWFjYmU0MTc0MWEwNWQ2MzI4Yzk5ZDNlOWI4ODg3Y2JkZGY=",
+    "commit": {
+      "author": {
+        "name": "Andy Coates",
+        "email": "big-andy-coates@users.noreply.github.com",
+        "date": "2018-06-01T18:07:56Z"
+      },
+      "committer": {
+        "name": "Andy Coates",
+        "email": "big-andy-coates@users.noreply.github.com",
+        "date": "2018-06-01T18:07:56Z"
+      },
+      "message": "KAFKA-6841: Piyush changes",
+      "tree": {
+        "sha": "b189f679854b3947c058c2dc46d0e31dfe1d0888",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/b189f679854b3947c058c2dc46d0e31dfe1d0888"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/34c35aacbe41741a05d6328c99d3e9b8887cbddf",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/34c35aacbe41741a05d6328c99d3e9b8887cbddf",
+    "html_url": "https://github.com/apache/kafka/commit/34c35aacbe41741a05d6328c99d3e9b8887cbddf",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/34c35aacbe41741a05d6328c99d3e9b8887cbddf/comments",
+    "author": {
+      "login": "big-andy-coates",
+      "id": 8012398,
+      "node_id": "MDQ6VXNlcjgwMTIzOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8012398?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/big-andy-coates",
+      "html_url": "https://github.com/big-andy-coates",
+      "followers_url": "https://api.github.com/users/big-andy-coates/followers",
+      "following_url": "https://api.github.com/users/big-andy-coates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/big-andy-coates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/big-andy-coates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/big-andy-coates/subscriptions",
+      "organizations_url": "https://api.github.com/users/big-andy-coates/orgs",
+      "repos_url": "https://api.github.com/users/big-andy-coates/repos",
+      "events_url": "https://api.github.com/users/big-andy-coates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/big-andy-coates/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "big-andy-coates",
+      "id": 8012398,
+      "node_id": "MDQ6VXNlcjgwMTIzOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8012398?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/big-andy-coates",
+      "html_url": "https://github.com/big-andy-coates",
+      "followers_url": "https://api.github.com/users/big-andy-coates/followers",
+      "following_url": "https://api.github.com/users/big-andy-coates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/big-andy-coates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/big-andy-coates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/big-andy-coates/subscriptions",
+      "organizations_url": "https://api.github.com/users/big-andy-coates/orgs",
+      "repos_url": "https://api.github.com/users/big-andy-coates/repos",
+      "events_url": "https://api.github.com/users/big-andy-coates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/big-andy-coates/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0120e88e2cab1c02cac471ab4acc76ce876bf72b",
+        "url": "https://api.github.com/repos/apache/kafka/commits/0120e88e2cab1c02cac471ab4acc76ce876bf72b",
+        "html_url": "https://github.com/apache/kafka/commit/0120e88e2cab1c02cac471ab4acc76ce876bf72b"
+      }
+    ]
+  },
+  {
+    "sha": "8d07119983622058c83a55f4f72e8ced59610772",
+    "node_id": "MDY6Q29tbWl0MTIyNDcyMDkyOjhkMDcxMTk5ODM2MjIwNThjODNhNTVmNGY3MmU4Y2VkNTk2MTA3NzI=",
+    "commit": {
+      "author": {
+        "name": "Andy Coates",
+        "email": "big-andy-coates@users.noreply.github.com",
+        "date": "2018-06-01T18:47:25Z"
+      },
+      "committer": {
+        "name": "Andy Coates",
+        "email": "big-andy-coates@users.noreply.github.com",
+        "date": "2018-06-01T18:47:25Z"
+      },
+      "message": "Add testing and Admin client changes.",
+      "tree": {
+        "sha": "fecc8ed11dcf5cbaa3fc354655f9b3a09d9cc84c",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/fecc8ed11dcf5cbaa3fc354655f9b3a09d9cc84c"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/8d07119983622058c83a55f4f72e8ced59610772",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/8d07119983622058c83a55f4f72e8ced59610772",
+    "html_url": "https://github.com/apache/kafka/commit/8d07119983622058c83a55f4f72e8ced59610772",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/8d07119983622058c83a55f4f72e8ced59610772/comments",
+    "author": {
+      "login": "big-andy-coates",
+      "id": 8012398,
+      "node_id": "MDQ6VXNlcjgwMTIzOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8012398?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/big-andy-coates",
+      "html_url": "https://github.com/big-andy-coates",
+      "followers_url": "https://api.github.com/users/big-andy-coates/followers",
+      "following_url": "https://api.github.com/users/big-andy-coates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/big-andy-coates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/big-andy-coates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/big-andy-coates/subscriptions",
+      "organizations_url": "https://api.github.com/users/big-andy-coates/orgs",
+      "repos_url": "https://api.github.com/users/big-andy-coates/repos",
+      "events_url": "https://api.github.com/users/big-andy-coates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/big-andy-coates/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "big-andy-coates",
+      "id": 8012398,
+      "node_id": "MDQ6VXNlcjgwMTIzOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8012398?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/big-andy-coates",
+      "html_url": "https://github.com/big-andy-coates",
+      "followers_url": "https://api.github.com/users/big-andy-coates/followers",
+      "following_url": "https://api.github.com/users/big-andy-coates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/big-andy-coates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/big-andy-coates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/big-andy-coates/subscriptions",
+      "organizations_url": "https://api.github.com/users/big-andy-coates/orgs",
+      "repos_url": "https://api.github.com/users/big-andy-coates/repos",
+      "events_url": "https://api.github.com/users/big-andy-coates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/big-andy-coates/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "34c35aacbe41741a05d6328c99d3e9b8887cbddf",
+        "url": "https://api.github.com/repos/apache/kafka/commits/34c35aacbe41741a05d6328c99d3e9b8887cbddf",
+        "html_url": "https://github.com/apache/kafka/commit/34c35aacbe41741a05d6328c99d3e9b8887cbddf"
+      }
+    ]
+  },
+  {
+    "sha": "3f9b2ba97077fd5a70e9d0b86bff935e5048bb3b",
+    "node_id": "MDY6Q29tbWl0MTIyNDcyMDkyOjNmOWIyYmE5NzA3N2ZkNWE3MGU5ZDBiODZiZmY5MzVlNTA0OGJiM2I=",
+    "commit": {
+      "author": {
+        "name": "Andy Coates",
+        "email": "big-andy-coates@users.noreply.github.com",
+        "date": "2018-06-02T08:34:43Z"
+      },
+      "committer": {
+        "name": "Andy Coates",
+        "email": "big-andy-coates@users.noreply.github.com",
+        "date": "2018-06-02T08:34:43Z"
+      },
+      "message": "upgrade.html update.",
+      "tree": {
+        "sha": "adc98c8df24c8d3a32eb7c216c32a813599f80ac",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/adc98c8df24c8d3a32eb7c216c32a813599f80ac"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/3f9b2ba97077fd5a70e9d0b86bff935e5048bb3b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/3f9b2ba97077fd5a70e9d0b86bff935e5048bb3b",
+    "html_url": "https://github.com/apache/kafka/commit/3f9b2ba97077fd5a70e9d0b86bff935e5048bb3b",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/3f9b2ba97077fd5a70e9d0b86bff935e5048bb3b/comments",
+    "author": {
+      "login": "big-andy-coates",
+      "id": 8012398,
+      "node_id": "MDQ6VXNlcjgwMTIzOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8012398?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/big-andy-coates",
+      "html_url": "https://github.com/big-andy-coates",
+      "followers_url": "https://api.github.com/users/big-andy-coates/followers",
+      "following_url": "https://api.github.com/users/big-andy-coates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/big-andy-coates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/big-andy-coates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/big-andy-coates/subscriptions",
+      "organizations_url": "https://api.github.com/users/big-andy-coates/orgs",
+      "repos_url": "https://api.github.com/users/big-andy-coates/repos",
+      "events_url": "https://api.github.com/users/big-andy-coates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/big-andy-coates/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "big-andy-coates",
+      "id": 8012398,
+      "node_id": "MDQ6VXNlcjgwMTIzOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8012398?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/big-andy-coates",
+      "html_url": "https://github.com/big-andy-coates",
+      "followers_url": "https://api.github.com/users/big-andy-coates/followers",
+      "following_url": "https://api.github.com/users/big-andy-coates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/big-andy-coates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/big-andy-coates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/big-andy-coates/subscriptions",
+      "organizations_url": "https://api.github.com/users/big-andy-coates/orgs",
+      "repos_url": "https://api.github.com/users/big-andy-coates/repos",
+      "events_url": "https://api.github.com/users/big-andy-coates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/big-andy-coates/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8d07119983622058c83a55f4f72e8ced59610772",
+        "url": "https://api.github.com/repos/apache/kafka/commits/8d07119983622058c83a55f4f72e8ced59610772",
+        "html_url": "https://github.com/apache/kafka/commit/8d07119983622058c83a55f4f72e8ced59610772"
+      }
+    ]
+  },
+  {
+    "sha": "7303e7e982ed416663ce1a32751436d7ba59b301",
+    "node_id": "MDY6Q29tbWl0MTIyNDcyMDkyOjczMDNlN2U5ODJlZDQxNjY2M2NlMWEzMjc1MTQzNmQ3YmE1OWIzMDE=",
+    "commit": {
+      "author": {
+        "name": "Andy Coates",
+        "email": "big-andy-coates@users.noreply.github.com",
+        "date": "2018-06-04T16:04:03Z"
+      },
+      "committer": {
+        "name": "Andy Coates",
+        "email": "big-andy-coates@users.noreply.github.com",
+        "date": "2018-06-04T16:04:03Z"
+      },
+      "message": "- review comments\n- AclCommand (kafka-acls.sh) now supported prefixed\n- Documentation for kafka-acls.has updated for prefixed.\n- Optimised SimpleAclAuthorizer.getMatchingAcls call.",
+      "tree": {
+        "sha": "35ec966e5ffd11f05903970e72ab4a31e4669dfd",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/35ec966e5ffd11f05903970e72ab4a31e4669dfd"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/7303e7e982ed416663ce1a32751436d7ba59b301",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/7303e7e982ed416663ce1a32751436d7ba59b301",
+    "html_url": "https://github.com/apache/kafka/commit/7303e7e982ed416663ce1a32751436d7ba59b301",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/7303e7e982ed416663ce1a32751436d7ba59b301/comments",
+    "author": {
+      "login": "big-andy-coates",
+      "id": 8012398,
+      "node_id": "MDQ6VXNlcjgwMTIzOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8012398?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/big-andy-coates",
+      "html_url": "https://github.com/big-andy-coates",
+      "followers_url": "https://api.github.com/users/big-andy-coates/followers",
+      "following_url": "https://api.github.com/users/big-andy-coates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/big-andy-coates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/big-andy-coates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/big-andy-coates/subscriptions",
+      "organizations_url": "https://api.github.com/users/big-andy-coates/orgs",
+      "repos_url": "https://api.github.com/users/big-andy-coates/repos",
+      "events_url": "https://api.github.com/users/big-andy-coates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/big-andy-coates/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "big-andy-coates",
+      "id": 8012398,
+      "node_id": "MDQ6VXNlcjgwMTIzOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8012398?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/big-andy-coates",
+      "html_url": "https://github.com/big-andy-coates",
+      "followers_url": "https://api.github.com/users/big-andy-coates/followers",
+      "following_url": "https://api.github.com/users/big-andy-coates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/big-andy-coates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/big-andy-coates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/big-andy-coates/subscriptions",
+      "organizations_url": "https://api.github.com/users/big-andy-coates/orgs",
+      "repos_url": "https://api.github.com/users/big-andy-coates/repos",
+      "events_url": "https://api.github.com/users/big-andy-coates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/big-andy-coates/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3f9b2ba97077fd5a70e9d0b86bff935e5048bb3b",
+        "url": "https://api.github.com/repos/apache/kafka/commits/3f9b2ba97077fd5a70e9d0b86bff935e5048bb3b",
+        "html_url": "https://github.com/apache/kafka/commit/3f9b2ba97077fd5a70e9d0b86bff935e5048bb3b"
+      }
+    ]
+  },
+  {
+    "sha": "d5cca471faf95032cfe895d9f505136a5f491158",
+    "node_id": "MDY6Q29tbWl0MTIyNDcyMDkyOmQ1Y2NhNDcxZmFmOTUwMzJjZmU4OTVkOWY1MDUxMzZhNWY0OTExNTg=",
+    "commit": {
+      "author": {
+        "name": "Andy Coates",
+        "email": "big-andy-coates@users.noreply.github.com",
+        "date": "2018-06-04T16:15:57Z"
+      },
+      "committer": {
+        "name": "Andy Coates",
+        "email": "big-andy-coates@users.noreply.github.com",
+        "date": "2018-06-04T16:15:57Z"
+      },
+      "message": "- don't use deprecated functions internally",
+      "tree": {
+        "sha": "9e86dbdfe05ed6c90ee6d505aea555965212b9bf",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/9e86dbdfe05ed6c90ee6d505aea555965212b9bf"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/d5cca471faf95032cfe895d9f505136a5f491158",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/d5cca471faf95032cfe895d9f505136a5f491158",
+    "html_url": "https://github.com/apache/kafka/commit/d5cca471faf95032cfe895d9f505136a5f491158",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/d5cca471faf95032cfe895d9f505136a5f491158/comments",
+    "author": {
+      "login": "big-andy-coates",
+      "id": 8012398,
+      "node_id": "MDQ6VXNlcjgwMTIzOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8012398?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/big-andy-coates",
+      "html_url": "https://github.com/big-andy-coates",
+      "followers_url": "https://api.github.com/users/big-andy-coates/followers",
+      "following_url": "https://api.github.com/users/big-andy-coates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/big-andy-coates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/big-andy-coates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/big-andy-coates/subscriptions",
+      "organizations_url": "https://api.github.com/users/big-andy-coates/orgs",
+      "repos_url": "https://api.github.com/users/big-andy-coates/repos",
+      "events_url": "https://api.github.com/users/big-andy-coates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/big-andy-coates/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "big-andy-coates",
+      "id": 8012398,
+      "node_id": "MDQ6VXNlcjgwMTIzOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8012398?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/big-andy-coates",
+      "html_url": "https://github.com/big-andy-coates",
+      "followers_url": "https://api.github.com/users/big-andy-coates/followers",
+      "following_url": "https://api.github.com/users/big-andy-coates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/big-andy-coates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/big-andy-coates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/big-andy-coates/subscriptions",
+      "organizations_url": "https://api.github.com/users/big-andy-coates/orgs",
+      "repos_url": "https://api.github.com/users/big-andy-coates/repos",
+      "events_url": "https://api.github.com/users/big-andy-coates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/big-andy-coates/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7303e7e982ed416663ce1a32751436d7ba59b301",
+        "url": "https://api.github.com/repos/apache/kafka/commits/7303e7e982ed416663ce1a32751436d7ba59b301",
+        "html_url": "https://github.com/apache/kafka/commit/7303e7e982ed416663ce1a32751436d7ba59b301"
+      }
+    ]
+  },
+  {
+    "sha": "dc8a5e2ec1cf2dbee58b21dc6a98f2bba360cbd1",
+    "node_id": "MDY6Q29tbWl0MTIyNDcyMDkyOmRjOGE1ZTJlYzFjZjJkYmVlNThiMjFkYzZhOThmMmJiYTM2MGNiZDE=",
+    "commit": {
+      "author": {
+        "name": "Andy Coates",
+        "email": "big-andy-coates@users.noreply.github.com",
+        "date": "2018-06-04T16:31:53Z"
+      },
+      "committer": {
+        "name": "Andy Coates",
+        "email": "big-andy-coates@users.noreply.github.com",
+        "date": "2018-06-04T16:31:53Z"
+      },
+      "message": "Merge branch 'trunk' into prefixed-acls\n\n# Conflicts:\n#\tcore/src/test/scala/integration/kafka/api/AuthorizerIntegrationTest.scala\n#\tdocs/upgrade.html",
+      "tree": {
+        "sha": "5b36ace81e274e027a92e72fce582af541ef8201",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/5b36ace81e274e027a92e72fce582af541ef8201"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/dc8a5e2ec1cf2dbee58b21dc6a98f2bba360cbd1",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/dc8a5e2ec1cf2dbee58b21dc6a98f2bba360cbd1",
+    "html_url": "https://github.com/apache/kafka/commit/dc8a5e2ec1cf2dbee58b21dc6a98f2bba360cbd1",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/dc8a5e2ec1cf2dbee58b21dc6a98f2bba360cbd1/comments",
+    "author": {
+      "login": "big-andy-coates",
+      "id": 8012398,
+      "node_id": "MDQ6VXNlcjgwMTIzOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8012398?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/big-andy-coates",
+      "html_url": "https://github.com/big-andy-coates",
+      "followers_url": "https://api.github.com/users/big-andy-coates/followers",
+      "following_url": "https://api.github.com/users/big-andy-coates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/big-andy-coates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/big-andy-coates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/big-andy-coates/subscriptions",
+      "organizations_url": "https://api.github.com/users/big-andy-coates/orgs",
+      "repos_url": "https://api.github.com/users/big-andy-coates/repos",
+      "events_url": "https://api.github.com/users/big-andy-coates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/big-andy-coates/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "big-andy-coates",
+      "id": 8012398,
+      "node_id": "MDQ6VXNlcjgwMTIzOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8012398?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/big-andy-coates",
+      "html_url": "https://github.com/big-andy-coates",
+      "followers_url": "https://api.github.com/users/big-andy-coates/followers",
+      "following_url": "https://api.github.com/users/big-andy-coates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/big-andy-coates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/big-andy-coates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/big-andy-coates/subscriptions",
+      "organizations_url": "https://api.github.com/users/big-andy-coates/orgs",
+      "repos_url": "https://api.github.com/users/big-andy-coates/repos",
+      "events_url": "https://api.github.com/users/big-andy-coates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/big-andy-coates/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d5cca471faf95032cfe895d9f505136a5f491158",
+        "url": "https://api.github.com/repos/apache/kafka/commits/d5cca471faf95032cfe895d9f505136a5f491158",
+        "html_url": "https://github.com/apache/kafka/commit/d5cca471faf95032cfe895d9f505136a5f491158"
+      },
+      {
+        "sha": "d02f02130eb36cdc4375eb40bdbe4a1f9b58fc60",
+        "url": "https://api.github.com/repos/apache/kafka/commits/d02f02130eb36cdc4375eb40bdbe4a1f9b58fc60",
+        "html_url": "https://github.com/apache/kafka/commit/d02f02130eb36cdc4375eb40bdbe4a1f9b58fc60"
+      }
+    ]
+  },
+  {
+    "sha": "8d3719857850763245ac93e10049fc3528d032e3",
+    "node_id": "MDY6Q29tbWl0MTIyNDcyMDkyOjhkMzcxOTg1Nzg1MDc2MzI0NWFjOTNlMTAwNDlmYzM1MjhkMDMyZTM=",
+    "commit": {
+      "author": {
+        "name": "Andy Coates",
+        "email": "big-andy-coates@users.noreply.github.com",
+        "date": "2018-06-04T19:06:52Z"
+      },
+      "committer": {
+        "name": "Andy Coates",
+        "email": "big-andy-coates@users.noreply.github.com",
+        "date": "2018-06-04T19:06:52Z"
+      },
+      "message": "self review.",
+      "tree": {
+        "sha": "91ba9326276a9597aaed52d4436d29e14f68bb7a",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/91ba9326276a9597aaed52d4436d29e14f68bb7a"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/8d3719857850763245ac93e10049fc3528d032e3",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/8d3719857850763245ac93e10049fc3528d032e3",
+    "html_url": "https://github.com/apache/kafka/commit/8d3719857850763245ac93e10049fc3528d032e3",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/8d3719857850763245ac93e10049fc3528d032e3/comments",
+    "author": {
+      "login": "big-andy-coates",
+      "id": 8012398,
+      "node_id": "MDQ6VXNlcjgwMTIzOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8012398?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/big-andy-coates",
+      "html_url": "https://github.com/big-andy-coates",
+      "followers_url": "https://api.github.com/users/big-andy-coates/followers",
+      "following_url": "https://api.github.com/users/big-andy-coates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/big-andy-coates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/big-andy-coates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/big-andy-coates/subscriptions",
+      "organizations_url": "https://api.github.com/users/big-andy-coates/orgs",
+      "repos_url": "https://api.github.com/users/big-andy-coates/repos",
+      "events_url": "https://api.github.com/users/big-andy-coates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/big-andy-coates/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "big-andy-coates",
+      "id": 8012398,
+      "node_id": "MDQ6VXNlcjgwMTIzOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8012398?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/big-andy-coates",
+      "html_url": "https://github.com/big-andy-coates",
+      "followers_url": "https://api.github.com/users/big-andy-coates/followers",
+      "following_url": "https://api.github.com/users/big-andy-coates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/big-andy-coates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/big-andy-coates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/big-andy-coates/subscriptions",
+      "organizations_url": "https://api.github.com/users/big-andy-coates/orgs",
+      "repos_url": "https://api.github.com/users/big-andy-coates/repos",
+      "events_url": "https://api.github.com/users/big-andy-coates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/big-andy-coates/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dc8a5e2ec1cf2dbee58b21dc6a98f2bba360cbd1",
+        "url": "https://api.github.com/repos/apache/kafka/commits/dc8a5e2ec1cf2dbee58b21dc6a98f2bba360cbd1",
+        "html_url": "https://github.com/apache/kafka/commit/dc8a5e2ec1cf2dbee58b21dc6a98f2bba360cbd1"
+      }
+    ]
+  },
+  {
+    "sha": "105bb82069060e5b04feb47cc8070337bc5e8f62",
+    "node_id": "MDY6Q29tbWl0MTIyNDcyMDkyOjEwNWJiODIwNjkwNjBlNWIwNGZlYjQ3Y2M4MDcwMzM3YmM1ZThmNjI=",
+    "commit": {
+      "author": {
+        "name": "Andy Coates",
+        "email": "big-andy-coates@users.noreply.github.com",
+        "date": "2018-06-05T14:44:16Z"
+      },
+      "committer": {
+        "name": "Andy Coates",
+        "email": "big-andy-coates@users.noreply.github.com",
+        "date": "2018-06-05T14:44:16Z"
+      },
+      "message": "review changes",
+      "tree": {
+        "sha": "dd767f86197960f42ca8e5e6ed4d0dc30edf0a66",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/dd767f86197960f42ca8e5e6ed4d0dc30edf0a66"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/105bb82069060e5b04feb47cc8070337bc5e8f62",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/105bb82069060e5b04feb47cc8070337bc5e8f62",
+    "html_url": "https://github.com/apache/kafka/commit/105bb82069060e5b04feb47cc8070337bc5e8f62",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/105bb82069060e5b04feb47cc8070337bc5e8f62/comments",
+    "author": {
+      "login": "big-andy-coates",
+      "id": 8012398,
+      "node_id": "MDQ6VXNlcjgwMTIzOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8012398?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/big-andy-coates",
+      "html_url": "https://github.com/big-andy-coates",
+      "followers_url": "https://api.github.com/users/big-andy-coates/followers",
+      "following_url": "https://api.github.com/users/big-andy-coates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/big-andy-coates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/big-andy-coates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/big-andy-coates/subscriptions",
+      "organizations_url": "https://api.github.com/users/big-andy-coates/orgs",
+      "repos_url": "https://api.github.com/users/big-andy-coates/repos",
+      "events_url": "https://api.github.com/users/big-andy-coates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/big-andy-coates/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "big-andy-coates",
+      "id": 8012398,
+      "node_id": "MDQ6VXNlcjgwMTIzOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8012398?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/big-andy-coates",
+      "html_url": "https://github.com/big-andy-coates",
+      "followers_url": "https://api.github.com/users/big-andy-coates/followers",
+      "following_url": "https://api.github.com/users/big-andy-coates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/big-andy-coates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/big-andy-coates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/big-andy-coates/subscriptions",
+      "organizations_url": "https://api.github.com/users/big-andy-coates/orgs",
+      "repos_url": "https://api.github.com/users/big-andy-coates/repos",
+      "events_url": "https://api.github.com/users/big-andy-coates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/big-andy-coates/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8d3719857850763245ac93e10049fc3528d032e3",
+        "url": "https://api.github.com/repos/apache/kafka/commits/8d3719857850763245ac93e10049fc3528d032e3",
+        "html_url": "https://github.com/apache/kafka/commit/8d3719857850763245ac93e10049fc3528d032e3"
+      }
+    ]
+  },
+  {
+    "sha": "d6006820225d824676ea5d8f567caaf523161fb1",
+    "node_id": "MDY6Q29tbWl0MTIyNDcyMDkyOmQ2MDA2ODIwMjI1ZDgyNDY3NmVhNWQ4ZjU2N2NhYWY1MjMxNjFmYjE=",
+    "commit": {
+      "author": {
+        "name": "Andy Coates",
+        "email": "big-andy-coates@users.noreply.github.com",
+        "date": "2018-06-05T23:52:44Z"
+      },
+      "committer": {
+        "name": "Andy Coates",
+        "email": "big-andy-coates@users.noreply.github.com",
+        "date": "2018-06-05T23:52:44Z"
+      },
+      "message": "review changesreview changes",
+      "tree": {
+        "sha": "16be5a46216597c8b9d21c473f12727919ad437d",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/16be5a46216597c8b9d21c473f12727919ad437d"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/d6006820225d824676ea5d8f567caaf523161fb1",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/d6006820225d824676ea5d8f567caaf523161fb1",
+    "html_url": "https://github.com/apache/kafka/commit/d6006820225d824676ea5d8f567caaf523161fb1",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/d6006820225d824676ea5d8f567caaf523161fb1/comments",
+    "author": {
+      "login": "big-andy-coates",
+      "id": 8012398,
+      "node_id": "MDQ6VXNlcjgwMTIzOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8012398?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/big-andy-coates",
+      "html_url": "https://github.com/big-andy-coates",
+      "followers_url": "https://api.github.com/users/big-andy-coates/followers",
+      "following_url": "https://api.github.com/users/big-andy-coates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/big-andy-coates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/big-andy-coates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/big-andy-coates/subscriptions",
+      "organizations_url": "https://api.github.com/users/big-andy-coates/orgs",
+      "repos_url": "https://api.github.com/users/big-andy-coates/repos",
+      "events_url": "https://api.github.com/users/big-andy-coates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/big-andy-coates/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "big-andy-coates",
+      "id": 8012398,
+      "node_id": "MDQ6VXNlcjgwMTIzOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8012398?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/big-andy-coates",
+      "html_url": "https://github.com/big-andy-coates",
+      "followers_url": "https://api.github.com/users/big-andy-coates/followers",
+      "following_url": "https://api.github.com/users/big-andy-coates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/big-andy-coates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/big-andy-coates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/big-andy-coates/subscriptions",
+      "organizations_url": "https://api.github.com/users/big-andy-coates/orgs",
+      "repos_url": "https://api.github.com/users/big-andy-coates/repos",
+      "events_url": "https://api.github.com/users/big-andy-coates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/big-andy-coates/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "105bb82069060e5b04feb47cc8070337bc5e8f62",
+        "url": "https://api.github.com/repos/apache/kafka/commits/105bb82069060e5b04feb47cc8070337bc5e8f62",
+        "html_url": "https://github.com/apache/kafka/commit/105bb82069060e5b04feb47cc8070337bc5e8f62"
+      }
+    ]
+  },
+  {
+    "sha": "458e5aaf2726af870b36b92945b6b64c30b0d53a",
+    "node_id": "MDY6Q29tbWl0MTIyNDcyMDkyOjQ1OGU1YWFmMjcyNmFmODcwYjM2YjkyOTQ1YjZiNjRjMzBiMGQ1M2E=",
+    "commit": {
+      "author": {
+        "name": "Andy Coates",
+        "email": "big-andy-coates@users.noreply.github.com",
+        "date": "2018-06-06T00:12:17Z"
+      },
+      "committer": {
+        "name": "Andy Coates",
+        "email": "big-andy-coates@users.noreply.github.com",
+        "date": "2018-06-06T00:12:17Z"
+      },
+      "message": "self review",
+      "tree": {
+        "sha": "cd189949b8157047fa16d5035b77dc0d5c65be81",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/cd189949b8157047fa16d5035b77dc0d5c65be81"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/458e5aaf2726af870b36b92945b6b64c30b0d53a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/458e5aaf2726af870b36b92945b6b64c30b0d53a",
+    "html_url": "https://github.com/apache/kafka/commit/458e5aaf2726af870b36b92945b6b64c30b0d53a",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/458e5aaf2726af870b36b92945b6b64c30b0d53a/comments",
+    "author": {
+      "login": "big-andy-coates",
+      "id": 8012398,
+      "node_id": "MDQ6VXNlcjgwMTIzOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8012398?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/big-andy-coates",
+      "html_url": "https://github.com/big-andy-coates",
+      "followers_url": "https://api.github.com/users/big-andy-coates/followers",
+      "following_url": "https://api.github.com/users/big-andy-coates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/big-andy-coates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/big-andy-coates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/big-andy-coates/subscriptions",
+      "organizations_url": "https://api.github.com/users/big-andy-coates/orgs",
+      "repos_url": "https://api.github.com/users/big-andy-coates/repos",
+      "events_url": "https://api.github.com/users/big-andy-coates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/big-andy-coates/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "big-andy-coates",
+      "id": 8012398,
+      "node_id": "MDQ6VXNlcjgwMTIzOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8012398?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/big-andy-coates",
+      "html_url": "https://github.com/big-andy-coates",
+      "followers_url": "https://api.github.com/users/big-andy-coates/followers",
+      "following_url": "https://api.github.com/users/big-andy-coates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/big-andy-coates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/big-andy-coates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/big-andy-coates/subscriptions",
+      "organizations_url": "https://api.github.com/users/big-andy-coates/orgs",
+      "repos_url": "https://api.github.com/users/big-andy-coates/repos",
+      "events_url": "https://api.github.com/users/big-andy-coates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/big-andy-coates/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d6006820225d824676ea5d8f567caaf523161fb1",
+        "url": "https://api.github.com/repos/apache/kafka/commits/d6006820225d824676ea5d8f567caaf523161fb1",
+        "html_url": "https://github.com/apache/kafka/commit/d6006820225d824676ea5d8f567caaf523161fb1"
+      }
+    ]
+  },
+  {
+    "sha": "8ae4e11881b87d391bc7355a586259aa96c107c4",
+    "node_id": "MDY6Q29tbWl0MTIyNDcyMDkyOjhhZTRlMTE4ODFiODdkMzkxYmM3MzU1YTU4NjI1OWFhOTZjMTA3YzQ=",
+    "commit": {
+      "author": {
+        "name": "Andy Coates",
+        "email": "big-andy-coates@users.noreply.github.com",
+        "date": "2018-06-06T00:27:55Z"
+      },
+      "committer": {
+        "name": "Andy Coates",
+        "email": "big-andy-coates@users.noreply.github.com",
+        "date": "2018-06-06T00:27:55Z"
+      },
+      "message": "Add additional test.",
+      "tree": {
+        "sha": "6c2914d1a2c3c4a58f7d33f7e3e06ae49b24f7ff",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/6c2914d1a2c3c4a58f7d33f7e3e06ae49b24f7ff"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/8ae4e11881b87d391bc7355a586259aa96c107c4",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/8ae4e11881b87d391bc7355a586259aa96c107c4",
+    "html_url": "https://github.com/apache/kafka/commit/8ae4e11881b87d391bc7355a586259aa96c107c4",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/8ae4e11881b87d391bc7355a586259aa96c107c4/comments",
+    "author": {
+      "login": "big-andy-coates",
+      "id": 8012398,
+      "node_id": "MDQ6VXNlcjgwMTIzOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8012398?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/big-andy-coates",
+      "html_url": "https://github.com/big-andy-coates",
+      "followers_url": "https://api.github.com/users/big-andy-coates/followers",
+      "following_url": "https://api.github.com/users/big-andy-coates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/big-andy-coates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/big-andy-coates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/big-andy-coates/subscriptions",
+      "organizations_url": "https://api.github.com/users/big-andy-coates/orgs",
+      "repos_url": "https://api.github.com/users/big-andy-coates/repos",
+      "events_url": "https://api.github.com/users/big-andy-coates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/big-andy-coates/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "big-andy-coates",
+      "id": 8012398,
+      "node_id": "MDQ6VXNlcjgwMTIzOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8012398?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/big-andy-coates",
+      "html_url": "https://github.com/big-andy-coates",
+      "followers_url": "https://api.github.com/users/big-andy-coates/followers",
+      "following_url": "https://api.github.com/users/big-andy-coates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/big-andy-coates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/big-andy-coates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/big-andy-coates/subscriptions",
+      "organizations_url": "https://api.github.com/users/big-andy-coates/orgs",
+      "repos_url": "https://api.github.com/users/big-andy-coates/repos",
+      "events_url": "https://api.github.com/users/big-andy-coates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/big-andy-coates/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "458e5aaf2726af870b36b92945b6b64c30b0d53a",
+        "url": "https://api.github.com/repos/apache/kafka/commits/458e5aaf2726af870b36b92945b6b64c30b0d53a",
+        "html_url": "https://github.com/apache/kafka/commit/458e5aaf2726af870b36b92945b6b64c30b0d53a"
+      }
+    ]
+  },
+  {
+    "sha": "b78d226b8538c199fdd02fa2ed878766875a9c04",
+    "node_id": "MDY6Q29tbWl0MTIyNDcyMDkyOmI3OGQyMjZiODUzOGMxOTlmZGQwMmZhMmVkODc4NzY2ODc1YTljMDQ=",
+    "commit": {
+      "author": {
+        "name": "Andy Coates",
+        "email": "big-andy-coates@users.noreply.github.com",
+        "date": "2018-06-06T00:39:02Z"
+      },
+      "committer": {
+        "name": "Andy Coates",
+        "email": "big-andy-coates@users.noreply.github.com",
+        "date": "2018-06-06T00:39:02Z"
+      },
+      "message": "Add additional test.",
+      "tree": {
+        "sha": "e90e4bbba8ea384faae1eb4a1ebe8d64aa55764f",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/e90e4bbba8ea384faae1eb4a1ebe8d64aa55764f"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/b78d226b8538c199fdd02fa2ed878766875a9c04",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/b78d226b8538c199fdd02fa2ed878766875a9c04",
+    "html_url": "https://github.com/apache/kafka/commit/b78d226b8538c199fdd02fa2ed878766875a9c04",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/b78d226b8538c199fdd02fa2ed878766875a9c04/comments",
+    "author": {
+      "login": "big-andy-coates",
+      "id": 8012398,
+      "node_id": "MDQ6VXNlcjgwMTIzOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8012398?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/big-andy-coates",
+      "html_url": "https://github.com/big-andy-coates",
+      "followers_url": "https://api.github.com/users/big-andy-coates/followers",
+      "following_url": "https://api.github.com/users/big-andy-coates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/big-andy-coates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/big-andy-coates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/big-andy-coates/subscriptions",
+      "organizations_url": "https://api.github.com/users/big-andy-coates/orgs",
+      "repos_url": "https://api.github.com/users/big-andy-coates/repos",
+      "events_url": "https://api.github.com/users/big-andy-coates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/big-andy-coates/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "big-andy-coates",
+      "id": 8012398,
+      "node_id": "MDQ6VXNlcjgwMTIzOTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8012398?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/big-andy-coates",
+      "html_url": "https://github.com/big-andy-coates",
+      "followers_url": "https://api.github.com/users/big-andy-coates/followers",
+      "following_url": "https://api.github.com/users/big-andy-coates/following{/other_user}",
+      "gists_url": "https://api.github.com/users/big-andy-coates/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/big-andy-coates/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/big-andy-coates/subscriptions",
+      "organizations_url": "https://api.github.com/users/big-andy-coates/orgs",
+      "repos_url": "https://api.github.com/users/big-andy-coates/repos",
+      "events_url": "https://api.github.com/users/big-andy-coates/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/big-andy-coates/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8ae4e11881b87d391bc7355a586259aa96c107c4",
+        "url": "https://api.github.com/repos/apache/kafka/commits/8ae4e11881b87d391bc7355a586259aa96c107c4",
+        "html_url": "https://github.com/apache/kafka/commit/8ae4e11881b87d391bc7355a586259aa96c107c4"
+      }
+    ]
+  },
+  {
+    "sha": "6f96d0db4fbc086139542b5730ac79aea8c44c13",
+    "node_id": "MDY6Q29tbWl0MTIyNDcyMDkyOjZmOTZkMGRiNGZiYzA4NjEzOTU0MmI1NzMwYWM3OWFlYThjNDRjMTM=",
+    "commit": {
+      "author": {
+        "name": "Ismael Juma",
+        "email": "ismael@juma.me.uk",
+        "date": "2018-06-06T11:19:35Z"
+      },
+      "committer": {
+        "name": "Ismael Juma",
+        "email": "ismael@juma.me.uk",
+        "date": "2018-06-06T11:19:35Z"
+      },
+      "message": "Merge remote-tracking branch 'apache-github/trunk' into kip-290-acl-prefix\n\n* apache-github/trunk:\n  KAFKA-6726: Fine Grained ACL for CreateTopics (KIP-277) (#4795)\n  KAFKA-5588: Remove deprecated --new-consumer tools option (#5097)\n  MINOR: Fix for the location of the trogdor.sh executable file in the documentation. (#5040)\n  KAFKA-6997: Exclude test-sources.jar when $INCLUDE_TEST_JARS is FALSE\n  MINOR: docs should point to latest version (#5132)\n  KAFKA-6981: Move the error handling configuration properties into the ConnectorConfig and SinkConnectorConfig classes (KIP-298)\n  [KAFKA-6730] Simplify State Store Recovery (#5013)\n  MINOR: Rename package `internal` to `internals` for consistency (#5137)\n  KAFKA-6704: InvalidStateStoreException from IQ when StreamThread closes store (#4801)\n  MINOR: Add missing configs for resilience settings\n  MINOR: Add regression tests for KTable mapValues and filter (#5134)\n  KAFKA-6750: Add listener name to authentication context (KIP-282) (#4829)\n  KAFKA-3665: Enable TLS hostname verification by default (KIP-294) (#4956)\n  KAFKA-6938: Add documentation for accessing Headers on Kafka Streams Processor API (#5128)\n  KAFKA-6813: return to double-counting for count topology names (#5075)\n  KAFKA-5919; Adding checks on \"version\" field for tools using it\n  MINOR: Remove deprecated KafkaStreams constructors in docs (#5118)",
+      "tree": {
+        "sha": "e5f9ea73233fec9eed26bc6d2ee3595362a654e6",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/e5f9ea73233fec9eed26bc6d2ee3595362a654e6"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/6f96d0db4fbc086139542b5730ac79aea8c44c13",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/6f96d0db4fbc086139542b5730ac79aea8c44c13",
+    "html_url": "https://github.com/apache/kafka/commit/6f96d0db4fbc086139542b5730ac79aea8c44c13",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/6f96d0db4fbc086139542b5730ac79aea8c44c13/comments",
+    "author": {
+      "login": "ijuma",
+      "id": 24747,
+      "node_id": "MDQ6VXNlcjI0NzQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24747?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ijuma",
+      "html_url": "https://github.com/ijuma",
+      "followers_url": "https://api.github.com/users/ijuma/followers",
+      "following_url": "https://api.github.com/users/ijuma/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ijuma/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ijuma/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ijuma/subscriptions",
+      "organizations_url": "https://api.github.com/users/ijuma/orgs",
+      "repos_url": "https://api.github.com/users/ijuma/repos",
+      "events_url": "https://api.github.com/users/ijuma/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ijuma/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ijuma",
+      "id": 24747,
+      "node_id": "MDQ6VXNlcjI0NzQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24747?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ijuma",
+      "html_url": "https://github.com/ijuma",
+      "followers_url": "https://api.github.com/users/ijuma/followers",
+      "following_url": "https://api.github.com/users/ijuma/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ijuma/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ijuma/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ijuma/subscriptions",
+      "organizations_url": "https://api.github.com/users/ijuma/orgs",
+      "repos_url": "https://api.github.com/users/ijuma/repos",
+      "events_url": "https://api.github.com/users/ijuma/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ijuma/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b78d226b8538c199fdd02fa2ed878766875a9c04",
+        "url": "https://api.github.com/repos/apache/kafka/commits/b78d226b8538c199fdd02fa2ed878766875a9c04",
+        "html_url": "https://github.com/apache/kafka/commit/b78d226b8538c199fdd02fa2ed878766875a9c04"
+      },
+      {
+        "sha": "0c035c46b47cd4734d0529486e776c6c18d6643d",
+        "url": "https://api.github.com/repos/apache/kafka/commits/0c035c46b47cd4734d0529486e776c6c18d6643d",
+        "html_url": "https://github.com/apache/kafka/commit/0c035c46b47cd4734d0529486e776c6c18d6643d"
+      }
+    ]
+  }
+]

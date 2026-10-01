@@ -1,0 +1,10 @@
+{
+  "run1_bundle_hash": "504b2f03d86090cf40e23b76f8c46123b07dc222275aeea9ac081460b3420bed",
+  "run2_bundle_hash": "504b2f03d86090cf40e23b76f8c46123b07dc222275aeea9ac081460b3420bed",
+  "run1_eval_hash": "7fc973824bd228b8db298d4a26d3ae310e4cd3987f3f10183c568d75fa7222a0",
+  "run2_eval_hash": "7fc973824bd228b8db298d4a26d3ae310e4cd3987f3f10183c568d75fa7222a0",
+  "permuted_eval_hash": "7fc973824bd228b8db298d4a26d3ae310e4cd3987f3f10183c568d75fa7222a0",
+  "run1_vs_run2_match": true,
+  "permuted_match": true,
+  "deterministic": true
+}

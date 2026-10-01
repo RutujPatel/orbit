@@ -1,0 +1,122 @@
+[
+  {
+    "id": 322279215,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MzIyMjc5MjE1",
+    "user": {
+      "login": "RyanSkraba",
+      "id": 7744819,
+      "node_id": "MDQ6VXNlcjc3NDQ4MTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7744819?u=b177791420f799fd0355987768478f39043a3a59&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RyanSkraba",
+      "html_url": "https://github.com/RyanSkraba",
+      "followers_url": "https://api.github.com/users/RyanSkraba/followers",
+      "following_url": "https://api.github.com/users/RyanSkraba/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RyanSkraba/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RyanSkraba/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RyanSkraba/subscriptions",
+      "organizations_url": "https://api.github.com/users/RyanSkraba/orgs",
+      "repos_url": "https://api.github.com/users/RyanSkraba/repos",
+      "events_url": "https://api.github.com/users/RyanSkraba/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RyanSkraba/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "Hello!  I made a comment on AVRO-2624 about how the ByteBuffer bug *shouldn't* be observable in our build.  \r\n\r\nIt looks like we see it here because the openjdk images fiddle with the `PATH` (instead of `update-java-alternatives` to provide the runtime).\r\n\r\nIn other words in the failing container, JDK 11 is used everywhere except when creating a new process without passing the `PATH` environment, and the failing python tether job is being run with JDK8.  I propose passing along the PATH so that the JDK of the user launching the test is also the JDK launching the tether job.",
+    "state": "APPROVED",
+    "html_url": "https://github.com/apache/avro/pull/706#pullrequestreview-322279215",
+    "pull_request_url": "https://api.github.com/repos/apache/avro/pulls/706",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/avro/pull/706#pullrequestreview-322279215"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/avro/pulls/706"
+      }
+    },
+    "submitted_at": "2019-11-25T15:00:50Z",
+    "commit_id": "0065f064eb6b8c387324e4f4ba7a6f37e70dc99b"
+  },
+  {
+    "id": 322634731,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MzIyNjM0NzMx",
+    "user": {
+      "login": "kojiromike",
+      "id": 1566303,
+      "node_id": "MDQ6VXNlcjE1NjYzMDM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1566303?u=00b9db33a616f0f3dcc6d445a37be127ffcb00fe&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kojiromike",
+      "html_url": "https://github.com/kojiromike",
+      "followers_url": "https://api.github.com/users/kojiromike/followers",
+      "following_url": "https://api.github.com/users/kojiromike/following{/other_user}",
+      "gists_url": "https://api.github.com/users/kojiromike/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/kojiromike/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/kojiromike/subscriptions",
+      "organizations_url": "https://api.github.com/users/kojiromike/orgs",
+      "repos_url": "https://api.github.com/users/kojiromike/repos",
+      "events_url": "https://api.github.com/users/kojiromike/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/kojiromike/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/avro/pull/706#pullrequestreview-322634731",
+    "pull_request_url": "https://api.github.com/repos/apache/avro/pulls/706",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/avro/pull/706#pullrequestreview-322634731"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/avro/pulls/706"
+      }
+    },
+    "submitted_at": "2019-11-25T23:00:34Z",
+    "commit_id": "0065f064eb6b8c387324e4f4ba7a6f37e70dc99b"
+  },
+  {
+    "id": 322813208,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MzIyODEzMjA4",
+    "user": {
+      "login": "RyanSkraba",
+      "id": 7744819,
+      "node_id": "MDQ6VXNlcjc3NDQ4MTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7744819?u=b177791420f799fd0355987768478f39043a3a59&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/RyanSkraba",
+      "html_url": "https://github.com/RyanSkraba",
+      "followers_url": "https://api.github.com/users/RyanSkraba/followers",
+      "following_url": "https://api.github.com/users/RyanSkraba/following{/other_user}",
+      "gists_url": "https://api.github.com/users/RyanSkraba/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/RyanSkraba/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/RyanSkraba/subscriptions",
+      "organizations_url": "https://api.github.com/users/RyanSkraba/orgs",
+      "repos_url": "https://api.github.com/users/RyanSkraba/repos",
+      "events_url": "https://api.github.com/users/RyanSkraba/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/RyanSkraba/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/avro/pull/706#pullrequestreview-322813208",
+    "pull_request_url": "https://api.github.com/repos/apache/avro/pulls/706",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/avro/pull/706#pullrequestreview-322813208"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/avro/pulls/706"
+      }
+    },
+    "submitted_at": "2019-11-26T08:56:40Z",
+    "commit_id": "0065f064eb6b8c387324e4f4ba7a6f37e70dc99b"
+  }
+]

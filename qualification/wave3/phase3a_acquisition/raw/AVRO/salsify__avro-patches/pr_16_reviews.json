@@ -1,0 +1,42 @@
+[
+  {
+    "id": 141232780,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MTQxMjMyNzgw",
+    "user": {
+      "login": "jkapell",
+      "id": 9824920,
+      "node_id": "MDQ6VXNlcjk4MjQ5MjA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9824920?u=43eebb6d175238c271dd974a231359a2bccf18ae&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jkapell",
+      "html_url": "https://github.com/jkapell",
+      "followers_url": "https://api.github.com/users/jkapell/followers",
+      "following_url": "https://api.github.com/users/jkapell/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jkapell/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jkapell/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jkapell/subscriptions",
+      "organizations_url": "https://api.github.com/users/jkapell/orgs",
+      "repos_url": "https://api.github.com/users/jkapell/repos",
+      "events_url": "https://api.github.com/users/jkapell/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jkapell/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "APPROVED",
+    "html_url": "https://github.com/salsify/avro-patches/pull/16#pullrequestreview-141232780",
+    "pull_request_url": "https://api.github.com/repos/salsify/avro-patches/pulls/16",
+    "author_association": "NONE",
+    "_links": {
+      "html": {
+        "href": "https://github.com/salsify/avro-patches/pull/16#pullrequestreview-141232780"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/salsify/avro-patches/pulls/16"
+      }
+    },
+    "submitted_at": "2018-07-27T19:00:58Z",
+    "commit_id": "3fca8d314bb41eac783353fe04295bdf30f521c8"
+  }
+]

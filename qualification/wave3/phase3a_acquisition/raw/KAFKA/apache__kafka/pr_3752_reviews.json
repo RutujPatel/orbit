@@ -1,0 +1,42 @@
+[
+  {
+    "id": 59818538,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NTk4MTg1Mzg=",
+    "user": {
+      "login": "ijuma",
+      "id": 24747,
+      "node_id": "MDQ6VXNlcjI0NzQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24747?u=6a146eae75e86bdcc612ecf7130b9f74f5a3192b&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ijuma",
+      "html_url": "https://github.com/ijuma",
+      "followers_url": "https://api.github.com/users/ijuma/followers",
+      "following_url": "https://api.github.com/users/ijuma/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ijuma/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ijuma/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ijuma/subscriptions",
+      "organizations_url": "https://api.github.com/users/ijuma/orgs",
+      "repos_url": "https://api.github.com/users/ijuma/repos",
+      "events_url": "https://api.github.com/users/ijuma/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ijuma/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "Thanks for the PR. It would be good to add a test in `ByteBufferLogInputStreamTest` to verify the fix.",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/3752#pullrequestreview-59818538",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/3752",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/3752#pullrequestreview-59818538"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/3752"
+      }
+    },
+    "submitted_at": "2017-08-31T10:35:45Z",
+    "commit_id": "9c5ef5bce694a171302eb498452de23ff2f591d7"
+  }
+]

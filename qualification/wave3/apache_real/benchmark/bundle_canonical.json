@@ -1,0 +1,1872 @@
+{
+  "bundle_id": "orbit_wave3_apache_canonical_bundle",
+  "bundle_version": "1.0.0",
+  "cross_system_alignments": [
+    {
+      "corroborating_ref": {
+        "entity_id": "apache/avro/1370",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "github_ref": {
+        "entity_id": "apache/avro/1370",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "jira_ref": {
+        "entity_id": "AVRO-3234",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/avro/pull_1370.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[1370]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ],
+      "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+      "relationship_kind": "EXPLICIT_LINK",
+      "state_comparison": "CONSISTENT",
+      "subject_ref": {
+        "entity_id": "AVRO-3234",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "temporal_comparison": "COHERENT"
+    },
+    {
+      "corroborating_ref": {
+        "entity_id": "apache/flink/10123",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "github_ref": {
+        "entity_id": "apache/flink/10123",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "jira_ref": {
+        "entity_id": "FLINK-14386",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/flink/pull_10123.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[10123]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ],
+      "rationale": "Referenced GitHub PR closed without merge.",
+      "relationship_kind": "EXPLICIT_LINK",
+      "state_comparison": "INSUFFICIENT_EVIDENCE",
+      "subject_ref": {
+        "entity_id": "FLINK-14386",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "temporal_comparison": "INDETERMINATE"
+    },
+    {
+      "corroborating_ref": {
+        "entity_id": "apache/flink/10123",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "github_ref": {
+        "entity_id": "apache/flink/10123",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "jira_ref": {
+        "entity_id": "FLINK-14665",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/flink/pull_10123.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[10123]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ],
+      "rationale": "Referenced GitHub PR closed without merge.",
+      "relationship_kind": "EXPLICIT_LINK",
+      "state_comparison": "INSUFFICIENT_EVIDENCE",
+      "subject_ref": {
+        "entity_id": "FLINK-14665",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "temporal_comparison": "INDETERMINATE"
+    },
+    {
+      "corroborating_ref": {
+        "entity_id": "apache/flink/17401",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "github_ref": {
+        "entity_id": "apache/flink/17401",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "jira_ref": {
+        "entity_id": "FLINK-24409",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/flink/pull_17401.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[17401]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ],
+      "rationale": "Referenced GitHub PR closed without merge.",
+      "relationship_kind": "EXPLICIT_LINK",
+      "state_comparison": "INSUFFICIENT_EVIDENCE",
+      "subject_ref": {
+        "entity_id": "FLINK-24409",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "temporal_comparison": "INDETERMINATE"
+    },
+    {
+      "corroborating_ref": {
+        "entity_id": "apache/flink/17773",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "github_ref": {
+        "entity_id": "apache/flink/17773",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "jira_ref": {
+        "entity_id": "FLINK-24409",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/flink/pull_17773.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[17773]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ],
+      "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+      "relationship_kind": "EXPLICIT_LINK",
+      "state_comparison": "CONSISTENT",
+      "subject_ref": {
+        "entity_id": "FLINK-24409",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "temporal_comparison": "COHERENT"
+    },
+    {
+      "corroborating_ref": {
+        "entity_id": "apache/flink/17799",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "github_ref": {
+        "entity_id": "apache/flink/17799",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "jira_ref": {
+        "entity_id": "FLINK-24409",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/flink/pull_17799.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[17799]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ],
+      "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+      "relationship_kind": "EXPLICIT_LINK",
+      "state_comparison": "CONSISTENT",
+      "subject_ref": {
+        "entity_id": "FLINK-24409",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "temporal_comparison": "COHERENT"
+    },
+    {
+      "corroborating_ref": {
+        "entity_id": "apache/kafka/11617",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "github_ref": {
+        "entity_id": "apache/kafka/11617",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "jira_ref": {
+        "entity_id": "KAFKA-13557",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/kafka/pull_11617.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[11617]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ],
+      "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+      "relationship_kind": "EXPLICIT_LINK",
+      "state_comparison": "CONSISTENT",
+      "subject_ref": {
+        "entity_id": "KAFKA-13557",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "temporal_comparison": "COHERENT"
+    },
+    {
+      "corroborating_ref": {
+        "entity_id": "apache/parquet-java/885",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "github_ref": {
+        "entity_id": "apache/parquet-java/885",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "jira_ref": {
+        "entity_id": "PARQUET-2010",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/parquet-java/pull_885.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[885]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ],
+      "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+      "relationship_kind": "DECLARED_MENTION",
+      "state_comparison": "CONSISTENT",
+      "subject_ref": {
+        "entity_id": "PARQUET-2010",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "temporal_comparison": "COHERENT"
+    }
+  ],
+  "observation_contexts": [
+    {
+      "coverage_note": "Verified real Apache GitHub pull requests, commits, and reviews",
+      "observation_id": "obs_apache_github_real_001",
+      "source_cutoff_at": "2026-09-30T12:00:00Z",
+      "source_instance": {
+        "instance_id": "github.com/apache",
+        "source_kind": "github"
+      }
+    },
+    {
+      "coverage_note": "Verified real Apache Jira target issues",
+      "observation_id": "obs_apache_jira_real_001",
+      "source_cutoff_at": "2026-09-30T12:00:00Z",
+      "source_instance": {
+        "instance_id": "issues.apache.org",
+        "source_kind": "jira"
+      }
+    }
+  ],
+  "observations": [
+    {
+      "entity_ref": {
+        "entity_id": "apache/avro/1370",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "observation_context_id": "obs_apache_github_real_001",
+      "observed_state": {
+        "_type": "CodeChangeState",
+        "author": "sycured",
+        "base_commit_sha": "0f4197d94cb4672e756129d49af5c52591e2528f",
+        "change_type": "pull_request",
+        "committed_at": null,
+        "created_at": "2021-10-15T03:50:08Z",
+        "extra_properties": {
+          "closed_at": "2022-01-05T07:01:29Z",
+          "commit_count": 2,
+          "commit_shas": [
+            "619fcea61f234ae3a31410f0b3c850930b579a27",
+            "ff0b8c0a437969848c47d27fe3a7aadbfedf66c4"
+          ],
+          "head_repo": null,
+          "html_url": "https://github.com/apache/avro/pull/1370",
+          "is_fork": false,
+          "merge_commit_sha": "04e41fc2c8aa21e829f690e791e8aa2b0a049700",
+          "repo": "apache/avro",
+          "review_count": 1,
+          "review_states": [
+            "APPROVED"
+          ]
+        },
+        "head_commit_sha": "ff0b8c0a437969848c47d27fe3a7aadbfedf66c4",
+        "identifier": "1370",
+        "merged_at": "2022-01-05T07:01:28Z",
+        "source_branch": "zstd",
+        "state": "merged",
+        "target_branch": "master",
+        "title": "AVRO-3234: add new codec to lang/rust: zstandard"
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/avro/pull_1370.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[1370]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": {
+        "entity_id": "apache/flink/10123",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "observation_context_id": "obs_apache_github_real_001",
+      "observed_state": {
+        "_type": "CodeChangeState",
+        "author": "danny0405",
+        "base_commit_sha": "5927c54c6b4342159ec1334ba2e7b4281bc1275e",
+        "change_type": "pull_request",
+        "committed_at": null,
+        "created_at": "2019-11-08T03:04:42Z",
+        "extra_properties": {
+          "closed_at": "2019-11-11T13:27:59Z",
+          "commit_count": 3,
+          "commit_shas": [
+            "5855cf8392c4a8fe5969b24184a50cdfd306cac3",
+            "fda4a3c1d9d629be71f9244d79b21d80d8fab9d3",
+            "7bdf756decbca6838f43ab3407a7e7a00cd84cf7"
+          ],
+          "head_repo": "danny0405/flink",
+          "html_url": "https://github.com/apache/flink/pull/10123",
+          "is_fork": true,
+          "merge_commit_sha": "21c9b1d899c3afbca09d7409e3512ea3dc29e939",
+          "repo": "apache/flink",
+          "review_count": 12,
+          "review_states": [
+            "CHANGES_REQUESTED",
+            "CHANGES_REQUESTED",
+            "COMMENTED",
+            "COMMENTED",
+            "COMMENTED",
+            "COMMENTED",
+            "COMMENTED",
+            "COMMENTED",
+            "COMMENTED",
+            "COMMENTED",
+            "COMMENTED",
+            "APPROVED"
+          ]
+        },
+        "head_commit_sha": "7bdf756decbca6838f43ab3407a7e7a00cd84cf7",
+        "identifier": "10123",
+        "merged_at": null,
+        "source_branch": "FLINK-14386",
+        "state": "closed",
+        "target_branch": "master",
+        "title": "[FLINK-14665][table-planner-blink] Support computed column for create\u2026"
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/flink/pull_10123.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[10123]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": {
+        "entity_id": "apache/flink/17401",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "observation_context_id": "obs_apache_github_real_001",
+      "observed_state": {
+        "_type": "CodeChangeState",
+        "author": "jherico",
+        "base_commit_sha": "ce7481ae20cf6b4a32568df1d774467247acd08b",
+        "change_type": "pull_request",
+        "committed_at": null,
+        "created_at": "2021-10-01T06:32:45Z",
+        "extra_properties": {
+          "closed_at": "2021-11-17T18:35:53Z",
+          "commit_count": 1,
+          "commit_shas": [
+            "fd01adb87c54abe436ac04d4059a71784762cabd"
+          ],
+          "head_repo": null,
+          "html_url": "https://github.com/apache/flink/pull/17401",
+          "is_fork": false,
+          "merge_commit_sha": "78ac4291345a91ccd7de3af64b1e86479eb1433d",
+          "repo": "apache/flink",
+          "review_count": 1,
+          "review_states": [
+            "CHANGES_REQUESTED"
+          ]
+        },
+        "head_commit_sha": "fd01adb87c54abe436ac04d4059a71784762cabd",
+        "identifier": "17401",
+        "merged_at": null,
+        "source_branch": "brad_flink-metric",
+        "state": "closed",
+        "target_branch": "master",
+        "title": "[FLINK-24409][connectors] Fix metrics errors with topics names with periods"
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/flink/pull_17401.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[17401]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": {
+        "entity_id": "apache/flink/17773",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "observation_context_id": "obs_apache_github_real_001",
+      "observed_state": {
+        "_type": "CodeChangeState",
+        "author": "fapaul",
+        "base_commit_sha": "ef5fb7a15cb3964d0d59434798549bfa26adabe9",
+        "change_type": "pull_request",
+        "committed_at": null,
+        "created_at": "2021-11-12T08:31:10Z",
+        "extra_properties": {
+          "closed_at": "2021-11-17T16:45:16Z",
+          "commit_count": 2,
+          "commit_shas": [
+            "c6b2001cbc4486398322c21ea38962fcaf7993fb",
+            "f6c57afdafb62ad077745dea97effbcc942a689a"
+          ],
+          "head_repo": "fapaul/flink",
+          "html_url": "https://github.com/apache/flink/pull/17773",
+          "is_fork": true,
+          "merge_commit_sha": "da8ef265e3f78ec71aad43b4f8209884eaf3a860",
+          "repo": "apache/flink",
+          "review_count": 5,
+          "review_states": [
+            "COMMENTED",
+            "COMMENTED",
+            "COMMENTED",
+            "COMMENTED",
+            "APPROVED"
+          ]
+        },
+        "head_commit_sha": "f6c57afdafb62ad077745dea97effbcc942a689a",
+        "identifier": "17773",
+        "merged_at": "2021-11-17T16:45:16Z",
+        "source_branch": "FLINK-24409",
+        "state": "merged",
+        "target_branch": "master",
+        "title": "[FLINK-24409][kafka] Fix collection of KafkaSourceReaderMetrics for t\u2026"
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/flink/pull_17773.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[17773]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": {
+        "entity_id": "apache/flink/17799",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "observation_context_id": "obs_apache_github_real_001",
+      "observed_state": {
+        "_type": "CodeChangeState",
+        "author": "fapaul",
+        "base_commit_sha": "5a0609aa55c3ea69746a27a19622d8c97da772f9",
+        "change_type": "pull_request",
+        "committed_at": null,
+        "created_at": "2021-11-15T16:29:51Z",
+        "extra_properties": {
+          "closed_at": "2021-11-17T16:45:29Z",
+          "commit_count": 2,
+          "commit_shas": [
+            "5f478537bbe5340a9fc09705ebc428d18b6131e4",
+            "8e7cbb60cd774d89cfde15ac5062b9ebb44d2c3a"
+          ],
+          "head_repo": "fapaul/flink",
+          "html_url": "https://github.com/apache/flink/pull/17799",
+          "is_fork": true,
+          "merge_commit_sha": "e68e30dc8c355f88169f6a9ac1c7044c895aff30",
+          "repo": "apache/flink"
+        },
+        "head_commit_sha": "8e7cbb60cd774d89cfde15ac5062b9ebb44d2c3a",
+        "identifier": "17799",
+        "merged_at": "2021-11-17T16:45:29Z",
+        "source_branch": "FLINK-24409-4",
+        "state": "merged",
+        "target_branch": "release-1.14",
+        "title": "[FLINK-24409][kafka] Fix collection of KafkaSourceReaderMetrics for topics containing periods"
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/flink/pull_17799.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[17799]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": {
+        "entity_id": "apache/kafka/11617",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "observation_context_id": "obs_apache_github_real_001",
+      "observed_state": {
+        "_type": "CodeChangeState",
+        "author": "vvcephei",
+        "base_commit_sha": "57477886593a60cd92cc50b5722788f9ac1c3d7a",
+        "change_type": "pull_request",
+        "committed_at": null,
+        "created_at": "2021-12-20T18:44:53Z",
+        "extra_properties": {
+          "closed_at": "2021-12-21T01:04:09Z",
+          "commit_count": 5,
+          "commit_shas": [
+            "96453f359d3d3b2416805e75cd0638051e4fc50f",
+            "643674701c23d6eaffedc6082d088edb9c45f284",
+            "3e5eb564464dfc53697de5e48d5eb54b852ec47e",
+            "7adf192d4ba500533f0321b6d89bf5b9eb516593",
+            "ae79d6f780f4b188186944adafe1e04bf6795033"
+          ],
+          "head_repo": "apache/kafka",
+          "html_url": "https://github.com/apache/kafka/pull/11617",
+          "is_fork": false,
+          "merge_commit_sha": "018fb88efa8bc5641c74a49f0531842a32b4287e",
+          "repo": "apache/kafka",
+          "review_count": 11,
+          "review_states": [
+            "COMMENTED",
+            "COMMENTED",
+            "COMMENTED",
+            "COMMENTED",
+            "COMMENTED",
+            "COMMENTED",
+            "COMMENTED",
+            "COMMENTED",
+            "COMMENTED",
+            "COMMENTED",
+            "APPROVED"
+          ]
+        },
+        "head_commit_sha": "ae79d6f780f4b188186944adafe1e04bf6795033",
+        "identifier": "11617",
+        "merged_at": "2021-12-21T01:04:08Z",
+        "source_branch": "iqv2-move-swapresult",
+        "state": "merged",
+        "target_branch": "trunk",
+        "title": "KAFKA-13557: Remove swapResult from the public API"
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/kafka/pull_11617.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[11617]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": {
+        "entity_id": "apache/parquet-java/3822",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "observation_context_id": "obs_apache_github_real_001",
+      "observed_state": {
+        "_type": "CodeChangeState",
+        "author": "zhangxinyao88",
+        "base_commit_sha": "4b37c193e2f796d553a20cc57ec9835ceaa1c95c",
+        "change_type": "pull_request",
+        "committed_at": null,
+        "created_at": "2026-09-26T23:30:10Z",
+        "extra_properties": {
+          "closed_at": "2026-09-30T02:43:09Z",
+          "head_repo": "zhangxinyao88/parquet-java",
+          "html_url": "https://github.com/apache/parquet-java/pull/3822",
+          "is_fork": true,
+          "merge_commit_sha": "607ccd432cd99d0ab673b7a5ffbc95b85ae9fb45",
+          "repo": "apache/parquet-java"
+        },
+        "head_commit_sha": "04f68b891d9077c63dbd53122f0a6e6eaa78a80f",
+        "identifier": "3822",
+        "merged_at": null,
+        "source_branch": "codex/issue-3792-avro-alias-priority",
+        "state": "closed",
+        "target_branch": "master",
+        "title": "GH-3792: Prefer exact Avro field names over aliases"
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/negative_controls/github/parquet-java/pull_3822.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[3822]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": {
+        "entity_id": "apache/parquet-java/885",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "observation_context_id": "obs_apache_github_real_001",
+      "observed_state": {
+        "_type": "CodeChangeState",
+        "author": "gszadovszky",
+        "base_commit_sha": "8464284cc4fa790fdc66a8d2721572c2ec472d6a",
+        "change_type": "pull_request",
+        "committed_at": null,
+        "created_at": "2021-03-25T15:05:41Z",
+        "extra_properties": {
+          "closed_at": "2021-03-30T15:57:08Z",
+          "commit_count": 1,
+          "commit_shas": [
+            "997930022188b8499d253c4104da89926564a817"
+          ],
+          "head_repo": "gszadovszky/parquet-mr",
+          "html_url": "https://github.com/apache/parquet-java/pull/885",
+          "is_fork": true,
+          "merge_commit_sha": "24d581038f082039249b7874825c6ed4c05a961f",
+          "repo": "apache/parquet-java",
+          "review_count": 1,
+          "review_states": [
+            "APPROVED"
+          ]
+        },
+        "head_commit_sha": "997930022188b8499d253c4104da89926564a817",
+        "identifier": "885",
+        "merged_at": "2021-03-30T15:57:08Z",
+        "source_branch": "PARQUET-2010",
+        "state": "merged",
+        "target_branch": "master",
+        "title": "PARQUET-2010: Fix japicmp issues"
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/parquet-java/pull_885.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[885]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": {
+        "entity_id": "apache/kafka/3e5eb564464dfc53697de5e48d5eb54b852ec47e",
+        "entity_kind": "github_commit",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "observation_context_id": "obs_apache_github_real_001",
+      "observed_state": {
+        "_type": "CodeChangeState",
+        "author": "John Roesler",
+        "base_commit_sha": null,
+        "change_type": "commit",
+        "committed_at": "2021-12-20T20:17:42Z",
+        "created_at": "2021-12-20T20:17:42Z",
+        "extra_properties": {
+          "full_message": "fix javadoc",
+          "repo": "apache/kafka"
+        },
+        "head_commit_sha": null,
+        "identifier": "3e5eb564464dfc53697de5e48d5eb54b852ec47e",
+        "merged_at": null,
+        "source_branch": null,
+        "state": "committed",
+        "target_branch": null,
+        "title": "fix javadoc"
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/kafka/pull_11617_commits.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "commits[3e5eb564464dfc53697de5e48d5eb54b852ec47e]",
+          "source_field_path": "sha",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": {
+        "entity_id": "apache/kafka/643674701c23d6eaffedc6082d088edb9c45f284",
+        "entity_kind": "github_commit",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "observation_context_id": "obs_apache_github_real_001",
+      "observed_state": {
+        "_type": "CodeChangeState",
+        "author": "John Roesler",
+        "base_commit_sha": null,
+        "change_type": "commit",
+        "committed_at": "2021-12-20T20:06:39Z",
+        "created_at": "2021-12-20T20:06:39Z",
+        "extra_properties": {
+          "full_message": "code review",
+          "repo": "apache/kafka"
+        },
+        "head_commit_sha": null,
+        "identifier": "643674701c23d6eaffedc6082d088edb9c45f284",
+        "merged_at": null,
+        "source_branch": null,
+        "state": "committed",
+        "target_branch": null,
+        "title": "code review"
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/kafka/pull_11617_commits.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "commits[643674701c23d6eaffedc6082d088edb9c45f284]",
+          "source_field_path": "sha",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": {
+        "entity_id": "apache/kafka/7adf192d4ba500533f0321b6d89bf5b9eb516593",
+        "entity_kind": "github_commit",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "observation_context_id": "obs_apache_github_real_001",
+      "observed_state": {
+        "_type": "CodeChangeState",
+        "author": "John Roesler",
+        "base_commit_sha": null,
+        "change_type": "commit",
+        "committed_at": "2021-12-20T20:21:19Z",
+        "created_at": "2021-12-20T20:21:19Z",
+        "extra_properties": {
+          "full_message": "style",
+          "repo": "apache/kafka"
+        },
+        "head_commit_sha": null,
+        "identifier": "7adf192d4ba500533f0321b6d89bf5b9eb516593",
+        "merged_at": null,
+        "source_branch": null,
+        "state": "committed",
+        "target_branch": null,
+        "title": "style"
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/kafka/pull_11617_commits.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "commits[7adf192d4ba500533f0321b6d89bf5b9eb516593]",
+          "source_field_path": "sha",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": {
+        "entity_id": "apache/kafka/96453f359d3d3b2416805e75cd0638051e4fc50f",
+        "entity_kind": "github_commit",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "observation_context_id": "obs_apache_github_real_001",
+      "observed_state": {
+        "_type": "CodeChangeState",
+        "author": "John Roesler",
+        "base_commit_sha": null,
+        "change_type": "commit",
+        "committed_at": "2021-12-20T18:43:46Z",
+        "created_at": "2021-12-20T18:43:46Z",
+        "extra_properties": {
+          "full_message": "KAFKA-13557: Remove swapResult from the public API",
+          "repo": "apache/kafka"
+        },
+        "head_commit_sha": null,
+        "identifier": "96453f359d3d3b2416805e75cd0638051e4fc50f",
+        "merged_at": null,
+        "source_branch": null,
+        "state": "committed",
+        "target_branch": null,
+        "title": "KAFKA-13557: Remove swapResult from the public API"
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/kafka/pull_11617_commits.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "commits[96453f359d3d3b2416805e75cd0638051e4fc50f]",
+          "source_field_path": "sha",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": {
+        "entity_id": "apache/kafka/ae79d6f780f4b188186944adafe1e04bf6795033",
+        "entity_kind": "github_commit",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "observation_context_id": "obs_apache_github_real_001",
+      "observed_state": {
+        "_type": "CodeChangeState",
+        "author": "John Roesler",
+        "base_commit_sha": null,
+        "change_type": "commit",
+        "committed_at": "2021-12-20T21:27:40Z",
+        "created_at": "2021-12-20T21:27:40Z",
+        "extra_properties": {
+          "full_message": "more feedback",
+          "repo": "apache/kafka"
+        },
+        "head_commit_sha": null,
+        "identifier": "ae79d6f780f4b188186944adafe1e04bf6795033",
+        "merged_at": null,
+        "source_branch": null,
+        "state": "committed",
+        "target_branch": null,
+        "title": "more feedback"
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/kafka/pull_11617_commits.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "commits[ae79d6f780f4b188186944adafe1e04bf6795033]",
+          "source_field_path": "sha",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": {
+        "entity_id": "AVRO-3234",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "observation_context_id": "obs_apache_jira_real_001",
+      "observed_state": {
+        "_type": "WorkItemState",
+        "assignee": "<<|author_displayName|da18fa35-e92f-404a-8c1a-efe8eec97b5d|>>",
+        "created_at": "2021-10-15T12:07:20Z",
+        "due_at": null,
+        "extra_properties": {
+          "changelog_total": 21,
+          "issue_id": "13406783",
+          "project_key": "AVRO",
+          "summary": "Rust: Add new codec: zstandard"
+        },
+        "key": "AVRO-3234",
+        "priority_band": "medium",
+        "resolved_at": "2022-01-05T07:02:24Z",
+        "source_priority": "Major",
+        "source_status": "Resolved",
+        "status_category": "done",
+        "updated_at": "2022-01-05T11:17:01Z"
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/jira/AVRO-3234.json",
+          "observation_id": "obs_apache_jira_real_001",
+          "record_locator": "work_items[AVRO-3234]",
+          "source_field_path": "key",
+          "source_instance": {
+            "instance_id": "issues.apache.org",
+            "source_kind": "jira"
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": {
+        "entity_id": "FLINK-14386",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "observation_context_id": "obs_apache_jira_real_001",
+      "observed_state": {
+        "_type": "WorkItemState",
+        "assignee": "<<|author_displayName|ae1de22b-0dfc-49c7-970d-f14666e8f6fd|>>",
+        "created_at": "2019-10-14T02:41:48Z",
+        "due_at": null,
+        "extra_properties": {
+          "changelog_total": 11,
+          "issue_id": "13262048",
+          "project_key": "FLINK",
+          "summary": "Support computed column for create table statement"
+        },
+        "key": "FLINK-14386",
+        "priority_band": "medium",
+        "resolved_at": "2019-12-31T06:23:43Z",
+        "source_priority": "Major",
+        "source_status": "Closed",
+        "status_category": "done",
+        "updated_at": "2019-12-31T06:23:43Z"
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/jira/FLINK-14386.json",
+          "observation_id": "obs_apache_jira_real_001",
+          "record_locator": "work_items[FLINK-14386]",
+          "source_field_path": "key",
+          "source_instance": {
+            "instance_id": "issues.apache.org",
+            "source_kind": "jira"
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": {
+        "entity_id": "FLINK-14665",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "observation_context_id": "obs_apache_jira_real_001",
+      "observed_state": {
+        "_type": "WorkItemState",
+        "assignee": "<<|author_displayName|ae1de22b-0dfc-49c7-970d-f14666e8f6fd|>>",
+        "created_at": "2019-11-08T03:23:24Z",
+        "due_at": null,
+        "extra_properties": {
+          "changelog_total": 7,
+          "issue_id": "13267011",
+          "project_key": "FLINK",
+          "summary": "Support computed column in blink-planner"
+        },
+        "key": "FLINK-14665",
+        "priority_band": "medium",
+        "resolved_at": "2019-11-11T13:29:01Z",
+        "source_priority": "Major",
+        "source_status": "Closed",
+        "status_category": "done",
+        "updated_at": "2019-11-20T07:27:06Z"
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/jira/FLINK-14665.json",
+          "observation_id": "obs_apache_jira_real_001",
+          "record_locator": "work_items[FLINK-14665]",
+          "source_field_path": "key",
+          "source_instance": {
+            "instance_id": "issues.apache.org",
+            "source_kind": "jira"
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": {
+        "entity_id": "FLINK-24409",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "observation_context_id": "obs_apache_jira_real_001",
+      "observed_state": {
+        "_type": "WorkItemState",
+        "assignee": "<<|author_displayName|ddbfcb77-9ebc-44a7-b920-ac1a2d5a852e|>>",
+        "created_at": "2021-09-30T07:41:46Z",
+        "due_at": null,
+        "extra_properties": {
+          "changelog_total": 57,
+          "issue_id": "13404207",
+          "project_key": "FLINK",
+          "summary": "Kafka topics with periods in their names generate a constant stream of errors"
+        },
+        "key": "FLINK-24409",
+        "priority_band": "medium",
+        "resolved_at": "2021-11-17T16:57:13Z",
+        "source_priority": "Major",
+        "source_status": "Resolved",
+        "status_category": "done",
+        "updated_at": "2021-12-15T01:44:16Z"
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/jira/FLINK-24409.json",
+          "observation_id": "obs_apache_jira_real_001",
+          "record_locator": "work_items[FLINK-24409]",
+          "source_field_path": "key",
+          "source_instance": {
+            "instance_id": "issues.apache.org",
+            "source_kind": "jira"
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": {
+        "entity_id": "KAFKA-13557",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "observation_context_id": "obs_apache_jira_real_001",
+      "observed_state": {
+        "_type": "WorkItemState",
+        "assignee": "<<|author_displayName|80e17eb6-fe3b-47b7-8192-124adc88992a|>>",
+        "created_at": "2021-12-20T18:43:03Z",
+        "due_at": null,
+        "extra_properties": {
+          "changelog_total": 17,
+          "issue_id": "13418679",
+          "project_key": "KAFKA",
+          "summary": "IQv2: Remove swapResult from the public API"
+        },
+        "key": "KAFKA-13557",
+        "priority_band": "medium",
+        "resolved_at": "2022-01-03T04:39:38Z",
+        "source_priority": "Major",
+        "source_status": "Resolved",
+        "status_category": "done",
+        "updated_at": "2022-01-03T04:39:38Z"
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/jira/KAFKA-13557.json",
+          "observation_id": "obs_apache_jira_real_001",
+          "record_locator": "work_items[KAFKA-13557]",
+          "source_field_path": "key",
+          "source_instance": {
+            "instance_id": "issues.apache.org",
+            "source_kind": "jira"
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": {
+        "entity_id": "PARQUET-1812",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "observation_context_id": "obs_apache_jira_real_001",
+      "observed_state": {
+        "_type": "WorkItemState",
+        "assignee": "<<|author_displayName|470a0de1-ecf2-4a31-bcdb-02c6c2f82431|>>",
+        "created_at": "2020-03-06T01:26:42Z",
+        "due_at": "2020-07-29T00:00:00Z",
+        "extra_properties": {
+          "changelog_total": 0,
+          "issue_id": "13289936",
+          "project_key": "PARQUET",
+          "summary": "Use airlift codecs for zstd "
+        },
+        "key": "PARQUET-1812",
+        "priority_band": "medium",
+        "resolved_at": null,
+        "source_priority": "Major",
+        "source_status": "Open",
+        "status_category": "to_do",
+        "updated_at": "2020-03-06T01:26:42Z"
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/negative_controls/jira/PARQUET-1812.json",
+          "observation_id": "obs_apache_jira_real_001",
+          "record_locator": "work_items[PARQUET-1812]",
+          "source_field_path": "key",
+          "source_instance": {
+            "instance_id": "issues.apache.org",
+            "source_kind": "jira"
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": {
+        "entity_id": "PARQUET-2010",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "observation_context_id": "obs_apache_jira_real_001",
+      "observed_state": {
+        "_type": "WorkItemState",
+        "assignee": "<<|author_displayName|18d57468-17f6-43c4-a6d2-8aad77ac4f5d|>>",
+        "created_at": "2021-03-25T14:56:51Z",
+        "due_at": null,
+        "extra_properties": {
+          "changelog_total": 2,
+          "issue_id": "13367621",
+          "project_key": "PARQUET",
+          "summary": "Fix japicmp issues"
+        },
+        "key": "PARQUET-2010",
+        "priority_band": "high",
+        "resolved_at": "2021-03-30T17:15:17Z",
+        "source_priority": "Blocker",
+        "source_status": "Resolved",
+        "status_category": "done",
+        "updated_at": "2021-03-30T17:15:18Z"
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/jira/PARQUET-2010.json",
+          "observation_id": "obs_apache_jira_real_001",
+          "record_locator": "work_items[PARQUET-2010]",
+          "source_field_path": "key",
+          "source_instance": {
+            "instance_id": "issues.apache.org",
+            "source_kind": "jira"
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": {
+        "entity_id": "ZOOKEEPER-4348",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "observation_context_id": "obs_apache_jira_real_001",
+      "observed_state": {
+        "_type": "WorkItemState",
+        "assignee": null,
+        "created_at": "2021-08-22T05:21:13Z",
+        "due_at": null,
+        "extra_properties": {
+          "changelog_total": 0,
+          "issue_id": "13396518",
+          "project_key": "ZOOKEEPER",
+          "summary": "Flaky test: RaceConditionTest.testRaceConditionBetweenLeaderAndAckRequestProcessor"
+        },
+        "key": "ZOOKEEPER-4348",
+        "priority_band": "medium",
+        "resolved_at": null,
+        "source_priority": "Major",
+        "source_status": "Open",
+        "status_category": "to_do",
+        "updated_at": "2021-08-22T05:21:13Z"
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/negative_controls/jira/ZOOKEEPER-4348.json",
+          "observation_id": "obs_apache_jira_real_001",
+          "record_locator": "work_items[ZOOKEEPER-4348]",
+          "source_field_path": "key",
+          "source_instance": {
+            "instance_id": "issues.apache.org",
+            "source_kind": "jira"
+          }
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "basis": "explicit_metadata",
+      "kind": "explicit_link",
+      "object_observation_id": "obs_apache_jira_real_001",
+      "object_ref": {
+        "entity_id": "AVRO-3234",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/avro/pull_1370.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[1370]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ],
+      "subject_observation_id": "obs_apache_github_real_001",
+      "subject_ref": {
+        "entity_id": "apache/avro/1370",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      }
+    },
+    {
+      "basis": "explicit_metadata",
+      "kind": "explicit_link",
+      "object_observation_id": "obs_apache_jira_real_001",
+      "object_ref": {
+        "entity_id": "FLINK-14386",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/flink/pull_10123.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[10123]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ],
+      "subject_observation_id": "obs_apache_github_real_001",
+      "subject_ref": {
+        "entity_id": "apache/flink/10123",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      }
+    },
+    {
+      "basis": "explicit_metadata",
+      "kind": "explicit_link",
+      "object_observation_id": "obs_apache_jira_real_001",
+      "object_ref": {
+        "entity_id": "FLINK-14665",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/flink/pull_10123.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[10123]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ],
+      "subject_observation_id": "obs_apache_github_real_001",
+      "subject_ref": {
+        "entity_id": "apache/flink/10123",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      }
+    },
+    {
+      "basis": "explicit_metadata",
+      "kind": "explicit_link",
+      "object_observation_id": "obs_apache_jira_real_001",
+      "object_ref": {
+        "entity_id": "FLINK-24409",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/flink/pull_17401.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[17401]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ],
+      "subject_observation_id": "obs_apache_github_real_001",
+      "subject_ref": {
+        "entity_id": "apache/flink/17401",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      }
+    },
+    {
+      "basis": "explicit_metadata",
+      "kind": "explicit_link",
+      "object_observation_id": "obs_apache_jira_real_001",
+      "object_ref": {
+        "entity_id": "FLINK-24409",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/flink/pull_17773.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[17773]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ],
+      "subject_observation_id": "obs_apache_github_real_001",
+      "subject_ref": {
+        "entity_id": "apache/flink/17773",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      }
+    },
+    {
+      "basis": "explicit_metadata",
+      "kind": "explicit_link",
+      "object_observation_id": "obs_apache_jira_real_001",
+      "object_ref": {
+        "entity_id": "FLINK-24409",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/flink/pull_17799.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[17799]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ],
+      "subject_observation_id": "obs_apache_github_real_001",
+      "subject_ref": {
+        "entity_id": "apache/flink/17799",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      }
+    },
+    {
+      "basis": "explicit_metadata",
+      "kind": "explicit_link",
+      "object_observation_id": "obs_apache_jira_real_001",
+      "object_ref": {
+        "entity_id": "KAFKA-13557",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/kafka/pull_11617.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[11617]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ],
+      "subject_observation_id": "obs_apache_github_real_001",
+      "subject_ref": {
+        "entity_id": "apache/kafka/11617",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      }
+    },
+    {
+      "basis": "structural_association",
+      "kind": "has_base_commit",
+      "object_observation_id": "obs_apache_github_real_001",
+      "object_ref": {
+        "entity_id": "apache/kafka/3e5eb564464dfc53697de5e48d5eb54b852ec47e",
+        "entity_kind": "github_commit",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/kafka/pull_11617.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[11617]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ],
+      "subject_observation_id": "obs_apache_github_real_001",
+      "subject_ref": {
+        "entity_id": "apache/kafka/11617",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      }
+    },
+    {
+      "basis": "structural_association",
+      "kind": "has_base_commit",
+      "object_observation_id": "obs_apache_github_real_001",
+      "object_ref": {
+        "entity_id": "apache/kafka/643674701c23d6eaffedc6082d088edb9c45f284",
+        "entity_kind": "github_commit",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/kafka/pull_11617.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[11617]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ],
+      "subject_observation_id": "obs_apache_github_real_001",
+      "subject_ref": {
+        "entity_id": "apache/kafka/11617",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      }
+    },
+    {
+      "basis": "structural_association",
+      "kind": "has_base_commit",
+      "object_observation_id": "obs_apache_github_real_001",
+      "object_ref": {
+        "entity_id": "apache/kafka/7adf192d4ba500533f0321b6d89bf5b9eb516593",
+        "entity_kind": "github_commit",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/kafka/pull_11617.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[11617]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ],
+      "subject_observation_id": "obs_apache_github_real_001",
+      "subject_ref": {
+        "entity_id": "apache/kafka/11617",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      }
+    },
+    {
+      "basis": "structural_association",
+      "kind": "has_base_commit",
+      "object_observation_id": "obs_apache_github_real_001",
+      "object_ref": {
+        "entity_id": "apache/kafka/96453f359d3d3b2416805e75cd0638051e4fc50f",
+        "entity_kind": "github_commit",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/kafka/pull_11617.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[11617]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ],
+      "subject_observation_id": "obs_apache_github_real_001",
+      "subject_ref": {
+        "entity_id": "apache/kafka/11617",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      }
+    },
+    {
+      "basis": "structural_association",
+      "kind": "has_head_commit",
+      "object_observation_id": "obs_apache_github_real_001",
+      "object_ref": {
+        "entity_id": "apache/kafka/ae79d6f780f4b188186944adafe1e04bf6795033",
+        "entity_kind": "github_commit",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/kafka/pull_11617.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[11617]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ],
+      "subject_observation_id": "obs_apache_github_real_001",
+      "subject_ref": {
+        "entity_id": "apache/kafka/11617",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      }
+    },
+    {
+      "basis": "lexical_match",
+      "kind": "mentions",
+      "object_observation_id": "obs_apache_jira_real_001",
+      "object_ref": {
+        "entity_id": "PARQUET-2010",
+        "entity_kind": "work_item",
+        "source_instance": {
+          "instance_id": "issues.apache.org",
+          "source_kind": "jira"
+        }
+      },
+      "provenance_refs": [
+        {
+          "fixture_id": "qualification/wave3/apache_real/github/parquet-java/pull_885.json",
+          "observation_id": "obs_apache_github_real_001",
+          "record_locator": "pull_requests[885]",
+          "source_field_path": "number",
+          "source_instance": {
+            "instance_id": "github.com/apache",
+            "source_kind": "github"
+          }
+        }
+      ],
+      "subject_observation_id": "obs_apache_github_real_001",
+      "subject_ref": {
+        "entity_id": "apache/parquet-java/885",
+        "entity_kind": "code_change",
+        "source_instance": {
+          "instance_id": "github.com/apache",
+          "source_kind": "github"
+        }
+      }
+    }
+  ]
+}

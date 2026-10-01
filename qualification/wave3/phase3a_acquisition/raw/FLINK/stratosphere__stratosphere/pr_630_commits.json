@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "357bc4a4ebee257882cfd7ed941a605e5a735ec2",
+    "node_id": "MDY6Q29tbWl0MTM1ODMxODk6MzU3YmM0YTRlYmVlMjU3ODgyY2ZkN2VkOTQxYTYwNWU1YTczNWVjMg==",
+    "commit": {
+      "author": {
+        "name": "Markus Holzemer",
+        "email": "markus.holzemer@gmx.de",
+        "date": "2014-03-26T10:56:23Z"
+      },
+      "committer": {
+        "name": "Markus Holzemer",
+        "email": "markus.holzemer@gmx.de",
+        "date": "2014-04-07T20:25:50Z"
+      },
+      "message": "small change to write function for new java api to set the write mode",
+      "tree": {
+        "sha": "0f2bcef546b5812502c4300cd78d96e7233482ee",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/0f2bcef546b5812502c4300cd78d96e7233482ee"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/357bc4a4ebee257882cfd7ed941a605e5a735ec2",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/357bc4a4ebee257882cfd7ed941a605e5a735ec2",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/357bc4a4ebee257882cfd7ed941a605e5a735ec2",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/357bc4a4ebee257882cfd7ed941a605e5a735ec2/comments",
+    "author": {
+      "login": "markus-h",
+      "id": 724330,
+      "node_id": "MDQ6VXNlcjcyNDMzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/724330?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/markus-h",
+      "html_url": "https://github.com/markus-h",
+      "followers_url": "https://api.github.com/users/markus-h/followers",
+      "following_url": "https://api.github.com/users/markus-h/following{/other_user}",
+      "gists_url": "https://api.github.com/users/markus-h/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/markus-h/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/markus-h/subscriptions",
+      "organizations_url": "https://api.github.com/users/markus-h/orgs",
+      "repos_url": "https://api.github.com/users/markus-h/repos",
+      "events_url": "https://api.github.com/users/markus-h/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/markus-h/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "markus-h",
+      "id": 724330,
+      "node_id": "MDQ6VXNlcjcyNDMzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/724330?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/markus-h",
+      "html_url": "https://github.com/markus-h",
+      "followers_url": "https://api.github.com/users/markus-h/followers",
+      "following_url": "https://api.github.com/users/markus-h/following{/other_user}",
+      "gists_url": "https://api.github.com/users/markus-h/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/markus-h/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/markus-h/subscriptions",
+      "organizations_url": "https://api.github.com/users/markus-h/orgs",
+      "repos_url": "https://api.github.com/users/markus-h/repos",
+      "events_url": "https://api.github.com/users/markus-h/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/markus-h/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "280a2caaf6f22d414f9e0653d0c3d2862c6b6746",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/280a2caaf6f22d414f9e0653d0c3d2862c6b6746",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/280a2caaf6f22d414f9e0653d0c3d2862c6b6746"
+      }
+    ]
+  }
+]

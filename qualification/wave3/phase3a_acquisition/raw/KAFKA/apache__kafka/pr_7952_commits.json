@@ -1,0 +1,674 @@
+[
+  {
+    "sha": "4e2486ce7d1650613e88aca761a556635084a8e1",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOjRlMjQ4NmNlN2QxNjUwNjEzZTg4YWNhNzYxYTU1NjYzNTA4NGE4ZTE=",
+    "commit": {
+      "author": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-15T00:09:46Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-21T23:23:19Z"
+      },
+      "message": "Revert \"revert client side changes\"\n\nThis reverts commit 437f8456983ba6234644c62a5cbfee5e77814cfb.",
+      "tree": {
+        "sha": "c4c4f2378b778f4908a4bfe026fae7a1b13913be",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/c4c4f2378b778f4908a4bfe026fae7a1b13913be"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/4e2486ce7d1650613e88aca761a556635084a8e1",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/4e2486ce7d1650613e88aca761a556635084a8e1",
+    "html_url": "https://github.com/apache/kafka/commit/4e2486ce7d1650613e88aca761a556635084a8e1",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/4e2486ce7d1650613e88aca761a556635084a8e1/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "6594114cbdc77609241535b9f4957796102ef20e",
+        "url": "https://api.github.com/repos/apache/kafka/commits/6594114cbdc77609241535b9f4957796102ef20e",
+        "html_url": "https://github.com/apache/kafka/commit/6594114cbdc77609241535b9f4957796102ef20e"
+      }
+    ]
+  },
+  {
+    "sha": "ce8856cd302b9f4cfd05f5601e7552c4b6f933b4",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOmNlODg1NmNkMzAyYjlmNGNmZDA1ZjU2MDFlNzU1MmM0YjZmOTMzYjQ=",
+    "commit": {
+      "author": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-10T00:38:45Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-21T23:23:19Z"
+      },
+      "message": "add producer send offsets",
+      "tree": {
+        "sha": "7f16237694f783a5557b007a7be8ad023d4fa3f5",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/7f16237694f783a5557b007a7be8ad023d4fa3f5"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/ce8856cd302b9f4cfd05f5601e7552c4b6f933b4",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/ce8856cd302b9f4cfd05f5601e7552c4b6f933b4",
+    "html_url": "https://github.com/apache/kafka/commit/ce8856cd302b9f4cfd05f5601e7552c4b6f933b4",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/ce8856cd302b9f4cfd05f5601e7552c4b6f933b4/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "4e2486ce7d1650613e88aca761a556635084a8e1",
+        "url": "https://api.github.com/repos/apache/kafka/commits/4e2486ce7d1650613e88aca761a556635084a8e1",
+        "html_url": "https://github.com/apache/kafka/commit/4e2486ce7d1650613e88aca761a556635084a8e1"
+      }
+    ]
+  },
+  {
+    "sha": "6770680646eb1309223d7293ee20e3327c3a1894",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOjY3NzA2ODA2NDZlYjEzMDkyMjNkNzI5M2VlMjBlMzMyN2MzYTE4OTQ=",
+    "commit": {
+      "author": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-15T00:46:05Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-21T23:23:19Z"
+      },
+      "message": "style fix",
+      "tree": {
+        "sha": "b63a3b197dd7d1bad462784e9eec94a812c317e0",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/b63a3b197dd7d1bad462784e9eec94a812c317e0"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/6770680646eb1309223d7293ee20e3327c3a1894",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/6770680646eb1309223d7293ee20e3327c3a1894",
+    "html_url": "https://github.com/apache/kafka/commit/6770680646eb1309223d7293ee20e3327c3a1894",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/6770680646eb1309223d7293ee20e3327c3a1894/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "ce8856cd302b9f4cfd05f5601e7552c4b6f933b4",
+        "url": "https://api.github.com/repos/apache/kafka/commits/ce8856cd302b9f4cfd05f5601e7552c4b6f933b4",
+        "html_url": "https://github.com/apache/kafka/commit/ce8856cd302b9f4cfd05f5601e7552c4b6f933b4"
+      }
+    ]
+  },
+  {
+    "sha": "eac6fe6f70d35ed320cbef5793ff0448e81e5619",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOmVhYzZmZTZmNzBkMzVlZDMyMGNiZWY1NzkzZmYwNDQ4ZTgxZTU2MTk=",
+    "commit": {
+      "author": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-15T03:51:16Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-21T23:23:19Z"
+      },
+      "message": "address Matthias comments from previous PR",
+      "tree": {
+        "sha": "3d489e2cdee2a2a4ec4dca804dd8fa6f06a6ffae",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/3d489e2cdee2a2a4ec4dca804dd8fa6f06a6ffae"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/eac6fe6f70d35ed320cbef5793ff0448e81e5619",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/eac6fe6f70d35ed320cbef5793ff0448e81e5619",
+    "html_url": "https://github.com/apache/kafka/commit/eac6fe6f70d35ed320cbef5793ff0448e81e5619",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/eac6fe6f70d35ed320cbef5793ff0448e81e5619/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "6770680646eb1309223d7293ee20e3327c3a1894",
+        "url": "https://api.github.com/repos/apache/kafka/commits/6770680646eb1309223d7293ee20e3327c3a1894",
+        "html_url": "https://github.com/apache/kafka/commit/6770680646eb1309223d7293ee20e3327c3a1894"
+      }
+    ]
+  },
+  {
+    "sha": "49b163fc8b2443ad1c0ed9eafc2f1c83a0f60a96",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOjQ5YjE2M2ZjOGIyNDQzYWQxYzBlZDllYWZjMmYxYzgzYTBmNjBhOTY=",
+    "commit": {
+      "author": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-15T06:40:54Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-21T23:23:19Z"
+      },
+      "message": "illegal state tests for group related exception",
+      "tree": {
+        "sha": "f2400da2af2301916e93c3a8162faa9e24c6873b",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/f2400da2af2301916e93c3a8162faa9e24c6873b"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/49b163fc8b2443ad1c0ed9eafc2f1c83a0f60a96",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/49b163fc8b2443ad1c0ed9eafc2f1c83a0f60a96",
+    "html_url": "https://github.com/apache/kafka/commit/49b163fc8b2443ad1c0ed9eafc2f1c83a0f60a96",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/49b163fc8b2443ad1c0ed9eafc2f1c83a0f60a96/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "eac6fe6f70d35ed320cbef5793ff0448e81e5619",
+        "url": "https://api.github.com/repos/apache/kafka/commits/eac6fe6f70d35ed320cbef5793ff0448e81e5619",
+        "html_url": "https://github.com/apache/kafka/commit/eac6fe6f70d35ed320cbef5793ff0448e81e5619"
+      }
+    ]
+  },
+  {
+    "sha": "850e6602c1eb3457ae5098aaf45cb8e8d8ddcc79",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOjg1MGU2NjAyYzFlYjM0NTdhZTUwOThhYWY0NWNiOGU4ZDhkZGNjNzk=",
+    "commit": {
+      "author": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-15T17:54:14Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-21T23:23:19Z"
+      },
+      "message": "hide details about txn commit data creation",
+      "tree": {
+        "sha": "42b9fadc3e0ec45780fc160e77c29e2cbbd354b8",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/42b9fadc3e0ec45780fc160e77c29e2cbbd354b8"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/850e6602c1eb3457ae5098aaf45cb8e8d8ddcc79",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/850e6602c1eb3457ae5098aaf45cb8e8d8ddcc79",
+    "html_url": "https://github.com/apache/kafka/commit/850e6602c1eb3457ae5098aaf45cb8e8d8ddcc79",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/850e6602c1eb3457ae5098aaf45cb8e8d8ddcc79/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "49b163fc8b2443ad1c0ed9eafc2f1c83a0f60a96",
+        "url": "https://api.github.com/repos/apache/kafka/commits/49b163fc8b2443ad1c0ed9eafc2f1c83a0f60a96",
+        "html_url": "https://github.com/apache/kafka/commit/49b163fc8b2443ad1c0ed9eafc2f1c83a0f60a96"
+      }
+    ]
+  },
+  {
+    "sha": "2dd1a1dc742f38eb4cfa86fe91ba1fe088a13c40",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOjJkZDFhMWRjNzQyZjM4ZWI0Y2ZhODZmZTkxYmExZmUwODhhMTNjNDA=",
+    "commit": {
+      "author": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-15T20:55:27Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-21T23:23:19Z"
+      },
+      "message": "premilinary producer txn API tests",
+      "tree": {
+        "sha": "1556839eca256ff97753a6e33538a9d7fada1a3a",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/1556839eca256ff97753a6e33538a9d7fada1a3a"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/2dd1a1dc742f38eb4cfa86fe91ba1fe088a13c40",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/2dd1a1dc742f38eb4cfa86fe91ba1fe088a13c40",
+    "html_url": "https://github.com/apache/kafka/commit/2dd1a1dc742f38eb4cfa86fe91ba1fe088a13c40",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/2dd1a1dc742f38eb4cfa86fe91ba1fe088a13c40/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "850e6602c1eb3457ae5098aaf45cb8e8d8ddcc79",
+        "url": "https://api.github.com/repos/apache/kafka/commits/850e6602c1eb3457ae5098aaf45cb8e8d8ddcc79",
+        "html_url": "https://github.com/apache/kafka/commit/850e6602c1eb3457ae5098aaf45cb8e8d8ddcc79"
+      }
+    ]
+  },
+  {
+    "sha": "271014808657ca81816d49f1292bd7fd14dc388c",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOjI3MTAxNDgwODY1N2NhODE4MTZkNDlmMTI5MmJkN2ZkMTRkYzM4OGM=",
+    "commit": {
+      "author": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-15T21:08:42Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-21T23:23:19Z"
+      },
+      "message": "txn commit test fix",
+      "tree": {
+        "sha": "cd6623ffea5aab8082fd5a4da8de109c1e487345",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/cd6623ffea5aab8082fd5a4da8de109c1e487345"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/271014808657ca81816d49f1292bd7fd14dc388c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/271014808657ca81816d49f1292bd7fd14dc388c",
+    "html_url": "https://github.com/apache/kafka/commit/271014808657ca81816d49f1292bd7fd14dc388c",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/271014808657ca81816d49f1292bd7fd14dc388c/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "2dd1a1dc742f38eb4cfa86fe91ba1fe088a13c40",
+        "url": "https://api.github.com/repos/apache/kafka/commits/2dd1a1dc742f38eb4cfa86fe91ba1fe088a13c40",
+        "html_url": "https://github.com/apache/kafka/commit/2dd1a1dc742f38eb4cfa86fe91ba1fe088a13c40"
+      }
+    ]
+  },
+  {
+    "sha": "d45fa60572ee931a940f67063d812912e15102e6",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOmQ0NWZhNjA1NzJlZTkzMWE5NDBmNjcwNjNkODEyOTEyZTE1MTAyZTY=",
+    "commit": {
+      "author": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-17T04:56:01Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-21T23:23:19Z"
+      },
+      "message": "address comments",
+      "tree": {
+        "sha": "13b23cde9403df870151d390ced126b2e15095de",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/13b23cde9403df870151d390ced126b2e15095de"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/d45fa60572ee931a940f67063d812912e15102e6",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/d45fa60572ee931a940f67063d812912e15102e6",
+    "html_url": "https://github.com/apache/kafka/commit/d45fa60572ee931a940f67063d812912e15102e6",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/d45fa60572ee931a940f67063d812912e15102e6/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "271014808657ca81816d49f1292bd7fd14dc388c",
+        "url": "https://api.github.com/repos/apache/kafka/commits/271014808657ca81816d49f1292bd7fd14dc388c",
+        "html_url": "https://github.com/apache/kafka/commit/271014808657ca81816d49f1292bd7fd14dc388c"
+      }
+    ]
+  },
+  {
+    "sha": "966c309d4e367300434557bd7b156878d1ffb3af",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOjk2NmMzMDlkNGUzNjczMDA0MzQ1NTdiZDdiMTU2ODc4ZDFmZmIzYWY=",
+    "commit": {
+      "author": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-19T01:45:46Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-21T23:23:19Z"
+      },
+      "message": "address Jason's comments",
+      "tree": {
+        "sha": "b66f8d69a451e7c9a5049ba38d127b2376583de7",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/b66f8d69a451e7c9a5049ba38d127b2376583de7"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/966c309d4e367300434557bd7b156878d1ffb3af",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/966c309d4e367300434557bd7b156878d1ffb3af",
+    "html_url": "https://github.com/apache/kafka/commit/966c309d4e367300434557bd7b156878d1ffb3af",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/966c309d4e367300434557bd7b156878d1ffb3af/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "d45fa60572ee931a940f67063d812912e15102e6",
+        "url": "https://api.github.com/repos/apache/kafka/commits/d45fa60572ee931a940f67063d812912e15102e6",
+        "html_url": "https://github.com/apache/kafka/commit/d45fa60572ee931a940f67063d812912e15102e6"
+      }
+    ]
+  },
+  {
+    "sha": "88050c172b89ec1f6c4969988ce2cbb1adcf7089",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOjg4MDUwYzE3MmI4OWVjMWY2YzQ5Njk5ODhjZTJjYmIxYWRjZjcwODk=",
+    "commit": {
+      "author": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-19T07:37:25Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-21T23:23:19Z"
+      },
+      "message": "Guozhang's comment for cleanup Producer.java",
+      "tree": {
+        "sha": "f8c75b539a0968c4b48414f910e43231a46a7de6",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/f8c75b539a0968c4b48414f910e43231a46a7de6"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/88050c172b89ec1f6c4969988ce2cbb1adcf7089",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/88050c172b89ec1f6c4969988ce2cbb1adcf7089",
+    "html_url": "https://github.com/apache/kafka/commit/88050c172b89ec1f6c4969988ce2cbb1adcf7089",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/88050c172b89ec1f6c4969988ce2cbb1adcf7089/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "966c309d4e367300434557bd7b156878d1ffb3af",
+        "url": "https://api.github.com/repos/apache/kafka/commits/966c309d4e367300434557bd7b156878d1ffb3af",
+        "html_url": "https://github.com/apache/kafka/commit/966c309d4e367300434557bd7b156878d1ffb3af"
+      }
+    ]
+  },
+  {
+    "sha": "aabe1a5c0f3c5be2d4946aa1b09af66fb2ad5656",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOmFhYmUxYTVjMGYzYzViZTJkNDk0NmFhMWIwOWFmNjZmYjJhZDU2NTY=",
+    "commit": {
+      "author": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-19T20:38:35Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-21T23:23:19Z"
+      },
+      "message": "address Jason's comments",
+      "tree": {
+        "sha": "7d1617dbc2f5b22067c8b3bd2be2614aec809f45",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/7d1617dbc2f5b22067c8b3bd2be2614aec809f45"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/aabe1a5c0f3c5be2d4946aa1b09af66fb2ad5656",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/aabe1a5c0f3c5be2d4946aa1b09af66fb2ad5656",
+    "html_url": "https://github.com/apache/kafka/commit/aabe1a5c0f3c5be2d4946aa1b09af66fb2ad5656",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/aabe1a5c0f3c5be2d4946aa1b09af66fb2ad5656/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "88050c172b89ec1f6c4969988ce2cbb1adcf7089",
+        "url": "https://api.github.com/repos/apache/kafka/commits/88050c172b89ec1f6c4969988ce2cbb1adcf7089",
+        "html_url": "https://github.com/apache/kafka/commit/88050c172b89ec1f6c4969988ce2cbb1adcf7089"
+      }
+    ]
+  },
+  {
+    "sha": "a08d25ecc111385e24d4bcff452a04b81587c525",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOmEwOGQyNWVjYzExMTM4NWUyNGQ0YmNmZjQ1MmEwNGI4MTU4N2M1MjU=",
+    "commit": {
+      "author": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-21T23:00:41Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-21T23:23:40Z"
+      },
+      "message": "add checks to group metadata",
+      "tree": {
+        "sha": "3d614008b10a48a095ea098d388a0b18e34ba72e",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/3d614008b10a48a095ea098d388a0b18e34ba72e"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/a08d25ecc111385e24d4bcff452a04b81587c525",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/a08d25ecc111385e24d4bcff452a04b81587c525",
+    "html_url": "https://github.com/apache/kafka/commit/a08d25ecc111385e24d4bcff452a04b81587c525",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/a08d25ecc111385e24d4bcff452a04b81587c525/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "aabe1a5c0f3c5be2d4946aa1b09af66fb2ad5656",
+        "url": "https://api.github.com/repos/apache/kafka/commits/aabe1a5c0f3c5be2d4946aa1b09af66fb2ad5656",
+        "html_url": "https://github.com/apache/kafka/commit/aabe1a5c0f3c5be2d4946aa1b09af66fb2ad5656"
+      }
+    ]
+  },
+  {
+    "sha": "2706908e3524f76c2ef749d3907815de4360fd8f",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOjI3MDY5MDhlMzUyNGY3NmMyZWY3NDlkMzkwNzgxNWRlNDM2MGZkOGY=",
+    "commit": {
+      "author": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-22T04:10:48Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-22T04:31:02Z"
+      },
+      "message": "expose FencedInstanceId exception",
+      "tree": {
+        "sha": "1c4dd2f9a3c3c96fdfe1a757989e545e16ffc0fc",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/1c4dd2f9a3c3c96fdfe1a757989e545e16ffc0fc"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/2706908e3524f76c2ef749d3907815de4360fd8f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/2706908e3524f76c2ef749d3907815de4360fd8f",
+    "html_url": "https://github.com/apache/kafka/commit/2706908e3524f76c2ef749d3907815de4360fd8f",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/2706908e3524f76c2ef749d3907815de4360fd8f/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "a08d25ecc111385e24d4bcff452a04b81587c525",
+        "url": "https://api.github.com/repos/apache/kafka/commits/a08d25ecc111385e24d4bcff452a04b81587c525",
+        "html_url": "https://github.com/apache/kafka/commit/a08d25ecc111385e24d4bcff452a04b81587c525"
+      }
+    ]
+  },
+  {
+    "sha": "9cf4a2a546625f337c4e2e28da3e6b3a956fa309",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOjljZjRhMmE1NDY2MjVmMzM3YzRlMmUyOGRhM2U2YjNhOTU2ZmEzMDk=",
+    "commit": {
+      "author": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-22T17:45:23Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-22T17:48:18Z"
+      },
+      "message": "final comment",
+      "tree": {
+        "sha": "bc28f531702e574b488fd51ca073cd6a5706800e",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/bc28f531702e574b488fd51ca073cd6a5706800e"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/9cf4a2a546625f337c4e2e28da3e6b3a956fa309",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/9cf4a2a546625f337c4e2e28da3e6b3a956fa309",
+    "html_url": "https://github.com/apache/kafka/commit/9cf4a2a546625f337c4e2e28da3e6b3a956fa309",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/9cf4a2a546625f337c4e2e28da3e6b3a956fa309/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "2706908e3524f76c2ef749d3907815de4360fd8f",
+        "url": "https://api.github.com/repos/apache/kafka/commits/2706908e3524f76c2ef749d3907815de4360fd8f",
+        "html_url": "https://github.com/apache/kafka/commit/2706908e3524f76c2ef749d3907815de4360fd8f"
+      }
+    ]
+  },
+  {
+    "sha": "e81e0daaec396ec5be7cc3d3cc2adae42f242e95",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOmU4MWUwZGFhZWMzOTZlYzViZTdjYzNkM2NjMmFkYWU0MmYyNDJlOTU=",
+    "commit": {
+      "author": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-22T18:29:23Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2020-01-22T18:43:20Z"
+      },
+      "message": "move group.id null check",
+      "tree": {
+        "sha": "afdb0dd3c34272f79f03706bb8cf4863b8c09cc0",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/afdb0dd3c34272f79f03706bb8cf4863b8c09cc0"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/e81e0daaec396ec5be7cc3d3cc2adae42f242e95",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/e81e0daaec396ec5be7cc3d3cc2adae42f242e95",
+    "html_url": "https://github.com/apache/kafka/commit/e81e0daaec396ec5be7cc3d3cc2adae42f242e95",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/e81e0daaec396ec5be7cc3d3cc2adae42f242e95/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "9cf4a2a546625f337c4e2e28da3e6b3a956fa309",
+        "url": "https://api.github.com/repos/apache/kafka/commits/9cf4a2a546625f337c4e2e28da3e6b3a956fa309",
+        "html_url": "https://github.com/apache/kafka/commit/9cf4a2a546625f337c4e2e28da3e6b3a956fa309"
+      }
+    ]
+  }
+]

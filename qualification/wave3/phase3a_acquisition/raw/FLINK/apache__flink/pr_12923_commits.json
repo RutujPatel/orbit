@@ -1,0 +1,248 @@
+[
+  {
+    "sha": "60477b44b67de278b488a9355c435f21ea5b3953",
+    "node_id": "MDY6Q29tbWl0ODI2NzMzOTY6NjA0NzdiNDRiNjdkZTI3OGI0ODhhOTM1NWM0MzVmMjFlYTViMzk1Mw==",
+    "commit": {
+      "author": {
+        "name": "godfreyhe",
+        "email": "godfreyhe@163.com",
+        "date": "2020-07-17T11:27:06Z"
+      },
+      "committer": {
+        "name": "godfreyhe",
+        "email": "godfreyhe@163.com",
+        "date": "2020-07-23T01:39:12Z"
+      },
+      "message": "[FLINK-18621][sql-client] Simplify the methods of Executor interface in sql client",
+      "tree": {
+        "sha": "4c27fb47cb27cf748fd65ba7a8cbb58fe67518c1",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/4c27fb47cb27cf748fd65ba7a8cbb58fe67518c1"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/60477b44b67de278b488a9355c435f21ea5b3953",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/60477b44b67de278b488a9355c435f21ea5b3953",
+    "html_url": "https://github.com/apache/flink/commit/60477b44b67de278b488a9355c435f21ea5b3953",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/60477b44b67de278b488a9355c435f21ea5b3953/comments",
+    "author": {
+      "login": "godfreyhe",
+      "id": 8777671,
+      "node_id": "MDQ6VXNlcjg3Nzc2NzE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8777671?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/godfreyhe",
+      "html_url": "https://github.com/godfreyhe",
+      "followers_url": "https://api.github.com/users/godfreyhe/followers",
+      "following_url": "https://api.github.com/users/godfreyhe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/godfreyhe/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/godfreyhe/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/godfreyhe/subscriptions",
+      "organizations_url": "https://api.github.com/users/godfreyhe/orgs",
+      "repos_url": "https://api.github.com/users/godfreyhe/repos",
+      "events_url": "https://api.github.com/users/godfreyhe/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/godfreyhe/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "godfreyhe",
+      "id": 8777671,
+      "node_id": "MDQ6VXNlcjg3Nzc2NzE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8777671?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/godfreyhe",
+      "html_url": "https://github.com/godfreyhe",
+      "followers_url": "https://api.github.com/users/godfreyhe/followers",
+      "following_url": "https://api.github.com/users/godfreyhe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/godfreyhe/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/godfreyhe/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/godfreyhe/subscriptions",
+      "organizations_url": "https://api.github.com/users/godfreyhe/orgs",
+      "repos_url": "https://api.github.com/users/godfreyhe/repos",
+      "events_url": "https://api.github.com/users/godfreyhe/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/godfreyhe/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "23f65064db0d3aca6b725b14e0bd2cb4b7f6cc64",
+        "url": "https://api.github.com/repos/apache/flink/commits/23f65064db0d3aca6b725b14e0bd2cb4b7f6cc64",
+        "html_url": "https://github.com/apache/flink/commit/23f65064db0d3aca6b725b14e0bd2cb4b7f6cc64"
+      }
+    ]
+  },
+  {
+    "sha": "e35150d1bb4867d967368340dc7a7a026d2412af",
+    "node_id": "MDY6Q29tbWl0ODI2NzMzOTY6ZTM1MTUwZDFiYjQ4NjdkOTY3MzY4MzQwZGM3YTdhMDI2ZDI0MTJhZg==",
+    "commit": {
+      "author": {
+        "name": "godfreyhe",
+        "email": "godfreyhe@163.com",
+        "date": "2020-07-20T08:09:05Z"
+      },
+      "committer": {
+        "name": "godfreyhe",
+        "email": "godfreyhe@163.com",
+        "date": "2020-07-23T01:39:12Z"
+      },
+      "message": "fix compile error",
+      "tree": {
+        "sha": "407338dd1c3fd4ca386b41c4023fe893d35b7bb2",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/407338dd1c3fd4ca386b41c4023fe893d35b7bb2"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/e35150d1bb4867d967368340dc7a7a026d2412af",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/e35150d1bb4867d967368340dc7a7a026d2412af",
+    "html_url": "https://github.com/apache/flink/commit/e35150d1bb4867d967368340dc7a7a026d2412af",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/e35150d1bb4867d967368340dc7a7a026d2412af/comments",
+    "author": {
+      "login": "godfreyhe",
+      "id": 8777671,
+      "node_id": "MDQ6VXNlcjg3Nzc2NzE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8777671?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/godfreyhe",
+      "html_url": "https://github.com/godfreyhe",
+      "followers_url": "https://api.github.com/users/godfreyhe/followers",
+      "following_url": "https://api.github.com/users/godfreyhe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/godfreyhe/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/godfreyhe/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/godfreyhe/subscriptions",
+      "organizations_url": "https://api.github.com/users/godfreyhe/orgs",
+      "repos_url": "https://api.github.com/users/godfreyhe/repos",
+      "events_url": "https://api.github.com/users/godfreyhe/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/godfreyhe/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "godfreyhe",
+      "id": 8777671,
+      "node_id": "MDQ6VXNlcjg3Nzc2NzE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8777671?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/godfreyhe",
+      "html_url": "https://github.com/godfreyhe",
+      "followers_url": "https://api.github.com/users/godfreyhe/followers",
+      "following_url": "https://api.github.com/users/godfreyhe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/godfreyhe/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/godfreyhe/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/godfreyhe/subscriptions",
+      "organizations_url": "https://api.github.com/users/godfreyhe/orgs",
+      "repos_url": "https://api.github.com/users/godfreyhe/repos",
+      "events_url": "https://api.github.com/users/godfreyhe/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/godfreyhe/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "60477b44b67de278b488a9355c435f21ea5b3953",
+        "url": "https://api.github.com/repos/apache/flink/commits/60477b44b67de278b488a9355c435f21ea5b3953",
+        "html_url": "https://github.com/apache/flink/commit/60477b44b67de278b488a9355c435f21ea5b3953"
+      }
+    ]
+  },
+  {
+    "sha": "81bfbff96af91c7543ab8222cfe6aadb551d3d15",
+    "node_id": "MDY6Q29tbWl0ODI2NzMzOTY6ODFiZmJmZjk2YWY5MWM3NTQzYWI4MjIyY2ZlNmFhZGI1NTFkM2QxNQ==",
+    "commit": {
+      "author": {
+        "name": "godfreyhe",
+        "email": "godfreyhe@163.com",
+        "date": "2020-07-20T12:04:24Z"
+      },
+      "committer": {
+        "name": "godfreyhe",
+        "email": "godfreyhe@163.com",
+        "date": "2020-07-23T01:39:13Z"
+      },
+      "message": "fix compile error",
+      "tree": {
+        "sha": "66e9fe8c2276f2dcbff6c6c825be9e4feb2c6202",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/66e9fe8c2276f2dcbff6c6c825be9e4feb2c6202"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/81bfbff96af91c7543ab8222cfe6aadb551d3d15",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/81bfbff96af91c7543ab8222cfe6aadb551d3d15",
+    "html_url": "https://github.com/apache/flink/commit/81bfbff96af91c7543ab8222cfe6aadb551d3d15",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/81bfbff96af91c7543ab8222cfe6aadb551d3d15/comments",
+    "author": {
+      "login": "godfreyhe",
+      "id": 8777671,
+      "node_id": "MDQ6VXNlcjg3Nzc2NzE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8777671?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/godfreyhe",
+      "html_url": "https://github.com/godfreyhe",
+      "followers_url": "https://api.github.com/users/godfreyhe/followers",
+      "following_url": "https://api.github.com/users/godfreyhe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/godfreyhe/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/godfreyhe/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/godfreyhe/subscriptions",
+      "organizations_url": "https://api.github.com/users/godfreyhe/orgs",
+      "repos_url": "https://api.github.com/users/godfreyhe/repos",
+      "events_url": "https://api.github.com/users/godfreyhe/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/godfreyhe/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "godfreyhe",
+      "id": 8777671,
+      "node_id": "MDQ6VXNlcjg3Nzc2NzE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8777671?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/godfreyhe",
+      "html_url": "https://github.com/godfreyhe",
+      "followers_url": "https://api.github.com/users/godfreyhe/followers",
+      "following_url": "https://api.github.com/users/godfreyhe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/godfreyhe/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/godfreyhe/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/godfreyhe/subscriptions",
+      "organizations_url": "https://api.github.com/users/godfreyhe/orgs",
+      "repos_url": "https://api.github.com/users/godfreyhe/repos",
+      "events_url": "https://api.github.com/users/godfreyhe/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/godfreyhe/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e35150d1bb4867d967368340dc7a7a026d2412af",
+        "url": "https://api.github.com/repos/apache/flink/commits/e35150d1bb4867d967368340dc7a7a026d2412af",
+        "html_url": "https://github.com/apache/flink/commit/e35150d1bb4867d967368340dc7a7a026d2412af"
+      }
+    ]
+  }
+]

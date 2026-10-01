@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "79f8f362521be7fd6526749cd166ca53ac6ea2d4",
+    "node_id": "MDY6Q29tbWl0OTQ5OTQyMjo3OWY4ZjM2MjUyMWJlN2ZkNjUyNjc0OWNkMTY2Y2E1M2FjNmVhMmQ0",
+    "commit": {
+      "author": {
+        "name": "Hasan G\u00fcrcan",
+        "email": "hasan.gurcan@yahoo.de",
+        "date": "2013-12-02T14:36:17Z"
+      },
+      "committer": {
+        "name": "Hasan G\u00fcrcan",
+        "email": "hasan.gurcan@yahoo.de",
+        "date": "2013-12-02T14:36:17Z"
+      },
+      "message": "Update CONTRIBUTORS",
+      "tree": {
+        "sha": "7abf2daa4073ffe2159d1f22564cf0579f56e836",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/7abf2daa4073ffe2159d1f22564cf0579f56e836"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/79f8f362521be7fd6526749cd166ca53ac6ea2d4",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/79f8f362521be7fd6526749cd166ca53ac6ea2d4",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/79f8f362521be7fd6526749cd166ca53ac6ea2d4",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/79f8f362521be7fd6526749cd166ca53ac6ea2d4/comments",
+    "author": {
+      "login": "emrehasan",
+      "id": 1174893,
+      "node_id": "MDQ6VXNlcjExNzQ4OTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1174893?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emrehasan",
+      "html_url": "https://github.com/emrehasan",
+      "followers_url": "https://api.github.com/users/emrehasan/followers",
+      "following_url": "https://api.github.com/users/emrehasan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emrehasan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emrehasan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emrehasan/subscriptions",
+      "organizations_url": "https://api.github.com/users/emrehasan/orgs",
+      "repos_url": "https://api.github.com/users/emrehasan/repos",
+      "events_url": "https://api.github.com/users/emrehasan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emrehasan/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "emrehasan",
+      "id": 1174893,
+      "node_id": "MDQ6VXNlcjExNzQ4OTM=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1174893?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/emrehasan",
+      "html_url": "https://github.com/emrehasan",
+      "followers_url": "https://api.github.com/users/emrehasan/followers",
+      "following_url": "https://api.github.com/users/emrehasan/following{/other_user}",
+      "gists_url": "https://api.github.com/users/emrehasan/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/emrehasan/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/emrehasan/subscriptions",
+      "organizations_url": "https://api.github.com/users/emrehasan/orgs",
+      "repos_url": "https://api.github.com/users/emrehasan/repos",
+      "events_url": "https://api.github.com/users/emrehasan/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/emrehasan/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c61bc993f9dd4825199c922086c5ed6c63e4c791",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/c61bc993f9dd4825199c922086c5ed6c63e4c791",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/c61bc993f9dd4825199c922086c5ed6c63e4c791"
+      }
+    ]
+  }
+]

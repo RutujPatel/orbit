@@ -1,0 +1,42 @@
+[
+  {
+    "id": 269918169,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjY5OTE4MTY5",
+    "user": {
+      "login": "wesm",
+      "id": 329591,
+      "node_id": "MDQ6VXNlcjMyOTU5MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/329591?u=2d251e2cbb5d0cec2679657458ec24c7398e8de9&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wesm",
+      "html_url": "https://github.com/wesm",
+      "followers_url": "https://api.github.com/users/wesm/followers",
+      "following_url": "https://api.github.com/users/wesm/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wesm/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wesm/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wesm/subscriptions",
+      "organizations_url": "https://api.github.com/users/wesm/orgs",
+      "repos_url": "https://api.github.com/users/wesm/repos",
+      "events_url": "https://api.github.com/users/wesm/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wesm/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "+1\r\n\r\nTravis build: https://travis-ci.org/mathworks/arrow/builds/566572411\r\n\r\nI can live with this but I agree w/ @fsaintjacques it would probably be better to remove the regex dependency altogether. I wouldn't go out of anyone's way to deal with this right now though",
+    "state": "APPROVED",
+    "html_url": "https://github.com/apache/arrow/pull/4985#pullrequestreview-269918169",
+    "pull_request_url": "https://api.github.com/repos/apache/arrow/pulls/4985",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/arrow/pull/4985#pullrequestreview-269918169"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/arrow/pulls/4985"
+      }
+    },
+    "submitted_at": "2019-08-01T22:59:40Z",
+    "commit_id": "c88bb4e4760362d35ce53a49cceb397739fe389d"
+  }
+]

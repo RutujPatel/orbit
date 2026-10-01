@@ -1,0 +1,42 @@
+{
+  "AXIOS-12613773": {
+    "canonical_work_item_created": false,
+    "identifier": "AXIOS-12613773",
+    "is_valid_apache_jira_key": false,
+    "isolation_status": "REJECTED",
+    "source_file": "negative_controls/github/snyk_bot/pull_8.json",
+    "type": "github_pr_bot_cve_mimic"
+  },
+  "PARQUET-1812": {
+    "cross_system_alignments_count": 0,
+    "cross_system_relationships_count": 0,
+    "entity_id": "PARQUET-1812",
+    "entity_kind": "work_item",
+    "evaluator_findings_count": 0,
+    "isolation_status": "ISOLATED",
+    "source_status": "Open",
+    "status_category": "to_do",
+    "type": "jira_unlinked"
+  },
+  "ZOOKEEPER-4348": {
+    "cross_system_alignments_count": 0,
+    "cross_system_relationships_count": 0,
+    "entity_id": "ZOOKEEPER-4348",
+    "entity_kind": "work_item",
+    "evaluator_findings_count": 0,
+    "isolation_status": "ISOLATED",
+    "source_status": "Open",
+    "status_category": "to_do",
+    "type": "jira_unlinked"
+  },
+  "apache/parquet-java#3822": {
+    "cross_system_alignments_count": 0,
+    "cross_system_relationships_count": 0,
+    "entity_id": "apache/parquet-java/3822",
+    "entity_kind": "code_change",
+    "evaluator_findings_count": 0,
+    "isolation_status": "ISOLATED",
+    "title": "GH-3792: Add more test coverage for AvroParquetReader",
+    "type": "github_pr_unlinked"
+  }
+}

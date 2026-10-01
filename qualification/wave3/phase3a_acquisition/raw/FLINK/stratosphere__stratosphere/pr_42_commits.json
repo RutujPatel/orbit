@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "a452fd48e971fa17423785398015aac887dbb6c0",
+    "node_id": "MDY6Q29tbWl0OTQ5OTQyMjphNDUyZmQ0OGU5NzFmYTE3NDIzNzg1Mzk4MDE1YWFjODg3ZGJiNmMw",
+    "commit": {
+      "author": {
+        "name": "Aljoscha Krettek",
+        "email": "aljoscha.krettek@gmail.com",
+        "date": "2013-06-29T09:29:34Z"
+      },
+      "committer": {
+        "name": "Aljoscha Krettek",
+        "email": "aljoscha.krettek@gmail.com",
+        "date": "2013-07-23T08:49:27Z"
+      },
+      "message": "Fix config and start scripts to work on Windows/cygwin\n\nAlso fix WebInterfaceServer.java to properly check whether path\nis absolute on Windows.\n\nDefault directory entries in nephele-user.xml and pact-user.xml\nare now commented out because java code will load proper default.",
+      "tree": {
+        "sha": "bc5ccbbf04d6da1413c7fe847cb36a13ce3ff0cf",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/bc5ccbbf04d6da1413c7fe847cb36a13ce3ff0cf"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/a452fd48e971fa17423785398015aac887dbb6c0",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/a452fd48e971fa17423785398015aac887dbb6c0",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/a452fd48e971fa17423785398015aac887dbb6c0",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/a452fd48e971fa17423785398015aac887dbb6c0/comments",
+    "author": {
+      "login": "aljoscha",
+      "id": 68551,
+      "node_id": "MDQ6VXNlcjY4NTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68551?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aljoscha",
+      "html_url": "https://github.com/aljoscha",
+      "followers_url": "https://api.github.com/users/aljoscha/followers",
+      "following_url": "https://api.github.com/users/aljoscha/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aljoscha/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aljoscha/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aljoscha/subscriptions",
+      "organizations_url": "https://api.github.com/users/aljoscha/orgs",
+      "repos_url": "https://api.github.com/users/aljoscha/repos",
+      "events_url": "https://api.github.com/users/aljoscha/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aljoscha/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "aljoscha",
+      "id": 68551,
+      "node_id": "MDQ6VXNlcjY4NTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68551?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aljoscha",
+      "html_url": "https://github.com/aljoscha",
+      "followers_url": "https://api.github.com/users/aljoscha/followers",
+      "following_url": "https://api.github.com/users/aljoscha/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aljoscha/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aljoscha/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aljoscha/subscriptions",
+      "organizations_url": "https://api.github.com/users/aljoscha/orgs",
+      "repos_url": "https://api.github.com/users/aljoscha/repos",
+      "events_url": "https://api.github.com/users/aljoscha/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aljoscha/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e892cbb210a9fbdde0b1f37380e55be42b9a50b4",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/e892cbb210a9fbdde0b1f37380e55be42b9a50b4",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/e892cbb210a9fbdde0b1f37380e55be42b9a50b4"
+      }
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "manifest_path": "qualification/wave3/phase3a_acquisition/manifest/phase3a_frozen_cohort.json",
+  "expected_cohort_sha256": "3aa4ebabefa84e95dd433d20ba82c852cce4a1bfe7a4f246bb9c01873f077775",
+  "actual_cohort_sha256": "3aa4ebabefa84e95dd433d20ba82c852cce4a1bfe7a4f246bb9c01873f077775",
+  "cohort_hash_valid": true,
+  "total_raw_artifacts_checked": 288,
+  "total_recomputed": 288,
+  "missing_raw_artifacts": [],
+  "hash_mismatches": [],
+  "integrity_passed": true
+}

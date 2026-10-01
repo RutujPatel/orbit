@@ -1,0 +1,740 @@
+[
+  {
+    "sha": "385738d91e9e5145ff1f8c707194640acef1cd6e",
+    "node_id": "MDY6Q29tbWl0MzQ3MTY1MTQ6Mzg1NzM4ZDkxZTllNTE0NWZmMWY4YzcwNzE5NDY0MGFjZWYxY2Q2ZQ==",
+    "commit": {
+      "author": {
+        "name": "DB Tsai",
+        "email": "d_tsai@apple.com",
+        "date": "2020-03-05T23:35:39Z"
+      },
+      "committer": {
+        "name": "DB Tsai",
+        "email": "d_tsai@apple.com",
+        "date": "2020-03-23T21:50:04Z"
+      },
+      "message": "SPARK-17636",
+      "tree": {
+        "sha": "adfa2c4b0b93e2b2cc8a65b74b575b1d1e9a2d6e",
+        "url": "https://api.github.com/repos/apache/spark/git/trees/adfa2c4b0b93e2b2cc8a65b74b575b1d1e9a2d6e"
+      },
+      "url": "https://api.github.com/repos/apache/spark/git/commits/385738d91e9e5145ff1f8c707194640acef1cd6e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/spark/commits/385738d91e9e5145ff1f8c707194640acef1cd6e",
+    "html_url": "https://github.com/apache/spark/commit/385738d91e9e5145ff1f8c707194640acef1cd6e",
+    "comments_url": "https://api.github.com/repos/apache/spark/commits/385738d91e9e5145ff1f8c707194640acef1cd6e/comments",
+    "author": {
+      "login": "dbtsai",
+      "id": 1134574,
+      "node_id": "MDQ6VXNlcjExMzQ1NzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1134574?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dbtsai",
+      "html_url": "https://github.com/dbtsai",
+      "followers_url": "https://api.github.com/users/dbtsai/followers",
+      "following_url": "https://api.github.com/users/dbtsai/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dbtsai/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dbtsai/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dbtsai/subscriptions",
+      "organizations_url": "https://api.github.com/users/dbtsai/orgs",
+      "repos_url": "https://api.github.com/users/dbtsai/repos",
+      "events_url": "https://api.github.com/users/dbtsai/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dbtsai/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dbtsai",
+      "id": 1134574,
+      "node_id": "MDQ6VXNlcjExMzQ1NzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1134574?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dbtsai",
+      "html_url": "https://github.com/dbtsai",
+      "followers_url": "https://api.github.com/users/dbtsai/followers",
+      "following_url": "https://api.github.com/users/dbtsai/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dbtsai/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dbtsai/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dbtsai/subscriptions",
+      "organizations_url": "https://api.github.com/users/dbtsai/orgs",
+      "repos_url": "https://api.github.com/users/dbtsai/repos",
+      "events_url": "https://api.github.com/users/dbtsai/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dbtsai/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "aa3a7429f44970eb95a58e1f6cfbf7d89d6753a0",
+        "url": "https://api.github.com/repos/apache/spark/commits/aa3a7429f44970eb95a58e1f6cfbf7d89d6753a0",
+        "html_url": "https://github.com/apache/spark/commit/aa3a7429f44970eb95a58e1f6cfbf7d89d6753a0"
+      }
+    ]
+  },
+  {
+    "sha": "22a7a0029943a696dc0f085972d8568473c24ec5",
+    "node_id": "MDY6Q29tbWl0MzQ3MTY1MTQ6MjJhN2EwMDI5OTQzYTY5NmRjMGYwODU5NzJkODU2ODQ3M2MyNGVjNQ==",
+    "commit": {
+      "author": {
+        "name": "DB Tsai",
+        "email": "d_tsai@apple.com",
+        "date": "2020-03-24T00:19:33Z"
+      },
+      "committer": {
+        "name": "DB Tsai",
+        "email": "d_tsai@apple.com",
+        "date": "2020-03-24T00:19:33Z"
+      },
+      "message": "address feedback",
+      "tree": {
+        "sha": "9419b347d68fb93b19c7432335d7ecf8ff4020fa",
+        "url": "https://api.github.com/repos/apache/spark/git/trees/9419b347d68fb93b19c7432335d7ecf8ff4020fa"
+      },
+      "url": "https://api.github.com/repos/apache/spark/git/commits/22a7a0029943a696dc0f085972d8568473c24ec5",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/spark/commits/22a7a0029943a696dc0f085972d8568473c24ec5",
+    "html_url": "https://github.com/apache/spark/commit/22a7a0029943a696dc0f085972d8568473c24ec5",
+    "comments_url": "https://api.github.com/repos/apache/spark/commits/22a7a0029943a696dc0f085972d8568473c24ec5/comments",
+    "author": {
+      "login": "dbtsai",
+      "id": 1134574,
+      "node_id": "MDQ6VXNlcjExMzQ1NzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1134574?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dbtsai",
+      "html_url": "https://github.com/dbtsai",
+      "followers_url": "https://api.github.com/users/dbtsai/followers",
+      "following_url": "https://api.github.com/users/dbtsai/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dbtsai/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dbtsai/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dbtsai/subscriptions",
+      "organizations_url": "https://api.github.com/users/dbtsai/orgs",
+      "repos_url": "https://api.github.com/users/dbtsai/repos",
+      "events_url": "https://api.github.com/users/dbtsai/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dbtsai/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dbtsai",
+      "id": 1134574,
+      "node_id": "MDQ6VXNlcjExMzQ1NzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1134574?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dbtsai",
+      "html_url": "https://github.com/dbtsai",
+      "followers_url": "https://api.github.com/users/dbtsai/followers",
+      "following_url": "https://api.github.com/users/dbtsai/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dbtsai/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dbtsai/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dbtsai/subscriptions",
+      "organizations_url": "https://api.github.com/users/dbtsai/orgs",
+      "repos_url": "https://api.github.com/users/dbtsai/repos",
+      "events_url": "https://api.github.com/users/dbtsai/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dbtsai/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "385738d91e9e5145ff1f8c707194640acef1cd6e",
+        "url": "https://api.github.com/repos/apache/spark/commits/385738d91e9e5145ff1f8c707194640acef1cd6e",
+        "html_url": "https://github.com/apache/spark/commit/385738d91e9e5145ff1f8c707194640acef1cd6e"
+      }
+    ]
+  },
+  {
+    "sha": "b775e02e016ad70271ff4d6090d907a65aadc318",
+    "node_id": "MDY6Q29tbWl0MzQ3MTY1MTQ6Yjc3NWUwMmUwMTZhZDcwMjcxZmY0ZDYwOTBkOTA3YTY1YWFkYzMxOA==",
+    "commit": {
+      "author": {
+        "name": "DB Tsai",
+        "email": "d_tsai@apple.com",
+        "date": "2020-03-25T04:14:16Z"
+      },
+      "committer": {
+        "name": "DB Tsai",
+        "email": "d_tsai@apple.com",
+        "date": "2020-03-25T04:14:16Z"
+      },
+      "message": "add more test cases",
+      "tree": {
+        "sha": "5690a69b2eab80b15f4324a9392f229cbc3f018a",
+        "url": "https://api.github.com/repos/apache/spark/git/trees/5690a69b2eab80b15f4324a9392f229cbc3f018a"
+      },
+      "url": "https://api.github.com/repos/apache/spark/git/commits/b775e02e016ad70271ff4d6090d907a65aadc318",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/spark/commits/b775e02e016ad70271ff4d6090d907a65aadc318",
+    "html_url": "https://github.com/apache/spark/commit/b775e02e016ad70271ff4d6090d907a65aadc318",
+    "comments_url": "https://api.github.com/repos/apache/spark/commits/b775e02e016ad70271ff4d6090d907a65aadc318/comments",
+    "author": {
+      "login": "dbtsai",
+      "id": 1134574,
+      "node_id": "MDQ6VXNlcjExMzQ1NzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1134574?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dbtsai",
+      "html_url": "https://github.com/dbtsai",
+      "followers_url": "https://api.github.com/users/dbtsai/followers",
+      "following_url": "https://api.github.com/users/dbtsai/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dbtsai/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dbtsai/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dbtsai/subscriptions",
+      "organizations_url": "https://api.github.com/users/dbtsai/orgs",
+      "repos_url": "https://api.github.com/users/dbtsai/repos",
+      "events_url": "https://api.github.com/users/dbtsai/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dbtsai/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dbtsai",
+      "id": 1134574,
+      "node_id": "MDQ6VXNlcjExMzQ1NzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1134574?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dbtsai",
+      "html_url": "https://github.com/dbtsai",
+      "followers_url": "https://api.github.com/users/dbtsai/followers",
+      "following_url": "https://api.github.com/users/dbtsai/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dbtsai/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dbtsai/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dbtsai/subscriptions",
+      "organizations_url": "https://api.github.com/users/dbtsai/orgs",
+      "repos_url": "https://api.github.com/users/dbtsai/repos",
+      "events_url": "https://api.github.com/users/dbtsai/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dbtsai/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "22a7a0029943a696dc0f085972d8568473c24ec5",
+        "url": "https://api.github.com/repos/apache/spark/commits/22a7a0029943a696dc0f085972d8568473c24ec5",
+        "html_url": "https://github.com/apache/spark/commit/22a7a0029943a696dc0f085972d8568473c24ec5"
+      }
+    ]
+  },
+  {
+    "sha": "c40f5d035b6a4f82f0238285203cdbf74217b100",
+    "node_id": "MDY6Q29tbWl0MzQ3MTY1MTQ6YzQwZjVkMDM1YjZhNGY4MmYwMjM4Mjg1MjAzY2RiZjc0MjE3YjEwMA==",
+    "commit": {
+      "author": {
+        "name": "DB Tsai",
+        "email": "d_tsai@apple.com",
+        "date": "2020-03-25T04:15:41Z"
+      },
+      "committer": {
+        "name": "DB Tsai",
+        "email": "d_tsai@apple.com",
+        "date": "2020-03-25T04:15:41Z"
+      },
+      "message": "address feedback",
+      "tree": {
+        "sha": "ce32ebc9608e77519dcf1b70da8dc727242a1636",
+        "url": "https://api.github.com/repos/apache/spark/git/trees/ce32ebc9608e77519dcf1b70da8dc727242a1636"
+      },
+      "url": "https://api.github.com/repos/apache/spark/git/commits/c40f5d035b6a4f82f0238285203cdbf74217b100",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/spark/commits/c40f5d035b6a4f82f0238285203cdbf74217b100",
+    "html_url": "https://github.com/apache/spark/commit/c40f5d035b6a4f82f0238285203cdbf74217b100",
+    "comments_url": "https://api.github.com/repos/apache/spark/commits/c40f5d035b6a4f82f0238285203cdbf74217b100/comments",
+    "author": {
+      "login": "dbtsai",
+      "id": 1134574,
+      "node_id": "MDQ6VXNlcjExMzQ1NzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1134574?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dbtsai",
+      "html_url": "https://github.com/dbtsai",
+      "followers_url": "https://api.github.com/users/dbtsai/followers",
+      "following_url": "https://api.github.com/users/dbtsai/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dbtsai/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dbtsai/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dbtsai/subscriptions",
+      "organizations_url": "https://api.github.com/users/dbtsai/orgs",
+      "repos_url": "https://api.github.com/users/dbtsai/repos",
+      "events_url": "https://api.github.com/users/dbtsai/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dbtsai/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dbtsai",
+      "id": 1134574,
+      "node_id": "MDQ6VXNlcjExMzQ1NzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1134574?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dbtsai",
+      "html_url": "https://github.com/dbtsai",
+      "followers_url": "https://api.github.com/users/dbtsai/followers",
+      "following_url": "https://api.github.com/users/dbtsai/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dbtsai/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dbtsai/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dbtsai/subscriptions",
+      "organizations_url": "https://api.github.com/users/dbtsai/orgs",
+      "repos_url": "https://api.github.com/users/dbtsai/repos",
+      "events_url": "https://api.github.com/users/dbtsai/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dbtsai/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b775e02e016ad70271ff4d6090d907a65aadc318",
+        "url": "https://api.github.com/repos/apache/spark/commits/b775e02e016ad70271ff4d6090d907a65aadc318",
+        "html_url": "https://github.com/apache/spark/commit/b775e02e016ad70271ff4d6090d907a65aadc318"
+      }
+    ]
+  },
+  {
+    "sha": "e9944e5dbf96ef17a24b2109033c2884cde4d2ca",
+    "node_id": "MDY6Q29tbWl0MzQ3MTY1MTQ6ZTk5NDRlNWRiZjk2ZWYxN2EyNGIyMTA5MDMzYzI4ODRjZGU0ZDJjYQ==",
+    "commit": {
+      "author": {
+        "name": "DB Tsai",
+        "email": "d_tsai@apple.com",
+        "date": "2020-03-25T04:20:21Z"
+      },
+      "committer": {
+        "name": "DB Tsai",
+        "email": "d_tsai@apple.com",
+        "date": "2020-03-25T04:20:21Z"
+      },
+      "message": "fix import",
+      "tree": {
+        "sha": "ea6c4bdf263731a31f7c4b1f43da3908c5f0e283",
+        "url": "https://api.github.com/repos/apache/spark/git/trees/ea6c4bdf263731a31f7c4b1f43da3908c5f0e283"
+      },
+      "url": "https://api.github.com/repos/apache/spark/git/commits/e9944e5dbf96ef17a24b2109033c2884cde4d2ca",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/spark/commits/e9944e5dbf96ef17a24b2109033c2884cde4d2ca",
+    "html_url": "https://github.com/apache/spark/commit/e9944e5dbf96ef17a24b2109033c2884cde4d2ca",
+    "comments_url": "https://api.github.com/repos/apache/spark/commits/e9944e5dbf96ef17a24b2109033c2884cde4d2ca/comments",
+    "author": {
+      "login": "dbtsai",
+      "id": 1134574,
+      "node_id": "MDQ6VXNlcjExMzQ1NzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1134574?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dbtsai",
+      "html_url": "https://github.com/dbtsai",
+      "followers_url": "https://api.github.com/users/dbtsai/followers",
+      "following_url": "https://api.github.com/users/dbtsai/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dbtsai/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dbtsai/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dbtsai/subscriptions",
+      "organizations_url": "https://api.github.com/users/dbtsai/orgs",
+      "repos_url": "https://api.github.com/users/dbtsai/repos",
+      "events_url": "https://api.github.com/users/dbtsai/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dbtsai/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dbtsai",
+      "id": 1134574,
+      "node_id": "MDQ6VXNlcjExMzQ1NzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1134574?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dbtsai",
+      "html_url": "https://github.com/dbtsai",
+      "followers_url": "https://api.github.com/users/dbtsai/followers",
+      "following_url": "https://api.github.com/users/dbtsai/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dbtsai/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dbtsai/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dbtsai/subscriptions",
+      "organizations_url": "https://api.github.com/users/dbtsai/orgs",
+      "repos_url": "https://api.github.com/users/dbtsai/repos",
+      "events_url": "https://api.github.com/users/dbtsai/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dbtsai/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c40f5d035b6a4f82f0238285203cdbf74217b100",
+        "url": "https://api.github.com/repos/apache/spark/commits/c40f5d035b6a4f82f0238285203cdbf74217b100",
+        "html_url": "https://github.com/apache/spark/commit/c40f5d035b6a4f82f0238285203cdbf74217b100"
+      }
+    ]
+  },
+  {
+    "sha": "44b310e423250c4635943c8e66323f37f03ef75b",
+    "node_id": "MDY6Q29tbWl0MzQ3MTY1MTQ6NDRiMzEwZTQyMzI1MGM0NjM1OTQzYzhlNjYzMjNmMzdmMDNlZjc1Yg==",
+    "commit": {
+      "author": {
+        "name": "DB Tsai",
+        "email": "d_tsai@apple.com",
+        "date": "2020-03-25T04:48:56Z"
+      },
+      "committer": {
+        "name": "DB Tsai",
+        "email": "d_tsai@apple.com",
+        "date": "2020-03-25T04:48:56Z"
+      },
+      "message": "add more tests",
+      "tree": {
+        "sha": "12e22b28ce3177343204d24d4f58889021baa212",
+        "url": "https://api.github.com/repos/apache/spark/git/trees/12e22b28ce3177343204d24d4f58889021baa212"
+      },
+      "url": "https://api.github.com/repos/apache/spark/git/commits/44b310e423250c4635943c8e66323f37f03ef75b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/spark/commits/44b310e423250c4635943c8e66323f37f03ef75b",
+    "html_url": "https://github.com/apache/spark/commit/44b310e423250c4635943c8e66323f37f03ef75b",
+    "comments_url": "https://api.github.com/repos/apache/spark/commits/44b310e423250c4635943c8e66323f37f03ef75b/comments",
+    "author": {
+      "login": "dbtsai",
+      "id": 1134574,
+      "node_id": "MDQ6VXNlcjExMzQ1NzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1134574?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dbtsai",
+      "html_url": "https://github.com/dbtsai",
+      "followers_url": "https://api.github.com/users/dbtsai/followers",
+      "following_url": "https://api.github.com/users/dbtsai/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dbtsai/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dbtsai/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dbtsai/subscriptions",
+      "organizations_url": "https://api.github.com/users/dbtsai/orgs",
+      "repos_url": "https://api.github.com/users/dbtsai/repos",
+      "events_url": "https://api.github.com/users/dbtsai/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dbtsai/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dbtsai",
+      "id": 1134574,
+      "node_id": "MDQ6VXNlcjExMzQ1NzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1134574?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dbtsai",
+      "html_url": "https://github.com/dbtsai",
+      "followers_url": "https://api.github.com/users/dbtsai/followers",
+      "following_url": "https://api.github.com/users/dbtsai/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dbtsai/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dbtsai/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dbtsai/subscriptions",
+      "organizations_url": "https://api.github.com/users/dbtsai/orgs",
+      "repos_url": "https://api.github.com/users/dbtsai/repos",
+      "events_url": "https://api.github.com/users/dbtsai/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dbtsai/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e9944e5dbf96ef17a24b2109033c2884cde4d2ca",
+        "url": "https://api.github.com/repos/apache/spark/commits/e9944e5dbf96ef17a24b2109033c2884cde4d2ca",
+        "html_url": "https://github.com/apache/spark/commit/e9944e5dbf96ef17a24b2109033c2884cde4d2ca"
+      }
+    ]
+  },
+  {
+    "sha": "4883e68f636b5e2b9b845f4e23909a2854d28063",
+    "node_id": "MDY6Q29tbWl0MzQ3MTY1MTQ6NDg4M2U2OGY2MzZiNWUyYjliODQ1ZjRlMjM5MDlhMjg1NGQyODA2Mw==",
+    "commit": {
+      "author": {
+        "name": "DB Tsai",
+        "email": "d_tsai@apple.com",
+        "date": "2020-03-26T04:36:55Z"
+      },
+      "committer": {
+        "name": "DB Tsai",
+        "email": "d_tsai@apple.com",
+        "date": "2020-03-26T04:36:55Z"
+      },
+      "message": "Address feedback",
+      "tree": {
+        "sha": "80454408006e2ed69d0340e867999e6243ef90cd",
+        "url": "https://api.github.com/repos/apache/spark/git/trees/80454408006e2ed69d0340e867999e6243ef90cd"
+      },
+      "url": "https://api.github.com/repos/apache/spark/git/commits/4883e68f636b5e2b9b845f4e23909a2854d28063",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/spark/commits/4883e68f636b5e2b9b845f4e23909a2854d28063",
+    "html_url": "https://github.com/apache/spark/commit/4883e68f636b5e2b9b845f4e23909a2854d28063",
+    "comments_url": "https://api.github.com/repos/apache/spark/commits/4883e68f636b5e2b9b845f4e23909a2854d28063/comments",
+    "author": {
+      "login": "dbtsai",
+      "id": 1134574,
+      "node_id": "MDQ6VXNlcjExMzQ1NzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1134574?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dbtsai",
+      "html_url": "https://github.com/dbtsai",
+      "followers_url": "https://api.github.com/users/dbtsai/followers",
+      "following_url": "https://api.github.com/users/dbtsai/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dbtsai/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dbtsai/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dbtsai/subscriptions",
+      "organizations_url": "https://api.github.com/users/dbtsai/orgs",
+      "repos_url": "https://api.github.com/users/dbtsai/repos",
+      "events_url": "https://api.github.com/users/dbtsai/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dbtsai/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dbtsai",
+      "id": 1134574,
+      "node_id": "MDQ6VXNlcjExMzQ1NzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1134574?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dbtsai",
+      "html_url": "https://github.com/dbtsai",
+      "followers_url": "https://api.github.com/users/dbtsai/followers",
+      "following_url": "https://api.github.com/users/dbtsai/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dbtsai/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dbtsai/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dbtsai/subscriptions",
+      "organizations_url": "https://api.github.com/users/dbtsai/orgs",
+      "repos_url": "https://api.github.com/users/dbtsai/repos",
+      "events_url": "https://api.github.com/users/dbtsai/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dbtsai/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "44b310e423250c4635943c8e66323f37f03ef75b",
+        "url": "https://api.github.com/repos/apache/spark/commits/44b310e423250c4635943c8e66323f37f03ef75b",
+        "html_url": "https://github.com/apache/spark/commit/44b310e423250c4635943c8e66323f37f03ef75b"
+      }
+    ]
+  },
+  {
+    "sha": "f732664630c6465ef8d4ec58dbc3965fcee82f3b",
+    "node_id": "MDY6Q29tbWl0MzQ3MTY1MTQ6ZjczMjY2NDYzMGM2NDY1ZWY4ZDRlYzU4ZGJjMzk2NWZjZWU4MmYzYg==",
+    "commit": {
+      "author": {
+        "name": "DB Tsai",
+        "email": "d_tsai@apple.com",
+        "date": "2020-03-26T06:04:24Z"
+      },
+      "committer": {
+        "name": "DB Tsai",
+        "email": "d_tsai@apple.com",
+        "date": "2020-03-26T06:04:24Z"
+      },
+      "message": "clean up imports and unused functions",
+      "tree": {
+        "sha": "9dc3b79a8bc53389cef4508d4bcb30114276e845",
+        "url": "https://api.github.com/repos/apache/spark/git/trees/9dc3b79a8bc53389cef4508d4bcb30114276e845"
+      },
+      "url": "https://api.github.com/repos/apache/spark/git/commits/f732664630c6465ef8d4ec58dbc3965fcee82f3b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/spark/commits/f732664630c6465ef8d4ec58dbc3965fcee82f3b",
+    "html_url": "https://github.com/apache/spark/commit/f732664630c6465ef8d4ec58dbc3965fcee82f3b",
+    "comments_url": "https://api.github.com/repos/apache/spark/commits/f732664630c6465ef8d4ec58dbc3965fcee82f3b/comments",
+    "author": {
+      "login": "dbtsai",
+      "id": 1134574,
+      "node_id": "MDQ6VXNlcjExMzQ1NzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1134574?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dbtsai",
+      "html_url": "https://github.com/dbtsai",
+      "followers_url": "https://api.github.com/users/dbtsai/followers",
+      "following_url": "https://api.github.com/users/dbtsai/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dbtsai/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dbtsai/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dbtsai/subscriptions",
+      "organizations_url": "https://api.github.com/users/dbtsai/orgs",
+      "repos_url": "https://api.github.com/users/dbtsai/repos",
+      "events_url": "https://api.github.com/users/dbtsai/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dbtsai/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dbtsai",
+      "id": 1134574,
+      "node_id": "MDQ6VXNlcjExMzQ1NzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1134574?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dbtsai",
+      "html_url": "https://github.com/dbtsai",
+      "followers_url": "https://api.github.com/users/dbtsai/followers",
+      "following_url": "https://api.github.com/users/dbtsai/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dbtsai/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dbtsai/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dbtsai/subscriptions",
+      "organizations_url": "https://api.github.com/users/dbtsai/orgs",
+      "repos_url": "https://api.github.com/users/dbtsai/repos",
+      "events_url": "https://api.github.com/users/dbtsai/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dbtsai/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4883e68f636b5e2b9b845f4e23909a2854d28063",
+        "url": "https://api.github.com/repos/apache/spark/commits/4883e68f636b5e2b9b845f4e23909a2854d28063",
+        "html_url": "https://github.com/apache/spark/commit/4883e68f636b5e2b9b845f4e23909a2854d28063"
+      }
+    ]
+  },
+  {
+    "sha": "5fd97c0a90eb1885a93fffb9d04a262b35f62bc3",
+    "node_id": "MDY6Q29tbWl0MzQ3MTY1MTQ6NWZkOTdjMGE5MGViMTg4NWE5M2ZmZmI5ZDA0YTI2MmIzNWY2MmJjMw==",
+    "commit": {
+      "author": {
+        "name": "DB Tsai",
+        "email": "d_tsai@apple.com",
+        "date": "2020-03-26T07:59:38Z"
+      },
+      "committer": {
+        "name": "DB Tsai",
+        "email": "d_tsai@apple.com",
+        "date": "2020-03-26T07:59:38Z"
+      },
+      "message": "Trigger Build",
+      "tree": {
+        "sha": "9dc3b79a8bc53389cef4508d4bcb30114276e845",
+        "url": "https://api.github.com/repos/apache/spark/git/trees/9dc3b79a8bc53389cef4508d4bcb30114276e845"
+      },
+      "url": "https://api.github.com/repos/apache/spark/git/commits/5fd97c0a90eb1885a93fffb9d04a262b35f62bc3",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/spark/commits/5fd97c0a90eb1885a93fffb9d04a262b35f62bc3",
+    "html_url": "https://github.com/apache/spark/commit/5fd97c0a90eb1885a93fffb9d04a262b35f62bc3",
+    "comments_url": "https://api.github.com/repos/apache/spark/commits/5fd97c0a90eb1885a93fffb9d04a262b35f62bc3/comments",
+    "author": {
+      "login": "dbtsai",
+      "id": 1134574,
+      "node_id": "MDQ6VXNlcjExMzQ1NzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1134574?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dbtsai",
+      "html_url": "https://github.com/dbtsai",
+      "followers_url": "https://api.github.com/users/dbtsai/followers",
+      "following_url": "https://api.github.com/users/dbtsai/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dbtsai/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dbtsai/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dbtsai/subscriptions",
+      "organizations_url": "https://api.github.com/users/dbtsai/orgs",
+      "repos_url": "https://api.github.com/users/dbtsai/repos",
+      "events_url": "https://api.github.com/users/dbtsai/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dbtsai/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dbtsai",
+      "id": 1134574,
+      "node_id": "MDQ6VXNlcjExMzQ1NzQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1134574?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dbtsai",
+      "html_url": "https://github.com/dbtsai",
+      "followers_url": "https://api.github.com/users/dbtsai/followers",
+      "following_url": "https://api.github.com/users/dbtsai/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dbtsai/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dbtsai/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dbtsai/subscriptions",
+      "organizations_url": "https://api.github.com/users/dbtsai/orgs",
+      "repos_url": "https://api.github.com/users/dbtsai/repos",
+      "events_url": "https://api.github.com/users/dbtsai/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dbtsai/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f732664630c6465ef8d4ec58dbc3965fcee82f3b",
+        "url": "https://api.github.com/repos/apache/spark/commits/f732664630c6465ef8d4ec58dbc3965fcee82f3b",
+        "html_url": "https://github.com/apache/spark/commit/f732664630c6465ef8d4ec58dbc3965fcee82f3b"
+      }
+    ]
+  }
+]

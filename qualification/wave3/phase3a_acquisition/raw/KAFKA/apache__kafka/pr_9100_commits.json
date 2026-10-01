@@ -1,0 +1,2487 @@
+[
+  {
+    "sha": "37f7c63a47da0e5524b43e521ff4d37864073ad2",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNTozN2Y3YzYzYTQ3ZGEwZTU1MjRiNDNlNTIxZmY0ZDM3ODY0MDczYWQy",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-07-29T20:33:56Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-07-29T21:04:11Z"
+      },
+      "message": "Checking in RPCs and stubbing out basic functionality",
+      "tree": {
+        "sha": "f411fc3e5e24e2fb7331334e8d3cc64d6b492328",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/f411fc3e5e24e2fb7331334e8d3cc64d6b492328"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/37f7c63a47da0e5524b43e521ff4d37864073ad2",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/37f7c63a47da0e5524b43e521ff4d37864073ad2",
+    "html_url": "https://github.com/apache/kafka/commit/37f7c63a47da0e5524b43e521ff4d37864073ad2",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/37f7c63a47da0e5524b43e521ff4d37864073ad2/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3993041c7602506a8b194e3a67ac018b623a3cd8",
+        "url": "https://api.github.com/repos/apache/kafka/commits/3993041c7602506a8b194e3a67ac018b623a3cd8",
+        "html_url": "https://github.com/apache/kafka/commit/3993041c7602506a8b194e3a67ac018b623a3cd8"
+      }
+    ]
+  },
+  {
+    "sha": "19dd93af3b7b08c5b9e5a32231c462738ef42e54",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNToxOWRkOTNhZjNiN2IwOGM1YjllNWEzMjIzMWM0NjI3MzhlZjQyZTU0",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-07-30T00:44:37Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-07-30T00:44:57Z"
+      },
+      "message": "Update the ISR from the controller",
+      "tree": {
+        "sha": "a6db531b4ab5f6186576db5b34ae06888e337c79",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/a6db531b4ab5f6186576db5b34ae06888e337c79"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/19dd93af3b7b08c5b9e5a32231c462738ef42e54",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/19dd93af3b7b08c5b9e5a32231c462738ef42e54",
+    "html_url": "https://github.com/apache/kafka/commit/19dd93af3b7b08c5b9e5a32231c462738ef42e54",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/19dd93af3b7b08c5b9e5a32231c462738ef42e54/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "37f7c63a47da0e5524b43e521ff4d37864073ad2",
+        "url": "https://api.github.com/repos/apache/kafka/commits/37f7c63a47da0e5524b43e521ff4d37864073ad2",
+        "html_url": "https://github.com/apache/kafka/commit/37f7c63a47da0e5524b43e521ff4d37864073ad2"
+      }
+    ]
+  },
+  {
+    "sha": "5482529f542554e7468965d6a6147b6cfc0cde2a",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNTo1NDgyNTI5ZjU0MjU1NGU3NDY4OTY1ZDZhNjE0N2I2Y2ZjMGNkZTJh",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-07-30T13:47:27Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-07-30T13:47:27Z"
+      },
+      "message": "Merge remote-tracking branch 'apache-github/trunk' into KAFKA-8836-alter-isr",
+      "tree": {
+        "sha": "69f540fc43bb392450e66c4f0e6d1c041600a1f6",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/69f540fc43bb392450e66c4f0e6d1c041600a1f6"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/5482529f542554e7468965d6a6147b6cfc0cde2a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/5482529f542554e7468965d6a6147b6cfc0cde2a",
+    "html_url": "https://github.com/apache/kafka/commit/5482529f542554e7468965d6a6147b6cfc0cde2a",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/5482529f542554e7468965d6a6147b6cfc0cde2a/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "19dd93af3b7b08c5b9e5a32231c462738ef42e54",
+        "url": "https://api.github.com/repos/apache/kafka/commits/19dd93af3b7b08c5b9e5a32231c462738ef42e54",
+        "html_url": "https://github.com/apache/kafka/commit/19dd93af3b7b08c5b9e5a32231c462738ef42e54"
+      },
+      {
+        "sha": "819cd454f9b3078515a86e43a4486794df0a7971",
+        "url": "https://api.github.com/repos/apache/kafka/commits/819cd454f9b3078515a86e43a4486794df0a7971",
+        "html_url": "https://github.com/apache/kafka/commit/819cd454f9b3078515a86e43a4486794df0a7971"
+      }
+    ]
+  },
+  {
+    "sha": "6fb2551366c4c3baf89956357a838cea5bb43e4a",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNTo2ZmIyNTUxMzY2YzRjM2JhZjg5OTU2MzU3YTgzOGNlYTViYjQzZTRh",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-07-31T18:23:49Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-07-31T18:23:49Z"
+      },
+      "message": "Start working on broker-side of AlterIsr",
+      "tree": {
+        "sha": "fa24fe693a1da779f9ee48304d82c210e92fcd79",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/fa24fe693a1da779f9ee48304d82c210e92fcd79"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/6fb2551366c4c3baf89956357a838cea5bb43e4a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/6fb2551366c4c3baf89956357a838cea5bb43e4a",
+    "html_url": "https://github.com/apache/kafka/commit/6fb2551366c4c3baf89956357a838cea5bb43e4a",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/6fb2551366c4c3baf89956357a838cea5bb43e4a/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5482529f542554e7468965d6a6147b6cfc0cde2a",
+        "url": "https://api.github.com/repos/apache/kafka/commits/5482529f542554e7468965d6a6147b6cfc0cde2a",
+        "html_url": "https://github.com/apache/kafka/commit/5482529f542554e7468965d6a6147b6cfc0cde2a"
+      }
+    ]
+  },
+  {
+    "sha": "5955b1d7bab29729b3daed23dfbc7c132c4baba3",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNTo1OTU1YjFkN2JhYjI5NzI5YjNkYWVkMjNkZmJjN2MxMzJjNGJhYmEz",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-05T13:45:59Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-05T13:45:59Z"
+      },
+      "message": "Add throttle time to AlterIsr, fix error counts",
+      "tree": {
+        "sha": "a56f71a0fdf2f33af80ac3d27ae101eec814e2a4",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/a56f71a0fdf2f33af80ac3d27ae101eec814e2a4"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/5955b1d7bab29729b3daed23dfbc7c132c4baba3",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/5955b1d7bab29729b3daed23dfbc7c132c4baba3",
+    "html_url": "https://github.com/apache/kafka/commit/5955b1d7bab29729b3daed23dfbc7c132c4baba3",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/5955b1d7bab29729b3daed23dfbc7c132c4baba3/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6fb2551366c4c3baf89956357a838cea5bb43e4a",
+        "url": "https://api.github.com/repos/apache/kafka/commits/6fb2551366c4c3baf89956357a838cea5bb43e4a",
+        "html_url": "https://github.com/apache/kafka/commit/6fb2551366c4c3baf89956357a838cea5bb43e4a"
+      }
+    ]
+  },
+  {
+    "sha": "afeb18ede91081e9ea72a3f34a4e56e21f81e1cf",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNTphZmViMThlZGU5MTA4MWU5ZWE3MmEzZjM0YTRlNTZlMjFmODFlMWNm",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-05T13:47:14Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-05T13:47:14Z"
+      },
+      "message": "Broker to controller AlterIsr fixes\n\n* Make AlterIsr block until Controller process it fully\n* Batch AlterIsr requests for a short while on broker side\n* Don't attempt to restrict to a single in-flight request",
+      "tree": {
+        "sha": "1ffd521c6be8c625b2519b671d29c938b88cd2bd",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/1ffd521c6be8c625b2519b671d29c938b88cd2bd"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/afeb18ede91081e9ea72a3f34a4e56e21f81e1cf",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/afeb18ede91081e9ea72a3f34a4e56e21f81e1cf",
+    "html_url": "https://github.com/apache/kafka/commit/afeb18ede91081e9ea72a3f34a4e56e21f81e1cf",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/afeb18ede91081e9ea72a3f34a4e56e21f81e1cf/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5955b1d7bab29729b3daed23dfbc7c132c4baba3",
+        "url": "https://api.github.com/repos/apache/kafka/commits/5955b1d7bab29729b3daed23dfbc7c132c4baba3",
+        "html_url": "https://github.com/apache/kafka/commit/5955b1d7bab29729b3daed23dfbc7c132c4baba3"
+      }
+    ]
+  },
+  {
+    "sha": "627b26aef3c623c13066a5f7e617318a49cc0a5b",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNTo2MjdiMjZhZWYzYzYyM2MxMzA2NmE1ZjdlNjE3MzE4YTQ5Y2MwYTVi",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-05T13:49:50Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-05T13:52:04Z"
+      },
+      "message": "Add \"effective\" ISR to Partition",
+      "tree": {
+        "sha": "2650644fb0328f00fd6c382da2d05cf61584d2b8",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/2650644fb0328f00fd6c382da2d05cf61584d2b8"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/627b26aef3c623c13066a5f7e617318a49cc0a5b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/627b26aef3c623c13066a5f7e617318a49cc0a5b",
+    "html_url": "https://github.com/apache/kafka/commit/627b26aef3c623c13066a5f7e617318a49cc0a5b",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/627b26aef3c623c13066a5f7e617318a49cc0a5b/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "afeb18ede91081e9ea72a3f34a4e56e21f81e1cf",
+        "url": "https://api.github.com/repos/apache/kafka/commits/afeb18ede91081e9ea72a3f34a4e56e21f81e1cf",
+        "html_url": "https://github.com/apache/kafka/commit/afeb18ede91081e9ea72a3f34a4e56e21f81e1cf"
+      }
+    ]
+  },
+  {
+    "sha": "fe99911f5d06d76b18a9446bf94b4e0ca7ce6b1b",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNTpmZTk5OTExZjVkMDZkNzZiMThhOTQ0NmJmOTRiNGUwY2E3Y2U2YjFi",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-07T20:30:47Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-07T20:31:40Z"
+      },
+      "message": "Merge remote-tracking branch 'apache-github/trunk' into KAFKA-8836-alter-isr",
+      "tree": {
+        "sha": "88e092378c8300fdda3fe39f2067a95392072003",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/88e092378c8300fdda3fe39f2067a95392072003"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/fe99911f5d06d76b18a9446bf94b4e0ca7ce6b1b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/fe99911f5d06d76b18a9446bf94b4e0ca7ce6b1b",
+    "html_url": "https://github.com/apache/kafka/commit/fe99911f5d06d76b18a9446bf94b4e0ca7ce6b1b",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/fe99911f5d06d76b18a9446bf94b4e0ca7ce6b1b/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "627b26aef3c623c13066a5f7e617318a49cc0a5b",
+        "url": "https://api.github.com/repos/apache/kafka/commits/627b26aef3c623c13066a5f7e617318a49cc0a5b",
+        "html_url": "https://github.com/apache/kafka/commit/627b26aef3c623c13066a5f7e617318a49cc0a5b"
+      },
+      {
+        "sha": "6f0ab89b9204e86cd49d44d6b9f97ee1939c50c6",
+        "url": "https://api.github.com/repos/apache/kafka/commits/6f0ab89b9204e86cd49d44d6b9f97ee1939c50c6",
+        "html_url": "https://github.com/apache/kafka/commit/6f0ab89b9204e86cd49d44d6b9f97ee1939c50c6"
+      }
+    ]
+  },
+  {
+    "sha": "07716ceb16a4d15e66bda92dac378fd8f8fae0c9",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNTowNzcxNmNlYjE2YTRkMTVlNjZiZGE5MmRhYzM3OGZkOGY4ZmFlMGM5",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-12T13:42:14Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-12T15:34:39Z"
+      },
+      "message": "PartitionTest and ReplicaManagerTest passing",
+      "tree": {
+        "sha": "ca1f11a1da59e335fe5dfe9334efe986263c5e49",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/ca1f11a1da59e335fe5dfe9334efe986263c5e49"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/07716ceb16a4d15e66bda92dac378fd8f8fae0c9",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/07716ceb16a4d15e66bda92dac378fd8f8fae0c9",
+    "html_url": "https://github.com/apache/kafka/commit/07716ceb16a4d15e66bda92dac378fd8f8fae0c9",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/07716ceb16a4d15e66bda92dac378fd8f8fae0c9/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "fe99911f5d06d76b18a9446bf94b4e0ca7ce6b1b",
+        "url": "https://api.github.com/repos/apache/kafka/commits/fe99911f5d06d76b18a9446bf94b4e0ca7ce6b1b",
+        "html_url": "https://github.com/apache/kafka/commit/fe99911f5d06d76b18a9446bf94b4e0ca7ce6b1b"
+      }
+    ]
+  },
+  {
+    "sha": "10b7d638e868bf44317ffeb05dcf4496859efb8a",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNToxMGI3ZDYzOGU4NjhiZjQ0MzE3ZmZlYjA1ZGNmNDQ5Njg1OWVmYjhh",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-13T20:49:10Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-13T21:04:30Z"
+      },
+      "message": "PR feedback and progress on unit tests",
+      "tree": {
+        "sha": "1c478377d2ce754c052e3c9c65a1a3253a6de413",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/1c478377d2ce754c052e3c9c65a1a3253a6de413"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/10b7d638e868bf44317ffeb05dcf4496859efb8a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/10b7d638e868bf44317ffeb05dcf4496859efb8a",
+    "html_url": "https://github.com/apache/kafka/commit/10b7d638e868bf44317ffeb05dcf4496859efb8a",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/10b7d638e868bf44317ffeb05dcf4496859efb8a/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "07716ceb16a4d15e66bda92dac378fd8f8fae0c9",
+        "url": "https://api.github.com/repos/apache/kafka/commits/07716ceb16a4d15e66bda92dac378fd8f8fae0c9",
+        "html_url": "https://github.com/apache/kafka/commit/07716ceb16a4d15e66bda92dac378fd8f8fae0c9"
+      }
+    ]
+  },
+  {
+    "sha": "da33368773462fb0a53c448bfd45e449832a0ef1",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNTpkYTMzMzY4NzczNDYyZmIwYTUzYzQ0OGJmZDQ1ZTQ0OTgzMmEwZWYx",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-14T14:55:38Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-14T14:55:38Z"
+      },
+      "message": "Merge remote-tracking branch 'apache-github/trunk' into KAFKA-8836-alter-isr",
+      "tree": {
+        "sha": "b3a8a0409e7a23a60614febd7b9de1b2d3c62d4f",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/b3a8a0409e7a23a60614febd7b9de1b2d3c62d4f"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/da33368773462fb0a53c448bfd45e449832a0ef1",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/da33368773462fb0a53c448bfd45e449832a0ef1",
+    "html_url": "https://github.com/apache/kafka/commit/da33368773462fb0a53c448bfd45e449832a0ef1",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/da33368773462fb0a53c448bfd45e449832a0ef1/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "10b7d638e868bf44317ffeb05dcf4496859efb8a",
+        "url": "https://api.github.com/repos/apache/kafka/commits/10b7d638e868bf44317ffeb05dcf4496859efb8a",
+        "html_url": "https://github.com/apache/kafka/commit/10b7d638e868bf44317ffeb05dcf4496859efb8a"
+      },
+      {
+        "sha": "5645d906fa319206a9270c080926a21dfddc852a",
+        "url": "https://api.github.com/repos/apache/kafka/commits/5645d906fa319206a9270c080926a21dfddc852a",
+        "html_url": "https://github.com/apache/kafka/commit/5645d906fa319206a9270c080926a21dfddc852a"
+      }
+    ]
+  },
+  {
+    "sha": "1d98ada3e2e6623bfc49d304113550ec7df22222",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNToxZDk4YWRhM2UyZTY2MjNiZmM0OWQzMDQxMTM1NTBlYzdkZjIyMjIy",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-17T17:04:35Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-17T17:04:35Z"
+      },
+      "message": "PR feedback, minor nits mostly",
+      "tree": {
+        "sha": "640e0f2d6c5b4a7a9a7f5962be3344b3df8449a8",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/640e0f2d6c5b4a7a9a7f5962be3344b3df8449a8"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/1d98ada3e2e6623bfc49d304113550ec7df22222",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/1d98ada3e2e6623bfc49d304113550ec7df22222",
+    "html_url": "https://github.com/apache/kafka/commit/1d98ada3e2e6623bfc49d304113550ec7df22222",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/1d98ada3e2e6623bfc49d304113550ec7df22222/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "da33368773462fb0a53c448bfd45e449832a0ef1",
+        "url": "https://api.github.com/repos/apache/kafka/commits/da33368773462fb0a53c448bfd45e449832a0ef1",
+        "html_url": "https://github.com/apache/kafka/commit/da33368773462fb0a53c448bfd45e449832a0ef1"
+      }
+    ]
+  },
+  {
+    "sha": "b7577f1795b0f737eacce874159c6178e544000b",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNTpiNzU3N2YxNzk1YjBmNzM3ZWFjY2U4NzQxNTljNjE3OGU1NDQwMDBi",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-17T19:26:09Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-17T19:31:48Z"
+      },
+      "message": "Gate AlterIsr on IBP",
+      "tree": {
+        "sha": "06a9f480714e20ffdbdcecabfe6710b434631d85",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/06a9f480714e20ffdbdcecabfe6710b434631d85"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/b7577f1795b0f737eacce874159c6178e544000b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/b7577f1795b0f737eacce874159c6178e544000b",
+    "html_url": "https://github.com/apache/kafka/commit/b7577f1795b0f737eacce874159c6178e544000b",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/b7577f1795b0f737eacce874159c6178e544000b/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1d98ada3e2e6623bfc49d304113550ec7df22222",
+        "url": "https://api.github.com/repos/apache/kafka/commits/1d98ada3e2e6623bfc49d304113550ec7df22222",
+        "html_url": "https://github.com/apache/kafka/commit/1d98ada3e2e6623bfc49d304113550ec7df22222"
+      }
+    ]
+  },
+  {
+    "sha": "9c7afa1d2e3d5940c1a37d09329dbe8241acc225",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNTo5YzdhZmExZDJlM2Q1OTQwYzFhMzdkMDkzMjlkYmU4MjQxYWNjMjI1",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-18T14:00:32Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-18T14:00:32Z"
+      },
+      "message": "Add back ReplicaManager's ISR propagation thread",
+      "tree": {
+        "sha": "5a5202429acbc398aeda57929e324e14b52afbc4",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/5a5202429acbc398aeda57929e324e14b52afbc4"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/9c7afa1d2e3d5940c1a37d09329dbe8241acc225",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/9c7afa1d2e3d5940c1a37d09329dbe8241acc225",
+    "html_url": "https://github.com/apache/kafka/commit/9c7afa1d2e3d5940c1a37d09329dbe8241acc225",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/9c7afa1d2e3d5940c1a37d09329dbe8241acc225/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b7577f1795b0f737eacce874159c6178e544000b",
+        "url": "https://api.github.com/repos/apache/kafka/commits/b7577f1795b0f737eacce874159c6178e544000b",
+        "html_url": "https://github.com/apache/kafka/commit/b7577f1795b0f737eacce874159c6178e544000b"
+      }
+    ]
+  },
+  {
+    "sha": "4cc58a30599e54003c571b6a689faa055009ee6c",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNTo0Y2M1OGEzMDU5OWU1NDAwM2M1NzFiNmE2ODlmYWEwNTUwMDllZTZj",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-18T18:02:01Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-18T18:02:01Z"
+      },
+      "message": "WIP tests",
+      "tree": {
+        "sha": "5f8bde20afeab01b7131e15c1e884e976a39d783",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/5f8bde20afeab01b7131e15c1e884e976a39d783"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/4cc58a30599e54003c571b6a689faa055009ee6c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/4cc58a30599e54003c571b6a689faa055009ee6c",
+    "html_url": "https://github.com/apache/kafka/commit/4cc58a30599e54003c571b6a689faa055009ee6c",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/4cc58a30599e54003c571b6a689faa055009ee6c/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9c7afa1d2e3d5940c1a37d09329dbe8241acc225",
+        "url": "https://api.github.com/repos/apache/kafka/commits/9c7afa1d2e3d5940c1a37d09329dbe8241acc225",
+        "html_url": "https://github.com/apache/kafka/commit/9c7afa1d2e3d5940c1a37d09329dbe8241acc225"
+      }
+    ]
+  },
+  {
+    "sha": "f557a86acdb5e854a1298464ffd293ad851246c7",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNTpmNTU3YTg2YWNkYjVlODU0YTEyOTg0NjRmZmQyOTNhZDg1MTI0NmM3",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-18T18:02:37Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-18T18:02:37Z"
+      },
+      "message": "Merge remote-tracking branch 'apache-github/trunk' into KAFKA-8836-alter-isr",
+      "tree": {
+        "sha": "e5f23ae47c0a6a24dded558407421f6e4f9e17e7",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/e5f23ae47c0a6a24dded558407421f6e4f9e17e7"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/f557a86acdb5e854a1298464ffd293ad851246c7",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/f557a86acdb5e854a1298464ffd293ad851246c7",
+    "html_url": "https://github.com/apache/kafka/commit/f557a86acdb5e854a1298464ffd293ad851246c7",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/f557a86acdb5e854a1298464ffd293ad851246c7/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4cc58a30599e54003c571b6a689faa055009ee6c",
+        "url": "https://api.github.com/repos/apache/kafka/commits/4cc58a30599e54003c571b6a689faa055009ee6c",
+        "html_url": "https://github.com/apache/kafka/commit/4cc58a30599e54003c571b6a689faa055009ee6c"
+      },
+      {
+        "sha": "077984690132c6ecfe2514359450342101437032",
+        "url": "https://api.github.com/repos/apache/kafka/commits/077984690132c6ecfe2514359450342101437032",
+        "html_url": "https://github.com/apache/kafka/commit/077984690132c6ecfe2514359450342101437032"
+      }
+    ]
+  },
+  {
+    "sha": "8c9183b9425f72c7834015cf91e9a887358d2210",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNTo4YzkxODNiOTQyNWY3MmM3ODM0MDE1Y2Y5MWU5YTg4NzM1OGQyMjEw",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-18T18:22:39Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-18T18:22:39Z"
+      },
+      "message": "Back something out",
+      "tree": {
+        "sha": "e8e74a6c3fd7524764e84970b875289ee153880e",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/e8e74a6c3fd7524764e84970b875289ee153880e"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/8c9183b9425f72c7834015cf91e9a887358d2210",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/8c9183b9425f72c7834015cf91e9a887358d2210",
+    "html_url": "https://github.com/apache/kafka/commit/8c9183b9425f72c7834015cf91e9a887358d2210",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/8c9183b9425f72c7834015cf91e9a887358d2210/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f557a86acdb5e854a1298464ffd293ad851246c7",
+        "url": "https://api.github.com/repos/apache/kafka/commits/f557a86acdb5e854a1298464ffd293ad851246c7",
+        "html_url": "https://github.com/apache/kafka/commit/f557a86acdb5e854a1298464ffd293ad851246c7"
+      }
+    ]
+  },
+  {
+    "sha": "1e20e9ccc2fb094f307002e46c69e610809d6607",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNToxZTIwZTljY2MyZmIwOTRmMzA3MDAyZTQ2YzY5ZTYxMDgwOWQ2NjA3",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-18T18:55:45Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-18T19:49:10Z"
+      },
+      "message": "Tests WIP",
+      "tree": {
+        "sha": "4f468f1ce67de31ab041434487d8ee4afab45d09",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/4f468f1ce67de31ab041434487d8ee4afab45d09"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/1e20e9ccc2fb094f307002e46c69e610809d6607",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/1e20e9ccc2fb094f307002e46c69e610809d6607",
+    "html_url": "https://github.com/apache/kafka/commit/1e20e9ccc2fb094f307002e46c69e610809d6607",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/1e20e9ccc2fb094f307002e46c69e610809d6607/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8c9183b9425f72c7834015cf91e9a887358d2210",
+        "url": "https://api.github.com/repos/apache/kafka/commits/8c9183b9425f72c7834015cf91e9a887358d2210",
+        "html_url": "https://github.com/apache/kafka/commit/8c9183b9425f72c7834015cf91e9a887358d2210"
+      }
+    ]
+  },
+  {
+    "sha": "93ac6301e8443ffd057adde2d56337b33ce7bd3d",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNTo5M2FjNjMwMWU4NDQzZmZkMDU3YWRkZTJkNTYzMzdiMzNjZTdiZDNk",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-19T15:52:29Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-19T15:52:29Z"
+      },
+      "message": "Add some debug logging for test",
+      "tree": {
+        "sha": "d815eb7fe18133fc659f15399a6097c845d9fec4",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/d815eb7fe18133fc659f15399a6097c845d9fec4"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/93ac6301e8443ffd057adde2d56337b33ce7bd3d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/93ac6301e8443ffd057adde2d56337b33ce7bd3d",
+    "html_url": "https://github.com/apache/kafka/commit/93ac6301e8443ffd057adde2d56337b33ce7bd3d",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/93ac6301e8443ffd057adde2d56337b33ce7bd3d/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1e20e9ccc2fb094f307002e46c69e610809d6607",
+        "url": "https://api.github.com/repos/apache/kafka/commits/1e20e9ccc2fb094f307002e46c69e610809d6607",
+        "html_url": "https://github.com/apache/kafka/commit/1e20e9ccc2fb094f307002e46c69e610809d6607"
+      }
+    ]
+  },
+  {
+    "sha": "ccda5352339208b01efa00eda63069c3b8b2d38d",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNTpjY2RhNTM1MjMzOTIwOGIwMWVmYTAwZWRhNjMwNjljM2I4YjJkMzhk",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-19T17:00:22Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-19T17:00:22Z"
+      },
+      "message": "Make sure to always send LeaderAndIsr after AlterIsr",
+      "tree": {
+        "sha": "086033058d7e86a5bb9df7818001cc4acefde4f9",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/086033058d7e86a5bb9df7818001cc4acefde4f9"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/ccda5352339208b01efa00eda63069c3b8b2d38d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/ccda5352339208b01efa00eda63069c3b8b2d38d",
+    "html_url": "https://github.com/apache/kafka/commit/ccda5352339208b01efa00eda63069c3b8b2d38d",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/ccda5352339208b01efa00eda63069c3b8b2d38d/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "93ac6301e8443ffd057adde2d56337b33ce7bd3d",
+        "url": "https://api.github.com/repos/apache/kafka/commits/93ac6301e8443ffd057adde2d56337b33ce7bd3d",
+        "html_url": "https://github.com/apache/kafka/commit/93ac6301e8443ffd057adde2d56337b33ce7bd3d"
+      }
+    ]
+  },
+  {
+    "sha": "19d8e362edce6159faa273823840c1cb4cb56164",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNToxOWQ4ZTM2MmVkY2U2MTU5ZmFhMjczODIzODQwYzFjYjRjYjU2MTY0",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-20T13:01:50Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-20T13:01:50Z"
+      },
+      "message": "More logging for tests",
+      "tree": {
+        "sha": "a43f64c6bfff3c968497694afbd4572e1eafcab7",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/a43f64c6bfff3c968497694afbd4572e1eafcab7"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/19d8e362edce6159faa273823840c1cb4cb56164",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/19d8e362edce6159faa273823840c1cb4cb56164",
+    "html_url": "https://github.com/apache/kafka/commit/19d8e362edce6159faa273823840c1cb4cb56164",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/19d8e362edce6159faa273823840c1cb4cb56164/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ccda5352339208b01efa00eda63069c3b8b2d38d",
+        "url": "https://api.github.com/repos/apache/kafka/commits/ccda5352339208b01efa00eda63069c3b8b2d38d",
+        "html_url": "https://github.com/apache/kafka/commit/ccda5352339208b01efa00eda63069c3b8b2d38d"
+      }
+    ]
+  },
+  {
+    "sha": "2bcf8b4b68cf3e59d86743e8927b867bd11970a7",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNToyYmNmOGI0YjY4Y2YzZTU5ZDg2NzQzZTg5MjdiODY3YmQxMTk3MGE3",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-20T15:01:47Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-20T15:06:56Z"
+      },
+      "message": "Clear the pending ISR state for certain errors",
+      "tree": {
+        "sha": "6c5a3995659e9b615d09270392039f290648bf95",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/6c5a3995659e9b615d09270392039f290648bf95"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/2bcf8b4b68cf3e59d86743e8927b867bd11970a7",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/2bcf8b4b68cf3e59d86743e8927b867bd11970a7",
+    "html_url": "https://github.com/apache/kafka/commit/2bcf8b4b68cf3e59d86743e8927b867bd11970a7",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/2bcf8b4b68cf3e59d86743e8927b867bd11970a7/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "19d8e362edce6159faa273823840c1cb4cb56164",
+        "url": "https://api.github.com/repos/apache/kafka/commits/19d8e362edce6159faa273823840c1cb4cb56164",
+        "html_url": "https://github.com/apache/kafka/commit/19d8e362edce6159faa273823840c1cb4cb56164"
+      }
+    ]
+  },
+  {
+    "sha": "5be92d0f38be1a6a969e6e483bf8614d3488955a",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNTo1YmU5MmQwZjM4YmUxYTZhOTY5ZTZlNDgzYmY4NjE0ZDM0ODg5NTVh",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-20T18:10:08Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-20T18:10:08Z"
+      },
+      "message": "Let Partition handle LeaderAndIsr even if epoch is unchanged",
+      "tree": {
+        "sha": "14ec9f4f31a630bf1bbbe39db9e486f8dfad3681",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/14ec9f4f31a630bf1bbbe39db9e486f8dfad3681"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/5be92d0f38be1a6a969e6e483bf8614d3488955a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/5be92d0f38be1a6a969e6e483bf8614d3488955a",
+    "html_url": "https://github.com/apache/kafka/commit/5be92d0f38be1a6a969e6e483bf8614d3488955a",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/5be92d0f38be1a6a969e6e483bf8614d3488955a/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2bcf8b4b68cf3e59d86743e8927b867bd11970a7",
+        "url": "https://api.github.com/repos/apache/kafka/commits/2bcf8b4b68cf3e59d86743e8927b867bd11970a7",
+        "html_url": "https://github.com/apache/kafka/commit/2bcf8b4b68cf3e59d86743e8927b867bd11970a7"
+      }
+    ]
+  },
+  {
+    "sha": "868a779bc31edebac5803ba48ed4cebde9f5403f",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNTo4NjhhNzc5YmMzMWVkZWJhYzU4MDNiYTQ4ZWQ0Y2ViZGU5ZjU0MDNm",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-21T15:43:48Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-21T15:43:48Z"
+      },
+      "message": "Better logging for ISR updates, allow leader to retry in some cases",
+      "tree": {
+        "sha": "a7c149394306e5a246493ae6d99ad9c64db9355e",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/a7c149394306e5a246493ae6d99ad9c64db9355e"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/868a779bc31edebac5803ba48ed4cebde9f5403f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/868a779bc31edebac5803ba48ed4cebde9f5403f",
+    "html_url": "https://github.com/apache/kafka/commit/868a779bc31edebac5803ba48ed4cebde9f5403f",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/868a779bc31edebac5803ba48ed4cebde9f5403f/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5be92d0f38be1a6a969e6e483bf8614d3488955a",
+        "url": "https://api.github.com/repos/apache/kafka/commits/5be92d0f38be1a6a969e6e483bf8614d3488955a",
+        "html_url": "https://github.com/apache/kafka/commit/5be92d0f38be1a6a969e6e483bf8614d3488955a"
+      }
+    ]
+  },
+  {
+    "sha": "69441c0ff1484c24b1135a51e8236cbeee05c78b",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNTo2OTQ0MWMwZmYxNDg0YzI0YjExMzVhNTFlODIzNmNiZWVlMDVjNzhi",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-21T18:31:03Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-21T18:31:03Z"
+      },
+      "message": "Clear pending ISR state after unknown controller error",
+      "tree": {
+        "sha": "4822807afec7645d871e2cd808f75116f18eb2ef",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/4822807afec7645d871e2cd808f75116f18eb2ef"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/69441c0ff1484c24b1135a51e8236cbeee05c78b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/69441c0ff1484c24b1135a51e8236cbeee05c78b",
+    "html_url": "https://github.com/apache/kafka/commit/69441c0ff1484c24b1135a51e8236cbeee05c78b",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/69441c0ff1484c24b1135a51e8236cbeee05c78b/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "868a779bc31edebac5803ba48ed4cebde9f5403f",
+        "url": "https://api.github.com/repos/apache/kafka/commits/868a779bc31edebac5803ba48ed4cebde9f5403f",
+        "html_url": "https://github.com/apache/kafka/commit/868a779bc31edebac5803ba48ed4cebde9f5403f"
+      }
+    ]
+  },
+  {
+    "sha": "d6ba8c25dc68d4f4888a74aab3ffb92683b89203",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNTpkNmJhOGMyNWRjNjhkNGY0ODg4YTc0YWFiM2ZmYjkyNjgzYjg5MjAz",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-21T20:53:40Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-21T20:53:40Z"
+      },
+      "message": "Feedback from PR",
+      "tree": {
+        "sha": "d42b91f3d3ee115ea105582c930667aa4fcf3362",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/d42b91f3d3ee115ea105582c930667aa4fcf3362"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/d6ba8c25dc68d4f4888a74aab3ffb92683b89203",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/d6ba8c25dc68d4f4888a74aab3ffb92683b89203",
+    "html_url": "https://github.com/apache/kafka/commit/d6ba8c25dc68d4f4888a74aab3ffb92683b89203",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/d6ba8c25dc68d4f4888a74aab3ffb92683b89203/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "69441c0ff1484c24b1135a51e8236cbeee05c78b",
+        "url": "https://api.github.com/repos/apache/kafka/commits/69441c0ff1484c24b1135a51e8236cbeee05c78b",
+        "html_url": "https://github.com/apache/kafka/commit/69441c0ff1484c24b1135a51e8236cbeee05c78b"
+      }
+    ]
+  },
+  {
+    "sha": "c886e8c5137b6a90099625e75268b8e4bcf30ee4",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNTpjODg2ZThjNTEzN2I2YTkwMDk5NjI1ZTc1MjY4YjhlNGJjZjMwZWU0",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-21T20:54:01Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-21T20:58:56Z"
+      },
+      "message": "Cover more error cases, some cleanup",
+      "tree": {
+        "sha": "6296e7687086d9b15a1f3a9f13c76ab9d390e1d4",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/6296e7687086d9b15a1f3a9f13c76ab9d390e1d4"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/c886e8c5137b6a90099625e75268b8e4bcf30ee4",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/c886e8c5137b6a90099625e75268b8e4bcf30ee4",
+    "html_url": "https://github.com/apache/kafka/commit/c886e8c5137b6a90099625e75268b8e4bcf30ee4",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/c886e8c5137b6a90099625e75268b8e4bcf30ee4/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d6ba8c25dc68d4f4888a74aab3ffb92683b89203",
+        "url": "https://api.github.com/repos/apache/kafka/commits/d6ba8c25dc68d4f4888a74aab3ffb92683b89203",
+        "html_url": "https://github.com/apache/kafka/commit/d6ba8c25dc68d4f4888a74aab3ffb92683b89203"
+      }
+    ]
+  },
+  {
+    "sha": "1691951e335ff8e1ab6558b50c6607218cfe08a7",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNToxNjkxOTUxZTMzNWZmOGUxYWI2NTU4YjUwYzY2MDcyMThjZmUwOGE3",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-24T14:01:35Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-24T14:01:35Z"
+      },
+      "message": "Revert \"Back something out\"\n\nThis reverts commit 8c9183b9425f72c7834015cf91e9a887358d2210.",
+      "tree": {
+        "sha": "eefb0163f63a79812546a1798710bebb95eed9a1",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/eefb0163f63a79812546a1798710bebb95eed9a1"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/1691951e335ff8e1ab6558b50c6607218cfe08a7",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/1691951e335ff8e1ab6558b50c6607218cfe08a7",
+    "html_url": "https://github.com/apache/kafka/commit/1691951e335ff8e1ab6558b50c6607218cfe08a7",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/1691951e335ff8e1ab6558b50c6607218cfe08a7/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c886e8c5137b6a90099625e75268b8e4bcf30ee4",
+        "url": "https://api.github.com/repos/apache/kafka/commits/c886e8c5137b6a90099625e75268b8e4bcf30ee4",
+        "html_url": "https://github.com/apache/kafka/commit/c886e8c5137b6a90099625e75268b8e4bcf30ee4"
+      }
+    ]
+  },
+  {
+    "sha": "6b264a48779750c9ae05bb15b517260245e4b44b",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNTo2YjI2NGE0ODc3OTc1MGM5YWUwNWJiMTViNTE3MjYwMjQ1ZTRiNDRi",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-24T14:16:33Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-08-24T14:16:33Z"
+      },
+      "message": "Cleanup",
+      "tree": {
+        "sha": "298dd0a0073bce683017f0414eba109434d97371",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/298dd0a0073bce683017f0414eba109434d97371"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/6b264a48779750c9ae05bb15b517260245e4b44b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/6b264a48779750c9ae05bb15b517260245e4b44b",
+    "html_url": "https://github.com/apache/kafka/commit/6b264a48779750c9ae05bb15b517260245e4b44b",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/6b264a48779750c9ae05bb15b517260245e4b44b/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1691951e335ff8e1ab6558b50c6607218cfe08a7",
+        "url": "https://api.github.com/repos/apache/kafka/commits/1691951e335ff8e1ab6558b50c6607218cfe08a7",
+        "html_url": "https://github.com/apache/kafka/commit/1691951e335ff8e1ab6558b50c6607218cfe08a7"
+      }
+    ]
+  },
+  {
+    "sha": "f791645f8d5655c6b7775d79296d3c6bbea5e17a",
+    "node_id": "MDY6Q29tbWl0NTU0MjgwNTpmNzkxNjQ1ZjhkNTY1NWM2Yjc3NzVkNzkyOTZkM2M2YmJlYTVlMTdh",
+    "commit": {
+      "author": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-09-09T15:52:55Z"
+      },
+      "committer": {
+        "name": "David Arthur",
+        "email": "mumrah@gmail.com",
+        "date": "2020-09-09T15:56:01Z"
+      },
+      "message": "Merge remote-tracking branch 'apache-github/trunk' into KAFKA-8836-alter-isr",
+      "tree": {
+        "sha": "dc01ae5aaaab528d0813efa968c20ea19087a6c8",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/dc01ae5aaaab528d0813efa968c20ea19087a6c8"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/f791645f8d5655c6b7775d79296d3c6bbea5e17a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/f791645f8d5655c6b7775d79296d3c6bbea5e17a",
+    "html_url": "https://github.com/apache/kafka/commit/f791645f8d5655c6b7775d79296d3c6bbea5e17a",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/f791645f8d5655c6b7775d79296d3c6bbea5e17a/comments",
+    "author": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mumrah",
+      "id": 55116,
+      "node_id": "MDQ6VXNlcjU1MTE2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55116?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mumrah",
+      "html_url": "https://github.com/mumrah",
+      "followers_url": "https://api.github.com/users/mumrah/followers",
+      "following_url": "https://api.github.com/users/mumrah/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mumrah/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mumrah/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mumrah/subscriptions",
+      "organizations_url": "https://api.github.com/users/mumrah/orgs",
+      "repos_url": "https://api.github.com/users/mumrah/repos",
+      "events_url": "https://api.github.com/users/mumrah/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mumrah/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6b264a48779750c9ae05bb15b517260245e4b44b",
+        "url": "https://api.github.com/repos/apache/kafka/commits/6b264a48779750c9ae05bb15b517260245e4b44b",
+        "html_url": "https://github.com/apache/kafka/commit/6b264a48779750c9ae05bb15b517260245e4b44b"
+      },
+      {
+        "sha": "d2521855b8eb8a0dbb6f94cd9bb5093276fb7db2",
+        "url": "https://api.github.com/repos/apache/kafka/commits/d2521855b8eb8a0dbb6f94cd9bb5093276fb7db2",
+        "html_url": "https://github.com/apache/kafka/commit/d2521855b8eb8a0dbb6f94cd9bb5093276fb7db2"
+      }
+    ]
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "83e26040b5275d6f48fc1b1c3af210b6f1f4e026",
+    "node_id": "MDY6Q29tbWl0MTYwOTk5OjgzZTI2MDQwYjUyNzVkNmY0OGZjMWIxYzNhZjIxMGI2ZjFmNGUwMjY=",
+    "commit": {
+      "author": {
+        "name": "Pawel Rozlach",
+        "email": "pawel.rozlach@gmail.com",
+        "date": "2016-06-07T10:37:01Z"
+      },
+      "committer": {
+        "name": "Pawel Rozlach",
+        "email": "pawel.rozlach@gmail.com",
+        "date": "2016-06-07T10:37:03Z"
+      },
+      "message": "Fix NULL handling for getlogin() call\n\nThis patch fixes issues with CoreOs if e.g. go binary is linking to libzookeeper_mt.\n\nThe problem here is that:\n* in case of statically linked go binaries, they are still relying on glibc\n  for fetching the most basic system information (accounts, dns, i.e.)\n* there is bug/ambiguity in gcc: https://gcc.gnu.org/bugzilla/show_bug.cgi?id=15685\n* libc libraries differ between centos/debian-jessie(golang container base\n  image) and CoreOs\n* the return code is not checked for getlogin() call: https://github.com/apache/zookeeper/blob/trunk/src/c/src/zookeeper.c#L1048\n  (getlogin can return NULL)\n\nSo the idea is to actually check exit status from getlogin() call and return\nsome predefined string if it's NULL.\n\nWe may try to fix log_message function itself(i.e. detect NULL pointers to strings)\nbut I tend to agree with Manuel L\u00f3pez-Ib\u00e1\u00f1ez from gcc bug report - NULL strings\nshould not be permitted/avoided.",
+      "tree": {
+        "sha": "000e01832f4ac2da1064ebaa12a22d734a36586b",
+        "url": "https://api.github.com/repos/apache/zookeeper/git/trees/000e01832f4ac2da1064ebaa12a22d734a36586b"
+      },
+      "url": "https://api.github.com/repos/apache/zookeeper/git/commits/83e26040b5275d6f48fc1b1c3af210b6f1f4e026",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/zookeeper/commits/83e26040b5275d6f48fc1b1c3af210b6f1f4e026",
+    "html_url": "https://github.com/apache/zookeeper/commit/83e26040b5275d6f48fc1b1c3af210b6f1f4e026",
+    "comments_url": "https://api.github.com/repos/apache/zookeeper/commits/83e26040b5275d6f48fc1b1c3af210b6f1f4e026/comments",
+    "author": {
+      "login": "vespian",
+      "id": 2124609,
+      "node_id": "MDQ6VXNlcjIxMjQ2MDk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2124609?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/vespian",
+      "html_url": "https://github.com/vespian",
+      "followers_url": "https://api.github.com/users/vespian/followers",
+      "following_url": "https://api.github.com/users/vespian/following{/other_user}",
+      "gists_url": "https://api.github.com/users/vespian/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/vespian/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/vespian/subscriptions",
+      "organizations_url": "https://api.github.com/users/vespian/orgs",
+      "repos_url": "https://api.github.com/users/vespian/repos",
+      "events_url": "https://api.github.com/users/vespian/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/vespian/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "vespian",
+      "id": 2124609,
+      "node_id": "MDQ6VXNlcjIxMjQ2MDk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2124609?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/vespian",
+      "html_url": "https://github.com/vespian",
+      "followers_url": "https://api.github.com/users/vespian/followers",
+      "following_url": "https://api.github.com/users/vespian/following{/other_user}",
+      "gists_url": "https://api.github.com/users/vespian/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/vespian/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/vespian/subscriptions",
+      "organizations_url": "https://api.github.com/users/vespian/orgs",
+      "repos_url": "https://api.github.com/users/vespian/repos",
+      "events_url": "https://api.github.com/users/vespian/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/vespian/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d8bf5ff92c28bb004b9302f2179635b3beec658a",
+        "url": "https://api.github.com/repos/apache/zookeeper/commits/d8bf5ff92c28bb004b9302f2179635b3beec658a",
+        "html_url": "https://github.com/apache/zookeeper/commit/d8bf5ff92c28bb004b9302f2179635b3beec658a"
+      }
+    ]
+  }
+]

@@ -1,0 +1,64 @@
+[
+  {
+    "sha": "8a90dfba815d5aaf4c7ac0243584aba83c6c8465",
+    "node_id": "MDY6Q29tbWl0NTQyMTYzNTE6OGE5MGRmYmE4MTVkNWFhZjRjN2FjMDI0MzU4NGFiYTgzYzZjODQ2NQ==",
+    "commit": {
+      "author": {
+        "name": "Tim Perkins",
+        "email": "tperkins@salsify.com",
+        "date": "2017-06-12T16:34:59Z"
+      },
+      "committer": {
+        "name": "Tim Perkins",
+        "email": "tim.perkins@ezcater.com",
+        "date": "2018-11-19T13:23:53Z"
+      },
+      "message": "AVRO-2039: Ruby encoding performance improvements",
+      "tree": {
+        "sha": "c43bee4abe9b3589d9beb1a11ef9fc1bf19c17d7",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/c43bee4abe9b3589d9beb1a11ef9fc1bf19c17d7"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/8a90dfba815d5aaf4c7ac0243584aba83c6c8465",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/8a90dfba815d5aaf4c7ac0243584aba83c6c8465",
+    "html_url": "https://github.com/apache/avro/commit/8a90dfba815d5aaf4c7ac0243584aba83c6c8465",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/8a90dfba815d5aaf4c7ac0243584aba83c6c8465/comments",
+    "author": null,
+    "committer": {
+      "login": "tjwp",
+      "id": 1476506,
+      "node_id": "MDQ6VXNlcjE0NzY1MDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1476506?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tjwp",
+      "html_url": "https://github.com/tjwp",
+      "followers_url": "https://api.github.com/users/tjwp/followers",
+      "following_url": "https://api.github.com/users/tjwp/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tjwp/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tjwp/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tjwp/subscriptions",
+      "organizations_url": "https://api.github.com/users/tjwp/orgs",
+      "repos_url": "https://api.github.com/users/tjwp/repos",
+      "events_url": "https://api.github.com/users/tjwp/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tjwp/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e6a3126e6f23ddabf829e47efa27d4ec2f76f7e0",
+        "url": "https://api.github.com/repos/apache/avro/commits/e6a3126e6f23ddabf829e47efa27d4ec2f76f7e0",
+        "html_url": "https://github.com/apache/avro/commit/e6a3126e6f23ddabf829e47efa27d4ec2f76f7e0"
+      }
+    ]
+  }
+]

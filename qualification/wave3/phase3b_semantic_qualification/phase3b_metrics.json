@@ -1,0 +1,85 @@
+{
+  "metric_a_declaration_detection": {
+    "total_cohort_candidates": 100,
+    "total_acquired": 98,
+    "total_not_found": 2,
+    "declaration_retention_rate": 100.0,
+    "false_declaration_positives": 0
+  },
+  "metric_b_semantic_linkage": {
+    "linkage_taxonomy_counts": {
+      "DECLARED_MENTION": 98,
+      "EXPLICIT_LINK": 0,
+      "UNAVAILABLE_EVIDENCE": 2,
+      "NO_LINK": 0
+    },
+    "ground_truth_note": "Precision/recall cannot be claimed as universal linkage metrics because sampling was conditioned on description PR URLs (no negative candidate sample included in cohort)."
+  },
+  "metric_c_state_alignment": {
+    "state_alignment_counts": {
+      "INSUFFICIENT_EVIDENCE": 68,
+      "CONSISTENT": 30
+    },
+    "consistent_count": 30,
+    "insufficient_evidence_count": 68,
+    "conflicting_count": 0
+  },
+  "metric_d_temporal_alignment": {
+    "temporal_alignment_counts": {
+      "INDETERMINATE": 66,
+      "COHERENT": 30,
+      "INVERTED": 2
+    },
+    "coherent_count": 30,
+    "indeterminate_count": 66,
+    "inverted_count": 2
+  },
+  "metric_e_provenance": {
+    "total_provenance_refs": 196,
+    "resolved_provenance_refs": 196,
+    "not_found_provenance_refs": 0,
+    "provenance_resolution_rate": 100.0
+  },
+  "metric_f_acquisition_coverage": {
+    "eligible_population": 1403,
+    "cohort_size": 100,
+    "acquisition_success_rate": 98.0,
+    "evidence_gap_rate": 2.0
+  },
+  "metric_g_track_b_findings": {
+    "total_findings": 3,
+    "findings_by_rule": {
+      "ORBIT-XB-01": 0,
+      "ORBIT-XB-02": 1,
+      "ORBIT-XB-03": 2
+    },
+    "findings": [
+      {
+        "rule_id": "ORBIT-XB-02",
+        "subject": "KAFKA-12770",
+        "disposition": "TRIGGERED",
+        "sufficiency": "SUPPORTED",
+        "explanation": "Code change #10656 ('MINOR: checkstyle version upgrade: 8.20 -->> 8.36.2') is merged while referenced work item KAFKA-12770 remains 'Patch Available' (status category: in_progress). This records a cross-system lifecycle tracking lag; merging code does not prove issue completion."
+      },
+      {
+        "rule_id": "ORBIT-XB-03",
+        "subject": "FLINK-13730",
+        "disposition": "TRIGGERED",
+        "sufficiency": "SUPPORTED",
+        "explanation": "Corroborating code change merge (code change #7605 ('[FLINK-11463][PROTOTYPE] Port Kafka E2E test to Java')) occurred at 2019-11-15T19:57:31Z after work item FLINK-13730 was recorded as resolved at 2019-08-15T10:04:02Z (92 complete days post-resolution). This is an observational temporal finding."
+      },
+      {
+        "rule_id": "ORBIT-XB-03",
+        "subject": "FLINK-20650",
+        "disposition": "TRIGGERED",
+        "sufficiency": "SUPPORTED",
+        "explanation": "Corroborating code change merge (code change #9249 ('[flink] add 1.12 ; remove 1.10')) occurred at 2021-01-28T20:45:19Z after work item FLINK-20650 was recorded as resolved at 2020-12-23T09:25:10Z (36 complete days post-resolution). This is an observational temporal finding."
+      }
+    ]
+  },
+  "metric_h_manual_adjudication": {
+    "manual_sample_size": 28,
+    "agreed_count": 27,
+    "agreement_rate": 96.42857142857143
+  }
+}

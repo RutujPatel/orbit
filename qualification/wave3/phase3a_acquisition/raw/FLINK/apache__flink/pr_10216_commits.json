@@ -1,0 +1,248 @@
+[
+  {
+    "sha": "f12c7e28b5a955ffa0758fc2084499e8998691ea",
+    "node_id": "MDY6Q29tbWl0NDM3NjQ5MDA6ZjEyYzdlMjhiNWE5NTVmZmEwNzU4ZmMyMDg0NDk5ZTg5OTg2OTFlYQ==",
+    "commit": {
+      "author": {
+        "name": "Dawid Wysakowicz",
+        "email": "dwysakowicz@apache.org",
+        "date": "2019-11-14T16:14:30Z"
+      },
+      "committer": {
+        "name": "Dawid Wysakowicz",
+        "email": "dwysakowicz@apache.org",
+        "date": "2019-11-15T10:36:26Z"
+      },
+      "message": "[FLINK-14750][configuration] Migrate duration and memory size ConfigOptions in RestartStrategyOptions",
+      "tree": {
+        "sha": "f567bdcad64f078dd1897c98cbc9b02bc1617937",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/f567bdcad64f078dd1897c98cbc9b02bc1617937"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/f12c7e28b5a955ffa0758fc2084499e8998691ea",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEE6pOkNbTiybTJ9TP2MdLdEL/BWi0FAl3Of6wACgkQMdLdEL/B\nWi2HNA//f8bYXyCbLv+to3NiUmn0WjXf6RLEM/FrVTfscra8AXCmgXljzTSk8kiW\nB9Lv2QlPNMA6YxziuEEHqjYc9NqS88LZOMO7QfgwJZXmWiQH9vbJazpgsWXD2DRc\nVjEaeBoL/P0Yop273dJgtFy08P7lSTnxHlm//HhtCjGfw3qyyaRuF382rkNkVkem\n//70r9AqBviDBND5SyW2fNY3M8qQ+lQ2mMAD7KNfQyZXIyaxGY0MlqagJ1nG/ADN\nSiP4+9KhGYZnFB7Z5fkBPgRSzDlM4x9EjJhJOhuJc0zljDG+XhUxt2YFYxYEg++Q\nZVr72YfnLngqQ5qPXPWU/Bscu0Oi6ZUzHvXTaUmoRDJ8BMyAuP4XUF/k9wd0RWe5\n/gFVSqYs8z+SNAhFyCO0jrNZMRoF1VmmJjYVc/42HMf+j5DYAXHsH67oJG3vMFCs\n0EuF3EULhuy4cp5va0Y4KbQ614rP+hLx2NP/24/IuM7Kn1blV3cJZiC6ZQXAWGhQ\npDyeQYKIhJUpXInFno9EhxoLZNZbxT3eyf4M+WafQ4Rvmib2uKtvgsNhb96PZUZw\n6bTol7AN2/92uPcg1791cKBToeTFyl16YAX+IwZnmlRwPAW6iS+UE0DG41ulSWQs\n5c57EoK3D/s2MC2fVN7/nKjFMPs6mOJANVd3dRZe8nEioXM2drM=\n=mP6u\n-----END PGP SIGNATURE-----",
+        "payload": "tree f567bdcad64f078dd1897c98cbc9b02bc1617937\nparent bc4e2458fc2a9be11fd2defbdba74ca0dd7b1ddf\nauthor Dawid Wysakowicz <dwysakowicz@apache.org> 1573748070 +0100\ncommitter Dawid Wysakowicz <dwysakowicz@apache.org> 1573814186 +0100\n\n[FLINK-14750][configuration] Migrate duration and memory size ConfigOptions in RestartStrategyOptions\n",
+        "verified_at": "2024-11-21T14:52:39Z"
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/f12c7e28b5a955ffa0758fc2084499e8998691ea",
+    "html_url": "https://github.com/apache/flink/commit/f12c7e28b5a955ffa0758fc2084499e8998691ea",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/f12c7e28b5a955ffa0758fc2084499e8998691ea/comments",
+    "author": {
+      "login": "dawidwys",
+      "id": 6242259,
+      "node_id": "MDQ6VXNlcjYyNDIyNTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6242259?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dawidwys",
+      "html_url": "https://github.com/dawidwys",
+      "followers_url": "https://api.github.com/users/dawidwys/followers",
+      "following_url": "https://api.github.com/users/dawidwys/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dawidwys/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dawidwys/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dawidwys/subscriptions",
+      "organizations_url": "https://api.github.com/users/dawidwys/orgs",
+      "repos_url": "https://api.github.com/users/dawidwys/repos",
+      "events_url": "https://api.github.com/users/dawidwys/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dawidwys/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dawidwys",
+      "id": 6242259,
+      "node_id": "MDQ6VXNlcjYyNDIyNTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6242259?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dawidwys",
+      "html_url": "https://github.com/dawidwys",
+      "followers_url": "https://api.github.com/users/dawidwys/followers",
+      "following_url": "https://api.github.com/users/dawidwys/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dawidwys/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dawidwys/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dawidwys/subscriptions",
+      "organizations_url": "https://api.github.com/users/dawidwys/orgs",
+      "repos_url": "https://api.github.com/users/dawidwys/repos",
+      "events_url": "https://api.github.com/users/dawidwys/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dawidwys/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "bc4e2458fc2a9be11fd2defbdba74ca0dd7b1ddf",
+        "url": "https://api.github.com/repos/apache/flink/commits/bc4e2458fc2a9be11fd2defbdba74ca0dd7b1ddf",
+        "html_url": "https://github.com/apache/flink/commit/bc4e2458fc2a9be11fd2defbdba74ca0dd7b1ddf"
+      }
+    ]
+  },
+  {
+    "sha": "9aad3113e0a0bc5104d1048a72bc1fd983016a2c",
+    "node_id": "MDY6Q29tbWl0NDM3NjQ5MDA6OWFhZDMxMTNlMGEwYmM1MTA0ZDEwNDhhNzJiYzFmZDk4MzAxNmEyYw==",
+    "commit": {
+      "author": {
+        "name": "Dawid Wysakowicz",
+        "email": "dwysakowicz@apache.org",
+        "date": "2019-11-15T14:15:20Z"
+      },
+      "committer": {
+        "name": "Dawid Wysakowicz",
+        "email": "dwysakowicz@apache.org",
+        "date": "2019-11-15T14:15:20Z"
+      },
+      "message": "Comments addressed",
+      "tree": {
+        "sha": "95da85b8eaa7482ffb7da8922cb27758193d6d07",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/95da85b8eaa7482ffb7da8922cb27758193d6d07"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/9aad3113e0a0bc5104d1048a72bc1fd983016a2c",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEE6pOkNbTiybTJ9TP2MdLdEL/BWi0FAl3OsvgACgkQMdLdEL/B\nWi2T/g/+PMVnmTebBLIsK0wMVND+Abiu+r6EZJpcFCU5fM68oVDciewfUWVAIHky\nBpjLcRKWqOoVJCvlVEQJAVEpx17oV4WyBdqlzahI9E/MEbJiercqbLmVTwL/lPGp\nlqdzk4lcNK+WiuWWdWK40PmWX3p9RBb4sqGsQj4IzGQRb+QmNpwgYIyEqqVrjbas\n+pWupCbbV4ppNBMtoqc2gZu3jwgUMEi1ZBVUvDb9aRR4KVbtUZ8iRoZ6sCMaio2l\nEl8X4VkWHO/aNv2e2AzTmmDzHQJHMMcAF/s4i/yz+xKkFV56FFPY3pVG+D6R1CdY\n2zDcKFyFqv2AiH4UrVAHMTocIZvGBhaQC5V2HwGCTzbhj5IdtxxzOwxGdXtdZGK0\n/AEpdu3vAqtUIP3CtPGQ/uRE99gnuf3DQLtXHC0mjoumrRcyTch2Bwhpg1vrfq/Z\nk9QZch+WFrf724zx7f9rk60A0X9hIiYwT2vgxMLXQMfPRcLjO7L2p7Cuno0BbuDi\nV8wkypmlLsyDd2GewWnflkwJnA7052PiXn7ESvM2uQZJlLGTK317WDdVmxVkH9PA\nZgXmeKCq6dDRV8miTkpyqEw1oEyZDfxPVtwHvXGFiKVD3ZkqhlAyorqtwxjvMbtX\nV1P3vI4IukSPv/9W1ex1T33VDJrSAEST+YOkaxUA1ip492hOHt4=\n=Okkr\n-----END PGP SIGNATURE-----",
+        "payload": "tree 95da85b8eaa7482ffb7da8922cb27758193d6d07\nparent f12c7e28b5a955ffa0758fc2084499e8998691ea\nauthor Dawid Wysakowicz <dwysakowicz@apache.org> 1573827320 +0100\ncommitter Dawid Wysakowicz <dwysakowicz@apache.org> 1573827320 +0100\n\nComments addressed\n",
+        "verified_at": "2024-11-21T14:52:39Z"
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/9aad3113e0a0bc5104d1048a72bc1fd983016a2c",
+    "html_url": "https://github.com/apache/flink/commit/9aad3113e0a0bc5104d1048a72bc1fd983016a2c",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/9aad3113e0a0bc5104d1048a72bc1fd983016a2c/comments",
+    "author": {
+      "login": "dawidwys",
+      "id": 6242259,
+      "node_id": "MDQ6VXNlcjYyNDIyNTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6242259?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dawidwys",
+      "html_url": "https://github.com/dawidwys",
+      "followers_url": "https://api.github.com/users/dawidwys/followers",
+      "following_url": "https://api.github.com/users/dawidwys/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dawidwys/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dawidwys/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dawidwys/subscriptions",
+      "organizations_url": "https://api.github.com/users/dawidwys/orgs",
+      "repos_url": "https://api.github.com/users/dawidwys/repos",
+      "events_url": "https://api.github.com/users/dawidwys/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dawidwys/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dawidwys",
+      "id": 6242259,
+      "node_id": "MDQ6VXNlcjYyNDIyNTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6242259?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dawidwys",
+      "html_url": "https://github.com/dawidwys",
+      "followers_url": "https://api.github.com/users/dawidwys/followers",
+      "following_url": "https://api.github.com/users/dawidwys/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dawidwys/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dawidwys/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dawidwys/subscriptions",
+      "organizations_url": "https://api.github.com/users/dawidwys/orgs",
+      "repos_url": "https://api.github.com/users/dawidwys/repos",
+      "events_url": "https://api.github.com/users/dawidwys/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dawidwys/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f12c7e28b5a955ffa0758fc2084499e8998691ea",
+        "url": "https://api.github.com/repos/apache/flink/commits/f12c7e28b5a955ffa0758fc2084499e8998691ea",
+        "html_url": "https://github.com/apache/flink/commit/f12c7e28b5a955ffa0758fc2084499e8998691ea"
+      }
+    ]
+  },
+  {
+    "sha": "304d09115b86affdc6aef27726ea720f81fb5ec0",
+    "node_id": "MDY6Q29tbWl0NDM3NjQ5MDA6MzA0ZDA5MTE1Yjg2YWZmZGM2YWVmMjc3MjZlYTcyMGY4MWZiNWVjMA==",
+    "commit": {
+      "author": {
+        "name": "Dawid Wysakowicz",
+        "email": "dwysakowicz@apache.org",
+        "date": "2019-11-15T07:59:55Z"
+      },
+      "committer": {
+        "name": "Dawid Wysakowicz",
+        "email": "dwysakowicz@apache.org",
+        "date": "2019-11-15T14:15:25Z"
+      },
+      "message": "[FLINK-14750][documentation] Regenerated restart strategy documentation",
+      "tree": {
+        "sha": "6ff27a71ceecb9ebb5d0d3581f17a3b01026eeff",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/6ff27a71ceecb9ebb5d0d3581f17a3b01026eeff"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/304d09115b86affdc6aef27726ea720f81fb5ec0",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEE6pOkNbTiybTJ9TP2MdLdEL/BWi0FAl3Osv0ACgkQMdLdEL/B\nWi0Zdg//f0Jd0oPPOdttqQZF7Jn3493xYVQ80cwF+UMciS1xsXKDghjp1oUqCwAn\nYSWkmbxramOC70JrKjNXm/jwwFfkEdW/zhaSMh9dRGNV1bq5IcjK9jjHIgroG+pi\nNgMeqKja/OeKJPc/N91H9rcvmNbj1vn+BjXk2GbrLpMDDLcBv3+XpPLc/hJWbQBF\nvjrMYHiqbb3fo3gmXpp1FFJYyuOpfDkLJpMXaMCrirYuPYvTzZXSspvZDfNld9l9\n1VxI7t30V8tiNpOYJIvWRlxT0/Du9QVPOWfD0tEoXRuIgUMc8PU7Syff3tOMXXHz\nP9cbt5AvCPYTVZRYd2bc+ofvhE3YZ5SKd7T8s9B5u0oqBGA37Jc52K8sn3lLrYJc\nqoVeN8XhfZMO6wvjdRbOrX5fskSX6ET49WEBW2YDsrlnnz4Vg1AQYqSaVMkR1Sxp\nREasZjhm9BBPiOpSqfNMxjPxhsVciHFBXq0vUZJQEPwqA39WYBDI4bAUUH73LHzc\nPrHC+p1u8K1PblrLRmjNhhu1SGzO95MTE8k7av5gTWVQn0xRKxZbH2wQ3INr8Clp\nAngZHITq04uLLHqJRsb/HCIXFK0Zy5IekKUhQHZKqTVyOCTntgpCzQvqGOwK8B7F\nhC0TnsCwOJuP3VHIKC9D4J0lXGe7TJg1DtIYE36+x5K8DpUJPOA=\n=+Qnv\n-----END PGP SIGNATURE-----",
+        "payload": "tree 6ff27a71ceecb9ebb5d0d3581f17a3b01026eeff\nparent 9aad3113e0a0bc5104d1048a72bc1fd983016a2c\nauthor Dawid Wysakowicz <dwysakowicz@apache.org> 1573804795 +0100\ncommitter Dawid Wysakowicz <dwysakowicz@apache.org> 1573827325 +0100\n\n[FLINK-14750][documentation] Regenerated restart strategy documentation\n",
+        "verified_at": "2024-11-21T14:52:39Z"
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/304d09115b86affdc6aef27726ea720f81fb5ec0",
+    "html_url": "https://github.com/apache/flink/commit/304d09115b86affdc6aef27726ea720f81fb5ec0",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/304d09115b86affdc6aef27726ea720f81fb5ec0/comments",
+    "author": {
+      "login": "dawidwys",
+      "id": 6242259,
+      "node_id": "MDQ6VXNlcjYyNDIyNTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6242259?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dawidwys",
+      "html_url": "https://github.com/dawidwys",
+      "followers_url": "https://api.github.com/users/dawidwys/followers",
+      "following_url": "https://api.github.com/users/dawidwys/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dawidwys/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dawidwys/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dawidwys/subscriptions",
+      "organizations_url": "https://api.github.com/users/dawidwys/orgs",
+      "repos_url": "https://api.github.com/users/dawidwys/repos",
+      "events_url": "https://api.github.com/users/dawidwys/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dawidwys/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "dawidwys",
+      "id": 6242259,
+      "node_id": "MDQ6VXNlcjYyNDIyNTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6242259?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dawidwys",
+      "html_url": "https://github.com/dawidwys",
+      "followers_url": "https://api.github.com/users/dawidwys/followers",
+      "following_url": "https://api.github.com/users/dawidwys/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dawidwys/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dawidwys/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dawidwys/subscriptions",
+      "organizations_url": "https://api.github.com/users/dawidwys/orgs",
+      "repos_url": "https://api.github.com/users/dawidwys/repos",
+      "events_url": "https://api.github.com/users/dawidwys/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dawidwys/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9aad3113e0a0bc5104d1048a72bc1fd983016a2c",
+        "url": "https://api.github.com/repos/apache/flink/commits/9aad3113e0a0bc5104d1048a72bc1fd983016a2c",
+        "html_url": "https://github.com/apache/flink/commit/9aad3113e0a0bc5104d1048a72bc1fd983016a2c"
+      }
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 4501485,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDUwMTQ4NQ==",
+    "user": {
+      "login": "xhochy",
+      "id": 70274,
+      "node_id": "MDQ6VXNlcjcwMjc0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/70274?u=6f0ecf9b9c4ba6dbedc801b6a78c40726de724f6&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xhochy",
+      "html_url": "https://github.com/xhochy",
+      "followers_url": "https://api.github.com/users/xhochy/followers",
+      "following_url": "https://api.github.com/users/xhochy/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xhochy/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xhochy/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xhochy/subscriptions",
+      "organizations_url": "https://api.github.com/users/xhochy/orgs",
+      "repos_url": "https://api.github.com/users/xhochy/repos",
+      "events_url": "https://api.github.com/users/xhochy/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xhochy/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "APPROVED",
+    "html_url": "https://github.com/apache/arrow/pull/176#pullrequestreview-4501485",
+    "pull_request_url": "https://api.github.com/repos/apache/arrow/pulls/176",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/arrow/pull/176#pullrequestreview-4501485"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/arrow/pulls/176"
+      }
+    },
+    "submitted_at": "2016-10-17T15:49:10Z",
+    "commit_id": "dca39ce5e0dde3393aadc074579ea774985a3bea"
+  }
+]

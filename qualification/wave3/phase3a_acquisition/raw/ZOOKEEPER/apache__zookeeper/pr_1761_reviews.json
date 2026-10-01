@@ -1,0 +1,42 @@
+[
+  {
+    "id": 760758608,
+    "node_id": "PRR_kwDOAAJ0584tWEFQ",
+    "user": {
+      "login": "maoling",
+      "id": 11016631,
+      "node_id": "MDQ6VXNlcjExMDE2NjMx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11016631?u=8e8c6501470c084024014170b28e785b6b8dca23&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/maoling",
+      "html_url": "https://github.com/maoling",
+      "followers_url": "https://api.github.com/users/maoling/followers",
+      "following_url": "https://api.github.com/users/maoling/following{/other_user}",
+      "gists_url": "https://api.github.com/users/maoling/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/maoling/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/maoling/subscriptions",
+      "organizations_url": "https://api.github.com/users/maoling/orgs",
+      "repos_url": "https://api.github.com/users/maoling/repos",
+      "events_url": "https://api.github.com/users/maoling/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/maoling/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "+1 @cpoerschke \r\nThanks for this contribution. It's better to create a [JIRA](https://issues.apache.org/jira/projects/ZOOKEEPER/) issue (sign up JIRA if you don't have an account) to bind this PR to a JIRA-ID. ZooKeeper uses the GitHub workflow. The contributor guideline is [here](https://cwiki.apache.org/confluence/display/ZOOKEEPER/HowToContribute)",
+    "state": "APPROVED",
+    "html_url": "https://github.com/apache/zookeeper/pull/1761#pullrequestreview-760758608",
+    "pull_request_url": "https://api.github.com/repos/apache/zookeeper/pulls/1761",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/zookeeper/pull/1761#pullrequestreview-760758608"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/zookeeper/pulls/1761"
+      }
+    },
+    "submitted_at": "2021-09-22T10:57:52Z",
+    "commit_id": "b357d3cd3b84f8bad5555842154c0f0ded9209a6"
+  }
+]

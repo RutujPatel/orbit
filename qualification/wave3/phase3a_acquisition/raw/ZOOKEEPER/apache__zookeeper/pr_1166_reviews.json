@@ -1,0 +1,82 @@
+[
+  {
+    "id": 335737454,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MzM1NzM3NDU0",
+    "user": {
+      "login": "anmolnar",
+      "id": 4997876,
+      "node_id": "MDQ6VXNlcjQ5OTc4NzY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4997876?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/anmolnar",
+      "html_url": "https://github.com/anmolnar",
+      "followers_url": "https://api.github.com/users/anmolnar/followers",
+      "following_url": "https://api.github.com/users/anmolnar/following{/other_user}",
+      "gists_url": "https://api.github.com/users/anmolnar/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/anmolnar/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/anmolnar/subscriptions",
+      "organizations_url": "https://api.github.com/users/anmolnar/orgs",
+      "repos_url": "https://api.github.com/users/anmolnar/repos",
+      "events_url": "https://api.github.com/users/anmolnar/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/anmolnar/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "LGTM.",
+    "state": "APPROVED",
+    "html_url": "https://github.com/apache/zookeeper/pull/1166#pullrequestreview-335737454",
+    "pull_request_url": "https://api.github.com/repos/apache/zookeeper/pulls/1166",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/zookeeper/pull/1166#pullrequestreview-335737454"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/zookeeper/pulls/1166"
+      }
+    },
+    "submitted_at": "2019-12-23T07:16:56Z",
+    "commit_id": "149f04f2667c793fc0c29344c3cb7f8ee0aa3c55"
+  },
+  {
+    "id": 339678199,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MzM5Njc4MTk5",
+    "user": {
+      "login": "eolivelli",
+      "id": 9469110,
+      "node_id": "MDQ6VXNlcjk0NjkxMTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9469110?u=deb7a09b74a7505d6aa571237c4cf7ad576aeb34&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/eolivelli",
+      "html_url": "https://github.com/eolivelli",
+      "followers_url": "https://api.github.com/users/eolivelli/followers",
+      "following_url": "https://api.github.com/users/eolivelli/following{/other_user}",
+      "gists_url": "https://api.github.com/users/eolivelli/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/eolivelli/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/eolivelli/subscriptions",
+      "organizations_url": "https://api.github.com/users/eolivelli/orgs",
+      "repos_url": "https://api.github.com/users/eolivelli/repos",
+      "events_url": "https://api.github.com/users/eolivelli/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/eolivelli/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "APPROVED",
+    "html_url": "https://github.com/apache/zookeeper/pull/1166#pullrequestreview-339678199",
+    "pull_request_url": "https://api.github.com/repos/apache/zookeeper/pulls/1166",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/zookeeper/pull/1166#pullrequestreview-339678199"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/zookeeper/pulls/1166"
+      }
+    },
+    "submitted_at": "2020-01-08T07:10:49Z",
+    "commit_id": "149f04f2667c793fc0c29344c3cb7f8ee0aa3c55"
+  }
+]

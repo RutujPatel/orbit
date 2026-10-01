@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "0c7e2f0b6374a0fcaaf765aa410ab207e278706f",
+    "node_id": "MDY6Q29tbWl0MjA1OTk5MDI3OjBjN2UyZjBiNjM3NGEwZmNhYWY3NjVhYTQxMGFiMjA3ZTI3ODcwNmY=",
+    "commit": {
+      "author": {
+        "name": "wangyang0918",
+        "email": "danrtsey.wy@alibaba-inc.com",
+        "date": "2020-02-21T13:33:53Z"
+      },
+      "committer": {
+        "name": "wangyang0918",
+        "email": "danrtsey.wy@alibaba-inc.com",
+        "date": "2020-02-24T12:22:58Z"
+      },
+      "message": "[FLINK-15948][yarn] Enrich the warning log for YARN minimum allocation memory\n\nThe warning log should show up when the JobManager/TaskManager memory is not a multiple of YARN minimum allocation memory. Because YARN will always normalize the resource request by insuring that the requested memory is a multiple of minimum allocation. The minimum allocation could be configured in YARN ResourceManager via 'yarn.scheduler.minimum-allocation-mb'.",
+      "tree": {
+        "sha": "2bd53e6fd9d2a916c68045603f3e37e37ddbb62b",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/2bd53e6fd9d2a916c68045603f3e37e37ddbb62b"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/0c7e2f0b6374a0fcaaf765aa410ab207e278706f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/0c7e2f0b6374a0fcaaf765aa410ab207e278706f",
+    "html_url": "https://github.com/apache/flink/commit/0c7e2f0b6374a0fcaaf765aa410ab207e278706f",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/0c7e2f0b6374a0fcaaf765aa410ab207e278706f/comments",
+    "author": {
+      "login": "wangyang0918",
+      "id": 15904523,
+      "node_id": "MDQ6VXNlcjE1OTA0NTIz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15904523?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wangyang0918",
+      "html_url": "https://github.com/wangyang0918",
+      "followers_url": "https://api.github.com/users/wangyang0918/followers",
+      "following_url": "https://api.github.com/users/wangyang0918/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wangyang0918/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wangyang0918/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wangyang0918/subscriptions",
+      "organizations_url": "https://api.github.com/users/wangyang0918/orgs",
+      "repos_url": "https://api.github.com/users/wangyang0918/repos",
+      "events_url": "https://api.github.com/users/wangyang0918/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wangyang0918/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "wangyang0918",
+      "id": 15904523,
+      "node_id": "MDQ6VXNlcjE1OTA0NTIz",
+      "avatar_url": "https://avatars.githubusercontent.com/u/15904523?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wangyang0918",
+      "html_url": "https://github.com/wangyang0918",
+      "followers_url": "https://api.github.com/users/wangyang0918/followers",
+      "following_url": "https://api.github.com/users/wangyang0918/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wangyang0918/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wangyang0918/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wangyang0918/subscriptions",
+      "organizations_url": "https://api.github.com/users/wangyang0918/orgs",
+      "repos_url": "https://api.github.com/users/wangyang0918/repos",
+      "events_url": "https://api.github.com/users/wangyang0918/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wangyang0918/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ca2bc35f0da5610c7153f40ca86d46d007d83845",
+        "url": "https://api.github.com/repos/apache/flink/commits/ca2bc35f0da5610c7153f40ca86d46d007d83845",
+        "html_url": "https://github.com/apache/flink/commit/ca2bc35f0da5610c7153f40ca86d46d007d83845"
+      }
+    ]
+  }
+]

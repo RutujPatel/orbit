@@ -1,0 +1,1187 @@
+{
+  "summary": {
+    "RESOLVED": 196,
+    "NOT_FOUND": 0,
+    "INVALID": 0,
+    "UNAVAILABLE": 0,
+    "total": 196
+  },
+  "details": [
+    {
+      "entity": "apache/arrow/176",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/PARQUET/apache__arrow/pr_176.json",
+      "record_locator": "pull_requests[176]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/arrow/4985",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/PARQUET/apache__arrow/pr_4985.json",
+      "record_locator": "pull_requests[4985]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/avro/224",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/AVRO/apache__avro/pr_224.json",
+      "record_locator": "pull_requests[224]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/avro/230",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/AVRO/apache__avro/pr_230.json",
+      "record_locator": "pull_requests[230]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/avro/329",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/AVRO/apache__avro/pr_329.json",
+      "record_locator": "pull_requests[329]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/avro/706",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/AVRO/apache__avro/pr_706.json",
+      "record_locator": "pull_requests[706]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/avro/958",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/AVRO/apache__avro/pr_958.json",
+      "record_locator": "pull_requests[958]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/flink/10106",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_10106.json",
+      "record_locator": "pull_requests[10106]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/flink/10216",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_10216.json",
+      "record_locator": "pull_requests[10216]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/flink/1049",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_1049.json",
+      "record_locator": "pull_requests[1049]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/flink/10936",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_10936.json",
+      "record_locator": "pull_requests[10936]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/flink/11176",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_11176.json",
+      "record_locator": "pull_requests[11176]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/flink/11731",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_11731.json",
+      "record_locator": "pull_requests[11731]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/flink/12729",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_12729.json",
+      "record_locator": "pull_requests[12729]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/flink/12923",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_12923.json",
+      "record_locator": "pull_requests[12923]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/flink/13586",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_13586.json",
+      "record_locator": "pull_requests[13586]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/flink/14893",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_14893.json",
+      "record_locator": "pull_requests[14893]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/flink/15605",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_15605.json",
+      "record_locator": "pull_requests[15605]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/flink/16035",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_16035.json",
+      "record_locator": "pull_requests[16035]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/flink/254",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_254.json",
+      "record_locator": "pull_requests[254]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/flink/477",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_477.json",
+      "record_locator": "pull_requests[477]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/flink/4963",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_4963.json",
+      "record_locator": "pull_requests[4963]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/flink/7605",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_7605.json",
+      "record_locator": "pull_requests[7605]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/flink/8117",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_8117.json",
+      "record_locator": "pull_requests[8117]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/flink/8362",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_8362.json",
+      "record_locator": "pull_requests[8362]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/incubator-flink/254",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__incubator-flink/pr_254.json",
+      "record_locator": "pull_requests[254]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/kafka/10407",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_10407.json",
+      "record_locator": "pull_requests[10407]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/kafka/10494",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_10494.json",
+      "record_locator": "pull_requests[10494]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/kafka/10656",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_10656.json",
+      "record_locator": "pull_requests[10656]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/kafka/3027",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_3027.json",
+      "record_locator": "pull_requests[3027]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/kafka/3449",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_3449.json",
+      "record_locator": "pull_requests[3449]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/kafka/3526",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_3526.json",
+      "record_locator": "pull_requests[3526]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/kafka/3752",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_3752.json",
+      "record_locator": "pull_requests[3752]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/kafka/5117",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_5117.json",
+      "record_locator": "pull_requests[5117]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/kafka/5284",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_5284.json",
+      "record_locator": "pull_requests[5284]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/kafka/5919",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_5919.json",
+      "record_locator": "pull_requests[5919]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/kafka/6177",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_6177.json",
+      "record_locator": "pull_requests[6177]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/kafka/6218",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_6218.json",
+      "record_locator": "pull_requests[6218]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/kafka/6651",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_6651.json",
+      "record_locator": "pull_requests[6651]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/kafka/6843",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_6843.json",
+      "record_locator": "pull_requests[6843]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/kafka/7309",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_7309.json",
+      "record_locator": "pull_requests[7309]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/kafka/7952",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_7952.json",
+      "record_locator": "pull_requests[7952]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/kafka/8295",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_8295.json",
+      "record_locator": "pull_requests[8295]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/kafka/8621",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_8621.json",
+      "record_locator": "pull_requests[8621]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/kafka/8657",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_8657.json",
+      "record_locator": "pull_requests[8657]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/kafka/8864",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_8864.json",
+      "record_locator": "pull_requests[8864]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/kafka/9031",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_9031.json",
+      "record_locator": "pull_requests[9031]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/kafka/9100",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_9100.json",
+      "record_locator": "pull_requests[9100]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/kafka/9401",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_9401.json",
+      "record_locator": "pull_requests[9401]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/kafka/9583",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_9583.json",
+      "record_locator": "pull_requests[9583]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/parquet-format/30",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/PARQUET/apache__parquet-format/pr_30.json",
+      "record_locator": "pull_requests[30]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/spark/27728",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/PARQUET/apache__spark/pr_27728.json",
+      "record_locator": "pull_requests[27728]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/zookeeper/1166",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/ZOOKEEPER/apache__zookeeper/pr_1166.json",
+      "record_locator": "pull_requests[1166]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/zookeeper/1761",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/ZOOKEEPER/apache__zookeeper/pr_1761.json",
+      "record_locator": "pull_requests[1761]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/zookeeper/684",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/ZOOKEEPER/apache__zookeeper/pr_684.json",
+      "record_locator": "pull_requests[684]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/zookeeper/70",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/ZOOKEEPER/apache__zookeeper/pr_70.json",
+      "record_locator": "pull_requests[70]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "apache/zookeeper/770",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/ZOOKEEPER/apache__zookeeper/pr_770.json",
+      "record_locator": "pull_requests[770]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "awslabs/amazon-kinesis-connector-flink/24",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/awslabs__amazon-kinesis-connector-flink/pr_24.json",
+      "record_locator": "pull_requests[24]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "databricks/spark-avro/73",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/PARQUET/databricks__spark-avro/pr_73.json",
+      "record_locator": "pull_requests[73]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "docker-library/official-images/9249",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/docker-library__official-images/pr_9249.json",
+      "record_locator": "pull_requests[9249]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "docker-library/official-images/9345",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/docker-library__official-images/pr_9345.json",
+      "record_locator": "pull_requests[9345]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "facebook/rocksdb/2283",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/KAFKA/facebook__rocksdb/pr_2283.json",
+      "record_locator": "pull_requests[2283]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "facebook/rocksdb/5670",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/facebook__rocksdb/pr_5670.json",
+      "record_locator": "pull_requests[5670]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "salsify/avro-patches/16",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/AVRO/salsify__avro-patches/pr_16.json",
+      "record_locator": "pull_requests[16]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/107",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_107.json",
+      "record_locator": "pull_requests[107]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/126",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_126.json",
+      "record_locator": "pull_requests[126]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/145",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_145.json",
+      "record_locator": "pull_requests[145]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/226",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_226.json",
+      "record_locator": "pull_requests[226]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/268",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_268.json",
+      "record_locator": "pull_requests[268]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/283",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_283.json",
+      "record_locator": "pull_requests[283]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/289",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_289.json",
+      "record_locator": "pull_requests[289]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/291",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_291.json",
+      "record_locator": "pull_requests[291]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/301",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_301.json",
+      "record_locator": "pull_requests[301]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/311",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_311.json",
+      "record_locator": "pull_requests[311]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/312",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_312.json",
+      "record_locator": "pull_requests[312]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/313",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_313.json",
+      "record_locator": "pull_requests[313]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/42",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_42.json",
+      "record_locator": "pull_requests[42]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/431",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_431.json",
+      "record_locator": "pull_requests[431]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/435",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_435.json",
+      "record_locator": "pull_requests[435]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/564",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_564.json",
+      "record_locator": "pull_requests[564]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/569",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_569.json",
+      "record_locator": "pull_requests[569]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/591",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_591.json",
+      "record_locator": "pull_requests[591]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/630",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_630.json",
+      "record_locator": "pull_requests[630]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/68",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_68.json",
+      "record_locator": "pull_requests[68]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/688",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_688.json",
+      "record_locator": "pull_requests[688]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/699",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_699.json",
+      "record_locator": "pull_requests[699]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/716",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_716.json",
+      "record_locator": "pull_requests[716]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/723",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_723.json",
+      "record_locator": "pull_requests[723]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/726",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_726.json",
+      "record_locator": "pull_requests[726]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/74",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_74.json",
+      "record_locator": "pull_requests[74]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/758",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_758.json",
+      "record_locator": "pull_requests[758]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/774",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_774.json",
+      "record_locator": "pull_requests[774]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/794",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_794.json",
+      "record_locator": "pull_requests[794]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/844",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_844.json",
+      "record_locator": "pull_requests[844]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/89",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_89.json",
+      "record_locator": "pull_requests[89]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "stratosphere/stratosphere/891",
+      "fixture": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_891.json",
+      "record_locator": "pull_requests[891]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "AVRO-2034",
+      "fixture": "mongodb://JiraReposAnon.Apache/AVRO-2034",
+      "record_locator": "work_items[AVRO-2034]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "AVRO-2039",
+      "fixture": "mongodb://JiraReposAnon.Apache/AVRO-2039",
+      "record_locator": "work_items[AVRO-2039]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "AVRO-2199",
+      "fixture": "mongodb://JiraReposAnon.Apache/AVRO-2199",
+      "record_locator": "work_items[AVRO-2199]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "AVRO-2438",
+      "fixture": "mongodb://JiraReposAnon.Apache/AVRO-2438",
+      "record_locator": "work_items[AVRO-2438]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "AVRO-2624",
+      "fixture": "mongodb://JiraReposAnon.Apache/AVRO-2624",
+      "record_locator": "work_items[AVRO-2624]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "AVRO-2931",
+      "fixture": "mongodb://JiraReposAnon.Apache/AVRO-2931",
+      "record_locator": "work_items[AVRO-2931]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-12394",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-12394",
+      "record_locator": "work_items[FLINK-12394]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-126",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-126",
+      "record_locator": "work_items[FLINK-126]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-1359",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-1359",
+      "record_locator": "work_items[FLINK-1359]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-13639",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-13639",
+      "record_locator": "work_items[FLINK-13639]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-1373",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-1373",
+      "record_locator": "work_items[FLINK-1373]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-13730",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-13730",
+      "record_locator": "work_items[FLINK-13730]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-145",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-145",
+      "record_locator": "work_items[FLINK-145]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-14700",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-14700",
+      "record_locator": "work_items[FLINK-14700]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-14846",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-14846",
+      "record_locator": "work_items[FLINK-14846]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-14853",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-14853",
+      "record_locator": "work_items[FLINK-14853]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-15832",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-15832",
+      "record_locator": "work_items[FLINK-15832]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-1760",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-1760",
+      "record_locator": "work_items[FLINK-1760]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-17608",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-17608",
+      "record_locator": "work_items[FLINK-17608]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-18067",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-18067",
+      "record_locator": "work_items[FLINK-18067]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-18755",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-18755",
+      "record_locator": "work_items[FLINK-18755]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-19988",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-19988",
+      "record_locator": "work_items[FLINK-19988]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-20650",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-20650",
+      "record_locator": "work_items[FLINK-20650]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-20991",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-20991",
+      "record_locator": "work_items[FLINK-20991]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-21572",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-21572",
+      "record_locator": "work_items[FLINK-21572]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-22479",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-22479",
+      "record_locator": "work_items[FLINK-22479]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-22488",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-22488",
+      "record_locator": "work_items[FLINK-22488]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-226",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-226",
+      "record_locator": "work_items[FLINK-226]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-22944",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-22944",
+      "record_locator": "work_items[FLINK-22944]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-23399",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-23399",
+      "record_locator": "work_items[FLINK-23399]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-236",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-236",
+      "record_locator": "work_items[FLINK-236]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-2572",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-2572",
+      "record_locator": "work_items[FLINK-2572]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-268",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-268",
+      "record_locator": "work_items[FLINK-268]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-280",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-280",
+      "record_locator": "work_items[FLINK-280]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-283",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-283",
+      "record_locator": "work_items[FLINK-283]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-289",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-289",
+      "record_locator": "work_items[FLINK-289]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-291",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-291",
+      "record_locator": "work_items[FLINK-291]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-301",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-301",
+      "record_locator": "work_items[FLINK-301]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-311",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-311",
+      "record_locator": "work_items[FLINK-311]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-312",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-312",
+      "record_locator": "work_items[FLINK-312]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-313",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-313",
+      "record_locator": "work_items[FLINK-313]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-42",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-42",
+      "record_locator": "work_items[FLINK-42]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-431",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-431",
+      "record_locator": "work_items[FLINK-431]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-435",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-435",
+      "record_locator": "work_items[FLINK-435]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-564",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-564",
+      "record_locator": "work_items[FLINK-564]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-569",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-569",
+      "record_locator": "work_items[FLINK-569]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-592",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-592",
+      "record_locator": "work_items[FLINK-592]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-630",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-630",
+      "record_locator": "work_items[FLINK-630]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-68",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-68",
+      "record_locator": "work_items[FLINK-68]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-688",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-688",
+      "record_locator": "work_items[FLINK-688]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-699",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-699",
+      "record_locator": "work_items[FLINK-699]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-716",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-716",
+      "record_locator": "work_items[FLINK-716]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-723",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-723",
+      "record_locator": "work_items[FLINK-723]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-729",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-729",
+      "record_locator": "work_items[FLINK-729]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-74",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-74",
+      "record_locator": "work_items[FLINK-74]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-758",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-758",
+      "record_locator": "work_items[FLINK-758]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-774",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-774",
+      "record_locator": "work_items[FLINK-774]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-794",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-794",
+      "record_locator": "work_items[FLINK-794]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-8365",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-8365",
+      "record_locator": "work_items[FLINK-8365]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-844",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-844",
+      "record_locator": "work_items[FLINK-844]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-89",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-89",
+      "record_locator": "work_items[FLINK-89]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "FLINK-891",
+      "fixture": "mongodb://JiraReposAnon.Apache/FLINK-891",
+      "record_locator": "work_items[FLINK-891]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-10064",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-10064",
+      "record_locator": "work_items[KAFKA-10064]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-10170",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-10170",
+      "record_locator": "work_items[KAFKA-10170]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-10297",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-10297",
+      "record_locator": "work_items[KAFKA-10297]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-10298",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-10298",
+      "record_locator": "work_items[KAFKA-10298]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-10669",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-10669",
+      "record_locator": "work_items[KAFKA-10669]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-10698",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-10698",
+      "record_locator": "work_items[KAFKA-10698]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-10768",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-10768",
+      "record_locator": "work_items[KAFKA-10768]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-12190",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-12190",
+      "record_locator": "work_items[KAFKA-12190]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-12569",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-12569",
+      "record_locator": "work_items[KAFKA-12569]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-12770",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-12770",
+      "record_locator": "work_items[KAFKA-12770]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-12771",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-12771",
+      "record_locator": "work_items[KAFKA-12771]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-12897",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-12897",
+      "record_locator": "work_items[KAFKA-12897]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-13191",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-13191",
+      "record_locator": "work_items[KAFKA-13191]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-5541",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-5541",
+      "record_locator": "work_items[KAFKA-5541]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-5607",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-5607",
+      "record_locator": "work_items[KAFKA-5607]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-5966",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-5966",
+      "record_locator": "work_items[KAFKA-5966]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-7011",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-7011",
+      "record_locator": "work_items[KAFKA-7011]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-7636",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-7636",
+      "record_locator": "work_items[KAFKA-7636]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-7956",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-7956",
+      "record_locator": "work_items[KAFKA-7956]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-8224",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-8224",
+      "record_locator": "work_items[KAFKA-8224]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-8240",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-8240",
+      "record_locator": "work_items[KAFKA-8240]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-8352",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-8352",
+      "record_locator": "work_items[KAFKA-8352]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-8884",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-8884",
+      "record_locator": "work_items[KAFKA-8884]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-9168",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-9168",
+      "record_locator": "work_items[KAFKA-9168]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-9447",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-9447",
+      "record_locator": "work_items[KAFKA-9447]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "KAFKA-9790",
+      "fixture": "mongodb://JiraReposAnon.Apache/KAFKA-9790",
+      "record_locator": "work_items[KAFKA-9790]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "PARQUET-1032",
+      "fixture": "mongodb://JiraReposAnon.Apache/PARQUET-1032",
+      "record_locator": "work_items[PARQUET-1032]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "PARQUET-1202",
+      "fixture": "mongodb://JiraReposAnon.Apache/PARQUET-1202",
+      "record_locator": "work_items[PARQUET-1202]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "PARQUET-1639",
+      "fixture": "mongodb://JiraReposAnon.Apache/PARQUET-1639",
+      "record_locator": "work_items[PARQUET-1639]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "PARQUET-171",
+      "fixture": "mongodb://JiraReposAnon.Apache/PARQUET-171",
+      "record_locator": "work_items[PARQUET-171]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "PARQUET-1809",
+      "fixture": "mongodb://JiraReposAnon.Apache/PARQUET-1809",
+      "record_locator": "work_items[PARQUET-1809]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "PARQUET-752",
+      "fixture": "mongodb://JiraReposAnon.Apache/PARQUET-752",
+      "record_locator": "work_items[PARQUET-752]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "PARQUET-88",
+      "fixture": "mongodb://JiraReposAnon.Apache/PARQUET-88",
+      "record_locator": "work_items[PARQUET-88]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "ZOOKEEPER-2444",
+      "fixture": "mongodb://JiraReposAnon.Apache/ZOOKEEPER-2444",
+      "record_locator": "work_items[ZOOKEEPER-2444]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "ZOOKEEPER-3252",
+      "fixture": "mongodb://JiraReposAnon.Apache/ZOOKEEPER-3252",
+      "record_locator": "work_items[ZOOKEEPER-3252]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "ZOOKEEPER-3396",
+      "fixture": "mongodb://JiraReposAnon.Apache/ZOOKEEPER-3396",
+      "record_locator": "work_items[ZOOKEEPER-3396]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "ZOOKEEPER-3681",
+      "fixture": "mongodb://JiraReposAnon.Apache/ZOOKEEPER-3681",
+      "record_locator": "work_items[ZOOKEEPER-3681]",
+      "status": "RESOLVED"
+    },
+    {
+      "entity": "ZOOKEEPER-4384",
+      "fixture": "mongodb://JiraReposAnon.Apache/ZOOKEEPER-4384",
+      "record_locator": "work_items[ZOOKEEPER-4384]",
+      "status": "RESOLVED"
+    }
+  ]
+}

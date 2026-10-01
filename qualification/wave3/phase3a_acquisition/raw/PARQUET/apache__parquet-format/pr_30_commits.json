@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "d71a7ff2a1459254bc563318362329efcf2db4e5",
+    "node_id": "MDY6Q29tbWl0MjA2NzU2MzU6ZDcxYTdmZjJhMTQ1OTI1NGJjNTYzMzE4MzYyMzI5ZWZjZjJkYjRlNQ==",
+    "commit": {
+      "author": {
+        "name": "kostya-sh",
+        "email": "kostya-sh@users.noreply.github.com",
+        "date": "2015-08-04T02:41:17Z"
+      },
+      "committer": {
+        "name": "kostya-sh",
+        "email": "kostya-sh@users.noreply.github.com",
+        "date": "2015-08-04T02:41:17Z"
+      },
+      "message": "Fix varint-encode() encoding algorithm link\n\nThe spec says that varint-encode() is ULEB-128 encoding but links to VLQ algorithm that is slightly different from ULEB-128",
+      "tree": {
+        "sha": "dcaab93a6c338c814ac87bd3c2e3a2244c73a10b",
+        "url": "https://api.github.com/repos/apache/parquet-format/git/trees/dcaab93a6c338c814ac87bd3c2e3a2244c73a10b"
+      },
+      "url": "https://api.github.com/repos/apache/parquet-format/git/commits/d71a7ff2a1459254bc563318362329efcf2db4e5",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/parquet-format/commits/d71a7ff2a1459254bc563318362329efcf2db4e5",
+    "html_url": "https://github.com/apache/parquet-format/commit/d71a7ff2a1459254bc563318362329efcf2db4e5",
+    "comments_url": "https://api.github.com/repos/apache/parquet-format/commits/d71a7ff2a1459254bc563318362329efcf2db4e5/comments",
+    "author": {
+      "login": "kostya-sh",
+      "id": 7126275,
+      "node_id": "MDQ6VXNlcjcxMjYyNzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7126275?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kostya-sh",
+      "html_url": "https://github.com/kostya-sh",
+      "followers_url": "https://api.github.com/users/kostya-sh/followers",
+      "following_url": "https://api.github.com/users/kostya-sh/following{/other_user}",
+      "gists_url": "https://api.github.com/users/kostya-sh/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/kostya-sh/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/kostya-sh/subscriptions",
+      "organizations_url": "https://api.github.com/users/kostya-sh/orgs",
+      "repos_url": "https://api.github.com/users/kostya-sh/repos",
+      "events_url": "https://api.github.com/users/kostya-sh/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/kostya-sh/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "kostya-sh",
+      "id": 7126275,
+      "node_id": "MDQ6VXNlcjcxMjYyNzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7126275?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kostya-sh",
+      "html_url": "https://github.com/kostya-sh",
+      "followers_url": "https://api.github.com/users/kostya-sh/followers",
+      "following_url": "https://api.github.com/users/kostya-sh/following{/other_user}",
+      "gists_url": "https://api.github.com/users/kostya-sh/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/kostya-sh/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/kostya-sh/subscriptions",
+      "organizations_url": "https://api.github.com/users/kostya-sh/orgs",
+      "repos_url": "https://api.github.com/users/kostya-sh/repos",
+      "events_url": "https://api.github.com/users/kostya-sh/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/kostya-sh/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5b806d1e855bf47f5234c768aefc000b704f43ab",
+        "url": "https://api.github.com/repos/apache/parquet-format/commits/5b806d1e855bf47f5234c768aefc000b704f43ab",
+        "html_url": "https://github.com/apache/parquet-format/commit/5b806d1e855bf47f5234c768aefc000b704f43ab"
+      }
+    ]
+  }
+]

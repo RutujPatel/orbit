@@ -1,0 +1,56 @@
+{
+  "report_id": "ORBIT-PHASE3A-COHORT-SELECTION-001",
+  "generated_at": "2026-09-30T10:45:00Z",
+  "governing_baseline": "6d82d123f8bf50316d2b1ab7a025bc5862a474ed",
+  "consolidation_head": "ea464540b8a414e4ab6e9a2b1a4be53ae31b40ab",
+  "source_population": "JiraReposAnon.Apache (MongoDB)",
+  "selection_algorithm": "Proportional project-stratified deterministic sampling (Hamiltonian largest remainder)",
+  "seed": 42,
+  "canonical_sort_order": "(jira_key, full_repository, pr_number)",
+  "population_metrics": {
+    "total_jira_issues_surveyed": 47431,
+    "total_jira_issues_with_github_refs": 4225,
+    "total_jira_issues_with_pr_urls": 1329,
+    "total_pr_urls_in_jira_descriptions": 1444,
+    "total_unique_candidate_pairs": 1404,
+    "total_eligible_candidates": 1403,
+    "total_excluded_candidates": 1,
+    "exclusions": [
+      {
+        "jira_key": "AVRO-3234",
+        "repository": "apache/avro",
+        "pr_number": 1370,
+        "reason": "Candidate already present in Phase 1A verified local fixtures"
+      }
+    ]
+  },
+  "strata_breakdown": {
+    "PARQUET": {
+      "eligible": 102,
+      "allocated": 7
+    },
+    "KAFKA": {
+      "eligible": 370,
+      "allocated": 26
+    },
+    "AVRO": {
+      "eligible": 78,
+      "allocated": 6
+    },
+    "FLINK": {
+      "eligible": 779,
+      "allocated": 56
+    },
+    "ZOOKEEPER": {
+      "eligible": 74,
+      "allocated": 5
+    }
+  },
+  "cohort_metrics": {
+    "target_size": 100,
+    "actual_size": 100,
+    "manifest_path": "qualification/wave3/phase3a_acquisition/manifest/phase3a_frozen_cohort.json",
+    "csv_manifest_path": "qualification/wave3/phase3a_acquisition/manifest/phase3a_frozen_cohort.csv",
+    "manifest_sha256": "3aa4ebabefa84e95dd433d20ba82c852cce4a1bfe7a4f246bb9c01873f077775"
+  }
+}

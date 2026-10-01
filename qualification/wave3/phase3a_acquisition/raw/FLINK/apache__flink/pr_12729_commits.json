@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "491460bd0b5a9b2e67170d32ca2ffc3506950f65",
+    "node_id": "MDY6Q29tbWl0MjYxNTA0ODY5OjQ5MTQ2MGJkMGI1YTliMmU2NzE3MGQzMmNhMmZmYzM1MDY5NTBmNjU=",
+    "commit": {
+      "author": {
+        "name": "austin ce",
+        "email": "austin.cawley@gmail.com",
+        "date": "2020-06-15T13:31:08Z"
+      },
+      "committer": {
+        "name": "austin ce",
+        "email": "austin.cawley@gmail.com",
+        "date": "2020-07-29T13:55:57Z"
+      },
+      "message": "[FLINK-10195][connectors/rabbitmq] Allow setting QoS",
+      "tree": {
+        "sha": "820ea925bedab398ce573c8a342d8bb52a7a6651",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/820ea925bedab398ce573c8a342d8bb52a7a6651"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/491460bd0b5a9b2e67170d32ca2ffc3506950f65",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/491460bd0b5a9b2e67170d32ca2ffc3506950f65",
+    "html_url": "https://github.com/apache/flink/commit/491460bd0b5a9b2e67170d32ca2ffc3506950f65",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/491460bd0b5a9b2e67170d32ca2ffc3506950f65/comments",
+    "author": {
+      "login": "austince",
+      "id": 4655775,
+      "node_id": "MDQ6VXNlcjQ2NTU3NzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4655775?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/austince",
+      "html_url": "https://github.com/austince",
+      "followers_url": "https://api.github.com/users/austince/followers",
+      "following_url": "https://api.github.com/users/austince/following{/other_user}",
+      "gists_url": "https://api.github.com/users/austince/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/austince/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/austince/subscriptions",
+      "organizations_url": "https://api.github.com/users/austince/orgs",
+      "repos_url": "https://api.github.com/users/austince/repos",
+      "events_url": "https://api.github.com/users/austince/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/austince/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "austince",
+      "id": 4655775,
+      "node_id": "MDQ6VXNlcjQ2NTU3NzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4655775?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/austince",
+      "html_url": "https://github.com/austince",
+      "followers_url": "https://api.github.com/users/austince/followers",
+      "following_url": "https://api.github.com/users/austince/following{/other_user}",
+      "gists_url": "https://api.github.com/users/austince/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/austince/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/austince/subscriptions",
+      "organizations_url": "https://api.github.com/users/austince/orgs",
+      "repos_url": "https://api.github.com/users/austince/repos",
+      "events_url": "https://api.github.com/users/austince/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/austince/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7ea9bb9484110719ab5dc19c00d4a25ab243d334",
+        "url": "https://api.github.com/repos/apache/flink/commits/7ea9bb9484110719ab5dc19c00d4a25ab243d334",
+        "html_url": "https://github.com/apache/flink/commit/7ea9bb9484110719ab5dc19c00d4a25ab243d334"
+      }
+    ]
+  },
+  {
+    "sha": "5ffd02df057f21695027531e82e0ec717c2ddb91",
+    "node_id": "MDY6Q29tbWl0MjYxNTA0ODY5OjVmZmQwMmRmMDU3ZjIxNjk1MDI3NTMxZTgyZTBlYzcxN2MyZGRiOTE=",
+    "commit": {
+      "author": {
+        "name": "austin ce",
+        "email": "austin.cawley@gmail.com",
+        "date": "2020-07-29T15:36:41Z"
+      },
+      "committer": {
+        "name": "austin ce",
+        "email": "austin.cawley@gmail.com",
+        "date": "2020-07-29T15:36:41Z"
+      },
+      "message": "[FLINK-17529][connectors/rabbitmq] Upgrade com.rabbitmq:amqp-client to 5.9.0",
+      "tree": {
+        "sha": "b2b45c34b95eeed173f800deaa67e3adbdfc2280",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/b2b45c34b95eeed173f800deaa67e3adbdfc2280"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/5ffd02df057f21695027531e82e0ec717c2ddb91",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/5ffd02df057f21695027531e82e0ec717c2ddb91",
+    "html_url": "https://github.com/apache/flink/commit/5ffd02df057f21695027531e82e0ec717c2ddb91",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/5ffd02df057f21695027531e82e0ec717c2ddb91/comments",
+    "author": {
+      "login": "austince",
+      "id": 4655775,
+      "node_id": "MDQ6VXNlcjQ2NTU3NzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4655775?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/austince",
+      "html_url": "https://github.com/austince",
+      "followers_url": "https://api.github.com/users/austince/followers",
+      "following_url": "https://api.github.com/users/austince/following{/other_user}",
+      "gists_url": "https://api.github.com/users/austince/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/austince/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/austince/subscriptions",
+      "organizations_url": "https://api.github.com/users/austince/orgs",
+      "repos_url": "https://api.github.com/users/austince/repos",
+      "events_url": "https://api.github.com/users/austince/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/austince/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "austince",
+      "id": 4655775,
+      "node_id": "MDQ6VXNlcjQ2NTU3NzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4655775?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/austince",
+      "html_url": "https://github.com/austince",
+      "followers_url": "https://api.github.com/users/austince/followers",
+      "following_url": "https://api.github.com/users/austince/following{/other_user}",
+      "gists_url": "https://api.github.com/users/austince/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/austince/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/austince/subscriptions",
+      "organizations_url": "https://api.github.com/users/austince/orgs",
+      "repos_url": "https://api.github.com/users/austince/repos",
+      "events_url": "https://api.github.com/users/austince/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/austince/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "491460bd0b5a9b2e67170d32ca2ffc3506950f65",
+        "url": "https://api.github.com/repos/apache/flink/commits/491460bd0b5a9b2e67170d32ca2ffc3506950f65",
+        "html_url": "https://github.com/apache/flink/commit/491460bd0b5a9b2e67170d32ca2ffc3506950f65"
+      }
+    ]
+  }
+]

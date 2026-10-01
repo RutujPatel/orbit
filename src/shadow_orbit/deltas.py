@@ -378,6 +378,7 @@ def evaluate_work_item_deltas(
         )
 
         if not prior_overdue and current_overdue:
+            assert current_item.due_at is not None
             deltas.append(
                 {
                     "delta_key": "newly_overdue",

@@ -1,0 +1,248 @@
+[
+  {
+    "sha": "f12dc4a4d0a8c88a303cc67a283824b01c84b6ec",
+    "node_id": "MDY6Q29tbWl0NzQ0MDk4MDc6ZjEyZGM0YTRkMGE4Yzg4YTMwM2NjNjdhMjgzODI0YjAxYzg0YjZlYw==",
+    "commit": {
+      "author": {
+        "name": "Max Kuklinski",
+        "email": "max.kuklinski@live.de",
+        "date": "2020-01-23T15:53:39Z"
+      },
+      "committer": {
+        "name": "Max Kuklinski",
+        "email": "max.kuklinski@live.de",
+        "date": "2020-01-23T15:53:39Z"
+      },
+      "message": "[FLINK-13689] [Connectors/ElasticSearch] Fix thread leak in Elasticsearch connector when cluster is down",
+      "tree": {
+        "sha": "e41a629e98bb20bce885f52ee79496fa5d263e4a",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/e41a629e98bb20bce885f52ee79496fa5d263e4a"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/f12dc4a4d0a8c88a303cc67a283824b01c84b6ec",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/f12dc4a4d0a8c88a303cc67a283824b01c84b6ec",
+    "html_url": "https://github.com/apache/flink/commit/f12dc4a4d0a8c88a303cc67a283824b01c84b6ec",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/f12dc4a4d0a8c88a303cc67a283824b01c84b6ec/comments",
+    "author": {
+      "login": "static-max",
+      "id": 13963492,
+      "node_id": "MDQ6VXNlcjEzOTYzNDky",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13963492?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/static-max",
+      "html_url": "https://github.com/static-max",
+      "followers_url": "https://api.github.com/users/static-max/followers",
+      "following_url": "https://api.github.com/users/static-max/following{/other_user}",
+      "gists_url": "https://api.github.com/users/static-max/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/static-max/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/static-max/subscriptions",
+      "organizations_url": "https://api.github.com/users/static-max/orgs",
+      "repos_url": "https://api.github.com/users/static-max/repos",
+      "events_url": "https://api.github.com/users/static-max/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/static-max/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "static-max",
+      "id": 13963492,
+      "node_id": "MDQ6VXNlcjEzOTYzNDky",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13963492?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/static-max",
+      "html_url": "https://github.com/static-max",
+      "followers_url": "https://api.github.com/users/static-max/followers",
+      "following_url": "https://api.github.com/users/static-max/following{/other_user}",
+      "gists_url": "https://api.github.com/users/static-max/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/static-max/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/static-max/subscriptions",
+      "organizations_url": "https://api.github.com/users/static-max/orgs",
+      "repos_url": "https://api.github.com/users/static-max/repos",
+      "events_url": "https://api.github.com/users/static-max/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/static-max/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1b6a07441bc4d31252fa47f67f73fda8bdc85399",
+        "url": "https://api.github.com/repos/apache/flink/commits/1b6a07441bc4d31252fa47f67f73fda8bdc85399",
+        "html_url": "https://github.com/apache/flink/commit/1b6a07441bc4d31252fa47f67f73fda8bdc85399"
+      }
+    ]
+  },
+  {
+    "sha": "60254f3a686e9abcc8e76c8204a05edff3c9cd56",
+    "node_id": "MDY6Q29tbWl0NzQ0MDk4MDc6NjAyNTRmM2E2ODZlOWFiY2M4ZTc2YzgyMDRhMDVlZGZmM2M5Y2Q1Ng==",
+    "commit": {
+      "author": {
+        "name": "Max Kuklinski",
+        "email": "max.kuklinski@live.de",
+        "date": "2020-01-23T21:06:20Z"
+      },
+      "committer": {
+        "name": "Max Kuklinski",
+        "email": "max.kuklinski@live.de",
+        "date": "2020-01-23T21:06:20Z"
+      },
+      "message": "[hotfix] Fix checkstyle violation in ElasticsearchApiCallBridge",
+      "tree": {
+        "sha": "63b396577b3181f4d138b34c80025d6f222af12e",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/63b396577b3181f4d138b34c80025d6f222af12e"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/60254f3a686e9abcc8e76c8204a05edff3c9cd56",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/60254f3a686e9abcc8e76c8204a05edff3c9cd56",
+    "html_url": "https://github.com/apache/flink/commit/60254f3a686e9abcc8e76c8204a05edff3c9cd56",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/60254f3a686e9abcc8e76c8204a05edff3c9cd56/comments",
+    "author": {
+      "login": "static-max",
+      "id": 13963492,
+      "node_id": "MDQ6VXNlcjEzOTYzNDky",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13963492?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/static-max",
+      "html_url": "https://github.com/static-max",
+      "followers_url": "https://api.github.com/users/static-max/followers",
+      "following_url": "https://api.github.com/users/static-max/following{/other_user}",
+      "gists_url": "https://api.github.com/users/static-max/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/static-max/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/static-max/subscriptions",
+      "organizations_url": "https://api.github.com/users/static-max/orgs",
+      "repos_url": "https://api.github.com/users/static-max/repos",
+      "events_url": "https://api.github.com/users/static-max/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/static-max/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "static-max",
+      "id": 13963492,
+      "node_id": "MDQ6VXNlcjEzOTYzNDky",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13963492?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/static-max",
+      "html_url": "https://github.com/static-max",
+      "followers_url": "https://api.github.com/users/static-max/followers",
+      "following_url": "https://api.github.com/users/static-max/following{/other_user}",
+      "gists_url": "https://api.github.com/users/static-max/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/static-max/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/static-max/subscriptions",
+      "organizations_url": "https://api.github.com/users/static-max/orgs",
+      "repos_url": "https://api.github.com/users/static-max/repos",
+      "events_url": "https://api.github.com/users/static-max/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/static-max/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f12dc4a4d0a8c88a303cc67a283824b01c84b6ec",
+        "url": "https://api.github.com/repos/apache/flink/commits/f12dc4a4d0a8c88a303cc67a283824b01c84b6ec",
+        "html_url": "https://github.com/apache/flink/commit/f12dc4a4d0a8c88a303cc67a283824b01c84b6ec"
+      }
+    ]
+  },
+  {
+    "sha": "ff83bfbcb22e29a08d5da4eb18e2bbc1398614e6",
+    "node_id": "MDY6Q29tbWl0NzQ0MDk4MDc6ZmY4M2JmYmNiMjJlMjlhMDhkNWRhNGViMThlMmJiYzEzOTg2MTRlNg==",
+    "commit": {
+      "author": {
+        "name": "static-max",
+        "email": "max.kuklinski@live.de",
+        "date": "2020-01-30T11:05:55Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2020-01-30T11:05:55Z"
+      },
+      "message": "Apply suggestions from code review\r\n\r\n[hotfix] Applied suggested log statement changes\n\nCo-Authored-By: Aljoscha Krettek <aljoscha.krettek@gmail.com>",
+      "tree": {
+        "sha": "5a74859bf2165ab7a47b6a3e926b738b40a22d39",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/5a74859bf2165ab7a47b6a3e926b738b40a22d39"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/ff83bfbcb22e29a08d5da4eb18e2bbc1398614e6",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJeMriTCRBK7hj4Ov3rIwAAdHIIAAPOlxUljrODparXeABfhU25\nt9g2ppaGPlTCyyvoB4cSwbJMl4hffhMc6Dc8IzEsXm9chYyAMjcUg+WW4aJA8M8G\n4+o0aHqWDbHfIBJUiL06/DS5TD/IM1uC9R/vhCe8FFk26Ehq59IszMa1bz/B97dD\n1fUG/wlSmG4bP6TIhO9yUFKzJgAdoyDLOokVbHWqUzDq4bF2HC8GsxZG4Gms8k19\nlR5+2cQq+Phu3GWsLxdpnm8MP4Wp81pwYxMDnaHF3EIm+2u9VLNY9/TUFyVt9JGA\nHHAdVQgE+2LwTKRMpa7/5QD2L/0YnUgRKZAADW0bRqWYz1Z92O1QTI/MO6XA6Kc=\n=jBe1\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 5a74859bf2165ab7a47b6a3e926b738b40a22d39\nparent 60254f3a686e9abcc8e76c8204a05edff3c9cd56\nauthor static-max <max.kuklinski@live.de> 1580382355 +0100\ncommitter GitHub <noreply@github.com> 1580382355 +0100\n\nApply suggestions from code review\r\n\r\n[hotfix] Applied suggested log statement changes\n\nCo-Authored-By: Aljoscha Krettek <aljoscha.krettek@gmail.com>",
+        "verified_at": "2024-01-16T19:59:59Z"
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/ff83bfbcb22e29a08d5da4eb18e2bbc1398614e6",
+    "html_url": "https://github.com/apache/flink/commit/ff83bfbcb22e29a08d5da4eb18e2bbc1398614e6",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/ff83bfbcb22e29a08d5da4eb18e2bbc1398614e6/comments",
+    "author": {
+      "login": "static-max",
+      "id": 13963492,
+      "node_id": "MDQ6VXNlcjEzOTYzNDky",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13963492?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/static-max",
+      "html_url": "https://github.com/static-max",
+      "followers_url": "https://api.github.com/users/static-max/followers",
+      "following_url": "https://api.github.com/users/static-max/following{/other_user}",
+      "gists_url": "https://api.github.com/users/static-max/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/static-max/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/static-max/subscriptions",
+      "organizations_url": "https://api.github.com/users/static-max/orgs",
+      "repos_url": "https://api.github.com/users/static-max/repos",
+      "events_url": "https://api.github.com/users/static-max/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/static-max/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "60254f3a686e9abcc8e76c8204a05edff3c9cd56",
+        "url": "https://api.github.com/repos/apache/flink/commits/60254f3a686e9abcc8e76c8204a05edff3c9cd56",
+        "html_url": "https://github.com/apache/flink/commit/60254f3a686e9abcc8e76c8204a05edff3c9cd56"
+      }
+    ]
+  }
+]

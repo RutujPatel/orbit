@@ -1,0 +1,86 @@
+[
+  {
+    "sha": "6b8115301bf9544215a0f1ab71c0213262a085ca",
+    "node_id": "MDY6Q29tbWl0MTM0MzE3ODYxOjZiODExNTMwMWJmOTU0NDIxNWEwZjFhYjcxYzAyMTMyNjJhMDg1Y2E=",
+    "commit": {
+      "author": {
+        "name": "Hatem Helal",
+        "email": "hhelal@mathworks.com",
+        "date": "2019-08-01T15:20:20Z"
+      },
+      "committer": {
+        "name": "Hatem Helal",
+        "email": "hhelal@mathworks.com",
+        "date": "2019-08-01T15:27:27Z"
+      },
+      "message": "conditionally use boost regex for gcc < 4.9",
+      "tree": {
+        "sha": "2cbf68b7d3028c5cd804d55289c3b4040cdff3da",
+        "url": "https://api.github.com/repos/apache/arrow/git/trees/2cbf68b7d3028c5cd804d55289c3b4040cdff3da"
+      },
+      "url": "https://api.github.com/repos/apache/arrow/git/commits/6b8115301bf9544215a0f1ab71c0213262a085ca",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/arrow/commits/6b8115301bf9544215a0f1ab71c0213262a085ca",
+    "html_url": "https://github.com/apache/arrow/commit/6b8115301bf9544215a0f1ab71c0213262a085ca",
+    "comments_url": "https://api.github.com/repos/apache/arrow/commits/6b8115301bf9544215a0f1ab71c0213262a085ca/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "eb73b962e42b5ae6983bf026ebf825f1f707e245",
+        "url": "https://api.github.com/repos/apache/arrow/commits/eb73b962e42b5ae6983bf026ebf825f1f707e245",
+        "html_url": "https://github.com/apache/arrow/commit/eb73b962e42b5ae6983bf026ebf825f1f707e245"
+      }
+    ]
+  },
+  {
+    "sha": "c88bb4e4760362d35ce53a49cceb397739fe389d",
+    "node_id": "MDY6Q29tbWl0MTM0MzE3ODYxOmM4OGJiNGU0NzYwMzYyZDM1Y2U1M2E0OWNjZWIzOTc3MzlmZTM4OWQ=",
+    "commit": {
+      "author": {
+        "name": "Hatem Helal",
+        "email": "hhelal@mathworks.com",
+        "date": "2019-08-01T16:50:23Z"
+      },
+      "committer": {
+        "name": "Hatem Helal",
+        "email": "hhelal@mathworks.com",
+        "date": "2019-08-01T16:50:23Z"
+      },
+      "message": "remove boost regex dependency from libarrow",
+      "tree": {
+        "sha": "46b168ffaab8c42e81ae7e05bb5566fc22cbede1",
+        "url": "https://api.github.com/repos/apache/arrow/git/trees/46b168ffaab8c42e81ae7e05bb5566fc22cbede1"
+      },
+      "url": "https://api.github.com/repos/apache/arrow/git/commits/c88bb4e4760362d35ce53a49cceb397739fe389d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/arrow/commits/c88bb4e4760362d35ce53a49cceb397739fe389d",
+    "html_url": "https://github.com/apache/arrow/commit/c88bb4e4760362d35ce53a49cceb397739fe389d",
+    "comments_url": "https://api.github.com/repos/apache/arrow/commits/c88bb4e4760362d35ce53a49cceb397739fe389d/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "6b8115301bf9544215a0f1ab71c0213262a085ca",
+        "url": "https://api.github.com/repos/apache/arrow/commits/6b8115301bf9544215a0f1ab71c0213262a085ca",
+        "html_url": "https://github.com/apache/arrow/commit/6b8115301bf9544215a0f1ab71c0213262a085ca"
+      }
+    ]
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "8a0a35184ddfbef70f9add0cea8e630bc999b571",
+    "node_id": "MDY6Q29tbWl0OTkzODYyMjo4YTBhMzUxODRkZGZiZWY3MGY5YWRkMGNlYThlNjMwYmM5OTliNTcx",
+    "commit": {
+      "author": {
+        "name": "Robert Metzger",
+        "email": "metzgerr@web.de",
+        "date": "2013-09-10T12:13:52Z"
+      },
+      "committer": {
+        "name": "Robert Metzger",
+        "email": "metzgerr@web.de",
+        "date": "2013-09-10T12:24:00Z"
+      },
+      "message": "Rename SetId() to setId()\nHopefully fixed a bug in the pact compiler for branching plans:\n\t- added a test case provided by Anja Kunkel from HU Berlin\n\t- my understanding of the bug is the following: During a check if additional pipeline breakers are necessary,\n\tthe compiler checks for the LocalStrategy of a SinkJoinerPlan. The SinkJoinerPlan is a \"fake\" plan element to group multiple output sinks into one sink (the compiler assumes one root node, this is why a \"fake\" plan node is required).\n\tThe local strategy of SinkJoinerPlan is initialized as NONE, which means that we just pass through the elements (which makes sence since we are talking about a sink) The initialization of a NONE-local strategy assumes only one input, not two.\n\tI replaced the LocalStrategy with BINARY_NO_OP, which is a NONE for two input.\n\tThe compiler is now able to do its pipline breaker checks.",
+      "tree": {
+        "sha": "ac483a2dffe8cf2ab402d2ab441bfb4e74c94851",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/ac483a2dffe8cf2ab402d2ab441bfb4e74c94851"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/8a0a35184ddfbef70f9add0cea8e630bc999b571",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/8a0a35184ddfbef70f9add0cea8e630bc999b571",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/8a0a35184ddfbef70f9add0cea8e630bc999b571",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/8a0a35184ddfbef70f9add0cea8e630bc999b571/comments",
+    "author": {
+      "login": "rmetzger",
+      "id": 89049,
+      "node_id": "MDQ6VXNlcjg5MDQ5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89049?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rmetzger",
+      "html_url": "https://github.com/rmetzger",
+      "followers_url": "https://api.github.com/users/rmetzger/followers",
+      "following_url": "https://api.github.com/users/rmetzger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rmetzger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rmetzger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rmetzger/subscriptions",
+      "organizations_url": "https://api.github.com/users/rmetzger/orgs",
+      "repos_url": "https://api.github.com/users/rmetzger/repos",
+      "events_url": "https://api.github.com/users/rmetzger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rmetzger/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rmetzger",
+      "id": 89049,
+      "node_id": "MDQ6VXNlcjg5MDQ5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89049?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rmetzger",
+      "html_url": "https://github.com/rmetzger",
+      "followers_url": "https://api.github.com/users/rmetzger/followers",
+      "following_url": "https://api.github.com/users/rmetzger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rmetzger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rmetzger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rmetzger/subscriptions",
+      "organizations_url": "https://api.github.com/users/rmetzger/orgs",
+      "repos_url": "https://api.github.com/users/rmetzger/repos",
+      "events_url": "https://api.github.com/users/rmetzger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rmetzger/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "967a6e2efb664ebfee37aebd8a4bc7f985fdb377",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/967a6e2efb664ebfee37aebd8a4bc7f985fdb377",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/967a6e2efb664ebfee37aebd8a4bc7f985fdb377"
+      }
+    ]
+  }
+]

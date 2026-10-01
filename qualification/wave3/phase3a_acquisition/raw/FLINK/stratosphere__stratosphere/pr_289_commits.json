@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "6820a1e54c3f332ae90687d0440e9f9b8f6977df",
+    "node_id": "MDY6Q29tbWl0OTkzODYyMjo2ODIwYTFlNTRjM2YzMzJhZTkwNjg3ZDA0NDBlOWY5YjhmNjk3N2Rm",
+    "commit": {
+      "author": {
+        "name": "Robert Metzger",
+        "email": "metzgerr@web.de",
+        "date": "2013-11-25T21:09:06Z"
+      },
+      "committer": {
+        "name": "Robert Metzger",
+        "email": "metzgerr@web.de",
+        "date": "2013-11-26T07:28:35Z"
+      },
+      "message": "New maven project \"stratosphere-addons\".\nIt contains code maintained by the project. (Most of them have a lot of dependencies and are not required by most users)\nMove pact-array-datamodel to stratosphere-addons\nMove pact-hbase to stratosphere-addons",
+      "tree": {
+        "sha": "283fa455ff206b3c1a2466af4b1799a509b650ac",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/283fa455ff206b3c1a2466af4b1799a509b650ac"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/6820a1e54c3f332ae90687d0440e9f9b8f6977df",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/6820a1e54c3f332ae90687d0440e9f9b8f6977df",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/6820a1e54c3f332ae90687d0440e9f9b8f6977df",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/6820a1e54c3f332ae90687d0440e9f9b8f6977df/comments",
+    "author": {
+      "login": "rmetzger",
+      "id": 89049,
+      "node_id": "MDQ6VXNlcjg5MDQ5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89049?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rmetzger",
+      "html_url": "https://github.com/rmetzger",
+      "followers_url": "https://api.github.com/users/rmetzger/followers",
+      "following_url": "https://api.github.com/users/rmetzger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rmetzger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rmetzger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rmetzger/subscriptions",
+      "organizations_url": "https://api.github.com/users/rmetzger/orgs",
+      "repos_url": "https://api.github.com/users/rmetzger/repos",
+      "events_url": "https://api.github.com/users/rmetzger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rmetzger/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rmetzger",
+      "id": 89049,
+      "node_id": "MDQ6VXNlcjg5MDQ5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89049?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rmetzger",
+      "html_url": "https://github.com/rmetzger",
+      "followers_url": "https://api.github.com/users/rmetzger/followers",
+      "following_url": "https://api.github.com/users/rmetzger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rmetzger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rmetzger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rmetzger/subscriptions",
+      "organizations_url": "https://api.github.com/users/rmetzger/orgs",
+      "repos_url": "https://api.github.com/users/rmetzger/repos",
+      "events_url": "https://api.github.com/users/rmetzger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rmetzger/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9dd4635ad69bf107ab9f81c8e7ffd495475471e0",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/9dd4635ad69bf107ab9f81c8e7ffd495475471e0",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/9dd4635ad69bf107ab9f81c8e7ffd495475471e0"
+      }
+    ]
+  },
+  {
+    "sha": "5a3fe6c948e7be13e7ed66eb932c93a415458fba",
+    "node_id": "MDY6Q29tbWl0OTkzODYyMjo1YTNmZTZjOTQ4ZTdiZTEzZTdlZDY2ZWI5MzJjOTNhNDE1NDU4ZmJh",
+    "commit": {
+      "author": {
+        "name": "Robert Metzger",
+        "email": "metzgerr@web.de",
+        "date": "2013-11-28T14:23:17Z"
+      },
+      "committer": {
+        "name": "Robert Metzger",
+        "email": "metzgerr@web.de",
+        "date": "2013-11-28T14:23:17Z"
+      },
+      "message": "Move hbase example to hbase-addon project",
+      "tree": {
+        "sha": "2caa9d4674a8864b1b4f3e71df3d75043534cecf",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/2caa9d4674a8864b1b4f3e71df3d75043534cecf"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/5a3fe6c948e7be13e7ed66eb932c93a415458fba",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/5a3fe6c948e7be13e7ed66eb932c93a415458fba",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/5a3fe6c948e7be13e7ed66eb932c93a415458fba",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/5a3fe6c948e7be13e7ed66eb932c93a415458fba/comments",
+    "author": {
+      "login": "rmetzger",
+      "id": 89049,
+      "node_id": "MDQ6VXNlcjg5MDQ5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89049?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rmetzger",
+      "html_url": "https://github.com/rmetzger",
+      "followers_url": "https://api.github.com/users/rmetzger/followers",
+      "following_url": "https://api.github.com/users/rmetzger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rmetzger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rmetzger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rmetzger/subscriptions",
+      "organizations_url": "https://api.github.com/users/rmetzger/orgs",
+      "repos_url": "https://api.github.com/users/rmetzger/repos",
+      "events_url": "https://api.github.com/users/rmetzger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rmetzger/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rmetzger",
+      "id": 89049,
+      "node_id": "MDQ6VXNlcjg5MDQ5",
+      "avatar_url": "https://avatars.githubusercontent.com/u/89049?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rmetzger",
+      "html_url": "https://github.com/rmetzger",
+      "followers_url": "https://api.github.com/users/rmetzger/followers",
+      "following_url": "https://api.github.com/users/rmetzger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rmetzger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rmetzger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rmetzger/subscriptions",
+      "organizations_url": "https://api.github.com/users/rmetzger/orgs",
+      "repos_url": "https://api.github.com/users/rmetzger/repos",
+      "events_url": "https://api.github.com/users/rmetzger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rmetzger/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6820a1e54c3f332ae90687d0440e9f9b8f6977df",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/6820a1e54c3f332ae90687d0440e9f9b8f6977df",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/6820a1e54c3f332ae90687d0440e9f9b8f6977df"
+      }
+    ]
+  }
+]

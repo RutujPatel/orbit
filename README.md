@@ -31,11 +31,10 @@ ORBIT is organized into two distinct evaluation tracks:
 │   ├── specifications/         # Engine designs, input contracts, rule catalogs & scope
 │   ├── operations/             # Review runbooks, debrief scripts & observation logs
 │   └── handoffs/               # Milestone agent onboarding & phase-gate transitions
-├── fixtures/                   # Test fixtures (clean, messy, Jira, GitHub)
-│   ├── clean/                  # Baseline clean sprint fixtures (Week 1 & Week 2)
-│   ├── messy/                  # Edge-case & messy data fixtures
-│   ├── jira/                   # Jira normalized test fixtures
-│   └── github/                 # GitHub normalized test fixtures
+├── fixtures/                   # Test fixtures (Jira, GitHub, experiments)
+│   ├── jira/                   # Jira normalized test fixtures (clean & messy)
+│   ├── github/                 # GitHub normalized test fixtures (clean & messy)
+│   └── experiments/            # Multi-week experiment & state fixtures
 ├── src/
 │   └── shadow_orbit/           # Core engine source code
 │       ├── types.py            # Track A core domain types

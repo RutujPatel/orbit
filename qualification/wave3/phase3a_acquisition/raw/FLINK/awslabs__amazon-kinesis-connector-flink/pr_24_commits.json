@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "3759b0e0898d98b42ad6be4b6e41755157aecbfd",
+    "node_id": "MDY6Q29tbWl0MzU4OTIzNjYxOjM3NTliMGUwODk4ZDk4YjQyYWQ2YmU0YjZlNDE3NTUxNTdhZWNiZmQ=",
+    "commit": {
+      "author": {
+        "name": "Keith Lee",
+        "email": "leekei@amazon.com",
+        "date": "2021-04-17T16:08:45Z"
+      },
+      "committer": {
+        "name": "Keith Lee",
+        "email": "leekei@amazon.com",
+        "date": "2021-04-17T16:08:45Z"
+      },
+      "message": "Fix issue where exception in KinesisDataFetcher.shutdownFetcher() causes KinesisDataFetcher.awaitTermination() to hang\n\nFix #23 An exception in KinesisDataFetcher#shutdownFetcher may fail to shutdown shardConsumersExecutor leading to job hanging",
+      "tree": {
+        "sha": "b0e935a1dd999f1489535623785b85896c95b0fd",
+        "url": "https://api.github.com/repos/awslabs/amazon-kinesis-connector-flink/git/trees/b0e935a1dd999f1489535623785b85896c95b0fd"
+      },
+      "url": "https://api.github.com/repos/awslabs/amazon-kinesis-connector-flink/git/commits/3759b0e0898d98b42ad6be4b6e41755157aecbfd",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/awslabs/amazon-kinesis-connector-flink/commits/3759b0e0898d98b42ad6be4b6e41755157aecbfd",
+    "html_url": "https://github.com/awslabs/amazon-kinesis-connector-flink/commit/3759b0e0898d98b42ad6be4b6e41755157aecbfd",
+    "comments_url": "https://api.github.com/repos/awslabs/amazon-kinesis-connector-flink/commits/3759b0e0898d98b42ad6be4b6e41755157aecbfd/comments",
+    "author": {
+      "login": "GS-KeithLee",
+      "id": 43342257,
+      "node_id": "MDQ6VXNlcjQzMzQyMjU3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43342257?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GS-KeithLee",
+      "html_url": "https://github.com/GS-KeithLee",
+      "followers_url": "https://api.github.com/users/GS-KeithLee/followers",
+      "following_url": "https://api.github.com/users/GS-KeithLee/following{/other_user}",
+      "gists_url": "https://api.github.com/users/GS-KeithLee/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/GS-KeithLee/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/GS-KeithLee/subscriptions",
+      "organizations_url": "https://api.github.com/users/GS-KeithLee/orgs",
+      "repos_url": "https://api.github.com/users/GS-KeithLee/repos",
+      "events_url": "https://api.github.com/users/GS-KeithLee/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/GS-KeithLee/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "GS-KeithLee",
+      "id": 43342257,
+      "node_id": "MDQ6VXNlcjQzMzQyMjU3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43342257?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/GS-KeithLee",
+      "html_url": "https://github.com/GS-KeithLee",
+      "followers_url": "https://api.github.com/users/GS-KeithLee/followers",
+      "following_url": "https://api.github.com/users/GS-KeithLee/following{/other_user}",
+      "gists_url": "https://api.github.com/users/GS-KeithLee/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/GS-KeithLee/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/GS-KeithLee/subscriptions",
+      "organizations_url": "https://api.github.com/users/GS-KeithLee/orgs",
+      "repos_url": "https://api.github.com/users/GS-KeithLee/repos",
+      "events_url": "https://api.github.com/users/GS-KeithLee/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/GS-KeithLee/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "693b337b37415e0b95daaf8211f200e1a10e2f8c",
+        "url": "https://api.github.com/repos/awslabs/amazon-kinesis-connector-flink/commits/693b337b37415e0b95daaf8211f200e1a10e2f8c",
+        "html_url": "https://github.com/awslabs/amazon-kinesis-connector-flink/commit/693b337b37415e0b95daaf8211f200e1a10e2f8c"
+      }
+    ]
+  }
+]

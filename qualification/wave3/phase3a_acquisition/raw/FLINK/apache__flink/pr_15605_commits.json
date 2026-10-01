@@ -1,0 +1,822 @@
+[
+  {
+    "sha": "042aa4172045f4b8b8788e0c20edc8ddbd720da7",
+    "node_id": "MDY6Q29tbWl0MjExNzEwMzE6MDQyYWE0MTcyMDQ1ZjRiOGI4Nzg4ZTBjMjBlZGM4ZGRiZDcyMGRhNw==",
+    "commit": {
+      "author": {
+        "name": "Stephan Ewen",
+        "email": "sewen@apache.org",
+        "date": "2021-04-14T13:38:49Z"
+      },
+      "committer": {
+        "name": "Stephan Ewen",
+        "email": "sewen@apache.org",
+        "date": "2021-04-16T11:39:04Z"
+      },
+      "message": "[hotfix][coordination] Add Main-Thread check to OperatorEvent sending on Execution.\n\nNow that the threading model of the OperatorCoordinatorHolder has been adjusted, we can\nfinally have this check and use this method in accordance with the general contract of\nthe Scheduler.",
+      "tree": {
+        "sha": "a2f34792a34d7069faf96c4d44bbc33395cfcfb5",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/a2f34792a34d7069faf96c4d44bbc33395cfcfb5"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/042aa4172045f4b8b8788e0c20edc8ddbd720da7",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/042aa4172045f4b8b8788e0c20edc8ddbd720da7",
+    "html_url": "https://github.com/apache/flink/commit/042aa4172045f4b8b8788e0c20edc8ddbd720da7",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/042aa4172045f4b8b8788e0c20edc8ddbd720da7/comments",
+    "author": {
+      "login": "StephanEwen",
+      "id": 1727146,
+      "node_id": "MDQ6VXNlcjE3MjcxNDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1727146?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/StephanEwen",
+      "html_url": "https://github.com/StephanEwen",
+      "followers_url": "https://api.github.com/users/StephanEwen/followers",
+      "following_url": "https://api.github.com/users/StephanEwen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/StephanEwen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/StephanEwen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/StephanEwen/subscriptions",
+      "organizations_url": "https://api.github.com/users/StephanEwen/orgs",
+      "repos_url": "https://api.github.com/users/StephanEwen/repos",
+      "events_url": "https://api.github.com/users/StephanEwen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/StephanEwen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "StephanEwen",
+      "id": 1727146,
+      "node_id": "MDQ6VXNlcjE3MjcxNDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1727146?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/StephanEwen",
+      "html_url": "https://github.com/StephanEwen",
+      "followers_url": "https://api.github.com/users/StephanEwen/followers",
+      "following_url": "https://api.github.com/users/StephanEwen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/StephanEwen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/StephanEwen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/StephanEwen/subscriptions",
+      "organizations_url": "https://api.github.com/users/StephanEwen/orgs",
+      "repos_url": "https://api.github.com/users/StephanEwen/repos",
+      "events_url": "https://api.github.com/users/StephanEwen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/StephanEwen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e14f5c404030fa1f7397b55e8fb3dc6f5557a562",
+        "url": "https://api.github.com/repos/apache/flink/commits/e14f5c404030fa1f7397b55e8fb3dc6f5557a562",
+        "html_url": "https://github.com/apache/flink/commit/e14f5c404030fa1f7397b55e8fb3dc6f5557a562"
+      }
+    ]
+  },
+  {
+    "sha": "1c3e57e2a2355b63116a587e5df1180bdc1e2d3f",
+    "node_id": "MDY6Q29tbWl0MjExNzEwMzE6MWMzZTU3ZTJhMjM1NWI2MzExNmE1ODdlNWRmMTE4MGJkYzFlMmQzZg==",
+    "commit": {
+      "author": {
+        "name": "Stephan Ewen",
+        "email": "sewen@apache.org",
+        "date": "2021-04-11T16:55:14Z"
+      },
+      "committer": {
+        "name": "Stephan Ewen",
+        "email": "sewen@apache.org",
+        "date": "2021-04-16T11:39:04Z"
+      },
+      "message": "[FLINK-18071][coordination] (part 2) OperatorCoordinatorHolder does not implement OperatorCoordinator interface any more\n\nOriginally it was designed that the OperatorCoordinatorHolder has the same interface as the OperatorCoordinator and simply\nadds some hooks around the checkpoint triggering procedure.\n\nHowever, the OperatorCoordinatorHolder is becoming the glue between the scheduler threads and the scheduler's view on\ntasks and their status, and the OperatorCoordinator threads and their simplified view on the execution state. This\nmeans they do require different interfaces.",
+      "tree": {
+        "sha": "4bbb6cab71b3a4fd33a58029e0ee535be0447544",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/4bbb6cab71b3a4fd33a58029e0ee535be0447544"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/1c3e57e2a2355b63116a587e5df1180bdc1e2d3f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/1c3e57e2a2355b63116a587e5df1180bdc1e2d3f",
+    "html_url": "https://github.com/apache/flink/commit/1c3e57e2a2355b63116a587e5df1180bdc1e2d3f",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/1c3e57e2a2355b63116a587e5df1180bdc1e2d3f/comments",
+    "author": {
+      "login": "StephanEwen",
+      "id": 1727146,
+      "node_id": "MDQ6VXNlcjE3MjcxNDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1727146?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/StephanEwen",
+      "html_url": "https://github.com/StephanEwen",
+      "followers_url": "https://api.github.com/users/StephanEwen/followers",
+      "following_url": "https://api.github.com/users/StephanEwen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/StephanEwen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/StephanEwen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/StephanEwen/subscriptions",
+      "organizations_url": "https://api.github.com/users/StephanEwen/orgs",
+      "repos_url": "https://api.github.com/users/StephanEwen/repos",
+      "events_url": "https://api.github.com/users/StephanEwen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/StephanEwen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "StephanEwen",
+      "id": 1727146,
+      "node_id": "MDQ6VXNlcjE3MjcxNDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1727146?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/StephanEwen",
+      "html_url": "https://github.com/StephanEwen",
+      "followers_url": "https://api.github.com/users/StephanEwen/followers",
+      "following_url": "https://api.github.com/users/StephanEwen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/StephanEwen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/StephanEwen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/StephanEwen/subscriptions",
+      "organizations_url": "https://api.github.com/users/StephanEwen/orgs",
+      "repos_url": "https://api.github.com/users/StephanEwen/repos",
+      "events_url": "https://api.github.com/users/StephanEwen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/StephanEwen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "042aa4172045f4b8b8788e0c20edc8ddbd720da7",
+        "url": "https://api.github.com/repos/apache/flink/commits/042aa4172045f4b8b8788e0c20edc8ddbd720da7",
+        "html_url": "https://github.com/apache/flink/commit/042aa4172045f4b8b8788e0c20edc8ddbd720da7"
+      }
+    ]
+  },
+  {
+    "sha": "3881410865145027be7545499e869639444f85ff",
+    "node_id": "MDY6Q29tbWl0MjExNzEwMzE6Mzg4MTQxMDg2NTE0NTAyN2JlNzU0NTQ5OWU4Njk2Mzk0NDRmODVmZg==",
+    "commit": {
+      "author": {
+        "name": "Stephan Ewen",
+        "email": "sewen@apache.org",
+        "date": "2021-04-11T17:27:01Z"
+      },
+      "committer": {
+        "name": "Stephan Ewen",
+        "email": "sewen@apache.org",
+        "date": "2021-04-16T11:39:04Z"
+      },
+      "message": "[FLINK-18071][coordination] (part 3) Adjust OperatorEventValve to accept self-contained \"send actions\".\n\nThe \"send actions\" (as Callables) contain the events and versioned target information, so they can precisely\naddress the recipient regardless of whether they are sent immediately or later, after the target\ntask has failed/recovered.",
+      "tree": {
+        "sha": "a8fcb50fefad103c6094e550ed8a6069b63b49a3",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/a8fcb50fefad103c6094e550ed8a6069b63b49a3"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/3881410865145027be7545499e869639444f85ff",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/3881410865145027be7545499e869639444f85ff",
+    "html_url": "https://github.com/apache/flink/commit/3881410865145027be7545499e869639444f85ff",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/3881410865145027be7545499e869639444f85ff/comments",
+    "author": {
+      "login": "StephanEwen",
+      "id": 1727146,
+      "node_id": "MDQ6VXNlcjE3MjcxNDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1727146?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/StephanEwen",
+      "html_url": "https://github.com/StephanEwen",
+      "followers_url": "https://api.github.com/users/StephanEwen/followers",
+      "following_url": "https://api.github.com/users/StephanEwen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/StephanEwen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/StephanEwen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/StephanEwen/subscriptions",
+      "organizations_url": "https://api.github.com/users/StephanEwen/orgs",
+      "repos_url": "https://api.github.com/users/StephanEwen/repos",
+      "events_url": "https://api.github.com/users/StephanEwen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/StephanEwen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "StephanEwen",
+      "id": 1727146,
+      "node_id": "MDQ6VXNlcjE3MjcxNDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1727146?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/StephanEwen",
+      "html_url": "https://github.com/StephanEwen",
+      "followers_url": "https://api.github.com/users/StephanEwen/followers",
+      "following_url": "https://api.github.com/users/StephanEwen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/StephanEwen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/StephanEwen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/StephanEwen/subscriptions",
+      "organizations_url": "https://api.github.com/users/StephanEwen/orgs",
+      "repos_url": "https://api.github.com/users/StephanEwen/repos",
+      "events_url": "https://api.github.com/users/StephanEwen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/StephanEwen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1c3e57e2a2355b63116a587e5df1180bdc1e2d3f",
+        "url": "https://api.github.com/repos/apache/flink/commits/1c3e57e2a2355b63116a587e5df1180bdc1e2d3f",
+        "html_url": "https://github.com/apache/flink/commit/1c3e57e2a2355b63116a587e5df1180bdc1e2d3f"
+      }
+    ]
+  },
+  {
+    "sha": "5b87970b76a02354c37e7b38a05af338742ee1b5",
+    "node_id": "MDY6Q29tbWl0MjExNzEwMzE6NWI4Nzk3MGI3NmEwMjM1NGMzN2U3YjM4YTA1YWYzMzg3NDJlZTFiNQ==",
+    "commit": {
+      "author": {
+        "name": "Stephan Ewen",
+        "email": "sewen@apache.org",
+        "date": "2021-04-11T18:05:47Z"
+      },
+      "committer": {
+        "name": "Stephan Ewen",
+        "email": "sewen@apache.org",
+        "date": "2021-04-16T11:39:04Z"
+      },
+      "message": "[FLINK-18071][coordination] (part 4) Add to Execution a future for states INITIALIZING/RUNNING\n\nThis doubles as a listener for when the execution has reached the state INITIALIZING or RUNNING.",
+      "tree": {
+        "sha": "3a09cf25768bcc6995417c13554c452415695148",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/3a09cf25768bcc6995417c13554c452415695148"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/5b87970b76a02354c37e7b38a05af338742ee1b5",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/5b87970b76a02354c37e7b38a05af338742ee1b5",
+    "html_url": "https://github.com/apache/flink/commit/5b87970b76a02354c37e7b38a05af338742ee1b5",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/5b87970b76a02354c37e7b38a05af338742ee1b5/comments",
+    "author": {
+      "login": "StephanEwen",
+      "id": 1727146,
+      "node_id": "MDQ6VXNlcjE3MjcxNDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1727146?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/StephanEwen",
+      "html_url": "https://github.com/StephanEwen",
+      "followers_url": "https://api.github.com/users/StephanEwen/followers",
+      "following_url": "https://api.github.com/users/StephanEwen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/StephanEwen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/StephanEwen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/StephanEwen/subscriptions",
+      "organizations_url": "https://api.github.com/users/StephanEwen/orgs",
+      "repos_url": "https://api.github.com/users/StephanEwen/repos",
+      "events_url": "https://api.github.com/users/StephanEwen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/StephanEwen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "StephanEwen",
+      "id": 1727146,
+      "node_id": "MDQ6VXNlcjE3MjcxNDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1727146?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/StephanEwen",
+      "html_url": "https://github.com/StephanEwen",
+      "followers_url": "https://api.github.com/users/StephanEwen/followers",
+      "following_url": "https://api.github.com/users/StephanEwen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/StephanEwen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/StephanEwen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/StephanEwen/subscriptions",
+      "organizations_url": "https://api.github.com/users/StephanEwen/orgs",
+      "repos_url": "https://api.github.com/users/StephanEwen/repos",
+      "events_url": "https://api.github.com/users/StephanEwen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/StephanEwen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3881410865145027be7545499e869639444f85ff",
+        "url": "https://api.github.com/repos/apache/flink/commits/3881410865145027be7545499e869639444f85ff",
+        "html_url": "https://github.com/apache/flink/commit/3881410865145027be7545499e869639444f85ff"
+      }
+    ]
+  },
+  {
+    "sha": "ecfe15c0d57eacd7e357696b3415db90f551716a",
+    "node_id": "MDY6Q29tbWl0MjExNzEwMzE6ZWNmZTE1YzBkNTdlYWNkN2UzNTc2OTZiMzQxNWRiOTBmNTUxNzE2YQ==",
+    "commit": {
+      "author": {
+        "name": "Stephan Ewen",
+        "email": "sewen@apache.org",
+        "date": "2021-04-12T10:37:31Z"
+      },
+      "committer": {
+        "name": "Stephan Ewen",
+        "email": "sewen@apache.org",
+        "date": "2021-04-16T11:39:04Z"
+      },
+      "message": "[FLINK-18071][coordination] (part 6) Communication from Coordinators to Tasks happens through gateways that are scoped to a single execution attempt.\n\nThat way the events have a well specified target, no matter how much the actual sending is delayed due to race\nconditions.\n\nThis also un-ignores the CoordinatorEventsExactlyOnceITCase that now runs stable with this fix.",
+      "tree": {
+        "sha": "fd172024f374e92e609d711ce2f2550ff8350653",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/fd172024f374e92e609d711ce2f2550ff8350653"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/ecfe15c0d57eacd7e357696b3415db90f551716a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/ecfe15c0d57eacd7e357696b3415db90f551716a",
+    "html_url": "https://github.com/apache/flink/commit/ecfe15c0d57eacd7e357696b3415db90f551716a",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/ecfe15c0d57eacd7e357696b3415db90f551716a/comments",
+    "author": {
+      "login": "StephanEwen",
+      "id": 1727146,
+      "node_id": "MDQ6VXNlcjE3MjcxNDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1727146?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/StephanEwen",
+      "html_url": "https://github.com/StephanEwen",
+      "followers_url": "https://api.github.com/users/StephanEwen/followers",
+      "following_url": "https://api.github.com/users/StephanEwen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/StephanEwen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/StephanEwen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/StephanEwen/subscriptions",
+      "organizations_url": "https://api.github.com/users/StephanEwen/orgs",
+      "repos_url": "https://api.github.com/users/StephanEwen/repos",
+      "events_url": "https://api.github.com/users/StephanEwen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/StephanEwen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "StephanEwen",
+      "id": 1727146,
+      "node_id": "MDQ6VXNlcjE3MjcxNDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1727146?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/StephanEwen",
+      "html_url": "https://github.com/StephanEwen",
+      "followers_url": "https://api.github.com/users/StephanEwen/followers",
+      "following_url": "https://api.github.com/users/StephanEwen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/StephanEwen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/StephanEwen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/StephanEwen/subscriptions",
+      "organizations_url": "https://api.github.com/users/StephanEwen/orgs",
+      "repos_url": "https://api.github.com/users/StephanEwen/repos",
+      "events_url": "https://api.github.com/users/StephanEwen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/StephanEwen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5b87970b76a02354c37e7b38a05af338742ee1b5",
+        "url": "https://api.github.com/repos/apache/flink/commits/5b87970b76a02354c37e7b38a05af338742ee1b5",
+        "html_url": "https://github.com/apache/flink/commit/5b87970b76a02354c37e7b38a05af338742ee1b5"
+      }
+    ]
+  },
+  {
+    "sha": "1919af2bd73d29e630be34d9beb0d4ead4bf5042",
+    "node_id": "MDY6Q29tbWl0MjExNzEwMzE6MTkxOWFmMmJkNzNkMjllNjMwYmUzNGQ5YmViMGQ0ZWFkNGJmNTA0Mg==",
+    "commit": {
+      "author": {
+        "name": "Stephan Ewen",
+        "email": "sewen@apache.org",
+        "date": "2021-04-13T08:37:26Z"
+      },
+      "committer": {
+        "name": "Stephan Ewen",
+        "email": "sewen@apache.org",
+        "date": "2021-04-16T11:39:04Z"
+      },
+      "message": "[hotfix][coordination] Make failed event valve shutting smoother.\n\nFailing to shut the event valve is quite common, it happens whenever a checkpoint gets canceled.\nSo we don't handle this as an IllegalState, because it is very much an expected state.",
+      "tree": {
+        "sha": "862c3ba4bc677367f76a657ae17a77644ab8d69e",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/862c3ba4bc677367f76a657ae17a77644ab8d69e"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/1919af2bd73d29e630be34d9beb0d4ead4bf5042",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/1919af2bd73d29e630be34d9beb0d4ead4bf5042",
+    "html_url": "https://github.com/apache/flink/commit/1919af2bd73d29e630be34d9beb0d4ead4bf5042",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/1919af2bd73d29e630be34d9beb0d4ead4bf5042/comments",
+    "author": {
+      "login": "StephanEwen",
+      "id": 1727146,
+      "node_id": "MDQ6VXNlcjE3MjcxNDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1727146?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/StephanEwen",
+      "html_url": "https://github.com/StephanEwen",
+      "followers_url": "https://api.github.com/users/StephanEwen/followers",
+      "following_url": "https://api.github.com/users/StephanEwen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/StephanEwen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/StephanEwen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/StephanEwen/subscriptions",
+      "organizations_url": "https://api.github.com/users/StephanEwen/orgs",
+      "repos_url": "https://api.github.com/users/StephanEwen/repos",
+      "events_url": "https://api.github.com/users/StephanEwen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/StephanEwen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "StephanEwen",
+      "id": 1727146,
+      "node_id": "MDQ6VXNlcjE3MjcxNDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1727146?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/StephanEwen",
+      "html_url": "https://github.com/StephanEwen",
+      "followers_url": "https://api.github.com/users/StephanEwen/followers",
+      "following_url": "https://api.github.com/users/StephanEwen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/StephanEwen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/StephanEwen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/StephanEwen/subscriptions",
+      "organizations_url": "https://api.github.com/users/StephanEwen/orgs",
+      "repos_url": "https://api.github.com/users/StephanEwen/repos",
+      "events_url": "https://api.github.com/users/StephanEwen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/StephanEwen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ecfe15c0d57eacd7e357696b3415db90f551716a",
+        "url": "https://api.github.com/repos/apache/flink/commits/ecfe15c0d57eacd7e357696b3415db90f551716a",
+        "html_url": "https://github.com/apache/flink/commit/ecfe15c0d57eacd7e357696b3415db90f551716a"
+      }
+    ]
+  },
+  {
+    "sha": "4c730f57795f3e90bd285c0957725d800987250f",
+    "node_id": "MDY6Q29tbWl0MjExNzEwMzE6NGM3MzBmNTc3OTVmM2U5MGJkMjg1YzA5NTc3MjVkODAwOTg3MjUwZg==",
+    "commit": {
+      "author": {
+        "name": "Stephan Ewen",
+        "email": "sewen@apache.org",
+        "date": "2021-04-13T08:44:25Z"
+      },
+      "committer": {
+        "name": "Stephan Ewen",
+        "email": "sewen@apache.org",
+        "date": "2021-04-16T11:39:04Z"
+      },
+      "message": "[hotfix][coordination] Reduce lambda nesting for action on CompletableFuture\n\nDirectly use 'whenCompleteAsync()' with an executor, rather than 'whenComplete()' and nest a call\nto submit to the executor.",
+      "tree": {
+        "sha": "0fa4f64616462eb7ffba6ec2f90e4f483d01b21f",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/0fa4f64616462eb7ffba6ec2f90e4f483d01b21f"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/4c730f57795f3e90bd285c0957725d800987250f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/4c730f57795f3e90bd285c0957725d800987250f",
+    "html_url": "https://github.com/apache/flink/commit/4c730f57795f3e90bd285c0957725d800987250f",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/4c730f57795f3e90bd285c0957725d800987250f/comments",
+    "author": {
+      "login": "StephanEwen",
+      "id": 1727146,
+      "node_id": "MDQ6VXNlcjE3MjcxNDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1727146?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/StephanEwen",
+      "html_url": "https://github.com/StephanEwen",
+      "followers_url": "https://api.github.com/users/StephanEwen/followers",
+      "following_url": "https://api.github.com/users/StephanEwen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/StephanEwen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/StephanEwen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/StephanEwen/subscriptions",
+      "organizations_url": "https://api.github.com/users/StephanEwen/orgs",
+      "repos_url": "https://api.github.com/users/StephanEwen/repos",
+      "events_url": "https://api.github.com/users/StephanEwen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/StephanEwen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "StephanEwen",
+      "id": 1727146,
+      "node_id": "MDQ6VXNlcjE3MjcxNDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1727146?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/StephanEwen",
+      "html_url": "https://github.com/StephanEwen",
+      "followers_url": "https://api.github.com/users/StephanEwen/followers",
+      "following_url": "https://api.github.com/users/StephanEwen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/StephanEwen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/StephanEwen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/StephanEwen/subscriptions",
+      "organizations_url": "https://api.github.com/users/StephanEwen/orgs",
+      "repos_url": "https://api.github.com/users/StephanEwen/repos",
+      "events_url": "https://api.github.com/users/StephanEwen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/StephanEwen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1919af2bd73d29e630be34d9beb0d4ead4bf5042",
+        "url": "https://api.github.com/repos/apache/flink/commits/1919af2bd73d29e630be34d9beb0d4ead4bf5042",
+        "html_url": "https://github.com/apache/flink/commit/1919af2bd73d29e630be34d9beb0d4ead4bf5042"
+      }
+    ]
+  },
+  {
+    "sha": "5ba44b6163acae687072ad19b32de5a9273d01a7",
+    "node_id": "MDY6Q29tbWl0MjExNzEwMzE6NWJhNDRiNjE2M2FjYWU2ODcwNzJhZDE5YjMyZGU1YTkyNzNkMDFhNw==",
+    "commit": {
+      "author": {
+        "name": "Stephan Ewen",
+        "email": "sewen@apache.org",
+        "date": "2021-04-14T09:54:20Z"
+      },
+      "committer": {
+        "name": "Stephan Ewen",
+        "email": "sewen@apache.org",
+        "date": "2021-04-16T11:39:04Z"
+      },
+      "message": "[hotfix][coordination] Remove unnecessary null check",
+      "tree": {
+        "sha": "f70008b49e0c1092073f7cd8379bf7cce691f924",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/f70008b49e0c1092073f7cd8379bf7cce691f924"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/5ba44b6163acae687072ad19b32de5a9273d01a7",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/5ba44b6163acae687072ad19b32de5a9273d01a7",
+    "html_url": "https://github.com/apache/flink/commit/5ba44b6163acae687072ad19b32de5a9273d01a7",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/5ba44b6163acae687072ad19b32de5a9273d01a7/comments",
+    "author": {
+      "login": "StephanEwen",
+      "id": 1727146,
+      "node_id": "MDQ6VXNlcjE3MjcxNDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1727146?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/StephanEwen",
+      "html_url": "https://github.com/StephanEwen",
+      "followers_url": "https://api.github.com/users/StephanEwen/followers",
+      "following_url": "https://api.github.com/users/StephanEwen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/StephanEwen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/StephanEwen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/StephanEwen/subscriptions",
+      "organizations_url": "https://api.github.com/users/StephanEwen/orgs",
+      "repos_url": "https://api.github.com/users/StephanEwen/repos",
+      "events_url": "https://api.github.com/users/StephanEwen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/StephanEwen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "StephanEwen",
+      "id": 1727146,
+      "node_id": "MDQ6VXNlcjE3MjcxNDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1727146?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/StephanEwen",
+      "html_url": "https://github.com/StephanEwen",
+      "followers_url": "https://api.github.com/users/StephanEwen/followers",
+      "following_url": "https://api.github.com/users/StephanEwen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/StephanEwen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/StephanEwen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/StephanEwen/subscriptions",
+      "organizations_url": "https://api.github.com/users/StephanEwen/orgs",
+      "repos_url": "https://api.github.com/users/StephanEwen/repos",
+      "events_url": "https://api.github.com/users/StephanEwen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/StephanEwen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4c730f57795f3e90bd285c0957725d800987250f",
+        "url": "https://api.github.com/repos/apache/flink/commits/4c730f57795f3e90bd285c0957725d800987250f",
+        "html_url": "https://github.com/apache/flink/commit/4c730f57795f3e90bd285c0957725d800987250f"
+      }
+    ]
+  },
+  {
+    "sha": "a8407aec8534af7ed761801a434a2b4467ed6d9a",
+    "node_id": "MDY6Q29tbWl0MjExNzEwMzE6YTg0MDdhZWM4NTM0YWY3ZWQ3NjE4MDFhNDM0YTJiNDQ2N2VkNmQ5YQ==",
+    "commit": {
+      "author": {
+        "name": "Stephan Ewen",
+        "email": "sewen@apache.org",
+        "date": "2021-04-14T15:34:16Z"
+      },
+      "committer": {
+        "name": "Stephan Ewen",
+        "email": "sewen@apache.org",
+        "date": "2021-04-16T11:39:04Z"
+      },
+      "message": "[hotfix][tests] Minor debuggability improvements to CoordinatedSourceRescaleITCase",
+      "tree": {
+        "sha": "c8325c27961b4ba5b4ec18bb7abe6b4562dd533c",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/c8325c27961b4ba5b4ec18bb7abe6b4562dd533c"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/a8407aec8534af7ed761801a434a2b4467ed6d9a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/a8407aec8534af7ed761801a434a2b4467ed6d9a",
+    "html_url": "https://github.com/apache/flink/commit/a8407aec8534af7ed761801a434a2b4467ed6d9a",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/a8407aec8534af7ed761801a434a2b4467ed6d9a/comments",
+    "author": {
+      "login": "StephanEwen",
+      "id": 1727146,
+      "node_id": "MDQ6VXNlcjE3MjcxNDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1727146?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/StephanEwen",
+      "html_url": "https://github.com/StephanEwen",
+      "followers_url": "https://api.github.com/users/StephanEwen/followers",
+      "following_url": "https://api.github.com/users/StephanEwen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/StephanEwen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/StephanEwen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/StephanEwen/subscriptions",
+      "organizations_url": "https://api.github.com/users/StephanEwen/orgs",
+      "repos_url": "https://api.github.com/users/StephanEwen/repos",
+      "events_url": "https://api.github.com/users/StephanEwen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/StephanEwen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "StephanEwen",
+      "id": 1727146,
+      "node_id": "MDQ6VXNlcjE3MjcxNDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1727146?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/StephanEwen",
+      "html_url": "https://github.com/StephanEwen",
+      "followers_url": "https://api.github.com/users/StephanEwen/followers",
+      "following_url": "https://api.github.com/users/StephanEwen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/StephanEwen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/StephanEwen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/StephanEwen/subscriptions",
+      "organizations_url": "https://api.github.com/users/StephanEwen/orgs",
+      "repos_url": "https://api.github.com/users/StephanEwen/repos",
+      "events_url": "https://api.github.com/users/StephanEwen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/StephanEwen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5ba44b6163acae687072ad19b32de5a9273d01a7",
+        "url": "https://api.github.com/repos/apache/flink/commits/5ba44b6163acae687072ad19b32de5a9273d01a7",
+        "html_url": "https://github.com/apache/flink/commit/5ba44b6163acae687072ad19b32de5a9273d01a7"
+      }
+    ]
+  },
+  {
+    "sha": "e42d8645d8603d0e93841b03a34ce80f2572e091",
+    "node_id": "MDY6Q29tbWl0MjExNzEwMzE6ZTQyZDg2NDVkODYwM2QwZTkzODQxYjAzYTM0Y2U4MGYyNTcyZTA5MQ==",
+    "commit": {
+      "author": {
+        "name": "Stephan Ewen",
+        "email": "sewen@apache.org",
+        "date": "2021-04-14T03:02:55Z"
+      },
+      "committer": {
+        "name": "Stephan Ewen",
+        "email": "sewen@apache.org",
+        "date": "2021-04-16T13:58:04Z"
+      },
+      "message": "[FLINK-21996][coordination] Ensure exactly-once guarantees for OperatorEvent RPCs\n\nThis consists of two changes that work together:\n  - Delay checkpoints until we have clarity about all in-flight OperatorEvents\n  - Fail target subtask if the result future for an OperatorEvent send fails",
+      "tree": {
+        "sha": "9e4690ac45d7ae3933818ad91d9f8b05f7c9687c",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/9e4690ac45d7ae3933818ad91d9f8b05f7c9687c"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/e42d8645d8603d0e93841b03a34ce80f2572e091",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/e42d8645d8603d0e93841b03a34ce80f2572e091",
+    "html_url": "https://github.com/apache/flink/commit/e42d8645d8603d0e93841b03a34ce80f2572e091",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/e42d8645d8603d0e93841b03a34ce80f2572e091/comments",
+    "author": {
+      "login": "StephanEwen",
+      "id": 1727146,
+      "node_id": "MDQ6VXNlcjE3MjcxNDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1727146?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/StephanEwen",
+      "html_url": "https://github.com/StephanEwen",
+      "followers_url": "https://api.github.com/users/StephanEwen/followers",
+      "following_url": "https://api.github.com/users/StephanEwen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/StephanEwen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/StephanEwen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/StephanEwen/subscriptions",
+      "organizations_url": "https://api.github.com/users/StephanEwen/orgs",
+      "repos_url": "https://api.github.com/users/StephanEwen/repos",
+      "events_url": "https://api.github.com/users/StephanEwen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/StephanEwen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "StephanEwen",
+      "id": 1727146,
+      "node_id": "MDQ6VXNlcjE3MjcxNDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1727146?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/StephanEwen",
+      "html_url": "https://github.com/StephanEwen",
+      "followers_url": "https://api.github.com/users/StephanEwen/followers",
+      "following_url": "https://api.github.com/users/StephanEwen/following{/other_user}",
+      "gists_url": "https://api.github.com/users/StephanEwen/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/StephanEwen/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/StephanEwen/subscriptions",
+      "organizations_url": "https://api.github.com/users/StephanEwen/orgs",
+      "repos_url": "https://api.github.com/users/StephanEwen/repos",
+      "events_url": "https://api.github.com/users/StephanEwen/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/StephanEwen/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a8407aec8534af7ed761801a434a2b4467ed6d9a",
+        "url": "https://api.github.com/repos/apache/flink/commits/a8407aec8534af7ed761801a434a2b4467ed6d9a",
+        "html_url": "https://github.com/apache/flink/commit/a8407aec8534af7ed761801a434a2b4467ed6d9a"
+      }
+    ]
+  }
+]

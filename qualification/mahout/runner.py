@@ -32,6 +32,7 @@ from __future__ import annotations
 import copy
 import hashlib
 import json
+import os
 import sys
 import time
 from dataclasses import dataclass, field
@@ -86,7 +87,12 @@ from shadow_orbit.normalization import normalize_fixture
 from shadow_orbit.types import NormalizedFixture, ValidatedFixture
 from shadow_orbit.validation import validate_fixture
 
-DEFAULT_GOLDEN_PATH = Path("/home/tecblic/orbit-private/mahout/mahout_qualification_golden.json")
+DEFAULT_GOLDEN_PATH = Path(
+    os.environ.get(
+        "ORBIT_MAHOUT_GOLDEN_PATH",
+        os.path.expanduser("~/orbit-private/mahout/mahout_qualification_golden.json"),
+    )
+)
 
 
 class SecurityViolationError(RuntimeError):

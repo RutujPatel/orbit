@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "9e372d7c215d0081c6cb31d5f786d75bf774a739",
+    "node_id": "MDY6Q29tbWl0NTA4Mzk0MjE6OWUzNzJkN2MyMTVkMDA4MWM2Y2IzMWQ1Zjc4NmQ3NWJmNzc0YTczOQ==",
+    "commit": {
+      "author": {
+        "name": "Matthias J. Sax",
+        "email": "matthias@confluent.io",
+        "date": "2020-06-12T00:10:41Z"
+      },
+      "committer": {
+        "name": "Matthias J. Sax",
+        "email": "matthias@confluent.io",
+        "date": "2020-07-20T20:01:14Z"
+      },
+      "message": "KAFKA-9274: Mark `retries` config as deprecated",
+      "tree": {
+        "sha": "e68a07e7bf8b732d12a958d1f4ea3a12ad870ceb",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/e68a07e7bf8b732d12a958d1f4ea3a12ad870ceb"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/9e372d7c215d0081c6cb31d5f786d75bf774a739",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/9e372d7c215d0081c6cb31d5f786d75bf774a739",
+    "html_url": "https://github.com/apache/kafka/commit/9e372d7c215d0081c6cb31d5f786d75bf774a739",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/9e372d7c215d0081c6cb31d5f786d75bf774a739/comments",
+    "author": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f4944ee460ed3186cbbabba12e8b486c53030044",
+        "url": "https://api.github.com/repos/apache/kafka/commits/f4944ee460ed3186cbbabba12e8b486c53030044",
+        "html_url": "https://github.com/apache/kafka/commit/f4944ee460ed3186cbbabba12e8b486c53030044"
+      }
+    ]
+  },
+  {
+    "sha": "e6c10d88f9c6fa9d89cc500112255898e2f24845",
+    "node_id": "MDY6Q29tbWl0NTA4Mzk0MjE6ZTZjMTBkODhmOWM2ZmE5ZDg5Y2M1MDAxMTIyNTU4OThlMmYyNDg0NQ==",
+    "commit": {
+      "author": {
+        "name": "Matthias J. Sax",
+        "email": "matthias@confluent.io",
+        "date": "2020-07-21T00:11:35Z"
+      },
+      "committer": {
+        "name": "Matthias J. Sax",
+        "email": "matthias@confluent.io",
+        "date": "2020-07-21T00:11:35Z"
+      },
+      "message": "Github comments",
+      "tree": {
+        "sha": "424d0911d3cbf0b66f26564a25095a3ea3b8e570",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/424d0911d3cbf0b66f26564a25095a3ea3b8e570"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/e6c10d88f9c6fa9d89cc500112255898e2f24845",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/e6c10d88f9c6fa9d89cc500112255898e2f24845",
+    "html_url": "https://github.com/apache/kafka/commit/e6c10d88f9c6fa9d89cc500112255898e2f24845",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/e6c10d88f9c6fa9d89cc500112255898e2f24845/comments",
+    "author": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9e372d7c215d0081c6cb31d5f786d75bf774a739",
+        "url": "https://api.github.com/repos/apache/kafka/commits/9e372d7c215d0081c6cb31d5f786d75bf774a739",
+        "html_url": "https://github.com/apache/kafka/commit/9e372d7c215d0081c6cb31d5f786d75bf774a739"
+      }
+    ]
+  }
+]

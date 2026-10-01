@@ -1,0 +1,1314 @@
+[
+  {
+    "sha": "5a34123338793bcca48b71b7e1333324838e202c",
+    "node_id": "MDY6Q29tbWl0Njk5OTUxNDI6NWEzNDEyMzMzODc5M2JjY2E0OGI3MWI3ZTEzMzMzMjQ4MzhlMjAyYw==",
+    "commit": {
+      "author": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-11T22:50:21Z"
+      },
+      "committer": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-17T01:21:14Z"
+      },
+      "message": "fix Bytes.get() javadocs",
+      "tree": {
+        "sha": "5bb539738b44435faf14daa45a9406b3a3735c12",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/5bb539738b44435faf14daa45a9406b3a3735c12"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/5a34123338793bcca48b71b7e1333324838e202c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/5a34123338793bcca48b71b7e1333324838e202c",
+    "html_url": "https://github.com/apache/kafka/commit/5a34123338793bcca48b71b7e1333324838e202c",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/5a34123338793bcca48b71b7e1333324838e202c/comments",
+    "author": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ebc7f7caaeb47c9588d79a2f3ed496daa0bd39e5",
+        "url": "https://api.github.com/repos/apache/kafka/commits/ebc7f7caaeb47c9588d79a2f3ed496daa0bd39e5",
+        "html_url": "https://github.com/apache/kafka/commit/ebc7f7caaeb47c9588d79a2f3ed496daa0bd39e5"
+      }
+    ]
+  },
+  {
+    "sha": "3c3a1136a19aa0465fc3e60d0e33353cbdfa60ef",
+    "node_id": "MDY6Q29tbWl0Njk5OTUxNDI6M2MzYTExMzZhMTlhYTA0NjVmYzNlNjBkMGUzMzM1M2NiZGZhNjBlZg==",
+    "commit": {
+      "author": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-10T19:37:15Z"
+      },
+      "committer": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-17T01:21:14Z"
+      },
+      "message": "range scan implementation for window / session stores",
+      "tree": {
+        "sha": "3d15a677473af4ceba63bc5640c4988a48e88b92",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/3d15a677473af4ceba63bc5640c4988a48e88b92"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/3c3a1136a19aa0465fc3e60d0e33353cbdfa60ef",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/3c3a1136a19aa0465fc3e60d0e33353cbdfa60ef",
+    "html_url": "https://github.com/apache/kafka/commit/3c3a1136a19aa0465fc3e60d0e33353cbdfa60ef",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/3c3a1136a19aa0465fc3e60d0e33353cbdfa60ef/comments",
+    "author": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5a34123338793bcca48b71b7e1333324838e202c",
+        "url": "https://api.github.com/repos/apache/kafka/commits/5a34123338793bcca48b71b7e1333324838e202c",
+        "html_url": "https://github.com/apache/kafka/commit/5a34123338793bcca48b71b7e1333324838e202c"
+      }
+    ]
+  },
+  {
+    "sha": "f4878b432822960cb4921de24f34bde91e381bcd",
+    "node_id": "MDY6Q29tbWl0Njk5OTUxNDI6ZjQ4NzhiNDMyODIyOTYwY2I0OTIxZGUyNGYzNGJkZTkxZTM4MWJjZA==",
+    "commit": {
+      "author": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-12T18:40:54Z"
+      },
+      "committer": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-17T01:21:14Z"
+      },
+      "message": "update to latest API",
+      "tree": {
+        "sha": "abdbad61a5092d73711e04c08b47d3c457c4a908",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/abdbad61a5092d73711e04c08b47d3c457c4a908"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/f4878b432822960cb4921de24f34bde91e381bcd",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/f4878b432822960cb4921de24f34bde91e381bcd",
+    "html_url": "https://github.com/apache/kafka/commit/f4878b432822960cb4921de24f34bde91e381bcd",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/f4878b432822960cb4921de24f34bde91e381bcd/comments",
+    "author": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3c3a1136a19aa0465fc3e60d0e33353cbdfa60ef",
+        "url": "https://api.github.com/repos/apache/kafka/commits/3c3a1136a19aa0465fc3e60d0e33353cbdfa60ef",
+        "html_url": "https://github.com/apache/kafka/commit/3c3a1136a19aa0465fc3e60d0e33353cbdfa60ef"
+      }
+    ]
+  },
+  {
+    "sha": "257594e4f515edf960179d26c5b261d94f36f168",
+    "node_id": "MDY6Q29tbWl0Njk5OTUxNDI6MjU3NTk0ZTRmNTE1ZWRmOTYwMTc5ZDI2YzViMjYxZDk0ZjM2ZjE2OA==",
+    "commit": {
+      "author": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-12T21:01:09Z"
+      },
+      "committer": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-17T01:21:14Z"
+      },
+      "message": "simplify optimized bytes iterator, fix key bytes",
+      "tree": {
+        "sha": "1d0d697aebfd7c8d00eeb79215eaad66da05f745",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/1d0d697aebfd7c8d00eeb79215eaad66da05f745"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/257594e4f515edf960179d26c5b261d94f36f168",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/257594e4f515edf960179d26c5b261d94f36f168",
+    "html_url": "https://github.com/apache/kafka/commit/257594e4f515edf960179d26c5b261d94f36f168",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/257594e4f515edf960179d26c5b261d94f36f168/comments",
+    "author": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f4878b432822960cb4921de24f34bde91e381bcd",
+        "url": "https://api.github.com/repos/apache/kafka/commits/f4878b432822960cb4921de24f34bde91e381bcd",
+        "html_url": "https://github.com/apache/kafka/commit/f4878b432822960cb4921de24f34bde91e381bcd"
+      }
+    ]
+  },
+  {
+    "sha": "a362d723014d066cfe77ee0573b2049b7393161a",
+    "node_id": "MDY6Q29tbWl0Njk5OTUxNDI6YTM2MmQ3MjMwMTRkMDY2Y2ZlNzdlZTA1NzNiMjA0OWI3MzkzMTYxYQ==",
+    "commit": {
+      "author": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-15T16:41:06Z"
+      },
+      "committer": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-17T01:21:14Z"
+      },
+      "message": "some refactoring and more tests",
+      "tree": {
+        "sha": "630fd73db8d2ce89ddf46f98385a398b0e910285",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/630fd73db8d2ce89ddf46f98385a398b0e910285"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/a362d723014d066cfe77ee0573b2049b7393161a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/a362d723014d066cfe77ee0573b2049b7393161a",
+    "html_url": "https://github.com/apache/kafka/commit/a362d723014d066cfe77ee0573b2049b7393161a",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/a362d723014d066cfe77ee0573b2049b7393161a/comments",
+    "author": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "257594e4f515edf960179d26c5b261d94f36f168",
+        "url": "https://api.github.com/repos/apache/kafka/commits/257594e4f515edf960179d26c5b261d94f36f168",
+        "html_url": "https://github.com/apache/kafka/commit/257594e4f515edf960179d26c5b261d94f36f168"
+      }
+    ]
+  },
+  {
+    "sha": "90502931ceaf1b6082e8adec3c167cc1d3dba8ad",
+    "node_id": "MDY6Q29tbWl0Njk5OTUxNDI6OTA1MDI5MzFjZWFmMWI2MDgyZThhZGVjM2MxNjdjYzFkM2RiYThhZA==",
+    "commit": {
+      "author": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-15T21:04:44Z"
+      },
+      "committer": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-17T01:21:14Z"
+      },
+      "message": "include window end in Windowed.toString()",
+      "tree": {
+        "sha": "4ba347887304df315037c66b23b34f06ce4492cb",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/4ba347887304df315037c66b23b34f06ce4492cb"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/90502931ceaf1b6082e8adec3c167cc1d3dba8ad",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/90502931ceaf1b6082e8adec3c167cc1d3dba8ad",
+    "html_url": "https://github.com/apache/kafka/commit/90502931ceaf1b6082e8adec3c167cc1d3dba8ad",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/90502931ceaf1b6082e8adec3c167cc1d3dba8ad/comments",
+    "author": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a362d723014d066cfe77ee0573b2049b7393161a",
+        "url": "https://api.github.com/repos/apache/kafka/commits/a362d723014d066cfe77ee0573b2049b7393161a",
+        "html_url": "https://github.com/apache/kafka/commit/a362d723014d066cfe77ee0573b2049b7393161a"
+      }
+    ]
+  },
+  {
+    "sha": "d4e23dc77419fda0c22bc0629ca6859d728118f9",
+    "node_id": "MDY6Q29tbWl0Njk5OTUxNDI6ZDRlMjNkYzc3NDE5ZmRhMGMyMmJjMDYyOWNhNjg1OWQ3MjgxMThmOQ==",
+    "commit": {
+      "author": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-15T22:14:37Z"
+      },
+      "committer": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-17T01:21:14Z"
+      },
+      "message": "checksytle",
+      "tree": {
+        "sha": "058c495de91ae9c9b648f630f3d720137fa6bcdd",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/058c495de91ae9c9b648f630f3d720137fa6bcdd"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/d4e23dc77419fda0c22bc0629ca6859d728118f9",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/d4e23dc77419fda0c22bc0629ca6859d728118f9",
+    "html_url": "https://github.com/apache/kafka/commit/d4e23dc77419fda0c22bc0629ca6859d728118f9",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/d4e23dc77419fda0c22bc0629ca6859d728118f9/comments",
+    "author": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "90502931ceaf1b6082e8adec3c167cc1d3dba8ad",
+        "url": "https://api.github.com/repos/apache/kafka/commits/90502931ceaf1b6082e8adec3c167cc1d3dba8ad",
+        "html_url": "https://github.com/apache/kafka/commit/90502931ceaf1b6082e8adec3c167cc1d3dba8ad"
+      }
+    ]
+  },
+  {
+    "sha": "e47398afca21fdb6b8322a497633ba1b91caf942",
+    "node_id": "MDY6Q29tbWl0Njk5OTUxNDI6ZTQ3Mzk4YWZjYTIxZmRiNmI4MzIyYTQ5NzYzM2JhMWI5MWNhZjk0Mg==",
+    "commit": {
+      "author": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-15T22:33:54Z"
+      },
+      "committer": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-17T01:21:14Z"
+      },
+      "message": "delegate to more general method",
+      "tree": {
+        "sha": "4500eddccfe3976f5bdb66febc3e9122e1e82ce5",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/4500eddccfe3976f5bdb66febc3e9122e1e82ce5"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/e47398afca21fdb6b8322a497633ba1b91caf942",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/e47398afca21fdb6b8322a497633ba1b91caf942",
+    "html_url": "https://github.com/apache/kafka/commit/e47398afca21fdb6b8322a497633ba1b91caf942",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/e47398afca21fdb6b8322a497633ba1b91caf942/comments",
+    "author": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d4e23dc77419fda0c22bc0629ca6859d728118f9",
+        "url": "https://api.github.com/repos/apache/kafka/commits/d4e23dc77419fda0c22bc0629ca6859d728118f9",
+        "html_url": "https://github.com/apache/kafka/commit/d4e23dc77419fda0c22bc0629ca6859d728118f9"
+      }
+    ]
+  },
+  {
+    "sha": "fd362d64c62aabb6fcb69d279f4ae78a74709dfe",
+    "node_id": "MDY6Q29tbWl0Njk5OTUxNDI6ZmQzNjJkNjRjNjJhYWJiNmZjYjY5ZDI3OWY0YWU3OGE3NDcwOWRmZQ==",
+    "commit": {
+      "author": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-16T21:43:06Z"
+      },
+      "committer": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-17T01:24:09Z"
+      },
+      "message": "segment cache keys to maintain key ordering between cache and underlying store",
+      "tree": {
+        "sha": "766240d859ef317df2da8b33f4a08239657511a8",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/766240d859ef317df2da8b33f4a08239657511a8"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/fd362d64c62aabb6fcb69d279f4ae78a74709dfe",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/fd362d64c62aabb6fcb69d279f4ae78a74709dfe",
+    "html_url": "https://github.com/apache/kafka/commit/fd362d64c62aabb6fcb69d279f4ae78a74709dfe",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/fd362d64c62aabb6fcb69d279f4ae78a74709dfe/comments",
+    "author": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e47398afca21fdb6b8322a497633ba1b91caf942",
+        "url": "https://api.github.com/repos/apache/kafka/commits/e47398afca21fdb6b8322a497633ba1b91caf942",
+        "html_url": "https://github.com/apache/kafka/commit/e47398afca21fdb6b8322a497633ba1b91caf942"
+      }
+    ]
+  },
+  {
+    "sha": "87c2958ad53248362c426e3388669aa459f6963f",
+    "node_id": "MDY6Q29tbWl0Njk5OTUxNDI6ODdjMjk1OGFkNTMyNDgzNjJjNDI2ZTMzODg2NjlhYTQ1OWY2OTYzZg==",
+    "commit": {
+      "author": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-17T00:41:47Z"
+      },
+      "committer": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-17T01:24:11Z"
+      },
+      "message": "fix window/session abitrary key ranges",
+      "tree": {
+        "sha": "c23195314dd29d2812b965fe817e50d99d999d11",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/c23195314dd29d2812b965fe817e50d99d999d11"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/87c2958ad53248362c426e3388669aa459f6963f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/87c2958ad53248362c426e3388669aa459f6963f",
+    "html_url": "https://github.com/apache/kafka/commit/87c2958ad53248362c426e3388669aa459f6963f",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/87c2958ad53248362c426e3388669aa459f6963f/comments",
+    "author": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "fd362d64c62aabb6fcb69d279f4ae78a74709dfe",
+        "url": "https://api.github.com/repos/apache/kafka/commits/fd362d64c62aabb6fcb69d279f4ae78a74709dfe",
+        "html_url": "https://github.com/apache/kafka/commit/fd362d64c62aabb6fcb69d279f4ae78a74709dfe"
+      }
+    ]
+  },
+  {
+    "sha": "b6f1f40f2d1a2209248966d518aa0d60586390d8",
+    "node_id": "MDY6Q29tbWl0Njk5OTUxNDI6YjZmMWY0MGYyZDFhMjIwOTI0ODk2NmQ1MThhYTBkNjA1ODYzOTBkOA==",
+    "commit": {
+      "author": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-17T16:32:26Z"
+      },
+      "committer": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-17T16:40:19Z"
+      },
+      "message": "saner and more consistent type parameter conventions",
+      "tree": {
+        "sha": "54521beb13da79849df2a4a146c752ae34d017bd",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/54521beb13da79849df2a4a146c752ae34d017bd"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/b6f1f40f2d1a2209248966d518aa0d60586390d8",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/b6f1f40f2d1a2209248966d518aa0d60586390d8",
+    "html_url": "https://github.com/apache/kafka/commit/b6f1f40f2d1a2209248966d518aa0d60586390d8",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/b6f1f40f2d1a2209248966d518aa0d60586390d8/comments",
+    "author": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "87c2958ad53248362c426e3388669aa459f6963f",
+        "url": "https://api.github.com/repos/apache/kafka/commits/87c2958ad53248362c426e3388669aa459f6963f",
+        "html_url": "https://github.com/apache/kafka/commit/87c2958ad53248362c426e3388669aa459f6963f"
+      }
+    ]
+  },
+  {
+    "sha": "7f4407e810b7135fffd4994a3494e38ed5afb5cb",
+    "node_id": "MDY6Q29tbWl0Njk5OTUxNDI6N2Y0NDA3ZTgxMGI3MTM1ZmZmZDQ5OTRhMzQ5NGUzOGVkNWFmYjVjYg==",
+    "commit": {
+      "author": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-17T16:34:31Z"
+      },
+      "committer": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-17T16:40:19Z"
+      },
+      "message": "rely only on one hasNextCondition method",
+      "tree": {
+        "sha": "85f76d09f3599dc112c23ba8a12cd89f7af8fead",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/85f76d09f3599dc112c23ba8a12cd89f7af8fead"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/7f4407e810b7135fffd4994a3494e38ed5afb5cb",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/7f4407e810b7135fffd4994a3494e38ed5afb5cb",
+    "html_url": "https://github.com/apache/kafka/commit/7f4407e810b7135fffd4994a3494e38ed5afb5cb",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/7f4407e810b7135fffd4994a3494e38ed5afb5cb/comments",
+    "author": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b6f1f40f2d1a2209248966d518aa0d60586390d8",
+        "url": "https://api.github.com/repos/apache/kafka/commits/b6f1f40f2d1a2209248966d518aa0d60586390d8",
+        "html_url": "https://github.com/apache/kafka/commit/b6f1f40f2d1a2209248966d518aa0d60586390d8"
+      }
+    ]
+  },
+  {
+    "sha": "104e2608e8004425478a7c441037125f1237e202",
+    "node_id": "MDY6Q29tbWl0Njk5OTUxNDI6MTA0ZTI2MDhlODAwNDQyNTQ3OGE3YzQ0MTAzNzEyNWYxMjM3ZTIwMg==",
+    "commit": {
+      "author": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-17T16:34:49Z"
+      },
+      "committer": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-17T16:40:19Z"
+      },
+      "message": "code nits",
+      "tree": {
+        "sha": "410e874122c9c793b385d12009bd9979dae54345",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/410e874122c9c793b385d12009bd9979dae54345"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/104e2608e8004425478a7c441037125f1237e202",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/104e2608e8004425478a7c441037125f1237e202",
+    "html_url": "https://github.com/apache/kafka/commit/104e2608e8004425478a7c441037125f1237e202",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/104e2608e8004425478a7c441037125f1237e202/comments",
+    "author": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7f4407e810b7135fffd4994a3494e38ed5afb5cb",
+        "url": "https://api.github.com/repos/apache/kafka/commits/7f4407e810b7135fffd4994a3494e38ed5afb5cb",
+        "html_url": "https://github.com/apache/kafka/commit/7f4407e810b7135fffd4994a3494e38ed5afb5cb"
+      }
+    ]
+  },
+  {
+    "sha": "b3c79bbdf3b73a372d33fca8b46f99e4c76b3a6f",
+    "node_id": "MDY6Q29tbWl0Njk5OTUxNDI6YjNjNzliYmRmM2I3M2EzNzJkMzNmY2E4YjQ2Zjk5ZTRjNzZiM2E2Zg==",
+    "commit": {
+      "author": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-17T18:00:21Z"
+      },
+      "committer": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-17T18:08:27Z"
+      },
+      "message": "more explicit tests for window/session key ranges",
+      "tree": {
+        "sha": "232e50afae41da067f708176fa6cdff9136395eb",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/232e50afae41da067f708176fa6cdff9136395eb"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/b3c79bbdf3b73a372d33fca8b46f99e4c76b3a6f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/b3c79bbdf3b73a372d33fca8b46f99e4c76b3a6f",
+    "html_url": "https://github.com/apache/kafka/commit/b3c79bbdf3b73a372d33fca8b46f99e4c76b3a6f",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/b3c79bbdf3b73a372d33fca8b46f99e4c76b3a6f/comments",
+    "author": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "104e2608e8004425478a7c441037125f1237e202",
+        "url": "https://api.github.com/repos/apache/kafka/commits/104e2608e8004425478a7c441037125f1237e202",
+        "html_url": "https://github.com/apache/kafka/commit/104e2608e8004425478a7c441037125f1237e202"
+      }
+    ]
+  },
+  {
+    "sha": "c11f18f1e770a48e2c6abf094e244098fbbaf271",
+    "node_id": "MDY6Q29tbWl0Njk5OTUxNDI6YzExZjE4ZjFlNzcwYTQ4ZTJjNmFiZjA5NGUyNDQwOThmYmJhZjI3MQ==",
+    "commit": {
+      "author": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-17T18:28:26Z"
+      },
+      "committer": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-17T18:34:59Z"
+      },
+      "message": "add segmented cache function tests",
+      "tree": {
+        "sha": "50086babd2b5d42b20ebafb662bebd33dffe2584",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/50086babd2b5d42b20ebafb662bebd33dffe2584"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/c11f18f1e770a48e2c6abf094e244098fbbaf271",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/c11f18f1e770a48e2c6abf094e244098fbbaf271",
+    "html_url": "https://github.com/apache/kafka/commit/c11f18f1e770a48e2c6abf094e244098fbbaf271",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/c11f18f1e770a48e2c6abf094e244098fbbaf271/comments",
+    "author": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b3c79bbdf3b73a372d33fca8b46f99e4c76b3a6f",
+        "url": "https://api.github.com/repos/apache/kafka/commits/b3c79bbdf3b73a372d33fca8b46f99e4c76b3a6f",
+        "html_url": "https://github.com/apache/kafka/commit/b3c79bbdf3b73a372d33fca8b46f99e4c76b3a6f"
+      }
+    ]
+  },
+  {
+    "sha": "14771e691b0131a4b23271e4a29846eaa41da574",
+    "node_id": "MDY6Q29tbWl0Njk5OTUxNDI6MTQ3NzFlNjkxYjAxMzFhNGIyMzI3MWU0YTI5ODQ2ZWFhNDFkYTU3NA==",
+    "commit": {
+      "author": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-17T18:48:50Z"
+      },
+      "committer": {
+        "name": "Xavier L\u00e9aut\u00e9",
+        "email": "xavier@confluent.io",
+        "date": "2017-05-17T18:48:50Z"
+      },
+      "message": "add test for MergedSortedCacheWindowStoreKeyValueIterator",
+      "tree": {
+        "sha": "eaea578828cbc7bfa6f564cff66ab390425b798d",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/eaea578828cbc7bfa6f564cff66ab390425b798d"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/14771e691b0131a4b23271e4a29846eaa41da574",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/14771e691b0131a4b23271e4a29846eaa41da574",
+    "html_url": "https://github.com/apache/kafka/commit/14771e691b0131a4b23271e4a29846eaa41da574",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/14771e691b0131a4b23271e4a29846eaa41da574/comments",
+    "author": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "xvrl",
+      "id": 815147,
+      "node_id": "MDQ6VXNlcjgxNTE0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/815147?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/xvrl",
+      "html_url": "https://github.com/xvrl",
+      "followers_url": "https://api.github.com/users/xvrl/followers",
+      "following_url": "https://api.github.com/users/xvrl/following{/other_user}",
+      "gists_url": "https://api.github.com/users/xvrl/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/xvrl/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/xvrl/subscriptions",
+      "organizations_url": "https://api.github.com/users/xvrl/orgs",
+      "repos_url": "https://api.github.com/users/xvrl/repos",
+      "events_url": "https://api.github.com/users/xvrl/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/xvrl/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c11f18f1e770a48e2c6abf094e244098fbbaf271",
+        "url": "https://api.github.com/repos/apache/kafka/commits/c11f18f1e770a48e2c6abf094e244098fbbaf271",
+        "html_url": "https://github.com/apache/kafka/commit/c11f18f1e770a48e2c6abf094e244098fbbaf271"
+      }
+    ]
+  }
+]

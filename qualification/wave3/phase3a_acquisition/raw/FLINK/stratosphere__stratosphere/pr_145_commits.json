@@ -1,0 +1,170 @@
+[
+  {
+    "sha": "3d7dc1306a4005bb4fd3ec9fef0a85dc12e11e21",
+    "node_id": "MDY6Q29tbWl0MTIzODg3ODA6M2Q3ZGMxMzA2YTQwMDViYjRmZDNlYzlmZWYwYTg1ZGMxMmUxMWUyMQ==",
+    "commit": {
+      "author": {
+        "name": "Fabian Hueske",
+        "email": "fabian.hueske@tu-berlin.de",
+        "date": "2013-10-10T12:46:55Z"
+      },
+      "committer": {
+        "name": "Fabian Hueske",
+        "email": "fabian.hueske@tu-berlin.de",
+        "date": "2013-10-10T12:46:55Z"
+      },
+      "message": "Fix: Combiner gets same DOP and SubtasksPerInstance as its input to be chainable",
+      "tree": {
+        "sha": "ef41c3f93a9d9998499b25015f71ecc42f1725de",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/ef41c3f93a9d9998499b25015f71ecc42f1725de"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/3d7dc1306a4005bb4fd3ec9fef0a85dc12e11e21",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/3d7dc1306a4005bb4fd3ec9fef0a85dc12e11e21",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/3d7dc1306a4005bb4fd3ec9fef0a85dc12e11e21",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/3d7dc1306a4005bb4fd3ec9fef0a85dc12e11e21/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "09012c0ed45c4b1629f23e17e6a62f8d59ef425f",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/09012c0ed45c4b1629f23e17e6a62f8d59ef425f",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/09012c0ed45c4b1629f23e17e6a62f8d59ef425f"
+      }
+    ]
+  },
+  {
+    "sha": "e87a807677df75eaeef988675fa82d06063a6823",
+    "node_id": "MDY6Q29tbWl0MTIzODg3ODA6ZTg3YTgwNzY3N2RmNzVlYWVlZjk4ODY3NWZhODJkMDYwNjNhNjgyMw==",
+    "commit": {
+      "author": {
+        "name": "Fabian Hueske",
+        "email": "fabian.hueske@tu-berlin.de",
+        "date": "2013-10-10T12:48:14Z"
+      },
+      "committer": {
+        "name": "Fabian Hueske",
+        "email": "fabian.hueske@tu-berlin.de",
+        "date": "2013-10-10T12:48:14Z"
+      },
+      "message": "Extended compiler hint exception to make it more expressive",
+      "tree": {
+        "sha": "64a6706caaa1f140cc02c800f69ec063950c7c30",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/64a6706caaa1f140cc02c800f69ec063950c7c30"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/e87a807677df75eaeef988675fa82d06063a6823",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/e87a807677df75eaeef988675fa82d06063a6823",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/e87a807677df75eaeef988675fa82d06063a6823",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/e87a807677df75eaeef988675fa82d06063a6823/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "3d7dc1306a4005bb4fd3ec9fef0a85dc12e11e21",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/3d7dc1306a4005bb4fd3ec9fef0a85dc12e11e21",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/3d7dc1306a4005bb4fd3ec9fef0a85dc12e11e21"
+      }
+    ]
+  },
+  {
+    "sha": "f698ad7dc03a55bd383aeb2d89a8692de6fa4ace",
+    "node_id": "MDY6Q29tbWl0MTIzODg3ODA6ZjY5OGFkN2RjMDNhNTViZDM4M2FlYjJkODlhODY5MmRlNmZhNGFjZQ==",
+    "commit": {
+      "author": {
+        "name": "Fabian Hueske",
+        "email": "fabian.hueske@tu-berlin.de",
+        "date": "2013-10-10T12:49:11Z"
+      },
+      "committer": {
+        "name": "Fabian Hueske",
+        "email": "fabian.hueske@tu-berlin.de",
+        "date": "2013-10-10T12:49:11Z"
+      },
+      "message": "Extended driver local strategy exception to make it more expressive",
+      "tree": {
+        "sha": "bfedabcd18864d01c21c5270361be852e6149745",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/bfedabcd18864d01c21c5270361be852e6149745"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/f698ad7dc03a55bd383aeb2d89a8692de6fa4ace",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/f698ad7dc03a55bd383aeb2d89a8692de6fa4ace",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/f698ad7dc03a55bd383aeb2d89a8692de6fa4ace",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/f698ad7dc03a55bd383aeb2d89a8692de6fa4ace/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "e87a807677df75eaeef988675fa82d06063a6823",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/e87a807677df75eaeef988675fa82d06063a6823",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/e87a807677df75eaeef988675fa82d06063a6823"
+      }
+    ]
+  },
+  {
+    "sha": "17174e6bb4c5f3cc130a3cdd2e00b3eee80d20fd",
+    "node_id": "MDY6Q29tbWl0MTIzODg3ODA6MTcxNzRlNmJiNGM1ZjNjYzEzMGEzY2RkMmUwMGIzZWVlODBkMjBmZA==",
+    "commit": {
+      "author": {
+        "name": "Fabian Hueske",
+        "email": "fabian.hueske@tu-berlin.de",
+        "date": "2013-10-10T13:10:55Z"
+      },
+      "committer": {
+        "name": "Fabian Hueske",
+        "email": "fabian.hueske@tu-berlin.de",
+        "date": "2013-10-10T13:10:55Z"
+      },
+      "message": "Fixed local strategy of stand-alone (non-chained) combine driver",
+      "tree": {
+        "sha": "d31272ade1f5e2519d62e0df4424994d114466bb",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/d31272ade1f5e2519d62e0df4424994d114466bb"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/17174e6bb4c5f3cc130a3cdd2e00b3eee80d20fd",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/17174e6bb4c5f3cc130a3cdd2e00b3eee80d20fd",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/17174e6bb4c5f3cc130a3cdd2e00b3eee80d20fd",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/17174e6bb4c5f3cc130a3cdd2e00b3eee80d20fd/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "f698ad7dc03a55bd383aeb2d89a8692de6fa4ace",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/f698ad7dc03a55bd383aeb2d89a8692de6fa4ace",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/f698ad7dc03a55bd383aeb2d89a8692de6fa4ace"
+      }
+    ]
+  }
+]

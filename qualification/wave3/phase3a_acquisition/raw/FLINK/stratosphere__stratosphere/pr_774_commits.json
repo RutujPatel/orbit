@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "b75e2984a515612fcec79ee4dd320322967117ed",
+    "node_id": "MDY6Q29tbWl0MTU5ODM0OTI6Yjc1ZTI5ODRhNTE1NjEyZmNlYzc5ZWU0ZGQzMjAzMjI5NjcxMTdlZA==",
+    "commit": {
+      "author": {
+        "name": "twalthr",
+        "email": "info@twalthr.com",
+        "date": "2014-05-07T00:24:50Z"
+      },
+      "committer": {
+        "name": "twalthr",
+        "email": "info@twalthr.com",
+        "date": "2014-05-07T00:24:50Z"
+      },
+      "message": "WordCount examples are documented with many comments in order to be very user-friendly.",
+      "tree": {
+        "sha": "90e9b16cfee638e675ff0ddc2b3a37a3460ad8ce",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/90e9b16cfee638e675ff0ddc2b3a37a3460ad8ce"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/b75e2984a515612fcec79ee4dd320322967117ed",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/b75e2984a515612fcec79ee4dd320322967117ed",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/b75e2984a515612fcec79ee4dd320322967117ed",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/b75e2984a515612fcec79ee4dd320322967117ed/comments",
+    "author": {
+      "login": "twalthr",
+      "id": 5746567,
+      "node_id": "MDQ6VXNlcjU3NDY1Njc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5746567?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/twalthr",
+      "html_url": "https://github.com/twalthr",
+      "followers_url": "https://api.github.com/users/twalthr/followers",
+      "following_url": "https://api.github.com/users/twalthr/following{/other_user}",
+      "gists_url": "https://api.github.com/users/twalthr/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/twalthr/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/twalthr/subscriptions",
+      "organizations_url": "https://api.github.com/users/twalthr/orgs",
+      "repos_url": "https://api.github.com/users/twalthr/repos",
+      "events_url": "https://api.github.com/users/twalthr/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/twalthr/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "twalthr",
+      "id": 5746567,
+      "node_id": "MDQ6VXNlcjU3NDY1Njc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5746567?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/twalthr",
+      "html_url": "https://github.com/twalthr",
+      "followers_url": "https://api.github.com/users/twalthr/followers",
+      "following_url": "https://api.github.com/users/twalthr/following{/other_user}",
+      "gists_url": "https://api.github.com/users/twalthr/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/twalthr/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/twalthr/subscriptions",
+      "organizations_url": "https://api.github.com/users/twalthr/orgs",
+      "repos_url": "https://api.github.com/users/twalthr/repos",
+      "events_url": "https://api.github.com/users/twalthr/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/twalthr/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c8f6602ee4d70a5e88adc75899bcb219618aa6ee",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/c8f6602ee4d70a5e88adc75899bcb219618aa6ee",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/c8f6602ee4d70a5e88adc75899bcb219618aa6ee"
+      }
+    ]
+  }
+]

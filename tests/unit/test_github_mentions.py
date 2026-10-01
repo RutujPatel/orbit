@@ -761,3 +761,72 @@ class TestEndToEndMentionIntegration:
         assert unres_item.target_identifier == "PLAT-999"
         assert unres_item.relationship_kind == "mentions"
         assert "not observed" in unres_item.reason
+
+
+class TestHardenJiraMentionRegex:
+    """Verifies that mention extraction matches real-world branch/commit patterns."""
+
+    def test_real_world_branch_patterns(self):
+        policy = MentionLexicalPolicy(frozenset({"PLAT"}))
+        jira_obs = (make_jira_obs("PLAT-101"),)
+
+        # 1. Branch name: feature/PLAT-101-login
+        obs_branch = make_github_obs(
+            "github_branch",
+            "repo/feature/PLAT-101-login",
+            GitHubBranchState(name="feature/PLAT-101-login"),
+        )
+        r, _ = resolve_github_jira_mentions(make_normalized_gh((obs_branch,)), jira_obs, JIRA_SOURCE, policy)
+        assert len(r) == 1
+        assert r[0].object_ref.entity_id == "PLAT-101"
+
+        # 1b. Lowercase prefix rejected per F06 policy: feature/plat-101-login
+        obs_lower = make_github_obs(
+            "github_branch",
+            "repo/feature/plat-101-login",
+            GitHubBranchState(name="feature/plat-101-login"),
+        )
+        r_lower, u_lower = resolve_github_jira_mentions(make_normalized_gh((obs_lower,)), jira_obs, JIRA_SOURCE, policy)
+        assert len(r_lower) == 0
+        assert len(u_lower) == 0
+
+        # 2. Underscore prefix: bugfix_PLAT-101
+        obs_under_pre = make_github_obs(
+            "github_branch",
+            "repo/bugfix_PLAT-101",
+            GitHubBranchState(name="bugfix_PLAT-101"),
+        )
+        r, _ = resolve_github_jira_mentions(make_normalized_gh((obs_under_pre,)), jira_obs, JIRA_SOURCE, policy)
+        assert len(r) == 1
+        assert r[0].object_ref.entity_id == "PLAT-101"
+
+        # 3. Underscore suffix: PLAT-101_hotfix
+        obs_under_post = make_github_obs(
+            "github_branch",
+            "repo/PLAT-101_hotfix",
+            GitHubBranchState(name="PLAT-101_hotfix"),
+        )
+        r, _ = resolve_github_jira_mentions(make_normalized_gh((obs_under_post,)), jira_obs, JIRA_SOURCE, policy)
+        assert len(r) == 1
+        assert r[0].object_ref.entity_id == "PLAT-101"
+
+        # 4. Rich-text en-dash: PLAT–101
+        obs_endash = make_github_obs(
+            "github_commit",
+            "repo/c0ffee",
+            GitHubCommitState(sha="c0ffee", message="Fix PLAT\u2013101"),
+        )
+        r, _ = resolve_github_jira_mentions(make_normalized_gh((obs_endash,)), jira_obs, JIRA_SOURCE, policy)
+        assert len(r) == 1
+        assert r[0].object_ref.entity_id == "PLAT-101"
+
+        # 5. Arabic-Indic digits must NOT match
+        obs_arabic = make_github_obs(
+            "github_commit",
+            "repo/c0ffee2",
+            GitHubCommitState(sha="c0ffee2", message="Fix PLAT-\u0661\u0660\u0661"),
+        )
+        r, u = resolve_github_jira_mentions(make_normalized_gh((obs_arabic,)), jira_obs, JIRA_SOURCE, policy)
+        assert len(r) == 0
+        assert len(u) == 0
+

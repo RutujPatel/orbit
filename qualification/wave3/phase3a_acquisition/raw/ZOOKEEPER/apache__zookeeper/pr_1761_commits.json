@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "b357d3cd3b84f8bad5555842154c0f0ded9209a6",
+    "node_id": "C_kwDOCEuO8NoAKGIzNTdkM2NkM2I4NGY4YmFkNTU1NTg0MjE1NGMwZjBkZWQ5MjA5YTY",
+    "commit": {
+      "author": {
+        "name": "Christine Poerschke",
+        "email": "cpoerschke@bloomberg.net",
+        "date": "2021-09-21T16:07:44Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2021-09-21T16:07:44Z"
+      },
+      "message": "Fix 'se[r]ver' typo in ClientCnxn.",
+      "tree": {
+        "sha": "c43b5c34cec79a8415e329a2cd77608fe486705e",
+        "url": "https://api.github.com/repos/apache/zookeeper/git/trees/c43b5c34cec79a8415e329a2cd77608fe486705e"
+      },
+      "url": "https://api.github.com/repos/apache/zookeeper/git/commits/b357d3cd3b84f8bad5555842154c0f0ded9209a6",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhSgNQCRBK7hj4Ov3rIwAApk0IAFI7nNxi9M6AEQMmAzS+B2T/\nI+D+NiTtDsG89asCWhVxhWTkrf5ql7Fz0jne9+GUrviHbgodltydoHObVZdzgedW\n3zxnXRvv4yrFBqXOt5MZfcyDreVbq2mM2oBdXpF67AmIOkFdLXbG2ORMjVXPv0dq\nFNhtRXnK6TJfBBVyqLt9BiXP0cc0nwbK9q6VUH+AdzoL5ebNMLuCewX+flodlbhe\nPhRX+dnhJVAOFE0oOmm7x9tBiLpkTFJAuQz0Eh6JJZWebQQDUHGShe5lhm3l2QcW\n8LhuCAkHdR8tgsZvnJZ9Glm9Ro3t9OkdOXYtzSZ/sKSD1WZsNa86/93HCxpa0Vw=\n=Hs9v\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree c43b5c34cec79a8415e329a2cd77608fe486705e\nparent ce4c3d52e0dfb59ee758b77450ae13b196488c95\nauthor Christine Poerschke <cpoerschke@bloomberg.net> 1632240464 +0100\ncommitter GitHub <noreply@github.com> 1632240464 +0100\n\nFix 'se[r]ver' typo in ClientCnxn.",
+        "verified_at": "2024-01-16T19:59:59Z"
+      }
+    },
+    "url": "https://api.github.com/repos/apache/zookeeper/commits/b357d3cd3b84f8bad5555842154c0f0ded9209a6",
+    "html_url": "https://github.com/apache/zookeeper/commit/b357d3cd3b84f8bad5555842154c0f0ded9209a6",
+    "comments_url": "https://api.github.com/repos/apache/zookeeper/commits/b357d3cd3b84f8bad5555842154c0f0ded9209a6/comments",
+    "author": {
+      "login": "cpoerschke",
+      "id": 6458642,
+      "node_id": "MDQ6VXNlcjY0NTg2NDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6458642?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cpoerschke",
+      "html_url": "https://github.com/cpoerschke",
+      "followers_url": "https://api.github.com/users/cpoerschke/followers",
+      "following_url": "https://api.github.com/users/cpoerschke/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cpoerschke/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cpoerschke/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cpoerschke/subscriptions",
+      "organizations_url": "https://api.github.com/users/cpoerschke/orgs",
+      "repos_url": "https://api.github.com/users/cpoerschke/repos",
+      "events_url": "https://api.github.com/users/cpoerschke/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cpoerschke/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ce4c3d52e0dfb59ee758b77450ae13b196488c95",
+        "url": "https://api.github.com/repos/apache/zookeeper/commits/ce4c3d52e0dfb59ee758b77450ae13b196488c95",
+        "html_url": "https://github.com/apache/zookeeper/commit/ce4c3d52e0dfb59ee758b77450ae13b196488c95"
+      }
+    ]
+  }
+]

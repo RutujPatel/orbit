@@ -1,0 +1,242 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://orbit.internal/schemas/canonical/repository-evolution-relationship-v1.json",
+  "title": "RepositoryEvolutionRelationship",
+  "description": "Formal canonical data contract for representing verified repository evolution, lineage, topology, and ecosystem relationships in Project ORBIT without mutating repository identity or pull-request scoping.",
+  "type": "object",
+  "required": [
+    "relationship_id",
+    "relationship_family",
+    "relationship_type",
+    "source_repository",
+    "target_repository",
+    "directionality",
+    "verification_status",
+    "observed_at",
+    "provenance_refs"
+  ],
+  "properties": {
+    "relationship_id": {
+      "type": "string",
+      "description": "Deterministic, content-derived SHA-256 identifier computed as sha256(source_instance_id | relationship_type | source_repo_id | target_repo_id). Never uses random UUIDs or wall-clock timestamps.",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "relationship_family": {
+      "type": "string",
+      "description": "Closed taxonomy of four structural relationship families governing directionality, transitivity, and semantic evaluation.",
+      "enum": [
+        "NAVIGATION_ROUTING",
+        "PROJECT_LINEAGE",
+        "REPOSITORY_TOPOLOGY",
+        "ECOSYSTEM_DEPENDENCY"
+      ]
+    },
+    "relationship_type": {
+      "type": "string",
+      "description": "Exact evolutionary relationship type established by source evidence.",
+      "enum": [
+        "RENAME",
+        "NAMESPACE_MOVE",
+        "REDIRECT",
+        "PREDECESSOR_SUCCESSOR",
+        "FORK",
+        "MIRROR",
+        "VENDOR_MIRROR",
+        "EXTERNAL_DEPENDENCY",
+        "ECOSYSTEM_PACKAGING",
+        "COMPANION_SPECIFICATION"
+      ]
+    },
+    "source_repository": {
+      "$ref": "#/$defs/RepositoryEntityRef",
+      "description": "Subject repository entity. Must strictly have entity_kind = 'repository'. Never a pull request or code change."
+    },
+    "target_repository": {
+      "$ref": "#/$defs/RepositoryEntityRef",
+      "description": "Object repository entity. Must strictly have entity_kind = 'repository'. Never a pull request or code change."
+    },
+    "directionality": {
+      "type": "string",
+      "description": "Directional semantics of the relationship.",
+      "enum": [
+        "DIRECTED_FORWARD",
+        "BIDIRECTIONAL_SYMMETRIC"
+      ]
+    },
+    "transitivity_rule": {
+      "type": "string",
+      "description": "Specifies whether this relationship type permits transitive graph traversal under identical provider instance.",
+      "enum": [
+        "TRANSITIVE_PERMITTED",
+        "STRICTLY_NON_TRANSITIVE"
+      ]
+    },
+    "verification_status": {
+      "type": "string",
+      "description": "Evidentiary strength status reflecting the degree of verification established by source facts.",
+      "enum": [
+        "PROVEN",
+        "SUPPORTED",
+        "PARTIALLY_PROVEN",
+        "UNVERIFIED"
+      ]
+    },
+    "observed_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "UTC timestamp when the evidence supporting this relationship was captured or observed."
+    },
+    "valid_from": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "Optional UTC timestamp indicating when the relationship became historically effective in reality (e.g. ASF graduation date, initial commit import date). Null if unrecorded."
+    },
+    "valid_to": {
+      "type": ["string", "null"],
+      "format": "date-time",
+      "description": "Optional UTC timestamp indicating when the relationship terminated (e.g. dependency removed). Null if relationship remains active."
+    },
+    "provenance_refs": {
+      "type": "array",
+      "description": "Non-empty tuple of cryptographic references to raw source evidence fixtures.",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/ProvenanceRef"
+      }
+    },
+    "family_payload": {
+      "type": "object",
+      "description": "Family-specific typed metadata attributes.",
+      "properties": {
+        "http_status_code": {
+          "type": ["integer", "null"],
+          "description": "HTTP redirect code (e.g. 301, 302, 308) for NAVIGATION_ROUTING."
+        },
+        "underlying_vcs_id_matched": {
+          "type": ["boolean", "null"],
+          "description": "Whether the provider's underlying immutable repository integer ID matched (e.g. GitHub numeric repo id 19853920)."
+        },
+        "governance_event": {
+          "type": ["string", "null"],
+          "description": "Formal project governance milestone for PROJECT_LINEAGE (e.g. 'ASF_INCUBATOR_DONATION', 'ASF_TLP_GRADUATION')."
+        },
+        "fork_point_commit_sha": {
+          "type": ["string", "null"],
+          "description": "Git commit SHA at which fork divergence occurred for REPOSITORY_TOPOLOGY."
+        },
+        "dependency_scope": {
+          "type": ["string", "null"],
+          "description": "Dependency scope for ECOSYSTEM_DEPENDENCY (e.g. 'compile', 'runtime', 'provided', 'test', 'docker_image', 'specification')."
+        }
+      },
+      "additionalProperties": false
+    },
+    "semantic_firewall": {
+      "type": "object",
+      "description": "Explicit architectural assertions ensuring that this relationship does not corrupt ORBIT core semantics.",
+      "required": [
+        "entity_ref_mutation_forbidden",
+        "linkage_auto_upgrade_forbidden",
+        "state_transfer_forbidden",
+        "temporal_causality_inference_forbidden"
+      ],
+      "properties": {
+        "entity_ref_mutation_forbidden": {
+          "type": "boolean",
+          "const": true,
+          "description": "Must be true. Asserts that this relationship does not rename or alias EntityRefs."
+        },
+        "linkage_auto_upgrade_forbidden": {
+          "type": "boolean",
+          "const": true,
+          "description": "Must be true. Asserts that DECLARED_MENTION is never automatically upgraded to EXPLICIT_LINK."
+        },
+        "state_transfer_forbidden": {
+          "type": "boolean",
+          "const": true,
+          "description": "Must be true. Asserts that PR merge state in target repo does not automatically resolve source Jira issue."
+        },
+        "temporal_causality_inference_forbidden": {
+          "type": "boolean",
+          "const": true,
+          "description": "Must be true. Asserts that timestamp proximity does not imply causality."
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "RepositoryEntityRef": {
+      "type": "object",
+      "description": "Canonical EntityRef strictly constrained to entity_kind = 'repository'.",
+      "required": [
+        "source_instance",
+        "entity_kind",
+        "entity_id"
+      ],
+      "properties": {
+        "source_instance": {
+          "$ref": "#/$defs/SourceInstance"
+        },
+        "entity_kind": {
+          "type": "string",
+          "const": "repository",
+          "description": "Must strictly be 'repository'. Code change or work item kinds are strictly forbidden as evolution endpoints."
+        },
+        "entity_id": {
+          "type": "string",
+          "description": "Normalized repository identifier in '{owner}/{repository_name}' format (e.g. 'apache/flink', 'stratosphere/stratosphere').",
+          "pattern": "^[a-zA-Z0-9_.-]+/[a-zA-Z0-9_.-]+$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "SourceInstance": {
+      "type": "object",
+      "required": [
+        "source_kind",
+        "instance_id"
+      ],
+      "properties": {
+        "source_kind": {
+          "type": "string",
+          "enum": ["github", "git", "jira", "gitlab"]
+        },
+        "instance_id": {
+          "type": "string",
+          "description": "Deployment authority (e.g. 'github.com/apache', 'issues.apache.org')."
+        }
+      },
+      "additionalProperties": false
+    },
+    "ProvenanceRef": {
+      "type": "object",
+      "required": [
+        "source_instance",
+        "fixture_id",
+        "record_locator",
+        "sha256_digest"
+      ],
+      "properties": {
+        "source_instance": {
+          "$ref": "#/$defs/SourceInstance"
+        },
+        "fixture_id": {
+          "type": "string",
+          "description": "Relative path or URI to the raw evidence fixture file."
+        },
+        "record_locator": {
+          "type": "string",
+          "description": "Path or query locator within the fixture (e.g. 'base.repo.full_name', 'pom.xml:dependencies')."
+        },
+        "sha256_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$",
+          "description": "SHA-256 digest of the raw evidence payload."
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
