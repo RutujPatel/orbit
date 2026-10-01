@@ -11,6 +11,8 @@ docs/
 ├── README.md               # Master documentation index (this document)
 ├── adr/                    # Architecture Decision Records (formal design baselines)
 ├── pass4/                  # Pass 4 wave execution reports, reconnaissance & forensic audits
+├── pass5/                  # Pass 5 wave execution reports, population inventories & qualification audits
+├── context/                # Canonical project context records & state snapshots
 ├── specifications/         # Engine designs, input contracts, schemas & rule catalogs
 ├── operations/             # Runbooks, debrief scripts, observation logs & change histories
 └── handoffs/               # Milestone onboarding handoffs & phase-gate transitions
@@ -27,6 +29,8 @@ Formal architectural decisions governing the Cross-System Evidence (Track B) eng
 | [ADR-004](adr/ADR-004_PROVENANCE_DEREFERENCING.md) | Provenance Dereferencing Architecture | Defines the closed 7-outcome taxonomy (`RESOLVED`, `UNRESOLVED_ABSENT`, `UNRESOLVED_AMBIGUOUS`, etc.) for dereferencing `ProvenanceRef` and `EntityRef` within an `EvidenceBundle`. |
 | [ADR-005](adr/ADR-005_CROSS_SYSTEM_EVIDENCE_FUSION.md) | Cross-System Evidence Fusion Architecture | Establishes pairwise entity matching (explicit links, key-in-branch, key-in-title, key-in-commit), 4-quadrant state comparisons, and 6-outcome temporal alignment. Prohibits Cartesian pairing and transitive linking. |
 | [ADR-006](adr/ADR-006_TRACK_B_EVIDENCE_BUNDLE_EVALUATION.md) | Track B EvidenceBundle Evaluation Architecture | Establishes the Pass 4 Track B evaluator boundary. Implements rules XB-01 (PR review correlation), XB-02 (cross-system status alignment), and XB-03 (merge temporal alignment). Deferrals XB-04 through XB-08 explicitly governed. |
+| [ADR: Repository Identity & Evolution](adr/ADR-REPOSITORY-IDENTITY-EVOLUTION.md) | Repository Identity & Evolution Architecture (Phase 4B) | Establishes Option B: Immutable `EntityRef` + typed repository-evolution relationships + evidence/provenance across VCS hosting migrations. |
+| [ADR: Repository Evolution Schema](adr/ADR-REPOSITORY-EVOLUTION-SCHEMA.md) | Repository Evolution Schema Specification (Phase 4C) | Canonical data contract for representing verified repository rename, transfer, split, and merge evolutions. |
 
 ---
 
@@ -50,7 +54,45 @@ Chronological wave execution logs, reconnaissance documents, and forensic audit 
 
 ---
 
-## 3. Core Specifications & Contracts (`docs/specifications/`)
+## 3. Pass 5 Engineering & Qualification Reports (`docs/pass5/`)
+
+Chronological wave execution reports, population inventories, and qualification audit records for Pass 5:
+
+| Wave / Phase | Document | Purpose & Outcomes |
+| :--- | :--- | :--- |
+| Wave 0 | [PASS5_WAVE0_UNIVERSAL_CONNECTED_SYSTEMS_RECONNAISSANCE.md](pass5/PASS5_WAVE0_UNIVERSAL_CONNECTED_SYSTEMS_RECONNAISSANCE.md) | Universal connected systems reconnaissance and landscape mapping. |
+| Wave 1 | [PASS5_WAVE1_EXECUTION_REPORT.md](pass5/PASS5_WAVE1_EXECUTION_REPORT.md) | Provider-neutral core domain decoupling and canonical abstraction proving. |
+| Wave 2 | [PASS5_WAVE2_EXECUTION_REPORT.md](pass5/PASS5_WAVE2_EXECUTION_REPORT.md) | Third-provider proving and multi-system qualification consolidation. |
+| Wave 3 Recon | [PASS5_WAVE3_RECONNAISSANCE_REPORT.md](pass5/PASS5_WAVE3_RECONNAISSANCE_REPORT.md) | Wave 3 cross-system empirical dataset reconnaissance and qualification strategy. |
+| Wave 3 Audit | [PASS5_WAVE3_LOCAL_CROSS_SYSTEM_EVIDENCE_AUDIT.md](pass5/PASS5_WAVE3_LOCAL_CROSS_SYSTEM_EVIDENCE_AUDIT.md) | Local cross-system evidence audit across offline corporate datasets. |
+| Wave 3 Dataset Search | [PASS5_WAVE3_PUBLIC_DATASET_SEARCH_REPORT.md](pass5/PASS5_WAVE3_PUBLIC_DATASET_SEARCH_REPORT.md) | Public dataset discovery and Apache/Mahout corpus evaluation. |
+| Wave 3 Phase 1A | [PASS5_WAVE3_PHASE1A_ACQUISITION_REPORT.md](pass5/PASS5_WAVE3_PHASE1A_ACQUISITION_REPORT.md) | Controlled Apache/Mahout candidate acquisition report. |
+| Wave 3 Phase 1B | [PASS5_WAVE3_PHASE1B_CANONICAL_ADAPTATION_REPORT.md](pass5/PASS5_WAVE3_PHASE1B_CANONICAL_ADAPTATION_REPORT.md) | Canonical adaptation report for Apache public multi-system evidence. |
+| Wave 3 Phase 1C | [PASS5_WAVE3_PHASE1C_ENTERPRISE_BENCHMARK_REPORT.md](pass5/PASS5_WAVE3_PHASE1C_ENTERPRISE_BENCHMARK_REPORT.md) | Enterprise scale qualification benchmarking report. |
+| Wave 3 Requalification | [PASS5_WAVE3_FORENSIC_REQUALIFICATION.md](pass5/PASS5_WAVE3_FORENSIC_REQUALIFICATION.md) | Forensic requalification of Track A and Track B under extended data. |
+| Wave 3 Phase 2 | [WAVE3_PHASE2_POPULATION_INVENTORY.md](pass5/WAVE3_PHASE2_POPULATION_INVENTORY.md) | Comprehensive 47k Jira / GitHub candidate population inventory. |
+| Wave 3 Phase 2 Report | [WAVE3_PHASE2_POPULATION_QUALIFICATION_REPORT.md](pass5/WAVE3_PHASE2_POPULATION_QUALIFICATION_REPORT.md) | Population-wide qualification evaluation and filtering report. |
+| Wave 3 Phase 3A | [phase3a_acquisition_report.md](pass5/phase3a_acquisition_report.md) | Controlled acquisition of the frozen 100-candidate qualification cohort. |
+| Wave 3 Phase 3B | [phase3b_report.md](pass5/phase3b_report.md) | Controlled semantic qualification of acquired GitHub evidence. |
+| Wave 3 Phase 3B Erratum | [PHASE3B_DETERMINISM_DIGEST_ERRATUM.md](pass5/PHASE3B_DETERMINISM_DIGEST_ERRATUM.md) | Documentation erratum reconciling Phase 3B determinism report digests. |
+| Wave 3 Phase 4A | [PHASE4A_CONSOLIDATION_GOVERNANCE_AUDIT.md](pass5/PHASE4A_CONSOLIDATION_GOVERNANCE_AUDIT.md) | Phase 4A consolidation and governance audit record. |
+| Wave 3 Post-4A | [PHASE4_COMPREHENSIVE_RECORD.md](pass5/PHASE4_COMPREHENSIVE_RECORD.md) | Comprehensive record of all activities and decisions since Phase 4A. |
+| Wave 3 Phase 4B | [phase4b_report.md](pass5/phase4b_report.md) | Repository Identity & Evolution architecture and evaluation report. |
+| Wave 3 Phase 4C | [phase4c_report.md](pass5/phase4c_report.md) | Formal Repository Evolution Schema Specification and adversarial analysis. |
+
+---
+
+## 4. Canonical Context Records (`docs/context/`)
+
+Master canonical context documents capturing historical project state, decision logs, and architectural invariants:
+
+| Document | Title | Description |
+| :--- | :--- | :--- |
+| [Project_ORBIT_Canonical_Context_v38.md](context/Project_ORBIT_Canonical_Context_v38.md) | Project ORBIT Canonical Context v38 | Authoritative context checkpoint including Phase 4A governance audit and full historical invariant catalog. |
+
+---
+
+## 5. Core Specifications & Contracts (`docs/specifications/`)
 
 System architecture designs, ingestion contracts, and rule catalogs:
 
@@ -64,7 +106,7 @@ System architecture designs, ingestion contracts, and rule catalogs:
 
 ---
 
-## 4. Operational Runbooks & Logs (`docs/operations/`)
+## 6. Operational Runbooks & Logs (`docs/operations/`)
 
 Procedures, runbooks, and historical observation records:
 
@@ -77,7 +119,7 @@ Procedures, runbooks, and historical observation records:
 
 ---
 
-## 5. Milestone & Transition Handoffs (`docs/handoffs/`)
+## 7. Milestone & Transition Handoffs (`docs/handoffs/`)
 
 Agent onboarding briefs and milestone phase-gate transition documents:
 

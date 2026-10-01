@@ -26,8 +26,10 @@ ORBIT is organized into two distinct evaluation tracks:
 .
 ├── docs/                       # Project documentation, specifications & ADRs
 │   ├── README.md               # Master documentation index & navigation guide
-│   ├── adr/                    # Architecture Decision Records (ADR-004 through ADR-006)
+│   ├── adr/                    # Architecture Decision Records (ADR-004..006, repo identity)
 │   ├── pass4/                  # Pass 4 wave execution reports & forensic audits
+│   ├── pass5/                  # Pass 5 wave reports, qualification audits & population inventories
+│   ├── context/                # Canonical project context checkpoints
 │   ├── specifications/         # Engine designs, input contracts, rule catalogs & scope
 │   ├── operations/             # Review runbooks, debrief scripts & observation logs
 │   └── handoffs/               # Milestone agent onboarding & phase-gate transitions
@@ -65,6 +67,8 @@ For full architectural records, specifications, runbooks, and audit histories, s
 Key sections:
 - [Architecture Decision Records (ADRs)](docs/adr/)
 - [Pass 4 Wave Reports & Forensic Audits](docs/pass4/)
+- [Pass 5 Wave Reports & Qualification Audits](docs/pass5/)
+- [Canonical Context Checkpoints](docs/context/)
 - [Specifications & Input Contracts](docs/specifications/)
 - [Operational Runbooks & Logs](docs/operations/)
 - [Milestone Handoffs](docs/handoffs/)
