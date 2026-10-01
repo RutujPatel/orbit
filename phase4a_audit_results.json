@@ -1,0 +1,130 @@
+{
+  "phase": "Phase 4A \u2014 Wave 3 Consolidation & Governance Audit",
+  "date": "2026-09-30",
+  "status": "PASS WITH QUALIFICATIONS",
+  "governing_baseline": "6d82d123f8bf50316d2b1ab7a025bc5862a474ed",
+  "recorded_consolidation_head": "ea464540b8a414e4ab6e9a2b1a4be53ae31b40ab",
+  "checks": {
+    "phase3a_cohort_size_100": true,
+    "phase3a_json_csv_parity": true,
+    "phase3a_seed_42": true,
+    "phase3a_governing_baseline": true,
+    "phase3a_consolidation_head_recorded": true,
+    "phase3a_acquisition_98_2": true,
+    "phase3b_reconciliation_100": true,
+    "phase3b_reconciliation_preserves_98_2": true,
+    "phase3b_raw_integrity": true,
+    "phase3b_hash_manifest_all_available_match": true,
+    "phase3b_determinism_machine_readable": true,
+    "phase3b_regression_machine_readable": true,
+    "runner_research_only_write_boundary": true,
+    "runner_local_mongo_only": true,
+    "report_determinism_digests_match_machine_artifact": false
+  },
+  "blocking_or_qualification_items": [
+    "report_determinism_digests_match_machine_artifact"
+  ],
+  "phase3b_hash_manifest_results": {
+    "phase3b_canonical_alignments.json": {
+      "status": "MATCH",
+      "expected": "25b54ccdf72f1c39834f5a12d4f2a7f783aa6c41ba644fc6e2f4b42806414e44",
+      "actual": "25b54ccdf72f1c39834f5a12d4f2a7f783aa6c41ba644fc6e2f4b42806414e44"
+    },
+    "phase3b_canonical_observations.json": {
+      "status": "MATCH",
+      "expected": "53fdd2303ec036c3e8708780a78bd4d32044a64a2b06747813c9546794e6a0eb",
+      "actual": "53fdd2303ec036c3e8708780a78bd4d32044a64a2b06747813c9546794e6a0eb"
+    },
+    "phase3b_determinism.json": {
+      "status": "MATCH",
+      "expected": "c06ccfe7f5e9b9f92f2511dc5de0e139f4c495396340e0e88dcd05601d2377c2",
+      "actual": "c06ccfe7f5e9b9f92f2511dc5de0e139f4c495396340e0e88dcd05601d2377c2"
+    },
+    "phase3b_manual_adjudication.json": {
+      "status": "MATCH",
+      "expected": "46da330601795ef3bdd369135486c238975f004149421d4f50e7927f2deb1afd",
+      "actual": "46da330601795ef3bdd369135486c238975f004149421d4f50e7927f2deb1afd"
+    },
+    "phase3b_metrics.json": {
+      "status": "MATCH",
+      "expected": "111a7625ccb9e705026808d483e3be8915e349c8f6c4141903d7407af333c529",
+      "actual": "111a7625ccb9e705026808d483e3be8915e349c8f6c4141903d7407af333c529"
+    },
+    "phase3b_negative_controls.json": {
+      "status": "MATCH",
+      "expected": "9994b9866b077313688c591aaaa687bc23923f848758cbfbf6379a7e8984797e",
+      "actual": "9994b9866b077313688c591aaaa687bc23923f848758cbfbf6379a7e8984797e"
+    },
+    "phase3b_provenance_results.json": {
+      "status": "MATCH",
+      "expected": "b1f40c06c2fb8e772e89ff5a59fb0437eed9ef00267a90906f17f3937871be76",
+      "actual": "b1f40c06c2fb8e772e89ff5a59fb0437eed9ef00267a90906f17f3937871be76"
+    },
+    "phase3b_raw_artifact_integrity.json": {
+      "status": "MATCH",
+      "expected": "47dbc3b99f01bf137ee2a8b195e50b8b5f814527a6e0ae8551d0aadfb1202fa6",
+      "actual": "47dbc3b99f01bf137ee2a8b195e50b8b5f814527a6e0ae8551d0aadfb1202fa6"
+    },
+    "phase3b_reconciliation.csv": {
+      "status": "MATCH",
+      "expected": "11a905efc5bfa0e01fde86cc16063a4eceb3075478bf246f25a2d3e2cebf519e",
+      "actual": "11a905efc5bfa0e01fde86cc16063a4eceb3075478bf246f25a2d3e2cebf519e"
+    },
+    "phase3b_reconciliation.json": {
+      "status": "MATCH",
+      "expected": "56eb17911f857565806448690e2482d10d1cbb266cc7ec2b7289c179c345c8e3",
+      "actual": "56eb17911f857565806448690e2482d10d1cbb266cc7ec2b7289c179c345c8e3"
+    },
+    "phase3b_regression.json": {
+      "status": "MATCH",
+      "expected": "f033f7d9bc78baee4f4bbfaf9d862bb646df7510e0e60892ce45d52ac18cf83c",
+      "actual": "f033f7d9bc78baee4f4bbfaf9d862bb646df7510e0e60892ce45d52ac18cf83c"
+    },
+    "phase3b_report.md": {
+      "status": "MATCH",
+      "expected": "0b702e6849fb4657336a75a4dd827301289554eb0ff3bf3e2a8539ca86064cf4",
+      "actual": "0b702e6849fb4657336a75a4dd827301289554eb0ff3bf3e2a8539ca86064cf4"
+    },
+    "phase3b_runner.py": {
+      "status": "MATCH",
+      "expected": "972e2716a0316f6f071f7463284862029fd4f625f2cb199d18c60bcffd7c9d0c",
+      "actual": "972e2716a0316f6f071f7463284862029fd4f625f2cb199d18c60bcffd7c9d0c"
+    },
+    "phase3b_temporal_evaluation.json": {
+      "status": "MATCH",
+      "expected": "e104de9269f47282c7b85d7bb358a5a3d444153489c798471da505be959ce04a",
+      "actual": "e104de9269f47282c7b85d7bb358a5a3d444153489c798471da505be959ce04a"
+    }
+  },
+  "determinism_digest_discrepancy": {
+    "bundle": {
+      "report": "504b2f03d86090cfb2e617d911b3bc58b292e9dbba068f230da37197b0a701df",
+      "machine_readable": "504b2f03d86090cf40e23b76f8c46123b07dc222275aeea9ac081460b3420bed",
+      "match": false
+    },
+    "evaluation": {
+      "report": "7fc973824bd228b8cf5b2cbfe665d95d430c5e3170e28fcf52243d4c3a2688ca",
+      "machine_readable": "7fc973824bd228b8db298d4a26d3ae310e4cd3987f3f10183c568d75fa7222a0",
+      "match": false
+    }
+  },
+  "phase3b_integrity": {
+    "manifest_path": "qualification/wave3/phase3a_acquisition/manifest/phase3a_frozen_cohort.json",
+    "expected_cohort_sha256": "3aa4ebabefa84e95dd433d20ba82c852cce4a1bfe7a4f246bb9c01873f077775",
+    "actual_cohort_sha256": "3aa4ebabefa84e95dd433d20ba82c852cce4a1bfe7a4f246bb9c01873f077775",
+    "cohort_hash_valid": true,
+    "total_raw_artifacts_checked": 288,
+    "total_recomputed": 288,
+    "missing_raw_artifacts": [],
+    "hash_mismatches": [],
+    "integrity_passed": true
+  },
+  "acquisition_counts": {
+    "ACQUIRED": 98,
+    "NOT_FOUND": 2
+  },
+  "reconciliation_counts": {
+    "ACQUIRED": 98,
+    "NOT_FOUND": 2
+  }
+}
