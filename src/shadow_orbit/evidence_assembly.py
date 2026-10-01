@@ -30,8 +30,12 @@ from shadow_orbit.evidence_types import (
     QualityIssue,
     RelationshipBasis,
     RelationshipKind,
+    RepositoryEvolutionRelationship,
+    RepositoryProvenanceRef,
     SourceInstance,
     UnresolvedReference,
+    validate_repository_evolution_graph,
+    validate_repository_evolution_relationship,
 )
 from shadow_orbit.github_normalization import NormalizedGitHubFixture
 from shadow_orbit.provenance_dereference import dereference_provenance_ref
@@ -270,6 +274,71 @@ def _deduplicate_alignments(
     return tuple(result)
 
 
+def _repo_provenance_sort_key(
+    p: ProvenanceRef | RepositoryProvenanceRef,
+) -> tuple[str, str, str, str, str, str]:
+    """Deterministic sort key for RepositoryProvenanceRef or ProvenanceRef."""
+    return (
+        p.source_instance.instance_id,
+        getattr(p, "observation_id", "") or "",
+        getattr(p, "fixture_id", "") or "",
+        getattr(p, "record_locator", "") or "",
+        getattr(p, "source_field_path", "") or "",
+        getattr(p, "sha256_digest", "") or "",
+    )
+
+
+def _deduplicate_repository_relationships(
+    relationships: tuple[RepositoryEvolutionRelationship, ...],
+) -> tuple[RepositoryEvolutionRelationship, ...]:
+    """Deduplicate repository evolution relationships by relationship_id.
+
+    Merges provenance_refs (union, deterministically sorted).
+    """
+    dedup: dict[str, tuple[RepositoryEvolutionRelationship, list[ProvenanceRef | RepositoryProvenanceRef]]] = {}
+    for rel in relationships:
+        if rel.relationship_id not in dedup:
+            dedup[rel.relationship_id] = (rel, list(rel.provenance_refs))
+        else:
+            _, prov_list = dedup[rel.relationship_id]
+            for p in rel.provenance_refs:
+                if p not in prov_list:
+                    prov_list.append(p)
+
+    result: list[RepositoryEvolutionRelationship] = []
+    for base_rel, prov_list in dedup.values():
+        sorted_prov = tuple(sorted(prov_list, key=_repo_provenance_sort_key))
+        result.append(
+            RepositoryEvolutionRelationship(
+                relationship_id=base_rel.relationship_id,
+                relationship_family=base_rel.relationship_family,
+                relationship_type=base_rel.relationship_type,
+                source_repository=base_rel.source_repository,
+                target_repository=base_rel.target_repository,
+                directionality=base_rel.directionality,
+                transitivity_rule=base_rel.transitivity_rule,
+                verification_status=base_rel.verification_status,
+                observed_at=base_rel.observed_at,
+                provenance_refs=sorted_prov,
+                family_payload=base_rel.family_payload,
+                semantic_firewall=base_rel.semantic_firewall,
+                valid_from=base_rel.valid_from,
+                valid_to=base_rel.valid_to,
+            )
+        )
+
+    result.sort(
+        key=lambda r: (
+            r.relationship_family,
+            r.relationship_type,
+            r.source_repository.entity_id,
+            r.target_repository.entity_id,
+            r.relationship_id,
+        )
+    )
+    return tuple(result)
+
+
 # ── Public Assembly Function ─────────────────────────────────────────
 
 def assemble_evidence_bundle(
@@ -284,6 +353,7 @@ def assemble_evidence_bundle(
     github_mention_relationships: tuple[EvidenceRelationship, ...] = (),
     github_mention_unresolved: tuple[UnresolvedReference, ...] = (),
     cross_system_alignments: tuple[CrossSystemStateAlignment, ...] = (),
+    repository_relationships: tuple[RepositoryEvolutionRelationship, ...] = (),
 ) -> EvidenceBundle:
     """Assemble independently produced evidence artifacts into an EvidenceBundle.
 
@@ -409,7 +479,10 @@ def assemble_evidence_bundle(
     # ── 7. Deduplicate Cross-System Alignments ───────────────────────
     deduped_alignments = _deduplicate_alignments(cross_system_alignments)
 
-    # ── 8. Construct and Return Frozen Bundle ────────────────────────
+    # ── 8. Deduplicate Repository Evolution Relationships ───────────
+    deduped_repo_rels = _deduplicate_repository_relationships(repository_relationships)
+
+    # ── 9. Construct and Return Frozen Bundle ────────────────────────
     return EvidenceBundle(
         bundle_id=bundle_id,
         bundle_version=bundle_version,
@@ -419,6 +492,7 @@ def assemble_evidence_bundle(
         unresolved_references=deduped_unresolved,
         quality_issues=tuple(deduped_quality),
         cross_system_alignments=deduped_alignments,
+        repository_relationships=deduped_repo_rels,
     )
 
 
@@ -847,6 +921,32 @@ def validate_evidence_bundle(
             owner_desc=f"Cross-system alignment ({a.subject_ref.entity_id} <-> {a.corroborating_ref.entity_id})",
             require_non_empty=True,
         )
+
+    # ── Repository evolution validation ──────────────────────────────
+    for rel in bundle.repository_relationships:
+        try:
+            validate_repository_evolution_relationship(rel)
+        except ValueError as exc:
+            issues.append(
+                QualityIssue(
+                    code="invalid",
+                    message=f"Repository evolution relationship {rel.relationship_id} failed validation: {exc}",
+                    subject_ref=rel.source_repository,
+                    subject_scope="repository_evolution:relationship",
+                )
+            )
+
+    if bundle.repository_relationships:
+        try:
+            validate_repository_evolution_graph(bundle.repository_relationships)
+        except ValueError as exc:
+            issues.append(
+                QualityIssue(
+                    code="invalid",
+                    message=f"Repository evolution graph acyclicity violated: {exc}",
+                    subject_scope="repository_evolution:graph",
+                )
+            )
 
     issues.sort(key=_quality_issue_sort_key)
     return tuple(issues)
