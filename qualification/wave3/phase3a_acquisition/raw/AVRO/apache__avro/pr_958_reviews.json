@@ -1,0 +1,42 @@
+[
+  {
+    "id": 869846107,
+    "node_id": "PRR_kwDOAAMme84z2Mxb",
+    "user": {
+      "login": "KyleSchoonover",
+      "id": 20002372,
+      "node_id": "MDQ6VXNlcjIwMDAyMzcy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20002372?u=8c68eac470ffb6135ea3a1850668fd33583965a6&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/KyleSchoonover",
+      "html_url": "https://github.com/KyleSchoonover",
+      "followers_url": "https://api.github.com/users/KyleSchoonover/followers",
+      "following_url": "https://api.github.com/users/KyleSchoonover/following{/other_user}",
+      "gists_url": "https://api.github.com/users/KyleSchoonover/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/KyleSchoonover/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/KyleSchoonover/subscriptions",
+      "organizations_url": "https://api.github.com/users/KyleSchoonover/orgs",
+      "repos_url": "https://api.github.com/users/KyleSchoonover/repos",
+      "events_url": "https://api.github.com/users/KyleSchoonover/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/KyleSchoonover/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "I believe this is resolved with https://github.com/apache/avro/pull/1358 without adding a dependency on IronSnappy.  Which it appears IronSnappy has not changed for over a year.",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/avro/pull/958#pullrequestreview-869846107",
+    "pull_request_url": "https://api.github.com/repos/apache/avro/pulls/958",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/avro/pull/958#pullrequestreview-869846107"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/avro/pulls/958"
+      }
+    },
+    "submitted_at": "2022-02-01T21:26:26Z",
+    "commit_id": "9780121d411377270385eaaa6d2be0d772786485"
+  }
+]

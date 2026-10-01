@@ -1,0 +1,253 @@
+[
+  {
+    "sha": "aebd84fc1169fe132fb595763d0f425de887d9ea",
+    "node_id": "MDY6Q29tbWl0NzQ2MjgwNDI6YWViZDg0ZmMxMTY5ZmUxMzJmYjU5NTc2M2QwZjQyNWRlODg3ZDllYQ==",
+    "commit": {
+      "author": {
+        "name": "Colin P. Mccabe",
+        "email": "cmccabe@confluent.io",
+        "date": "2021-04-05T19:25:36Z"
+      },
+      "committer": {
+        "name": "Colin P. Mccabe",
+        "email": "cmccabe@confluent.io",
+        "date": "2021-05-12T15:52:56Z"
+      },
+      "message": "MINOR: improve KRaft replica placement\n\nImplement the existing Kafka replica placement algorithm for KRaft.\nThis also means implementing rack awareness.  Previously, we just chose\nreplicas randomly in a non-rack-aware fashion.  Also, allow replicas to\nbe placed on fenced brokers if there are no other choices.  This was\nspecified in KIP-631 but previously not implemented.",
+      "tree": {
+        "sha": "7c8cc0157f8c6089883e0669443ddbc1b4b16493",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/7c8cc0157f8c6089883e0669443ddbc1b4b16493"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/aebd84fc1169fe132fb595763d0f425de887d9ea",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/aebd84fc1169fe132fb595763d0f425de887d9ea",
+    "html_url": "https://github.com/apache/kafka/commit/aebd84fc1169fe132fb595763d0f425de887d9ea",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/aebd84fc1169fe132fb595763d0f425de887d9ea/comments",
+    "author": {
+      "login": "cmccabe",
+      "id": 1095624,
+      "node_id": "MDQ6VXNlcjEwOTU2MjQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1095624?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cmccabe",
+      "html_url": "https://github.com/cmccabe",
+      "followers_url": "https://api.github.com/users/cmccabe/followers",
+      "following_url": "https://api.github.com/users/cmccabe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cmccabe/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cmccabe/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cmccabe/subscriptions",
+      "organizations_url": "https://api.github.com/users/cmccabe/orgs",
+      "repos_url": "https://api.github.com/users/cmccabe/repos",
+      "events_url": "https://api.github.com/users/cmccabe/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cmccabe/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "cmccabe",
+      "id": 1095624,
+      "node_id": "MDQ6VXNlcjEwOTU2MjQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1095624?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cmccabe",
+      "html_url": "https://github.com/cmccabe",
+      "followers_url": "https://api.github.com/users/cmccabe/followers",
+      "following_url": "https://api.github.com/users/cmccabe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cmccabe/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cmccabe/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cmccabe/subscriptions",
+      "organizations_url": "https://api.github.com/users/cmccabe/orgs",
+      "repos_url": "https://api.github.com/users/cmccabe/repos",
+      "events_url": "https://api.github.com/users/cmccabe/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cmccabe/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "13ffebe2f1012da473189c4fe86fd14b83809962",
+        "url": "https://api.github.com/repos/apache/kafka/commits/13ffebe2f1012da473189c4fe86fd14b83809962",
+        "html_url": "https://github.com/apache/kafka/commit/13ffebe2f1012da473189c4fe86fd14b83809962"
+      }
+    ]
+  },
+  {
+    "sha": "4d243fe4363ed5408fb730f6d7ffdbeca3d45713",
+    "node_id": "MDY6Q29tbWl0NzQ2MjgwNDI6NGQyNDNmZTQzNjNlZDU0MDhmYjczMGY2ZDdmZmRiZWNhM2Q0NTcxMw==",
+    "commit": {
+      "author": {
+        "name": "Colin P. Mccabe",
+        "email": "cmccabe@confluent.io",
+        "date": "2021-05-14T20:53:05Z"
+      },
+      "committer": {
+        "name": "Colin P. Mccabe",
+        "email": "cmccabe@confluent.io",
+        "date": "2021-05-14T20:53:05Z"
+      },
+      "message": "Merge branch 'trunk' into kraft_placement",
+      "tree": {
+        "sha": "ffe7540ed3d7a0d2111167102c878f3d4232c63a",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/ffe7540ed3d7a0d2111167102c878f3d4232c63a"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/4d243fe4363ed5408fb730f6d7ffdbeca3d45713",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/4d243fe4363ed5408fb730f6d7ffdbeca3d45713",
+    "html_url": "https://github.com/apache/kafka/commit/4d243fe4363ed5408fb730f6d7ffdbeca3d45713",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/4d243fe4363ed5408fb730f6d7ffdbeca3d45713/comments",
+    "author": {
+      "login": "cmccabe",
+      "id": 1095624,
+      "node_id": "MDQ6VXNlcjEwOTU2MjQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1095624?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cmccabe",
+      "html_url": "https://github.com/cmccabe",
+      "followers_url": "https://api.github.com/users/cmccabe/followers",
+      "following_url": "https://api.github.com/users/cmccabe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cmccabe/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cmccabe/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cmccabe/subscriptions",
+      "organizations_url": "https://api.github.com/users/cmccabe/orgs",
+      "repos_url": "https://api.github.com/users/cmccabe/repos",
+      "events_url": "https://api.github.com/users/cmccabe/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cmccabe/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "cmccabe",
+      "id": 1095624,
+      "node_id": "MDQ6VXNlcjEwOTU2MjQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1095624?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cmccabe",
+      "html_url": "https://github.com/cmccabe",
+      "followers_url": "https://api.github.com/users/cmccabe/followers",
+      "following_url": "https://api.github.com/users/cmccabe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cmccabe/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cmccabe/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cmccabe/subscriptions",
+      "organizations_url": "https://api.github.com/users/cmccabe/orgs",
+      "repos_url": "https://api.github.com/users/cmccabe/repos",
+      "events_url": "https://api.github.com/users/cmccabe/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cmccabe/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "aebd84fc1169fe132fb595763d0f425de887d9ea",
+        "url": "https://api.github.com/repos/apache/kafka/commits/aebd84fc1169fe132fb595763d0f425de887d9ea",
+        "html_url": "https://github.com/apache/kafka/commit/aebd84fc1169fe132fb595763d0f425de887d9ea"
+      },
+      {
+        "sha": "f20fdbd839ea1275fa4b26e9eb3c49ef5d9af1ca",
+        "url": "https://api.github.com/repos/apache/kafka/commits/f20fdbd839ea1275fa4b26e9eb3c49ef5d9af1ca",
+        "html_url": "https://github.com/apache/kafka/commit/f20fdbd839ea1275fa4b26e9eb3c49ef5d9af1ca"
+      }
+    ]
+  },
+  {
+    "sha": "a9a2e7c4186e22fb9c672e18f4da749e3e60ffaa",
+    "node_id": "MDY6Q29tbWl0NzQ2MjgwNDI6YTlhMmU3YzQxODZlMjJmYjljNjcyZTE4ZjRkYTc0OWUzZTYwZmZhYQ==",
+    "commit": {
+      "author": {
+        "name": "Colin P. Mccabe",
+        "email": "cmccabe@confluent.io",
+        "date": "2021-05-14T21:03:50Z"
+      },
+      "committer": {
+        "name": "Colin P. Mccabe",
+        "email": "cmccabe@confluent.io",
+        "date": "2021-05-14T21:03:50Z"
+      },
+      "message": "Add testEvenDistribution",
+      "tree": {
+        "sha": "4cc2eb05ac6cfbe63c5bb7aaa892fbf6f9014136",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/4cc2eb05ac6cfbe63c5bb7aaa892fbf6f9014136"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/a9a2e7c4186e22fb9c672e18f4da749e3e60ffaa",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/a9a2e7c4186e22fb9c672e18f4da749e3e60ffaa",
+    "html_url": "https://github.com/apache/kafka/commit/a9a2e7c4186e22fb9c672e18f4da749e3e60ffaa",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/a9a2e7c4186e22fb9c672e18f4da749e3e60ffaa/comments",
+    "author": {
+      "login": "cmccabe",
+      "id": 1095624,
+      "node_id": "MDQ6VXNlcjEwOTU2MjQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1095624?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cmccabe",
+      "html_url": "https://github.com/cmccabe",
+      "followers_url": "https://api.github.com/users/cmccabe/followers",
+      "following_url": "https://api.github.com/users/cmccabe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cmccabe/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cmccabe/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cmccabe/subscriptions",
+      "organizations_url": "https://api.github.com/users/cmccabe/orgs",
+      "repos_url": "https://api.github.com/users/cmccabe/repos",
+      "events_url": "https://api.github.com/users/cmccabe/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cmccabe/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "cmccabe",
+      "id": 1095624,
+      "node_id": "MDQ6VXNlcjEwOTU2MjQ=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1095624?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/cmccabe",
+      "html_url": "https://github.com/cmccabe",
+      "followers_url": "https://api.github.com/users/cmccabe/followers",
+      "following_url": "https://api.github.com/users/cmccabe/following{/other_user}",
+      "gists_url": "https://api.github.com/users/cmccabe/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/cmccabe/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/cmccabe/subscriptions",
+      "organizations_url": "https://api.github.com/users/cmccabe/orgs",
+      "repos_url": "https://api.github.com/users/cmccabe/repos",
+      "events_url": "https://api.github.com/users/cmccabe/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/cmccabe/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4d243fe4363ed5408fb730f6d7ffdbeca3d45713",
+        "url": "https://api.github.com/repos/apache/kafka/commits/4d243fe4363ed5408fb730f6d7ffdbeca3d45713",
+        "html_url": "https://github.com/apache/kafka/commit/4d243fe4363ed5408fb730f6d7ffdbeca3d45713"
+      }
+    ]
+  }
+]

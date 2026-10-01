@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "b76f6a13d0282b309c56b8fc4d8ee0f16c37f7ed",
+    "node_id": "MDY6Q29tbWl0MjU5NjU2MjU6Yjc2ZjZhMTNkMDI4MmIzMDljNTZiOGZjNGQ4ZWUwZjE2YzM3ZjdlZA==",
+    "commit": {
+      "author": {
+        "name": "Maximilian Michels",
+        "email": "mxm@apache.org",
+        "date": "2015-08-24T12:40:47Z"
+      },
+      "committer": {
+        "name": "Maximilian Michels",
+        "email": "mxm@apache.org",
+        "date": "2015-08-24T14:40:40Z"
+      },
+      "message": "[scripts] resolve base path of symlinked executable\n\n- also adapt config.sh to use the same cross-platform compatible mechanism",
+      "tree": {
+        "sha": "e774c84ba8296d768c9175613ff8ae1aaf93a977",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/e774c84ba8296d768c9175613ff8ae1aaf93a977"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/b76f6a13d0282b309c56b8fc4d8ee0f16c37f7ed",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/b76f6a13d0282b309c56b8fc4d8ee0f16c37f7ed",
+    "html_url": "https://github.com/apache/flink/commit/b76f6a13d0282b309c56b8fc4d8ee0f16c37f7ed",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/b76f6a13d0282b309c56b8fc4d8ee0f16c37f7ed/comments",
+    "author": {
+      "login": "mxm",
+      "id": 837221,
+      "node_id": "MDQ6VXNlcjgzNzIyMQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/837221?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mxm",
+      "html_url": "https://github.com/mxm",
+      "followers_url": "https://api.github.com/users/mxm/followers",
+      "following_url": "https://api.github.com/users/mxm/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mxm/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mxm/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mxm/subscriptions",
+      "organizations_url": "https://api.github.com/users/mxm/orgs",
+      "repos_url": "https://api.github.com/users/mxm/repos",
+      "events_url": "https://api.github.com/users/mxm/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mxm/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mxm",
+      "id": 837221,
+      "node_id": "MDQ6VXNlcjgzNzIyMQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/837221?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mxm",
+      "html_url": "https://github.com/mxm",
+      "followers_url": "https://api.github.com/users/mxm/followers",
+      "following_url": "https://api.github.com/users/mxm/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mxm/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mxm/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mxm/subscriptions",
+      "organizations_url": "https://api.github.com/users/mxm/orgs",
+      "repos_url": "https://api.github.com/users/mxm/repos",
+      "events_url": "https://api.github.com/users/mxm/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mxm/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9c7f769388d90c3a79d8c08995d4eae892b23a6e",
+        "url": "https://api.github.com/repos/apache/flink/commits/9c7f769388d90c3a79d8c08995d4eae892b23a6e",
+        "html_url": "https://github.com/apache/flink/commit/9c7f769388d90c3a79d8c08995d4eae892b23a6e"
+      }
+    ]
+  },
+  {
+    "sha": "c8636658ab76d0726d2a1d6aca1b28b580fd4100",
+    "node_id": "MDY6Q29tbWl0MjU5NjU2MjU6Yzg2MzY2NThhYjc2ZDA3MjZkMmExZDZhY2ExYjI4YjU4MGZkNDEwMA==",
+    "commit": {
+      "author": {
+        "name": "Maximilian Michels",
+        "email": "mxm@apache.org",
+        "date": "2015-08-25T10:57:13Z"
+      },
+      "committer": {
+        "name": "Maximilian Michels",
+        "email": "mxm@apache.org",
+        "date": "2015-08-25T10:57:13Z"
+      },
+      "message": "revert to POSIX compatible symlink resolution",
+      "tree": {
+        "sha": "d36461dfe5729fad86cc681b9ab63956849e7bd9",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/d36461dfe5729fad86cc681b9ab63956849e7bd9"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/c8636658ab76d0726d2a1d6aca1b28b580fd4100",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/c8636658ab76d0726d2a1d6aca1b28b580fd4100",
+    "html_url": "https://github.com/apache/flink/commit/c8636658ab76d0726d2a1d6aca1b28b580fd4100",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/c8636658ab76d0726d2a1d6aca1b28b580fd4100/comments",
+    "author": {
+      "login": "mxm",
+      "id": 837221,
+      "node_id": "MDQ6VXNlcjgzNzIyMQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/837221?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mxm",
+      "html_url": "https://github.com/mxm",
+      "followers_url": "https://api.github.com/users/mxm/followers",
+      "following_url": "https://api.github.com/users/mxm/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mxm/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mxm/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mxm/subscriptions",
+      "organizations_url": "https://api.github.com/users/mxm/orgs",
+      "repos_url": "https://api.github.com/users/mxm/repos",
+      "events_url": "https://api.github.com/users/mxm/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mxm/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "mxm",
+      "id": 837221,
+      "node_id": "MDQ6VXNlcjgzNzIyMQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/837221?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mxm",
+      "html_url": "https://github.com/mxm",
+      "followers_url": "https://api.github.com/users/mxm/followers",
+      "following_url": "https://api.github.com/users/mxm/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mxm/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mxm/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mxm/subscriptions",
+      "organizations_url": "https://api.github.com/users/mxm/orgs",
+      "repos_url": "https://api.github.com/users/mxm/repos",
+      "events_url": "https://api.github.com/users/mxm/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mxm/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b76f6a13d0282b309c56b8fc4d8ee0f16c37f7ed",
+        "url": "https://api.github.com/repos/apache/flink/commits/b76f6a13d0282b309c56b8fc4d8ee0f16c37f7ed",
+        "html_url": "https://github.com/apache/flink/commit/b76f6a13d0282b309c56b8fc4d8ee0f16c37f7ed"
+      }
+    ]
+  }
+]

@@ -1,0 +1,5 @@
+{
+  "mahout_invariants_preserved": true,
+  "truetenant_invariants_preserved": true,
+  "regression_passed": true
+}

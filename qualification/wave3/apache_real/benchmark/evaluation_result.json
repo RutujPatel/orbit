@@ -1,0 +1,35 @@
+{
+  "bundle_id": "orbit_wave3_apache_canonical_bundle",
+  "evaluated_at": "2026-09-30T12:00:00Z",
+  "evaluation_id": "eval_orbit_wave3_apache_canonical_bundle_91b866f764526e2e",
+  "findings": [],
+  "summary": {
+    "dispositions": {
+      "INSUFFICIENT_EVIDENCE": 0,
+      "SUPPRESSED": 0,
+      "TRIGGERED": 0
+    },
+    "findings_by_rule": {
+      "ORBIT-XB-01": 0,
+      "ORBIT-XB-02": 0,
+      "ORBIT-XB-03": 0
+    },
+    "findings_by_sufficiency": {
+      "AMBIGUOUS": 0,
+      "CONFLICTING": 0,
+      "INSUFFICIENT_EVIDENCE": 0,
+      "PROVEN": 0,
+      "STALE": 0,
+      "SUPPORTED": 0,
+      "UNRESOLVED": 0
+    },
+    "rules_evaluated": [
+      "ORBIT-XB-01",
+      "ORBIT-XB-02",
+      "ORBIT-XB-03"
+    ],
+    "total_findings": 0,
+    "total_suppressed": 0
+  },
+  "suppressed_evaluations": []
+}

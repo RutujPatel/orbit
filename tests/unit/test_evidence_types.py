@@ -22,6 +22,7 @@ from shadow_orbit.evidence_types import (
     EntityRef,
     EvidenceBundle,
     EvidenceObservation,
+    EvidenceRelationship,
     GitHubBranchState,
     GitHubCommitState,
     GitHubPullRequestState,
@@ -912,3 +913,39 @@ class TestRegression:
             assert jira_module not in source, (
                 f"evidence_types must not import {jira_module}"
             )
+
+    def test_runtime_validation_of_quality_code(self):
+        """Constructing QualityIssue with an invalid QualityCode raises ValueError."""
+        import pytest
+        for invalid_code in ("STALE", "absent", "INCOMPLETE_CHANGELOG", "error"):
+            with pytest.raises(ValueError):
+                QualityIssue(code=invalid_code, message="invalid code test")  # type: ignore[arg-type]
+
+    def test_runtime_validation_of_relationship_kind_and_basis(self):
+        """Constructing EvidenceRelationship with invalid kind or basis raises ValueError."""
+        import pytest
+        ref_a = EntityRef(SourceInstance("jira", "inst-1"), "jira_issue", "PLAT-1")
+        ref_b = EntityRef(SourceInstance("github", "gh-1"), "github_pull_request", "org/repo/1")
+        
+        with pytest.raises(ValueError):
+            EvidenceRelationship(
+                subject_ref=ref_a,
+                object_ref=ref_b,
+                kind="invalid_kind",  # type: ignore[arg-type]
+                basis="lexical_match",
+                subject_observation_id="obs-1",
+                object_observation_id="obs-2",
+                provenance_refs=(),
+            )
+
+        with pytest.raises(ValueError):
+            EvidenceRelationship(
+                subject_ref=ref_a,
+                object_ref=ref_b,
+                kind="mentions",
+                basis="unauthorized_inference",  # type: ignore[arg-type]
+                subject_observation_id="obs-1",
+                object_observation_id="obs-2",
+                provenance_refs=(),
+            )
+

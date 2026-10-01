@@ -1,0 +1,740 @@
+[
+  {
+    "sha": "d20095edbbe2f5f73bb250e094408f04a7923039",
+    "node_id": "MDY6Q29tbWl0MTUwMzQ3NTY1OmQyMDA5NWVkYmJlMmY1ZjczYmIyNTBlMDk0NDA4ZjA0YTc5MjMwMzk=",
+    "commit": {
+      "author": {
+        "name": "Gardner Vickers",
+        "email": "gardner@vickers.me",
+        "date": "2019-02-01T19:16:37Z"
+      },
+      "committer": {
+        "name": "Gardner Vickers",
+        "email": "gardner@vickers.me",
+        "date": "2019-02-01T19:16:37Z"
+      },
+      "message": "If the thread is not alive, complete shutdown when\n\ncalling `shutdown()`.",
+      "tree": {
+        "sha": "3d9d1e4ca50208e937450bf02304f4144f801f7c",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/3d9d1e4ca50208e937450bf02304f4144f801f7c"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/d20095edbbe2f5f73bb250e094408f04a7923039",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/d20095edbbe2f5f73bb250e094408f04a7923039",
+    "html_url": "https://github.com/apache/kafka/commit/d20095edbbe2f5f73bb250e094408f04a7923039",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/d20095edbbe2f5f73bb250e094408f04a7923039/comments",
+    "author": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4b29487fa9d3d4ff8adaaaa6204db796eccd3a68",
+        "url": "https://api.github.com/repos/apache/kafka/commits/4b29487fa9d3d4ff8adaaaa6204db796eccd3a68",
+        "html_url": "https://github.com/apache/kafka/commit/4b29487fa9d3d4ff8adaaaa6204db796eccd3a68"
+      }
+    ]
+  },
+  {
+    "sha": "292d279ab8873d1d639aa9364f6b9786f3cce76d",
+    "node_id": "MDY6Q29tbWl0MTUwMzQ3NTY1OjI5MmQyNzlhYjg4NzNkMWQ2MzlhYTkzNjRmNmI5Nzg2ZjNjY2U3NmQ=",
+    "commit": {
+      "author": {
+        "name": "Gardner Vickers",
+        "email": "gardner@vickers.me",
+        "date": "2019-02-01T22:11:43Z"
+      },
+      "committer": {
+        "name": "Gardner Vickers",
+        "email": "gardner@vickers.me",
+        "date": "2019-02-01T22:11:43Z"
+      },
+      "message": "Go through the regular shutdown logic, just avoid awaiting the\n\nshutdownComplete latch if the thread is not running.",
+      "tree": {
+        "sha": "af777558ff9714b411cc9c844c3f13564ac46e1f",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/af777558ff9714b411cc9c844c3f13564ac46e1f"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/292d279ab8873d1d639aa9364f6b9786f3cce76d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/292d279ab8873d1d639aa9364f6b9786f3cce76d",
+    "html_url": "https://github.com/apache/kafka/commit/292d279ab8873d1d639aa9364f6b9786f3cce76d",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/292d279ab8873d1d639aa9364f6b9786f3cce76d/comments",
+    "author": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d20095edbbe2f5f73bb250e094408f04a7923039",
+        "url": "https://api.github.com/repos/apache/kafka/commits/d20095edbbe2f5f73bb250e094408f04a7923039",
+        "html_url": "https://github.com/apache/kafka/commit/d20095edbbe2f5f73bb250e094408f04a7923039"
+      }
+    ]
+  },
+  {
+    "sha": "4dfef4491c228a704be90f6cc412c1d1d5d12354",
+    "node_id": "MDY6Q29tbWl0MTUwMzQ3NTY1OjRkZmVmNDQ5MWMyMjhhNzA0YmU5MGY2Y2M0MTJjMWQxZDVkMTIzNTQ=",
+    "commit": {
+      "author": {
+        "name": "Gardner Vickers",
+        "email": "gardner@vickers.me",
+        "date": "2019-02-06T19:04:44Z"
+      },
+      "committer": {
+        "name": "Gardner Vickers",
+        "email": "gardner@vickers.me",
+        "date": "2019-02-06T19:04:44Z"
+      },
+      "message": "move the `Thread.isAlive` check in ShutdownableThread to\n\nawaitShutdown.",
+      "tree": {
+        "sha": "7caf7508eda1e5934f61401bb87e7d8ab0ebcba9",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/7caf7508eda1e5934f61401bb87e7d8ab0ebcba9"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/4dfef4491c228a704be90f6cc412c1d1d5d12354",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/4dfef4491c228a704be90f6cc412c1d1d5d12354",
+    "html_url": "https://github.com/apache/kafka/commit/4dfef4491c228a704be90f6cc412c1d1d5d12354",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/4dfef4491c228a704be90f6cc412c1d1d5d12354/comments",
+    "author": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "292d279ab8873d1d639aa9364f6b9786f3cce76d",
+        "url": "https://api.github.com/repos/apache/kafka/commits/292d279ab8873d1d639aa9364f6b9786f3cce76d",
+        "html_url": "https://github.com/apache/kafka/commit/292d279ab8873d1d639aa9364f6b9786f3cce76d"
+      }
+    ]
+  },
+  {
+    "sha": "445a3af5094b3f55ceedc9a86677338556e88112",
+    "node_id": "MDY6Q29tbWl0MTUwMzQ3NTY1OjQ0NWEzYWY1MDk0YjNmNTVjZWVkYzlhODY2NzczMzg1NTZlODgxMTI=",
+    "commit": {
+      "author": {
+        "name": "Gardner Vickers",
+        "email": "gardner@vickers.me",
+        "date": "2019-02-07T21:20:31Z"
+      },
+      "committer": {
+        "name": "Gardner Vickers",
+        "email": "gardner@vickers.me",
+        "date": "2019-02-07T21:20:31Z"
+      },
+      "message": "Allow blocking on ShutdownableThread.awaitShutdown() regardless\n\nof the thread being started or not.",
+      "tree": {
+        "sha": "af777558ff9714b411cc9c844c3f13564ac46e1f",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/af777558ff9714b411cc9c844c3f13564ac46e1f"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/445a3af5094b3f55ceedc9a86677338556e88112",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/445a3af5094b3f55ceedc9a86677338556e88112",
+    "html_url": "https://github.com/apache/kafka/commit/445a3af5094b3f55ceedc9a86677338556e88112",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/445a3af5094b3f55ceedc9a86677338556e88112/comments",
+    "author": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4dfef4491c228a704be90f6cc412c1d1d5d12354",
+        "url": "https://api.github.com/repos/apache/kafka/commits/4dfef4491c228a704be90f6cc412c1d1d5d12354",
+        "html_url": "https://github.com/apache/kafka/commit/4dfef4491c228a704be90f6cc412c1d1d5d12354"
+      }
+    ]
+  },
+  {
+    "sha": "a2c0f91e57e663106164dc3e94c46c886389c8bc",
+    "node_id": "MDY6Q29tbWl0MTUwMzQ3NTY1OmEyYzBmOTFlNTdlNjYzMTA2MTY0ZGMzZTk0YzQ2Yzg4NjM4OWM4YmM=",
+    "commit": {
+      "author": {
+        "name": "Gardner Vickers",
+        "email": "gardner@vickers.me",
+        "date": "2019-02-13T20:13:31Z"
+      },
+      "committer": {
+        "name": "Gardner Vickers",
+        "email": "gardner@vickers.me",
+        "date": "2019-02-13T20:13:31Z"
+      },
+      "message": "Don't block in `awaitShutdown()` if the thread is not started.",
+      "tree": {
+        "sha": "a7d145cadb12225726e5d33efcaa22846d892af8",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/a7d145cadb12225726e5d33efcaa22846d892af8"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/a2c0f91e57e663106164dc3e94c46c886389c8bc",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/a2c0f91e57e663106164dc3e94c46c886389c8bc",
+    "html_url": "https://github.com/apache/kafka/commit/a2c0f91e57e663106164dc3e94c46c886389c8bc",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/a2c0f91e57e663106164dc3e94c46c886389c8bc/comments",
+    "author": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "445a3af5094b3f55ceedc9a86677338556e88112",
+        "url": "https://api.github.com/repos/apache/kafka/commits/445a3af5094b3f55ceedc9a86677338556e88112",
+        "html_url": "https://github.com/apache/kafka/commit/445a3af5094b3f55ceedc9a86677338556e88112"
+      }
+    ]
+  },
+  {
+    "sha": "7c6ac0d25b8c9ca48b4c190f6a11bc0ab8576054",
+    "node_id": "MDY6Q29tbWl0MTUwMzQ3NTY1OjdjNmFjMGQyNWI4YzljYTQ4YjRjMTkwZjZhMTFiYzBhYjg1NzYwNTQ=",
+    "commit": {
+      "author": {
+        "name": "Gardner Vickers",
+        "email": "gardner@vickers.me",
+        "date": "2019-02-18T20:16:01Z"
+      },
+      "committer": {
+        "name": "Gardner Vickers",
+        "email": "gardner@vickers.me",
+        "date": "2019-02-18T20:18:29Z"
+      },
+      "message": "Set ShutdownableThread started status in `start()` method to ensure\n\nit's set by the parent thread.",
+      "tree": {
+        "sha": "8f71f9b4c4b5521ec1837095f4aab283a0712a67",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/8f71f9b4c4b5521ec1837095f4aab283a0712a67"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/7c6ac0d25b8c9ca48b4c190f6a11bc0ab8576054",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/7c6ac0d25b8c9ca48b4c190f6a11bc0ab8576054",
+    "html_url": "https://github.com/apache/kafka/commit/7c6ac0d25b8c9ca48b4c190f6a11bc0ab8576054",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/7c6ac0d25b8c9ca48b4c190f6a11bc0ab8576054/comments",
+    "author": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a2c0f91e57e663106164dc3e94c46c886389c8bc",
+        "url": "https://api.github.com/repos/apache/kafka/commits/a2c0f91e57e663106164dc3e94c46c886389c8bc",
+        "html_url": "https://github.com/apache/kafka/commit/a2c0f91e57e663106164dc3e94c46c886389c8bc"
+      }
+    ]
+  },
+  {
+    "sha": "92f71e48c53593a8c4f2455dca9dfb7ca2b863b5",
+    "node_id": "MDY6Q29tbWl0MTUwMzQ3NTY1OjkyZjcxZTQ4YzUzNTkzYThjNGYyNDU1ZGNhOWRmYjdjYTJiODYzYjU=",
+    "commit": {
+      "author": {
+        "name": "Gardner Vickers",
+        "email": "gardner@vickers.me",
+        "date": "2019-02-19T22:29:02Z"
+      },
+      "committer": {
+        "name": "Gardner Vickers",
+        "email": "gardner@vickers.me",
+        "date": "2019-02-19T22:29:02Z"
+      },
+      "message": "Remove start() override.",
+      "tree": {
+        "sha": "f5d77b83963e9e13d058b5f648579395b239fb0d",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/f5d77b83963e9e13d058b5f648579395b239fb0d"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/92f71e48c53593a8c4f2455dca9dfb7ca2b863b5",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/92f71e48c53593a8c4f2455dca9dfb7ca2b863b5",
+    "html_url": "https://github.com/apache/kafka/commit/92f71e48c53593a8c4f2455dca9dfb7ca2b863b5",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/92f71e48c53593a8c4f2455dca9dfb7ca2b863b5/comments",
+    "author": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7c6ac0d25b8c9ca48b4c190f6a11bc0ab8576054",
+        "url": "https://api.github.com/repos/apache/kafka/commits/7c6ac0d25b8c9ca48b4c190f6a11bc0ab8576054",
+        "html_url": "https://github.com/apache/kafka/commit/7c6ac0d25b8c9ca48b4c190f6a11bc0ab8576054"
+      }
+    ]
+  },
+  {
+    "sha": "4a202222000211a951f6954b68a750e7db6a9577",
+    "node_id": "MDY6Q29tbWl0MTUwMzQ3NTY1OjRhMjAyMjIyMDAwMjExYTk1MWY2OTU0YjY4YTc1MGU3ZGI2YTk1Nzc=",
+    "commit": {
+      "author": {
+        "name": "Gardner Vickers",
+        "email": "gardner@vickers.me",
+        "date": "2019-02-25T06:19:27Z"
+      },
+      "committer": {
+        "name": "Gardner Vickers",
+        "email": "gardner@vickers.me",
+        "date": "2019-02-25T06:19:55Z"
+      },
+      "message": "Adapt ControllerEventManager to the new ShutdownableThread behavior.",
+      "tree": {
+        "sha": "ac3ba2090d59b90894b1c2696fe48b5cd834b7a7",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/ac3ba2090d59b90894b1c2696fe48b5cd834b7a7"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/4a202222000211a951f6954b68a750e7db6a9577",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/4a202222000211a951f6954b68a750e7db6a9577",
+    "html_url": "https://github.com/apache/kafka/commit/4a202222000211a951f6954b68a750e7db6a9577",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/4a202222000211a951f6954b68a750e7db6a9577/comments",
+    "author": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "92f71e48c53593a8c4f2455dca9dfb7ca2b863b5",
+        "url": "https://api.github.com/repos/apache/kafka/commits/92f71e48c53593a8c4f2455dca9dfb7ca2b863b5",
+        "html_url": "https://github.com/apache/kafka/commit/92f71e48c53593a8c4f2455dca9dfb7ca2b863b5"
+      }
+    ]
+  },
+  {
+    "sha": "54826d13f882d63d07a3f5f30f5329d846614ef2",
+    "node_id": "MDY6Q29tbWl0MTUwMzQ3NTY1OjU0ODI2ZDEzZjg4MmQ2M2QwN2EzZjVmMzBmNTMyOWQ4NDY2MTRlZjI=",
+    "commit": {
+      "author": {
+        "name": "Gardner Vickers",
+        "email": "gardner@vickers.me",
+        "date": "2019-02-26T01:18:01Z"
+      },
+      "committer": {
+        "name": "Gardner Vickers",
+        "email": "gardner@vickers.me",
+        "date": "2019-02-26T01:18:01Z"
+      },
+      "message": "Add comment explaining why the ShutdownEventThread handler does\n\nnothing in ControllerEventManager.",
+      "tree": {
+        "sha": "df0a8c46fd6ddf264a0440d3465a6f3565d23b2e",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/df0a8c46fd6ddf264a0440d3465a6f3565d23b2e"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/54826d13f882d63d07a3f5f30f5329d846614ef2",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/54826d13f882d63d07a3f5f30f5329d846614ef2",
+    "html_url": "https://github.com/apache/kafka/commit/54826d13f882d63d07a3f5f30f5329d846614ef2",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/54826d13f882d63d07a3f5f30f5329d846614ef2/comments",
+    "author": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "gardnervickers",
+      "id": 2684011,
+      "node_id": "MDQ6VXNlcjI2ODQwMTE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2684011?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/gardnervickers",
+      "html_url": "https://github.com/gardnervickers",
+      "followers_url": "https://api.github.com/users/gardnervickers/followers",
+      "following_url": "https://api.github.com/users/gardnervickers/following{/other_user}",
+      "gists_url": "https://api.github.com/users/gardnervickers/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/gardnervickers/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/gardnervickers/subscriptions",
+      "organizations_url": "https://api.github.com/users/gardnervickers/orgs",
+      "repos_url": "https://api.github.com/users/gardnervickers/repos",
+      "events_url": "https://api.github.com/users/gardnervickers/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/gardnervickers/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4a202222000211a951f6954b68a750e7db6a9577",
+        "url": "https://api.github.com/repos/apache/kafka/commits/4a202222000211a951f6954b68a750e7db6a9577",
+        "html_url": "https://github.com/apache/kafka/commit/4a202222000211a951f6954b68a750e7db6a9577"
+      }
+    ]
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "b7c0dc7f3171085d77b5f72e1a5366f46121aa1e",
+    "node_id": "MDY6Q29tbWl0MTUyMjc0ODA6YjdjMGRjN2YzMTcxMDg1ZDc3YjVmNzJlMWE1MzY2ZjQ2MTIxYWExZQ==",
+    "commit": {
+      "author": {
+        "name": "filiphaase",
+        "email": "filip-h@gmx.de",
+        "date": "2014-01-24T16:38:30Z"
+      },
+      "committer": {
+        "name": "filiphaase",
+        "email": "filip-h@gmx.de",
+        "date": "2014-01-24T16:38:30Z"
+      },
+      "message": "First Streaming Prototype of language-binding for python, by the example of Wordcount. It has a small python-framework and java-framework, which can currently work with an Reduce and Map-Operator and sent over sockets and stdio.",
+      "tree": {
+        "sha": "5dcb2c3af622e004758eaa07ff66b32b17e47c89",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/5dcb2c3af622e004758eaa07ff66b32b17e47c89"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/b7c0dc7f3171085d77b5f72e1a5366f46121aa1e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/b7c0dc7f3171085d77b5f72e1a5366f46121aa1e",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/b7c0dc7f3171085d77b5f72e1a5366f46121aa1e",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/b7c0dc7f3171085d77b5f72e1a5366f46121aa1e/comments",
+    "author": {
+      "login": "filiphaase",
+      "id": 5747807,
+      "node_id": "MDQ6VXNlcjU3NDc4MDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5747807?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/filiphaase",
+      "html_url": "https://github.com/filiphaase",
+      "followers_url": "https://api.github.com/users/filiphaase/followers",
+      "following_url": "https://api.github.com/users/filiphaase/following{/other_user}",
+      "gists_url": "https://api.github.com/users/filiphaase/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/filiphaase/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/filiphaase/subscriptions",
+      "organizations_url": "https://api.github.com/users/filiphaase/orgs",
+      "repos_url": "https://api.github.com/users/filiphaase/repos",
+      "events_url": "https://api.github.com/users/filiphaase/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/filiphaase/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "filiphaase",
+      "id": 5747807,
+      "node_id": "MDQ6VXNlcjU3NDc4MDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5747807?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/filiphaase",
+      "html_url": "https://github.com/filiphaase",
+      "followers_url": "https://api.github.com/users/filiphaase/followers",
+      "following_url": "https://api.github.com/users/filiphaase/following{/other_user}",
+      "gists_url": "https://api.github.com/users/filiphaase/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/filiphaase/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/filiphaase/subscriptions",
+      "organizations_url": "https://api.github.com/users/filiphaase/orgs",
+      "repos_url": "https://api.github.com/users/filiphaase/repos",
+      "events_url": "https://api.github.com/users/filiphaase/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/filiphaase/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a7fbbc95517eb0a2c7c3557aa1a3fc87cae1b12d",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/a7fbbc95517eb0a2c7c3557aa1a3fc87cae1b12d",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/a7fbbc95517eb0a2c7c3557aa1a3fc87cae1b12d"
+      }
+    ]
+  }
+]

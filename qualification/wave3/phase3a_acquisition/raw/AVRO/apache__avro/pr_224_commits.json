@@ -1,0 +1,128 @@
+[
+  {
+    "sha": "b57d9609f41ae4a7255698fda20129383274d3ec",
+    "node_id": "MDY6Q29tbWl0OTA5ODY5MzE6YjU3ZDk2MDlmNDFhZTRhNzI1NTY5OGZkYTIwMTI5MzgzMjc0ZDNlYw==",
+    "commit": {
+      "author": {
+        "name": "Todd Nine",
+        "email": "todd@thelastpickle.com",
+        "date": "2017-05-11T18:24:15Z"
+      },
+      "committer": {
+        "name": "Todd Nine",
+        "email": "todd@thelastpickle.com",
+        "date": "2017-05-11T18:29:21Z"
+      },
+      "message": "AVRO-2034 Created test to prove issue",
+      "tree": {
+        "sha": "f83b4142fdc29e6ea91b3a316bc2251c2ca52cf8",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/f83b4142fdc29e6ea91b3a316bc2251c2ca52cf8"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/b57d9609f41ae4a7255698fda20129383274d3ec",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/b57d9609f41ae4a7255698fda20129383274d3ec",
+    "html_url": "https://github.com/apache/avro/commit/b57d9609f41ae4a7255698fda20129383274d3ec",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/b57d9609f41ae4a7255698fda20129383274d3ec/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "17f2d75132021fafeca29edbdcade40df960fdc9",
+        "url": "https://api.github.com/repos/apache/avro/commits/17f2d75132021fafeca29edbdcade40df960fdc9",
+        "html_url": "https://github.com/apache/avro/commit/17f2d75132021fafeca29edbdcade40df960fdc9"
+      }
+    ]
+  },
+  {
+    "sha": "ea16b265b866a5fd888296eaaea1f4920f9566e8",
+    "node_id": "MDY6Q29tbWl0OTA5ODY5MzE6ZWExNmIyNjViODY2YTVmZDg4ODI5NmVhYWVhMWY0OTIwZjk1NjZlOA==",
+    "commit": {
+      "author": {
+        "name": "Todd Nine",
+        "email": "todd@thelastpickle.com",
+        "date": "2017-05-14T21:40:27Z"
+      },
+      "committer": {
+        "name": "Todd Nine",
+        "email": "todd@thelastpickle.com",
+        "date": "2017-05-14T21:40:27Z"
+      },
+      "message": "AVRO-2034. Updates test to show a working record vs a failing record in the simplest possible scheme.",
+      "tree": {
+        "sha": "62a127413a7cb74d8aecc22451cb565dacb39bb4",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/62a127413a7cb74d8aecc22451cb565dacb39bb4"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/ea16b265b866a5fd888296eaaea1f4920f9566e8",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/ea16b265b866a5fd888296eaaea1f4920f9566e8",
+    "html_url": "https://github.com/apache/avro/commit/ea16b265b866a5fd888296eaaea1f4920f9566e8",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/ea16b265b866a5fd888296eaaea1f4920f9566e8/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "b57d9609f41ae4a7255698fda20129383274d3ec",
+        "url": "https://api.github.com/repos/apache/avro/commits/b57d9609f41ae4a7255698fda20129383274d3ec",
+        "html_url": "https://github.com/apache/avro/commit/b57d9609f41ae4a7255698fda20129383274d3ec"
+      }
+    ]
+  },
+  {
+    "sha": "9bf1d0906d06991a9a8ac1f7461313fdebae6827",
+    "node_id": "MDY6Q29tbWl0OTA5ODY5MzE6OWJmMWQwOTA2ZDA2OTkxYTlhOGFjMWY3NDYxMzEzZmRlYmFlNjgyNw==",
+    "commit": {
+      "author": {
+        "name": "Todd Nine",
+        "email": "todd@thelastpickle.com",
+        "date": "2017-05-15T17:18:13Z"
+      },
+      "committer": {
+        "name": "Todd Nine",
+        "email": "todd@thelastpickle.com",
+        "date": "2017-05-15T17:20:51Z"
+      },
+      "message": "AVRO-2034 Fixes advance logic to skip unrecognized fields at record end",
+      "tree": {
+        "sha": "02683ad892e010d11732f15ad3a87f079cbb81a3",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/02683ad892e010d11732f15ad3a87f079cbb81a3"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/9bf1d0906d06991a9a8ac1f7461313fdebae6827",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/9bf1d0906d06991a9a8ac1f7461313fdebae6827",
+    "html_url": "https://github.com/apache/avro/commit/9bf1d0906d06991a9a8ac1f7461313fdebae6827",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/9bf1d0906d06991a9a8ac1f7461313fdebae6827/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "ea16b265b866a5fd888296eaaea1f4920f9566e8",
+        "url": "https://api.github.com/repos/apache/avro/commits/ea16b265b866a5fd888296eaaea1f4920f9566e8",
+        "html_url": "https://github.com/apache/avro/commit/ea16b265b866a5fd888296eaaea1f4920f9566e8"
+      }
+    ]
+  }
+]

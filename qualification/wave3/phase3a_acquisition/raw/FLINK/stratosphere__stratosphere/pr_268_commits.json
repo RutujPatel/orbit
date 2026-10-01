@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "a4ed64f6070e68df100b217226cc0638b4b71209",
+    "node_id": "MDY6Q29tbWl0OTQ5OTQyMjphNGVkNjRmNjA3MGU2OGRmMTAwYjIxNzIyNmNjMDYzOGI0YjcxMjA5",
+    "commit": {
+      "author": {
+        "name": "Alexander Alexandrov",
+        "email": "alexander.s.alexandrov@gmail.com",
+        "date": "2013-11-11T17:28:43Z"
+      },
+      "committer": {
+        "name": "Alexander Alexandrov",
+        "email": "alexander.s.alexandrov@gmail.com",
+        "date": "2013-11-11T17:28:43Z"
+      },
+      "message": "Minor changes in RemoteExecutor.java and LocalExecutor.java. Removed obsolete null-value check in the finally clauses in LocalExecutor.java. Returning proper exit code in RemoteExecutor.java.",
+      "tree": {
+        "sha": "6112ac112e075a3ad2eff92133156c47d37aa37b",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/6112ac112e075a3ad2eff92133156c47d37aa37b"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/a4ed64f6070e68df100b217226cc0638b4b71209",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/a4ed64f6070e68df100b217226cc0638b4b71209",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/a4ed64f6070e68df100b217226cc0638b4b71209",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/a4ed64f6070e68df100b217226cc0638b4b71209/comments",
+    "author": {
+      "login": "aalexandrov",
+      "id": 1071946,
+      "node_id": "MDQ6VXNlcjEwNzE5NDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1071946?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aalexandrov",
+      "html_url": "https://github.com/aalexandrov",
+      "followers_url": "https://api.github.com/users/aalexandrov/followers",
+      "following_url": "https://api.github.com/users/aalexandrov/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aalexandrov/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aalexandrov/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aalexandrov/subscriptions",
+      "organizations_url": "https://api.github.com/users/aalexandrov/orgs",
+      "repos_url": "https://api.github.com/users/aalexandrov/repos",
+      "events_url": "https://api.github.com/users/aalexandrov/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aalexandrov/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "aalexandrov",
+      "id": 1071946,
+      "node_id": "MDQ6VXNlcjEwNzE5NDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1071946?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aalexandrov",
+      "html_url": "https://github.com/aalexandrov",
+      "followers_url": "https://api.github.com/users/aalexandrov/followers",
+      "following_url": "https://api.github.com/users/aalexandrov/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aalexandrov/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aalexandrov/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aalexandrov/subscriptions",
+      "organizations_url": "https://api.github.com/users/aalexandrov/orgs",
+      "repos_url": "https://api.github.com/users/aalexandrov/repos",
+      "events_url": "https://api.github.com/users/aalexandrov/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aalexandrov/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "fd48f0e3e52e43806d2fb8a27157eca0ff2694a6",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/fd48f0e3e52e43806d2fb8a27157eca0ff2694a6",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/fd48f0e3e52e43806d2fb8a27157eca0ff2694a6"
+      }
+    ]
+  }
+]

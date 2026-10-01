@@ -1,0 +1,44 @@
+[
+  {
+    "sha": "3d59416dce2f9eb2f60d9e2c49f6e2bac583c973",
+    "node_id": "MDY6Q29tbWl0MTc0Mzg0Nzg6M2Q1OTQxNmRjZTJmOWViMmY2MGQ5ZTJjNDlmNmUyYmFjNTgzYzk3Mw==",
+    "commit": {
+      "author": {
+        "name": "Till Rohrmann",
+        "email": "till.rohrmann@mailbox.tu-berlin.de",
+        "date": "2014-03-13T21:57:19Z"
+      },
+      "committer": {
+        "name": "Till Rohrmann",
+        "email": "till.rohrmann@mailbox.tu-berlin.de",
+        "date": "2014-03-13T21:57:19Z"
+      },
+      "message": "Fixed NullPointerException in BulkIterationNode.mergeLists, fixed faulty chaining of root of termination criterion and root of step function, added static dynamic path detection for the termination criterion, fixed bug where the BulkIterationNode tries to generate alternative plans for the termination criterion even though there aren't any left for the step function",
+      "tree": {
+        "sha": "e194cf3d04fd60caa44a566ac0aaa9c24c36ebb4",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/e194cf3d04fd60caa44a566ac0aaa9c24c36ebb4"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/3d59416dce2f9eb2f60d9e2c49f6e2bac583c973",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/3d59416dce2f9eb2f60d9e2c49f6e2bac583c973",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/3d59416dce2f9eb2f60d9e2c49f6e2bac583c973",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/3d59416dce2f9eb2f60d9e2c49f6e2bac583c973/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "7fe59e9072e925fddb735d85110f6b85996b28ca",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/7fe59e9072e925fddb735d85110f6b85996b28ca",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/7fe59e9072e925fddb735d85110f6b85996b28ca"
+      }
+    ]
+  }
+]

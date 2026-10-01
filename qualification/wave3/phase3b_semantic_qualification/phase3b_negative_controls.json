@@ -1,0 +1,86 @@
+{
+  "negative_controls": [
+    {
+      "control_id": "NEG-01",
+      "type": "jira_unlinked",
+      "identifier": "PARQUET-1812",
+      "description": "Real Parquet issue with zero cross-system links",
+      "expected_links": 0,
+      "observed_links": 0,
+      "false_positive": false
+    },
+    {
+      "control_id": "NEG-02",
+      "type": "jira_unlinked",
+      "identifier": "ZOOKEEPER-4348",
+      "description": "Real ZooKeeper issue with zero cross-system links",
+      "expected_links": 0,
+      "observed_links": 0,
+      "false_positive": false
+    },
+    {
+      "control_id": "NEG-03",
+      "type": "github_pr_unlinked",
+      "identifier": "apache/parquet-java#3822",
+      "description": "Real unlinked Parquet PR mentioning GitHub issue GH-3792 (no Jira key)",
+      "expected_links": 0,
+      "observed_links": 0,
+      "false_positive": false
+    },
+    {
+      "control_id": "NEG-04",
+      "type": "github_pr_bot_cve_mimic",
+      "identifier": "AXIOS-12613773 in PR #8",
+      "description": "Snyk security bot PR referencing non-Apache Jira-like token AXIOS-12613773",
+      "validator_rejected": true,
+      "expected_links": 0,
+      "observed_links": 0,
+      "false_positive": false
+    }
+  ],
+  "identity_controls": {
+    "tests": [
+      {
+        "name": "Same PR number across different repositories",
+        "entity_a": "apache/parquet-java/885",
+        "entity_b": "apache/kafka/885",
+        "collision_prevented": true
+      },
+      {
+        "name": "Same numeric PR number across Apache vs external repository",
+        "entity_a": "apache/flink/254",
+        "entity_b": "apache/incubator-flink/254",
+        "collision_prevented": true
+      },
+      {
+        "name": "Phase 3A Upstream Redirect Continuity",
+        "candidate": "FLINK-1359",
+        "requested_repo": "apache/incubator-flink",
+        "returned_base_repo": "apache/flink",
+        "pr_number": 254,
+        "continuity_behavior": "GitHub automatically redirected incubator mirror to graduate repo; PR#254 preserved; no spurious split entity"
+      },
+      {
+        "name": "Cardinality: Multiple Jira Issues referencing same PR (Many-to-One)",
+        "pr": "apache/kafka/10656",
+        "referencing_jira_keys": [
+          "KAFKA-12770",
+          "KAFKA-12771"
+        ],
+        "cardinality": "MANY_TO_ONE",
+        "distinct_alignments_preserved": true
+      },
+      {
+        "name": "Cardinality: Multiple Jira Issues referencing same PR in historical repo",
+        "pr": "stratosphere/stratosphere/126",
+        "referencing_jira_keys": [
+          "FLINK-126",
+          "FLINK-236"
+        ],
+        "cardinality": "MANY_TO_ONE",
+        "distinct_alignments_preserved": true
+      }
+    ]
+  },
+  "false_positive_relationships": 0
+}

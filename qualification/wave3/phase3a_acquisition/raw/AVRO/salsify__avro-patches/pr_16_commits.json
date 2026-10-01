@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "f6cc8b294c89af7cdae76a6d6416218341aea199",
+    "node_id": "MDY6Q29tbWl0OTIzMDUxOTQ6ZjZjYzhiMjk0Yzg5YWY3Y2RhZTc2YTZkNjQxNjIxODM0MWFlYTE5OQ==",
+    "commit": {
+      "author": {
+        "name": "Tim Perkins",
+        "email": "tim.perkins@ezcater.com",
+        "date": "2018-07-16T01:19:38Z"
+      },
+      "committer": {
+        "name": "Tim Perkins",
+        "email": "tim.perkins@ezcater.com",
+        "date": "2018-07-18T11:06:00Z"
+      },
+      "message": "Validate that field defaults have the correct type",
+      "tree": {
+        "sha": "3b1412dd88cb36ddd0fd20ae2554b935f83feb7f",
+        "url": "https://api.github.com/repos/salsify/avro-patches/git/trees/3b1412dd88cb36ddd0fd20ae2554b935f83feb7f"
+      },
+      "url": "https://api.github.com/repos/salsify/avro-patches/git/commits/f6cc8b294c89af7cdae76a6d6416218341aea199",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/salsify/avro-patches/commits/f6cc8b294c89af7cdae76a6d6416218341aea199",
+    "html_url": "https://github.com/salsify/avro-patches/commit/f6cc8b294c89af7cdae76a6d6416218341aea199",
+    "comments_url": "https://api.github.com/repos/salsify/avro-patches/commits/f6cc8b294c89af7cdae76a6d6416218341aea199/comments",
+    "author": {
+      "login": "tjwp",
+      "id": 1476506,
+      "node_id": "MDQ6VXNlcjE0NzY1MDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1476506?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tjwp",
+      "html_url": "https://github.com/tjwp",
+      "followers_url": "https://api.github.com/users/tjwp/followers",
+      "following_url": "https://api.github.com/users/tjwp/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tjwp/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tjwp/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tjwp/subscriptions",
+      "organizations_url": "https://api.github.com/users/tjwp/orgs",
+      "repos_url": "https://api.github.com/users/tjwp/repos",
+      "events_url": "https://api.github.com/users/tjwp/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tjwp/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "tjwp",
+      "id": 1476506,
+      "node_id": "MDQ6VXNlcjE0NzY1MDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1476506?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tjwp",
+      "html_url": "https://github.com/tjwp",
+      "followers_url": "https://api.github.com/users/tjwp/followers",
+      "following_url": "https://api.github.com/users/tjwp/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tjwp/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tjwp/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tjwp/subscriptions",
+      "organizations_url": "https://api.github.com/users/tjwp/orgs",
+      "repos_url": "https://api.github.com/users/tjwp/repos",
+      "events_url": "https://api.github.com/users/tjwp/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tjwp/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "383b6ea41fb950251873e88d3df543e2e87872a3",
+        "url": "https://api.github.com/repos/salsify/avro-patches/commits/383b6ea41fb950251873e88d3df543e2e87872a3",
+        "html_url": "https://github.com/salsify/avro-patches/commit/383b6ea41fb950251873e88d3df543e2e87872a3"
+      }
+    ]
+  },
+  {
+    "sha": "3fca8d314bb41eac783353fe04295bdf30f521c8",
+    "node_id": "MDY6Q29tbWl0OTIzMDUxOTQ6M2ZjYThkMzE0YmI0MWVhYzc4MzM1M2ZlMDQyOTViZGYzMGY1MjFjOA==",
+    "commit": {
+      "author": {
+        "name": "Tim Perkins",
+        "email": "tim.perkins@ezcater.com",
+        "date": "2018-07-18T11:01:35Z"
+      },
+      "committer": {
+        "name": "Tim Perkins",
+        "email": "tim.perkins@ezcater.com",
+        "date": "2018-07-18T11:06:20Z"
+      },
+      "message": "Add link to official PR",
+      "tree": {
+        "sha": "c3d3478d581c7b4c2ded1bb12a07052b4ec80497",
+        "url": "https://api.github.com/repos/salsify/avro-patches/git/trees/c3d3478d581c7b4c2ded1bb12a07052b4ec80497"
+      },
+      "url": "https://api.github.com/repos/salsify/avro-patches/git/commits/3fca8d314bb41eac783353fe04295bdf30f521c8",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/salsify/avro-patches/commits/3fca8d314bb41eac783353fe04295bdf30f521c8",
+    "html_url": "https://github.com/salsify/avro-patches/commit/3fca8d314bb41eac783353fe04295bdf30f521c8",
+    "comments_url": "https://api.github.com/repos/salsify/avro-patches/commits/3fca8d314bb41eac783353fe04295bdf30f521c8/comments",
+    "author": {
+      "login": "tjwp",
+      "id": 1476506,
+      "node_id": "MDQ6VXNlcjE0NzY1MDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1476506?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tjwp",
+      "html_url": "https://github.com/tjwp",
+      "followers_url": "https://api.github.com/users/tjwp/followers",
+      "following_url": "https://api.github.com/users/tjwp/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tjwp/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tjwp/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tjwp/subscriptions",
+      "organizations_url": "https://api.github.com/users/tjwp/orgs",
+      "repos_url": "https://api.github.com/users/tjwp/repos",
+      "events_url": "https://api.github.com/users/tjwp/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tjwp/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "tjwp",
+      "id": 1476506,
+      "node_id": "MDQ6VXNlcjE0NzY1MDY=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1476506?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tjwp",
+      "html_url": "https://github.com/tjwp",
+      "followers_url": "https://api.github.com/users/tjwp/followers",
+      "following_url": "https://api.github.com/users/tjwp/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tjwp/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tjwp/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tjwp/subscriptions",
+      "organizations_url": "https://api.github.com/users/tjwp/orgs",
+      "repos_url": "https://api.github.com/users/tjwp/repos",
+      "events_url": "https://api.github.com/users/tjwp/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tjwp/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f6cc8b294c89af7cdae76a6d6416218341aea199",
+        "url": "https://api.github.com/repos/salsify/avro-patches/commits/f6cc8b294c89af7cdae76a6d6416218341aea199",
+        "html_url": "https://github.com/salsify/avro-patches/commit/f6cc8b294c89af7cdae76a6d6416218341aea199"
+      }
+    ]
+  }
+]

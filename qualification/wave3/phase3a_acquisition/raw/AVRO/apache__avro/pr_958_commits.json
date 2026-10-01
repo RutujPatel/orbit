@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "9780121d411377270385eaaa6d2be0d772786485",
+    "node_id": "MDY6Q29tbWl0Mjk2NjE4MDAzOjk3ODAxMjFkNDExMzc3MjcwMzg1ZWFhYTZkMmJlMGQ3NzI3ODY0ODU=",
+    "commit": {
+      "author": {
+        "name": "Patrik Susko",
+        "email": "patrik.susko@gmail.com",
+        "date": "2020-09-22T13:19:50Z"
+      },
+      "committer": {
+        "name": "Patrik Susko",
+        "email": "patrik.susko@gmail.com",
+        "date": "2020-09-22T13:19:50Z"
+      },
+      "message": "AVRO-2931 C# Implement Snappy codec",
+      "tree": {
+        "sha": "bece35b5353f4c688760aa20fafa3b982c1ed672",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/bece35b5353f4c688760aa20fafa3b982c1ed672"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/9780121d411377270385eaaa6d2be0d772786485",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/9780121d411377270385eaaa6d2be0d772786485",
+    "html_url": "https://github.com/apache/avro/commit/9780121d411377270385eaaa6d2be0d772786485",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/9780121d411377270385eaaa6d2be0d772786485/comments",
+    "author": {
+      "login": "patrix1337",
+      "id": 21961651,
+      "node_id": "MDQ6VXNlcjIxOTYxNjUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21961651?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/patrix1337",
+      "html_url": "https://github.com/patrix1337",
+      "followers_url": "https://api.github.com/users/patrix1337/followers",
+      "following_url": "https://api.github.com/users/patrix1337/following{/other_user}",
+      "gists_url": "https://api.github.com/users/patrix1337/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/patrix1337/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/patrix1337/subscriptions",
+      "organizations_url": "https://api.github.com/users/patrix1337/orgs",
+      "repos_url": "https://api.github.com/users/patrix1337/repos",
+      "events_url": "https://api.github.com/users/patrix1337/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/patrix1337/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "patrix1337",
+      "id": 21961651,
+      "node_id": "MDQ6VXNlcjIxOTYxNjUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21961651?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/patrix1337",
+      "html_url": "https://github.com/patrix1337",
+      "followers_url": "https://api.github.com/users/patrix1337/followers",
+      "following_url": "https://api.github.com/users/patrix1337/following{/other_user}",
+      "gists_url": "https://api.github.com/users/patrix1337/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/patrix1337/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/patrix1337/subscriptions",
+      "organizations_url": "https://api.github.com/users/patrix1337/orgs",
+      "repos_url": "https://api.github.com/users/patrix1337/repos",
+      "events_url": "https://api.github.com/users/patrix1337/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/patrix1337/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "322ba39e68893745f0d40fb5ccc642756507898a",
+        "url": "https://api.github.com/repos/apache/avro/commits/322ba39e68893745f0d40fb5ccc642756507898a",
+        "html_url": "https://github.com/apache/avro/commit/322ba39e68893745f0d40fb5ccc642756507898a"
+      }
+    ]
+  }
+]

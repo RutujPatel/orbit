@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "382a1f613c9c951981a82aa895e40cc494952641",
+    "node_id": "MDY6Q29tbWl0OTQ5OTQyMjozODJhMWY2MTNjOWM5NTE5ODFhODJhYTg5NWU0MGNjNDk0OTUyNjQx",
+    "commit": {
+      "author": {
+        "name": "Andre Hacker",
+        "email": "andrephacker@gmail.com",
+        "date": "2013-09-20T19:12:00Z"
+      },
+      "committer": {
+        "name": "Andre Hacker",
+        "email": "andrephacker@gmail.com",
+        "date": "2013-09-20T19:12:00Z"
+      },
+      "message": "Add test case validating a bug with AllReducer in iterations.",
+      "tree": {
+        "sha": "bcbe6ca19e7416066f896a123a04308309100019",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/bcbe6ca19e7416066f896a123a04308309100019"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/382a1f613c9c951981a82aa895e40cc494952641",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/382a1f613c9c951981a82aa895e40cc494952641",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/382a1f613c9c951981a82aa895e40cc494952641",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/382a1f613c9c951981a82aa895e40cc494952641/comments",
+    "author": {
+      "login": "andrehacker",
+      "id": 659564,
+      "node_id": "MDQ6VXNlcjY1OTU2NA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/659564?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/andrehacker",
+      "html_url": "https://github.com/andrehacker",
+      "followers_url": "https://api.github.com/users/andrehacker/followers",
+      "following_url": "https://api.github.com/users/andrehacker/following{/other_user}",
+      "gists_url": "https://api.github.com/users/andrehacker/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/andrehacker/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/andrehacker/subscriptions",
+      "organizations_url": "https://api.github.com/users/andrehacker/orgs",
+      "repos_url": "https://api.github.com/users/andrehacker/repos",
+      "events_url": "https://api.github.com/users/andrehacker/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/andrehacker/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "andrehacker",
+      "id": 659564,
+      "node_id": "MDQ6VXNlcjY1OTU2NA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/659564?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/andrehacker",
+      "html_url": "https://github.com/andrehacker",
+      "followers_url": "https://api.github.com/users/andrehacker/followers",
+      "following_url": "https://api.github.com/users/andrehacker/following{/other_user}",
+      "gists_url": "https://api.github.com/users/andrehacker/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/andrehacker/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/andrehacker/subscriptions",
+      "organizations_url": "https://api.github.com/users/andrehacker/orgs",
+      "repos_url": "https://api.github.com/users/andrehacker/repos",
+      "events_url": "https://api.github.com/users/andrehacker/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/andrehacker/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "389bb0ceece79f194b1b55b6e0a8b96a94f3d940",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/389bb0ceece79f194b1b55b6e0a8b96a94f3d940",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/389bb0ceece79f194b1b55b6e0a8b96a94f3d940"
+      }
+    ]
+  }
+]

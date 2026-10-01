@@ -1,0 +1,412 @@
+[
+  {
+    "sha": "ae64f2e491b72c09cd7c135533a867e3c8a9f6f4",
+    "node_id": "MDY6Q29tbWl0NTIwMjIyODk6YWU2NGYyZTQ5MWI3MmMwOWNkN2MxMzU1MzNhODY3ZTNjOGE5ZjZmNA==",
+    "commit": {
+      "author": {
+        "name": "Wes McKinney",
+        "email": "wes.mckinney@twosigma.com",
+        "date": "2016-10-14T03:58:59Z"
+      },
+      "committer": {
+        "name": "Wes McKinney",
+        "email": "wes.mckinney@twosigma.com",
+        "date": "2016-10-17T02:23:52Z"
+      },
+      "message": "Refactoring to reflect collaprsed list-like structure of Binary and String types. Not yet complete\n\nChange-Id: Ibe333dc6c3764585ed3b21fc3ab3a86a4b6dc4cb",
+      "tree": {
+        "sha": "9c925f3cb3b827d66c9313238f48f9212b281c7d",
+        "url": "https://api.github.com/repos/apache/arrow/git/trees/9c925f3cb3b827d66c9313238f48f9212b281c7d"
+      },
+      "url": "https://api.github.com/repos/apache/arrow/git/commits/ae64f2e491b72c09cd7c135533a867e3c8a9f6f4",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/arrow/commits/ae64f2e491b72c09cd7c135533a867e3c8a9f6f4",
+    "html_url": "https://github.com/apache/arrow/commit/ae64f2e491b72c09cd7c135533a867e3c8a9f6f4",
+    "comments_url": "https://api.github.com/repos/apache/arrow/commits/ae64f2e491b72c09cd7c135533a867e3c8a9f6f4/comments",
+    "author": {
+      "login": "wesm",
+      "id": 329591,
+      "node_id": "MDQ6VXNlcjMyOTU5MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/329591?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wesm",
+      "html_url": "https://github.com/wesm",
+      "followers_url": "https://api.github.com/users/wesm/followers",
+      "following_url": "https://api.github.com/users/wesm/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wesm/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wesm/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wesm/subscriptions",
+      "organizations_url": "https://api.github.com/users/wesm/orgs",
+      "repos_url": "https://api.github.com/users/wesm/repos",
+      "events_url": "https://api.github.com/users/wesm/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wesm/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "wesm",
+      "id": 329591,
+      "node_id": "MDQ6VXNlcjMyOTU5MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/329591?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wesm",
+      "html_url": "https://github.com/wesm",
+      "followers_url": "https://api.github.com/users/wesm/followers",
+      "following_url": "https://api.github.com/users/wesm/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wesm/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wesm/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wesm/subscriptions",
+      "organizations_url": "https://api.github.com/users/wesm/orgs",
+      "repos_url": "https://api.github.com/users/wesm/repos",
+      "events_url": "https://api.github.com/users/wesm/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wesm/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8e8b17f992aa3bb3a642a93b44beb9b87d589fea",
+        "url": "https://api.github.com/repos/apache/arrow/commits/8e8b17f992aa3bb3a642a93b44beb9b87d589fea",
+        "html_url": "https://github.com/apache/arrow/commit/8e8b17f992aa3bb3a642a93b44beb9b87d589fea"
+      }
+    ]
+  },
+  {
+    "sha": "bd70cab03266873485172556b737c272f4ccf625",
+    "node_id": "MDY6Q29tbWl0NTIwMjIyODk6YmQ3MGNhYjAzMjY2ODczNDg1MTcyNTU2YjczN2MyNzJmNGNjZjYyNQ==",
+    "commit": {
+      "author": {
+        "name": "Wes McKinney",
+        "email": "wes.mckinney@twosigma.com",
+        "date": "2016-10-17T02:02:37Z"
+      },
+      "committer": {
+        "name": "Wes McKinney",
+        "email": "wes.mckinney@twosigma.com",
+        "date": "2016-10-17T02:23:52Z"
+      },
+      "message": "Complete refactoring, fix up IPC tests for flattened string/binary buffer/metadata layout\n\nChange-Id: I15e9f14bbfcd549f14436b67efcde62e20e83890",
+      "tree": {
+        "sha": "afe10f415f79c806087ae0e834e436d083d1afc9",
+        "url": "https://api.github.com/repos/apache/arrow/git/trees/afe10f415f79c806087ae0e834e436d083d1afc9"
+      },
+      "url": "https://api.github.com/repos/apache/arrow/git/commits/bd70cab03266873485172556b737c272f4ccf625",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/arrow/commits/bd70cab03266873485172556b737c272f4ccf625",
+    "html_url": "https://github.com/apache/arrow/commit/bd70cab03266873485172556b737c272f4ccf625",
+    "comments_url": "https://api.github.com/repos/apache/arrow/commits/bd70cab03266873485172556b737c272f4ccf625/comments",
+    "author": {
+      "login": "wesm",
+      "id": 329591,
+      "node_id": "MDQ6VXNlcjMyOTU5MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/329591?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wesm",
+      "html_url": "https://github.com/wesm",
+      "followers_url": "https://api.github.com/users/wesm/followers",
+      "following_url": "https://api.github.com/users/wesm/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wesm/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wesm/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wesm/subscriptions",
+      "organizations_url": "https://api.github.com/users/wesm/orgs",
+      "repos_url": "https://api.github.com/users/wesm/repos",
+      "events_url": "https://api.github.com/users/wesm/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wesm/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "wesm",
+      "id": 329591,
+      "node_id": "MDQ6VXNlcjMyOTU5MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/329591?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wesm",
+      "html_url": "https://github.com/wesm",
+      "followers_url": "https://api.github.com/users/wesm/followers",
+      "following_url": "https://api.github.com/users/wesm/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wesm/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wesm/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wesm/subscriptions",
+      "organizations_url": "https://api.github.com/users/wesm/orgs",
+      "repos_url": "https://api.github.com/users/wesm/repos",
+      "events_url": "https://api.github.com/users/wesm/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wesm/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ae64f2e491b72c09cd7c135533a867e3c8a9f6f4",
+        "url": "https://api.github.com/repos/apache/arrow/commits/ae64f2e491b72c09cd7c135533a867e3c8a9f6f4",
+        "html_url": "https://github.com/apache/arrow/commit/ae64f2e491b72c09cd7c135533a867e3c8a9f6f4"
+      }
+    ]
+  },
+  {
+    "sha": "9a1f77e99abcba25300b8f6f4e695055aad3648b",
+    "node_id": "MDY6Q29tbWl0NTIwMjIyODk6OWExZjc3ZTk5YWJjYmEyNTMwMGI4ZjZmNGU2OTUwNTVhYWQzNjQ4Yg==",
+    "commit": {
+      "author": {
+        "name": "Wes McKinney",
+        "email": "wes.mckinney@twosigma.com",
+        "date": "2016-10-17T02:26:52Z"
+      },
+      "committer": {
+        "name": "Wes McKinney",
+        "email": "wes.mckinney@twosigma.com",
+        "date": "2016-10-17T02:26:52Z"
+      },
+      "message": "Add license header to index.rst\n\nChange-Id: Iaab88ddf75a2dd5ae458302c36ebe1377d1a0cf1",
+      "tree": {
+        "sha": "6e7f73baa257a1d3da6e3a464c866348979c0ea1",
+        "url": "https://api.github.com/repos/apache/arrow/git/trees/6e7f73baa257a1d3da6e3a464c866348979c0ea1"
+      },
+      "url": "https://api.github.com/repos/apache/arrow/git/commits/9a1f77e99abcba25300b8f6f4e695055aad3648b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/arrow/commits/9a1f77e99abcba25300b8f6f4e695055aad3648b",
+    "html_url": "https://github.com/apache/arrow/commit/9a1f77e99abcba25300b8f6f4e695055aad3648b",
+    "comments_url": "https://api.github.com/repos/apache/arrow/commits/9a1f77e99abcba25300b8f6f4e695055aad3648b/comments",
+    "author": {
+      "login": "wesm",
+      "id": 329591,
+      "node_id": "MDQ6VXNlcjMyOTU5MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/329591?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wesm",
+      "html_url": "https://github.com/wesm",
+      "followers_url": "https://api.github.com/users/wesm/followers",
+      "following_url": "https://api.github.com/users/wesm/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wesm/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wesm/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wesm/subscriptions",
+      "organizations_url": "https://api.github.com/users/wesm/orgs",
+      "repos_url": "https://api.github.com/users/wesm/repos",
+      "events_url": "https://api.github.com/users/wesm/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wesm/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "wesm",
+      "id": 329591,
+      "node_id": "MDQ6VXNlcjMyOTU5MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/329591?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wesm",
+      "html_url": "https://github.com/wesm",
+      "followers_url": "https://api.github.com/users/wesm/followers",
+      "following_url": "https://api.github.com/users/wesm/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wesm/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wesm/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wesm/subscriptions",
+      "organizations_url": "https://api.github.com/users/wesm/orgs",
+      "repos_url": "https://api.github.com/users/wesm/repos",
+      "events_url": "https://api.github.com/users/wesm/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wesm/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "bd70cab03266873485172556b737c272f4ccf625",
+        "url": "https://api.github.com/repos/apache/arrow/commits/bd70cab03266873485172556b737c272f4ccf625",
+        "html_url": "https://github.com/apache/arrow/commit/bd70cab03266873485172556b737c272f4ccf625"
+      }
+    ]
+  },
+  {
+    "sha": "1e65b01386e5d60851dfc8088e18a489aa4093b2",
+    "node_id": "MDY6Q29tbWl0NTIwMjIyODk6MWU2NWIwMTM4NmU1ZDYwODUxZGZjODA4OGUxOGE0ODlhYTQwOTNiMg==",
+    "commit": {
+      "author": {
+        "name": "Wes McKinney",
+        "email": "wes.mckinney@twosigma.com",
+        "date": "2016-10-17T13:33:26Z"
+      },
+      "committer": {
+        "name": "Wes McKinney",
+        "email": "wes.mckinney@twosigma.com",
+        "date": "2016-10-17T13:33:26Z"
+      },
+      "message": "Deprecate pyarrow::Status in favor of just arrow::Status. Conform pyarrow use of ArrayBuilder::Finish\n\nChange-Id: I4f5992b52eeb7421f68f199bcdd549b61b8e4f70",
+      "tree": {
+        "sha": "1328e1289842591922ff02a4af19e4a28ee2acb8",
+        "url": "https://api.github.com/repos/apache/arrow/git/trees/1328e1289842591922ff02a4af19e4a28ee2acb8"
+      },
+      "url": "https://api.github.com/repos/apache/arrow/git/commits/1e65b01386e5d60851dfc8088e18a489aa4093b2",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/arrow/commits/1e65b01386e5d60851dfc8088e18a489aa4093b2",
+    "html_url": "https://github.com/apache/arrow/commit/1e65b01386e5d60851dfc8088e18a489aa4093b2",
+    "comments_url": "https://api.github.com/repos/apache/arrow/commits/1e65b01386e5d60851dfc8088e18a489aa4093b2/comments",
+    "author": {
+      "login": "wesm",
+      "id": 329591,
+      "node_id": "MDQ6VXNlcjMyOTU5MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/329591?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wesm",
+      "html_url": "https://github.com/wesm",
+      "followers_url": "https://api.github.com/users/wesm/followers",
+      "following_url": "https://api.github.com/users/wesm/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wesm/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wesm/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wesm/subscriptions",
+      "organizations_url": "https://api.github.com/users/wesm/orgs",
+      "repos_url": "https://api.github.com/users/wesm/repos",
+      "events_url": "https://api.github.com/users/wesm/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wesm/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "wesm",
+      "id": 329591,
+      "node_id": "MDQ6VXNlcjMyOTU5MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/329591?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wesm",
+      "html_url": "https://github.com/wesm",
+      "followers_url": "https://api.github.com/users/wesm/followers",
+      "following_url": "https://api.github.com/users/wesm/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wesm/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wesm/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wesm/subscriptions",
+      "organizations_url": "https://api.github.com/users/wesm/orgs",
+      "repos_url": "https://api.github.com/users/wesm/repos",
+      "events_url": "https://api.github.com/users/wesm/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wesm/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9a1f77e99abcba25300b8f6f4e695055aad3648b",
+        "url": "https://api.github.com/repos/apache/arrow/commits/9a1f77e99abcba25300b8f6f4e695055aad3648b",
+        "html_url": "https://github.com/apache/arrow/commit/9a1f77e99abcba25300b8f6f4e695055aad3648b"
+      }
+    ]
+  },
+  {
+    "sha": "dca39ce5e0dde3393aadc074579ea774985a3bea",
+    "node_id": "MDY6Q29tbWl0NTIwMjIyODk6ZGNhMzljZTVlMGRkZTMzOTNhYWRjMDc0NTc5ZWE3NzQ5ODVhM2JlYQ==",
+    "commit": {
+      "author": {
+        "name": "Wes McKinney",
+        "email": "wes.mckinney@twosigma.com",
+        "date": "2016-10-17T15:17:00Z"
+      },
+      "committer": {
+        "name": "Wes McKinney",
+        "email": "wes.mckinney@twosigma.com",
+        "date": "2016-10-17T15:17:00Z"
+      },
+      "message": "Make binary/string constants static to avoid memory-access-related segfaults in third party libraries\n\nChange-Id: Ib8a053485822ea9c4e06b800def9654da9e0f9d9",
+      "tree": {
+        "sha": "d5ae59fc2454534ac9d264ba83fbc1ba610bf1ee",
+        "url": "https://api.github.com/repos/apache/arrow/git/trees/d5ae59fc2454534ac9d264ba83fbc1ba610bf1ee"
+      },
+      "url": "https://api.github.com/repos/apache/arrow/git/commits/dca39ce5e0dde3393aadc074579ea774985a3bea",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/arrow/commits/dca39ce5e0dde3393aadc074579ea774985a3bea",
+    "html_url": "https://github.com/apache/arrow/commit/dca39ce5e0dde3393aadc074579ea774985a3bea",
+    "comments_url": "https://api.github.com/repos/apache/arrow/commits/dca39ce5e0dde3393aadc074579ea774985a3bea/comments",
+    "author": {
+      "login": "wesm",
+      "id": 329591,
+      "node_id": "MDQ6VXNlcjMyOTU5MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/329591?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wesm",
+      "html_url": "https://github.com/wesm",
+      "followers_url": "https://api.github.com/users/wesm/followers",
+      "following_url": "https://api.github.com/users/wesm/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wesm/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wesm/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wesm/subscriptions",
+      "organizations_url": "https://api.github.com/users/wesm/orgs",
+      "repos_url": "https://api.github.com/users/wesm/repos",
+      "events_url": "https://api.github.com/users/wesm/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wesm/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "wesm",
+      "id": 329591,
+      "node_id": "MDQ6VXNlcjMyOTU5MQ==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/329591?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/wesm",
+      "html_url": "https://github.com/wesm",
+      "followers_url": "https://api.github.com/users/wesm/followers",
+      "following_url": "https://api.github.com/users/wesm/following{/other_user}",
+      "gists_url": "https://api.github.com/users/wesm/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/wesm/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/wesm/subscriptions",
+      "organizations_url": "https://api.github.com/users/wesm/orgs",
+      "repos_url": "https://api.github.com/users/wesm/repos",
+      "events_url": "https://api.github.com/users/wesm/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/wesm/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1e65b01386e5d60851dfc8088e18a489aa4093b2",
+        "url": "https://api.github.com/repos/apache/arrow/commits/1e65b01386e5d60851dfc8088e18a489aa4093b2",
+        "html_url": "https://github.com/apache/arrow/commit/1e65b01386e5d60851dfc8088e18a489aa4093b2"
+      }
+    ]
+  }
+]

@@ -1,0 +1,842 @@
+[
+  {
+    "sha": "bb9234735722327c87b386b9a7fd49d8c98ca59f",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOmJiOTIzNDczNTcyMjMyN2M4N2IzODZiOWE3ZmQ0OWQ4Yzk4Y2E1OWY=",
+    "commit": {
+      "author": {
+        "name": "Boyang Chen",
+        "email": "bychen@pinterest.com",
+        "date": "2019-01-04T19:40:40Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-25T21:32:17Z"
+      },
+      "message": "The initial commit for KIP-345\n\ninitial join group config changes\n\nunit test fixes\n\nfix leader return value\n\nfix leave group logic\n\naddress inital Jason's comments\n\nrevert connect related changes\n\nfix test\n\nallocate new member id during static member rejoin\n\nremove group instance id not found exception and refactor known join group logic\n\nadd 2.3 version in manager\n\nrefactor join known logic\n\nrebase\n\nadd group instance id to the return members metadata",
+      "tree": {
+        "sha": "d57e8c1abed113299dd9ea1b7268185c8570392a",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/d57e8c1abed113299dd9ea1b7268185c8570392a"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/bb9234735722327c87b386b9a7fd49d8c98ca59f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/bb9234735722327c87b386b9a7fd49d8c98ca59f",
+    "html_url": "https://github.com/apache/kafka/commit/bb9234735722327c87b386b9a7fd49d8c98ca59f",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/bb9234735722327c87b386b9a7fd49d8c98ca59f/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "847957cbea48d404a4090d5c35ea41c3aca820c2",
+        "url": "https://api.github.com/repos/apache/kafka/commits/847957cbea48d404a4090d5c35ea41c3aca820c2",
+        "html_url": "https://github.com/apache/kafka/commit/847957cbea48d404a4090d5c35ea41c3aca820c2"
+      }
+    ]
+  },
+  {
+    "sha": "4a4e55e590f9f11b12db827a1e19be342798f0c5",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOjRhNGU1NWU1OTBmOWYxMWIxMmRiODI3YTFlMTliZTM0Mjc5OGYwYzU=",
+    "commit": {
+      "author": {
+        "name": "Boyang Chen",
+        "email": "bychen@pinterest.com",
+        "date": "2019-03-19T01:08:07Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-25T21:32:17Z"
+      },
+      "message": "refactor joinresult",
+      "tree": {
+        "sha": "3cbcd0afe81d237c57770288e7b9e67c19ba3b2c",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/3cbcd0afe81d237c57770288e7b9e67c19ba3b2c"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/4a4e55e590f9f11b12db827a1e19be342798f0c5",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/4a4e55e590f9f11b12db827a1e19be342798f0c5",
+    "html_url": "https://github.com/apache/kafka/commit/4a4e55e590f9f11b12db827a1e19be342798f0c5",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/4a4e55e590f9f11b12db827a1e19be342798f0c5/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "bb9234735722327c87b386b9a7fd49d8c98ca59f",
+        "url": "https://api.github.com/repos/apache/kafka/commits/bb9234735722327c87b386b9a7fd49d8c98ca59f",
+        "html_url": "https://github.com/apache/kafka/commit/bb9234735722327c87b386b9a7fd49d8c98ca59f"
+      }
+    ]
+  },
+  {
+    "sha": "1555d8983e09e97cee0eb825bcccef9f137a6433",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOjE1NTVkODk4M2UwOWU5N2NlZTBlYjgyNWJjY2NlZjlmMTM3YTY0MzM=",
+    "commit": {
+      "author": {
+        "name": "Boyang Chen",
+        "email": "bychen@pinterest.com",
+        "date": "2019-03-23T00:45:25Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-25T21:32:17Z"
+      },
+      "message": "amend tests for new instance ids",
+      "tree": {
+        "sha": "f98f3f021eedbeb4759073b1114cc4f18ab8638f",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/f98f3f021eedbeb4759073b1114cc4f18ab8638f"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/1555d8983e09e97cee0eb825bcccef9f137a6433",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/1555d8983e09e97cee0eb825bcccef9f137a6433",
+    "html_url": "https://github.com/apache/kafka/commit/1555d8983e09e97cee0eb825bcccef9f137a6433",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/1555d8983e09e97cee0eb825bcccef9f137a6433/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "4a4e55e590f9f11b12db827a1e19be342798f0c5",
+        "url": "https://api.github.com/repos/apache/kafka/commits/4a4e55e590f9f11b12db827a1e19be342798f0c5",
+        "html_url": "https://github.com/apache/kafka/commit/4a4e55e590f9f11b12db827a1e19be342798f0c5"
+      }
+    ]
+  },
+  {
+    "sha": "36902d4b7626eaf716bafec7dad854a4eae6b894",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOjM2OTAyZDRiNzYyNmVhZjcxNmJhZmVjN2RhZDg1NGE0ZWFlNmI4OTQ=",
+    "commit": {
+      "author": {
+        "name": "Boyang Chen",
+        "email": "bychen@pinterest.com",
+        "date": "2019-03-24T05:44:46Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-25T21:32:17Z"
+      },
+      "message": "style",
+      "tree": {
+        "sha": "309be3a4660f61d79a45e6e8ffa2bd235a44d1d8",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/309be3a4660f61d79a45e6e8ffa2bd235a44d1d8"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/36902d4b7626eaf716bafec7dad854a4eae6b894",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/36902d4b7626eaf716bafec7dad854a4eae6b894",
+    "html_url": "https://github.com/apache/kafka/commit/36902d4b7626eaf716bafec7dad854a4eae6b894",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/36902d4b7626eaf716bafec7dad854a4eae6b894/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "1555d8983e09e97cee0eb825bcccef9f137a6433",
+        "url": "https://api.github.com/repos/apache/kafka/commits/1555d8983e09e97cee0eb825bcccef9f137a6433",
+        "html_url": "https://github.com/apache/kafka/commit/1555d8983e09e97cee0eb825bcccef9f137a6433"
+      }
+    ]
+  },
+  {
+    "sha": "0f32ebc41acacd394f421d7d4522dcfc19189552",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOjBmMzJlYmM0MWFjYWNkMzk0ZjQyMWQ3ZDQ1MjJkY2ZjMTkxODk1NTI=",
+    "commit": {
+      "author": {
+        "name": "Boyang Chen",
+        "email": "bychen@pinterest.com",
+        "date": "2019-04-11T05:47:06Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-25T21:32:17Z"
+      },
+      "message": "address comments",
+      "tree": {
+        "sha": "3de4cba1625e7833e6dc28ffe995a86ce4afece6",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/3de4cba1625e7833e6dc28ffe995a86ce4afece6"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/0f32ebc41acacd394f421d7d4522dcfc19189552",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/0f32ebc41acacd394f421d7d4522dcfc19189552",
+    "html_url": "https://github.com/apache/kafka/commit/0f32ebc41acacd394f421d7d4522dcfc19189552",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/0f32ebc41acacd394f421d7d4522dcfc19189552/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "36902d4b7626eaf716bafec7dad854a4eae6b894",
+        "url": "https://api.github.com/repos/apache/kafka/commits/36902d4b7626eaf716bafec7dad854a4eae6b894",
+        "html_url": "https://github.com/apache/kafka/commit/36902d4b7626eaf716bafec7dad854a4eae6b894"
+      }
+    ]
+  },
+  {
+    "sha": "606da5b5d65ec54c19ef074076b4d90825745943",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOjYwNmRhNWI1ZDY1ZWM1NGMxOWVmMDc0MDc2YjRkOTA4MjU3NDU5NDM=",
+    "commit": {
+      "author": {
+        "name": "Boyang Chen",
+        "email": "bychen@pinterest.com",
+        "date": "2019-04-11T06:09:53Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-25T21:32:17Z"
+      },
+      "message": "use option for instance ids on broker",
+      "tree": {
+        "sha": "79dc7ab220d49429e0991cdbbc221f493524e796",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/79dc7ab220d49429e0991cdbbc221f493524e796"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/606da5b5d65ec54c19ef074076b4d90825745943",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/606da5b5d65ec54c19ef074076b4d90825745943",
+    "html_url": "https://github.com/apache/kafka/commit/606da5b5d65ec54c19ef074076b4d90825745943",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/606da5b5d65ec54c19ef074076b4d90825745943/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "0f32ebc41acacd394f421d7d4522dcfc19189552",
+        "url": "https://api.github.com/repos/apache/kafka/commits/0f32ebc41acacd394f421d7d4522dcfc19189552",
+        "html_url": "https://github.com/apache/kafka/commit/0f32ebc41acacd394f421d7d4522dcfc19189552"
+      }
+    ]
+  },
+  {
+    "sha": "2a70b0bb85d721b36831200313f557aeaef88674",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOjJhNzBiMGJiODVkNzIxYjM2ODMxMjAwMzEzZjU1N2FlYWVmODg2NzQ=",
+    "commit": {
+      "author": {
+        "name": "Boyang Chen",
+        "email": "bychen@pinterest.com",
+        "date": "2019-04-11T16:45:40Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-25T21:32:17Z"
+      },
+      "message": "modify comment",
+      "tree": {
+        "sha": "bb62a2fdcdcdea00ca8512962608f4cd8c406b86",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/bb62a2fdcdcdea00ca8512962608f4cd8c406b86"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/2a70b0bb85d721b36831200313f557aeaef88674",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/2a70b0bb85d721b36831200313f557aeaef88674",
+    "html_url": "https://github.com/apache/kafka/commit/2a70b0bb85d721b36831200313f557aeaef88674",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/2a70b0bb85d721b36831200313f557aeaef88674/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "606da5b5d65ec54c19ef074076b4d90825745943",
+        "url": "https://api.github.com/repos/apache/kafka/commits/606da5b5d65ec54c19ef074076b4d90825745943",
+        "html_url": "https://github.com/apache/kafka/commit/606da5b5d65ec54c19ef074076b4d90825745943"
+      }
+    ]
+  },
+  {
+    "sha": "b151b9185ad67c62073772cd81909c72fc0ee2d5",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOmIxNTFiOTE4NWFkNjdjNjIwNzM3NzJjZDgxOTA5YzcyZmMwZWUyZDU=",
+    "commit": {
+      "author": {
+        "name": "Boyang Chen",
+        "email": "bychen@pinterest.com",
+        "date": "2019-04-14T06:05:14Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-25T21:32:17Z"
+      },
+      "message": "add instance id char validation",
+      "tree": {
+        "sha": "e521232abb5f793456e887afab410365caa1c67a",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/e521232abb5f793456e887afab410365caa1c67a"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/b151b9185ad67c62073772cd81909c72fc0ee2d5",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/b151b9185ad67c62073772cd81909c72fc0ee2d5",
+    "html_url": "https://github.com/apache/kafka/commit/b151b9185ad67c62073772cd81909c72fc0ee2d5",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/b151b9185ad67c62073772cd81909c72fc0ee2d5/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "2a70b0bb85d721b36831200313f557aeaef88674",
+        "url": "https://api.github.com/repos/apache/kafka/commits/2a70b0bb85d721b36831200313f557aeaef88674",
+        "html_url": "https://github.com/apache/kafka/commit/2a70b0bb85d721b36831200313f557aeaef88674"
+      }
+    ]
+  },
+  {
+    "sha": "410861a220f55adbf638241aea216da6cb45ce32",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOjQxMDg2MWEyMjBmNTVhZGJmNjM4MjQxYWVhMjE2ZGE2Y2I0NWNlMzI=",
+    "commit": {
+      "author": {
+        "name": "Boyang Chen",
+        "email": "bychen@pinterest.com",
+        "date": "2019-04-16T05:36:55Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-25T21:32:17Z"
+      },
+      "message": "fix optional instance id on member metadata",
+      "tree": {
+        "sha": "0692180a68d4f018a5920be49828c61214154bc6",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/0692180a68d4f018a5920be49828c61214154bc6"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/410861a220f55adbf638241aea216da6cb45ce32",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/410861a220f55adbf638241aea216da6cb45ce32",
+    "html_url": "https://github.com/apache/kafka/commit/410861a220f55adbf638241aea216da6cb45ce32",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/410861a220f55adbf638241aea216da6cb45ce32/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "b151b9185ad67c62073772cd81909c72fc0ee2d5",
+        "url": "https://api.github.com/repos/apache/kafka/commits/b151b9185ad67c62073772cd81909c72fc0ee2d5",
+        "html_url": "https://github.com/apache/kafka/commit/b151b9185ad67c62073772cd81909c72fc0ee2d5"
+      }
+    ]
+  },
+  {
+    "sha": "8a98d4010baa189c28600eddce5128398aaf119f",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOjhhOThkNDAxMGJhYTE4OWMyODYwMGVkZGNlNTEyODM5OGFhZjExOWY=",
+    "commit": {
+      "author": {
+        "name": "Boyang Chen",
+        "email": "bychen@pinterest.com",
+        "date": "2019-04-18T21:22:04Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-25T21:32:17Z"
+      },
+      "message": "put nullable versions for instance id",
+      "tree": {
+        "sha": "422fa000b99133e5f71d572ad6e1232f2eb3c31b",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/422fa000b99133e5f71d572ad6e1232f2eb3c31b"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/8a98d4010baa189c28600eddce5128398aaf119f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/8a98d4010baa189c28600eddce5128398aaf119f",
+    "html_url": "https://github.com/apache/kafka/commit/8a98d4010baa189c28600eddce5128398aaf119f",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/8a98d4010baa189c28600eddce5128398aaf119f/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "410861a220f55adbf638241aea216da6cb45ce32",
+        "url": "https://api.github.com/repos/apache/kafka/commits/410861a220f55adbf638241aea216da6cb45ce32",
+        "html_url": "https://github.com/apache/kafka/commit/410861a220f55adbf638241aea216da6cb45ce32"
+      }
+    ]
+  },
+  {
+    "sha": "bd3d9cdad4c3b6c8a4845c2a55bad26beba9b368",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOmJkM2Q5Y2RhZDRjM2I2YzhhNDg0NWMyYTU1YmFkMjZiZWJhOWIzNjg=",
+    "commit": {
+      "author": {
+        "name": "Boyang Chen",
+        "email": "bychen@pinterest.com",
+        "date": "2019-04-19T03:35:14Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-25T21:32:18Z"
+      },
+      "message": "change replace name",
+      "tree": {
+        "sha": "3fc252b39be94eeb634f2a6ac3f61416a8cc3a1f",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/3fc252b39be94eeb634f2a6ac3f61416a8cc3a1f"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/bd3d9cdad4c3b6c8a4845c2a55bad26beba9b368",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/bd3d9cdad4c3b6c8a4845c2a55bad26beba9b368",
+    "html_url": "https://github.com/apache/kafka/commit/bd3d9cdad4c3b6c8a4845c2a55bad26beba9b368",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/bd3d9cdad4c3b6c8a4845c2a55bad26beba9b368/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "8a98d4010baa189c28600eddce5128398aaf119f",
+        "url": "https://api.github.com/repos/apache/kafka/commits/8a98d4010baa189c28600eddce5128398aaf119f",
+        "html_url": "https://github.com/apache/kafka/commit/8a98d4010baa189c28600eddce5128398aaf119f"
+      }
+    ]
+  },
+  {
+    "sha": "e3030eaf80a260d6ec7da3a91398e1ce632690ce",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOmUzMDMwZWFmODBhMjYwZDZlYzdkYTNhOTEzOThlMWNlNjMyNjkwY2U=",
+    "commit": {
+      "author": {
+        "name": "cs427fa16staff",
+        "email": "bchen11@outlook.com",
+        "date": "2019-04-22T00:44:17Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-25T21:32:18Z"
+      },
+      "message": "use empty string as indicator for null group instance id",
+      "tree": {
+        "sha": "3c494a68a7f4babb44bd90ad7c3beceb138b4ccc",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/3c494a68a7f4babb44bd90ad7c3beceb138b4ccc"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/e3030eaf80a260d6ec7da3a91398e1ce632690ce",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/e3030eaf80a260d6ec7da3a91398e1ce632690ce",
+    "html_url": "https://github.com/apache/kafka/commit/e3030eaf80a260d6ec7da3a91398e1ce632690ce",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/e3030eaf80a260d6ec7da3a91398e1ce632690ce/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "bd3d9cdad4c3b6c8a4845c2a55bad26beba9b368",
+        "url": "https://api.github.com/repos/apache/kafka/commits/bd3d9cdad4c3b6c8a4845c2a55bad26beba9b368",
+        "html_url": "https://github.com/apache/kafka/commit/bd3d9cdad4c3b6c8a4845c2a55bad26beba9b368"
+      }
+    ]
+  },
+  {
+    "sha": "2f01bfc303f6334d1ae7020f8ce408b0c6120a0d",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOjJmMDFiZmMzMDNmNjMzNGQxYWU3MDIwZjhjZTQwOGIwYzYxMjBhMGQ=",
+    "commit": {
+      "author": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-23T04:40:03Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-25T21:32:18Z"
+      },
+      "message": "deprecate empty group instance id and address some assertion comments",
+      "tree": {
+        "sha": "42d675812e7142dc5e20bf09ef4ba7340a42826a",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/42d675812e7142dc5e20bf09ef4ba7340a42826a"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/2f01bfc303f6334d1ae7020f8ce408b0c6120a0d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/2f01bfc303f6334d1ae7020f8ce408b0c6120a0d",
+    "html_url": "https://github.com/apache/kafka/commit/2f01bfc303f6334d1ae7020f8ce408b0c6120a0d",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/2f01bfc303f6334d1ae7020f8ce408b0c6120a0d/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "e3030eaf80a260d6ec7da3a91398e1ce632690ce",
+        "url": "https://api.github.com/repos/apache/kafka/commits/e3030eaf80a260d6ec7da3a91398e1ce632690ce",
+        "html_url": "https://github.com/apache/kafka/commit/e3030eaf80a260d6ec7da3a91398e1ce632690ce"
+      }
+    ]
+  },
+  {
+    "sha": "ce1c28efd62053ea1b1b190fab419b4bfdf9f094",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOmNlMWMyOGVmZDYyMDUzZWExYjFiMTkwZmFiNDE5YjRiZmRmOWYwOTQ=",
+    "commit": {
+      "author": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-24T05:00:27Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-25T21:32:18Z"
+      },
+      "message": "revert stream instance id change",
+      "tree": {
+        "sha": "0d2fe1c30c1d1e101286b56e69c2187c832c4437",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/0d2fe1c30c1d1e101286b56e69c2187c832c4437"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/ce1c28efd62053ea1b1b190fab419b4bfdf9f094",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/ce1c28efd62053ea1b1b190fab419b4bfdf9f094",
+    "html_url": "https://github.com/apache/kafka/commit/ce1c28efd62053ea1b1b190fab419b4bfdf9f094",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/ce1c28efd62053ea1b1b190fab419b4bfdf9f094/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "2f01bfc303f6334d1ae7020f8ce408b0c6120a0d",
+        "url": "https://api.github.com/repos/apache/kafka/commits/2f01bfc303f6334d1ae7020f8ce408b0c6120a0d",
+        "html_url": "https://github.com/apache/kafka/commit/2f01bfc303f6334d1ae7020f8ce408b0c6120a0d"
+      }
+    ]
+  },
+  {
+    "sha": "566cf10fee6dda80682d38116b0dffe9dfb18de9",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOjU2NmNmMTBmZWU2ZGRhODA2ODJkMzgxMTZiMGRmZmU5ZGZiMThkZTk=",
+    "commit": {
+      "author": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-24T18:14:19Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-25T21:32:18Z"
+      },
+      "message": "add compatibility test for group metadata",
+      "tree": {
+        "sha": "380587c0656a041fd356c21b7e2557bca25451da",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/380587c0656a041fd356c21b7e2557bca25451da"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/566cf10fee6dda80682d38116b0dffe9dfb18de9",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/566cf10fee6dda80682d38116b0dffe9dfb18de9",
+    "html_url": "https://github.com/apache/kafka/commit/566cf10fee6dda80682d38116b0dffe9dfb18de9",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/566cf10fee6dda80682d38116b0dffe9dfb18de9/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "ce1c28efd62053ea1b1b190fab419b4bfdf9f094",
+        "url": "https://api.github.com/repos/apache/kafka/commits/ce1c28efd62053ea1b1b190fab419b4bfdf9f094",
+        "html_url": "https://github.com/apache/kafka/commit/ce1c28efd62053ea1b1b190fab419b4bfdf9f094"
+      }
+    ]
+  },
+  {
+    "sha": "1b8b7a37f4bb5969f0c024c72fe434f10aabbf13",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOjFiOGI3YTM3ZjRiYjU5NjlmMGMwMjRjNzJmZTQzNGYxMGFhYmJmMTM=",
+    "commit": {
+      "author": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-24T19:00:31Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-25T21:32:18Z"
+      },
+      "message": "remove instance id for streams",
+      "tree": {
+        "sha": "97e34da2e5a9be91ce6289bf7a671fd0e4be20c8",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/97e34da2e5a9be91ce6289bf7a671fd0e4be20c8"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/1b8b7a37f4bb5969f0c024c72fe434f10aabbf13",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/1b8b7a37f4bb5969f0c024c72fe434f10aabbf13",
+    "html_url": "https://github.com/apache/kafka/commit/1b8b7a37f4bb5969f0c024c72fe434f10aabbf13",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/1b8b7a37f4bb5969f0c024c72fe434f10aabbf13/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "566cf10fee6dda80682d38116b0dffe9dfb18de9",
+        "url": "https://api.github.com/repos/apache/kafka/commits/566cf10fee6dda80682d38116b0dffe9dfb18de9",
+        "html_url": "https://github.com/apache/kafka/commit/566cf10fee6dda80682d38116b0dffe9dfb18de9"
+      }
+    ]
+  },
+  {
+    "sha": "01aca6157d4d779518b1a7c6ec95ebdeb60d3abd",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOjAxYWNhNjE1N2Q0ZDc3OTUxOGIxYTdjNmVjOTVlYmRlYjYwZDNhYmQ=",
+    "commit": {
+      "author": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-24T22:24:10Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-25T21:32:18Z"
+      },
+      "message": "system test",
+      "tree": {
+        "sha": "8c5926a2978e8f093e4d897f94c2ef1bd8060595",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/8c5926a2978e8f093e4d897f94c2ef1bd8060595"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/01aca6157d4d779518b1a7c6ec95ebdeb60d3abd",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/01aca6157d4d779518b1a7c6ec95ebdeb60d3abd",
+    "html_url": "https://github.com/apache/kafka/commit/01aca6157d4d779518b1a7c6ec95ebdeb60d3abd",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/01aca6157d4d779518b1a7c6ec95ebdeb60d3abd/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "1b8b7a37f4bb5969f0c024c72fe434f10aabbf13",
+        "url": "https://api.github.com/repos/apache/kafka/commits/1b8b7a37f4bb5969f0c024c72fe434f10aabbf13",
+        "html_url": "https://github.com/apache/kafka/commit/1b8b7a37f4bb5969f0c024c72fe434f10aabbf13"
+      }
+    ]
+  },
+  {
+    "sha": "c6a248c99d3649f535ee7a38a19c9317bd2cd97a",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOmM2YTI0OGM5OWQzNjQ5ZjUzNWVlN2EzOGExOWM5MzE3YmQyY2Q5N2E=",
+    "commit": {
+      "author": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-25T20:08:45Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-25T21:32:18Z"
+      },
+      "message": "unit test fix",
+      "tree": {
+        "sha": "f853e50d517e6a0d8957f1566d3d34253d79d0e6",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/f853e50d517e6a0d8957f1566d3d34253d79d0e6"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/c6a248c99d3649f535ee7a38a19c9317bd2cd97a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/c6a248c99d3649f535ee7a38a19c9317bd2cd97a",
+    "html_url": "https://github.com/apache/kafka/commit/c6a248c99d3649f535ee7a38a19c9317bd2cd97a",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/c6a248c99d3649f535ee7a38a19c9317bd2cd97a/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "01aca6157d4d779518b1a7c6ec95ebdeb60d3abd",
+        "url": "https://api.github.com/repos/apache/kafka/commits/01aca6157d4d779518b1a7c6ec95ebdeb60d3abd",
+        "html_url": "https://github.com/apache/kafka/commit/01aca6157d4d779518b1a7c6ec95ebdeb60d3abd"
+      }
+    ]
+  },
+  {
+    "sha": "987911cd8ca7b74e3bf06ee02399191c5dc3caee",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOjk4NzkxMWNkOGNhN2I3NGUzYmYwNmVlMDIzOTkxOTFjNWRjM2NhZWU=",
+    "commit": {
+      "author": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-25T21:39:29Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-25T21:39:36Z"
+      },
+      "message": "minor: add null check before removing static member",
+      "tree": {
+        "sha": "b4a04dc74ca8f88a9c8b91316abcb65b79ccca38",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/b4a04dc74ca8f88a9c8b91316abcb65b79ccca38"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/987911cd8ca7b74e3bf06ee02399191c5dc3caee",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/987911cd8ca7b74e3bf06ee02399191c5dc3caee",
+    "html_url": "https://github.com/apache/kafka/commit/987911cd8ca7b74e3bf06ee02399191c5dc3caee",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/987911cd8ca7b74e3bf06ee02399191c5dc3caee/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "c6a248c99d3649f535ee7a38a19c9317bd2cd97a",
+        "url": "https://api.github.com/repos/apache/kafka/commits/c6a248c99d3649f535ee7a38a19c9317bd2cd97a",
+        "html_url": "https://github.com/apache/kafka/commit/c6a248c99d3649f535ee7a38a19c9317bd2cd97a"
+      }
+    ]
+  },
+  {
+    "sha": "932118542844c01e3caf657e2eee9c16dfd269d7",
+    "node_id": "MDY6Q29tbWl0MTAxMTA1MzkyOjkzMjExODU0Mjg0NGMwMWUzY2FmNjU3ZTJlZWU5YzE2ZGZkMjY5ZDc=",
+    "commit": {
+      "author": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-26T15:12:27Z"
+      },
+      "committer": {
+        "name": "abbccdda",
+        "email": "boyang@confluent.io",
+        "date": "2019-04-26T15:12:27Z"
+      },
+      "message": "address test comment",
+      "tree": {
+        "sha": "409500254933e382ea18b77841ef9d5c89fdfeee",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/409500254933e382ea18b77841ef9d5c89fdfeee"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/932118542844c01e3caf657e2eee9c16dfd269d7",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/932118542844c01e3caf657e2eee9c16dfd269d7",
+    "html_url": "https://github.com/apache/kafka/commit/932118542844c01e3caf657e2eee9c16dfd269d7",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/932118542844c01e3caf657e2eee9c16dfd269d7/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "987911cd8ca7b74e3bf06ee02399191c5dc3caee",
+        "url": "https://api.github.com/repos/apache/kafka/commits/987911cd8ca7b74e3bf06ee02399191c5dc3caee",
+        "html_url": "https://github.com/apache/kafka/commit/987911cd8ca7b74e3bf06ee02399191c5dc3caee"
+      }
+    ]
+  }
+]

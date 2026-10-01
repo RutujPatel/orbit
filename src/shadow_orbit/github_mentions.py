@@ -185,11 +185,11 @@ def resolve_github_jira_mentions(
         policy.project_key_prefixes, key=lambda x: (-len(x), x)
     )
     pattern_str = (
-        r"\b(?:"
+        r"(?<![A-Za-z0-9])(?:"
         + "|".join(re.escape(p) for p in sorted_prefixes)
-        + r")-\d+\b"
+        + r")[-\u2013\u2014][0-9]+(?![A-Za-z0-9])"
     )
-    mention_pattern = re.compile(pattern_str)
+    mention_pattern = re.compile(pattern_str, re.ASCII)
 
     # ── Index Jira observations by entity_id ─────────────────────────
     # Strict identity: source_instance == jira_source_instance and entity_kind == 'jira_issue'.
@@ -281,7 +281,9 @@ def resolve_github_jira_mentions(
             # Deduplicate occurrences within the same field:
             # multiple occurrences in the same field produce one ProvenanceRef
             # for this field.
-            unique_keys_in_field = set(matches)
+            unique_keys_in_field = set(
+                re.sub(r"[\u2013\u2014]", "-", m).upper() for m in matches
+            )
             for jira_key in unique_keys_in_field:
                 _record_mention_occurrence(
                     source_ref=ref,

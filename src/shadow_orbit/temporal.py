@@ -3,8 +3,9 @@
 from __future__ import annotations
 
 from datetime import datetime
+from typing import Any
 
-from shadow_orbit.types import ReviewPeriod, WorkItem
+from shadow_orbit.types import Change, ReviewPeriod, WorkItem
 
 
 def is_within_half_open_period(

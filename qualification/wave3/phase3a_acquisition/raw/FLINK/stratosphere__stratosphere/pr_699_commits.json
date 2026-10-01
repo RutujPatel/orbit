@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "de1b3f02286cc0a5c3f7aeda61beaa681ec92d55",
+    "node_id": "MDY6Q29tbWl0MTYzNDQwMjE6ZGUxYjNmMDIyODZjYzBhNWMzZjdhZWRhNjFiZWFhNjgxZWM5MmQ1NQ==",
+    "commit": {
+      "author": {
+        "name": "Jonathan",
+        "email": "Jonathan@Hasenburg.de",
+        "date": "2014-04-16T13:12:58Z"
+      },
+      "committer": {
+        "name": "Jonathan",
+        "email": "Jonathan@Hasenburg.de",
+        "date": "2014-04-16T13:12:58Z"
+      },
+      "message": "Added Java 8",
+      "tree": {
+        "sha": "8164c9f84884ab0e0fff8654bad407c4f62c398d",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/8164c9f84884ab0e0fff8654bad407c4f62c398d"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/de1b3f02286cc0a5c3f7aeda61beaa681ec92d55",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/de1b3f02286cc0a5c3f7aeda61beaa681ec92d55",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/de1b3f02286cc0a5c3f7aeda61beaa681ec92d55",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/de1b3f02286cc0a5c3f7aeda61beaa681ec92d55/comments",
+    "author": {
+      "login": "MoeweX",
+      "id": 5738978,
+      "node_id": "MDQ6VXNlcjU3Mzg5Nzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5738978?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/MoeweX",
+      "html_url": "https://github.com/MoeweX",
+      "followers_url": "https://api.github.com/users/MoeweX/followers",
+      "following_url": "https://api.github.com/users/MoeweX/following{/other_user}",
+      "gists_url": "https://api.github.com/users/MoeweX/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/MoeweX/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/MoeweX/subscriptions",
+      "organizations_url": "https://api.github.com/users/MoeweX/orgs",
+      "repos_url": "https://api.github.com/users/MoeweX/repos",
+      "events_url": "https://api.github.com/users/MoeweX/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/MoeweX/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "MoeweX",
+      "id": 5738978,
+      "node_id": "MDQ6VXNlcjU3Mzg5Nzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5738978?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/MoeweX",
+      "html_url": "https://github.com/MoeweX",
+      "followers_url": "https://api.github.com/users/MoeweX/followers",
+      "following_url": "https://api.github.com/users/MoeweX/following{/other_user}",
+      "gists_url": "https://api.github.com/users/MoeweX/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/MoeweX/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/MoeweX/subscriptions",
+      "organizations_url": "https://api.github.com/users/MoeweX/orgs",
+      "repos_url": "https://api.github.com/users/MoeweX/repos",
+      "events_url": "https://api.github.com/users/MoeweX/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/MoeweX/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e2818097c8f704f79fa85c5e07b34da86f081857",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/e2818097c8f704f79fa85c5e07b34da86f081857",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/e2818097c8f704f79fa85c5e07b34da86f081857"
+      }
+    ]
+  }
+]

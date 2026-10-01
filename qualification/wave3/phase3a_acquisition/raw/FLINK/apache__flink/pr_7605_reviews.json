@@ -1,0 +1,282 @@
+[
+  {
+    "id": 217728490,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjE3NzI4NDkw",
+    "user": {
+      "login": "aljoscha",
+      "id": 68551,
+      "node_id": "MDQ6VXNlcjY4NTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68551?u=25437956d7ddd1e562d891b59ed49151f7a59d04&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aljoscha",
+      "html_url": "https://github.com/aljoscha",
+      "followers_url": "https://api.github.com/users/aljoscha/followers",
+      "following_url": "https://api.github.com/users/aljoscha/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aljoscha/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aljoscha/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aljoscha/subscriptions",
+      "organizations_url": "https://api.github.com/users/aljoscha/orgs",
+      "repos_url": "https://api.github.com/users/aljoscha/repos",
+      "events_url": "https://api.github.com/users/aljoscha/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aljoscha/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "Overall, I think this is a very good direction! \ud83d\udc4d I had some inline comments and now some comments here about the general idea.\r\n\r\n### TravisGroup Categories\r\n\r\nNot sure if they are placeholders or not. I think we should not strictly tie tests to given travis groups but rather have thematic categories and then in the travis configuration we choose which categories of tests get executed together. Tying them to Travis group would hardcode our current test setup into the code, which makes it less future-proof/flexible, I think.\r\n\r\n### Distributions and concurrency\r\n\r\nThe pom tries to ensure that we don't run tests in parallel because the \"distributions\", Flink and Kafka so far, would have problems with being accessed by multiple tests.\r\n\r\nI think instead we could create/copy a new directory for a distribution for each test to ensure isolation. This would also solve the problem of backing up and restoring the Flink configuration, which I think is prone to problems in the future. This would make things both more robust and potentially faster because we can exploit parallelism. Plus it would ensure that things can actually run in parallel without interfering, which is a nice addition.\r\n\r\nWhat do you think?",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/7605#pullrequestreview-217728490",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/7605",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/7605#pullrequestreview-217728490"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/7605"
+      }
+    },
+    "submitted_at": "2019-03-22T13:22:07Z",
+    "commit_id": "bbf013ef720758b668db8302c2eca0ba8dde9305"
+  },
+  {
+    "id": 219332926,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjE5MzMyOTI2",
+    "user": {
+      "login": "zentol",
+      "id": 5725237,
+      "node_id": "MDQ6VXNlcjU3MjUyMzc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5725237?u=ad355b2fd84f94db267035f067e4233be08a9e37&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zentol",
+      "html_url": "https://github.com/zentol",
+      "followers_url": "https://api.github.com/users/zentol/followers",
+      "following_url": "https://api.github.com/users/zentol/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zentol/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zentol/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zentol/subscriptions",
+      "organizations_url": "https://api.github.com/users/zentol/orgs",
+      "repos_url": "https://api.github.com/users/zentol/repos",
+      "events_url": "https://api.github.com/users/zentol/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zentol/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/7605#pullrequestreview-219332926",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/7605",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/7605#pullrequestreview-219332926"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/7605"
+      }
+    },
+    "submitted_at": "2019-03-27T08:59:09Z",
+    "commit_id": "bbf013ef720758b668db8302c2eca0ba8dde9305"
+  },
+  {
+    "id": 219334793,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjE5MzM0Nzkz",
+    "user": {
+      "login": "zentol",
+      "id": 5725237,
+      "node_id": "MDQ6VXNlcjU3MjUyMzc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5725237?u=ad355b2fd84f94db267035f067e4233be08a9e37&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zentol",
+      "html_url": "https://github.com/zentol",
+      "followers_url": "https://api.github.com/users/zentol/followers",
+      "following_url": "https://api.github.com/users/zentol/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zentol/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zentol/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zentol/subscriptions",
+      "organizations_url": "https://api.github.com/users/zentol/orgs",
+      "repos_url": "https://api.github.com/users/zentol/repos",
+      "events_url": "https://api.github.com/users/zentol/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zentol/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/7605#pullrequestreview-219334793",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/7605",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/7605#pullrequestreview-219334793"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/7605"
+      }
+    },
+    "submitted_at": "2019-03-27T09:03:21Z",
+    "commit_id": "bbf013ef720758b668db8302c2eca0ba8dde9305"
+  },
+  {
+    "id": 219335106,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjE5MzM1MTA2",
+    "user": {
+      "login": "zentol",
+      "id": 5725237,
+      "node_id": "MDQ6VXNlcjU3MjUyMzc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5725237?u=ad355b2fd84f94db267035f067e4233be08a9e37&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zentol",
+      "html_url": "https://github.com/zentol",
+      "followers_url": "https://api.github.com/users/zentol/followers",
+      "following_url": "https://api.github.com/users/zentol/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zentol/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zentol/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zentol/subscriptions",
+      "organizations_url": "https://api.github.com/users/zentol/orgs",
+      "repos_url": "https://api.github.com/users/zentol/repos",
+      "events_url": "https://api.github.com/users/zentol/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zentol/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/7605#pullrequestreview-219335106",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/7605",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/7605#pullrequestreview-219335106"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/7605"
+      }
+    },
+    "submitted_at": "2019-03-27T09:04:07Z",
+    "commit_id": "bbf013ef720758b668db8302c2eca0ba8dde9305"
+  },
+  {
+    "id": 219335283,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjE5MzM1Mjgz",
+    "user": {
+      "login": "zentol",
+      "id": 5725237,
+      "node_id": "MDQ6VXNlcjU3MjUyMzc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5725237?u=ad355b2fd84f94db267035f067e4233be08a9e37&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zentol",
+      "html_url": "https://github.com/zentol",
+      "followers_url": "https://api.github.com/users/zentol/followers",
+      "following_url": "https://api.github.com/users/zentol/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zentol/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zentol/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zentol/subscriptions",
+      "organizations_url": "https://api.github.com/users/zentol/orgs",
+      "repos_url": "https://api.github.com/users/zentol/repos",
+      "events_url": "https://api.github.com/users/zentol/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zentol/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/7605#pullrequestreview-219335283",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/7605",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/7605#pullrequestreview-219335283"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/7605"
+      }
+    },
+    "submitted_at": "2019-03-27T09:04:30Z",
+    "commit_id": "bbf013ef720758b668db8302c2eca0ba8dde9305"
+  },
+  {
+    "id": 219920509,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjE5OTIwNTA5",
+    "user": {
+      "login": "aljoscha",
+      "id": 68551,
+      "node_id": "MDQ6VXNlcjY4NTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68551?u=25437956d7ddd1e562d891b59ed49151f7a59d04&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aljoscha",
+      "html_url": "https://github.com/aljoscha",
+      "followers_url": "https://api.github.com/users/aljoscha/followers",
+      "following_url": "https://api.github.com/users/aljoscha/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aljoscha/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aljoscha/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aljoscha/subscriptions",
+      "organizations_url": "https://api.github.com/users/aljoscha/orgs",
+      "repos_url": "https://api.github.com/users/aljoscha/repos",
+      "events_url": "https://api.github.com/users/aljoscha/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aljoscha/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/7605#pullrequestreview-219920509",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/7605",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/7605#pullrequestreview-219920509"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/7605"
+      }
+    },
+    "submitted_at": "2019-03-28T09:54:07Z",
+    "commit_id": "bbf013ef720758b668db8302c2eca0ba8dde9305"
+  },
+  {
+    "id": 219977049,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjE5OTc3MDQ5",
+    "user": {
+      "login": "zentol",
+      "id": 5725237,
+      "node_id": "MDQ6VXNlcjU3MjUyMzc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5725237?u=ad355b2fd84f94db267035f067e4233be08a9e37&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/zentol",
+      "html_url": "https://github.com/zentol",
+      "followers_url": "https://api.github.com/users/zentol/followers",
+      "following_url": "https://api.github.com/users/zentol/following{/other_user}",
+      "gists_url": "https://api.github.com/users/zentol/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/zentol/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/zentol/subscriptions",
+      "organizations_url": "https://api.github.com/users/zentol/orgs",
+      "repos_url": "https://api.github.com/users/zentol/repos",
+      "events_url": "https://api.github.com/users/zentol/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/zentol/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/7605#pullrequestreview-219977049",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/7605",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/7605#pullrequestreview-219977049"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/7605"
+      }
+    },
+    "submitted_at": "2019-03-28T12:01:57Z",
+    "commit_id": "bbf013ef720758b668db8302c2eca0ba8dde9305"
+  }
+]

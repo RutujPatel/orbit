@@ -198,7 +198,7 @@ def make_mention_rel(
     is_explicit: bool = False,
 ) -> EvidenceRelationship:
     kind = "explicit_link" if is_explicit else "mentions"
-    basis = "explicit_metadata" if is_explicit else "declared_mention"
+    basis = "explicit_metadata" if is_explicit else "lexical_match"
     prov = ProvenanceRef(
         fixture_id="github_fixture.json",
         record_locator=f"{gh_ref.entity_id}.title",
@@ -1022,11 +1022,12 @@ class TestCrossCuttingAndAdversarial:
         assert "repo/10.title" in locators
 
     def test_stale_observation_handling(self):
+        # Real pipeline signal: code='invalid' with subject_scope='provenance:temporal'
         stale_qi = QualityIssue(
-            code="STALE",
+            code="invalid",
             subject_ref=None,
-            subject_scope="temporal:staleness",
-            message="Observation postdates review cutoff.",
+            subject_scope="provenance:temporal",
+            message="Resolved record timestamp postdates source cutoff.",
         )
         jira = make_jira_obs("PLAT-101", status="Done", status_cat="done", quality_issues=(stale_qi,))
         pr = make_pr_obs(10, state="open")
@@ -1045,6 +1046,16 @@ class TestCrossCuttingAndAdversarial:
         assert len(res.suppressed_evaluations) == 1
         assert res.suppressed_evaluations[0].sufficiency == "STALE"
         assert res.suppressed_evaluations[0].disposition == "SUPPRESSED"
+
+    def test_illegal_stale_quality_code_rejected(self):
+        """Constructing QualityIssue with non-standard code='STALE' raises ValueError."""
+        with pytest.raises(ValueError):
+            QualityIssue(
+                code="STALE",  # type: ignore[arg-type]
+                subject_ref=None,
+                subject_scope="temporal:staleness",
+                message="Observation postdates review cutoff.",
+            )
 
     def test_unresolved_reference_handling(self):
         pr = make_pr_obs(10, state="open")
@@ -1074,7 +1085,7 @@ class TestCrossCuttingAndAdversarial:
 
     def test_quality_issue_preservation(self):
         qi = QualityIssue(
-            code="INCOMPLETE_CHANGELOG",
+            code="incomplete",
             subject_ref=None,
             subject_scope="jira:history",
             message="Changelog is partial.",
@@ -1094,7 +1105,7 @@ class TestCrossCuttingAndAdversarial:
         res = evaluate_evidence_bundle(bundle)
         finding = res.findings[0]
         assert len(finding.quality_issues) == 1
-        assert finding.quality_issues[0].code == "INCOMPLETE_CHANGELOG"
+        assert finding.quality_issues[0].code == "incomplete"
 
     def test_deterministic_serialization(self):
         jira = make_jira_obs("PLAT-101", status="Done", status_cat="done")

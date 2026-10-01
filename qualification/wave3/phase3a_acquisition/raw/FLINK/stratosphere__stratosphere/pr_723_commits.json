@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "ffd9a3e9229de3d4ea4284e0e6e09ba35a7a8028",
+    "node_id": "MDY6Q29tbWl0OTQ5OTQyMjpmZmQ5YTNlOTIyOWRlM2Q0ZWE0Mjg0ZTBlNmUwOWJhMzVhN2E4MDI4",
+    "commit": {
+      "author": {
+        "name": "Aljoscha Krettek",
+        "email": "aljoscha.krettek@gmail.com",
+        "date": "2014-04-25T13:50:31Z"
+      },
+      "committer": {
+        "name": "Aljoscha Krettek",
+        "email": "aljoscha.krettek@gmail.com",
+        "date": "2014-04-25T16:56:05Z"
+      },
+      "message": "(Re)add TransitiveClosureNaive, fix join, add ITCase\n\nScala Join took left key selector for both sides of join. Re-enable\nunion. TransitiveClosureNaive uses union, this is tested in the ITCase.\n\nProperly disable GlobalSchemaGenerator, the information it created has\nnot been used, only local field positions have been used.",
+      "tree": {
+        "sha": "51e191324f9e937a4450a25d0e46af61bdaa1d8d",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/51e191324f9e937a4450a25d0e46af61bdaa1d8d"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/ffd9a3e9229de3d4ea4284e0e6e09ba35a7a8028",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/ffd9a3e9229de3d4ea4284e0e6e09ba35a7a8028",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/ffd9a3e9229de3d4ea4284e0e6e09ba35a7a8028",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/ffd9a3e9229de3d4ea4284e0e6e09ba35a7a8028/comments",
+    "author": {
+      "login": "aljoscha",
+      "id": 68551,
+      "node_id": "MDQ6VXNlcjY4NTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68551?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aljoscha",
+      "html_url": "https://github.com/aljoscha",
+      "followers_url": "https://api.github.com/users/aljoscha/followers",
+      "following_url": "https://api.github.com/users/aljoscha/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aljoscha/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aljoscha/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aljoscha/subscriptions",
+      "organizations_url": "https://api.github.com/users/aljoscha/orgs",
+      "repos_url": "https://api.github.com/users/aljoscha/repos",
+      "events_url": "https://api.github.com/users/aljoscha/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aljoscha/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "aljoscha",
+      "id": 68551,
+      "node_id": "MDQ6VXNlcjY4NTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68551?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aljoscha",
+      "html_url": "https://github.com/aljoscha",
+      "followers_url": "https://api.github.com/users/aljoscha/followers",
+      "following_url": "https://api.github.com/users/aljoscha/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aljoscha/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aljoscha/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aljoscha/subscriptions",
+      "organizations_url": "https://api.github.com/users/aljoscha/orgs",
+      "repos_url": "https://api.github.com/users/aljoscha/repos",
+      "events_url": "https://api.github.com/users/aljoscha/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aljoscha/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "80ab5309d5d6fcf505d555e5b66f1a75cec3e47f",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/80ab5309d5d6fcf505d555e5b66f1a75cec3e47f",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/80ab5309d5d6fcf505d555e5b66f1a75cec3e47f"
+      }
+    ]
+  }
+]

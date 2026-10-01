@@ -1,0 +1,1652 @@
+[
+  {
+    "sha": "f3ea4490f1eedf6de7a7063f4fc625262b2267f0",
+    "node_id": "MDY6Q29tbWl0MjA2NDU5OmYzZWE0NDkwZjFlZWRmNmRlN2E3MDYzZjRmYzYyNTI2MmIyMjY3ZjA=",
+    "commit": {
+      "author": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-07-06T13:24:42Z"
+      },
+      "committer": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-10-06T07:53:21Z"
+      },
+      "message": "Added end-to-end test that reproduces union with logical types problem",
+      "tree": {
+        "sha": "feb97e6cc7fd2e7f7b6f926711994a76dbcd9a77",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/feb97e6cc7fd2e7f7b6f926711994a76dbcd9a77"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/f3ea4490f1eedf6de7a7063f4fc625262b2267f0",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/f3ea4490f1eedf6de7a7063f4fc625262b2267f0",
+    "html_url": "https://github.com/apache/avro/commit/f3ea4490f1eedf6de7a7063f4fc625262b2267f0",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/f3ea4490f1eedf6de7a7063f4fc625262b2267f0/comments",
+    "author": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a11bd49e86d50f5a840ab2cdfe4f6927bedb4f93",
+        "url": "https://api.github.com/repos/apache/avro/commits/a11bd49e86d50f5a840ab2cdfe4f6927bedb4f93",
+        "html_url": "https://github.com/apache/avro/commit/a11bd49e86d50f5a840ab2cdfe4f6927bedb4f93"
+      }
+    ]
+  },
+  {
+    "sha": "2b745742f11e8c823155232cf431942e31f0751c",
+    "node_id": "MDY6Q29tbWl0MjA2NDU5OjJiNzQ1NzQyZjExZThjODIzMTU1MjMyY2Y0MzE5NDJlMzFmMDc1MWM=",
+    "commit": {
+      "author": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-08-06T12:27:23Z"
+      },
+      "committer": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-10-06T07:53:21Z"
+      },
+      "message": "Adding required conversions to SpecificData in generated class\n(same as in SpecificCompiler)",
+      "tree": {
+        "sha": "c14f2dd24643e23f576b7e000c0267a64757e7bc",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/c14f2dd24643e23f576b7e000c0267a64757e7bc"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/2b745742f11e8c823155232cf431942e31f0751c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/2b745742f11e8c823155232cf431942e31f0751c",
+    "html_url": "https://github.com/apache/avro/commit/2b745742f11e8c823155232cf431942e31f0751c",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/2b745742f11e8c823155232cf431942e31f0751c/comments",
+    "author": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f3ea4490f1eedf6de7a7063f4fc625262b2267f0",
+        "url": "https://api.github.com/repos/apache/avro/commits/f3ea4490f1eedf6de7a7063f4fc625262b2267f0",
+        "html_url": "https://github.com/apache/avro/commit/f3ea4490f1eedf6de7a7063f4fc625262b2267f0"
+      }
+    ]
+  },
+  {
+    "sha": "be3d3fbd0b774a6fec1e8ce5357010edf3a61fcc",
+    "node_id": "MDY6Q29tbWl0MjA2NDU5OmJlM2QzZmJkMGI3NzRhNmZlYzFlOGNlNTM1NzAxMGVkZjNhNjFmY2M=",
+    "commit": {
+      "author": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-08-06T13:47:36Z"
+      },
+      "committer": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-10-06T07:53:21Z"
+      },
+      "message": "Added test with BigDecimal",
+      "tree": {
+        "sha": "87148a9995bcbafefaa8f32d2d28123de024290e",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/87148a9995bcbafefaa8f32d2d28123de024290e"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/be3d3fbd0b774a6fec1e8ce5357010edf3a61fcc",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/be3d3fbd0b774a6fec1e8ce5357010edf3a61fcc",
+    "html_url": "https://github.com/apache/avro/commit/be3d3fbd0b774a6fec1e8ce5357010edf3a61fcc",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/be3d3fbd0b774a6fec1e8ce5357010edf3a61fcc/comments",
+    "author": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2b745742f11e8c823155232cf431942e31f0751c",
+        "url": "https://api.github.com/repos/apache/avro/commits/2b745742f11e8c823155232cf431942e31f0751c",
+        "html_url": "https://github.com/apache/avro/commit/2b745742f11e8c823155232cf431942e31f0751c"
+      }
+    ]
+  },
+  {
+    "sha": "f251c63778252637223e2911e03e0565e0b8858a",
+    "node_id": "MDY6Q29tbWl0MjA2NDU5OmYyNTFjNjM3NzgyNTI2MzcyMjNlMjkxMWUwM2UwNTY1ZTBiODg1OGE=",
+    "commit": {
+      "author": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-08-06T13:48:36Z"
+      },
+      "committer": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-10-06T07:53:21Z"
+      },
+      "message": "Added test with BigDecimal",
+      "tree": {
+        "sha": "a46d0caf9d6d791964413cf7741a15bf0ddf506c",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/a46d0caf9d6d791964413cf7741a15bf0ddf506c"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/f251c63778252637223e2911e03e0565e0b8858a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/f251c63778252637223e2911e03e0565e0b8858a",
+    "html_url": "https://github.com/apache/avro/commit/f251c63778252637223e2911e03e0565e0b8858a",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/f251c63778252637223e2911e03e0565e0b8858a/comments",
+    "author": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "be3d3fbd0b774a6fec1e8ce5357010edf3a61fcc",
+        "url": "https://api.github.com/repos/apache/avro/commits/be3d3fbd0b774a6fec1e8ce5357010edf3a61fcc",
+        "html_url": "https://github.com/apache/avro/commit/be3d3fbd0b774a6fec1e8ce5357010edf3a61fcc"
+      }
+    ]
+  },
+  {
+    "sha": "5e9917bf7a5d8f98f34123736084b19430884492",
+    "node_id": "MDY6Q29tbWl0MjA2NDU5OjVlOTkxN2JmN2E1ZDhmOThmMzQxMjM3MzYwODRiMTk0MzA4ODQ0OTI=",
+    "commit": {
+      "author": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-08-09T14:03:23Z"
+      },
+      "committer": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-10-06T08:06:35Z"
+      },
+      "message": "Introduced customizable conversions in compiler and Maven plugin.",
+      "tree": {
+        "sha": "68c7454a7847e9f230066ca2a3d17521c0e8e4fd",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/68c7454a7847e9f230066ca2a3d17521c0e8e4fd"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/5e9917bf7a5d8f98f34123736084b19430884492",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/5e9917bf7a5d8f98f34123736084b19430884492",
+    "html_url": "https://github.com/apache/avro/commit/5e9917bf7a5d8f98f34123736084b19430884492",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/5e9917bf7a5d8f98f34123736084b19430884492/comments",
+    "author": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f251c63778252637223e2911e03e0565e0b8858a",
+        "url": "https://api.github.com/repos/apache/avro/commits/f251c63778252637223e2911e03e0565e0b8858a",
+        "html_url": "https://github.com/apache/avro/commit/f251c63778252637223e2911e03e0565e0b8858a"
+      }
+    ]
+  },
+  {
+    "sha": "e587ab50d45a08da77e0697caff115181c1f6595",
+    "node_id": "MDY6Q29tbWl0MjA2NDU5OmU1ODdhYjUwZDQ1YTA4ZGE3N2UwNjk3Y2FmZjExNTE4MWMxZjY1OTU=",
+    "commit": {
+      "author": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-08-10T09:40:42Z"
+      },
+      "committer": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-10-06T08:06:35Z"
+      },
+      "message": "Fixed bug",
+      "tree": {
+        "sha": "1d73ead5c58fb9bdb497ae3f4592a929d7058432",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/1d73ead5c58fb9bdb497ae3f4592a929d7058432"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/e587ab50d45a08da77e0697caff115181c1f6595",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/e587ab50d45a08da77e0697caff115181c1f6595",
+    "html_url": "https://github.com/apache/avro/commit/e587ab50d45a08da77e0697caff115181c1f6595",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/e587ab50d45a08da77e0697caff115181c1f6595/comments",
+    "author": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5e9917bf7a5d8f98f34123736084b19430884492",
+        "url": "https://api.github.com/repos/apache/avro/commits/5e9917bf7a5d8f98f34123736084b19430884492",
+        "html_url": "https://github.com/apache/avro/commit/5e9917bf7a5d8f98f34123736084b19430884492"
+      }
+    ]
+  },
+  {
+    "sha": "50875e322f3f5bc83c0311302b96a189c6092e67",
+    "node_id": "MDY6Q29tbWl0MjA2NDU5OjUwODc1ZTMyMmYzZjViYzgzYzAzMTEzMDJiOTZhMTg5YzYwOTJlNjc=",
+    "commit": {
+      "author": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-08-13T11:54:10Z"
+      },
+      "committer": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-10-06T08:12:28Z"
+      },
+      "message": "Fixed Maven plugin classpath",
+      "tree": {
+        "sha": "b470a16e3a3b850ad1bcbcbd11f0ac525e5d3e2b",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/b470a16e3a3b850ad1bcbcbd11f0ac525e5d3e2b"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/50875e322f3f5bc83c0311302b96a189c6092e67",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/50875e322f3f5bc83c0311302b96a189c6092e67",
+    "html_url": "https://github.com/apache/avro/commit/50875e322f3f5bc83c0311302b96a189c6092e67",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/50875e322f3f5bc83c0311302b96a189c6092e67/comments",
+    "author": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e587ab50d45a08da77e0697caff115181c1f6595",
+        "url": "https://api.github.com/repos/apache/avro/commits/e587ab50d45a08da77e0697caff115181c1f6595",
+        "html_url": "https://github.com/apache/avro/commit/e587ab50d45a08da77e0697caff115181c1f6595"
+      }
+    ]
+  },
+  {
+    "sha": "3fb2a10b4f45eafd533f48d7272686bdecc7e1d5",
+    "node_id": "MDY6Q29tbWl0MjA2NDU5OjNmYjJhMTBiNGY0NWVhZmQ1MzNmNDhkNzI3MjY4NmJkZWNjN2UxZDU=",
+    "commit": {
+      "author": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-08-20T08:54:12Z"
+      },
+      "committer": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-10-06T08:12:28Z"
+      },
+      "message": "Get the correct SpecificData whenever possible, to get the right conversions",
+      "tree": {
+        "sha": "c1cab8e06521817d398b18a9799df1d73dd70d85",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/c1cab8e06521817d398b18a9799df1d73dd70d85"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/3fb2a10b4f45eafd533f48d7272686bdecc7e1d5",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/3fb2a10b4f45eafd533f48d7272686bdecc7e1d5",
+    "html_url": "https://github.com/apache/avro/commit/3fb2a10b4f45eafd533f48d7272686bdecc7e1d5",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/3fb2a10b4f45eafd533f48d7272686bdecc7e1d5/comments",
+    "author": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "50875e322f3f5bc83c0311302b96a189c6092e67",
+        "url": "https://api.github.com/repos/apache/avro/commits/50875e322f3f5bc83c0311302b96a189c6092e67",
+        "html_url": "https://github.com/apache/avro/commit/50875e322f3f5bc83c0311302b96a189c6092e67"
+      }
+    ]
+  },
+  {
+    "sha": "e5ed84f7501eb4e45a6c3c6c533cbd6fa7c140cc",
+    "node_id": "MDY6Q29tbWl0MjA2NDU5OmU1ZWQ4NGY3NTAxZWI0ZTQ1YTZjM2M2YzUzM2NiZDZmYTdjMTQwY2M=",
+    "commit": {
+      "author": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-08-20T09:12:08Z"
+      },
+      "committer": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-10-06T08:12:28Z"
+      },
+      "message": "No need to expose the map of conversions so expose only the values.",
+      "tree": {
+        "sha": "1a8537add779e491ec0ec63723b7abaacbde90a6",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/1a8537add779e491ec0ec63723b7abaacbde90a6"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/e5ed84f7501eb4e45a6c3c6c533cbd6fa7c140cc",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/e5ed84f7501eb4e45a6c3c6c533cbd6fa7c140cc",
+    "html_url": "https://github.com/apache/avro/commit/e5ed84f7501eb4e45a6c3c6c533cbd6fa7c140cc",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/e5ed84f7501eb4e45a6c3c6c533cbd6fa7c140cc/comments",
+    "author": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3fb2a10b4f45eafd533f48d7272686bdecc7e1d5",
+        "url": "https://api.github.com/repos/apache/avro/commits/3fb2a10b4f45eafd533f48d7272686bdecc7e1d5",
+        "html_url": "https://github.com/apache/avro/commit/3fb2a10b4f45eafd533f48d7272686bdecc7e1d5"
+      }
+    ]
+  },
+  {
+    "sha": "64f407b5c22dbf2dbd1a146bf6ffc85743e6f787",
+    "node_id": "MDY6Q29tbWl0MjA2NDU5OjY0ZjQwN2I1YzIyZGJmMmRiZDFhMTQ2YmY2ZmZjODU3NDNlNmY3ODc=",
+    "commit": {
+      "author": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-08-21T08:20:59Z"
+      },
+      "committer": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-10-06T08:15:38Z"
+      },
+      "message": "Better tests",
+      "tree": {
+        "sha": "9d378da730b27b1cec8638ac996069daf94aa68b",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/9d378da730b27b1cec8638ac996069daf94aa68b"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/64f407b5c22dbf2dbd1a146bf6ffc85743e6f787",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/64f407b5c22dbf2dbd1a146bf6ffc85743e6f787",
+    "html_url": "https://github.com/apache/avro/commit/64f407b5c22dbf2dbd1a146bf6ffc85743e6f787",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/64f407b5c22dbf2dbd1a146bf6ffc85743e6f787/comments",
+    "author": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e5ed84f7501eb4e45a6c3c6c533cbd6fa7c140cc",
+        "url": "https://api.github.com/repos/apache/avro/commits/e5ed84f7501eb4e45a6c3c6c533cbd6fa7c140cc",
+        "html_url": "https://github.com/apache/avro/commit/e5ed84f7501eb4e45a6c3c6c533cbd6fa7c140cc"
+      }
+    ]
+  },
+  {
+    "sha": "4be369bc77c419b2d07841ccbafdb8e3f9a772b9",
+    "node_id": "MDY6Q29tbWl0MjA2NDU5OjRiZTM2OWJjNzdjNDE5YjJkMDc4NDFjY2JhZmRiOGUzZjlhNzcyYjk=",
+    "commit": {
+      "author": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-08-21T13:15:48Z"
+      },
+      "committer": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-10-06T08:15:38Z"
+      },
+      "message": "Default values and conversions",
+      "tree": {
+        "sha": "0cee56ad1feede7ddd8e2ebb4de53d08e25c79f7",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/0cee56ad1feede7ddd8e2ebb4de53d08e25c79f7"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/4be369bc77c419b2d07841ccbafdb8e3f9a772b9",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/4be369bc77c419b2d07841ccbafdb8e3f9a772b9",
+    "html_url": "https://github.com/apache/avro/commit/4be369bc77c419b2d07841ccbafdb8e3f9a772b9",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/4be369bc77c419b2d07841ccbafdb8e3f9a772b9/comments",
+    "author": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "64f407b5c22dbf2dbd1a146bf6ffc85743e6f787",
+        "url": "https://api.github.com/repos/apache/avro/commits/64f407b5c22dbf2dbd1a146bf6ffc85743e6f787",
+        "html_url": "https://github.com/apache/avro/commit/64f407b5c22dbf2dbd1a146bf6ffc85743e6f787"
+      }
+    ]
+  },
+  {
+    "sha": "08a40fcd551c7ed9decf2ac643a1742b7ae451f5",
+    "node_id": "MDY6Q29tbWl0MjA2NDU5OjA4YTQwZmNkNTUxYzdlZDlkZWNmMmFjNjQzYTE3NDJiN2FlNDUxZjU=",
+    "commit": {
+      "author": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-08-21T14:23:30Z"
+      },
+      "committer": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-10-06T08:15:38Z"
+      },
+      "message": "Cleanup of some changes in Maven plugin",
+      "tree": {
+        "sha": "6a829bd98b1ea64de7fb55ca4d6f48b539a4c45e",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/6a829bd98b1ea64de7fb55ca4d6f48b539a4c45e"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/08a40fcd551c7ed9decf2ac643a1742b7ae451f5",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/08a40fcd551c7ed9decf2ac643a1742b7ae451f5",
+    "html_url": "https://github.com/apache/avro/commit/08a40fcd551c7ed9decf2ac643a1742b7ae451f5",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/08a40fcd551c7ed9decf2ac643a1742b7ae451f5/comments",
+    "author": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4be369bc77c419b2d07841ccbafdb8e3f9a772b9",
+        "url": "https://api.github.com/repos/apache/avro/commits/4be369bc77c419b2d07841ccbafdb8e3f9a772b9",
+        "html_url": "https://github.com/apache/avro/commit/4be369bc77c419b2d07841ccbafdb8e3f9a772b9"
+      }
+    ]
+  },
+  {
+    "sha": "e142230fa06e5bb2a42f32cc1d3203a258f9d2af",
+    "node_id": "MDY6Q29tbWl0MjA2NDU5OmUxNDIyMzBmYTA2ZTViYjJhNDJmMzJjYzFkMzIwM2EyNThmOWQyYWY=",
+    "commit": {
+      "author": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-08-22T12:19:41Z"
+      },
+      "committer": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-10-06T08:15:38Z"
+      },
+      "message": "Fixed equals() for classes with nested logical types. Improved tests",
+      "tree": {
+        "sha": "1695a54a896ba60a0c84631d3dbacb974d5dcf52",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/1695a54a896ba60a0c84631d3dbacb974d5dcf52"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/e142230fa06e5bb2a42f32cc1d3203a258f9d2af",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/e142230fa06e5bb2a42f32cc1d3203a258f9d2af",
+    "html_url": "https://github.com/apache/avro/commit/e142230fa06e5bb2a42f32cc1d3203a258f9d2af",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/e142230fa06e5bb2a42f32cc1d3203a258f9d2af/comments",
+    "author": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "08a40fcd551c7ed9decf2ac643a1742b7ae451f5",
+        "url": "https://api.github.com/repos/apache/avro/commits/08a40fcd551c7ed9decf2ac643a1742b7ae451f5",
+        "html_url": "https://github.com/apache/avro/commit/08a40fcd551c7ed9decf2ac643a1742b7ae451f5"
+      }
+    ]
+  },
+  {
+    "sha": "dccb147c64743a8dd4789c2e3fb3668f03989039",
+    "node_id": "MDY6Q29tbWl0MjA2NDU5OmRjY2IxNDdjNjQ3NDNhOGRkNDc4OWMyZTNmYjM2NjhmMDM5ODkwMzk=",
+    "commit": {
+      "author": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-10-06T11:17:41Z"
+      },
+      "committer": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-10-06T11:17:41Z"
+      },
+      "message": "Added missing copyright statement",
+      "tree": {
+        "sha": "c19eec6f9e7d41a26da0c594bf6e18d3fb69586f",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/c19eec6f9e7d41a26da0c594bf6e18d3fb69586f"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/dccb147c64743a8dd4789c2e3fb3668f03989039",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/dccb147c64743a8dd4789c2e3fb3668f03989039",
+    "html_url": "https://github.com/apache/avro/commit/dccb147c64743a8dd4789c2e3fb3668f03989039",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/dccb147c64743a8dd4789c2e3fb3668f03989039/comments",
+    "author": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e142230fa06e5bb2a42f32cc1d3203a258f9d2af",
+        "url": "https://api.github.com/repos/apache/avro/commits/e142230fa06e5bb2a42f32cc1d3203a258f9d2af",
+        "html_url": "https://github.com/apache/avro/commit/e142230fa06e5bb2a42f32cc1d3203a258f9d2af"
+      }
+    ]
+  },
+  {
+    "sha": "6a06fdeb4778116d38bd6e81fc200d95bbb24b04",
+    "node_id": "MDY6Q29tbWl0MjA2NDU5OjZhMDZmZGViNDc3ODExNmQzOGJkNmU4MWZjMjAwZDk1YmJiMjRiMDQ=",
+    "commit": {
+      "author": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-10-06T11:19:04Z"
+      },
+      "committer": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-10-06T11:19:04Z"
+      },
+      "message": "Fixed compile error after rebase",
+      "tree": {
+        "sha": "2edb017f5601ab6bd8621604c54232ce3eb13376",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/2edb017f5601ab6bd8621604c54232ce3eb13376"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/6a06fdeb4778116d38bd6e81fc200d95bbb24b04",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/6a06fdeb4778116d38bd6e81fc200d95bbb24b04",
+    "html_url": "https://github.com/apache/avro/commit/6a06fdeb4778116d38bd6e81fc200d95bbb24b04",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/6a06fdeb4778116d38bd6e81fc200d95bbb24b04/comments",
+    "author": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dccb147c64743a8dd4789c2e3fb3668f03989039",
+        "url": "https://api.github.com/repos/apache/avro/commits/dccb147c64743a8dd4789c2e3fb3668f03989039",
+        "html_url": "https://github.com/apache/avro/commit/dccb147c64743a8dd4789c2e3fb3668f03989039"
+      }
+    ]
+  },
+  {
+    "sha": "a2fb8d934c5a0ca5233df399fc871aea0e63ff6e",
+    "node_id": "MDY6Q29tbWl0MjA2NDU5OmEyZmI4ZDkzNGM1YTBjYTUyMzNkZjM5OWZjODcxYWVhMGU2M2ZmNmU=",
+    "commit": {
+      "author": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-11-09T10:21:30Z"
+      },
+      "committer": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-11-09T10:21:30Z"
+      },
+      "message": "Fixed problem with logical types in nested records.",
+      "tree": {
+        "sha": "9ba3651c57e21a9198e07a0568c1bf7827f1a40d",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/9ba3651c57e21a9198e07a0568c1bf7827f1a40d"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/a2fb8d934c5a0ca5233df399fc871aea0e63ff6e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/a2fb8d934c5a0ca5233df399fc871aea0e63ff6e",
+    "html_url": "https://github.com/apache/avro/commit/a2fb8d934c5a0ca5233df399fc871aea0e63ff6e",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/a2fb8d934c5a0ca5233df399fc871aea0e63ff6e/comments",
+    "author": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6a06fdeb4778116d38bd6e81fc200d95bbb24b04",
+        "url": "https://api.github.com/repos/apache/avro/commits/6a06fdeb4778116d38bd6e81fc200d95bbb24b04",
+        "html_url": "https://github.com/apache/avro/commit/6a06fdeb4778116d38bd6e81fc200d95bbb24b04"
+      }
+    ]
+  },
+  {
+    "sha": "4bfa8ab5ed89a30b09a0986498b3bdf7c0808ba6",
+    "node_id": "MDY6Q29tbWl0MjA2NDU5OjRiZmE4YWI1ZWQ4OWEzMGIwOWEwOTg2NDk4YjNiZGY3YzA4MDhiYTY=",
+    "commit": {
+      "author": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-11-09T14:50:17Z"
+      },
+      "committer": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-11-09T14:50:17Z"
+      },
+      "message": "Merge remote-tracking branch 'upstream/master'",
+      "tree": {
+        "sha": "d60a5ecddb808ec89fc60a76fd1c25ecc36dbdfd",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/d60a5ecddb808ec89fc60a76fd1c25ecc36dbdfd"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/4bfa8ab5ed89a30b09a0986498b3bdf7c0808ba6",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/4bfa8ab5ed89a30b09a0986498b3bdf7c0808ba6",
+    "html_url": "https://github.com/apache/avro/commit/4bfa8ab5ed89a30b09a0986498b3bdf7c0808ba6",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/4bfa8ab5ed89a30b09a0986498b3bdf7c0808ba6/comments",
+    "author": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a2fb8d934c5a0ca5233df399fc871aea0e63ff6e",
+        "url": "https://api.github.com/repos/apache/avro/commits/a2fb8d934c5a0ca5233df399fc871aea0e63ff6e",
+        "html_url": "https://github.com/apache/avro/commit/a2fb8d934c5a0ca5233df399fc871aea0e63ff6e"
+      },
+      {
+        "sha": "4fad66df0132c815a2a74c01704168d87f47009f",
+        "url": "https://api.github.com/repos/apache/avro/commits/4fad66df0132c815a2a74c01704168d87f47009f",
+        "html_url": "https://github.com/apache/avro/commit/4fad66df0132c815a2a74c01704168d87f47009f"
+      }
+    ]
+  },
+  {
+    "sha": "29fc837ca80fe2a7d94bb376d9eae2d8a8fe0c2c",
+    "node_id": "MDY6Q29tbWl0MjA2NDU5OjI5ZmM4MzdjYTgwZmUyYTdkOTRiYjM3NmQ5ZWFlMmQ4YThmZTBjMmM=",
+    "commit": {
+      "author": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-11-12T09:49:38Z"
+      },
+      "committer": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-11-12T09:49:38Z"
+      },
+      "message": "Fixed failing test.",
+      "tree": {
+        "sha": "601f4d925d1a74d37137ac8d3777b0dbe6dfb8be",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/601f4d925d1a74d37137ac8d3777b0dbe6dfb8be"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/29fc837ca80fe2a7d94bb376d9eae2d8a8fe0c2c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/29fc837ca80fe2a7d94bb376d9eae2d8a8fe0c2c",
+    "html_url": "https://github.com/apache/avro/commit/29fc837ca80fe2a7d94bb376d9eae2d8a8fe0c2c",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/29fc837ca80fe2a7d94bb376d9eae2d8a8fe0c2c/comments",
+    "author": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4bfa8ab5ed89a30b09a0986498b3bdf7c0808ba6",
+        "url": "https://api.github.com/repos/apache/avro/commits/4bfa8ab5ed89a30b09a0986498b3bdf7c0808ba6",
+        "html_url": "https://github.com/apache/avro/commit/4bfa8ab5ed89a30b09a0986498b3bdf7c0808ba6"
+      }
+    ]
+  },
+  {
+    "sha": "1c9441ac6c1b5ba6bd671b2f2ad21e0def884109",
+    "node_id": "MDY6Q29tbWl0MjA2NDU5OjFjOTQ0MWFjNmMxYjViYTZiZDY3MWIyZjJhZDIxZTBkZWY4ODQxMDk=",
+    "commit": {
+      "author": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-11-21T18:11:53Z"
+      },
+      "committer": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-11-21T18:11:53Z"
+      },
+      "message": "Fixed serialization problem when creating SpecificDatumReader from a class",
+      "tree": {
+        "sha": "96a17add800fd308af5db58c912b24b602dd4a2f",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/96a17add800fd308af5db58c912b24b602dd4a2f"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/1c9441ac6c1b5ba6bd671b2f2ad21e0def884109",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/1c9441ac6c1b5ba6bd671b2f2ad21e0def884109",
+    "html_url": "https://github.com/apache/avro/commit/1c9441ac6c1b5ba6bd671b2f2ad21e0def884109",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/1c9441ac6c1b5ba6bd671b2f2ad21e0def884109/comments",
+    "author": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "29fc837ca80fe2a7d94bb376d9eae2d8a8fe0c2c",
+        "url": "https://api.github.com/repos/apache/avro/commits/29fc837ca80fe2a7d94bb376d9eae2d8a8fe0c2c",
+        "html_url": "https://github.com/apache/avro/commit/29fc837ca80fe2a7d94bb376d9eae2d8a8fe0c2c"
+      }
+    ]
+  },
+  {
+    "sha": "e3a949f3b28e84d276e40531a93ad9e928f84d40",
+    "node_id": "MDY6Q29tbWl0MjA2NDU5OmUzYTk0OWYzYjI4ZTg0ZDI3NmU0MDUzMWE5M2FkOWU5MjhmODRkNDA=",
+    "commit": {
+      "author": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-12-04T07:53:50Z"
+      },
+      "committer": {
+        "name": "Katrin Skoglund",
+        "email": "katrin.skoglund@avanza.se",
+        "date": "2018-12-04T07:53:50Z"
+      },
+      "message": "Merge remote-tracking branch 'upstream/master'",
+      "tree": {
+        "sha": "39fc4bc87c69395799cd9bd974f94d75c22b288e",
+        "url": "https://api.github.com/repos/apache/avro/git/trees/39fc4bc87c69395799cd9bd974f94d75c22b288e"
+      },
+      "url": "https://api.github.com/repos/apache/avro/git/commits/e3a949f3b28e84d276e40531a93ad9e928f84d40",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/avro/commits/e3a949f3b28e84d276e40531a93ad9e928f84d40",
+    "html_url": "https://github.com/apache/avro/commit/e3a949f3b28e84d276e40531a93ad9e928f84d40",
+    "comments_url": "https://api.github.com/repos/apache/avro/commits/e3a949f3b28e84d276e40531a93ad9e928f84d40/comments",
+    "author": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "katrinsko",
+      "id": 13013908,
+      "node_id": "MDQ6VXNlcjEzMDEzOTA4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13013908?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/katrinsko",
+      "html_url": "https://github.com/katrinsko",
+      "followers_url": "https://api.github.com/users/katrinsko/followers",
+      "following_url": "https://api.github.com/users/katrinsko/following{/other_user}",
+      "gists_url": "https://api.github.com/users/katrinsko/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/katrinsko/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/katrinsko/subscriptions",
+      "organizations_url": "https://api.github.com/users/katrinsko/orgs",
+      "repos_url": "https://api.github.com/users/katrinsko/repos",
+      "events_url": "https://api.github.com/users/katrinsko/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/katrinsko/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1c9441ac6c1b5ba6bd671b2f2ad21e0def884109",
+        "url": "https://api.github.com/repos/apache/avro/commits/1c9441ac6c1b5ba6bd671b2f2ad21e0def884109",
+        "html_url": "https://github.com/apache/avro/commit/1c9441ac6c1b5ba6bd671b2f2ad21e0def884109"
+      },
+      {
+        "sha": "3299a9f0fa36367c7b5a68dc6bde633fe6e1ae1c",
+        "url": "https://api.github.com/repos/apache/avro/commits/3299a9f0fa36367c7b5a68dc6bde633fe6e1ae1c",
+        "html_url": "https://github.com/apache/avro/commit/3299a9f0fa36367c7b5a68dc6bde633fe6e1ae1c"
+      }
+    ]
+  }
+]

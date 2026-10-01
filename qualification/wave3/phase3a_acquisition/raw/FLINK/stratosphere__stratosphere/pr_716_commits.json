@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "919e99075c4a64e0c6588153dfa862509fd19549",
+    "node_id": "MDY6Q29tbWl0MTM1ODMxODk6OTE5ZTk5MDc1YzRhNjRlMGM2NTg4MTUzZGZhODYyNTA5ZmQxOTU0OQ==",
+    "commit": {
+      "author": {
+        "name": "Markus Holzemer",
+        "email": "markus.holzemer@gmx.de",
+        "date": "2014-04-23T11:47:39Z"
+      },
+      "committer": {
+        "name": "Markus Holzemer",
+        "email": "markus.holzemer@gmx.de",
+        "date": "2014-04-23T11:47:39Z"
+      },
+      "message": "Better estimations for filter operator",
+      "tree": {
+        "sha": "8a994d944e88a402ec5123206ad7768e748fec5b",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/8a994d944e88a402ec5123206ad7768e748fec5b"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/919e99075c4a64e0c6588153dfa862509fd19549",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/919e99075c4a64e0c6588153dfa862509fd19549",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/919e99075c4a64e0c6588153dfa862509fd19549",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/919e99075c4a64e0c6588153dfa862509fd19549/comments",
+    "author": {
+      "login": "markus-h",
+      "id": 724330,
+      "node_id": "MDQ6VXNlcjcyNDMzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/724330?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/markus-h",
+      "html_url": "https://github.com/markus-h",
+      "followers_url": "https://api.github.com/users/markus-h/followers",
+      "following_url": "https://api.github.com/users/markus-h/following{/other_user}",
+      "gists_url": "https://api.github.com/users/markus-h/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/markus-h/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/markus-h/subscriptions",
+      "organizations_url": "https://api.github.com/users/markus-h/orgs",
+      "repos_url": "https://api.github.com/users/markus-h/repos",
+      "events_url": "https://api.github.com/users/markus-h/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/markus-h/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "markus-h",
+      "id": 724330,
+      "node_id": "MDQ6VXNlcjcyNDMzMA==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/724330?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/markus-h",
+      "html_url": "https://github.com/markus-h",
+      "followers_url": "https://api.github.com/users/markus-h/followers",
+      "following_url": "https://api.github.com/users/markus-h/following{/other_user}",
+      "gists_url": "https://api.github.com/users/markus-h/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/markus-h/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/markus-h/subscriptions",
+      "organizations_url": "https://api.github.com/users/markus-h/orgs",
+      "repos_url": "https://api.github.com/users/markus-h/repos",
+      "events_url": "https://api.github.com/users/markus-h/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/markus-h/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8c9ca48effb7bddd7ee5578e727558f89adfb5cc",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/8c9ca48effb7bddd7ee5578e727558f89adfb5cc",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/8c9ca48effb7bddd7ee5578e727558f89adfb5cc"
+      }
+    ]
+  }
+]

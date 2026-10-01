@@ -1,0 +1,229 @@
+{
+  "corpus_id": "ORBIT-QUAL-WAVE3-APACHE-REAL-001",
+  "corpus_version": "1.0.0",
+  "governing_baseline": "6d82d123f8bf50316d2b1ab7a025bc5862a474ed",
+  "consolidation_head": "ea464540b8a414e4ab6e9a2b1a4be53ae31b40ab",
+  "acquisition_timestamp": "2026-09-30T12:26:00Z",
+  "provenance_summary": {
+    "total_records": 31,
+    "synthetic_records": 0,
+    "reconstructed_links": 0,
+    "provenance_classification": "REAL"
+  },
+  "source_systems": {
+    "jira": {
+      "system_name": "Apache Software Foundation Jira",
+      "instance_id": "issues.apache.org",
+      "source_locator": "/home/tecblic/public-jira-lab/mongo-data:JiraReposAnon.Apache",
+      "archive_provenance": "The Public Jira Dataset (Montgomery et al., MSR 2022 / Zenodo: 6499878)"
+    },
+    "github": {
+      "system_name": "GitHub (Official Apache Mirrors)",
+      "instance_id": "github.com/apache",
+      "source_locator": "https://api.github.com/repos/apache/",
+      "repositories": [
+        "apache/parquet-java",
+        "apache/kafka",
+        "apache/avro",
+        "apache/flink"
+      ]
+    }
+  },
+  "records": {
+    "jira_issues": [
+      {
+        "key": "PARQUET-2010",
+        "id": "13367621",
+        "file": "jira/PARQUET-2010.json",
+        "status": "Resolved"
+      },
+      {
+        "key": "KAFKA-13557",
+        "id": "13418679",
+        "file": "jira/KAFKA-13557.json",
+        "status": "Resolved"
+      },
+      {
+        "key": "AVRO-3234",
+        "id": "13406783",
+        "file": "jira/AVRO-3234.json",
+        "status": "Resolved"
+      },
+      {
+        "key": "FLINK-24409",
+        "id": "13404207",
+        "file": "jira/FLINK-24409.json",
+        "status": "Resolved"
+      },
+      {
+        "key": "FLINK-14386",
+        "id": "13262048",
+        "file": "jira/FLINK-14386.json",
+        "status": "Closed"
+      },
+      {
+        "key": "FLINK-14665",
+        "id": "13267011",
+        "file": "jira/FLINK-14665.json",
+        "status": "Closed"
+      }
+    ],
+    "github_pull_requests": [
+      {
+        "repo": "apache/parquet-java",
+        "number": 885,
+        "file": "github/parquet-java/pull_885.json",
+        "state": "closed",
+        "merged": true
+      },
+      {
+        "repo": "apache/kafka",
+        "number": 11617,
+        "file": "github/kafka/pull_11617.json",
+        "state": "closed",
+        "merged": true
+      },
+      {
+        "repo": "apache/avro",
+        "number": 1370,
+        "file": "github/avro/pull_1370.json",
+        "state": "closed",
+        "merged": true
+      },
+      {
+        "repo": "apache/flink",
+        "number": 17401,
+        "file": "github/flink/pull_17401.json",
+        "state": "closed",
+        "merged": false
+      },
+      {
+        "repo": "apache/flink",
+        "number": 17773,
+        "file": "github/flink/pull_17773.json",
+        "state": "closed",
+        "merged": true
+      },
+      {
+        "repo": "apache/flink",
+        "number": 17799,
+        "file": "github/flink/pull_17799.json",
+        "state": "closed",
+        "merged": true
+      },
+      {
+        "repo": "apache/flink",
+        "number": 10123,
+        "file": "github/flink/pull_10123.json",
+        "state": "closed",
+        "merged": false
+      }
+    ],
+    "negative_controls": [
+      {
+        "type": "jira_unlinked",
+        "key": "PARQUET-1812",
+        "file": "negative_controls/jira/PARQUET-1812.json"
+      },
+      {
+        "type": "jira_unlinked",
+        "key": "ZOOKEEPER-4348",
+        "file": "negative_controls/jira/ZOOKEEPER-4348.json"
+      },
+      {
+        "type": "github_pr_unlinked",
+        "repo": "apache/parquet-java",
+        "number": 3822,
+        "file": "negative_controls/github/parquet-java/pull_3822.json"
+      },
+      {
+        "type": "github_pr_bot_cve_mimic",
+        "key": "AXIOS-12613773",
+        "file": "negative_controls/github/snyk_bot/pull_8.json"
+      }
+    ]
+  },
+  "linkage_records": [
+    {
+      "chain_id": "CHAIN-01",
+      "jira_key": "PARQUET-2010",
+      "github_repo": "apache/parquet-java",
+      "github_pr": 885,
+      "linkage_type": "DECLARED_MENTION",
+      "declared_in": [
+        "pr_title",
+        "pr_branch",
+        "commit_message",
+        "pr_template"
+      ],
+      "remote_issue_link_present": false,
+      "merge_state": "MERGED",
+      "temporal_order_verified": true
+    },
+    {
+      "chain_id": "CHAIN-02",
+      "jira_key": "KAFKA-13557",
+      "github_repo": "apache/kafka",
+      "github_pr": 11617,
+      "linkage_type": "EXPLICIT_LINK",
+      "remote_issue_link_present": true,
+      "declared_in": [
+        "pr_title",
+        "commit_message"
+      ],
+      "commit_count": 5,
+      "cardinality": "ONE_TO_MANY_COMMITS",
+      "merge_state": "MERGED",
+      "temporal_order_verified": true
+    },
+    {
+      "chain_id": "CHAIN-03",
+      "jira_key": "AVRO-3234",
+      "github_repo": "apache/avro",
+      "github_pr": 1370,
+      "linkage_type": "EXPLICIT_LINK",
+      "remote_issue_link_present": true,
+      "declared_in": [
+        "pr_title",
+        "commit_message"
+      ],
+      "commit_count": 2,
+      "merge_state": "MERGED",
+      "temporal_order_verified": true
+    },
+    {
+      "chain_id": "CHAIN-04",
+      "jira_key": "FLINK-24409",
+      "github_repo": "apache/flink",
+      "github_prs": [
+        17401,
+        17773,
+        17799
+      ],
+      "linkage_type": "EXPLICIT_LINK",
+      "remote_issue_link_present": true,
+      "cardinality": "ONE_TO_MANY_PRS",
+      "merge_state": "PARTIAL_MERGED (1 abandoned, 1 merged to master, 1 merged to release-1.14)",
+      "temporal_order_verified": true
+    },
+    {
+      "chain_id": "CHAIN-05",
+      "jira_keys": [
+        "FLINK-14386",
+        "FLINK-14665"
+      ],
+      "github_repo": "apache/flink",
+      "github_pr": 10123,
+      "linkage_type": "EXPLICIT_LINK",
+      "remote_issue_link_present": true,
+      "cardinality": "MANY_TO_ONE_PR",
+      "merge_state": "CLOSED_COMMAND_LINE_MERGE",
+      "temporal_order_verified": true
+    }
+  ],
+  "exclusions": [
+    "Apache Mahout (permanently excluded qualification baseline)",
+    "GoGreen (permanently excluded legacy research baseline)",
+    "TrueTenant (permanently excluded research baseline)"
+  ]
+}

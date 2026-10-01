@@ -1,0 +1,417 @@
+[
+  {
+    "sha": "6b5b46cd1f57d0b8258ae83cb7977c73ac2d80c6",
+    "node_id": "MDY6Q29tbWl0NjkzNDM5NTo2YjViNDZjZDFmNTdkMGI4MjU4YWU4M2NiNzk3N2M3M2FjMmQ4MGM2",
+    "commit": {
+      "author": {
+        "name": "Tomas Kolda",
+        "email": "koldat@gmail.com",
+        "date": "2019-12-04T12:10:08Z"
+      },
+      "committer": {
+        "name": "Tomas Kolda",
+        "email": "koldat@gmail.com",
+        "date": "2020-01-15T07:23:25Z"
+      },
+      "message": "JNI direct buffer support for many operations",
+      "tree": {
+        "sha": "79a440d5e97e55d2deaae7b9d13461de10a07867",
+        "url": "https://api.github.com/repos/facebook/rocksdb/git/trees/79a440d5e97e55d2deaae7b9d13461de10a07867"
+      },
+      "url": "https://api.github.com/repos/facebook/rocksdb/git/commits/6b5b46cd1f57d0b8258ae83cb7977c73ac2d80c6",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/facebook/rocksdb/commits/6b5b46cd1f57d0b8258ae83cb7977c73ac2d80c6",
+    "html_url": "https://github.com/facebook/rocksdb/commit/6b5b46cd1f57d0b8258ae83cb7977c73ac2d80c6",
+    "comments_url": "https://api.github.com/repos/facebook/rocksdb/commits/6b5b46cd1f57d0b8258ae83cb7977c73ac2d80c6/comments",
+    "author": {
+      "login": "koldat",
+      "id": 16866502,
+      "node_id": "MDQ6VXNlcjE2ODY2NTAy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16866502?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/koldat",
+      "html_url": "https://github.com/koldat",
+      "followers_url": "https://api.github.com/users/koldat/followers",
+      "following_url": "https://api.github.com/users/koldat/following{/other_user}",
+      "gists_url": "https://api.github.com/users/koldat/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/koldat/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/koldat/subscriptions",
+      "organizations_url": "https://api.github.com/users/koldat/orgs",
+      "repos_url": "https://api.github.com/users/koldat/repos",
+      "events_url": "https://api.github.com/users/koldat/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/koldat/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "koldat",
+      "id": 16866502,
+      "node_id": "MDQ6VXNlcjE2ODY2NTAy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16866502?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/koldat",
+      "html_url": "https://github.com/koldat",
+      "followers_url": "https://api.github.com/users/koldat/followers",
+      "following_url": "https://api.github.com/users/koldat/following{/other_user}",
+      "gists_url": "https://api.github.com/users/koldat/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/koldat/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/koldat/subscriptions",
+      "organizations_url": "https://api.github.com/users/koldat/orgs",
+      "repos_url": "https://api.github.com/users/koldat/repos",
+      "events_url": "https://api.github.com/users/koldat/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/koldat/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1dd7873e08c1f55dabb8451f1b8795fcdb012887",
+        "url": "https://api.github.com/repos/facebook/rocksdb/commits/1dd7873e08c1f55dabb8451f1b8795fcdb012887",
+        "html_url": "https://github.com/facebook/rocksdb/commit/1dd7873e08c1f55dabb8451f1b8795fcdb012887"
+      }
+    ]
+  },
+  {
+    "sha": "92f1f2dea42e2c5f15d900b6be8ec9389919b5d6",
+    "node_id": "MDY6Q29tbWl0NjkzNDM5NTo5MmYxZjJkZWE0MmUyYzVmMTVkOTAwYjZiZThlYzkzODk5MTliNWQ2",
+    "commit": {
+      "author": {
+        "name": "Tomas Kolda",
+        "email": "koldat@gmail.com",
+        "date": "2020-01-15T07:03:15Z"
+      },
+      "committer": {
+        "name": "Tomas Kolda",
+        "email": "koldat@gmail.com",
+        "date": "2020-01-15T07:23:26Z"
+      },
+      "message": "JNI Direct buffers are consumed (possition set to limit) when passed to Rocksdb JNI functions.",
+      "tree": {
+        "sha": "d779cae2d56f9326b7ef3065e35e28db2cb26b52",
+        "url": "https://api.github.com/repos/facebook/rocksdb/git/trees/d779cae2d56f9326b7ef3065e35e28db2cb26b52"
+      },
+      "url": "https://api.github.com/repos/facebook/rocksdb/git/commits/92f1f2dea42e2c5f15d900b6be8ec9389919b5d6",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/facebook/rocksdb/commits/92f1f2dea42e2c5f15d900b6be8ec9389919b5d6",
+    "html_url": "https://github.com/facebook/rocksdb/commit/92f1f2dea42e2c5f15d900b6be8ec9389919b5d6",
+    "comments_url": "https://api.github.com/repos/facebook/rocksdb/commits/92f1f2dea42e2c5f15d900b6be8ec9389919b5d6/comments",
+    "author": {
+      "login": "koldat",
+      "id": 16866502,
+      "node_id": "MDQ6VXNlcjE2ODY2NTAy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16866502?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/koldat",
+      "html_url": "https://github.com/koldat",
+      "followers_url": "https://api.github.com/users/koldat/followers",
+      "following_url": "https://api.github.com/users/koldat/following{/other_user}",
+      "gists_url": "https://api.github.com/users/koldat/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/koldat/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/koldat/subscriptions",
+      "organizations_url": "https://api.github.com/users/koldat/orgs",
+      "repos_url": "https://api.github.com/users/koldat/repos",
+      "events_url": "https://api.github.com/users/koldat/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/koldat/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "koldat",
+      "id": 16866502,
+      "node_id": "MDQ6VXNlcjE2ODY2NTAy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16866502?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/koldat",
+      "html_url": "https://github.com/koldat",
+      "followers_url": "https://api.github.com/users/koldat/followers",
+      "following_url": "https://api.github.com/users/koldat/following{/other_user}",
+      "gists_url": "https://api.github.com/users/koldat/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/koldat/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/koldat/subscriptions",
+      "organizations_url": "https://api.github.com/users/koldat/orgs",
+      "repos_url": "https://api.github.com/users/koldat/repos",
+      "events_url": "https://api.github.com/users/koldat/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/koldat/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6b5b46cd1f57d0b8258ae83cb7977c73ac2d80c6",
+        "url": "https://api.github.com/repos/facebook/rocksdb/commits/6b5b46cd1f57d0b8258ae83cb7977c73ac2d80c6",
+        "html_url": "https://github.com/facebook/rocksdb/commit/6b5b46cd1f57d0b8258ae83cb7977c73ac2d80c6"
+      }
+    ]
+  },
+  {
+    "sha": "fed48f98a34928f2f01636158d6bf1c4600e6b31",
+    "node_id": "MDY6Q29tbWl0NjkzNDM5NTpmZWQ0OGY5OGEzNDkyOGYyZjAxNjM2MTU4ZDZiZjFjNDYwMGU2YjMx",
+    "commit": {
+      "author": {
+        "name": "Adam Retter",
+        "email": "adam.retter@googlemail.com",
+        "date": "2020-02-11T10:03:58Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2020-02-11T10:03:58Z"
+      },
+      "message": "Merge branch 'master' into jniDirectBuffer",
+      "tree": {
+        "sha": "4aaa197615425a4e3f0be21db927a5c8faf792f2",
+        "url": "https://api.github.com/repos/facebook/rocksdb/git/trees/4aaa197615425a4e3f0be21db927a5c8faf792f2"
+      },
+      "url": "https://api.github.com/repos/facebook/rocksdb/git/commits/fed48f98a34928f2f01636158d6bf1c4600e6b31",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJeQnwOCRBK7hj4Ov3rIwAAdHIIACo+FJWTslAnXcHHjv9Z1q4W\nhIK1fYAbhC+yhLkgWtkiOvAq9TPAP5wMm62jJi1voTg4KS796skrz6HkzJslmEB+\nHsR4hP+v3puIILTzxdzWLJL4zTtbyByif+b8YI6HjKZK9Kd9dkr3oWxeOTLzcEbJ\nDqtHFjkhYv8iPo7hW9NrBZkFiZfcCfHY2LaRIY3BkYa+Q49MlvYHMPiFW7Lp33+9\ny2wCfbzArufee1VS9uVtUSsDDkJfKGUh8J2VkasgP1pgX9GLRLAEPX8jSWSYJCna\nBCGlLT3gCbBdqtvvlEQqs6aHLlXTj0ePaBpjLrTTAMbZcHiJwzJHLlcHHO5AAIo=\n=rHRc\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 4aaa197615425a4e3f0be21db927a5c8faf792f2\nparent 92f1f2dea42e2c5f15d900b6be8ec9389919b5d6\nparent 28aa09dccea2950d053e3924ac59fd14f14aad09\nauthor Adam Retter <adam.retter@googlemail.com> 1581415438 +0100\ncommitter GitHub <noreply@github.com> 1581415438 +0100\n\nMerge branch 'master' into jniDirectBuffer",
+        "verified_at": "2024-11-14T14:24:07Z"
+      }
+    },
+    "url": "https://api.github.com/repos/facebook/rocksdb/commits/fed48f98a34928f2f01636158d6bf1c4600e6b31",
+    "html_url": "https://github.com/facebook/rocksdb/commit/fed48f98a34928f2f01636158d6bf1c4600e6b31",
+    "comments_url": "https://api.github.com/repos/facebook/rocksdb/commits/fed48f98a34928f2f01636158d6bf1c4600e6b31/comments",
+    "author": {
+      "login": "adamretter",
+      "id": 1264057,
+      "node_id": "MDQ6VXNlcjEyNjQwNTc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1264057?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/adamretter",
+      "html_url": "https://github.com/adamretter",
+      "followers_url": "https://api.github.com/users/adamretter/followers",
+      "following_url": "https://api.github.com/users/adamretter/following{/other_user}",
+      "gists_url": "https://api.github.com/users/adamretter/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/adamretter/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/adamretter/subscriptions",
+      "organizations_url": "https://api.github.com/users/adamretter/orgs",
+      "repos_url": "https://api.github.com/users/adamretter/repos",
+      "events_url": "https://api.github.com/users/adamretter/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/adamretter/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "92f1f2dea42e2c5f15d900b6be8ec9389919b5d6",
+        "url": "https://api.github.com/repos/facebook/rocksdb/commits/92f1f2dea42e2c5f15d900b6be8ec9389919b5d6",
+        "html_url": "https://github.com/facebook/rocksdb/commit/92f1f2dea42e2c5f15d900b6be8ec9389919b5d6"
+      },
+      {
+        "sha": "28aa09dccea2950d053e3924ac59fd14f14aad09",
+        "url": "https://api.github.com/repos/facebook/rocksdb/commits/28aa09dccea2950d053e3924ac59fd14f14aad09",
+        "html_url": "https://github.com/facebook/rocksdb/commit/28aa09dccea2950d053e3924ac59fd14f14aad09"
+      }
+    ]
+  },
+  {
+    "sha": "9c877f5416c610d38ef4dccf02f4504bd4b734a6",
+    "node_id": "MDY6Q29tbWl0NjkzNDM5NTo5Yzg3N2Y1NDE2YzYxMGQzOGVmNGRjY2YwMmY0NTA0YmQ0YjczNGE2",
+    "commit": {
+      "author": {
+        "name": "Peter Dillinger",
+        "email": "peterd@fb.com",
+        "date": "2020-02-11T19:07:25Z"
+      },
+      "committer": {
+        "name": "Peter Dillinger",
+        "email": "peterd@fb.com",
+        "date": "2020-02-11T19:07:25Z"
+      },
+      "message": "Update HISTORY.md",
+      "tree": {
+        "sha": "aa6c92d28ae1d4604ecd66a602305161a32abee8",
+        "url": "https://api.github.com/repos/facebook/rocksdb/git/trees/aa6c92d28ae1d4604ecd66a602305161a32abee8"
+      },
+      "url": "https://api.github.com/repos/facebook/rocksdb/git/commits/9c877f5416c610d38ef4dccf02f4504bd4b734a6",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/facebook/rocksdb/commits/9c877f5416c610d38ef4dccf02f4504bd4b734a6",
+    "html_url": "https://github.com/facebook/rocksdb/commit/9c877f5416c610d38ef4dccf02f4504bd4b734a6",
+    "comments_url": "https://api.github.com/repos/facebook/rocksdb/commits/9c877f5416c610d38ef4dccf02f4504bd4b734a6/comments",
+    "author": {
+      "login": "pdillinger",
+      "id": 7980268,
+      "node_id": "MDQ6VXNlcjc5ODAyNjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7980268?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/pdillinger",
+      "html_url": "https://github.com/pdillinger",
+      "followers_url": "https://api.github.com/users/pdillinger/followers",
+      "following_url": "https://api.github.com/users/pdillinger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/pdillinger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/pdillinger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/pdillinger/subscriptions",
+      "organizations_url": "https://api.github.com/users/pdillinger/orgs",
+      "repos_url": "https://api.github.com/users/pdillinger/repos",
+      "events_url": "https://api.github.com/users/pdillinger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/pdillinger/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "pdillinger",
+      "id": 7980268,
+      "node_id": "MDQ6VXNlcjc5ODAyNjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7980268?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/pdillinger",
+      "html_url": "https://github.com/pdillinger",
+      "followers_url": "https://api.github.com/users/pdillinger/followers",
+      "following_url": "https://api.github.com/users/pdillinger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/pdillinger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/pdillinger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/pdillinger/subscriptions",
+      "organizations_url": "https://api.github.com/users/pdillinger/orgs",
+      "repos_url": "https://api.github.com/users/pdillinger/repos",
+      "events_url": "https://api.github.com/users/pdillinger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/pdillinger/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "fed48f98a34928f2f01636158d6bf1c4600e6b31",
+        "url": "https://api.github.com/repos/facebook/rocksdb/commits/fed48f98a34928f2f01636158d6bf1c4600e6b31",
+        "html_url": "https://github.com/facebook/rocksdb/commit/fed48f98a34928f2f01636158d6bf1c4600e6b31"
+      }
+    ]
+  },
+  {
+    "sha": "90c0a3bba362d8c85d382b115872c5f23ed1b7c5",
+    "node_id": "MDY6Q29tbWl0NjkzNDM5NTo5MGMwYTNiYmEzNjJkOGM4NWQzODJiMTE1ODcyYzVmMjNlZDFiN2M1",
+    "commit": {
+      "author": {
+        "name": "Peter Dillinger",
+        "email": "peterd@fb.com",
+        "date": "2020-02-11T20:12:44Z"
+      },
+      "committer": {
+        "name": "Peter Dillinger",
+        "email": "peterd@fb.com",
+        "date": "2020-02-11T20:12:44Z"
+      },
+      "message": "Newline fix",
+      "tree": {
+        "sha": "4eac402ddb943bd8ba6fe7fef4c414b083fb0b94",
+        "url": "https://api.github.com/repos/facebook/rocksdb/git/trees/4eac402ddb943bd8ba6fe7fef4c414b083fb0b94"
+      },
+      "url": "https://api.github.com/repos/facebook/rocksdb/git/commits/90c0a3bba362d8c85d382b115872c5f23ed1b7c5",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/facebook/rocksdb/commits/90c0a3bba362d8c85d382b115872c5f23ed1b7c5",
+    "html_url": "https://github.com/facebook/rocksdb/commit/90c0a3bba362d8c85d382b115872c5f23ed1b7c5",
+    "comments_url": "https://api.github.com/repos/facebook/rocksdb/commits/90c0a3bba362d8c85d382b115872c5f23ed1b7c5/comments",
+    "author": {
+      "login": "pdillinger",
+      "id": 7980268,
+      "node_id": "MDQ6VXNlcjc5ODAyNjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7980268?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/pdillinger",
+      "html_url": "https://github.com/pdillinger",
+      "followers_url": "https://api.github.com/users/pdillinger/followers",
+      "following_url": "https://api.github.com/users/pdillinger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/pdillinger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/pdillinger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/pdillinger/subscriptions",
+      "organizations_url": "https://api.github.com/users/pdillinger/orgs",
+      "repos_url": "https://api.github.com/users/pdillinger/repos",
+      "events_url": "https://api.github.com/users/pdillinger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/pdillinger/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "pdillinger",
+      "id": 7980268,
+      "node_id": "MDQ6VXNlcjc5ODAyNjg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7980268?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/pdillinger",
+      "html_url": "https://github.com/pdillinger",
+      "followers_url": "https://api.github.com/users/pdillinger/followers",
+      "following_url": "https://api.github.com/users/pdillinger/following{/other_user}",
+      "gists_url": "https://api.github.com/users/pdillinger/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/pdillinger/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/pdillinger/subscriptions",
+      "organizations_url": "https://api.github.com/users/pdillinger/orgs",
+      "repos_url": "https://api.github.com/users/pdillinger/repos",
+      "events_url": "https://api.github.com/users/pdillinger/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/pdillinger/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9c877f5416c610d38ef4dccf02f4504bd4b734a6",
+        "url": "https://api.github.com/repos/facebook/rocksdb/commits/9c877f5416c610d38ef4dccf02f4504bd4b734a6",
+        "html_url": "https://github.com/facebook/rocksdb/commit/9c877f5416c610d38ef4dccf02f4504bd4b734a6"
+      }
+    ]
+  }
+]

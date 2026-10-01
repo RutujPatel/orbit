@@ -1,0 +1,1202 @@
+[
+  {
+    "id": 430090544,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDMwMDkwNTQ0",
+    "user": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?u=18da54e264652a6ebd5db4d20e511eb6ad3733ce&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-430090544",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-430090544"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-06-13T00:10:41Z",
+    "commit_id": null
+  },
+  {
+    "id": 430090800,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDMwMDkwODAw",
+    "user": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?u=18da54e264652a6ebd5db4d20e511eb6ad3733ce&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-430090800",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-430090800"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-06-13T00:12:15Z",
+    "commit_id": null
+  },
+  {
+    "id": 430091128,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDMwMDkxMTI4",
+    "user": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?u=18da54e264652a6ebd5db4d20e511eb6ad3733ce&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-430091128",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-430091128"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-06-13T00:14:20Z",
+    "commit_id": null
+  },
+  {
+    "id": 430091536,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDMwMDkxNTM2",
+    "user": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?u=18da54e264652a6ebd5db4d20e511eb6ad3733ce&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-430091536",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-430091536"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-06-13T00:16:46Z",
+    "commit_id": null
+  },
+  {
+    "id": 430108236,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDMwMTA4MjM2",
+    "user": {
+      "login": "abbccdda",
+      "id": 5845561,
+      "node_id": "MDQ6VXNlcjU4NDU1NjE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5845561?u=02d0973783c4439f16c79c32605978eff10f86a1&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/abbccdda",
+      "html_url": "https://github.com/abbccdda",
+      "followers_url": "https://api.github.com/users/abbccdda/followers",
+      "following_url": "https://api.github.com/users/abbccdda/following{/other_user}",
+      "gists_url": "https://api.github.com/users/abbccdda/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/abbccdda/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/abbccdda/subscriptions",
+      "organizations_url": "https://api.github.com/users/abbccdda/orgs",
+      "repos_url": "https://api.github.com/users/abbccdda/repos",
+      "events_url": "https://api.github.com/users/abbccdda/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/abbccdda/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "Looks like the only remaining question is the deprecation path, and no actual production logic change? If so, I could rely on reviews from other tech leads to unblock.",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-430108236",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "NONE",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-430108236"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-06-13T02:58:54Z",
+    "commit_id": null
+  },
+  {
+    "id": 443424531,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDQzNDI0NTMx",
+    "user": {
+      "login": "hachikuji",
+      "id": 12502538,
+      "node_id": "MDQ6VXNlcjEyNTAyNTM4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12502538?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hachikuji",
+      "html_url": "https://github.com/hachikuji",
+      "followers_url": "https://api.github.com/users/hachikuji/followers",
+      "following_url": "https://api.github.com/users/hachikuji/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hachikuji/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hachikuji/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hachikuji/subscriptions",
+      "organizations_url": "https://api.github.com/users/hachikuji/orgs",
+      "repos_url": "https://api.github.com/users/hachikuji/repos",
+      "events_url": "https://api.github.com/users/hachikuji/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hachikuji/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "I just had one question about the proposal. Using `retries=0` in the producer allows the user to have \"at-most-once\" delivery. This allows the application to implement its own retry logic for example. Do we still have a way to do this once this configuration is gone?",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-443424531",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-443424531"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-07-06T21:56:44Z",
+    "commit_id": null
+  },
+  {
+    "id": 443471214,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDQzNDcxMjE0",
+    "user": {
+      "login": "vvcephei",
+      "id": 832787,
+      "node_id": "MDQ6VXNlcjgzMjc4Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/832787?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/vvcephei",
+      "html_url": "https://github.com/vvcephei",
+      "followers_url": "https://api.github.com/users/vvcephei/followers",
+      "following_url": "https://api.github.com/users/vvcephei/following{/other_user}",
+      "gists_url": "https://api.github.com/users/vvcephei/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/vvcephei/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/vvcephei/subscriptions",
+      "organizations_url": "https://api.github.com/users/vvcephei/orgs",
+      "repos_url": "https://api.github.com/users/vvcephei/repos",
+      "events_url": "https://api.github.com/users/vvcephei/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/vvcephei/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "Hey @mjsax , sorry I was so slow on the review. It LGTM overall, just a few comments. Thanks for the PR!",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-443471214",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-443471214"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-07-06T23:48:32Z",
+    "commit_id": null
+  },
+  {
+    "id": 444192119,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDQ0MTkyMTE5",
+    "user": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?u=18da54e264652a6ebd5db4d20e511eb6ad3733ce&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-444192119",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-444192119"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-07-07T19:36:41Z",
+    "commit_id": null
+  },
+  {
+    "id": 444198918,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDQ0MTk4OTE4",
+    "user": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?u=18da54e264652a6ebd5db4d20e511eb6ad3733ce&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-444198918",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-444198918"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-07-07T19:47:10Z",
+    "commit_id": null
+  },
+  {
+    "id": 444199739,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDQ0MTk5NzM5",
+    "user": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?u=18da54e264652a6ebd5db4d20e511eb6ad3733ce&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-444199739",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-444199739"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-07-07T19:48:27Z",
+    "commit_id": null
+  },
+  {
+    "id": 444203820,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDQ0MjAzODIw",
+    "user": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?u=18da54e264652a6ebd5db4d20e511eb6ad3733ce&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-444203820",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-444203820"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-07-07T19:54:26Z",
+    "commit_id": null
+  },
+  {
+    "id": 444946999,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDQ0OTQ2OTk5",
+    "user": {
+      "login": "hachikuji",
+      "id": 12502538,
+      "node_id": "MDQ6VXNlcjEyNTAyNTM4",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12502538?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/hachikuji",
+      "html_url": "https://github.com/hachikuji",
+      "followers_url": "https://api.github.com/users/hachikuji/followers",
+      "following_url": "https://api.github.com/users/hachikuji/following{/other_user}",
+      "gists_url": "https://api.github.com/users/hachikuji/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/hachikuji/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/hachikuji/subscriptions",
+      "organizations_url": "https://api.github.com/users/hachikuji/orgs",
+      "repos_url": "https://api.github.com/users/hachikuji/repos",
+      "events_url": "https://api.github.com/users/hachikuji/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/hachikuji/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-444946999",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-444946999"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-07-08T16:42:31Z",
+    "commit_id": null
+  },
+  {
+    "id": 445167429,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDQ1MTY3NDI5",
+    "user": {
+      "login": "rhauch",
+      "id": 84732,
+      "node_id": "MDQ6VXNlcjg0NzMy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/84732?u=6f266f6bda8baaf493e807363f4ca9e20afa0692&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rhauch",
+      "html_url": "https://github.com/rhauch",
+      "followers_url": "https://api.github.com/users/rhauch/followers",
+      "following_url": "https://api.github.com/users/rhauch/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rhauch/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rhauch/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rhauch/subscriptions",
+      "organizations_url": "https://api.github.com/users/rhauch/orgs",
+      "repos_url": "https://api.github.com/users/rhauch/repos",
+      "events_url": "https://api.github.com/users/rhauch/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rhauch/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-445167429",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-445167429"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-07-08T22:19:14Z",
+    "commit_id": null
+  },
+  {
+    "id": 451974189,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDUxOTc0MTg5",
+    "user": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?u=18da54e264652a6ebd5db4d20e511eb6ad3733ce&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-451974189",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-451974189"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-07-20T21:31:29Z",
+    "commit_id": null
+  },
+  {
+    "id": 451978799,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDUxOTc4Nzk5",
+    "user": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?u=18da54e264652a6ebd5db4d20e511eb6ad3733ce&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-451978799",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-451978799"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-07-20T21:40:15Z",
+    "commit_id": null
+  },
+  {
+    "id": 451979227,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDUxOTc5MjI3",
+    "user": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?u=18da54e264652a6ebd5db4d20e511eb6ad3733ce&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-451979227",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-451979227"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-07-20T21:41:06Z",
+    "commit_id": null
+  },
+  {
+    "id": 452537874,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDUyNTM3ODc0",
+    "user": {
+      "login": "vvcephei",
+      "id": 832787,
+      "node_id": "MDQ6VXNlcjgzMjc4Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/832787?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/vvcephei",
+      "html_url": "https://github.com/vvcephei",
+      "followers_url": "https://api.github.com/users/vvcephei/followers",
+      "following_url": "https://api.github.com/users/vvcephei/following{/other_user}",
+      "gists_url": "https://api.github.com/users/vvcephei/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/vvcephei/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/vvcephei/subscriptions",
+      "organizations_url": "https://api.github.com/users/vvcephei/orgs",
+      "repos_url": "https://api.github.com/users/vvcephei/repos",
+      "events_url": "https://api.github.com/users/vvcephei/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/vvcephei/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "Thanks for the update, @mjsax !\r\n\r\nThere are still multiple comments like `TODO revisit in follow up PR`. Should we file a blocker to actually follow up on this? Otherwise, I'm afraid we'll just forget about them. If I understand the change correctly, these tests are all using the deprecated retries parameter, which means we're lacking coverage on the non-deprecated path.\r\n\r\nOtherwise, it LGTM!",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-452537874",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-452537874"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-07-21T14:50:41Z",
+    "commit_id": "e6c10d88f9c6fa9d89cc500112255898e2f24845"
+  },
+  {
+    "id": 452676247,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDUyNjc2MjQ3",
+    "user": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?u=18da54e264652a6ebd5db4d20e511eb6ad3733ce&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-452676247",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-452676247"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-07-21T17:26:33Z",
+    "commit_id": "e6c10d88f9c6fa9d89cc500112255898e2f24845"
+  },
+  {
+    "id": 452776511,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDUyNzc2NTEx",
+    "user": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?u=18da54e264652a6ebd5db4d20e511eb6ad3733ce&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-452776511",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-452776511"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-07-21T19:46:36Z",
+    "commit_id": "e6c10d88f9c6fa9d89cc500112255898e2f24845"
+  },
+  {
+    "id": 452776699,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDUyNzc2Njk5",
+    "user": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?u=18da54e264652a6ebd5db4d20e511eb6ad3733ce&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-452776699",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-452776699"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-07-21T19:46:54Z",
+    "commit_id": "e6c10d88f9c6fa9d89cc500112255898e2f24845"
+  },
+  {
+    "id": 452776762,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDUyNzc2NzYy",
+    "user": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?u=18da54e264652a6ebd5db4d20e511eb6ad3733ce&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-452776762",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-452776762"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-07-21T19:47:02Z",
+    "commit_id": "e6c10d88f9c6fa9d89cc500112255898e2f24845"
+  },
+  {
+    "id": 453825255,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDUzODI1MjU1",
+    "user": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?u=18da54e264652a6ebd5db4d20e511eb6ad3733ce&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-453825255",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-453825255"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-07-23T04:10:24Z",
+    "commit_id": "e6c10d88f9c6fa9d89cc500112255898e2f24845"
+  },
+  {
+    "id": 453826889,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDUzODI2ODg5",
+    "user": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?u=18da54e264652a6ebd5db4d20e511eb6ad3733ce&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-453826889",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-453826889"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-07-23T04:18:01Z",
+    "commit_id": "e6c10d88f9c6fa9d89cc500112255898e2f24845"
+  },
+  {
+    "id": 453826941,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDUzODI2OTQx",
+    "user": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?u=18da54e264652a6ebd5db4d20e511eb6ad3733ce&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-453826941",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-453826941"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-07-23T04:18:17Z",
+    "commit_id": "e6c10d88f9c6fa9d89cc500112255898e2f24845"
+  },
+  {
+    "id": 453827191,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDUzODI3MTkx",
+    "user": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?u=18da54e264652a6ebd5db4d20e511eb6ad3733ce&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-453827191",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-453827191"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-07-23T04:19:26Z",
+    "commit_id": "e6c10d88f9c6fa9d89cc500112255898e2f24845"
+  },
+  {
+    "id": 495148598,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDk1MTQ4NTk4",
+    "user": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?u=18da54e264652a6ebd5db4d20e511eb6ad3733ce&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-495148598",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-495148598"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-09-24T00:47:35Z",
+    "commit_id": "e6c10d88f9c6fa9d89cc500112255898e2f24845"
+  },
+  {
+    "id": 495148623,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDk1MTQ4NjIz",
+    "user": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?u=18da54e264652a6ebd5db4d20e511eb6ad3733ce&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-495148623",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-495148623"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-09-24T00:47:40Z",
+    "commit_id": "e6c10d88f9c6fa9d89cc500112255898e2f24845"
+  },
+  {
+    "id": 495148680,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDk1MTQ4Njgw",
+    "user": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?u=18da54e264652a6ebd5db4d20e511eb6ad3733ce&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-495148680",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-495148680"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-09-24T00:47:51Z",
+    "commit_id": "e6c10d88f9c6fa9d89cc500112255898e2f24845"
+  },
+  {
+    "id": 495148708,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDk1MTQ4NzA4",
+    "user": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?u=18da54e264652a6ebd5db4d20e511eb6ad3733ce&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-495148708",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-495148708"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-09-24T00:47:58Z",
+    "commit_id": "e6c10d88f9c6fa9d89cc500112255898e2f24845"
+  },
+  {
+    "id": 495148734,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDk1MTQ4NzM0",
+    "user": {
+      "login": "mjsax",
+      "id": 8959638,
+      "node_id": "MDQ6VXNlcjg5NTk2Mzg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8959638?u=18da54e264652a6ebd5db4d20e511eb6ad3733ce&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/mjsax",
+      "html_url": "https://github.com/mjsax",
+      "followers_url": "https://api.github.com/users/mjsax/followers",
+      "following_url": "https://api.github.com/users/mjsax/following{/other_user}",
+      "gists_url": "https://api.github.com/users/mjsax/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/mjsax/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/mjsax/subscriptions",
+      "organizations_url": "https://api.github.com/users/mjsax/orgs",
+      "repos_url": "https://api.github.com/users/mjsax/repos",
+      "events_url": "https://api.github.com/users/mjsax/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/mjsax/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/8864#pullrequestreview-495148734",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/8864",
+    "author_association": "MEMBER",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/8864#pullrequestreview-495148734"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/8864"
+      }
+    },
+    "submitted_at": "2020-09-24T00:48:05Z",
+    "commit_id": "e6c10d88f9c6fa9d89cc500112255898e2f24845"
+  }
+]

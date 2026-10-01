@@ -1,0 +1,212 @@
+[
+  {
+    "sha": "20e9ccc44fd319c121e8d0ae8b749d5ab9432e84",
+    "node_id": "MDY6Q29tbWl0NzUxMjcwNTk6MjBlOWNjYzQ0ZmQzMTljMTIxZThkMGFlOGI3NDlkNWFiOTQzMmU4NA==",
+    "commit": {
+      "author": {
+        "name": "Brian Nixon",
+        "email": "nixon@fb.com",
+        "date": "2019-01-10T21:55:18Z"
+      },
+      "committer": {
+        "name": "Brian Nixon",
+        "email": "nixon@fb.com",
+        "date": "2019-05-02T22:36:21Z"
+      },
+      "message": "ZOOKEEPER-3244: Add option to snapshot based on log size",
+      "tree": {
+        "sha": "4fe949df4af0fed1e79178098a5f63265133c70b",
+        "url": "https://api.github.com/repos/apache/zookeeper/git/trees/4fe949df4af0fed1e79178098a5f63265133c70b"
+      },
+      "url": "https://api.github.com/repos/apache/zookeeper/git/commits/20e9ccc44fd319c121e8d0ae8b749d5ab9432e84",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/zookeeper/commits/20e9ccc44fd319c121e8d0ae8b749d5ab9432e84",
+    "html_url": "https://github.com/apache/zookeeper/commit/20e9ccc44fd319c121e8d0ae8b749d5ab9432e84",
+    "comments_url": "https://api.github.com/repos/apache/zookeeper/commits/20e9ccc44fd319c121e8d0ae8b749d5ab9432e84/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "876aaf42ea721776b82633bb769f8813e881a444",
+        "url": "https://api.github.com/repos/apache/zookeeper/commits/876aaf42ea721776b82633bb769f8813e881a444",
+        "html_url": "https://github.com/apache/zookeeper/commit/876aaf42ea721776b82633bb769f8813e881a444"
+      }
+    ]
+  },
+  {
+    "sha": "0d4666d2dc0f5751d79fa0b027437e617d61cd49",
+    "node_id": "MDY6Q29tbWl0NzUxMjcwNTk6MGQ0NjY2ZDJkYzBmNTc1MWQ3OWZhMGIwMjc0MzdlNjE3ZDYxY2Q0OQ==",
+    "commit": {
+      "author": {
+        "name": "Brian Nixon",
+        "email": "nixon@fb.com",
+        "date": "2019-01-17T19:54:04Z"
+      },
+      "committer": {
+        "name": "Brian Nixon",
+        "email": "nixon@fb.com",
+        "date": "2019-05-02T22:36:21Z"
+      },
+      "message": "address sync issue with FileTxnLog::getTotalLogSize exposed by findbugs",
+      "tree": {
+        "sha": "01c71a61131d80e476055e71c31bd79760b7f695",
+        "url": "https://api.github.com/repos/apache/zookeeper/git/trees/01c71a61131d80e476055e71c31bd79760b7f695"
+      },
+      "url": "https://api.github.com/repos/apache/zookeeper/git/commits/0d4666d2dc0f5751d79fa0b027437e617d61cd49",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/zookeeper/commits/0d4666d2dc0f5751d79fa0b027437e617d61cd49",
+    "html_url": "https://github.com/apache/zookeeper/commit/0d4666d2dc0f5751d79fa0b027437e617d61cd49",
+    "comments_url": "https://api.github.com/repos/apache/zookeeper/commits/0d4666d2dc0f5751d79fa0b027437e617d61cd49/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "20e9ccc44fd319c121e8d0ae8b749d5ab9432e84",
+        "url": "https://api.github.com/repos/apache/zookeeper/commits/20e9ccc44fd319c121e8d0ae8b749d5ab9432e84",
+        "html_url": "https://github.com/apache/zookeeper/commit/20e9ccc44fd319c121e8d0ae8b749d5ab9432e84"
+      }
+    ]
+  },
+  {
+    "sha": "f13e7d327bcc43670f46880a40071ccf4f9335e5",
+    "node_id": "MDY6Q29tbWl0NzUxMjcwNTk6ZjEzZTdkMzI3YmNjNDM2NzBmNDY4ODBhNDAwNzFjY2Y0ZjkzMzVlNQ==",
+    "commit": {
+      "author": {
+        "name": "Brian Nixon",
+        "email": "nixon@fb.com",
+        "date": "2019-03-13T23:22:21Z"
+      },
+      "committer": {
+        "name": "Brian Nixon",
+        "email": "nixon@fb.com",
+        "date": "2019-05-02T22:38:14Z"
+      },
+      "message": "add documentation for zookeeper.snapSize and extend RestoreCommittedLogTest to support it",
+      "tree": {
+        "sha": "628ebc34ccc8ca3b0bd8585d1e3c5ef26650f58a",
+        "url": "https://api.github.com/repos/apache/zookeeper/git/trees/628ebc34ccc8ca3b0bd8585d1e3c5ef26650f58a"
+      },
+      "url": "https://api.github.com/repos/apache/zookeeper/git/commits/f13e7d327bcc43670f46880a40071ccf4f9335e5",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/zookeeper/commits/f13e7d327bcc43670f46880a40071ccf4f9335e5",
+    "html_url": "https://github.com/apache/zookeeper/commit/f13e7d327bcc43670f46880a40071ccf4f9335e5",
+    "comments_url": "https://api.github.com/repos/apache/zookeeper/commits/f13e7d327bcc43670f46880a40071ccf4f9335e5/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "0d4666d2dc0f5751d79fa0b027437e617d61cd49",
+        "url": "https://api.github.com/repos/apache/zookeeper/commits/0d4666d2dc0f5751d79fa0b027437e617d61cd49",
+        "html_url": "https://github.com/apache/zookeeper/commit/0d4666d2dc0f5751d79fa0b027437e617d61cd49"
+      }
+    ]
+  },
+  {
+    "sha": "315404a126a6f757d84dec5196eed358b41d552f",
+    "node_id": "MDY6Q29tbWl0NzUxMjcwNTk6MzE1NDA0YTEyNmE2Zjc1N2Q4NGRlYzUxOTZlZWQzNThiNDFkNTUyZg==",
+    "commit": {
+      "author": {
+        "name": "Brian Nixon",
+        "email": "nixon@fb.com",
+        "date": "2019-04-12T18:45:58Z"
+      },
+      "committer": {
+        "name": "Brian Nixon",
+        "email": "nixon@fb.com",
+        "date": "2019-05-02T22:38:58Z"
+      },
+      "message": "Change property name from zookeeper.snapSize to zookeeper.snapSizeLimitInKb",
+      "tree": {
+        "sha": "cd5ed6b4ae615a5c50b858104a3f57cd2eda2e4c",
+        "url": "https://api.github.com/repos/apache/zookeeper/git/trees/cd5ed6b4ae615a5c50b858104a3f57cd2eda2e4c"
+      },
+      "url": "https://api.github.com/repos/apache/zookeeper/git/commits/315404a126a6f757d84dec5196eed358b41d552f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/zookeeper/commits/315404a126a6f757d84dec5196eed358b41d552f",
+    "html_url": "https://github.com/apache/zookeeper/commit/315404a126a6f757d84dec5196eed358b41d552f",
+    "comments_url": "https://api.github.com/repos/apache/zookeeper/commits/315404a126a6f757d84dec5196eed358b41d552f/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "f13e7d327bcc43670f46880a40071ccf4f9335e5",
+        "url": "https://api.github.com/repos/apache/zookeeper/commits/f13e7d327bcc43670f46880a40071ccf4f9335e5",
+        "html_url": "https://github.com/apache/zookeeper/commit/f13e7d327bcc43670f46880a40071ccf4f9335e5"
+      }
+    ]
+  },
+  {
+    "sha": "3911f984a929453ff6f506d11f9494c1c9a180b2",
+    "node_id": "MDY6Q29tbWl0NzUxMjcwNTk6MzkxMWY5ODRhOTI5NDUzZmY2ZjUwNmQxMWY5NDk0YzFjOWExODBiMg==",
+    "commit": {
+      "author": {
+        "name": "Brian Nixon",
+        "email": "nixon@fb.com",
+        "date": "2019-05-02T23:02:30Z"
+      },
+      "committer": {
+        "name": "Brian Nixon",
+        "email": "nixon@fb.com",
+        "date": "2019-05-02T23:02:30Z"
+      },
+      "message": "allow admin to disable snapSizeLimitInKb feature",
+      "tree": {
+        "sha": "faf8bf4db692b0ed7aaadb1693f9e6fd3426b0fd",
+        "url": "https://api.github.com/repos/apache/zookeeper/git/trees/faf8bf4db692b0ed7aaadb1693f9e6fd3426b0fd"
+      },
+      "url": "https://api.github.com/repos/apache/zookeeper/git/commits/3911f984a929453ff6f506d11f9494c1c9a180b2",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/zookeeper/commits/3911f984a929453ff6f506d11f9494c1c9a180b2",
+    "html_url": "https://github.com/apache/zookeeper/commit/3911f984a929453ff6f506d11f9494c1c9a180b2",
+    "comments_url": "https://api.github.com/repos/apache/zookeeper/commits/3911f984a929453ff6f506d11f9494c1c9a180b2/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "315404a126a6f757d84dec5196eed358b41d552f",
+        "url": "https://api.github.com/repos/apache/zookeeper/commits/315404a126a6f757d84dec5196eed358b41d552f",
+        "html_url": "https://github.com/apache/zookeeper/commit/315404a126a6f757d84dec5196eed358b41d552f"
+      }
+    ]
+  }
+]

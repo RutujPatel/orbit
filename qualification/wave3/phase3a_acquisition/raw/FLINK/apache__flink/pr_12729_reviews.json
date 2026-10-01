@@ -1,0 +1,402 @@
+[
+  {
+    "id": 438774930,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDM4Nzc0OTMw",
+    "user": {
+      "login": "senegalo",
+      "id": 2779299,
+      "node_id": "MDQ6VXNlcjI3NzkyOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2779299?u=7dedfafb25eacd9813ec662dcac274c832da976d&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/senegalo",
+      "html_url": "https://github.com/senegalo",
+      "followers_url": "https://api.github.com/users/senegalo/followers",
+      "following_url": "https://api.github.com/users/senegalo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/senegalo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/senegalo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/senegalo/subscriptions",
+      "organizations_url": "https://api.github.com/users/senegalo/orgs",
+      "repos_url": "https://api.github.com/users/senegalo/repos",
+      "events_url": "https://api.github.com/users/senegalo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/senegalo/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/12729#pullrequestreview-438774930",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/12729",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/12729#pullrequestreview-438774930"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/12729"
+      }
+    },
+    "submitted_at": "2020-06-28T12:16:05Z",
+    "commit_id": "99231d5b11dd2adced76b48996dfb252b5cc9fc2"
+  },
+  {
+    "id": 439155784,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDM5MTU1Nzg0",
+    "user": {
+      "login": "austince",
+      "id": 4655775,
+      "node_id": "MDQ6VXNlcjQ2NTU3NzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4655775?u=7ba8a6bb8de415091c27fae8cfcf22828318c866&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/austince",
+      "html_url": "https://github.com/austince",
+      "followers_url": "https://api.github.com/users/austince/followers",
+      "following_url": "https://api.github.com/users/austince/following{/other_user}",
+      "gists_url": "https://api.github.com/users/austince/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/austince/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/austince/subscriptions",
+      "organizations_url": "https://api.github.com/users/austince/orgs",
+      "repos_url": "https://api.github.com/users/austince/repos",
+      "events_url": "https://api.github.com/users/austince/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/austince/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/12729#pullrequestreview-439155784",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/12729",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/12729#pullrequestreview-439155784"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/12729"
+      }
+    },
+    "submitted_at": "2020-06-29T13:42:41Z",
+    "commit_id": "99231d5b11dd2adced76b48996dfb252b5cc9fc2"
+  },
+  {
+    "id": 439299343,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDM5Mjk5MzQz",
+    "user": {
+      "login": "senegalo",
+      "id": 2779299,
+      "node_id": "MDQ6VXNlcjI3NzkyOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2779299?u=7dedfafb25eacd9813ec662dcac274c832da976d&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/senegalo",
+      "html_url": "https://github.com/senegalo",
+      "followers_url": "https://api.github.com/users/senegalo/followers",
+      "following_url": "https://api.github.com/users/senegalo/following{/other_user}",
+      "gists_url": "https://api.github.com/users/senegalo/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/senegalo/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/senegalo/subscriptions",
+      "organizations_url": "https://api.github.com/users/senegalo/orgs",
+      "repos_url": "https://api.github.com/users/senegalo/repos",
+      "events_url": "https://api.github.com/users/senegalo/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/senegalo/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/12729#pullrequestreview-439299343",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/12729",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/12729#pullrequestreview-439299343"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/12729"
+      }
+    },
+    "submitted_at": "2020-06-29T16:13:17Z",
+    "commit_id": "99231d5b11dd2adced76b48996dfb252b5cc9fc2"
+  },
+  {
+    "id": 439573559,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDM5NTczNTU5",
+    "user": {
+      "login": "austince",
+      "id": 4655775,
+      "node_id": "MDQ6VXNlcjQ2NTU3NzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4655775?u=7ba8a6bb8de415091c27fae8cfcf22828318c866&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/austince",
+      "html_url": "https://github.com/austince",
+      "followers_url": "https://api.github.com/users/austince/followers",
+      "following_url": "https://api.github.com/users/austince/following{/other_user}",
+      "gists_url": "https://api.github.com/users/austince/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/austince/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/austince/subscriptions",
+      "organizations_url": "https://api.github.com/users/austince/orgs",
+      "repos_url": "https://api.github.com/users/austince/repos",
+      "events_url": "https://api.github.com/users/austince/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/austince/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/12729#pullrequestreview-439573559",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/12729",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/12729#pullrequestreview-439573559"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/12729"
+      }
+    },
+    "submitted_at": "2020-06-29T23:42:02Z",
+    "commit_id": "99231d5b11dd2adced76b48996dfb252b5cc9fc2"
+  },
+  {
+    "id": 452697266,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDUyNjk3MjY2",
+    "user": {
+      "login": "austince",
+      "id": 4655775,
+      "node_id": "MDQ6VXNlcjQ2NTU3NzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4655775?u=7ba8a6bb8de415091c27fae8cfcf22828318c866&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/austince",
+      "html_url": "https://github.com/austince",
+      "followers_url": "https://api.github.com/users/austince/followers",
+      "following_url": "https://api.github.com/users/austince/following{/other_user}",
+      "gists_url": "https://api.github.com/users/austince/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/austince/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/austince/subscriptions",
+      "organizations_url": "https://api.github.com/users/austince/orgs",
+      "repos_url": "https://api.github.com/users/austince/repos",
+      "events_url": "https://api.github.com/users/austince/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/austince/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/12729#pullrequestreview-452697266",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/12729",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/12729#pullrequestreview-452697266"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/12729"
+      }
+    },
+    "submitted_at": "2020-07-21T17:54:22Z",
+    "commit_id": "ce89d0b66d61398909e82fd603181f4976351f48"
+  },
+  {
+    "id": 457506248,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDU3NTA2MjQ4",
+    "user": {
+      "login": "dawidwys",
+      "id": 6242259,
+      "node_id": "MDQ6VXNlcjYyNDIyNTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6242259?u=9afed5c548b788de404826d3a3d03520821c78a3&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dawidwys",
+      "html_url": "https://github.com/dawidwys",
+      "followers_url": "https://api.github.com/users/dawidwys/followers",
+      "following_url": "https://api.github.com/users/dawidwys/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dawidwys/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dawidwys/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dawidwys/subscriptions",
+      "organizations_url": "https://api.github.com/users/dawidwys/orgs",
+      "repos_url": "https://api.github.com/users/dawidwys/repos",
+      "events_url": "https://api.github.com/users/dawidwys/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dawidwys/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "Thanks for a really good work @austince on this one. I had a really minor comments.\r\n\r\nAs for the dependency upgrade. Does it mean only bumping the version in pom and removing the `Delivery` class? If the answer is yes, then let's do this in this PR.",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/12729#pullrequestreview-457506248",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/12729",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/12729#pullrequestreview-457506248"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/12729"
+      }
+    },
+    "submitted_at": "2020-07-29T13:18:53Z",
+    "commit_id": "790ebc88d93408cba281d3836ea24e6f6bc4a866"
+  },
+  {
+    "id": 457543218,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDU3NTQzMjE4",
+    "user": {
+      "login": "austince",
+      "id": 4655775,
+      "node_id": "MDQ6VXNlcjQ2NTU3NzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4655775?u=7ba8a6bb8de415091c27fae8cfcf22828318c866&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/austince",
+      "html_url": "https://github.com/austince",
+      "followers_url": "https://api.github.com/users/austince/followers",
+      "following_url": "https://api.github.com/users/austince/following{/other_user}",
+      "gists_url": "https://api.github.com/users/austince/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/austince/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/austince/subscriptions",
+      "organizations_url": "https://api.github.com/users/austince/orgs",
+      "repos_url": "https://api.github.com/users/austince/repos",
+      "events_url": "https://api.github.com/users/austince/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/austince/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/12729#pullrequestreview-457543218",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/12729",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/12729#pullrequestreview-457543218"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/12729"
+      }
+    },
+    "submitted_at": "2020-07-29T13:52:29Z",
+    "commit_id": "790ebc88d93408cba281d3836ea24e6f6bc4a866"
+  },
+  {
+    "id": 457543683,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDU3NTQzNjgz",
+    "user": {
+      "login": "austince",
+      "id": 4655775,
+      "node_id": "MDQ6VXNlcjQ2NTU3NzU=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4655775?u=7ba8a6bb8de415091c27fae8cfcf22828318c866&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/austince",
+      "html_url": "https://github.com/austince",
+      "followers_url": "https://api.github.com/users/austince/followers",
+      "following_url": "https://api.github.com/users/austince/following{/other_user}",
+      "gists_url": "https://api.github.com/users/austince/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/austince/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/austince/subscriptions",
+      "organizations_url": "https://api.github.com/users/austince/orgs",
+      "repos_url": "https://api.github.com/users/austince/repos",
+      "events_url": "https://api.github.com/users/austince/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/austince/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/12729#pullrequestreview-457543683",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/12729",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/12729#pullrequestreview-457543683"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/12729"
+      }
+    },
+    "submitted_at": "2020-07-29T13:52:59Z",
+    "commit_id": "790ebc88d93408cba281d3836ea24e6f6bc4a866"
+  },
+  {
+    "id": 457580259,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDU3NTgwMjU5",
+    "user": {
+      "login": "dawidwys",
+      "id": 6242259,
+      "node_id": "MDQ6VXNlcjYyNDIyNTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6242259?u=9afed5c548b788de404826d3a3d03520821c78a3&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dawidwys",
+      "html_url": "https://github.com/dawidwys",
+      "followers_url": "https://api.github.com/users/dawidwys/followers",
+      "following_url": "https://api.github.com/users/dawidwys/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dawidwys/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dawidwys/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dawidwys/subscriptions",
+      "organizations_url": "https://api.github.com/users/dawidwys/orgs",
+      "repos_url": "https://api.github.com/users/dawidwys/repos",
+      "events_url": "https://api.github.com/users/dawidwys/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dawidwys/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/flink/pull/12729#pullrequestreview-457580259",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/12729",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/12729#pullrequestreview-457580259"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/12729"
+      }
+    },
+    "submitted_at": "2020-07-29T14:29:47Z",
+    "commit_id": "491460bd0b5a9b2e67170d32ca2ffc3506950f65"
+  },
+  {
+    "id": 457646585,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NDU3NjQ2NTg1",
+    "user": {
+      "login": "dawidwys",
+      "id": 6242259,
+      "node_id": "MDQ6VXNlcjYyNDIyNTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6242259?u=9afed5c548b788de404826d3a3d03520821c78a3&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/dawidwys",
+      "html_url": "https://github.com/dawidwys",
+      "followers_url": "https://api.github.com/users/dawidwys/followers",
+      "following_url": "https://api.github.com/users/dawidwys/following{/other_user}",
+      "gists_url": "https://api.github.com/users/dawidwys/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/dawidwys/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/dawidwys/subscriptions",
+      "organizations_url": "https://api.github.com/users/dawidwys/orgs",
+      "repos_url": "https://api.github.com/users/dawidwys/repos",
+      "events_url": "https://api.github.com/users/dawidwys/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/dawidwys/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "APPROVED",
+    "html_url": "https://github.com/apache/flink/pull/12729#pullrequestreview-457646585",
+    "pull_request_url": "https://api.github.com/repos/apache/flink/pulls/12729",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/flink/pull/12729#pullrequestreview-457646585"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/flink/pulls/12729"
+      }
+    },
+    "submitted_at": "2020-07-29T15:37:47Z",
+    "commit_id": "5ffd02df057f21695027531e82e0ec717c2ddb91"
+  }
+]

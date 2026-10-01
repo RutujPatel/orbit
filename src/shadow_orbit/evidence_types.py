@@ -105,6 +105,29 @@ QualityCode = Literal[
 ]
 """Structured quality codes.  No severity, confidence, or risk."""
 
+VALID_QUALITY_CODES: frozenset[str] = frozenset({
+    "missing",
+    "invalid",
+    "unsupported_value",
+    "contradictory",
+    "incomplete",
+    "unresolved",
+})
+
+
+def validate_quality_code(value: Any) -> str:
+    """Validate that a value is an authorized QualityCode."""
+    if not isinstance(value, str):
+        raise TypeError(
+            f"Quality code must be a str, got {type(value).__name__}: {value!r}"
+        )
+    if value not in VALID_QUALITY_CODES:
+        raise ValueError(
+            f"Unknown quality code {value!r}. Must be one of {sorted(VALID_QUALITY_CODES)}."
+        )
+    return value
+
+
 RelationshipKind = Literal[
     "belongs_to_repository",
     "review_of",
@@ -118,15 +141,64 @@ RelationshipKind = Literal[
 ]
 """Closed set of relationship types resolved across CSE-1.5, CSE-1.6, and Milestone 2."""
 
+VALID_RELATIONSHIP_KINDS: frozenset[str] = frozenset({
+    "belongs_to_repository",
+    "review_of",
+    "has_head_branch",
+    "has_base_branch",
+    "contains_commit",
+    "has_head_commit",
+    "has_base_commit",
+    "mentions",
+    "explicit_link",
+})
+
+
+def validate_relationship_kind(value: Any) -> str:
+    """Validate that a value is an authorized RelationshipKind."""
+    if not isinstance(value, str):
+        raise TypeError(
+            f"Relationship kind must be a str, got {type(value).__name__}: {value!r}"
+        )
+    if value not in VALID_RELATIONSHIP_KINDS:
+        raise ValueError(
+            f"Unknown relationship kind {value!r}. Must be one of {sorted(VALID_RELATIONSHIP_KINDS)}."
+        )
+    return value
+
+
 RelationshipBasis = Literal[
     "structural_association",
+    "structural_containment",
     "lexical_match",
     "explicit_metadata",
+    "declared_mention",
 ]
 """How a relationship was established. CSE-1.5 uses structural_association.
 CSE-1.6 uses lexical_match for explicit textual mentions.
 Milestone 2 authorizes explicit_metadata for native integration links.
-No temporal, semantic, or inference bases."""
+Wave 5 / Pass 5 recognize declared_mention and structural_containment."""
+
+VALID_RELATIONSHIP_BASES: frozenset[str] = frozenset({
+    "structural_association",
+    "structural_containment",
+    "lexical_match",
+    "explicit_metadata",
+    "declared_mention",
+})
+
+
+def validate_relationship_basis(value: Any) -> str:
+    """Validate that a value is an authorized RelationshipBasis."""
+    if not isinstance(value, str):
+        raise TypeError(
+            f"Relationship basis must be a str, got {type(value).__name__}: {value!r}"
+        )
+    if value not in VALID_RELATIONSHIP_BASES:
+        raise ValueError(
+            f"Unknown relationship basis {value!r}. Must be one of {sorted(VALID_RELATIONSHIP_BASES)}."
+        )
+    return value
 
 CrossSystemStateComparison = Literal[
     "CONSISTENT",
@@ -260,6 +332,9 @@ class QualityIssue:
     message: str
     subject_ref: EntityRef | None = None
     subject_scope: str | None = None
+
+    def __post_init__(self) -> None:
+        validate_quality_code(self.code)
 
 
 # ── Provenance ───────────────────────────────────────────────────────
@@ -666,6 +741,10 @@ class EvidenceRelationship:
     object_observation_id: str
     provenance_refs: tuple[ProvenanceRef, ...]
     quality_issues: tuple[QualityIssue, ...] = ()
+
+    def __post_init__(self) -> None:
+        validate_relationship_kind(self.kind)
+        validate_relationship_basis(self.basis)
 
 
 @dataclass(frozen=True, slots=True)

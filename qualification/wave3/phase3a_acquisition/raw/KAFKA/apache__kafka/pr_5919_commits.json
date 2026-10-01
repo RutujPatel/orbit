@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "c3a2bcd02d6b2e5b212df4f7a0f18240d1c6d7a6",
+    "node_id": "MDY6Q29tbWl0MTU3NzQxNTcwOmMzYTJiY2QwMmQ2YjJlNWIyMTJkZjRmN2EwZjE4MjQwZDFjNmQ3YTY=",
+    "commit": {
+      "author": {
+        "name": "pdouchem",
+        "email": "patrick.douchement@capgemini.com",
+        "date": "2018-11-15T17:03:03Z"
+      },
+      "committer": {
+        "name": "pdouchem",
+        "email": "patrick.douchement@capgemini.com",
+        "date": "2018-11-15T17:03:03Z"
+      },
+      "message": "Add getter and setter to allow consumer to update the maxPollRecords",
+      "tree": {
+        "sha": "980a8f6df7b69b7ab596c391da16bcd063e4f6a2",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/980a8f6df7b69b7ab596c391da16bcd063e4f6a2"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/c3a2bcd02d6b2e5b212df4f7a0f18240d1c6d7a6",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/c3a2bcd02d6b2e5b212df4f7a0f18240d1c6d7a6",
+    "html_url": "https://github.com/apache/kafka/commit/c3a2bcd02d6b2e5b212df4f7a0f18240d1c6d7a6",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/c3a2bcd02d6b2e5b212df4f7a0f18240d1c6d7a6/comments",
+    "author": {
+      "login": "kcirtap7",
+      "id": 45075152,
+      "node_id": "MDQ6VXNlcjQ1MDc1MTUy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45075152?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kcirtap7",
+      "html_url": "https://github.com/kcirtap7",
+      "followers_url": "https://api.github.com/users/kcirtap7/followers",
+      "following_url": "https://api.github.com/users/kcirtap7/following{/other_user}",
+      "gists_url": "https://api.github.com/users/kcirtap7/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/kcirtap7/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/kcirtap7/subscriptions",
+      "organizations_url": "https://api.github.com/users/kcirtap7/orgs",
+      "repos_url": "https://api.github.com/users/kcirtap7/repos",
+      "events_url": "https://api.github.com/users/kcirtap7/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/kcirtap7/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "kcirtap7",
+      "id": 45075152,
+      "node_id": "MDQ6VXNlcjQ1MDc1MTUy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45075152?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/kcirtap7",
+      "html_url": "https://github.com/kcirtap7",
+      "followers_url": "https://api.github.com/users/kcirtap7/followers",
+      "following_url": "https://api.github.com/users/kcirtap7/following{/other_user}",
+      "gists_url": "https://api.github.com/users/kcirtap7/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/kcirtap7/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/kcirtap7/subscriptions",
+      "organizations_url": "https://api.github.com/users/kcirtap7/orgs",
+      "repos_url": "https://api.github.com/users/kcirtap7/repos",
+      "events_url": "https://api.github.com/users/kcirtap7/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/kcirtap7/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "14d3ead19d250f2f3117af473ff6244c663ef8ca",
+        "url": "https://api.github.com/repos/apache/kafka/commits/14d3ead19d250f2f3117af473ff6244c663ef8ca",
+        "html_url": "https://github.com/apache/kafka/commit/14d3ead19d250f2f3117af473ff6244c663ef8ca"
+      }
+    ]
+  }
+]

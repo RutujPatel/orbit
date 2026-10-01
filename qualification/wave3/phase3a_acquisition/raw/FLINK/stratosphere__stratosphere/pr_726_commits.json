@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "6b75a4b26fe39a78fa448cbc0f3afd39cf1f5ac1",
+    "node_id": "MDY6Q29tbWl0MTUyMjc0ODA6NmI3NWE0YjI2ZmUzOWE3OGZhNDQ4Y2JjMGYzYWZkMzljZjFmNWFjMQ==",
+    "commit": {
+      "author": {
+        "name": "Filip Haase",
+        "email": "filip-h@gmx.de",
+        "date": "2014-04-28T07:42:34Z"
+      },
+      "committer": {
+        "name": "Filip Haase",
+        "email": "filip-h@gmx.de",
+        "date": "2014-04-28T07:42:34Z"
+      },
+      "message": "divided reduce and group-reduce",
+      "tree": {
+        "sha": "07aaa2e42d39a5d1b09fbdff91d65513b23d3428",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/07aaa2e42d39a5d1b09fbdff91d65513b23d3428"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/6b75a4b26fe39a78fa448cbc0f3afd39cf1f5ac1",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/6b75a4b26fe39a78fa448cbc0f3afd39cf1f5ac1",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/6b75a4b26fe39a78fa448cbc0f3afd39cf1f5ac1",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/6b75a4b26fe39a78fa448cbc0f3afd39cf1f5ac1/comments",
+    "author": {
+      "login": "filiphaase",
+      "id": 5747807,
+      "node_id": "MDQ6VXNlcjU3NDc4MDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5747807?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/filiphaase",
+      "html_url": "https://github.com/filiphaase",
+      "followers_url": "https://api.github.com/users/filiphaase/followers",
+      "following_url": "https://api.github.com/users/filiphaase/following{/other_user}",
+      "gists_url": "https://api.github.com/users/filiphaase/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/filiphaase/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/filiphaase/subscriptions",
+      "organizations_url": "https://api.github.com/users/filiphaase/orgs",
+      "repos_url": "https://api.github.com/users/filiphaase/repos",
+      "events_url": "https://api.github.com/users/filiphaase/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/filiphaase/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "filiphaase",
+      "id": 5747807,
+      "node_id": "MDQ6VXNlcjU3NDc4MDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5747807?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/filiphaase",
+      "html_url": "https://github.com/filiphaase",
+      "followers_url": "https://api.github.com/users/filiphaase/followers",
+      "following_url": "https://api.github.com/users/filiphaase/following{/other_user}",
+      "gists_url": "https://api.github.com/users/filiphaase/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/filiphaase/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/filiphaase/subscriptions",
+      "organizations_url": "https://api.github.com/users/filiphaase/orgs",
+      "repos_url": "https://api.github.com/users/filiphaase/repos",
+      "events_url": "https://api.github.com/users/filiphaase/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/filiphaase/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "80ab5309d5d6fcf505d555e5b66f1a75cec3e47f",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/80ab5309d5d6fcf505d555e5b66f1a75cec3e47f",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/80ab5309d5d6fcf505d555e5b66f1a75cec3e47f"
+      }
+    ]
+  },
+  {
+    "sha": "f3d1ccb40f540ef34f1e9848e709f4774c0d8c3a",
+    "node_id": "MDY6Q29tbWl0MTUyMjc0ODA6ZjNkMWNjYjQwZjU0MGVmMzRmMWU5ODQ4ZTcwOWY0Nzc0YzBkOGMzYQ==",
+    "commit": {
+      "author": {
+        "name": "Filip Haase",
+        "email": "filip-h@gmx.de",
+        "date": "2014-04-28T09:04:13Z"
+      },
+      "committer": {
+        "name": "Filip Haase",
+        "email": "filip-h@gmx.de",
+        "date": "2014-04-28T09:04:13Z"
+      },
+      "message": "fixed writing",
+      "tree": {
+        "sha": "5033638571000ef39558ffb718d0a4df300fe1e3",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/5033638571000ef39558ffb718d0a4df300fe1e3"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/f3d1ccb40f540ef34f1e9848e709f4774c0d8c3a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/f3d1ccb40f540ef34f1e9848e709f4774c0d8c3a",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/f3d1ccb40f540ef34f1e9848e709f4774c0d8c3a",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/f3d1ccb40f540ef34f1e9848e709f4774c0d8c3a/comments",
+    "author": {
+      "login": "filiphaase",
+      "id": 5747807,
+      "node_id": "MDQ6VXNlcjU3NDc4MDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5747807?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/filiphaase",
+      "html_url": "https://github.com/filiphaase",
+      "followers_url": "https://api.github.com/users/filiphaase/followers",
+      "following_url": "https://api.github.com/users/filiphaase/following{/other_user}",
+      "gists_url": "https://api.github.com/users/filiphaase/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/filiphaase/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/filiphaase/subscriptions",
+      "organizations_url": "https://api.github.com/users/filiphaase/orgs",
+      "repos_url": "https://api.github.com/users/filiphaase/repos",
+      "events_url": "https://api.github.com/users/filiphaase/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/filiphaase/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "filiphaase",
+      "id": 5747807,
+      "node_id": "MDQ6VXNlcjU3NDc4MDc=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5747807?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/filiphaase",
+      "html_url": "https://github.com/filiphaase",
+      "followers_url": "https://api.github.com/users/filiphaase/followers",
+      "following_url": "https://api.github.com/users/filiphaase/following{/other_user}",
+      "gists_url": "https://api.github.com/users/filiphaase/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/filiphaase/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/filiphaase/subscriptions",
+      "organizations_url": "https://api.github.com/users/filiphaase/orgs",
+      "repos_url": "https://api.github.com/users/filiphaase/repos",
+      "events_url": "https://api.github.com/users/filiphaase/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/filiphaase/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6b75a4b26fe39a78fa448cbc0f3afd39cf1f5ac1",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/6b75a4b26fe39a78fa448cbc0f3afd39cf1f5ac1",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/6b75a4b26fe39a78fa448cbc0f3afd39cf1f5ac1"
+      }
+    ]
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "f7014b7330531180a0b66a5c2ee91bd662ef9c42",
+    "node_id": "MDY6Q29tbWl0MTI3OTE0NzIxOmY3MDE0YjczMzA1MzExODBhMGI2NmE1YzJlZTkxYmQ2NjJlZjljNDI=",
+    "commit": {
+      "author": {
+        "name": "Andrey Zagrebin",
+        "email": "azagrebin@gmail.com",
+        "date": "2019-04-19T13:45:38Z"
+      },
+      "committer": {
+        "name": "Till Rohrmann",
+        "email": "trohrmann@apache.org",
+        "date": "2019-06-05T16:40:23Z"
+      },
+      "message": "[FLINK-11391] Introduce shuffle master interface\n\nIntroduce PartitionLocation in NettyShuffleDescriptor and NettyShuffleDescriptorBuilder for tests\n\nAdd ShuffleDescriptor.getResultPartitionID and isUnknown\n\nUse NettyShuffleDescriptorBuilder in StreamNetworkBenchmarkEnvironment\n\nIntroduce ShuffleUtils.applyWithShuffleTypeCheck to isolate inout channel shuffle descriptor 'known' check and cast\n\nThis closes #8362.",
+      "tree": {
+        "sha": "e7e375c6a9d3722c4f3703e212fedb1f7ad37054",
+        "url": "https://api.github.com/repos/apache/flink/git/trees/e7e375c6a9d3722c4f3703e212fedb1f7ad37054"
+      },
+      "url": "https://api.github.com/repos/apache/flink/git/commits/f7014b7330531180a0b66a5c2ee91bd662ef9c42",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEENFF/bqllF4fQbsqJHzAlaals/9UFAlz38HcACgkQHzAlaals\n/9UWWg//ZK7LR883Zc/14ruJpsO91tDGSy11WvfTp8W8d9SKWpywiEdkv0ytatfT\nxN02vxAIKe09poGlkXfY8yC/XMqtkGJdQFIKyzZybE5Ab32hNVVLaid0AJudrirg\nm3XROphGwjM8KOWceyvi1qt9aS/E9bAq3gPkqMTs6BF4+K1Lq6zJhZXyaJAKh8ZW\nCUc/FJGVAH05NqTnL7zOf9tH6k50GEvV2Dj4ui+LoadixbtAY7skVVgo+TFNS5C6\nWh69ntbTMTJ0iXZkEsO1niY4iEPTtzTsucAQf/uc5XhvXSXdxVnUdODOe6L412uB\n/0lRMkUKxNW8WzC2l+NRsx5CBzfj+TWNqKTpcIFbqVkMnvoeD3qyKEcklSy9QsjP\nAUKsfqCSe5pSBKotC8U8ShomBVNjopUAKXIiKn89he/5uCnvoftjaZsPPQtTmsXf\nLvzoLRVsFH/SlbKbHsQ3vOVBhSxdneXKKVbcSnKTA4bXzuPxEESYzw44v0M/Nfgm\nkVgypnflbL5f1BI9NW/vXdglHNCX2iCCencrY7u6ie2LBVyy07PsEeJ6Bke02THC\nNhBjQP2M/BHkJY9hslRgbtEFpNzmNU0eTI0vTtiGwXQln6n6gWtbnN2x88n+Ztzt\nJplJO3ImUoau7YNXxE8SvHcjs1VeqNp0NlyXpeGeE0laE9N8Z7o=\n=I9eU\n-----END PGP SIGNATURE-----",
+        "payload": "tree e7e375c6a9d3722c4f3703e212fedb1f7ad37054\nparent 772b8ba7409848889c0c7178513f5adb0e422653\nauthor Andrey Zagrebin <azagrebin@gmail.com> 1555681538 +0200\ncommitter Till Rohrmann <trohrmann@apache.org> 1559752823 +0200\n\n[FLINK-11391] Introduce shuffle master interface\n\nIntroduce PartitionLocation in NettyShuffleDescriptor and NettyShuffleDescriptorBuilder for tests\n\nAdd ShuffleDescriptor.getResultPartitionID and isUnknown\n\nUse NettyShuffleDescriptorBuilder in StreamNetworkBenchmarkEnvironment\n\nIntroduce ShuffleUtils.applyWithShuffleTypeCheck to isolate inout channel shuffle descriptor 'known' check and cast\n\nThis closes #8362.\n",
+        "verified_at": "2024-11-17T02:43:42Z"
+      }
+    },
+    "url": "https://api.github.com/repos/apache/flink/commits/f7014b7330531180a0b66a5c2ee91bd662ef9c42",
+    "html_url": "https://github.com/apache/flink/commit/f7014b7330531180a0b66a5c2ee91bd662ef9c42",
+    "comments_url": "https://api.github.com/repos/apache/flink/commits/f7014b7330531180a0b66a5c2ee91bd662ef9c42/comments",
+    "author": {
+      "login": "azagrebin",
+      "id": 10573485,
+      "node_id": "MDQ6VXNlcjEwNTczNDg1",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10573485?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/azagrebin",
+      "html_url": "https://github.com/azagrebin",
+      "followers_url": "https://api.github.com/users/azagrebin/followers",
+      "following_url": "https://api.github.com/users/azagrebin/following{/other_user}",
+      "gists_url": "https://api.github.com/users/azagrebin/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/azagrebin/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/azagrebin/subscriptions",
+      "organizations_url": "https://api.github.com/users/azagrebin/orgs",
+      "repos_url": "https://api.github.com/users/azagrebin/repos",
+      "events_url": "https://api.github.com/users/azagrebin/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/azagrebin/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "tillrohrmann",
+      "id": 5756858,
+      "node_id": "MDQ6VXNlcjU3NTY4NTg=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5756858?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tillrohrmann",
+      "html_url": "https://github.com/tillrohrmann",
+      "followers_url": "https://api.github.com/users/tillrohrmann/followers",
+      "following_url": "https://api.github.com/users/tillrohrmann/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tillrohrmann/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tillrohrmann/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tillrohrmann/subscriptions",
+      "organizations_url": "https://api.github.com/users/tillrohrmann/orgs",
+      "repos_url": "https://api.github.com/users/tillrohrmann/repos",
+      "events_url": "https://api.github.com/users/tillrohrmann/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tillrohrmann/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "772b8ba7409848889c0c7178513f5adb0e422653",
+        "url": "https://api.github.com/repos/apache/flink/commits/772b8ba7409848889c0c7178513f5adb0e422653",
+        "html_url": "https://github.com/apache/flink/commit/772b8ba7409848889c0c7178513f5adb0e422653"
+      }
+    ]
+  }
+]

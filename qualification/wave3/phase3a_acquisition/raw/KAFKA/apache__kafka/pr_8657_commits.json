@@ -1,0 +1,1396 @@
+[
+  {
+    "sha": "c086bd2e8b9fecb10df5ab74837c5ef6c0ac29ef",
+    "node_id": "MDY6Q29tbWl0MTI1MjEwOTQ2OmMwODZiZDJlOGI5ZmVjYjEwZGY1YWI3NDgzN2M1ZWY2YzBhYzI5ZWY=",
+    "commit": {
+      "author": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-08-27T07:43:12Z"
+      },
+      "committer": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-09-08T16:10:57Z"
+      },
+      "message": "KAFKA-8334 Make sure the thread which tries to complete delayed requests does NOT hold any group lock",
+      "tree": {
+        "sha": "45bab8ffdc0ae346e52d79c883974fb355cddb9c",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/45bab8ffdc0ae346e52d79c883974fb355cddb9c"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/c086bd2e8b9fecb10df5ab74837c5ef6c0ac29ef",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/c086bd2e8b9fecb10df5ab74837c5ef6c0ac29ef",
+    "html_url": "https://github.com/apache/kafka/commit/c086bd2e8b9fecb10df5ab74837c5ef6c0ac29ef",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/c086bd2e8b9fecb10df5ab74837c5ef6c0ac29ef/comments",
+    "author": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d7f3505a212a8e97b39b3baae5f347bd859c87e4",
+        "url": "https://api.github.com/repos/apache/kafka/commits/d7f3505a212a8e97b39b3baae5f347bd859c87e4",
+        "html_url": "https://github.com/apache/kafka/commit/d7f3505a212a8e97b39b3baae5f347bd859c87e4"
+      }
+    ]
+  },
+  {
+    "sha": "c8f54add2b01625d3d990e44538c5e92c7c12d0e",
+    "node_id": "MDY6Q29tbWl0MTI1MjEwOTQ2OmM4ZjU0YWRkMmIwMTYyNWQzZDk5MGU0NDUzOGM1ZTkyYzdjMTJkMGU=",
+    "commit": {
+      "author": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-08-28T08:12:25Z"
+      },
+      "committer": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-09-08T16:10:57Z"
+      },
+      "message": "address review comment",
+      "tree": {
+        "sha": "4a1a7874c803d60c3ca8efcdfa6e03388c47f1af",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/4a1a7874c803d60c3ca8efcdfa6e03388c47f1af"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/c8f54add2b01625d3d990e44538c5e92c7c12d0e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/c8f54add2b01625d3d990e44538c5e92c7c12d0e",
+    "html_url": "https://github.com/apache/kafka/commit/c8f54add2b01625d3d990e44538c5e92c7c12d0e",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/c8f54add2b01625d3d990e44538c5e92c7c12d0e/comments",
+    "author": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c086bd2e8b9fecb10df5ab74837c5ef6c0ac29ef",
+        "url": "https://api.github.com/repos/apache/kafka/commits/c086bd2e8b9fecb10df5ab74837c5ef6c0ac29ef",
+        "html_url": "https://github.com/apache/kafka/commit/c086bd2e8b9fecb10df5ab74837c5ef6c0ac29ef"
+      }
+    ]
+  },
+  {
+    "sha": "dfb9b4b6ca5633951fddc3ba708b5d0e8066c040",
+    "node_id": "MDY6Q29tbWl0MTI1MjEwOTQ2OmRmYjliNGI2Y2E1NjMzOTUxZmRkYzNiYTcwOGI1ZDBlODA2NmMwNDA=",
+    "commit": {
+      "author": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-08-28T08:18:05Z"
+      },
+      "committer": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-09-08T16:10:57Z"
+      },
+      "message": "add more comment",
+      "tree": {
+        "sha": "479ab452d6df9570ebb2eabfdc2eddf8deacca62",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/479ab452d6df9570ebb2eabfdc2eddf8deacca62"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/dfb9b4b6ca5633951fddc3ba708b5d0e8066c040",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/dfb9b4b6ca5633951fddc3ba708b5d0e8066c040",
+    "html_url": "https://github.com/apache/kafka/commit/dfb9b4b6ca5633951fddc3ba708b5d0e8066c040",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/dfb9b4b6ca5633951fddc3ba708b5d0e8066c040/comments",
+    "author": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c8f54add2b01625d3d990e44538c5e92c7c12d0e",
+        "url": "https://api.github.com/repos/apache/kafka/commits/c8f54add2b01625d3d990e44538c5e92c7c12d0e",
+        "html_url": "https://github.com/apache/kafka/commit/c8f54add2b01625d3d990e44538c5e92c7c12d0e"
+      }
+    ]
+  },
+  {
+    "sha": "bb7a9e53aa7d66585c71bb190197ba51e5406943",
+    "node_id": "MDY6Q29tbWl0MTI1MjEwOTQ2OmJiN2E5ZTUzYWE3ZDY2NTg1YzcxYmIxOTAxOTdiYTUxZTU0MDY5NDM=",
+    "commit": {
+      "author": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-08-28T16:49:29Z"
+      },
+      "committer": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-09-08T16:10:57Z"
+      },
+      "message": "address review comments",
+      "tree": {
+        "sha": "ccc021caf3eae6510a56c9791ed064402fec0679",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/ccc021caf3eae6510a56c9791ed064402fec0679"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/bb7a9e53aa7d66585c71bb190197ba51e5406943",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/bb7a9e53aa7d66585c71bb190197ba51e5406943",
+    "html_url": "https://github.com/apache/kafka/commit/bb7a9e53aa7d66585c71bb190197ba51e5406943",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/bb7a9e53aa7d66585c71bb190197ba51e5406943/comments",
+    "author": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dfb9b4b6ca5633951fddc3ba708b5d0e8066c040",
+        "url": "https://api.github.com/repos/apache/kafka/commits/dfb9b4b6ca5633951fddc3ba708b5d0e8066c040",
+        "html_url": "https://github.com/apache/kafka/commit/dfb9b4b6ca5633951fddc3ba708b5d0e8066c040"
+      }
+    ]
+  },
+  {
+    "sha": "3e89824c711064acdf5e72954906c4090b7488eb",
+    "node_id": "MDY6Q29tbWl0MTI1MjEwOTQ2OjNlODk4MjRjNzExMDY0YWNkZjVlNzI5NTQ5MDZjNDA5MGI3NDg4ZWI=",
+    "commit": {
+      "author": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-08-29T12:49:41Z"
+      },
+      "committer": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-09-08T16:10:57Z"
+      },
+      "message": "address review comments",
+      "tree": {
+        "sha": "806aa748f135c4de6b687f620c8b092542930309",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/806aa748f135c4de6b687f620c8b092542930309"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/3e89824c711064acdf5e72954906c4090b7488eb",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/3e89824c711064acdf5e72954906c4090b7488eb",
+    "html_url": "https://github.com/apache/kafka/commit/3e89824c711064acdf5e72954906c4090b7488eb",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/3e89824c711064acdf5e72954906c4090b7488eb/comments",
+    "author": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "bb7a9e53aa7d66585c71bb190197ba51e5406943",
+        "url": "https://api.github.com/repos/apache/kafka/commits/bb7a9e53aa7d66585c71bb190197ba51e5406943",
+        "html_url": "https://github.com/apache/kafka/commit/bb7a9e53aa7d66585c71bb190197ba51e5406943"
+      }
+    ]
+  },
+  {
+    "sha": "9c981c56cb189f45741da7911ff2a77b9cfca97a",
+    "node_id": "MDY6Q29tbWl0MTI1MjEwOTQ2OjljOTgxYzU2Y2IxODlmNDU3NDFkYTc5MTFmZjJhNzdiOWNmY2E5N2E=",
+    "commit": {
+      "author": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-08-29T19:22:36Z"
+      },
+      "committer": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-09-08T16:10:57Z"
+      },
+      "message": "revert leaderHWIncremented to option",
+      "tree": {
+        "sha": "e6603ddf011895fdfe9aa7eece768a392138c6e7",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/e6603ddf011895fdfe9aa7eece768a392138c6e7"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/9c981c56cb189f45741da7911ff2a77b9cfca97a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/9c981c56cb189f45741da7911ff2a77b9cfca97a",
+    "html_url": "https://github.com/apache/kafka/commit/9c981c56cb189f45741da7911ff2a77b9cfca97a",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/9c981c56cb189f45741da7911ff2a77b9cfca97a/comments",
+    "author": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "3e89824c711064acdf5e72954906c4090b7488eb",
+        "url": "https://api.github.com/repos/apache/kafka/commits/3e89824c711064acdf5e72954906c4090b7488eb",
+        "html_url": "https://github.com/apache/kafka/commit/3e89824c711064acdf5e72954906c4090b7488eb"
+      }
+    ]
+  },
+  {
+    "sha": "eba6df82ea1480c91107c9fee45c290a53462855",
+    "node_id": "MDY6Q29tbWl0MTI1MjEwOTQ2OmViYTZkZjgyZWExNDgwYzkxMTA3YzlmZWU0NWMyOTBhNTM0NjI4NTU=",
+    "commit": {
+      "author": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-08-29T20:52:03Z"
+      },
+      "committer": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-09-08T16:10:57Z"
+      },
+      "message": "introduce leaderHWChange and consume all delayed actions",
+      "tree": {
+        "sha": "6452c21e256771d141df592c7533ac98ebc3677a",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/6452c21e256771d141df592c7533ac98ebc3677a"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/eba6df82ea1480c91107c9fee45c290a53462855",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/eba6df82ea1480c91107c9fee45c290a53462855",
+    "html_url": "https://github.com/apache/kafka/commit/eba6df82ea1480c91107c9fee45c290a53462855",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/eba6df82ea1480c91107c9fee45c290a53462855/comments",
+    "author": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9c981c56cb189f45741da7911ff2a77b9cfca97a",
+        "url": "https://api.github.com/repos/apache/kafka/commits/9c981c56cb189f45741da7911ff2a77b9cfca97a",
+        "html_url": "https://github.com/apache/kafka/commit/9c981c56cb189f45741da7911ff2a77b9cfca97a"
+      }
+    ]
+  },
+  {
+    "sha": "4a9e49fc8a2213cb57a782f4a15bae352a4c7d43",
+    "node_id": "MDY6Q29tbWl0MTI1MjEwOTQ2OjRhOWU0OWZjOGEyMjEzY2I1N2E3ODJmNGExNWJhZTM1MmE0YzdkNDM=",
+    "commit": {
+      "author": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-08-29T20:55:11Z"
+      },
+      "committer": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-09-08T16:10:57Z"
+      },
+      "message": "revise comment",
+      "tree": {
+        "sha": "f67c0eb96bf7a409217003760a9b709a09870ed7",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/f67c0eb96bf7a409217003760a9b709a09870ed7"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/4a9e49fc8a2213cb57a782f4a15bae352a4c7d43",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/4a9e49fc8a2213cb57a782f4a15bae352a4c7d43",
+    "html_url": "https://github.com/apache/kafka/commit/4a9e49fc8a2213cb57a782f4a15bae352a4c7d43",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/4a9e49fc8a2213cb57a782f4a15bae352a4c7d43/comments",
+    "author": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "eba6df82ea1480c91107c9fee45c290a53462855",
+        "url": "https://api.github.com/repos/apache/kafka/commits/eba6df82ea1480c91107c9fee45c290a53462855",
+        "html_url": "https://github.com/apache/kafka/commit/eba6df82ea1480c91107c9fee45c290a53462855"
+      }
+    ]
+  },
+  {
+    "sha": "c42f46426f4cdb2ed441d7bf99fbc887861dff93",
+    "node_id": "MDY6Q29tbWl0MTI1MjEwOTQ2OmM0MmY0NjQyNmY0Y2RiMmVkNDQxZDdiZjk5ZmJjODg3ODYxZGZmOTM=",
+    "commit": {
+      "author": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-08-30T09:54:28Z"
+      },
+      "committer": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-09-08T16:10:57Z"
+      },
+      "message": "revert action queue in per server",
+      "tree": {
+        "sha": "46289c08a118b3af47add236e6d4a866a81fd692",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/46289c08a118b3af47add236e6d4a866a81fd692"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/c42f46426f4cdb2ed441d7bf99fbc887861dff93",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/c42f46426f4cdb2ed441d7bf99fbc887861dff93",
+    "html_url": "https://github.com/apache/kafka/commit/c42f46426f4cdb2ed441d7bf99fbc887861dff93",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/c42f46426f4cdb2ed441d7bf99fbc887861dff93/comments",
+    "author": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4a9e49fc8a2213cb57a782f4a15bae352a4c7d43",
+        "url": "https://api.github.com/repos/apache/kafka/commits/4a9e49fc8a2213cb57a782f4a15bae352a4c7d43",
+        "html_url": "https://github.com/apache/kafka/commit/4a9e49fc8a2213cb57a782f4a15bae352a4c7d43"
+      }
+    ]
+  },
+  {
+    "sha": "e1a6044b54fa50541955761c3e83e8247eb70026",
+    "node_id": "MDY6Q29tbWl0MTI1MjEwOTQ2OmUxYTYwNDRiNTRmYTUwNTQxOTU1NzYxYzNlODNlODI0N2ViNzAwMjY=",
+    "commit": {
+      "author": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-08-31T04:06:40Z"
+      },
+      "committer": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-09-08T16:10:57Z"
+      },
+      "message": "Incremental -> Increased; LeaderHWChange -> LeaderHwChange; and other grammar fix",
+      "tree": {
+        "sha": "f5104ed7fffde46cb51642eb408d0c24887d365e",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/f5104ed7fffde46cb51642eb408d0c24887d365e"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/e1a6044b54fa50541955761c3e83e8247eb70026",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/e1a6044b54fa50541955761c3e83e8247eb70026",
+    "html_url": "https://github.com/apache/kafka/commit/e1a6044b54fa50541955761c3e83e8247eb70026",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/e1a6044b54fa50541955761c3e83e8247eb70026/comments",
+    "author": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "c42f46426f4cdb2ed441d7bf99fbc887861dff93",
+        "url": "https://api.github.com/repos/apache/kafka/commits/c42f46426f4cdb2ed441d7bf99fbc887861dff93",
+        "html_url": "https://github.com/apache/kafka/commit/c42f46426f4cdb2ed441d7bf99fbc887861dff93"
+      }
+    ]
+  },
+  {
+    "sha": "5da2fab1f02ebf3965a6385a20cf078ba692e541",
+    "node_id": "MDY6Q29tbWl0MTI1MjEwOTQ2OjVkYTJmYWIxZjAyZWJmMzk2NWE2Mzg1YTIwY2YwNzhiYTY5MmU1NDE=",
+    "commit": {
+      "author": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-09-03T06:41:41Z"
+      },
+      "committer": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-09-08T16:10:57Z"
+      },
+      "message": "fix deadlock in TransactionCoordinatorConcurrencyTest",
+      "tree": {
+        "sha": "ca59eefc6da9a6247da1da40a4e5a50f707f5c15",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/ca59eefc6da9a6247da1da40a4e5a50f707f5c15"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/5da2fab1f02ebf3965a6385a20cf078ba692e541",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/5da2fab1f02ebf3965a6385a20cf078ba692e541",
+    "html_url": "https://github.com/apache/kafka/commit/5da2fab1f02ebf3965a6385a20cf078ba692e541",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/5da2fab1f02ebf3965a6385a20cf078ba692e541/comments",
+    "author": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e1a6044b54fa50541955761c3e83e8247eb70026",
+        "url": "https://api.github.com/repos/apache/kafka/commits/e1a6044b54fa50541955761c3e83e8247eb70026",
+        "html_url": "https://github.com/apache/kafka/commit/e1a6044b54fa50541955761c3e83e8247eb70026"
+      }
+    ]
+  },
+  {
+    "sha": "4e66db09b6a8fb2f93fd097fbbd327cab98b5107",
+    "node_id": "MDY6Q29tbWl0MTI1MjEwOTQ2OjRlNjZkYjA5YjZhOGZiMmY5M2ZkMDk3ZmJiZDMyN2NhYjk4YjUxMDc=",
+    "commit": {
+      "author": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-09-06T08:22:16Z"
+      },
+      "committer": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-09-08T16:10:57Z"
+      },
+      "message": "fix potential deadlock in tryCompleteElseWatch",
+      "tree": {
+        "sha": "54801347d69fe71f8a285c70fa671a1d22d2852d",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/54801347d69fe71f8a285c70fa671a1d22d2852d"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/4e66db09b6a8fb2f93fd097fbbd327cab98b5107",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/4e66db09b6a8fb2f93fd097fbbd327cab98b5107",
+    "html_url": "https://github.com/apache/kafka/commit/4e66db09b6a8fb2f93fd097fbbd327cab98b5107",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/4e66db09b6a8fb2f93fd097fbbd327cab98b5107/comments",
+    "author": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5da2fab1f02ebf3965a6385a20cf078ba692e541",
+        "url": "https://api.github.com/repos/apache/kafka/commits/5da2fab1f02ebf3965a6385a20cf078ba692e541",
+        "html_url": "https://github.com/apache/kafka/commit/5da2fab1f02ebf3965a6385a20cf078ba692e541"
+      }
+    ]
+  },
+  {
+    "sha": "b3cd7add61a91949611c39ceb7d37ada41614cf8",
+    "node_id": "MDY6Q29tbWl0MTI1MjEwOTQ2OmIzY2Q3YWRkNjFhOTE5NDk2MTFjMzljZWI3ZDM3YWRhNDE2MTRjZjg=",
+    "commit": {
+      "author": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-09-07T08:00:07Z"
+      },
+      "committer": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-09-08T16:10:57Z"
+      },
+      "message": "a bit tweak",
+      "tree": {
+        "sha": "15285db9fe93ae1bb818a665b6675e292a7326b2",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/15285db9fe93ae1bb818a665b6675e292a7326b2"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/b3cd7add61a91949611c39ceb7d37ada41614cf8",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/b3cd7add61a91949611c39ceb7d37ada41614cf8",
+    "html_url": "https://github.com/apache/kafka/commit/b3cd7add61a91949611c39ceb7d37ada41614cf8",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/b3cd7add61a91949611c39ceb7d37ada41614cf8/comments",
+    "author": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4e66db09b6a8fb2f93fd097fbbd327cab98b5107",
+        "url": "https://api.github.com/repos/apache/kafka/commits/4e66db09b6a8fb2f93fd097fbbd327cab98b5107",
+        "html_url": "https://github.com/apache/kafka/commit/4e66db09b6a8fb2f93fd097fbbd327cab98b5107"
+      }
+    ]
+  },
+  {
+    "sha": "50032c16eda4c5845dea94b7076a4b6f432d9550",
+    "node_id": "MDY6Q29tbWl0MTI1MjEwOTQ2OjUwMDMyYzE2ZWRhNGM1ODQ1ZGVhOTRiNzA3NmE0YjZmNDMyZDk1NTA=",
+    "commit": {
+      "author": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-09-07T19:48:22Z"
+      },
+      "committer": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-09-08T16:10:57Z"
+      },
+      "message": "remove unused methods from DelayedOperations; add safeTryCompleteAndElse to DelayedOperation",
+      "tree": {
+        "sha": "184b19d06d01c9d186eeb0180d572495fed405a0",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/184b19d06d01c9d186eeb0180d572495fed405a0"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/50032c16eda4c5845dea94b7076a4b6f432d9550",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/50032c16eda4c5845dea94b7076a4b6f432d9550",
+    "html_url": "https://github.com/apache/kafka/commit/50032c16eda4c5845dea94b7076a4b6f432d9550",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/50032c16eda4c5845dea94b7076a4b6f432d9550/comments",
+    "author": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "b3cd7add61a91949611c39ceb7d37ada41614cf8",
+        "url": "https://api.github.com/repos/apache/kafka/commits/b3cd7add61a91949611c39ceb7d37ada41614cf8",
+        "html_url": "https://github.com/apache/kafka/commit/b3cd7add61a91949611c39ceb7d37ada41614cf8"
+      }
+    ]
+  },
+  {
+    "sha": "28b68545183b13f39861ee45812042f5464777b2",
+    "node_id": "MDY6Q29tbWl0MTI1MjEwOTQ2OjI4YjY4NTQ1MTgzYjEzZjM5ODYxZWU0NTgxMjA0MmY1NDY0Nzc3YjI=",
+    "commit": {
+      "author": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-09-08T02:52:42Z"
+      },
+      "committer": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-09-08T16:10:57Z"
+      },
+      "message": "rename safeTryCompleteOrElse to safeTryCompleteAndElse; revise comment",
+      "tree": {
+        "sha": "377bb25325eb067fdc9dec3caf18dd0ee3f97895",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/377bb25325eb067fdc9dec3caf18dd0ee3f97895"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/28b68545183b13f39861ee45812042f5464777b2",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/28b68545183b13f39861ee45812042f5464777b2",
+    "html_url": "https://github.com/apache/kafka/commit/28b68545183b13f39861ee45812042f5464777b2",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/28b68545183b13f39861ee45812042f5464777b2/comments",
+    "author": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "50032c16eda4c5845dea94b7076a4b6f432d9550",
+        "url": "https://api.github.com/repos/apache/kafka/commits/50032c16eda4c5845dea94b7076a4b6f432d9550",
+        "html_url": "https://github.com/apache/kafka/commit/50032c16eda4c5845dea94b7076a4b6f432d9550"
+      }
+    ]
+  },
+  {
+    "sha": "9a49f046f96fe082de7bddb539dd68589e8853db",
+    "node_id": "MDY6Q29tbWl0MTI1MjEwOTQ2OjlhNDlmMDQ2Zjk2ZmUwODJkZTdiZGRiNTM5ZGQ2ODU4OWU4ODUzZGI=",
+    "commit": {
+      "author": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-09-08T05:57:13Z"
+      },
+      "committer": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-09-08T16:10:57Z"
+      },
+      "message": "remove global variable from GroupCoordinatorConcurrencyTest; revise comment",
+      "tree": {
+        "sha": "6f948bfac4766eb3e1d1586f10bf5d88f73f243b",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/6f948bfac4766eb3e1d1586f10bf5d88f73f243b"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/9a49f046f96fe082de7bddb539dd68589e8853db",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/9a49f046f96fe082de7bddb539dd68589e8853db",
+    "html_url": "https://github.com/apache/kafka/commit/9a49f046f96fe082de7bddb539dd68589e8853db",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/9a49f046f96fe082de7bddb539dd68589e8853db/comments",
+    "author": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "28b68545183b13f39861ee45812042f5464777b2",
+        "url": "https://api.github.com/repos/apache/kafka/commits/28b68545183b13f39861ee45812042f5464777b2",
+        "html_url": "https://github.com/apache/kafka/commit/28b68545183b13f39861ee45812042f5464777b2"
+      }
+    ]
+  },
+  {
+    "sha": "fbd46565aa5e03f4fd9c857a184b7c2371ca5932",
+    "node_id": "MDY6Q29tbWl0MTI1MjEwOTQ2OmZiZDQ2NTY1YWE1ZTAzZjRmZDljODU3YTE4NGI3YzIzNzFjYTU5MzI=",
+    "commit": {
+      "author": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-09-08T16:13:09Z"
+      },
+      "committer": {
+        "name": "Chia-Ping Tsai",
+        "email": "chia7712@gmail.com",
+        "date": "2020-09-08T16:13:09Z"
+      },
+      "message": "tweak comment",
+      "tree": {
+        "sha": "529f4a40c67744e2ff93c044c2650c9a765365df",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/529f4a40c67744e2ff93c044c2650c9a765365df"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/fbd46565aa5e03f4fd9c857a184b7c2371ca5932",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/fbd46565aa5e03f4fd9c857a184b7c2371ca5932",
+    "html_url": "https://github.com/apache/kafka/commit/fbd46565aa5e03f4fd9c857a184b7c2371ca5932",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/fbd46565aa5e03f4fd9c857a184b7c2371ca5932/comments",
+    "author": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "chia7712",
+      "id": 6234750,
+      "node_id": "MDQ6VXNlcjYyMzQ3NTA=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6234750?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/chia7712",
+      "html_url": "https://github.com/chia7712",
+      "followers_url": "https://api.github.com/users/chia7712/followers",
+      "following_url": "https://api.github.com/users/chia7712/following{/other_user}",
+      "gists_url": "https://api.github.com/users/chia7712/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/chia7712/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/chia7712/subscriptions",
+      "organizations_url": "https://api.github.com/users/chia7712/orgs",
+      "repos_url": "https://api.github.com/users/chia7712/repos",
+      "events_url": "https://api.github.com/users/chia7712/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/chia7712/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9a49f046f96fe082de7bddb539dd68589e8853db",
+        "url": "https://api.github.com/repos/apache/kafka/commits/9a49f046f96fe082de7bddb539dd68589e8853db",
+        "html_url": "https://github.com/apache/kafka/commit/9a49f046f96fe082de7bddb539dd68589e8853db"
+      }
+    ]
+  }
+]

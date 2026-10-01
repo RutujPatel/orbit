@@ -1,0 +1,248 @@
+[
+  {
+    "sha": "7adb82a3b8b4737aa2bf1393f164f4d0249cb330",
+    "node_id": "MDY6Q29tbWl0MTU2Nzk5ODA6N2FkYjgyYTNiOGI0NzM3YWEyYmYxMzkzZjE2NGY0ZDAyNDljYjMzMA==",
+    "commit": {
+      "author": {
+        "name": "mingliang",
+        "email": "qmlmoon@gmail.com",
+        "date": "2014-03-11T20:39:59Z"
+      },
+      "committer": {
+        "name": "mingliang",
+        "email": "qmlmoon@gmail.com",
+        "date": "2014-03-12T22:30:59Z"
+      },
+      "message": "Add distributed cache to stratosphere",
+      "tree": {
+        "sha": "d06b7a8835164e998cc9206acdd5fe34647f4565",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/d06b7a8835164e998cc9206acdd5fe34647f4565"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/7adb82a3b8b4737aa2bf1393f164f4d0249cb330",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/7adb82a3b8b4737aa2bf1393f164f4d0249cb330",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/7adb82a3b8b4737aa2bf1393f164f4d0249cb330",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/7adb82a3b8b4737aa2bf1393f164f4d0249cb330/comments",
+    "author": {
+      "login": "qmlmoon",
+      "id": 5807102,
+      "node_id": "MDQ6VXNlcjU4MDcxMDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5807102?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/qmlmoon",
+      "html_url": "https://github.com/qmlmoon",
+      "followers_url": "https://api.github.com/users/qmlmoon/followers",
+      "following_url": "https://api.github.com/users/qmlmoon/following{/other_user}",
+      "gists_url": "https://api.github.com/users/qmlmoon/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/qmlmoon/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/qmlmoon/subscriptions",
+      "organizations_url": "https://api.github.com/users/qmlmoon/orgs",
+      "repos_url": "https://api.github.com/users/qmlmoon/repos",
+      "events_url": "https://api.github.com/users/qmlmoon/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/qmlmoon/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "qmlmoon",
+      "id": 5807102,
+      "node_id": "MDQ6VXNlcjU4MDcxMDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5807102?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/qmlmoon",
+      "html_url": "https://github.com/qmlmoon",
+      "followers_url": "https://api.github.com/users/qmlmoon/followers",
+      "following_url": "https://api.github.com/users/qmlmoon/following{/other_user}",
+      "gists_url": "https://api.github.com/users/qmlmoon/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/qmlmoon/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/qmlmoon/subscriptions",
+      "organizations_url": "https://api.github.com/users/qmlmoon/orgs",
+      "repos_url": "https://api.github.com/users/qmlmoon/repos",
+      "events_url": "https://api.github.com/users/qmlmoon/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/qmlmoon/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2242e76a0e2c3dc1921289033359f11db0ce8c9b",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/2242e76a0e2c3dc1921289033359f11db0ce8c9b",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/2242e76a0e2c3dc1921289033359f11db0ce8c9b"
+      }
+    ]
+  },
+  {
+    "sha": "d294d2b7dabe2545492c7ce3347d599f8a2b500b",
+    "node_id": "MDY6Q29tbWl0MTU2Nzk5ODA6ZDI5NGQyYjdkYWJlMjU0NTQ5MmM3Y2UzMzQ3ZDU5OWY4YTJiNTAwYg==",
+    "commit": {
+      "author": {
+        "name": "mingliang",
+        "email": "qmlmoon@gmail.com",
+        "date": "2014-03-16T19:38:32Z"
+      },
+      "committer": {
+        "name": "mingliang",
+        "email": "qmlmoon@gmail.com",
+        "date": "2014-03-16T19:38:32Z"
+      },
+      "message": "change codestyles and clean up",
+      "tree": {
+        "sha": "5ea8e2dcdd365da8c36ca2ad65caf24a7e523164",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/5ea8e2dcdd365da8c36ca2ad65caf24a7e523164"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/d294d2b7dabe2545492c7ce3347d599f8a2b500b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/d294d2b7dabe2545492c7ce3347d599f8a2b500b",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/d294d2b7dabe2545492c7ce3347d599f8a2b500b",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/d294d2b7dabe2545492c7ce3347d599f8a2b500b/comments",
+    "author": {
+      "login": "qmlmoon",
+      "id": 5807102,
+      "node_id": "MDQ6VXNlcjU4MDcxMDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5807102?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/qmlmoon",
+      "html_url": "https://github.com/qmlmoon",
+      "followers_url": "https://api.github.com/users/qmlmoon/followers",
+      "following_url": "https://api.github.com/users/qmlmoon/following{/other_user}",
+      "gists_url": "https://api.github.com/users/qmlmoon/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/qmlmoon/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/qmlmoon/subscriptions",
+      "organizations_url": "https://api.github.com/users/qmlmoon/orgs",
+      "repos_url": "https://api.github.com/users/qmlmoon/repos",
+      "events_url": "https://api.github.com/users/qmlmoon/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/qmlmoon/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "qmlmoon",
+      "id": 5807102,
+      "node_id": "MDQ6VXNlcjU4MDcxMDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5807102?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/qmlmoon",
+      "html_url": "https://github.com/qmlmoon",
+      "followers_url": "https://api.github.com/users/qmlmoon/followers",
+      "following_url": "https://api.github.com/users/qmlmoon/following{/other_user}",
+      "gists_url": "https://api.github.com/users/qmlmoon/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/qmlmoon/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/qmlmoon/subscriptions",
+      "organizations_url": "https://api.github.com/users/qmlmoon/orgs",
+      "repos_url": "https://api.github.com/users/qmlmoon/repos",
+      "events_url": "https://api.github.com/users/qmlmoon/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/qmlmoon/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7adb82a3b8b4737aa2bf1393f164f4d0249cb330",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/7adb82a3b8b4737aa2bf1393f164f4d0249cb330",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/7adb82a3b8b4737aa2bf1393f164f4d0249cb330"
+      }
+    ]
+  },
+  {
+    "sha": "16401577e8bee95d547f90ca16f686efe817917d",
+    "node_id": "MDY6Q29tbWl0MTU2Nzk5ODA6MTY0MDE1NzdlOGJlZTk1ZDU0N2Y5MGNhMTZmNjg2ZWZlODE3OTE3ZA==",
+    "commit": {
+      "author": {
+        "name": "mingliang",
+        "email": "qmlmoon@gmail.com",
+        "date": "2014-03-19T20:18:12Z"
+      },
+      "committer": {
+        "name": "mingliang",
+        "email": "qmlmoon@gmail.com",
+        "date": "2014-03-19T20:18:12Z"
+      },
+      "message": "add test for delete process of tmp file and tested in cluster",
+      "tree": {
+        "sha": "b1bc088ed040957593b7815481b1b0ae449bb8b0",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/b1bc088ed040957593b7815481b1b0ae449bb8b0"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/16401577e8bee95d547f90ca16f686efe817917d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/16401577e8bee95d547f90ca16f686efe817917d",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/16401577e8bee95d547f90ca16f686efe817917d",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/16401577e8bee95d547f90ca16f686efe817917d/comments",
+    "author": {
+      "login": "qmlmoon",
+      "id": 5807102,
+      "node_id": "MDQ6VXNlcjU4MDcxMDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5807102?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/qmlmoon",
+      "html_url": "https://github.com/qmlmoon",
+      "followers_url": "https://api.github.com/users/qmlmoon/followers",
+      "following_url": "https://api.github.com/users/qmlmoon/following{/other_user}",
+      "gists_url": "https://api.github.com/users/qmlmoon/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/qmlmoon/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/qmlmoon/subscriptions",
+      "organizations_url": "https://api.github.com/users/qmlmoon/orgs",
+      "repos_url": "https://api.github.com/users/qmlmoon/repos",
+      "events_url": "https://api.github.com/users/qmlmoon/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/qmlmoon/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "qmlmoon",
+      "id": 5807102,
+      "node_id": "MDQ6VXNlcjU4MDcxMDI=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5807102?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/qmlmoon",
+      "html_url": "https://github.com/qmlmoon",
+      "followers_url": "https://api.github.com/users/qmlmoon/followers",
+      "following_url": "https://api.github.com/users/qmlmoon/following{/other_user}",
+      "gists_url": "https://api.github.com/users/qmlmoon/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/qmlmoon/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/qmlmoon/subscriptions",
+      "organizations_url": "https://api.github.com/users/qmlmoon/orgs",
+      "repos_url": "https://api.github.com/users/qmlmoon/repos",
+      "events_url": "https://api.github.com/users/qmlmoon/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/qmlmoon/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d294d2b7dabe2545492c7ce3347d599f8a2b500b",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/d294d2b7dabe2545492c7ce3347d599f8a2b500b",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/d294d2b7dabe2545492c7ce3347d599f8a2b500b"
+      }
+    ]
+  }
+]

@@ -226,7 +226,7 @@ def _resolve_selector_in_list(
         # Out-of-bounds index: check if selector was intended as a numeric ID (e.g. PR number or source_id)
         # before failing with NOT_FOUND.
         ident = str(selector)
-        matches: list[Any] = []
+        fallback_matches: list[Any] = []
         for item in items:
             if not isinstance(item, dict):
                 continue
@@ -252,15 +252,15 @@ def _resolve_selector_in_list(
                 if desc:
                     matched = any(str(item.get(k)) == ident for k in desc.primary_key_fields)
             if matched:
-                matches.append(item)
+                fallback_matches.append(item)
 
-        if len(matches) == 1:
-            return matches[0], "RESOLVED", None
-        if len(matches) > 1:
+        if len(fallback_matches) == 1:
+            return fallback_matches[0], "RESOLVED", None
+        if len(fallback_matches) > 1:
             return (
                 None,
                 "AMBIGUOUS",
-                f"Numeric selector '{selector}' is ambiguous in collection '{collection}' ({len(matches)} matches found)",
+                f"Numeric selector '{selector}' is ambiguous in collection '{collection}' ({len(fallback_matches)} matches found)",
             )
 
         return (
@@ -271,7 +271,7 @@ def _resolve_selector_in_list(
 
     # String identifier matching
     ident = str(selector)
-    matches: list[Any] = []
+    ident_matches: list[Any] = []
 
     for item in items:
         if not isinstance(item, dict):
@@ -310,16 +310,16 @@ def _resolve_selector_in_list(
                 matched = any(str(item.get(k)) == ident for k in desc.primary_key_fields)
 
         if matched:
-            matches.append(item)
+            ident_matches.append(item)
 
-    if len(matches) == 1:
-        return matches[0], "RESOLVED", None
-    if len(matches) == 0:
+    if len(ident_matches) == 1:
+        return ident_matches[0], "RESOLVED", None
+    if len(ident_matches) == 0:
         return None, "NOT_FOUND", f"Identifier '{ident}' not found in collection '{collection}'"
     return (
         None,
         "AMBIGUOUS",
-        f"Identifier '{ident}' is ambiguous in collection '{collection}' ({len(matches)} matches found)",
+        f"Identifier '{ident}' is ambiguous in collection '{collection}' ({len(ident_matches)} matches found)",
     )
 
 

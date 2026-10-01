@@ -1,0 +1,86 @@
+[
+  {
+    "sha": "7189418b63b629c175903fc0ced9d3c09a872b80",
+    "node_id": "MDY6Q29tbWl0NDA2ODk3NTY6NzE4OTQxOGI2M2I2MjljMTc1OTAzZmMwY2VkOWQzYzA5YTg3MmI4MA==",
+    "commit": {
+      "author": {
+        "name": "aberey",
+        "email": "aberey@square-enix.com",
+        "date": "2015-08-14T02:24:27Z"
+      },
+      "committer": {
+        "name": "aberey",
+        "email": "aberey@square-enix.com",
+        "date": "2015-08-14T02:24:27Z"
+      },
+      "message": "Added differentiation of nested records with the same name by adding to\neach record definition a namespace definition consisting of a\ndot-separated concatenation of the enclosing records' names.\n\nThis fixes https://github.com/databricks/spark-avro/issues/54\n\nThe implementation adheres to the Avro name/namespace specification\nat https://avro.apache.org/docs/1.7.7/spec.html#Names\nand uses the fullname definition (as opposed to seperate name and\nnamespace definition) to preserve union type resolution.",
+      "tree": {
+        "sha": "e9c2345c038105571dcc122aa59dd0ecc5f0b63e",
+        "url": "https://api.github.com/repos/databricks/spark-avro/git/trees/e9c2345c038105571dcc122aa59dd0ecc5f0b63e"
+      },
+      "url": "https://api.github.com/repos/databricks/spark-avro/git/commits/7189418b63b629c175903fc0ced9d3c09a872b80",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/databricks/spark-avro/commits/7189418b63b629c175903fc0ced9d3c09a872b80",
+    "html_url": "https://github.com/databricks/spark-avro/commit/7189418b63b629c175903fc0ced9d3c09a872b80",
+    "comments_url": "https://api.github.com/repos/databricks/spark-avro/commits/7189418b63b629c175903fc0ced9d3c09a872b80/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "0cf860fc2c11d8d73c12760540584efc905bea65",
+        "url": "https://api.github.com/repos/databricks/spark-avro/commits/0cf860fc2c11d8d73c12760540584efc905bea65",
+        "html_url": "https://github.com/databricks/spark-avro/commit/0cf860fc2c11d8d73c12760540584efc905bea65"
+      }
+    ]
+  },
+  {
+    "sha": "5b86a3595ad5032bea2f5cd82faa4de6daf6faf9",
+    "node_id": "MDY6Q29tbWl0NDA2ODk3NTY6NWI4NmEzNTk1YWQ1MDMyYmVhMmY1Y2Q4MmZhYTRkZTZkYWY2ZmFmOQ==",
+    "commit": {
+      "author": {
+        "name": "aberey",
+        "email": "aberey@square-enix.com",
+        "date": "2015-08-19T03:12:52Z"
+      },
+      "committer": {
+        "name": "aberey",
+        "email": "aberey@square-enix.com",
+        "date": "2015-08-19T03:12:52Z"
+      },
+      "message": "  fixed scalastyle conformance",
+      "tree": {
+        "sha": "55058548b649bf8e3c1bd46e9272d5308ce9fa15",
+        "url": "https://api.github.com/repos/databricks/spark-avro/git/trees/55058548b649bf8e3c1bd46e9272d5308ce9fa15"
+      },
+      "url": "https://api.github.com/repos/databricks/spark-avro/git/commits/5b86a3595ad5032bea2f5cd82faa4de6daf6faf9",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/databricks/spark-avro/commits/5b86a3595ad5032bea2f5cd82faa4de6daf6faf9",
+    "html_url": "https://github.com/databricks/spark-avro/commit/5b86a3595ad5032bea2f5cd82faa4de6daf6faf9",
+    "comments_url": "https://api.github.com/repos/databricks/spark-avro/commits/5b86a3595ad5032bea2f5cd82faa4de6daf6faf9/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "7189418b63b629c175903fc0ced9d3c09a872b80",
+        "url": "https://api.github.com/repos/databricks/spark-avro/commits/7189418b63b629c175903fc0ced9d3c09a872b80",
+        "html_url": "https://github.com/databricks/spark-avro/commit/7189418b63b629c175903fc0ced9d3c09a872b80"
+      }
+    ]
+  }
+]

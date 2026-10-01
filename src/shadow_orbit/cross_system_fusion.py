@@ -77,7 +77,6 @@ def correlate_cross_system_evidence(
     github_fixture: NormalizedGitHubFixture,
     mention_policy: MentionLexicalPolicy,
     jira_source_instance: SourceInstance | None = None,
-    temporal_interval: tuple[datetime, datetime] | None = None,
 ) -> CrossSystemFusionResult:
     """Pure, deterministic fusion of Jira and GitHub evidence.
 
@@ -92,8 +91,6 @@ def correlate_cross_system_evidence(
     jira_source_instance:
         Optional expected Jira SourceInstance. If None, inferred from the first
         Jira observation if available.
-    temporal_interval:
-        Optional review period bounds (starts_at, ends_at_exclusive).
 
     Returns
     -------
@@ -120,10 +117,12 @@ def correlate_cross_system_evidence(
             jira_obs_by_id[key].append(obs)
 
     # ── 3. Index GitHub observations by (entity_kind, entity_id) ─────
-    gh_obs_by_key: dict[tuple[str, str], EvidenceObservation] = {}
+    gh_obs_by_key: dict[tuple[str, str], list[EvidenceObservation]] = {}
     for obs in github_fixture.observations:
         k = (obs.entity_ref.entity_kind, obs.entity_ref.entity_id)
-        gh_obs_by_key[k] = obs
+        if k not in gh_obs_by_key:
+            gh_obs_by_key[k] = []
+        gh_obs_by_key[k].append(obs)
 
     # ── 4. Resolve Declared Mentions (DECLARED_MENTION) ───────────────
     # Uses existing resolve_github_jira_mentions for exact lexical matching & provenance
@@ -147,12 +146,14 @@ def correlate_cross_system_evidence(
         gh_ref = rel.subject_ref
         jira_ref = rel.object_ref
 
-        gh_obs = gh_obs_by_key.get((gh_ref.entity_kind, gh_ref.entity_id))
+        matching_gh = gh_obs_by_key.get((gh_ref.entity_kind, gh_ref.entity_id), [])
         matching_jira = jira_obs_by_id.get(jira_ref.entity_id, [])
 
-        if len(matching_jira) != 1 or gh_obs is None:
+        if len(matching_jira) != 1 or len(matching_gh) != 1:
             # Ambiguous or unobserved targets are handled in unresolved_references
             continue
+
+        gh_obs = matching_gh[0]
 
         jira_obs = matching_jira[0]
         jira_state = jira_obs.observed_state

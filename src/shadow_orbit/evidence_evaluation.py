@@ -455,7 +455,11 @@ def evaluate_evidence_bundle(
             corr_obs.quality_issues,
         )
 
-        is_stale = any(q.code == "STALE" for q in combined_qi)
+        is_stale = any(
+            q.code in ("STALE", "stale")
+            or (q.code == "invalid" and q.subject_scope in ("provenance:temporal", "temporal:staleness"))
+            for q in combined_qi
+        )
 
         work_state = as_work_item_state(subject_obs.observed_state)
         code_state = as_code_change_state(corr_obs.observed_state)

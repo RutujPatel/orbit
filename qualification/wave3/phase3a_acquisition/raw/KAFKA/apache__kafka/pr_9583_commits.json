@@ -1,0 +1,86 @@
+[
+  {
+    "sha": "79f387cc7f3307d621a38bf139b32a8593a43814",
+    "node_id": "MDY6Q29tbWl0Mjc0NjkxNzg5Ojc5ZjM4N2NjN2YzMzA3ZDYyMWEzOGJmMTM5YjMyYTg1OTNhNDM4MTQ=",
+    "commit": {
+      "author": {
+        "name": "Leah Thomas",
+        "email": "lthomas@confluent.io",
+        "date": "2020-11-10T16:07:51Z"
+      },
+      "committer": {
+        "name": "Leah Thomas",
+        "email": "lthomas@confluent.io",
+        "date": "2020-11-10T17:15:32Z"
+      },
+      "message": "make state store more secure",
+      "tree": {
+        "sha": "c19de6655d7203f659a5d1fdb85cd34bd570d688",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/c19de6655d7203f659a5d1fdb85cd34bd570d688"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/79f387cc7f3307d621a38bf139b32a8593a43814",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/79f387cc7f3307d621a38bf139b32a8593a43814",
+    "html_url": "https://github.com/apache/kafka/commit/79f387cc7f3307d621a38bf139b32a8593a43814",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/79f387cc7f3307d621a38bf139b32a8593a43814/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "8e211eb72f9a45897cc37fed394a38096aa47feb",
+        "url": "https://api.github.com/repos/apache/kafka/commits/8e211eb72f9a45897cc37fed394a38096aa47feb",
+        "html_url": "https://github.com/apache/kafka/commit/8e211eb72f9a45897cc37fed394a38096aa47feb"
+      }
+    ]
+  },
+  {
+    "sha": "d0909d8a23bfc259b6b91568f444f93db9c82261",
+    "node_id": "MDY6Q29tbWl0Mjc0NjkxNzg5OmQwOTA5ZDhhMjNiZmMyNTliNmI5MTU2OGY0NDRmOTNkYjljODIyNjE=",
+    "commit": {
+      "author": {
+        "name": "Leah Thomas",
+        "email": "lthomas@confluent.io",
+        "date": "2020-11-10T21:42:22Z"
+      },
+      "committer": {
+        "name": "Leah Thomas",
+        "email": "lthomas@confluent.io",
+        "date": "2020-11-10T21:42:22Z"
+      },
+      "message": "clean up testing language",
+      "tree": {
+        "sha": "d1d43b12aa0975e9963e68556ea1ab0fcd87d188",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/d1d43b12aa0975e9963e68556ea1ab0fcd87d188"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/d0909d8a23bfc259b6b91568f444f93db9c82261",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/d0909d8a23bfc259b6b91568f444f93db9c82261",
+    "html_url": "https://github.com/apache/kafka/commit/d0909d8a23bfc259b6b91568f444f93db9c82261",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/d0909d8a23bfc259b6b91568f444f93db9c82261/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "79f387cc7f3307d621a38bf139b32a8593a43814",
+        "url": "https://api.github.com/repos/apache/kafka/commits/79f387cc7f3307d621a38bf139b32a8593a43814",
+        "html_url": "https://github.com/apache/kafka/commit/79f387cc7f3307d621a38bf139b32a8593a43814"
+      }
+    ]
+  }
+]

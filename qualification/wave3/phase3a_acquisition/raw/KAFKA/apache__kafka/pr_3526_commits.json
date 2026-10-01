@@ -1,0 +1,166 @@
+[
+  {
+    "sha": "bd00588b13adb1ab11362bec3eebcc51f36dd4ac",
+    "node_id": "MDY6Q29tbWl0NDIyOTYzMjk6YmQwMDU4OGIxM2FkYjFhYjExMzYyYmVjM2VlYmNjNTFmMzZkZDRhYw==",
+    "commit": {
+      "author": {
+        "name": "Rajini Sivaram",
+        "email": "rajinisivaram@googlemail.com",
+        "date": "2017-07-14T08:36:22Z"
+      },
+      "committer": {
+        "name": "Rajini Sivaram",
+        "email": "rajinisivaram@googlemail.com",
+        "date": "2017-07-14T10:35:24Z"
+      },
+      "message": "KAFKA-5587: Remove channel only after staged receives are delivered",
+      "tree": {
+        "sha": "b6796eb353ba06f50e796dfc39cf5b182c2af07b",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/b6796eb353ba06f50e796dfc39cf5b182c2af07b"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/bd00588b13adb1ab11362bec3eebcc51f36dd4ac",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/bd00588b13adb1ab11362bec3eebcc51f36dd4ac",
+    "html_url": "https://github.com/apache/kafka/commit/bd00588b13adb1ab11362bec3eebcc51f36dd4ac",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/bd00588b13adb1ab11362bec3eebcc51f36dd4ac/comments",
+    "author": {
+      "login": "rajinisivaram",
+      "id": 13164074,
+      "node_id": "MDQ6VXNlcjEzMTY0MDc0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13164074?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rajinisivaram",
+      "html_url": "https://github.com/rajinisivaram",
+      "followers_url": "https://api.github.com/users/rajinisivaram/followers",
+      "following_url": "https://api.github.com/users/rajinisivaram/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rajinisivaram/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rajinisivaram/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rajinisivaram/subscriptions",
+      "organizations_url": "https://api.github.com/users/rajinisivaram/orgs",
+      "repos_url": "https://api.github.com/users/rajinisivaram/repos",
+      "events_url": "https://api.github.com/users/rajinisivaram/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rajinisivaram/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rajinisivaram",
+      "id": 13164074,
+      "node_id": "MDQ6VXNlcjEzMTY0MDc0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13164074?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rajinisivaram",
+      "html_url": "https://github.com/rajinisivaram",
+      "followers_url": "https://api.github.com/users/rajinisivaram/followers",
+      "following_url": "https://api.github.com/users/rajinisivaram/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rajinisivaram/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rajinisivaram/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rajinisivaram/subscriptions",
+      "organizations_url": "https://api.github.com/users/rajinisivaram/orgs",
+      "repos_url": "https://api.github.com/users/rajinisivaram/repos",
+      "events_url": "https://api.github.com/users/rajinisivaram/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rajinisivaram/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2d2e9adb5d8d3805f082208ae9dd241f87566b27",
+        "url": "https://api.github.com/repos/apache/kafka/commits/2d2e9adb5d8d3805f082208ae9dd241f87566b27",
+        "html_url": "https://github.com/apache/kafka/commit/2d2e9adb5d8d3805f082208ae9dd241f87566b27"
+      }
+    ]
+  },
+  {
+    "sha": "f6bad1b12f434e4590a58531b4582679a64eb4a4",
+    "node_id": "MDY6Q29tbWl0NDIyOTYzMjk6ZjZiYWQxYjEyZjQzNGU0NTkwYTU4NTMxYjQ1ODI2NzlhNjRlYjRhNA==",
+    "commit": {
+      "author": {
+        "name": "Rajini Sivaram",
+        "email": "rajinisivaram@googlemail.com",
+        "date": "2017-07-14T12:19:48Z"
+      },
+      "committer": {
+        "name": "Rajini Sivaram",
+        "email": "rajinisivaram@googlemail.com",
+        "date": "2017-07-14T12:21:47Z"
+      },
+      "message": "Address review comments",
+      "tree": {
+        "sha": "807b75b593bf39f9faf60ccebc6f98581445b89c",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/807b75b593bf39f9faf60ccebc6f98581445b89c"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/f6bad1b12f434e4590a58531b4582679a64eb4a4",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/f6bad1b12f434e4590a58531b4582679a64eb4a4",
+    "html_url": "https://github.com/apache/kafka/commit/f6bad1b12f434e4590a58531b4582679a64eb4a4",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/f6bad1b12f434e4590a58531b4582679a64eb4a4/comments",
+    "author": {
+      "login": "rajinisivaram",
+      "id": 13164074,
+      "node_id": "MDQ6VXNlcjEzMTY0MDc0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13164074?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rajinisivaram",
+      "html_url": "https://github.com/rajinisivaram",
+      "followers_url": "https://api.github.com/users/rajinisivaram/followers",
+      "following_url": "https://api.github.com/users/rajinisivaram/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rajinisivaram/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rajinisivaram/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rajinisivaram/subscriptions",
+      "organizations_url": "https://api.github.com/users/rajinisivaram/orgs",
+      "repos_url": "https://api.github.com/users/rajinisivaram/repos",
+      "events_url": "https://api.github.com/users/rajinisivaram/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rajinisivaram/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "rajinisivaram",
+      "id": 13164074,
+      "node_id": "MDQ6VXNlcjEzMTY0MDc0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13164074?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rajinisivaram",
+      "html_url": "https://github.com/rajinisivaram",
+      "followers_url": "https://api.github.com/users/rajinisivaram/followers",
+      "following_url": "https://api.github.com/users/rajinisivaram/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rajinisivaram/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rajinisivaram/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rajinisivaram/subscriptions",
+      "organizations_url": "https://api.github.com/users/rajinisivaram/orgs",
+      "repos_url": "https://api.github.com/users/rajinisivaram/repos",
+      "events_url": "https://api.github.com/users/rajinisivaram/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rajinisivaram/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "bd00588b13adb1ab11362bec3eebcc51f36dd4ac",
+        "url": "https://api.github.com/repos/apache/kafka/commits/bd00588b13adb1ab11362bec3eebcc51f36dd4ac",
+        "html_url": "https://github.com/apache/kafka/commit/bd00588b13adb1ab11362bec3eebcc51f36dd4ac"
+      }
+    ]
+  }
+]

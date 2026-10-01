@@ -1,0 +1,576 @@
+[
+  {
+    "sha": "2d9a48c11151c7cac53363e4184edaf9d61ef2ae",
+    "node_id": "MDY6Q29tbWl0OTQ5OTQyMjoyZDlhNDhjMTExNTFjN2NhYzUzMzYzZTQxODRlZGFmOWQ2MWVmMmFl",
+    "commit": {
+      "author": {
+        "name": "Aljoscha Krettek",
+        "email": "aljoscha.krettek@gmail.com",
+        "date": "2013-11-26T09:05:28Z"
+      },
+      "committer": {
+        "name": "Aljoscha Krettek",
+        "email": "aljoscha.krettek@gmail.com",
+        "date": "2013-11-26T09:30:26Z"
+      },
+      "message": "Change assigning of fields in CsvInputFormat to correctly omit",
+      "tree": {
+        "sha": "8519417cb90a93ad13c94123ee47056628d85372",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/8519417cb90a93ad13c94123ee47056628d85372"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/2d9a48c11151c7cac53363e4184edaf9d61ef2ae",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/2d9a48c11151c7cac53363e4184edaf9d61ef2ae",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/2d9a48c11151c7cac53363e4184edaf9d61ef2ae",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/2d9a48c11151c7cac53363e4184edaf9d61ef2ae/comments",
+    "author": {
+      "login": "aljoscha",
+      "id": 68551,
+      "node_id": "MDQ6VXNlcjY4NTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68551?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aljoscha",
+      "html_url": "https://github.com/aljoscha",
+      "followers_url": "https://api.github.com/users/aljoscha/followers",
+      "following_url": "https://api.github.com/users/aljoscha/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aljoscha/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aljoscha/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aljoscha/subscriptions",
+      "organizations_url": "https://api.github.com/users/aljoscha/orgs",
+      "repos_url": "https://api.github.com/users/aljoscha/repos",
+      "events_url": "https://api.github.com/users/aljoscha/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aljoscha/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "aljoscha",
+      "id": 68551,
+      "node_id": "MDQ6VXNlcjY4NTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68551?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aljoscha",
+      "html_url": "https://github.com/aljoscha",
+      "followers_url": "https://api.github.com/users/aljoscha/followers",
+      "following_url": "https://api.github.com/users/aljoscha/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aljoscha/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aljoscha/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aljoscha/subscriptions",
+      "organizations_url": "https://api.github.com/users/aljoscha/orgs",
+      "repos_url": "https://api.github.com/users/aljoscha/repos",
+      "events_url": "https://api.github.com/users/aljoscha/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aljoscha/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9dd4635ad69bf107ab9f81c8e7ffd495475471e0",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/9dd4635ad69bf107ab9f81c8e7ffd495475471e0",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/9dd4635ad69bf107ab9f81c8e7ffd495475471e0"
+      }
+    ]
+  },
+  {
+    "sha": "8dd53a9c302e1d9ac3f3ccfa71e172080948f559",
+    "node_id": "MDY6Q29tbWl0OTQ5OTQyMjo4ZGQ1M2E5YzMwMmUxZDlhYzNmM2NjZmE3MWUxNzIwODA5NDhmNTU5",
+    "commit": {
+      "author": {
+        "name": "Aljoscha Krettek",
+        "email": "aljoscha.krettek@gmail.com",
+        "date": "2013-11-26T09:33:07Z"
+      },
+      "committer": {
+        "name": "Aljoscha Krettek",
+        "email": "aljoscha.krettek@gmail.com",
+        "date": "2013-11-26T09:33:07Z"
+      },
+      "message": "Fix GlobalSchemaGenerator\n\nDid not correctly generate for key-less reducers.\n\nThrew exception when a copy operator was needed, ignore this for now.",
+      "tree": {
+        "sha": "11ec7e48ad4b553b5719d8c14f9e965cc5580ebc",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/11ec7e48ad4b553b5719d8c14f9e965cc5580ebc"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/8dd53a9c302e1d9ac3f3ccfa71e172080948f559",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/8dd53a9c302e1d9ac3f3ccfa71e172080948f559",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/8dd53a9c302e1d9ac3f3ccfa71e172080948f559",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/8dd53a9c302e1d9ac3f3ccfa71e172080948f559/comments",
+    "author": {
+      "login": "aljoscha",
+      "id": 68551,
+      "node_id": "MDQ6VXNlcjY4NTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68551?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aljoscha",
+      "html_url": "https://github.com/aljoscha",
+      "followers_url": "https://api.github.com/users/aljoscha/followers",
+      "following_url": "https://api.github.com/users/aljoscha/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aljoscha/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aljoscha/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aljoscha/subscriptions",
+      "organizations_url": "https://api.github.com/users/aljoscha/orgs",
+      "repos_url": "https://api.github.com/users/aljoscha/repos",
+      "events_url": "https://api.github.com/users/aljoscha/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aljoscha/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "aljoscha",
+      "id": 68551,
+      "node_id": "MDQ6VXNlcjY4NTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68551?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aljoscha",
+      "html_url": "https://github.com/aljoscha",
+      "followers_url": "https://api.github.com/users/aljoscha/followers",
+      "following_url": "https://api.github.com/users/aljoscha/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aljoscha/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aljoscha/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aljoscha/subscriptions",
+      "organizations_url": "https://api.github.com/users/aljoscha/orgs",
+      "repos_url": "https://api.github.com/users/aljoscha/repos",
+      "events_url": "https://api.github.com/users/aljoscha/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aljoscha/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "2d9a48c11151c7cac53363e4184edaf9d61ef2ae",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/2d9a48c11151c7cac53363e4184edaf9d61ef2ae",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/2d9a48c11151c7cac53363e4184edaf9d61ef2ae"
+      }
+    ]
+  },
+  {
+    "sha": "f7dc63d31ced70bde568356e8d6fa1c8f2917e3a",
+    "node_id": "MDY6Q29tbWl0OTQ5OTQyMjpmN2RjNjNkMzFjZWQ3MGJkZTU2ODM1NmU4ZDZmYTFjOGYyOTE3ZTNh",
+    "commit": {
+      "author": {
+        "name": "Aljoscha Krettek",
+        "email": "aljoscha.krettek@gmail.com",
+        "date": "2013-11-26T11:04:31Z"
+      },
+      "committer": {
+        "name": "Aljoscha Krettek",
+        "email": "aljoscha.krettek@gmail.com",
+        "date": "2013-11-26T11:04:31Z"
+      },
+      "message": "Re-add combinable reduce in scala, consolidate implementations",
+      "tree": {
+        "sha": "0542baf901997397037806f43226f62dacf096a1",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/0542baf901997397037806f43226f62dacf096a1"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/f7dc63d31ced70bde568356e8d6fa1c8f2917e3a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/f7dc63d31ced70bde568356e8d6fa1c8f2917e3a",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/f7dc63d31ced70bde568356e8d6fa1c8f2917e3a",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/f7dc63d31ced70bde568356e8d6fa1c8f2917e3a/comments",
+    "author": {
+      "login": "aljoscha",
+      "id": 68551,
+      "node_id": "MDQ6VXNlcjY4NTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68551?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aljoscha",
+      "html_url": "https://github.com/aljoscha",
+      "followers_url": "https://api.github.com/users/aljoscha/followers",
+      "following_url": "https://api.github.com/users/aljoscha/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aljoscha/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aljoscha/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aljoscha/subscriptions",
+      "organizations_url": "https://api.github.com/users/aljoscha/orgs",
+      "repos_url": "https://api.github.com/users/aljoscha/repos",
+      "events_url": "https://api.github.com/users/aljoscha/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aljoscha/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "aljoscha",
+      "id": 68551,
+      "node_id": "MDQ6VXNlcjY4NTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68551?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aljoscha",
+      "html_url": "https://github.com/aljoscha",
+      "followers_url": "https://api.github.com/users/aljoscha/followers",
+      "following_url": "https://api.github.com/users/aljoscha/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aljoscha/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aljoscha/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aljoscha/subscriptions",
+      "organizations_url": "https://api.github.com/users/aljoscha/orgs",
+      "repos_url": "https://api.github.com/users/aljoscha/repos",
+      "events_url": "https://api.github.com/users/aljoscha/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aljoscha/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8dd53a9c302e1d9ac3f3ccfa71e172080948f559",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/8dd53a9c302e1d9ac3f3ccfa71e172080948f559",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/8dd53a9c302e1d9ac3f3ccfa71e172080948f559"
+      }
+    ]
+  },
+  {
+    "sha": "7984bb911e09c73a257b5c4a860e6f2a466b21f9",
+    "node_id": "MDY6Q29tbWl0OTQ5OTQyMjo3OTg0YmI5MTFlMDljNzNhMjU3YjVjNGE4NjBlNmYyYTQ2NmIyMWY5",
+    "commit": {
+      "author": {
+        "name": "Aljoscha Krettek",
+        "email": "aljoscha.krettek@gmail.com",
+        "date": "2013-11-26T11:21:53Z"
+      },
+      "committer": {
+        "name": "Aljoscha Krettek",
+        "email": "aljoscha.krettek@gmail.com",
+        "date": "2013-11-26T11:21:53Z"
+      },
+      "message": "Rename all the custom DataStreamS to DataSet",
+      "tree": {
+        "sha": "33eddf1a4df4d04b8d0a9a209e236de47fcb57ad",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/33eddf1a4df4d04b8d0a9a209e236de47fcb57ad"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/7984bb911e09c73a257b5c4a860e6f2a466b21f9",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/7984bb911e09c73a257b5c4a860e6f2a466b21f9",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/7984bb911e09c73a257b5c4a860e6f2a466b21f9",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/7984bb911e09c73a257b5c4a860e6f2a466b21f9/comments",
+    "author": {
+      "login": "aljoscha",
+      "id": 68551,
+      "node_id": "MDQ6VXNlcjY4NTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68551?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aljoscha",
+      "html_url": "https://github.com/aljoscha",
+      "followers_url": "https://api.github.com/users/aljoscha/followers",
+      "following_url": "https://api.github.com/users/aljoscha/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aljoscha/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aljoscha/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aljoscha/subscriptions",
+      "organizations_url": "https://api.github.com/users/aljoscha/orgs",
+      "repos_url": "https://api.github.com/users/aljoscha/repos",
+      "events_url": "https://api.github.com/users/aljoscha/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aljoscha/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "aljoscha",
+      "id": 68551,
+      "node_id": "MDQ6VXNlcjY4NTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68551?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aljoscha",
+      "html_url": "https://github.com/aljoscha",
+      "followers_url": "https://api.github.com/users/aljoscha/followers",
+      "following_url": "https://api.github.com/users/aljoscha/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aljoscha/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aljoscha/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aljoscha/subscriptions",
+      "organizations_url": "https://api.github.com/users/aljoscha/orgs",
+      "repos_url": "https://api.github.com/users/aljoscha/repos",
+      "events_url": "https://api.github.com/users/aljoscha/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aljoscha/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f7dc63d31ced70bde568356e8d6fa1c8f2917e3a",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/f7dc63d31ced70bde568356e8d6fa1c8f2917e3a",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/f7dc63d31ced70bde568356e8d6fa1c8f2917e3a"
+      }
+    ]
+  },
+  {
+    "sha": "7fc1a5409830c9fd43ae12808d5233cc754efa04",
+    "node_id": "MDY6Q29tbWl0OTQ5OTQyMjo3ZmMxYTU0MDk4MzBjOWZkNDNhZTEyODA4ZDUyMzNjYzc1NGVmYTA0",
+    "commit": {
+      "author": {
+        "name": "Aljoscha Krettek",
+        "email": "aljoscha.krettek@gmail.com",
+        "date": "2013-11-26T15:16:42Z"
+      },
+      "committer": {
+        "name": "Aljoscha Krettek",
+        "email": "aljoscha.krettek@gmail.com",
+        "date": "2013-11-26T15:16:42Z"
+      },
+      "message": "Extends Java csv input format to accept field indices",
+      "tree": {
+        "sha": "1c2f516e6da807be3a99d02cff34e88b6d349ec8",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/1c2f516e6da807be3a99d02cff34e88b6d349ec8"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/7fc1a5409830c9fd43ae12808d5233cc754efa04",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/7fc1a5409830c9fd43ae12808d5233cc754efa04",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/7fc1a5409830c9fd43ae12808d5233cc754efa04",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/7fc1a5409830c9fd43ae12808d5233cc754efa04/comments",
+    "author": {
+      "login": "aljoscha",
+      "id": 68551,
+      "node_id": "MDQ6VXNlcjY4NTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68551?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aljoscha",
+      "html_url": "https://github.com/aljoscha",
+      "followers_url": "https://api.github.com/users/aljoscha/followers",
+      "following_url": "https://api.github.com/users/aljoscha/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aljoscha/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aljoscha/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aljoscha/subscriptions",
+      "organizations_url": "https://api.github.com/users/aljoscha/orgs",
+      "repos_url": "https://api.github.com/users/aljoscha/repos",
+      "events_url": "https://api.github.com/users/aljoscha/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aljoscha/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "aljoscha",
+      "id": 68551,
+      "node_id": "MDQ6VXNlcjY4NTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68551?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aljoscha",
+      "html_url": "https://github.com/aljoscha",
+      "followers_url": "https://api.github.com/users/aljoscha/followers",
+      "following_url": "https://api.github.com/users/aljoscha/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aljoscha/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aljoscha/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aljoscha/subscriptions",
+      "organizations_url": "https://api.github.com/users/aljoscha/orgs",
+      "repos_url": "https://api.github.com/users/aljoscha/repos",
+      "events_url": "https://api.github.com/users/aljoscha/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aljoscha/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7984bb911e09c73a257b5c4a860e6f2a466b21f9",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/7984bb911e09c73a257b5c4a860e6f2a466b21f9",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/7984bb911e09c73a257b5c4a860e6f2a466b21f9"
+      }
+    ]
+  },
+  {
+    "sha": "ef46fdd30e893ef00a83c8e3a4d20d07cada0cbb",
+    "node_id": "MDY6Q29tbWl0OTQ5OTQyMjplZjQ2ZmRkMzBlODkzZWYwMGE4M2M4ZTNhNGQyMGQwN2NhZGEwY2Ji",
+    "commit": {
+      "author": {
+        "name": "Aljoscha Krettek",
+        "email": "aljoscha.krettek@gmail.com",
+        "date": "2013-11-26T15:58:39Z"
+      },
+      "committer": {
+        "name": "Aljoscha Krettek",
+        "email": "aljoscha.krettek@gmail.com",
+        "date": "2013-11-26T15:58:39Z"
+      },
+      "message": "Add indices support in scala csv input format",
+      "tree": {
+        "sha": "c57404669db005d04110a1cad90f03709816d262",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/c57404669db005d04110a1cad90f03709816d262"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/ef46fdd30e893ef00a83c8e3a4d20d07cada0cbb",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/ef46fdd30e893ef00a83c8e3a4d20d07cada0cbb",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/ef46fdd30e893ef00a83c8e3a4d20d07cada0cbb",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/ef46fdd30e893ef00a83c8e3a4d20d07cada0cbb/comments",
+    "author": {
+      "login": "aljoscha",
+      "id": 68551,
+      "node_id": "MDQ6VXNlcjY4NTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68551?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aljoscha",
+      "html_url": "https://github.com/aljoscha",
+      "followers_url": "https://api.github.com/users/aljoscha/followers",
+      "following_url": "https://api.github.com/users/aljoscha/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aljoscha/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aljoscha/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aljoscha/subscriptions",
+      "organizations_url": "https://api.github.com/users/aljoscha/orgs",
+      "repos_url": "https://api.github.com/users/aljoscha/repos",
+      "events_url": "https://api.github.com/users/aljoscha/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aljoscha/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "aljoscha",
+      "id": 68551,
+      "node_id": "MDQ6VXNlcjY4NTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68551?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aljoscha",
+      "html_url": "https://github.com/aljoscha",
+      "followers_url": "https://api.github.com/users/aljoscha/followers",
+      "following_url": "https://api.github.com/users/aljoscha/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aljoscha/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aljoscha/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aljoscha/subscriptions",
+      "organizations_url": "https://api.github.com/users/aljoscha/orgs",
+      "repos_url": "https://api.github.com/users/aljoscha/repos",
+      "events_url": "https://api.github.com/users/aljoscha/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aljoscha/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7fc1a5409830c9fd43ae12808d5233cc754efa04",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/7fc1a5409830c9fd43ae12808d5233cc754efa04",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/7fc1a5409830c9fd43ae12808d5233cc754efa04"
+      }
+    ]
+  },
+  {
+    "sha": "a3765f763d9726ece49e9c82da8edac58d1832db",
+    "node_id": "MDY6Q29tbWl0OTQ5OTQyMjphMzc2NWY3NjNkOTcyNmVjZTQ5ZTljODJkYThlZGFjNThkMTgzMmRi",
+    "commit": {
+      "author": {
+        "name": "Aljoscha Krettek",
+        "email": "aljoscha.krettek@gmail.com",
+        "date": "2013-11-27T11:17:27Z"
+      },
+      "committer": {
+        "name": "Aljoscha Krettek",
+        "email": "aljoscha.krettek@gmail.com",
+        "date": "2013-11-27T11:17:27Z"
+      },
+      "message": "Fix some log/debugging output\n\nMake the scala schema printers use log4j\n\nFix the additional syserr appender in LocalExecutor: add a threshold so\nthat it does only output error messages\n\nMake JobClient use log4j for the event output that was annoying me",
+      "tree": {
+        "sha": "7310deb23b400d911c3cb4be14128f06e6717363",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/7310deb23b400d911c3cb4be14128f06e6717363"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/a3765f763d9726ece49e9c82da8edac58d1832db",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/a3765f763d9726ece49e9c82da8edac58d1832db",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/a3765f763d9726ece49e9c82da8edac58d1832db",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/a3765f763d9726ece49e9c82da8edac58d1832db/comments",
+    "author": {
+      "login": "aljoscha",
+      "id": 68551,
+      "node_id": "MDQ6VXNlcjY4NTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68551?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aljoscha",
+      "html_url": "https://github.com/aljoscha",
+      "followers_url": "https://api.github.com/users/aljoscha/followers",
+      "following_url": "https://api.github.com/users/aljoscha/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aljoscha/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aljoscha/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aljoscha/subscriptions",
+      "organizations_url": "https://api.github.com/users/aljoscha/orgs",
+      "repos_url": "https://api.github.com/users/aljoscha/repos",
+      "events_url": "https://api.github.com/users/aljoscha/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aljoscha/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "aljoscha",
+      "id": 68551,
+      "node_id": "MDQ6VXNlcjY4NTUx",
+      "avatar_url": "https://avatars.githubusercontent.com/u/68551?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/aljoscha",
+      "html_url": "https://github.com/aljoscha",
+      "followers_url": "https://api.github.com/users/aljoscha/followers",
+      "following_url": "https://api.github.com/users/aljoscha/following{/other_user}",
+      "gists_url": "https://api.github.com/users/aljoscha/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/aljoscha/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/aljoscha/subscriptions",
+      "organizations_url": "https://api.github.com/users/aljoscha/orgs",
+      "repos_url": "https://api.github.com/users/aljoscha/repos",
+      "events_url": "https://api.github.com/users/aljoscha/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/aljoscha/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ef46fdd30e893ef00a83c8e3a4d20d07cada0cbb",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/ef46fdd30e893ef00a83c8e3a4d20d07cada0cbb",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/ef46fdd30e893ef00a83c8e3a4d20d07cada0cbb"
+      }
+    ]
+  }
+]

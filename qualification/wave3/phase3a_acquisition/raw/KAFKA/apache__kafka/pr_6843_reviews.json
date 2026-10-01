@@ -1,0 +1,162 @@
+[
+  {
+    "id": 245632372,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3MjQ1NjMyMzcy",
+    "user": {
+      "login": "abbccdda",
+      "id": 5845561,
+      "node_id": "MDQ6VXNlcjU4NDU1NjE=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5845561?u=02d0973783c4439f16c79c32605978eff10f86a1&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/abbccdda",
+      "html_url": "https://github.com/abbccdda",
+      "followers_url": "https://api.github.com/users/abbccdda/followers",
+      "following_url": "https://api.github.com/users/abbccdda/following{/other_user}",
+      "gists_url": "https://api.github.com/users/abbccdda/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/abbccdda/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/abbccdda/subscriptions",
+      "organizations_url": "https://api.github.com/users/abbccdda/orgs",
+      "repos_url": "https://api.github.com/users/abbccdda/repos",
+      "events_url": "https://api.github.com/users/abbccdda/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/abbccdda/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/6843#pullrequestreview-245632372",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/6843",
+    "author_association": "NONE",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/6843#pullrequestreview-245632372"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/6843"
+      }
+    },
+    "submitted_at": "2019-06-04T18:49:32Z",
+    "commit_id": null
+  },
+  {
+    "id": 295936005,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3Mjk1OTM2MDA1",
+    "user": {
+      "login": "rhauch",
+      "id": 84732,
+      "node_id": "MDQ6VXNlcjg0NzMy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/84732?u=6f266f6bda8baaf493e807363f4ca9e20afa0692&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rhauch",
+      "html_url": "https://github.com/rhauch",
+      "followers_url": "https://api.github.com/users/rhauch/followers",
+      "following_url": "https://api.github.com/users/rhauch/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rhauch/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rhauch/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rhauch/subscriptions",
+      "organizations_url": "https://api.github.com/users/rhauch/orgs",
+      "repos_url": "https://api.github.com/users/rhauch/repos",
+      "events_url": "https://api.github.com/users/rhauch/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rhauch/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "Nice work, @cyrusv. The logic looks great, though it'd be great to add more unit tests to cover the not-so-trivial logic (unlike most of the other Connect metric groups).",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/6843#pullrequestreview-295936005",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/6843",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/6843#pullrequestreview-295936005"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/6843"
+      }
+    },
+    "submitted_at": "2019-10-01T23:13:52Z",
+    "commit_id": null
+  },
+  {
+    "id": 296539428,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3Mjk2NTM5NDI4",
+    "user": {
+      "login": "rhauch",
+      "id": 84732,
+      "node_id": "MDQ6VXNlcjg0NzMy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/84732?u=6f266f6bda8baaf493e807363f4ca9e20afa0692&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rhauch",
+      "html_url": "https://github.com/rhauch",
+      "followers_url": "https://api.github.com/users/rhauch/followers",
+      "following_url": "https://api.github.com/users/rhauch/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rhauch/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rhauch/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rhauch/subscriptions",
+      "organizations_url": "https://api.github.com/users/rhauch/orgs",
+      "repos_url": "https://api.github.com/users/rhauch/repos",
+      "events_url": "https://api.github.com/users/rhauch/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rhauch/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "",
+    "state": "COMMENTED",
+    "html_url": "https://github.com/apache/kafka/pull/6843#pullrequestreview-296539428",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/6843",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/6843#pullrequestreview-296539428"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/6843"
+      }
+    },
+    "submitted_at": "2019-10-02T21:33:25Z",
+    "commit_id": null
+  },
+  {
+    "id": 296559251,
+    "node_id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3Mjk2NTU5MjUx",
+    "user": {
+      "login": "rhauch",
+      "id": 84732,
+      "node_id": "MDQ6VXNlcjg0NzMy",
+      "avatar_url": "https://avatars.githubusercontent.com/u/84732?u=6f266f6bda8baaf493e807363f4ca9e20afa0692&v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/rhauch",
+      "html_url": "https://github.com/rhauch",
+      "followers_url": "https://api.github.com/users/rhauch/followers",
+      "following_url": "https://api.github.com/users/rhauch/following{/other_user}",
+      "gists_url": "https://api.github.com/users/rhauch/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/rhauch/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/rhauch/subscriptions",
+      "organizations_url": "https://api.github.com/users/rhauch/orgs",
+      "repos_url": "https://api.github.com/users/rhauch/repos",
+      "events_url": "https://api.github.com/users/rhauch/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/rhauch/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "body": "LGTM. Thanks, @cyrusv.\r\n\r\nWaiting for a green build to merge to `trunk`.",
+    "state": "APPROVED",
+    "html_url": "https://github.com/apache/kafka/pull/6843#pullrequestreview-296559251",
+    "pull_request_url": "https://api.github.com/repos/apache/kafka/pulls/6843",
+    "author_association": "CONTRIBUTOR",
+    "_links": {
+      "html": {
+        "href": "https://github.com/apache/kafka/pull/6843#pullrequestreview-296559251"
+      },
+      "pull_request": {
+        "href": "https://api.github.com/repos/apache/kafka/pulls/6843"
+      }
+    },
+    "submitted_at": "2019-10-02T22:22:08Z",
+    "commit_id": null
+  }
+]

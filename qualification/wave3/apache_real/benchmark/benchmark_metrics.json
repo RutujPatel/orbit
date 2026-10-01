@@ -1,0 +1,59 @@
+{
+  "canonical_digests": {
+    "bundle_canonical_sha256": "db0fd630c4e02fed15298e0af880d21758592d295e2d667b4626bb03a5f82044",
+    "evaluation_result_sha256": "e7d0bcc961cbd0034774ec6478a4c44d554fa9e8f8d70051a1e5938c03082e02"
+  },
+  "evaluation_findings": {
+    "rules_evaluated": [
+      "ORBIT-XB-01",
+      "ORBIT-XB-02",
+      "ORBIT-XB-03"
+    ],
+    "total_findings": 0,
+    "total_suppressed": 0
+  },
+  "execution_metadata": {
+    "benchmark_phase": "Pass 5 / Wave 3 / Phase 1C",
+    "consolidation_head": "ea464540b8a414e4ab6e9a2b1a4be53ae31b40ab",
+    "corpus_id": "ORBIT-QUAL-WAVE3-APACHE-REAL-001",
+    "execution_cutoff": "2026-09-30T12:00:00Z",
+    "governing_baseline": "6d82d123f8bf50316d2b1ab7a025bc5862a474ed"
+  },
+  "linkage_taxonomy": {
+    "DECLARED_MENTION": 1,
+    "EXPLICIT_LINK": 7
+  },
+  "negative_control_metrics": {
+    "isolated_unlinked": 3,
+    "isolation_rate": "100%",
+    "rejected_non_jira_tokens": 1,
+    "spurious_findings_count": 0,
+    "total_negative_controls": 4
+  },
+  "provenance_metrics": {
+    "provenance_resolution_outcomes": {
+      "INVALID": 0,
+      "NOT_FOUND": 0,
+      "RESOLVED": 21,
+      "UNAVAILABLE": 0
+    },
+    "total_provenance_refs_checked": 21,
+    "validation_issues_count": 0
+  },
+  "source_counts": {
+    "alignments_count": 8,
+    "canonical_observations_count": 21,
+    "code_changes_count": 13,
+    "raw_artifacts_count": 31,
+    "relationships_count": 13,
+    "work_items_count": 8
+  },
+  "state_comparison_distribution": {
+    "CONSISTENT": 5,
+    "INSUFFICIENT_EVIDENCE": 3
+  },
+  "temporal_comparison_distribution": {
+    "COHERENT": 5,
+    "INDETERMINATE": 3
+  }
+}

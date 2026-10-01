@@ -1,0 +1,2303 @@
+[
+  {
+    "sha": "8dc0f501a0d115db2bf221b56bb91103b5abedf6",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OjhkYzBmNTAxYTBkMTE1ZGIyYmYyMjFiNTZiYjkxMTAzYjVhYmVkZjY=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-23T04:08:34Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-26T02:09:09Z"
+      },
+      "message": "remove commit from handleCorruption and handle TaskCorrupted in handleRevocation",
+      "tree": {
+        "sha": "c4defa8b3e0d361cb14c94701596589fcb43e1fc",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/c4defa8b3e0d361cb14c94701596589fcb43e1fc"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/8dc0f501a0d115db2bf221b56bb91103b5abedf6",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/8dc0f501a0d115db2bf221b56bb91103b5abedf6",
+    "html_url": "https://github.com/apache/kafka/commit/8dc0f501a0d115db2bf221b56bb91103b5abedf6",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/8dc0f501a0d115db2bf221b56bb91103b5abedf6/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9ef52dd2dba51f01f856560132056ebe4bacd51a",
+        "url": "https://api.github.com/repos/apache/kafka/commits/9ef52dd2dba51f01f856560132056ebe4bacd51a",
+        "html_url": "https://github.com/apache/kafka/commit/9ef52dd2dba51f01f856560132056ebe4bacd51a"
+      }
+    ]
+  },
+  {
+    "sha": "549a5f7f85b865b1977a9f4a8a7a905427396199",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OjU0OWE1ZjdmODViODY1YjE5NzdhOWY0YThhN2E5MDU0MjczOTYxOTk=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-26T02:55:32Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-26T02:56:31Z"
+      },
+      "message": "fixin up the tests",
+      "tree": {
+        "sha": "601d2023aa6d129fa06a2cc1ea2493ff8ca4bd1e",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/601d2023aa6d129fa06a2cc1ea2493ff8ca4bd1e"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/549a5f7f85b865b1977a9f4a8a7a905427396199",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/549a5f7f85b865b1977a9f4a8a7a905427396199",
+    "html_url": "https://github.com/apache/kafka/commit/549a5f7f85b865b1977a9f4a8a7a905427396199",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/549a5f7f85b865b1977a9f4a8a7a905427396199/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "8dc0f501a0d115db2bf221b56bb91103b5abedf6",
+        "url": "https://api.github.com/repos/apache/kafka/commits/8dc0f501a0d115db2bf221b56bb91103b5abedf6",
+        "html_url": "https://github.com/apache/kafka/commit/8dc0f501a0d115db2bf221b56bb91103b5abedf6"
+      }
+    ]
+  },
+  {
+    "sha": "a843f11812ce9278144ccd53f7e2c74d14c06fa1",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OmE4NDNmMTE4MTJjZTkyNzgxNDRjY2Q1M2Y3ZTJjNzRkMTRjMDZmYTE=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-26T04:15:57Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-26T04:15:57Z"
+      },
+      "message": "skip only corrupted tasks when checkpointing in handleRevocation",
+      "tree": {
+        "sha": "dff02ea0d2b117f26e237b4274e4abf8a56fb236",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/dff02ea0d2b117f26e237b4274e4abf8a56fb236"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/a843f11812ce9278144ccd53f7e2c74d14c06fa1",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/a843f11812ce9278144ccd53f7e2c74d14c06fa1",
+    "html_url": "https://github.com/apache/kafka/commit/a843f11812ce9278144ccd53f7e2c74d14c06fa1",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/a843f11812ce9278144ccd53f7e2c74d14c06fa1/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "549a5f7f85b865b1977a9f4a8a7a905427396199",
+        "url": "https://api.github.com/repos/apache/kafka/commits/549a5f7f85b865b1977a9f4a8a7a905427396199",
+        "html_url": "https://github.com/apache/kafka/commit/549a5f7f85b865b1977a9f4a8a7a905427396199"
+      }
+    ]
+  },
+  {
+    "sha": "dbec22d50d0b6db5c96a3edb156b6898fa687220",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OmRiZWMyMmQ1MGQwYjZkYjVjOTZhM2VkYjE1NmI2ODk4ZmE2ODcyMjA=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-26T04:18:36Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-26T04:18:36Z"
+      },
+      "message": "checkstyle",
+      "tree": {
+        "sha": "a45623cd0ef747dee3ca54f8957cfcc1ba28bfcf",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/a45623cd0ef747dee3ca54f8957cfcc1ba28bfcf"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/dbec22d50d0b6db5c96a3edb156b6898fa687220",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/dbec22d50d0b6db5c96a3edb156b6898fa687220",
+    "html_url": "https://github.com/apache/kafka/commit/dbec22d50d0b6db5c96a3edb156b6898fa687220",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/dbec22d50d0b6db5c96a3edb156b6898fa687220/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "a843f11812ce9278144ccd53f7e2c74d14c06fa1",
+        "url": "https://api.github.com/repos/apache/kafka/commits/a843f11812ce9278144ccd53f7e2c74d14c06fa1",
+        "html_url": "https://github.com/apache/kafka/commit/a843f11812ce9278144ccd53f7e2c74d14c06fa1"
+      }
+    ]
+  },
+  {
+    "sha": "4ce51e9d72c07f8896253f6bfdbbbd78dd9fb83a",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OjRjZTUxZTlkNzJjMDdmODg5NjI1M2Y2YmZkYmJiZDc4ZGQ5ZmI4M2E=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-26T04:20:27Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-26T04:20:27Z"
+      },
+      "message": "comments",
+      "tree": {
+        "sha": "0cc8e3848bd4c67b20602cb0a5446638eac81903",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/0cc8e3848bd4c67b20602cb0a5446638eac81903"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/4ce51e9d72c07f8896253f6bfdbbbd78dd9fb83a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/4ce51e9d72c07f8896253f6bfdbbbd78dd9fb83a",
+    "html_url": "https://github.com/apache/kafka/commit/4ce51e9d72c07f8896253f6bfdbbbd78dd9fb83a",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/4ce51e9d72c07f8896253f6bfdbbbd78dd9fb83a/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dbec22d50d0b6db5c96a3edb156b6898fa687220",
+        "url": "https://api.github.com/repos/apache/kafka/commits/dbec22d50d0b6db5c96a3edb156b6898fa687220",
+        "html_url": "https://github.com/apache/kafka/commit/dbec22d50d0b6db5c96a3edb156b6898fa687220"
+      }
+    ]
+  },
+  {
+    "sha": "7282884a8eb8b1c8ada2757e69f6dc665a9e7000",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OjcyODI4ODRhOGViOGIxYzhhZGEyNzU3ZTY5ZjZkYzY2NWE5ZTcwMDA=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-26T04:26:31Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-26T04:28:03Z"
+      },
+      "message": "clean up logic",
+      "tree": {
+        "sha": "8688341281445868bf526c08ee5330df3013ac54",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/8688341281445868bf526c08ee5330df3013ac54"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/7282884a8eb8b1c8ada2757e69f6dc665a9e7000",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/7282884a8eb8b1c8ada2757e69f6dc665a9e7000",
+    "html_url": "https://github.com/apache/kafka/commit/7282884a8eb8b1c8ada2757e69f6dc665a9e7000",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/7282884a8eb8b1c8ada2757e69f6dc665a9e7000/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4ce51e9d72c07f8896253f6bfdbbbd78dd9fb83a",
+        "url": "https://api.github.com/repos/apache/kafka/commits/4ce51e9d72c07f8896253f6bfdbbbd78dd9fb83a",
+        "html_url": "https://github.com/apache/kafka/commit/4ce51e9d72c07f8896253f6bfdbbbd78dd9fb83a"
+      }
+    ]
+  },
+  {
+    "sha": "5950b393d63dd9ff4f428b751bcc82be7248e367",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OjU5NTBiMzkzZDYzZGQ5ZmY0ZjQyOGI3NTFiY2M4MmJlNzI0OGUzNjc=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-26T04:36:58Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-26T04:36:58Z"
+      },
+      "message": "simplify even further",
+      "tree": {
+        "sha": "5c3e463f99674bee76ef4bb9ba733f234b6432a1",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/5c3e463f99674bee76ef4bb9ba733f234b6432a1"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/5950b393d63dd9ff4f428b751bcc82be7248e367",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/5950b393d63dd9ff4f428b751bcc82be7248e367",
+    "html_url": "https://github.com/apache/kafka/commit/5950b393d63dd9ff4f428b751bcc82be7248e367",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/5950b393d63dd9ff4f428b751bcc82be7248e367/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7282884a8eb8b1c8ada2757e69f6dc665a9e7000",
+        "url": "https://api.github.com/repos/apache/kafka/commits/7282884a8eb8b1c8ada2757e69f6dc665a9e7000",
+        "html_url": "https://github.com/apache/kafka/commit/7282884a8eb8b1c8ada2757e69f6dc665a9e7000"
+      }
+    ]
+  },
+  {
+    "sha": "d6f8c0bdd31da60a0e2278673146f8d4015e4864",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OmQ2ZjhjMGJkZDMxZGE2MGEwZTIyNzg2NzMxNDZmOGQ0MDE1ZTQ4NjQ=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-26T21:28:27Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-26T21:28:27Z"
+      },
+      "message": "handle corrupted tasks",
+      "tree": {
+        "sha": "8c2d04d386323e7d617756f5cd5047fe421ad3aa",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/8c2d04d386323e7d617756f5cd5047fe421ad3aa"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/d6f8c0bdd31da60a0e2278673146f8d4015e4864",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/d6f8c0bdd31da60a0e2278673146f8d4015e4864",
+    "html_url": "https://github.com/apache/kafka/commit/d6f8c0bdd31da60a0e2278673146f8d4015e4864",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/d6f8c0bdd31da60a0e2278673146f8d4015e4864/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5950b393d63dd9ff4f428b751bcc82be7248e367",
+        "url": "https://api.github.com/repos/apache/kafka/commits/5950b393d63dd9ff4f428b751bcc82be7248e367",
+        "html_url": "https://github.com/apache/kafka/commit/5950b393d63dd9ff4f428b751bcc82be7248e367"
+      }
+    ]
+  },
+  {
+    "sha": "1a579a434ab8cc6a02350b0b825ee458fa96ecb2",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OjFhNTc5YTQzNGFiOGNjNmEwMjM1MGIwYjgyNWVlNDU4ZmE5NmVjYjI=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-26T21:51:46Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-26T21:51:46Z"
+      },
+      "message": "use own catch block",
+      "tree": {
+        "sha": "8f0a357b14f7cf38bc4d50e1cb7d6858ab867b5c",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/8f0a357b14f7cf38bc4d50e1cb7d6858ab867b5c"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/1a579a434ab8cc6a02350b0b825ee458fa96ecb2",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/1a579a434ab8cc6a02350b0b825ee458fa96ecb2",
+    "html_url": "https://github.com/apache/kafka/commit/1a579a434ab8cc6a02350b0b825ee458fa96ecb2",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/1a579a434ab8cc6a02350b0b825ee458fa96ecb2/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "d6f8c0bdd31da60a0e2278673146f8d4015e4864",
+        "url": "https://api.github.com/repos/apache/kafka/commits/d6f8c0bdd31da60a0e2278673146f8d4015e4864",
+        "html_url": "https://github.com/apache/kafka/commit/d6f8c0bdd31da60a0e2278673146f8d4015e4864"
+      }
+    ]
+  },
+  {
+    "sha": "4d4f41cc9d88c0871a6d12adb089a77f6dcc7e94",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OjRkNGY0MWNjOWQ4OGMwODcxYTZkMTJhZGIwODlhNzdmNmRjYzdlOTQ=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-27T01:36:11Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-27T01:36:11Z"
+      },
+      "message": "add flag to closeAndRevive to conditionally mark changelogs as  corrupted",
+      "tree": {
+        "sha": "856c9600c705438896288b5eb5c8675bbfd2b652",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/856c9600c705438896288b5eb5c8675bbfd2b652"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/4d4f41cc9d88c0871a6d12adb089a77f6dcc7e94",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/4d4f41cc9d88c0871a6d12adb089a77f6dcc7e94",
+    "html_url": "https://github.com/apache/kafka/commit/4d4f41cc9d88c0871a6d12adb089a77f6dcc7e94",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/4d4f41cc9d88c0871a6d12adb089a77f6dcc7e94/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1a579a434ab8cc6a02350b0b825ee458fa96ecb2",
+        "url": "https://api.github.com/repos/apache/kafka/commits/1a579a434ab8cc6a02350b0b825ee458fa96ecb2",
+        "html_url": "https://github.com/apache/kafka/commit/1a579a434ab8cc6a02350b0b825ee458fa96ecb2"
+      }
+    ]
+  },
+  {
+    "sha": "dc91e75df7b0a2cebfefc786e372bed97a8cbad1",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OmRjOTFlNzVkZjdiMGEyY2ViZmVmYzc4NmUzNzJiZWQ5N2E4Y2JhZDE=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-27T01:44:20Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-27T01:44:20Z"
+      },
+      "message": "cleanup",
+      "tree": {
+        "sha": "3772a4365b1c3967fee3b09336d44551eee0597e",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/3772a4365b1c3967fee3b09336d44551eee0597e"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/dc91e75df7b0a2cebfefc786e372bed97a8cbad1",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/dc91e75df7b0a2cebfefc786e372bed97a8cbad1",
+    "html_url": "https://github.com/apache/kafka/commit/dc91e75df7b0a2cebfefc786e372bed97a8cbad1",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/dc91e75df7b0a2cebfefc786e372bed97a8cbad1/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4d4f41cc9d88c0871a6d12adb089a77f6dcc7e94",
+        "url": "https://api.github.com/repos/apache/kafka/commits/4d4f41cc9d88c0871a6d12adb089a77f6dcc7e94",
+        "html_url": "https://github.com/apache/kafka/commit/4d4f41cc9d88c0871a6d12adb089a77f6dcc7e94"
+      }
+    ]
+  },
+  {
+    "sha": "1446ec2b03b079212ecbe067cc14c832a802ff9e",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OjE0NDZlYzJiMDNiMDc5MjEyZWNiZTA2N2NjMTRjODMyYTgwMmZmOWU=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-27T01:49:03Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-27T01:49:03Z"
+      },
+      "message": "fix test I messed with before",
+      "tree": {
+        "sha": "642b35fdf33fe7c941cbe0e9095260a373141cc0",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/642b35fdf33fe7c941cbe0e9095260a373141cc0"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/1446ec2b03b079212ecbe067cc14c832a802ff9e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/1446ec2b03b079212ecbe067cc14c832a802ff9e",
+    "html_url": "https://github.com/apache/kafka/commit/1446ec2b03b079212ecbe067cc14c832a802ff9e",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/1446ec2b03b079212ecbe067cc14c832a802ff9e/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "dc91e75df7b0a2cebfefc786e372bed97a8cbad1",
+        "url": "https://api.github.com/repos/apache/kafka/commits/dc91e75df7b0a2cebfefc786e372bed97a8cbad1",
+        "html_url": "https://github.com/apache/kafka/commit/dc91e75df7b0a2cebfefc786e372bed97a8cbad1"
+      }
+    ]
+  },
+  {
+    "sha": "9c8730a45b59efe5ad016e71bd50c1407f88678a",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OjljODczMGE0NWI1OWVmZTVhZDAxNmU3MWJkNTBjMTQwN2Y4ODY3OGE=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-27T02:26:54Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-27T02:26:54Z"
+      },
+      "message": "add unit test",
+      "tree": {
+        "sha": "230704a3637439de2e556342b971f13c89260632",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/230704a3637439de2e556342b971f13c89260632"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/9c8730a45b59efe5ad016e71bd50c1407f88678a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/9c8730a45b59efe5ad016e71bd50c1407f88678a",
+    "html_url": "https://github.com/apache/kafka/commit/9c8730a45b59efe5ad016e71bd50c1407f88678a",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/9c8730a45b59efe5ad016e71bd50c1407f88678a/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1446ec2b03b079212ecbe067cc14c832a802ff9e",
+        "url": "https://api.github.com/repos/apache/kafka/commits/1446ec2b03b079212ecbe067cc14c832a802ff9e",
+        "html_url": "https://github.com/apache/kafka/commit/1446ec2b03b079212ecbe067cc14c832a802ff9e"
+      }
+    ]
+  },
+  {
+    "sha": "723520b612e96861c22e71b4cd49d5fb31c761bb",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OjcyMzUyMGI2MTJlOTY4NjFjMjJlNzFiNGNkNDlkNWZiMzFjNzYxYmI=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-27T02:54:36Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-27T02:54:36Z"
+      },
+      "message": "backtrack on handleCorrupted, tick the task timer and add another test",
+      "tree": {
+        "sha": "7753ac7503e66b196799c2535e6a3194fff6f3ef",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/7753ac7503e66b196799c2535e6a3194fff6f3ef"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/723520b612e96861c22e71b4cd49d5fb31c761bb",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/723520b612e96861c22e71b4cd49d5fb31c761bb",
+    "html_url": "https://github.com/apache/kafka/commit/723520b612e96861c22e71b4cd49d5fb31c761bb",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/723520b612e96861c22e71b4cd49d5fb31c761bb/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9c8730a45b59efe5ad016e71bd50c1407f88678a",
+        "url": "https://api.github.com/repos/apache/kafka/commits/9c8730a45b59efe5ad016e71bd50c1407f88678a",
+        "html_url": "https://github.com/apache/kafka/commit/9c8730a45b59efe5ad016e71bd50c1407f88678a"
+      }
+    ]
+  },
+  {
+    "sha": "e5cca198b76b5382461a5526dc667a5865e83644",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OmU1Y2NhMTk4Yjc2YjUzODI0NjFhNTUyNmRjNjY3YTU4NjVlODM2NDQ=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-28T01:06:07Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-28T01:06:07Z"
+      },
+      "message": "Revert \"backtrack on handleCorrupted, tick the task timer and add another test\"\n\nThis reverts commit 723520b612e96861c22e71b4cd49d5fb31c761bb.",
+      "tree": {
+        "sha": "230704a3637439de2e556342b971f13c89260632",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/230704a3637439de2e556342b971f13c89260632"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/e5cca198b76b5382461a5526dc667a5865e83644",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/e5cca198b76b5382461a5526dc667a5865e83644",
+    "html_url": "https://github.com/apache/kafka/commit/e5cca198b76b5382461a5526dc667a5865e83644",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/e5cca198b76b5382461a5526dc667a5865e83644/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "723520b612e96861c22e71b4cd49d5fb31c761bb",
+        "url": "https://api.github.com/repos/apache/kafka/commits/723520b612e96861c22e71b4cd49d5fb31c761bb",
+        "html_url": "https://github.com/apache/kafka/commit/723520b612e96861c22e71b4cd49d5fb31c761bb"
+      }
+    ]
+  },
+  {
+    "sha": "4a9ffff64441767d0bffcff04841da8fc86b319d",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OjRhOWZmZmY2NDQ0MTc2N2QwYmZmY2ZmMDQ4NDFkYThmYzg2YjMxOWQ=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-28T01:10:09Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-28T01:10:09Z"
+      },
+      "message": "add second unit test",
+      "tree": {
+        "sha": "2b56cc0fa455d98f3f4d1f13dc3576e85e443fb3",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/2b56cc0fa455d98f3f4d1f13dc3576e85e443fb3"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/4a9ffff64441767d0bffcff04841da8fc86b319d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/4a9ffff64441767d0bffcff04841da8fc86b319d",
+    "html_url": "https://github.com/apache/kafka/commit/4a9ffff64441767d0bffcff04841da8fc86b319d",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/4a9ffff64441767d0bffcff04841da8fc86b319d/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "e5cca198b76b5382461a5526dc667a5865e83644",
+        "url": "https://api.github.com/repos/apache/kafka/commits/e5cca198b76b5382461a5526dc667a5865e83644",
+        "html_url": "https://github.com/apache/kafka/commit/e5cca198b76b5382461a5526dc667a5865e83644"
+      }
+    ]
+  },
+  {
+    "sha": "669367f6b7a644a272c62758f932914ad50d3b60",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OjY2OTM2N2Y2YjdhNjQ0YTI3MmM2Mjc1OGY5MzI5MTRhZDUwZDNiNjA=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-28T01:11:48Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-28T01:11:48Z"
+      },
+      "message": "Merge branch 'trunk' of https://github.com/apache/kafka into 12523-improve-commitOffsetsOrTransaction-handling-of-TimeoutException",
+      "tree": {
+        "sha": "52ca6262e889c1634e0e81f163e5ff5af25e4d37",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/52ca6262e889c1634e0e81f163e5ff5af25e4d37"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/669367f6b7a644a272c62758f932914ad50d3b60",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/669367f6b7a644a272c62758f932914ad50d3b60",
+    "html_url": "https://github.com/apache/kafka/commit/669367f6b7a644a272c62758f932914ad50d3b60",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/669367f6b7a644a272c62758f932914ad50d3b60/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4a9ffff64441767d0bffcff04841da8fc86b319d",
+        "url": "https://api.github.com/repos/apache/kafka/commits/4a9ffff64441767d0bffcff04841da8fc86b319d",
+        "html_url": "https://github.com/apache/kafka/commit/4a9ffff64441767d0bffcff04841da8fc86b319d"
+      },
+      {
+        "sha": "f91d592a270dc4254978fbdb51e9cd479426b931",
+        "url": "https://api.github.com/repos/apache/kafka/commits/f91d592a270dc4254978fbdb51e9cd479426b931",
+        "html_url": "https://github.com/apache/kafka/commit/f91d592a270dc4254978fbdb51e9cd479426b931"
+      }
+    ]
+  },
+  {
+    "sha": "4d23c99131adb369cccae051557f226cbd10ec2e",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OjRkMjNjOTkxMzFhZGIzNjljY2NhZTA1MTU1N2YyMjZjYmQxMGVjMmU=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-28T01:35:00Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-28T01:35:00Z"
+      },
+      "message": "cleanup in handleRevocation",
+      "tree": {
+        "sha": "5e8f18d5dc9de1af84208c430c5825230515f4c3",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/5e8f18d5dc9de1af84208c430c5825230515f4c3"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/4d23c99131adb369cccae051557f226cbd10ec2e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/4d23c99131adb369cccae051557f226cbd10ec2e",
+    "html_url": "https://github.com/apache/kafka/commit/4d23c99131adb369cccae051557f226cbd10ec2e",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/4d23c99131adb369cccae051557f226cbd10ec2e/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "669367f6b7a644a272c62758f932914ad50d3b60",
+        "url": "https://api.github.com/repos/apache/kafka/commits/669367f6b7a644a272c62758f932914ad50d3b60",
+        "html_url": "https://github.com/apache/kafka/commit/669367f6b7a644a272c62758f932914ad50d3b60"
+      }
+    ]
+  },
+  {
+    "sha": "0d21ff4d6fabb2b81e2661f93b267c61444b76ad",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OjBkMjFmZjRkNmZhYmIyYjgxZTI2NjFmOTNiMjY3YzYxNDQ0Yjc2YWQ=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-28T01:38:40Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-28T01:38:40Z"
+      },
+      "message": "javadocs for commit",
+      "tree": {
+        "sha": "47935433020b57398efde613cc93f29af61dc08a",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/47935433020b57398efde613cc93f29af61dc08a"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/0d21ff4d6fabb2b81e2661f93b267c61444b76ad",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/0d21ff4d6fabb2b81e2661f93b267c61444b76ad",
+    "html_url": "https://github.com/apache/kafka/commit/0d21ff4d6fabb2b81e2661f93b267c61444b76ad",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/0d21ff4d6fabb2b81e2661f93b267c61444b76ad/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4d23c99131adb369cccae051557f226cbd10ec2e",
+        "url": "https://api.github.com/repos/apache/kafka/commits/4d23c99131adb369cccae051557f226cbd10ec2e",
+        "html_url": "https://github.com/apache/kafka/commit/4d23c99131adb369cccae051557f226cbd10ec2e"
+      }
+    ]
+  },
+  {
+    "sha": "ecb7e7c63f5f5f55207835d97b409112ecf5626c",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OmVjYjdlN2M2M2Y1ZjVmNTUyMDc4MzVkOTdiNDA5MTEyZWNmNTYyNmM=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-28T01:56:43Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-28T01:56:43Z"
+      },
+      "message": "clear timeout in revive and refactor commit",
+      "tree": {
+        "sha": "07469bbf268a7c61163dfbaefa670185377bc8f3",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/07469bbf268a7c61163dfbaefa670185377bc8f3"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/ecb7e7c63f5f5f55207835d97b409112ecf5626c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/ecb7e7c63f5f5f55207835d97b409112ecf5626c",
+    "html_url": "https://github.com/apache/kafka/commit/ecb7e7c63f5f5f55207835d97b409112ecf5626c",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/ecb7e7c63f5f5f55207835d97b409112ecf5626c/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "0d21ff4d6fabb2b81e2661f93b267c61444b76ad",
+        "url": "https://api.github.com/repos/apache/kafka/commits/0d21ff4d6fabb2b81e2661f93b267c61444b76ad",
+        "html_url": "https://github.com/apache/kafka/commit/0d21ff4d6fabb2b81e2661f93b267c61444b76ad"
+      }
+    ]
+  },
+  {
+    "sha": "9ea3256ff3ad6c90ca2720f7796ee44fbda4f9e9",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OjllYTMyNTZmZjNhZDZjOTBjYTI3MjBmNzc5NmVlNDRmYmRhNGY5ZTk=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-28T02:21:22Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-28T02:21:22Z"
+      },
+      "message": "update/remove comment",
+      "tree": {
+        "sha": "6fbd0374488ddc0e574554746f3951ecef01b8cf",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/6fbd0374488ddc0e574554746f3951ecef01b8cf"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/9ea3256ff3ad6c90ca2720f7796ee44fbda4f9e9",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/9ea3256ff3ad6c90ca2720f7796ee44fbda4f9e9",
+    "html_url": "https://github.com/apache/kafka/commit/9ea3256ff3ad6c90ca2720f7796ee44fbda4f9e9",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/9ea3256ff3ad6c90ca2720f7796ee44fbda4f9e9/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ecb7e7c63f5f5f55207835d97b409112ecf5626c",
+        "url": "https://api.github.com/repos/apache/kafka/commits/ecb7e7c63f5f5f55207835d97b409112ecf5626c",
+        "html_url": "https://github.com/apache/kafka/commit/ecb7e7c63f5f5f55207835d97b409112ecf5626c"
+      }
+    ]
+  },
+  {
+    "sha": "f6361c0a89fa2ac806b2ec06e33ee4f43026feb6",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OmY2MzYxYzBhODlmYTJhYzgwNmIyZWMwNmUzM2VlNGY0MzAyNmZlYjY=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-28T22:48:00Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-28T22:48:00Z"
+      },
+      "message": "need to clear commit statuses during close",
+      "tree": {
+        "sha": "ca26a0001025003a9bf893b65e412077d13f68da",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/ca26a0001025003a9bf893b65e412077d13f68da"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/f6361c0a89fa2ac806b2ec06e33ee4f43026feb6",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/f6361c0a89fa2ac806b2ec06e33ee4f43026feb6",
+    "html_url": "https://github.com/apache/kafka/commit/f6361c0a89fa2ac806b2ec06e33ee4f43026feb6",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/f6361c0a89fa2ac806b2ec06e33ee4f43026feb6/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9ea3256ff3ad6c90ca2720f7796ee44fbda4f9e9",
+        "url": "https://api.github.com/repos/apache/kafka/commits/9ea3256ff3ad6c90ca2720f7796ee44fbda4f9e9",
+        "html_url": "https://github.com/apache/kafka/commit/9ea3256ff3ad6c90ca2720f7796ee44fbda4f9e9"
+      }
+    ]
+  },
+  {
+    "sha": "4aed51d02b48f8749f21d15046353c0b17c1952d",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OjRhZWQ1MWQwMmI0OGY4NzQ5ZjIxZDE1MDQ2MzUzYzBiMTdjMTk1MmQ=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-28T22:56:39Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-28T22:56:39Z"
+      },
+      "message": "clear status in all kinds of close",
+      "tree": {
+        "sha": "f53da2619f1220626872f9fef137cd774108d7af",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/f53da2619f1220626872f9fef137cd774108d7af"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/4aed51d02b48f8749f21d15046353c0b17c1952d",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/4aed51d02b48f8749f21d15046353c0b17c1952d",
+    "html_url": "https://github.com/apache/kafka/commit/4aed51d02b48f8749f21d15046353c0b17c1952d",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/4aed51d02b48f8749f21d15046353c0b17c1952d/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f6361c0a89fa2ac806b2ec06e33ee4f43026feb6",
+        "url": "https://api.github.com/repos/apache/kafka/commits/f6361c0a89fa2ac806b2ec06e33ee4f43026feb6",
+        "html_url": "https://github.com/apache/kafka/commit/f6361c0a89fa2ac806b2ec06e33ee4f43026feb6"
+      }
+    ]
+  },
+  {
+    "sha": "9db590b0d23628dcc40df4a51083f46725b9328f",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OjlkYjU5MGIwZDIzNjI4ZGNjNDBkZjRhNTEwODNmNDY3MjViOTMyOGY=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-28T23:17:11Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-28T23:17:11Z"
+      },
+      "message": "add timed out tasks to dirty tasks in handleRevocation",
+      "tree": {
+        "sha": "24a5e78d7b978f3637235149dd8c1c3c427e78c3",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/24a5e78d7b978f3637235149dd8c1c3c427e78c3"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/9db590b0d23628dcc40df4a51083f46725b9328f",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/9db590b0d23628dcc40df4a51083f46725b9328f",
+    "html_url": "https://github.com/apache/kafka/commit/9db590b0d23628dcc40df4a51083f46725b9328f",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/9db590b0d23628dcc40df4a51083f46725b9328f/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4aed51d02b48f8749f21d15046353c0b17c1952d",
+        "url": "https://api.github.com/repos/apache/kafka/commits/4aed51d02b48f8749f21d15046353c0b17c1952d",
+        "html_url": "https://github.com/apache/kafka/commit/4aed51d02b48f8749f21d15046353c0b17c1952d"
+      }
+    ]
+  },
+  {
+    "sha": "4c78a79ad2697c8161b6a8f3eb7e1001cd72f82a",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OjRjNzhhNzlhZDI2OTdjODE2MWI2YThmM2ViN2UxMDAxY2Q3MmY4MmE=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-28T23:24:21Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-28T23:24:21Z"
+      },
+      "message": "add StreamTaskTest",
+      "tree": {
+        "sha": "d92f985c3da6bba60c0547cc9b535c7e5ecfc108",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/d92f985c3da6bba60c0547cc9b535c7e5ecfc108"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/4c78a79ad2697c8161b6a8f3eb7e1001cd72f82a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/4c78a79ad2697c8161b6a8f3eb7e1001cd72f82a",
+    "html_url": "https://github.com/apache/kafka/commit/4c78a79ad2697c8161b6a8f3eb7e1001cd72f82a",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/4c78a79ad2697c8161b6a8f3eb7e1001cd72f82a/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9db590b0d23628dcc40df4a51083f46725b9328f",
+        "url": "https://api.github.com/repos/apache/kafka/commits/9db590b0d23628dcc40df4a51083f46725b9328f",
+        "html_url": "https://github.com/apache/kafka/commit/9db590b0d23628dcc40df4a51083f46725b9328f"
+      }
+    ]
+  },
+  {
+    "sha": "55c076bda024f3cf968ac158efdd5f526a97c538",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OjU1YzA3NmJkYTAyNGYzY2Y5NjhhYzE1OGVmZGQ1ZjUyNmE5N2M1Mzg=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-28T23:52:12Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-28T23:52:12Z"
+      },
+      "message": "add  KAFKA-12569 jira number to TODOs",
+      "tree": {
+        "sha": "413a6e1c87829e72f9b4487c1a5f0b65b04eae81",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/413a6e1c87829e72f9b4487c1a5f0b65b04eae81"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/55c076bda024f3cf968ac158efdd5f526a97c538",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/55c076bda024f3cf968ac158efdd5f526a97c538",
+    "html_url": "https://github.com/apache/kafka/commit/55c076bda024f3cf968ac158efdd5f526a97c538",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/55c076bda024f3cf968ac158efdd5f526a97c538/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "4c78a79ad2697c8161b6a8f3eb7e1001cd72f82a",
+        "url": "https://api.github.com/repos/apache/kafka/commits/4c78a79ad2697c8161b6a8f3eb7e1001cd72f82a",
+        "html_url": "https://github.com/apache/kafka/commit/4c78a79ad2697c8161b6a8f3eb7e1001cd72f82a"
+      }
+    ]
+  },
+  {
+    "sha": "6fcdd5620e1d80f629893bd3f17de14b321d5257",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OjZmY2RkNTYyMGUxZDgwZjYyOTg5M2JkM2YxN2RlMTRiMzIxZDUyNTc=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-29T01:44:18Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-29T01:44:18Z"
+      },
+      "message": "add unit tests for eos",
+      "tree": {
+        "sha": "ac25a81eddd56ef92033f49d77f672b11eb95ffc",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/ac25a81eddd56ef92033f49d77f672b11eb95ffc"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/6fcdd5620e1d80f629893bd3f17de14b321d5257",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/6fcdd5620e1d80f629893bd3f17de14b321d5257",
+    "html_url": "https://github.com/apache/kafka/commit/6fcdd5620e1d80f629893bd3f17de14b321d5257",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/6fcdd5620e1d80f629893bd3f17de14b321d5257/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "55c076bda024f3cf968ac158efdd5f526a97c538",
+        "url": "https://api.github.com/repos/apache/kafka/commits/55c076bda024f3cf968ac158efdd5f526a97c538",
+        "html_url": "https://github.com/apache/kafka/commit/55c076bda024f3cf968ac158efdd5f526a97c538"
+      }
+    ]
+  },
+  {
+    "sha": "fa4cde53e6e3f60b90fafa2ec54fba011e6aba6c",
+    "node_id": "MDY6Q29tbWl0MTY2MzI1Mzg2OmZhNGNkZTUzZTZlM2Y2MGI5MGZhZmEyZWM1NGZiYTAxMWU2YWJhNmM=",
+    "commit": {
+      "author": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-29T20:53:37Z"
+      },
+      "committer": {
+        "name": "ableegoldman",
+        "email": "sophie@confluent.io",
+        "date": "2021-03-29T20:53:37Z"
+      },
+      "message": "fix flaky test due to strict mock",
+      "tree": {
+        "sha": "9cd4369dada46e128f576e6406402b8592152d06",
+        "url": "https://api.github.com/repos/apache/kafka/git/trees/9cd4369dada46e128f576e6406402b8592152d06"
+      },
+      "url": "https://api.github.com/repos/apache/kafka/git/commits/fa4cde53e6e3f60b90fafa2ec54fba011e6aba6c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/apache/kafka/commits/fa4cde53e6e3f60b90fafa2ec54fba011e6aba6c",
+    "html_url": "https://github.com/apache/kafka/commit/fa4cde53e6e3f60b90fafa2ec54fba011e6aba6c",
+    "comments_url": "https://api.github.com/repos/apache/kafka/commits/fa4cde53e6e3f60b90fafa2ec54fba011e6aba6c/comments",
+    "author": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "ableegoldman",
+      "id": 4843099,
+      "node_id": "MDQ6VXNlcjQ4NDMwOTk=",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4843099?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/ableegoldman",
+      "html_url": "https://github.com/ableegoldman",
+      "followers_url": "https://api.github.com/users/ableegoldman/followers",
+      "following_url": "https://api.github.com/users/ableegoldman/following{/other_user}",
+      "gists_url": "https://api.github.com/users/ableegoldman/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/ableegoldman/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/ableegoldman/subscriptions",
+      "organizations_url": "https://api.github.com/users/ableegoldman/orgs",
+      "repos_url": "https://api.github.com/users/ableegoldman/repos",
+      "events_url": "https://api.github.com/users/ableegoldman/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/ableegoldman/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "6fcdd5620e1d80f629893bd3f17de14b321d5257",
+        "url": "https://api.github.com/repos/apache/kafka/commits/6fcdd5620e1d80f629893bd3f17de14b321d5257",
+        "html_url": "https://github.com/apache/kafka/commit/6fcdd5620e1d80f629893bd3f17de14b321d5257"
+      }
+    ]
+  }
+]

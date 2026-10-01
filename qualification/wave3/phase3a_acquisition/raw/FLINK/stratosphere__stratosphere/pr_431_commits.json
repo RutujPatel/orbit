@@ -1,0 +1,44 @@
+[
+  {
+    "sha": "6eb306aa98ff546c71bbe8c1eacf961fca440ddf",
+    "node_id": "MDY6Q29tbWl0OTQ5OTQyMjo2ZWIzMDZhYTk4ZmY1NDZjNzFiYmU4YzFlYWNmOTYxZmNhNDQwZGRm",
+    "commit": {
+      "author": {
+        "name": "uce",
+        "email": "u.celebi@fu-berlin.de",
+        "date": "2014-01-23T17:24:55Z"
+      },
+      "committer": {
+        "name": "uce",
+        "email": "u.celebi@fu-berlin.de",
+        "date": "2014-01-23T17:24:55Z"
+      },
+      "message": "Add constructors with degree of parallelism argument to Plan (issue #426)",
+      "tree": {
+        "sha": "2bd9cff8b2965a360e4d9d83aeeea1c434b51afd",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/git/trees/2bd9cff8b2965a360e4d9d83aeeea1c434b51afd"
+      },
+      "url": "https://api.github.com/repos/stratosphere/stratosphere/git/commits/6eb306aa98ff546c71bbe8c1eacf961fca440ddf",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/6eb306aa98ff546c71bbe8c1eacf961fca440ddf",
+    "html_url": "https://github.com/stratosphere/stratosphere/commit/6eb306aa98ff546c71bbe8c1eacf961fca440ddf",
+    "comments_url": "https://api.github.com/repos/stratosphere/stratosphere/commits/6eb306aa98ff546c71bbe8c1eacf961fca440ddf/comments",
+    "author": null,
+    "committer": null,
+    "parents": [
+      {
+        "sha": "d7ed899d1cb6af5b90b65fdf125ee16e477bcc37",
+        "url": "https://api.github.com/repos/stratosphere/stratosphere/commits/d7ed899d1cb6af5b90b65fdf125ee16e477bcc37",
+        "html_url": "https://github.com/stratosphere/stratosphere/commit/d7ed899d1cb6af5b90b65fdf125ee16e477bcc37"
+      }
+    ]
+  }
+]

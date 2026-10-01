@@ -1,0 +1,3334 @@
+[
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "AVRO-2034"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/avro/224"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/AVRO/apache__avro/pr_224.json",
+        "record_locator": "pull_requests[224]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "AVRO-2039"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/avro/230"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/AVRO/apache__avro/pr_230.json",
+        "record_locator": "pull_requests[230]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "AVRO-2199"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "salsify/avro-patches/16"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/AVRO/salsify__avro-patches/pr_16.json",
+        "record_locator": "pull_requests[16]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "AVRO-2438"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/avro/329"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/AVRO/apache__avro/pr_329.json",
+        "record_locator": "pull_requests[329]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "AVRO-2624"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/avro/706"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/AVRO/apache__avro/pr_706.json",
+        "record_locator": "pull_requests[706]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "AVRO-2931"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/avro/958"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/AVRO/apache__avro/pr_958.json",
+        "record_locator": "pull_requests[958]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-12394"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/flink/8117"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_8117.json",
+        "record_locator": "pull_requests[8117]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-126"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/126"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_126.json",
+        "record_locator": "pull_requests[126]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-1359"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/incubator-flink/254"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__incubator-flink/pr_254.json",
+        "record_locator": "pull_requests[254]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-13639"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/flink/8362"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_8362.json",
+        "record_locator": "pull_requests[8362]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-1373"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/flink/254"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_254.json",
+        "record_locator": "pull_requests[254]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-13730"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/flink/7605"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INVERTED",
+    "rationale": "GitHub PR merged after Jira issue resolution (potential post-resolution activity; non-conflicting).",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_7605.json",
+        "record_locator": "pull_requests[7605]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-145"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/145"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_145.json",
+        "record_locator": "pull_requests[145]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-14700"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/flink/10106"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_10106.json",
+        "record_locator": "pull_requests[10106]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-14846"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "facebook/rocksdb/5670"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/facebook__rocksdb/pr_5670.json",
+        "record_locator": "pull_requests[5670]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-14853"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/flink/10216"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_10216.json",
+        "record_locator": "pull_requests[10216]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-15832"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/flink/10936"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_10936.json",
+        "record_locator": "pull_requests[10936]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-1760"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/flink/477"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_477.json",
+        "record_locator": "pull_requests[477]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-17608"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/flink/11731"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_11731.json",
+        "record_locator": "pull_requests[11731]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-18067"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/flink/11176"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_11176.json",
+        "record_locator": "pull_requests[11176]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-18755"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/flink/12729"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_12729.json",
+        "record_locator": "pull_requests[12729]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-19988"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/flink/13586"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_13586.json",
+        "record_locator": "pull_requests[13586]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-20650"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "docker-library/official-images/9249"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INVERTED",
+    "rationale": "GitHub PR merged after Jira issue resolution (potential post-resolution activity; non-conflicting).",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/docker-library__official-images/pr_9249.json",
+        "record_locator": "pull_requests[9249]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-20991"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "docker-library/official-images/9345"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/docker-library__official-images/pr_9345.json",
+        "record_locator": "pull_requests[9345]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-21572"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/flink/12923"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_12923.json",
+        "record_locator": "pull_requests[12923]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-22479"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "awslabs/amazon-kinesis-connector-flink/24"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/awslabs__amazon-kinesis-connector-flink/pr_24.json",
+        "record_locator": "pull_requests[24]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-22488"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/flink/15605"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_15605.json",
+        "record_locator": "pull_requests[15605]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-226"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/226"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_226.json",
+        "record_locator": "pull_requests[226]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-22944"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/flink/16035"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_16035.json",
+        "record_locator": "pull_requests[16035]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-23399"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/flink/14893"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_14893.json",
+        "record_locator": "pull_requests[14893]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-236"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/126"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_126.json",
+        "record_locator": "pull_requests[126]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-2572"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/flink/1049"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_1049.json",
+        "record_locator": "pull_requests[1049]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-268"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/268"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_268.json",
+        "record_locator": "pull_requests[268]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-280"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/107"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_107.json",
+        "record_locator": "pull_requests[107]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-283"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/283"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_283.json",
+        "record_locator": "pull_requests[283]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-289"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/289"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_289.json",
+        "record_locator": "pull_requests[289]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-291"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/291"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_291.json",
+        "record_locator": "pull_requests[291]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-301"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/301"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_301.json",
+        "record_locator": "pull_requests[301]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-311"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/311"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_311.json",
+        "record_locator": "pull_requests[311]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-312"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/312"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_312.json",
+        "record_locator": "pull_requests[312]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-313"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/313"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_313.json",
+        "record_locator": "pull_requests[313]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-42"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/42"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_42.json",
+        "record_locator": "pull_requests[42]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-431"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/431"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_431.json",
+        "record_locator": "pull_requests[431]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-435"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/435"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_435.json",
+        "record_locator": "pull_requests[435]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-564"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/564"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_564.json",
+        "record_locator": "pull_requests[564]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-569"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/569"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_569.json",
+        "record_locator": "pull_requests[569]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-592"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/591"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_591.json",
+        "record_locator": "pull_requests[591]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-630"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/630"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_630.json",
+        "record_locator": "pull_requests[630]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-68"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/68"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_68.json",
+        "record_locator": "pull_requests[68]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-688"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/688"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_688.json",
+        "record_locator": "pull_requests[688]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-699"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/699"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_699.json",
+        "record_locator": "pull_requests[699]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-716"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/716"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_716.json",
+        "record_locator": "pull_requests[716]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-723"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/723"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_723.json",
+        "record_locator": "pull_requests[723]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-729"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/726"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_726.json",
+        "record_locator": "pull_requests[726]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-74"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/74"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_74.json",
+        "record_locator": "pull_requests[74]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-758"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/758"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_758.json",
+        "record_locator": "pull_requests[758]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-774"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/774"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_774.json",
+        "record_locator": "pull_requests[774]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-794"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/794"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_794.json",
+        "record_locator": "pull_requests[794]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-8365"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/flink/4963"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_4963.json",
+        "record_locator": "pull_requests[4963]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-844"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/844"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_844.json",
+        "record_locator": "pull_requests[844]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-89"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/89"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_89.json",
+        "record_locator": "pull_requests[89]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "FLINK-891"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "stratosphere/stratosphere/891"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_891.json",
+        "record_locator": "pull_requests[891]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-10064"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/8621"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_8621.json",
+        "record_locator": "pull_requests[8621]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-10170"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/8657"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_8657.json",
+        "record_locator": "pull_requests[8657]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-10297"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/8864"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_8864.json",
+        "record_locator": "pull_requests[8864]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-10298"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/9031"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_9031.json",
+        "record_locator": "pull_requests[9031]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-10669"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/8295"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_8295.json",
+        "record_locator": "pull_requests[8295]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-10698"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/9401"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "GitHub PR merged but Jira issue lacks resolution timestamp.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_9401.json",
+        "record_locator": "pull_requests[9401]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-10768"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/3752"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_3752.json",
+        "record_locator": "pull_requests[3752]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-12190"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/9583"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_9583.json",
+        "record_locator": "pull_requests[9583]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-12569"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/10407"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "GitHub PR merged but Jira issue lacks resolution timestamp.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_10407.json",
+        "record_locator": "pull_requests[10407]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-12770"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/10656"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "GitHub PR merged but Jira issue lacks resolution timestamp.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_10656.json",
+        "record_locator": "pull_requests[10656]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-12771"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/10656"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "GitHub PR merged but Jira issue lacks resolution timestamp.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_10656.json",
+        "record_locator": "pull_requests[10656]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-12897"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/10494"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_10494.json",
+        "record_locator": "pull_requests[10494]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-13191"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/9100"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "GitHub PR merged but Jira issue lacks resolution timestamp.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_9100.json",
+        "record_locator": "pull_requests[9100]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-5541"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/3449"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_3449.json",
+        "record_locator": "pull_requests[3449]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-5607"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/3526"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_3526.json",
+        "record_locator": "pull_requests[3526]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-5966"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/3027"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_3027.json",
+        "record_locator": "pull_requests[3027]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-7011"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/5117"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_5117.json",
+        "record_locator": "pull_requests[5117]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-7636"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/5919"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_5919.json",
+        "record_locator": "pull_requests[5919]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-7956"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/6218"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_6218.json",
+        "record_locator": "pull_requests[6218]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-8224"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/6177"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "GitHub PR merged but Jira issue lacks resolution timestamp.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_6177.json",
+        "record_locator": "pull_requests[6177]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-8240"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/5284"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_5284.json",
+        "record_locator": "pull_requests[5284]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-8352"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/6651"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_6651.json",
+        "record_locator": "pull_requests[6651]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-8884"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/7309"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_7309.json",
+        "record_locator": "pull_requests[7309]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-9168"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "facebook/rocksdb/2283"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/facebook__rocksdb/pr_2283.json",
+        "record_locator": "pull_requests[2283]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-9447"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/7952"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "CONSISTENT",
+    "temporal_comparison": "COHERENT",
+    "rationale": "GitHub PR merged prior to or coincident with Jira issue resolution.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_7952.json",
+        "record_locator": "pull_requests[7952]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "KAFKA-9790"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/kafka/6843"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "GitHub PR merged but Jira issue lacks resolution timestamp.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/apache__kafka/pr_6843.json",
+        "record_locator": "pull_requests[6843]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "PARQUET-1032"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/parquet-format/30"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/PARQUET/apache__parquet-format/pr_30.json",
+        "record_locator": "pull_requests[30]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "PARQUET-1202"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "databricks/spark-avro/73"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/PARQUET/databricks__spark-avro/pr_73.json",
+        "record_locator": "pull_requests[73]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "PARQUET-1639"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/arrow/4985"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/PARQUET/apache__arrow/pr_4985.json",
+        "record_locator": "pull_requests[4985]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "PARQUET-1809"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/spark/27728"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/PARQUET/apache__spark/pr_27728.json",
+        "record_locator": "pull_requests[27728]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "PARQUET-752"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/arrow/176"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/PARQUET/apache__arrow/pr_176.json",
+        "record_locator": "pull_requests[176]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "ZOOKEEPER-2444"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/zookeeper/70"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/ZOOKEEPER/apache__zookeeper/pr_70.json",
+        "record_locator": "pull_requests[70]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "ZOOKEEPER-3252"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/zookeeper/684"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/ZOOKEEPER/apache__zookeeper/pr_684.json",
+        "record_locator": "pull_requests[684]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "ZOOKEEPER-3396"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/zookeeper/770"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/ZOOKEEPER/apache__zookeeper/pr_770.json",
+        "record_locator": "pull_requests[770]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "ZOOKEEPER-3681"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/zookeeper/1166"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/ZOOKEEPER/apache__zookeeper/pr_1166.json",
+        "record_locator": "pull_requests[1166]",
+        "source_field_path": "number"
+      }
+    ]
+  },
+  {
+    "subject_ref": {
+      "source_instance": {
+        "source_kind": "jira",
+        "instance_id": "issues.apache.org"
+      },
+      "entity_kind": "work_item",
+      "entity_id": "ZOOKEEPER-4384"
+    },
+    "corroborating_ref": {
+      "source_instance": {
+        "source_kind": "github",
+        "instance_id": "github.com/apache"
+      },
+      "entity_kind": "code_change",
+      "entity_id": "apache/zookeeper/1761"
+    },
+    "relationship_kind": "DECLARED_MENTION",
+    "state_comparison": "INSUFFICIENT_EVIDENCE",
+    "temporal_comparison": "INDETERMINATE",
+    "rationale": "Referenced GitHub PR closed without merge.",
+    "provenance_refs": [
+      {
+        "source_instance": {
+          "source_kind": "github",
+          "instance_id": "github.com/apache"
+        },
+        "observation_id": "obs_apache_github_phase3b_001",
+        "fixture_id": "qualification/wave3/phase3a_acquisition/raw/ZOOKEEPER/apache__zookeeper/pr_1761.json",
+        "record_locator": "pull_requests[1761]",
+        "source_field_path": "number"
+      }
+    ]
+  }
+]
