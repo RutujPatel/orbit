@@ -79,6 +79,8 @@ Chronological wave execution reports, population inventories, and qualification 
 | Wave 3 Post-4A | [PHASE4_COMPREHENSIVE_RECORD.md](pass5/PHASE4_COMPREHENSIVE_RECORD.md) | Comprehensive record of all activities and decisions since Phase 4A. |
 | Wave 3 Phase 4B | [phase4b_report.md](pass5/phase4b_report.md) | Repository Identity & Evolution architecture and evaluation report. |
 | Wave 3 Phase 4C | [phase4c_report.md](pass5/phase4c_report.md) | Formal Repository Evolution Schema Specification and adversarial analysis. |
+| Wave 3 Phase 4D | [phase4d_report.md](pass5/phase4d_report.md) | Controlled Prototype Qualification: 16 invariants & authentic Apache cases. |
+| Wave 3 Phase 4E | [phase4e_implementation_report.md](pass5/phase4e_implementation_report.md) | Controlled Production Integration & Hardening Gate forensic report. |
 
 ---
 
@@ -89,6 +91,7 @@ Master canonical context documents capturing historical project state, decision 
 | Document | Title | Description |
 | :--- | :--- | :--- |
 | [Project_ORBIT_Canonical_Context_v38.md](context/Project_ORBIT_Canonical_Context_v38.md) | Project ORBIT Canonical Context v38 | Authoritative context checkpoint including Phase 4A governance audit and full historical invariant catalog. |
+| [Project_ORBIT_Canonical_Context_v39.md](context/Project_ORBIT_Canonical_Context_v39.md) | Project ORBIT Canonical Context v39 | Authoritative context checkpoint covering Phase 4D reconciliation, Phase 4E-B production integration/hardening, and Phase 4E-C specification. |
 
 ---
 
