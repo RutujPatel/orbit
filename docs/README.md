@@ -107,6 +107,7 @@ System architecture designs, ingestion contracts, and rule catalogs:
 | Jira Ingestion Contract | [jira-input-contract.md](specifications/jira-input-contract.md) | Ingestion schema, changelog interpretation, and normalization rules for Jira issues and sprint boundaries. |
 | Initial Rule Catalog | [initial-rule-catalog.md](specifications/initial-rule-catalog.md) | Track A baseline rule catalog (R1 through R13) defining commitment integrity, scope creep, and delivery status evaluation. |
 | Shadow Scope | [shadow-scope.md](specifications/shadow-scope.md) | Boundaries, invariants, and operational principles of running Shadow ORBIT non-intrusively alongside production systems. |
+| Phase 4E-D Specification | [phase4e_d_proving_specification.md](specifications/phase4e_d_proving_specification.md) | Multi-System Evidence Composition & Contextual Utility qualification specification (5 gates, 15 adversarial scenarios, 24 invariants). |
 
 ---
 
