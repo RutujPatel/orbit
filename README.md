@@ -332,7 +332,7 @@ git diff --check
 
 ## 8. Decision Governance & Phase Roadmap
 
-ORBIT enforces strict decision discipline through its authoritative context file: [`Project_ORBIT_Canonical_Context_v39.md`](docs/context/Project_ORBIT_Canonical_Context_v39.md). Decisions are numbered, immutable once locked, and never silently rewritten.
+ORBIT enforces strict decision discipline through its authoritative context file: [`Project_ORBIT_Canonical_Context_v40.md`](docs/context/Project_ORBIT_Canonical_Context_v40.md). Decisions are numbered, immutable once locked, and never silently rewritten.
 
 ### Key Architectural Decisions
 - **S-001..S-006:** Problem definition, target customer, and the v0 Engineering Weekly Review product wedge.
@@ -352,7 +352,9 @@ ORBIT enforces strict decision discipline through its authoritative context file
 - **Phase 4D:** Prototype Qualification (CLOSED / PASS). Qualified authentic Apache cases with real cryptographic fixture digests.
 - **Phase 4E-A:** Production Integration Design (CLOSED). Minimum production integration surface identified.
 - **Phase 4E-B:** Production Integration & Hardening (CLOSED / PASS / HARDENED). Integrated into `evidence_types.py` and `evidence_assembly.py`. Resolved findings H1–H4 with 8 hardening tests.
-- **Phase 4E-C:** Integrated Evidence-Pipeline Qualification (DRAFT SPECIFICATION). Proving gate to demonstrate repository evolution metadata remains evidence context without silently altering findings.
+- **Phase 4E-C:** Integrated Evidence-Pipeline Qualification (CLOSED / PASS). Qualified evidence pipeline integration across 5 gates, 15 scenarios, and 20 invariants.
+- **Phase 4E-D:** Multi-System Evidence Composition (CLOSED / PASS WITH DOCUMENTATION QUALIFICATION). Qualified heterogeneous evidence composition across 5 gates, 15 execution-derived scenarios, and 24 formal invariants with zero production code changes (913 passed, 12 skipped, 0 failed).
+- **Phase 4F:** Managerial Utility / Product-Wedge Qualification (NEXT AUTHORIZED WORKSTREAM — PENDING SPECIFICATION).
 
 ---
 
@@ -360,7 +362,9 @@ ORBIT enforces strict decision discipline through its authoritative context file
 
 For detailed architectural records, specifications, and audit reports, refer to:
 - [Master Documentation Index](docs/README.md)
-- [Canonical Context Checkpoint v39](docs/context/Project_ORBIT_Canonical_Context_v39.md)
+- [Canonical Context Checkpoint v40](docs/context/Project_ORBIT_Canonical_Context_v40.md) (and [v39](docs/context/Project_ORBIT_Canonical_Context_v39.md))
+- [Phase 4E-D Closure Report](docs/pass5/phase4e_d_closure_report.md)
+- [Phase 4E-D Qualification Report](docs/pass5/phase4e_d_report.md)
 - [Phase 4E Implementation & Hardening Report](docs/pass5/phase4e_implementation_report.md)
 - [Phase 4D Prototype Qualification Report](docs/pass5/phase4d_report.md)
 - [Phase 4C Schema Specification](qualification/wave3/phase4c_repository_evolution_schema/ADR-REPOSITORY-EVOLUTION-SCHEMA.md)
