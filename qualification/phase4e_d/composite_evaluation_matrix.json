@@ -1,0 +1,36 @@
+{
+  "timestamp_utc": "2026-10-05T08:15:57.823131+00:00",
+  "path_a": {
+    "description": "Standard cross-system evidence without repository evolution",
+    "findings_count": 1,
+    "suppressed_count": 0,
+    "rules_evaluated": [
+      "ORBIT-XB-01",
+      "ORBIT-XB-02",
+      "ORBIT-XB-03"
+    ],
+    "finding_ids": [
+      "finding_orbit_xb_03_858198aa92bdfe58"
+    ]
+  },
+  "path_b": {
+    "description": "Full composite bundle with repository evolution, alignment, and quality gaps",
+    "findings_count": 1,
+    "suppressed_count": 1,
+    "rules_evaluated": [
+      "ORBIT-XB-01",
+      "ORBIT-XB-02",
+      "ORBIT-XB-03"
+    ],
+    "finding_ids": [
+      "finding_orbit_xb_03_858198aa92bdfe58"
+    ]
+  },
+  "comparison": {
+    "active_findings_delta": 0,
+    "suppressed_findings_delta": 1,
+    "unauthorized_rule_findings": 0,
+    "legitimate_suppression_difference": "Path B legitimately evaluates dangling unresolved reference as a suppression without cascade failure, while active findings remain identical.",
+    "verdict": "PROVEN_ISOLATED_AND_COMPOSED"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp_utc": "2026-10-05T08:15:57.823131+00:00",
+  "trials_executed": 5,
+  "permutation_invariant": true,
+  "serialized_bundle_sha256": "18dc88f0e118dba0e5ed5faa3b1238e06a5ae3d24393b3e81ec3abbb0a790e4a",
+  "evaluation_summary_sha256": "b0a756f9b81a449345742e4035e6b9cec8d1c04a10b47e5ac49f43ea0ac24a98",
+  "idempotent_deduplication_verified": true,
+  "deterministic_relationship_ids": true,
+  "finding_digests_stable": true
+}

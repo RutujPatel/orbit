@@ -82,6 +82,7 @@ Chronological wave execution reports, population inventories, and qualification 
 | Wave 3 Phase 4D | [phase4d_report.md](pass5/phase4d_report.md) | Controlled Prototype Qualification: 16 invariants & authentic Apache cases. |
 | Wave 3 Phase 4E | [phase4e_implementation_report.md](pass5/phase4e_implementation_report.md) | Controlled Production Integration & Hardening Gate forensic report. |
 | Wave 3 Phase 4E-C | [phase4e_c_report.md](pass5/phase4e_c_report.md) | Integrated Evidence-Pipeline Qualification: 5 gates, 15 adversarial cases, evaluation isolation. |
+| Wave 3 Phase 4E-D | [phase4e_d_report.md](pass5/phase4e_d_report.md) | Multi-System Evidence Composition: 5 gates, 15 execution-derived scenarios, 24 formal invariants. |
 
 ---
 

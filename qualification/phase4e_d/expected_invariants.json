@@ -1,0 +1,146 @@
+[
+  {
+    "id": "INV-ID-01",
+    "category": "Identity",
+    "description": "Repository evolution endpoints must use entity_kind='repository'",
+    "status": "PROVEN"
+  },
+  {
+    "id": "INV-ID-02",
+    "category": "Identity",
+    "description": "Repository names must follow vendor/name format",
+    "status": "PROVEN"
+  },
+  {
+    "id": "INV-ID-03",
+    "category": "Identity",
+    "description": "Repository identity is isolated across lineage steps",
+    "status": "PROVEN"
+  },
+  {
+    "id": "INV-ID-04",
+    "category": "Identity",
+    "description": "Relationship IDs are deterministically derived via SHA-256",
+    "status": "PROVEN"
+  },
+  {
+    "id": "INV-EV-01",
+    "category": "Evidence",
+    "description": "Every relationship has non-empty grounded provenance",
+    "status": "PROVEN"
+  },
+  {
+    "id": "INV-EV-02",
+    "category": "Evidence",
+    "description": "Provenance references authentic fixtures with cryptographic SHA-256 digests",
+    "status": "PROVEN"
+  },
+  {
+    "id": "INV-EV-03",
+    "category": "Evidence",
+    "description": "Empty SHA-256 digest is strictly rejected",
+    "status": "PROVEN"
+  },
+  {
+    "id": "INV-LK-01",
+    "category": "Linkage",
+    "description": "Repository evolution never establishes work-item to PR linkage",
+    "status": "PROVEN"
+  },
+  {
+    "id": "INV-LK-02",
+    "category": "Linkage",
+    "description": "Explicit Jira-GitHub relationships remain authoritative and un-upgraded",
+    "status": "PROVEN"
+  },
+  {
+    "id": "INV-ST-01",
+    "category": "State",
+    "description": "Repository evolution never transfers work-item state",
+    "status": "PROVEN"
+  },
+  {
+    "id": "INV-ST-02",
+    "category": "State",
+    "description": "External dependency state does not complete or block first-party work",
+    "status": "PROVEN"
+  },
+  {
+    "id": "INV-TM-01",
+    "category": "Temporal",
+    "description": "Temporal ordering is preserved and distinct from causality",
+    "status": "PROVEN"
+  },
+  {
+    "id": "INV-TM-02",
+    "category": "Temporal",
+    "description": "Temporal proximity does not infer defect, blame, or causality",
+    "status": "PROVEN"
+  },
+  {
+    "id": "INV-GR-01",
+    "category": "Graph",
+    "description": "PROJECT_LINEAGE is a directed acyclic graph (DAG)",
+    "status": "PROVEN"
+  },
+  {
+    "id": "INV-GR-02",
+    "category": "Graph",
+    "description": "NAVIGATION_ROUTING is strictly acyclic without self-loops",
+    "status": "PROVEN"
+  },
+  {
+    "id": "INV-GR-03",
+    "category": "Graph",
+    "description": "Graph identity is provider-scoped (source_kind:instance_id:entity_id)",
+    "status": "PROVEN"
+  },
+  {
+    "id": "INV-FW-01",
+    "category": "Firewall",
+    "description": "Production evaluator is never invoked on repository relationships directly",
+    "status": "PROVEN"
+  },
+  {
+    "id": "INV-FW-02",
+    "category": "Firewall",
+    "description": "No Cartesian cross-system pairing or entity kind contamination",
+    "status": "PROVEN"
+  },
+  {
+    "id": "INV-FW-03",
+    "category": "Firewall",
+    "description": "Semantically conflicting duplicate IDs fail closed (ValueError / contradictory)",
+    "status": "PROVEN"
+  },
+  {
+    "id": "INV-FW-04",
+    "category": "Firewall",
+    "description": "Path A (without repo evolution) == Path B (with repo evolution) evaluation output",
+    "status": "PROVEN"
+  },
+  {
+    "id": "INV-CMP-01",
+    "category": "Composition",
+    "description": "Simultaneous presence of all 8 evidence collection types preserves pairwise orthogonality",
+    "status": "PROVEN"
+  },
+  {
+    "id": "INV-CMP-02",
+    "category": "Composition",
+    "description": "Navigation routing records contextual evolution without altering referenced endpoints",
+    "status": "PROVEN"
+  },
+  {
+    "id": "INV-CMP-03",
+    "category": "Composition",
+    "description": "Unresolved, stale, and ambiguous references are scoped without cascade suppression",
+    "status": "PROVEN"
+  },
+  {
+    "id": "INV-CMP-04",
+    "category": "Composition",
+    "description": "Arbitrary permutation of compound evidence collections produces strictly identical digests",
+    "status": "PROVEN"
+  }
+]
