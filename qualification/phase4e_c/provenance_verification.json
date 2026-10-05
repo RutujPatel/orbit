@@ -1,0 +1,40 @@
+{
+  "timestamp_utc": "2026-10-05T07:34:53.899857+00:00",
+  "total_provenance_refs_checked": 4,
+  "total_verified": 4,
+  "empty_sha256_rejection_verified": true,
+  "provenance_records": [
+    {
+      "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/apache__flink/pr_254.json",
+      "record_locator": "base.repo.full_name",
+      "sha256_digest": "85ea7b74f797099be91424b9c3e793f0f8cdcd8dda61e8f82a1cf8468f17754b",
+      "source_instance": "github:github.com/apache",
+      "verified_on_disk": true,
+      "status": "PROVEN"
+    },
+    {
+      "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/stratosphere__stratosphere/pr_126.json",
+      "record_locator": "head.repo.full_name",
+      "sha256_digest": "24a167fa67ab6de89744302956fbfb331cecc682a7b6282ec5ae778d5f9e7349",
+      "source_instance": "github:github.com/apache",
+      "verified_on_disk": true,
+      "status": "PROVEN"
+    },
+    {
+      "fixture_id": "qualification/wave3/phase3a_acquisition/raw/KAFKA/facebook__rocksdb/pr_2283.json",
+      "record_locator": "head.repo.full_name",
+      "sha256_digest": "a7f3452529a32ab8a361535e8e639b7e30c74c68b3c5fb41e9d4204c9ef03c55",
+      "source_instance": "github:github.com/apache",
+      "verified_on_disk": true,
+      "status": "PROVEN"
+    },
+    {
+      "fixture_id": "qualification/wave3/phase3a_acquisition/raw/FLINK/docker-library__official-images/pr_9249.json",
+      "record_locator": "head.repo.full_name",
+      "sha256_digest": "0a4625bf63f8fb172679ae4c2b54ef41e4faba26ab344f4a4ceaa7edeb4f6acc",
+      "source_instance": "github:github.com/apache",
+      "verified_on_disk": true,
+      "status": "PROVEN"
+    }
+  ]
+}

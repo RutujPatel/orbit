@@ -1,0 +1,67 @@
+{
+  "phase": "Phase 4E-C: Integrated Evidence-Pipeline Qualification",
+  "status": "PASS / QUALIFIED",
+  "governing_semantic_baseline": "6d82d123f8bf50316d2b1ab7a025bc5862a474ed",
+  "branch": "develop",
+  "timestamp_utc": "2026-10-05T07:34:53.899857+00:00",
+  "semantic_firewall": {
+    "production_code_modified": false,
+    "production_files_changed": 0,
+    "evaluator_modified": false,
+    "fusion_modified": false,
+    "adapters_modified": false,
+    "relationship_id_formula_modified": false
+  },
+  "gates": {
+    "4E-C-01": {
+      "name": "Evidence Assembly Integrity",
+      "status": "PASS",
+      "cases_tested": [
+        "C-09",
+        "C-11",
+        "C-12",
+        "C-15"
+      ]
+    },
+    "4E-C-02": {
+      "name": "Linkage Isolation",
+      "status": "PASS",
+      "cases_tested": [
+        "C-01",
+        "C-06",
+        "C-07",
+        "C-10"
+      ]
+    },
+    "4E-C-03": {
+      "name": "State Isolation",
+      "status": "PASS",
+      "cases_tested": [
+        "C-02",
+        "C-03",
+        "C-04"
+      ]
+    },
+    "4E-C-04": {
+      "name": "Temporal Isolation",
+      "status": "PASS",
+      "cases_tested": [
+        "C-05",
+        "C-08"
+      ]
+    },
+    "4E-C-05": {
+      "name": "Evaluation Isolation",
+      "status": "PASS",
+      "cases_tested": [
+        "C-13",
+        "C-14"
+      ]
+    }
+  },
+  "total_adversarial_cases": 15,
+  "total_adversarial_cases_passed": 15,
+  "regression_baseline_passed": 873,
+  "regression_current_passed": 891,
+  "regression_delta": "+18 passed, 0 failed, 12 skipped (MongoDB)"
+}

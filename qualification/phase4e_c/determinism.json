@@ -1,0 +1,9 @@
+{
+  "timestamp_utc": "2026-10-05T07:34:53.899857+00:00",
+  "permutation_invariant": true,
+  "bundle_serialized_sha256_run1": "c22936b5ba133ed838ea20ab82a855f79aa5f71f6b30ea5688c5a38374b81965",
+  "bundle_serialized_sha256_run2": "c22936b5ba133ed838ea20ab82a855f79aa5f71f6b30ea5688c5a38374b81965",
+  "idempotent_deduplication": true,
+  "relationship_id_deterministic": true,
+  "findings_digest_stable": true
+}

@@ -1,0 +1,43 @@
+{
+  "timestamp_utc": "2026-10-05T07:34:53.899857+00:00",
+  "pre_phase4ec_baseline": {
+    "passed": 873,
+    "skipped": 12,
+    "failed": 0
+  },
+  "phase4ec_qualification_suite": {
+    "passed": 18,
+    "skipped": 0,
+    "failed": 0
+  },
+  "current_total": {
+    "passed": 891,
+    "skipped": 12,
+    "failed": 0
+  },
+  "regression_detected": false,
+  "suite_breakdowns": {
+    "test_4ec_integrated_evidence_pipeline.py": {
+      "passed": 18,
+      "failed": 0
+    },
+    "test_p4e_repository_evolution_integration.py": {
+      "passed": 26,
+      "failed": 0
+    },
+    "qualification/repository_evolution/": {
+      "passed": 38,
+      "failed": 0
+    },
+    "mahout_holdout": {
+      "passed": 12,
+      "skipped": 12,
+      "failed": 0,
+      "note": "12 live MongoDB tests skipped as expected"
+    },
+    "truetenant_holdout": {
+      "passed": "green",
+      "failed": 0
+    }
+  }
+}

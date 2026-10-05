@@ -1,0 +1,16 @@
+{
+  "timestamp_utc": "2026-10-05T07:34:53.899857+00:00",
+  "path_a_findings_count": 0,
+  "path_b_findings_count": 0,
+  "path_a_suppressed_count": 0,
+  "path_b_suppressed_count": 0,
+  "finding_ids_path_a": [],
+  "finding_ids_path_b": [],
+  "finding_dispositions_path_a": [],
+  "finding_dispositions_path_b": [],
+  "findings_delta_count": 0,
+  "findings_identical": true,
+  "summary_identical": true,
+  "unexplained_findings": 0,
+  "status": "PROVEN_ISOLATED"
+}
