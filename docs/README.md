@@ -84,6 +84,7 @@ Chronological wave execution reports, population inventories, and qualification 
 | Wave 3 Phase 4E-C | [phase4e_c_report.md](pass5/phase4e_c_report.md) | Integrated Evidence-Pipeline Qualification: 5 gates, 15 adversarial cases, evaluation isolation. |
 | Wave 3 Phase 4E-D | [phase4e_d_report.md](pass5/phase4e_d_report.md) | Multi-System Evidence Composition: 5 gates, 15 execution-derived scenarios, 24 formal invariants. |
 | Wave 3 Phase 4E-D Closure | [phase4e_d_closure_report.md](pass5/phase4e_d_closure_report.md) | Forensic closure, evidence preservation, Git identity reconciliation, and canonical transition report. |
+| Phase 4F Audit | [phase4f_specification_review.md](pass5/phase4f_specification_review.md) | Forensic methodology review and pre-authorization reconciliation audit for Phase 4F. |
 
 ---
 
@@ -111,6 +112,8 @@ System architecture designs, ingestion contracts, and rule catalogs:
 | Initial Rule Catalog | [initial-rule-catalog.md](specifications/initial-rule-catalog.md) | Track A baseline rule catalog (R1 through R13) defining commitment integrity, scope creep, and delivery status evaluation. |
 | Shadow Scope | [shadow-scope.md](specifications/shadow-scope.md) | Boundaries, invariants, and operational principles of running Shadow ORBIT non-intrusively alongside production systems. |
 | Phase 4E-D Specification | [phase4e_d_proving_specification.md](specifications/phase4e_d_proving_specification.md) | Multi-System Evidence Composition & Contextual Utility qualification specification (5 gates, 15 adversarial scenarios, 24 invariants). |
+| Phase 4F Specification (v1) | [phase4f_managerial_utility_proving_specification.md](specifications/phase4f_managerial_utility_proving_specification.md) | Initial Managerial Utility & Product-Wedge Qualification specification (preserved for historical audit). |
+| Phase 4F Specification (v2) | [phase4f_managerial_utility_proving_specification_v2.md](specifications/phase4f_managerial_utility_proving_specification_v2.md) | Reconciled Managerial Utility Qualification specification (5 gates, 2-stage hybrid protocol, stratified impact matrices). |
 
 ---
 
