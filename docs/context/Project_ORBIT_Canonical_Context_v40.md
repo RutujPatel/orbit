@@ -7761,9 +7761,12 @@ This update records the formal closure of **Phase 4E-C (Integrated Evidence-Pipe
 | **Phase 4E-C Execution HEAD** | Phase 4E-C qualification close | `6c594709d224b17e4bbdfb9c02ffdb512e032338` | `6c59470` | Verified Ancestor |
 | **Phase 4E-D Specification HEAD** | Phase 4E-D spec draft commit | `77d51a50a625ff1fe53b51683be8d9fc12d1b817` | `77d51a5` | Verified Ancestor |
 | **Phase 4E-D Pre-Commit Report HEAD** | Historical report text reference | `77d51a50a625ff1fe53b51683be8d9fc12d1b817` | `77d51a5` | Reconciled (pre-commit working tree state) |
-| **Phase 4E-D Actual Implementation HEAD** | Actual commit containing 4E-D code | `4e41c80bb5e132b94f3f0eac506aff389f7f3ec1` | `4e41c80` | Current commit on `develop` |
-| **Current Repository HEAD** | Local active checkout | `4e41c80bb5e132b94f3f0eac506aff389f7f3ec1` | `4e41c80` | In sync with `origin/develop` |
-| **Remote Tracking Branch** | `origin/develop` | `4e41c80bb5e132b94f3f0eac506aff389f7f3ec1` | `4e41c80` | Clean & Up to date |
+| **Phase 4E-D Actual Implementation HEAD** | Actual commit containing 4E-D code | `4e41c80bb5e132b94f3f0eac506aff389f7f3ec1` | `4e41c80` | Verified Ancestor |
+| **Phase 4E-D Closure & Reconciliation** | Phase 4E-D closure and context v40 | `1bfad1c6c81ad488fe11fa1e0a75903466cfe152` | `1bfad1c` | Verified Ancestor |
+| **Phase 4F Specification Draft HEAD** | Specification v2 & audit review draft | `e9654a137de1451f618a3cefdbc5b2f3bbbcad72` | `e9654a1` | Verified Ancestor |
+| **Cross-Instance Remediation HEAD** | Cross-instance identity isolation patch | `597e76d56ea0138cf6759703541c9c74e5317deb` | `597e76d` | Current commit on `develop` |
+| **Current Repository HEAD** | Local active checkout | `597e76d56ea0138cf6759703541c9c74e5317deb` | `597e76d` | In sync with `origin/develop` |
+| **Remote Tracking Branch** | `origin/develop` | `597e76d56ea0138cf6759703541c9c74e5317deb` | `597e76d` | Clean & Up to date |
 
 ## 4. Updated Phase State Table
 
@@ -7775,24 +7778,54 @@ This update records the formal closure of **Phase 4E-C (Integrated Evidence-Pipe
 | Phase 4E-B — Hardening Gate | **CLOSED — PASS / HARDENED / QUALIFIED** |
 | Phase 4E-C — Integrated Evidence-Pipeline Qualification | **CLOSED — PASS / QUALIFIED** |
 | Phase 4E-D — Multi-System Evidence Composition Qualification | **CLOSED — PASS WITH DOCUMENTATION QUALIFICATION** |
-| Phase 4F — Managerial Utility / Product-Wedge Qualification | **NEXT AUTHORIZED WORKSTREAM (PENDING SPECIFICATION)** |
+| Cross-Instance Identity Remediation | **CLOSED — PASS / VERIFIED (COMMIT `597e76d`)** |
+| Phase 4F — Managerial Utility / Product-Wedge Qualification | **CURRENT ACTIVE WORKSTREAM (SPECIFICATION V2 GOVERNED; NO IMPLEMENTATION AUTHORIZED)** |
 
 ### Current Engineering State
 - **Governing semantic baseline:** `6d82d123f8bf50316d2b1ab7a025bc5862a474ed` (`6d82d12`)
-- **Current execution HEAD:** `4e41c80bb5e132b94f3f0eac506aff389f7f3ec1` (`4e41c80`)
+- **Current execution HEAD:** `597e76d56ea0138cf6759703541c9c74e5317deb` (`597e76d`)
 - **Branch:** `develop` (clean, synchronized with `origin/develop`)
-- **Current full regression:** `913 passed / 12 skipped / 0 failed`
+- **Current full regression:** `922 passed / 12 skipped / 0 failed` (+9 cross-instance adversarial tests)
 - **Total active formal invariants:** 24 (20 existing + 4 compositional)
 
 ### Governance & Architectural Decisions
 - Decision ceiling: **`S-034`** preserved.
-- Zero new architectural decisions created during Phase 4E-C or Phase 4E-D.
-- Transition rule: Transition from evidence-foundation qualification toward managerial / product utility validation.
+- Zero new architectural decisions created during cross-instance remediation.
+- Baseline rule: `6d82d12` remains the frozen governing semantic baseline; `597e76d` is the execution-history HEAD.
 
-### Next Workstream Direction
-- **Proposed Phase:** Phase 4F — Managerial Utility / Product-Wedge Qualification.
-- **Core inquiry:** "Does the evidence foundation materially improve the Engineering Weekly Review for an Engineering / Delivery Manager?"
-- **Constraint:** Phase 4F is NOT implemented here; awaiting formal specification and authorization.
+## 5. Cross-Instance Identity Isolation Engineering Outcome & Tracking
+
+### A. Execution & Verification Summary
+- **Commit:** `597e76d56ea0138cf6759703541c9c74e5317deb` (`597e76d`) on `origin/develop`
+- **Scope:** `src/shadow_orbit/evidence_evaluation.py` and `tests/unit/test_cross_instance_identity_isolation.py`
+- **Verification Results:**
+  - 9/9 cross-instance adversarial tests passed
+  - 759/759 unit tests passed
+  - 3/3 acceptance tests passed
+  - 922/922 repository regression tests passed (12 skipped for offline MongoDB)
+  - Zero test weakening, zero regressions, zero semantic dilution
+- **Qualified Defect Remediation:**
+  1. *Observation lookup:* keyed on canonical `EntityRef` (including `SourceInstance`) rather than `(entity_kind, entity_id)` tuple, eliminating false ambiguity and wrong-instance state/provenance contamination.
+  2. *Candidate-pair indexing:* preserves distinct candidate pairs across multiple source instances; eliminates relationship-order-dependent pair dropping.
+  3. *Deterministic ordering:* dual-layer permutation invariance enforced via candidate-pair sorting (`_sort_candidate_pair_key`) and finding sorting (`_sort_finding_key`).
+  4. *Identity propagation:* `_generate_finding_id` and `_sort_finding_key` incorporate source instance identifiers.
+
+### B. Tracked Open Design Questions (Preserved Without Expansion)
+1. **UnresolvedReference Target-Instance Limitation:**
+   - In `evidence_types.py`, `UnresolvedReference` defines `target_identifier: str` without a target `source_instance`.
+   - In Track B evaluation, unresolved references map target entities using ambient/fallback instance inference.
+   - *Status:* Preserved as an open architectural question pending upstream cross-system reference resolution enhancements; not expanded in this patch.
+2. **Multi-Tenant Candidate-Pair Fan-Out Policy:**
+   - When an external entity (e.g. GitHub PR) mentions an issue key present in multiple distinct Jira instances, the engine evaluates both explicit candidate pairs independently.
+   - *Status:* Product-level policy (Option A: independent findings, Option B: ambiguous multi-tenant suppression, Option C: upstream routing policy) remains unresolved. Scenario C tests structural preservation across evaluations without prescribing finding count or disposition.
+3. **Finding-ID Format Evolution (Compatibility Fact):**
+   - Incorporating `source_instance` into finding ID hashing changes finding ID digests relative to pre-`597e76d` runs for the same business events.
+   - *Status:* In-repository audit confirmed zero database stores, snapshot assertions, or persisted finding ID dependencies. Recorded as a compatibility fact for future re-evaluation or migration of historical bundles.
+
+### C. Resumption of Phase 4F (Managerial-Utility Proving)
+- **Methodology Authority:** `docs/specifications/phase4f_managerial_utility_proving_specification_v2.md` remains the sole governing authority.
+- **Authorization Boundary:** Zero implementation is currently authorized in production or test harnesses.
+- **Next Operating Step:** Proceed through discovery and authorization gates (Staged Leadership Authorization Model: Gate A discovery interviews, Gate B public-data sample review, Gate C live review trial).
 
 ---
 
