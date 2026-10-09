@@ -126,17 +126,54 @@ def _sort_quality_issue_key(q: QualityIssue) -> tuple[str, str, str, str]:
     return (q.code, q.message, q.subject_scope or "", ref_key)
 
 
-def _sort_finding_key(f: TrackBFinding) -> tuple[str, str, str, str, str, str]:
+def _sort_finding_key(
+    f: TrackBFinding,
+) -> tuple[str, str, str, str, str, str, str, str]:
+    subj_inst_kind = (
+        f.subject_ref.source_instance.source_kind
+        if f.subject_ref.source_instance
+        else ""
+    )
+    subj_inst_id = (
+        f.subject_ref.source_instance.instance_id
+        if f.subject_ref.source_instance
+        else ""
+    )
     corr_key = ":".join(
-        f"{c.entity_kind}:{c.entity_id}" for c in f.corroborating_refs
+        sorted(
+            f"{c.source_instance.source_kind}:{c.source_instance.instance_id}:{c.entity_kind}:{c.entity_id}"
+            if c.source_instance
+            else f"::{c.entity_kind}:{c.entity_id}"
+            for c in f.corroborating_refs
+        )
     )
     return (
         f.rule_id,
+        subj_inst_kind,
+        subj_inst_id,
         f.subject_ref.entity_kind,
         f.subject_ref.entity_id,
         corr_key,
         f.disposition,
         f.sufficiency,
+    )
+
+
+def _sort_candidate_pair_key(
+    pair: tuple[EntityRef, EntityRef],
+) -> tuple[str, str, str, str, str, str, str, str]:
+    sub, corr = pair
+    sub_inst = sub.source_instance
+    corr_inst = corr.source_instance
+    return (
+        sub_inst.source_kind if sub_inst else "",
+        sub_inst.instance_id if sub_inst else "",
+        sub.entity_kind,
+        sub.entity_id,
+        corr_inst.source_kind if corr_inst else "",
+        corr_inst.instance_id if corr_inst else "",
+        corr.entity_kind,
+        corr.entity_id,
     )
 
 
@@ -170,11 +207,26 @@ def _generate_finding_id(
     corroborating_refs: tuple[EntityRef, ...],
     disposition: str,
 ) -> str:
+    subj_inst_kind = (
+        subject_ref.source_instance.source_kind
+        if subject_ref.source_instance
+        else ""
+    )
+    subj_inst_id = (
+        subject_ref.source_instance.instance_id
+        if subject_ref.source_instance
+        else ""
+    )
     corr_str = ":".join(
-        f"{c.entity_kind}:{c.entity_id}" for c in corroborating_refs
+        sorted(
+            f"{c.source_instance.source_kind}:{c.source_instance.instance_id}:{c.entity_kind}:{c.entity_id}"
+            if c.source_instance
+            else f"::{c.entity_kind}:{c.entity_id}"
+            for c in corroborating_refs
+        )
     )
     raw = (
-        f"{rule_id}:{subject_ref.entity_kind}:{subject_ref.entity_id}:"
+        f"{rule_id}:{subj_inst_kind}:{subj_inst_id}:{subject_ref.entity_kind}:{subject_ref.entity_id}:"
         f"{corr_str}:{disposition}"
     )
     digest = hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16]
@@ -221,12 +273,11 @@ def evaluate_evidence_bundle(
     EvidenceBundleEvaluationResult
         Immutable, deterministic evaluation result.
     """
-    # ── 1. Index Observations by (entity_kind, entity_id) ────────────
-    # Multiple observations for same entity identity indicate ambiguity.
-    obs_by_key: dict[tuple[str, str], list[EvidenceObservation]] = {}
+    # ── 1. Index Observations by EntityRef ───────────────────────────
+    # Multiple observations for same canonical entity identity indicate ambiguity.
+    obs_by_key: dict[EntityRef, list[EvidenceObservation]] = {}
     for obs in bundle.observations:
-        k = (obs.entity_ref.entity_kind, obs.entity_ref.entity_id)
-        obs_by_key.setdefault(k, []).append(obs)
+        obs_by_key.setdefault(obs.entity_ref, []).append(obs)
 
     # ── 2. Index Cross-System Relationships ──────────────────────────
     # Map (subject_ref, corroborating_ref) -> list of EvidenceRelationship
@@ -263,16 +314,10 @@ def evaluate_evidence_bundle(
     # A pair is evaluated IF AND ONLY IF an explicit relationship or precomputed
     # alignment exists in the bundle.  Zero cross-system pairing for unlinked entities.
     candidate_pairs: dict[
-        tuple[str, str, str, str], tuple[EntityRef, EntityRef]
+        tuple[EntityRef, EntityRef], tuple[EntityRef, EntityRef]
     ] = {}
     for pair in alignments_by_pair:
-        k = (
-            pair[0].entity_kind,
-            pair[0].entity_id,
-            pair[1].entity_kind,
-            pair[1].entity_id,
-        )
-        candidate_pairs[k] = pair
+        candidate_pairs[pair] = pair
 
     for pair, rel_list in rels_by_pair.items():
         # Only accept established mention or explicit link relationships
@@ -282,19 +327,13 @@ def evaluate_evidence_bundle(
             for r in rel_list
         )
         if has_authorized_rel:
-            k = (
-                pair[0].entity_kind,
-                pair[0].entity_id,
-                pair[1].entity_kind,
-                pair[1].entity_id,
-            )
-            candidate_pairs.setdefault(k, pair)
+            candidate_pairs.setdefault(pair, pair)
 
     findings: list[TrackBFinding] = []
     suppressed_evaluations: list[TrackBFinding] = []
 
     # ── 5. Evaluate Established Pairs ────────────────────────────────
-    for pair in candidate_pairs.values():
+    for pair in sorted(candidate_pairs.values(), key=_sort_candidate_pair_key):
         subject_ref, corr_ref = pair
 
         matching_rels = rels_by_pair.get(pair, [])
@@ -325,12 +364,8 @@ def evaluate_evidence_bundle(
             rel_prov.extend(a.provenance_refs)
 
         # Lookup observations
-        subject_obs_list = obs_by_key.get(
-            (subject_ref.entity_kind, subject_ref.entity_id), []
-        )
-        corr_obs_list = obs_by_key.get(
-            (corr_ref.entity_kind, corr_ref.entity_id), []
-        )
+        subject_obs_list = obs_by_key.get(subject_ref, [])
+        corr_obs_list = obs_by_key.get(corr_ref, [])
 
         # Handle missing subject observation
         if not subject_obs_list:
